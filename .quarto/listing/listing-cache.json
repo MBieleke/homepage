@@ -1,0 +1,9 @@
+{
+  "listingMap": {
+    "publications\\index.qmd": [
+      "**/index.qmd",
+      "**/index.markdown",
+      "**/index.md"
+    ]
+  }
+}
