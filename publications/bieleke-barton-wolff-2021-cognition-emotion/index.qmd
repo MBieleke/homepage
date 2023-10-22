@@ -1,27 +1,27 @@
 ---
 title: "Trajectories of boredom in self-control demanding tasks"
-# subtitle: ""
 author:
   - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
   - name: Leon Barton
-    orcid: 0000-0003-1709-1394
   - name: Wanja Wolff
-date: '2022-06-07'
-slug: mwas-multiple-birth
+    orcid: 0000-0001-8130-0272
+doi: 10.1080/02699931.2021.1901656
+date: '2021-03-20'
+slug: trajectories-of-boredom
 categories:
   - boredom
   - ego depletion
   - goals
   - motivation
   - self-control
-description: "Cognition and Emotion"
-
-links:
-- icon: closed-access
-  name: Publication
-  url: https://doi.org/10.2196/32229
-
+description: "*Cognition and Emotion*"
 abstract: "Self-control does not always work effectively. Whether this reflects the depletion of a global self-control resource is subject to an ongoing debate. We turned to boredom as a potential confounding variable to advance this debate. In a high-powered experiment (*N* = 719), participants worked on a primary (transcription) task of varying self-control demands (low, high) and length (2, 4, 8 min), followed by a secondary (Stroop) task with low and high self-control demanding trials. In addition to trait boredom, we measured effort, difficulty, tiredness, frustration, and boredom after the primary task and repeatedly during the secondary task. Effort, difficulty, tiredness, and frustration increased with the demand and duration of the primary task; however, without affecting performance in the secondary task. Importantly, participants rated both the primary and the secondary task as boring, and higher boredom at the state and the trait level was associated with lower effort and higher difficulty, tiredness, and frustration. During the secondary task, boredom increased steadily but was generally lower in more self-control demanding trials. Finally, boredom predicted performance in the secondary task. These results show an intricate relationship between self-control and boredom that research on these two constructs should carefully disentangle."
-
+links:
+  - icon: file-richtext-fill
+    name: Publication
+    url: https://doi.org/10.1371/journal.pcbi.1010164
 ---
 
+
+<button type="button" class="btn btn-default navbar-btn"><a href="https://github.com/schochastics/edgebundle">Sign in</button>
