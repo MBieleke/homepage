@@ -19,25 +19,11 @@ website:
      &#169; 2023 Maik Bieleke &#8729; Made with [Quarto](https://quarto.org)
      
     center: |
-      <a class="link-dark me-1" href="/accessibility.html" title="Accessibility commitment" target="_blank" rel="noopener">{{< fa universal-access >}}</a>
-      <a class="link-dark me-1" href="https://hachyderm.io/@spcanelon" title="mastodon" target="_blank" rel="noopener">{{< fa brands mastodon >}}</a>
-      <a class="link-dark me-1" href="https://github.com/spcanelon" title="github" target="_blank" rel="noopener">{{< fa brands github >}}</a>
-      <a class="link-dark me-1" href="https://orcid.org/0000-0003-1709-1394" title="orcid" target="_blank" rel="noopener">{{< ai orcid >}}</a>
-      <a class="link-dark me-1" href="https://scholar.google.com/citations?user=GAzkvpcAAAAJ&hl=en&oi=ao" title="Google Scholar" target="_blank"rel="noopener">{{< ai google-scholar >}}</a>
-      <a class="link-dark me-1" href="https://linkedin.com/in/spcanelon" title="LinkedIn" target="_blank" rel="noopener">{{< fa brands linkedin >}}</a>
-
-    right: 
-      - text: "Accessibility"
-        aria-label: "Accessibility Commitment"
-        href: accessibility.qmd
-      - text: "Contact"
-        aria-label: "Contact Form"
-        href: "contact.qmd"
-      - text: "License"
-        aria-label: "License Details"
-        href: license.qmd
-      - icon: rss
-        href: blog/index.xml
+      <a class="link-dark me-1" href="https://twitter.com/MBieleke" title="Twitter" target="_blank" rel="noopener">{{< fa brands twitter >}}</a>
+      <a class="link-dark me-1" href="https://github.com/MBieleke/" title="github" target="_blank" rel="noopener">{{< fa brands github >}}</a>
+      <a class="link-dark me-1" href="https://orcid.org/0000-0003-2586-1416" title="Orcid" target="_blank" rel="noopener">{{< ai orcid >}}</a>
+      <a class="link-dark me-1" href="https://scholar.google.de/citations?user=EbGUz_gAAAAJ&hl=en" title="Google Scholar" target="_blank"rel="noopener">{{< ai google-scholar >}}</a>
+      <a class="link-dark me-1" href="https://www.linkedin.com/in/maik-bieleke/" title="Linkedin" target="_blank" rel="noopener">{{< fa brands linkedin >}}</a>
 
 format:
   html:
