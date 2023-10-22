@@ -1,0 +1,22 @@
+---
+title: "Effects of social value orientation (SVO) and decision mode on controlled information acquisition - A Mouselab perspective"
+author:
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: David Dohmen
+  - name: Peter M. Gollwitzer
+    orcid: 0000-0003-4872-2929
+doi: 10.1016/j.jesp.2019.103896
+date: '2019-09-12'
+slug: svo-mouselab
+categories:
+  - intuitive and reflective decision modes
+  - mental contrasting with implementation intentions (MCII)
+  - mouselab
+  - process tracing
+  - social value orientation (SVO)
+description: "Journal of Experimental Social Psychology"
+abstract: "Insights into the processes underlying observed decisions are crucial for a comprehensive understanding of behavior. We investigate how individual social value orientation (SVO) relates to controlled information acquisition and how this relationship may be governed by intuitive versus reflective decision modes. We measure controlled information acquisition with the process tracing tool Mouselab and demonstrate its potential for advancing research on social decision-making. In two experiments, participants worked on two consecutive SVO tasks, in which they allocated points between themselves and others. Information regarding the available distributions of points had to be actively acquired by moving the mouse cursor over corresponding boxes on the screen. We observed a stable relationship between SVO and controlled information acquisition in both experiments: less selfish participants acquired more information and made more other-oriented acquisitions, and this relationship showed up in both an intuitive and a reflective decision mode. However, participants in a reflective decision mode acquired more information, their acquisitions were more strongly other-oriented, and their decisions were more prosocial compared to participants in an intuitive mode. Taken together, our results advance research on SVO by showing that non-selfish individuals invest considerable time and effort to gauge the consequences of their decisions for others, which might underlie the pervasive effects of SVO on many socially relevant behaviors. Moreover, we demonstrate how intuitive versus reflective decision modes can alter controlled information acquisition. Finally, our results illustrate that Mouselab is a simple-to-use and versatile tool for tracing cognitive processes underlying social psychological phenomena."
+---
+
+<a class="btn btn-dark rounded-pill" href="https://osf.io/qa8wr/" role="button">{{< ai osf >}} OSF</a> <a class="btn btn-dark rounded-pill" href="https://psyarxiv.com/fmtdu/" role="button">{{< ai psyarxiv >}} PsyArXiv</a>

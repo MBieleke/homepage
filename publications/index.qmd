@@ -1,7 +1,7 @@
 ---
 title: "Publications" 
 description: |
-  Here you will find a list of my publications, with links to full texts, materials, code, and data
+  Here is a list of my publications. Select a publication to see more details and links to OSF and PsyArXiv.
 listing: 
   contents: 
     - "**/index.qmd"
