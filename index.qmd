@@ -1,7 +1,7 @@
 ---
 title: "Maik Bieleke"
 pagetitle: "Maik Bieleke"
-subtitle: "Senior Researcher and<br>Data Scientist"
+subtitle: "Senior Researcher &<br>Data Scientist"
 image: "img/mbieleke.png"
 
 about:
