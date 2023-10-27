@@ -14,6 +14,7 @@ listing:
   filter-ui: true
   fields: [title, author, categories, date]
   image-align: left
+  date-format: "YYYY"
   # image-height: 10em
   page-size: 25
 

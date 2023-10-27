@@ -1,0 +1,28 @@
+---
+title: "Development and validation of the Value of Physical Effort (VoPE) scale"
+author:
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Johanna Stähler
+    orcid: 0009-0000-4146-3966
+  - name: Wanja Wolff
+    orcid: 0000-0001-8130-0272
+  - name: Julia Schüler
+    orcid: 0000-0002-7790-0491
+doi: 10.31234/osf.io/pqw26
+date: '2023'
+date-format: "YYYY"
+categories:
+  - Value of Physical Effort (VoPE)scale
+  - sports
+  - exercise
+  - physical activity (PA)
+  - networks
+  - forecasting
+  - machine learning
+  - out-of-sample prediction
+description: "PsyArXiv"
+abstract: "Physical effort has instrumental value because it helps people attain their goals. Growing evidence suggests that people might also experience the exertion of effort itself as valuable. To test this idea, we developed and examined the 4-item Value of Physical Effort (VoPE) scale. Across three independent studies (total *N* = 1267), we established the basic psychometric properties of the VoPE scale and showed consistent associations with measures of sports and exercise behavior. In a study with a longitudinal design, we demonstrated the test-retest reliability of the VoPE scale and its ability to forecast physical activity and exercise behavior. Finally, psychometric network analysis and elastic net regression indicated that the VoPE scale covers a unique content area and makes novel contributions to the prediction of sports behavior. Taken together, the present research yields robust empirical evidence for the idea that people value physical effort to varying degrees. These differences can be efficiently measured with the VoPE scale, which is a short, reliable, and valid instrument that predicts sports and exercise behavior and extends our understanding of how people decide to allocate effort."
+---
+
+<a class="btn btn-dark rounded-pill" href="https://osf.io/zk9qr/" role="button">{{< ai osf >}} OSF</a> <a class="btn btn-dark rounded-pill" href="10.31234/osf.io/pqw26" role="button">{{< ai psyarxiv >}} PsyArXiv</a>

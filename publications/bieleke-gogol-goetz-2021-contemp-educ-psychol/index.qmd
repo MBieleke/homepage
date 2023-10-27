@@ -1,0 +1,26 @@
+---
+title: "The AEQ-S: A short version of the Achievement Emotions Questionnaire"
+author:
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Katarzyna Gogol
+  - name: Thomas Goetz
+    orcid: 0000-0001-6083-0602
+  - name: Lia Daniels
+    orcid: 0000-0001-9202-2538
+  - name: Reinhard Pekrun
+    orcid: 0000-0003-4489-3827
+doi: 10.1016/j.cedpsych.2020.101940
+date: '2021'
+date-format: "YYYY"
+categories:
+  - achievement emotions
+  - Achievement Emotions Questionnaire (AEQ)
+  - assessment
+  - Control-Value Theory (CVT)
+  - short scale
+description: "Contemporary Educational Psychology"
+abstract: "The Achievement Emotions Questionnaire (AEQ) is a well-established instrument for measuring achievement emotions in educational research and beyond. Its popularity rests on the coverage of the component structure of various achievement emotions across different academic settings. However, this broad conceptual scope requires the administration of 6 to 12 items per scale (Mdn = 10), which limits the applicability of the AEQ in empirical studies that necessitate brief administration times. We therefore developed the AEQ-S, a short version of the AEQ, with only 4 items per scale that nevertheless maintain the conceptual scope of the instrument. We validated the AEQ-S based on a reanalysis of Pekrun, Goetz, Frenzel, Barchfeld, and Perry's (2011) dataset (N = 389 university students) and by administering them to a new and independent validation sample (N = 471 university students). Despite their brevity, the AEQ-S scales achieved satisfactory reliability and correlated substantially with the original AEQ scales. Moreover, structural relationships and intercorrelations between the scales and their relations with external measures of antecedents and outcomes of achievement emotions were highly similar for the AEQ-S and AEQ scales. These findings suggest that the AEQ-S is a suitable substitute for the AEQ when administration time is limited."
+---
+
+<a class="btn btn-dark rounded-pill" href="https://psyarxiv.com/bwgk6/" role="button">{{< ai psyarxiv >}} PsyArXiv</a>

@@ -7,8 +7,8 @@ author:
   - name: Peter M. Gollwitzer
     orcid: 0000-0003-4872-2929
 doi: 10.1016/j.jesp.2019.103896
-date: '2019-09-12'
-slug: svo-mouselab
+date: '2020'
+date-format: "YYYY"
 categories:
   - decision making
   - process tracing

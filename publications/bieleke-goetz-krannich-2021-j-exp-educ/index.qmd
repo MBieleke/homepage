@@ -1,0 +1,28 @@
+---
+title: "Starting tests with easy versus difficult tasks: Effects on appraisals and emotions"
+author:
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Thomas Goetz
+    orcid: 0000-0001-6083-0602
+  - name: Maike Krannich
+    orcid: 0000-0001-9239-3283
+  - name: Anna-Lena Roos
+    orcid: 0000-0002-7853-0330
+  - name: Takuya Yanagida
+    orcid: 0000-0001-9052-4841
+doi: 10.1080/00220973.2021.1947764
+date: '2023'
+date-format: "YYYY"
+categories:
+  - achievement emotions
+  - cognitive appraisals
+  - Control-Value Theory (CVT)
+  - perceived challenge
+  - task difficulty
+  - order effects
+description: "Journal of Experimental Education"
+abstract: "Tests in educational contexts often start with easy tasks, assuming that this fosters positive experiences—a sense of control, higher valuing of the test, and more positive and less negative emotions. Although intuitive and widespread, this assumption lacks an empirical basis and a theoretical framework. We conducted a field experiment and randomly assigned 208 students to an easy-to-difficult or a difficult-to-easy condition in a mathematics test. Perceived challenge was measured along with control appraisals, value appraisals, and emotions (enjoyment, pride, anxiety, anger, boredom). While students starting with easy tasks felt less challenged than students starting with difficult tasks in Part 1, no differences emerged regarding control and value appraisals and emotions. In Part 2, students who had started with easy tasks proceeded to difficult tasks and reported a higher level of challenge, less value and control, and less positive and more negative emotions than students who proceeded from difficult-to-easy tasks. Control and value appraisals mediated the differences between the two conditions, especially regarding positive emotions. These results cast doubt on the preference for easy-to-difficult over difficult-to-easy task orders, revealing their potential for causing adverse experiences at the end of the test (e.g., reflecting contrast effects)."
+---
+
+<a class="btn btn-dark rounded-pill" href="https://psyarxiv.com/bd6fm/" role="button">{{< ai psyarxiv >}} PsyArXiv</a>
