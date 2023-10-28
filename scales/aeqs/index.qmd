@@ -20,10 +20,10 @@ categories:
   - Achievement Emotions Questionnaire (AEQ)
   - short scale
   - assessment
-image: featured.png
+image: featured.jpg
 ---
 
-<a class="btn btn-dark rounded-pill" href="featured.png" download role="button">{{< fa file-word >}} Download</a> <a class="btn btn-dark rounded-pill" href="featured.png" download role="button">{{< fa file-pdf >}} Download</a>
+<a class="btn btn-dark rounded-pill" href="aeqs.docx" download role="button">{{< fa file-word >}} Download</a> <a class="btn btn-dark rounded-pill" href="aeqs.pdf" download role="button">{{< fa file-pdf >}} Download</a>
 
 
 
