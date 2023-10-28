@@ -12,8 +12,8 @@ website:
         text: About
       - text: Publications
         href: publications/index.qmd
-      - text: Questionnaires
-        href: publications/bieleke-barton-wolff-2021-cognition-emotion/index.qmd
+      - text: Scales
+        href: scales/index.qmd
 
   page-footer:  
     left: >-

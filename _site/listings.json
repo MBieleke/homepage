@@ -31,5 +31,17 @@
       "/publications/bieleke-wolff-2017-front-physiol/index.html",
       "/publications/gollwitzer-bieleke-sheeran-2017-chapter/index.html"
     ]
+  },
+  {
+    "listing": "/questionnaires/index.html",
+    "items": [
+      "/questionnaires/aeqs/index.html"
+    ]
+  },
+  {
+    "listing": "/scales/index.html",
+    "items": [
+      "/scales/aeqs/index.html"
+    ]
   }
 ]
