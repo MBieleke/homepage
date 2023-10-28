@@ -57,7 +57,7 @@ The instructions used for the AEQ-S focus on general emotional experiences acros
 An overall score for each scale is obtained by averaging a participant's ratings across all four items. All items are formulated in the same direction so that no reverse-coding is neccessary.
 
 
-## Frequently asked questions (FAQs)
+## FAQ
 
 ### Can I use the AEQ-S in my study?
 
