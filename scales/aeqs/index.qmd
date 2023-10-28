@@ -20,7 +20,12 @@ categories:
   - Achievement Emotions Questionnaire (AEQ)
   - short scale
   - assessment
+image: featured.png
 ---
+
+<a class="btn btn-dark rounded-pill" href="featured.png" download role="button">{{< fa file-word >}} Download</a> <a class="btn btn-dark rounded-pill" href="featured.png" download role="button">{{< fa file-pdf >}} Download</a>
+
+
 
 ## Background
 
@@ -63,7 +68,7 @@ An overall score for each scale is obtained by averaging a participant's ratings
 
 Yes. Just make sure to give appropriate credit in the resulting publications (see above).
 
-### Can I translate or otherwise modfiy the AEQ-S?
+### Can I translate or otherwise modifiy the AEQ-S?
 
 Yes. You can adapt the AEQ-S in any way you want, including translations into other languages. Just make sure to give appropriate credit in the resulting publications (see above).
 
