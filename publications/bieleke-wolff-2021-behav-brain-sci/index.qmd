@@ -11,7 +11,7 @@ date-format: "YYYY"
 categories:
   - boredom
   - self-control
-  - exploration and exploitation
+  - exploration-exploitation tradeoff
   - willpower
   - self-control
   - suppression

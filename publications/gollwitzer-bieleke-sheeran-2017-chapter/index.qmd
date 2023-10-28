@@ -1,0 +1,20 @@
+---
+title: "Enhancing consumer behaviour with implementation intentions"
+author:
+  - name: Peter M. Gollwitzer
+    orcid: 0000-0003-4872-2929
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Paschal Sheeran
+    orcid: 0000-0001-7449-4590
+date: '2017 '
+date-format: "YYYY"
+categories:
+  - boredom
+  - ego depletion
+  - goals
+  - motivation
+  - self-control
+description: "Routledge International Handbook of Consumer Psychology"
+abstract: "Implementation intentions are if-then plans that help individuals attain their goals. Implementation intentions have proven beneficial in various domains in which individuals fall short of attaining their goals, from health behaviour through academic achievement to interpersonal issues. The aim of this chapter is to present research on how implementation intentions influence the affective, cognitive and conative components of consumer behaviour. We outline the nature of implementation intentions and describe moderators and mediators identified in previous research. Next, we adopt the perspective of comprehensive models of consumer behaviour and systematically review implementation intention effects along the lines of these models. Specifically, we describe how implementation intentions affect information acquisition, components of the decision process and internal and external influences on behaviour in consumer context. We conclude by outlining topics for future research on implementation intentions in the domain of consumer behavior."
+---

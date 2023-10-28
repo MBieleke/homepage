@@ -1,0 +1,27 @@
+---
+title: "Are older individuals predisposed to habitual control more resilient?"
+author:
+  - name: Lotte P. Brinkhof
+    orcid: 0000-0002-6763-6957
+  - name: K. Richard Ridderinkhof
+    orcid: 0000-0003-0041-6770
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Jaap M. J. Murre
+    orcid: 0000-0003-4447-9482
+  - name: Harm J. Krugers
+  - name: Sanne de Wit
+    orcid: 0000-0003-1438-7085
+doi: 10.1007/s12144-023-04982-7
+date: '2023'
+date-format: "YYYY"
+categories:
+  - quality of life
+  - mental wellbeing
+  - lifestyle regularity
+  - conscientiousness
+  - if-then planning
+  - prospective memory
+description: "Current Psychology"
+abstract: "Based on evidence for age-related impairments in flexible, goal-directed control, the formation of habits has been recognized as an opportune route for behavioural adjustment that promotes resilience among older adults. The present study set out to examine how individual differences in quality of life (QoL) and mental well-being (MWB) in older adults (*N* = 1116, 55 – 92 years old) relate to the inclination to engage in strategic planning and lifestyle regularity. Importantly, the beneficial effects of these two habit predisposing factors on MWB and QoL were found to be mediated by conscientiousness, a personality trait characterized by a tendency to be goal-oriented, organized, responsible and disciplined, and to plan for the future. These results emphasize the benefits of conscientiousness for resilience in later life and suggest that both habit-predisposing factors may offer promising and concrete target points to elicit more conscientious behaviour, and thereby support QoL and MWB. Longitudinal and experimental research may help to establish the flow of causality in the intriguing dynamics between these variables."
+---

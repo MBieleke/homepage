@@ -1,0 +1,24 @@
+---
+title: "Getting trapped in a dead end? Trait self-control and boredom are linked to goal adjustment"
+author:
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Wanja Wolff
+    orcid: 0000-0001-8130-0272
+  - name: Lucas Keller
+    orcid: 0000-0002-5533-3481
+doi: 10.1007/s11031-022-09943-4
+date: '2022'
+date-format: "YYYY"
+categories:
+  - boredom
+  - boredom proneness
+  - goal adjustment
+  - if-then planning
+  - implementation intentions
+  - self-control
+description: "Motivation and Emotion"
+abstract: "Disengaging from unattainable goals and reengaging in alternative goals is essential for effective goal pursuit; yet, surprisingly little is known about associated personality factors. Here, we focused on individual differences in self-control (domain-general self-control, if–then planning) and boredom (boredom proneness, boredom avoidance and escape tendencies). Concerning goal adjustment in everyday life (Study 1; *N* =323 crowdworkers), if–then planning was associated with worse disengagement and better reengagement. While boredom proneness was associated with poorer reengagement, boredom avoidance and escape tendencies were associated with better reengagement. When goal striving was thwarted during the COVID-19 pandemic (Study 2; *N* = 97 students), similar associations emerged along with links to anxiety and depression. However, disengagement was no longer associated with if–then planning but instead with better self-control and higher boredom proneness. These results show differential relationships of goal disengagement and reengagement with self-control and boredom, paving the way to a better understanding of who struggles or shines when effective goal adjustment is required."
+---
+
+<a class="btn btn-dark rounded-pill" href="https://osf.io/yv93q/" role="button">{{< ai osf >}} OSF</a> <a class="btn btn-dark rounded-pill" href="https://psyarxiv.com/db7u3/" role="button">{{< ai psyarxiv >}} PsyArXiv</a>
