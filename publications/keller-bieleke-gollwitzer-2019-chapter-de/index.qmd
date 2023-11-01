@@ -1,0 +1,17 @@
+---
+title: "Mindset-Theorie der Handlungsphasen und Wenn-Dann-Pläne"
+author:
+  - name: Lucas Keller
+    orcid: 0000-0002-5533-3481
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Peter M. Gollwitzer
+    orcid: 0000-0003-4872-2929
+doi: 10.1007/978-3-030-13788-5_2
+date: '2023'
+date-format: "YYYY"
+categories:
+  - book chapter
+description: "**{{< fa book >}} Sozialpsychologie: Von der Theorie zur Anwendung**"
+abstract: "In diesem Kapitel stellen wir die Mindset-Theorie der Handlungsphasen (engl. mindset theory of action phases, MAP) und die Selbstregulierungsstrategie der Durchführungsintentionen vor. Die MAP schlägt vier aufeinanderfolgende Phasen vor, die man während der Zielverfolgung durchläuft. In jeder dieser Phasen ist man unterschiedlichen Herausforderungen ausgesetzt, und die Aktivierung spezifischer kognitiver Verfahren (d. h. Denkweisen, engl. Mindsets) hilft bei der Bewältigung dieser Herausforderungen. Diese Denkweisen können sich auch auf andere Aufgaben übertragen und das Verhalten beeinflussen. Durchführungsintentionen sind spezifische Wenn-Dann-Pläne (z. B. „Wenn eine kritische Situation S eintritt, dann werde ich eine zielgerichtete Handlung H ausführen!“). In fast 100 unabhängigen Studien mit mehr als 8000 Teilnehmenden konnte gezeigt werden, dass Durchführungsintentionen die Zielerreichung über die reine Zielbildung hinaus fördern (Gollwitzer und Sheeran, Adv Exp Soc Psychol 38:69–119, 2006). Wir stellen angewandte Zusammenhänge und neuere Entwicklungen der MAP und Durchführungsintentionen vor und schließen das Kapitel mit der Diskussion einer Studie über die Auswirkungen von Durchführungsintentionen im Bereich des nachhaltigen Konsumverhaltens."
+---

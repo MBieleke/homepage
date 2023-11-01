@@ -1,0 +1,19 @@
+---
+title: "High trait self-control and low boredom proneness help COVID-19 homeschoolers"
+author:
+  - name: Corinna S. Martarelli
+  - name: Simona Pacozzi
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Wanja Wolff
+    orcid: 0000-0001-8130-0272
+doi: 10.3389/fpsyg.2021.594256
+date: '2021'
+date-format: "YYYY"
+categories:
+  - journal article
+description: "**{{< fa newspaper >}} Frontiers in Psychology**"
+abstract: "In response to the coronavirus disease 2019 (COVID-19) schools around the world have been closed to protect against the spread of coronavirus. In several countries, homeschooling has been introduced to replace classroom schooling. With a focus on individual differences, the present study examined 138 schoolers (age range = 6 to 21 years) regarding their self-control and boredom proneness. The results showed that both traits were important in predicting adherence to homeschooling. Schoolers with higher levels of self-control perceived homeschooling as less difficult, which in turn increased homeschooling adherence. In contrast, schoolers with higher levels of boredom proneness perceived homeschooling as more difficult, which in turn reduced homeschooling adherence. These results partially hold when it comes to studying in the classroom. However, boredom threatened adherence only in the homeschooling context. Our results indicate that boredom proneness is a critical construct to consider when educational systems switch to homeschooling during a pandemic."
+---
+
+<a class="btn btn-dark rounded-pill" href="https://osf.io/32rwe/" role="button">{{< ai osf >}} OSF</a>

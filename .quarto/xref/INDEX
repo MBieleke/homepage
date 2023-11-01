@@ -106,5 +106,41 @@
   },
   "scales/index.qmd": {
     "index.html": "029d36c1"
+  },
+  "publications/janczyk-dambacher-bieleke-2015-psychol-res/index.qmd": {
+    "index.html": "394fa1f9"
+  },
+  "publications/keller-bieleke-gollwitzer-2019-chapter/index.qmd": {
+    "index.html": "1a0f0457"
+  },
+  "publications/keller-bieleke-wolff-curr-psychol/index.qmd": {
+    "index.html": "716095d7"
+  },
+  "publications/keller-bieleke-gollwitzer-2019-chapter-de/index.qmd": {
+    "index.html": "5380f129"
+  },
+  "publications/keller-bieleke-gollwitzer-2019-chapter-en/index.qmd": {
+    "index.html": "fb8a1f73"
+  },
+  "publications/keller-koppe-gollwitzer-2021-plos-one/index.qmd": {
+    "index.html": "87b9705f"
+  },
+  "publications/legrand-bieleke-gollwitzer-2017-motiv-sci/index.qmd": {
+    "index.html": "1f27fa8f"
+  },
+  "publications/martarelli-berthouzoz-bieleke-2022-sport-exerc-perform-psychol/index.qmd": {
+    "index.html": "7e22f066"
+  },
+  "publications/martarelli-pacozzi-bieleke-2021-front-psychol/index.qmd": {
+    "index.html": "f58d676a"
+  },
+  "publications/martarelli-wolff-bieleke-2021-humanit-soc-sci-commun/index.qmd": {
+    "index.html": "d42d2f60"
+  },
+  "publications/martiny-huenger-bieleke-doerflinger-2021-psychon-bull-rev/index.qmd": {
+    "index.html": "c4762897"
+  },
+  "publications/martiny-huenger-bieleke-oettingen-2016-chapter/index.qmd": {
+    "index.html": "f01d0161"
   }
 }

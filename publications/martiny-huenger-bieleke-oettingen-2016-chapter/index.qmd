@@ -1,0 +1,18 @@
+---
+title: "From thought to automatic action: Strategic and spontaneous action control by if-then planning"
+author:
+  - name: Torsten Martiny-Huenger
+    orcid: 0000-0003-3855-2890
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Gabriele Oettingen
+    orcid: 0000-0002-6139-1493
+  - name: Peter M. Gollwitzer
+    orcid: 0000-0003-4872-2929
+date: '2016'
+date-format: "YYYY"
+categories:
+  - book chapter
+description: "**{{< fa book >}} Reflective and Impulsive Determinants of Human Behavior**"
+abstract: "If-then action planning (i.e., implementation intentions; Gollwitzer, 1999) is an effective self-regulation strategy. It entails mentally linking an intended action to a critical situation in a verbal if-then plan (e.g., 'If I enter the cafeteria, then I will buy an apple'). Formulating such a plan increases the likelihood of actually performing the intended action as soon as the specified critical situation arises. Importantly, the initiation of the planned action exhibits features of automaticity (i.e., fast, efficient, and without requiring another conscious intent; Bargh, 1994). Thus, if-then planning is an intriguing instance of how 'controlled' conscious thought at one point in time can lead to 'automatic' action at a later point in time."
+---

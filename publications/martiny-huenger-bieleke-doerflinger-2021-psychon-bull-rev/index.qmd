@@ -1,0 +1,23 @@
+---
+title: "Deliberation decreases the likelihood of expressing dominant responses"
+author:
+  - name: Torsten Martiny-Huenger
+    orcid: 0000-0003-3855-2890
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Johannes T. Doerflinger
+    orcid: 0000-0002-0228-7725
+  - name: Matthew B. Stephensen
+    orcid: 0000-0002-4562-3469
+  - name: Peter M. Gollwitzer
+    orcid: 0000-0003-4872-2929
+doi: 10.3758/s13423-020-01795-8
+date: '2021'
+date-format: "YYYY"
+categories:
+  - journal article
+description: "**{{< fa newspaper >}} Psychonomic Bulletin & Review**"
+abstract: "Deliberation is commonly assumed to be a central characteristic of humans’ higher cognitive functions, and the responses following deliberation are attributed to mechanisms that are qualitatively different from lower-level associative or affectively driven responses. In contrast to this perspective, the current article’s aim is to draw attention to potential issues with making inferences about mechanisms of deliberation based on characteristics of the observed decision outcomes. We propose that a consequence of deliberation is to simply reduce the likelihood of expressing immediately available (dominant) responses. We illustrate how this consequence of deliberation can provide a parsimonious explanation for a broad range of prior research on decision-making. Furthermore, we discuss how the present perspective on deliberation relates to the question of how the cognitive system implements nondominant responses based on associative learning and affective prioritization rather than voluntary decisions. Beyond the present article’s theoretical focus, for illustrative purposes, we provide some empirical evidence (three studies, *N* = 175) that is in line with our proposal. In sum, our theoretical framework, prior empirical evidence, and the present studies suggest that deliberation reduces the likelihood of expressing dominant responses. Although we do not argue that this is the only consequence or mechanism regarding deliberation, we aim to highlight that it is worthwhile considering this minimal consequence of deliberation as compared with certain higher cognitive functions in the interpretation of deliberation outcomes."
+---
+
+<a class="btn btn-dark rounded-pill" href="https://osf.io/wp6eh/?view_only=2d701734309a433b9122a4b4443bc40a" role="button">{{< ai osf >}} OSF</a>

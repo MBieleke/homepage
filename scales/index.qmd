@@ -7,12 +7,12 @@ listing:
     - "**/index.qmd"
     - "**/index.markdown"
     - "**/index.md"
-  sort: "date desc"
-  type: default
+  sort: "name desc"
+  type: grid
   categories: true
   sort-ui: false
   filter-ui: false
-  fields: [title, image, categories, date]
+  fields: [title, image]
   image-align: left
   date-format: "YYYY"
   # image-height: 10em

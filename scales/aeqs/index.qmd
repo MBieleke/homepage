@@ -13,26 +13,16 @@ author:
 doi: 10.1016/j.cedpsych.2020.101940
 date: '2021'
 date-format: "YYYY"
-categories:
-  - achievement emotions
-  - education
-  - control-value theory
-  - Achievement Emotions Questionnaire (AEQ)
-  - short scale
-  - assessment
 image: featured.jpg
 ---
 
-<a class="btn btn-dark rounded-pill" href="aeqs.docx" download role="button">{{< fa file-word >}} Download</a> <a class="btn btn-dark rounded-pill" href="aeqs.pdf" download role="button">{{< fa file-pdf >}} Download</a>
-
-
+<a class="btn btn-dark rounded-pill" href="aeqs.docx" download role="button">{{< fa file-word >}} Download Doc</a> <a class="btn btn-dark rounded-pill" href="aeqs.pdf" download role="button">{{< fa file-pdf >}} Download PDF</a>
 
 ## Background
 
 The Achievement Emotions Questionnaire (AEQ) is a well-established and widely used instrument for measuring achievement emotions. It covers the component structure of various emotions across three diffent academic settings. However, this breadth requires a total of 232 items distributed across 24 scales, making the AEQ difficult to use when administration time is limited. The AEQ-S addresses this issue by reducing the number of items to 96 (i.e., 4 items per scale), allowing much more economic assessments. Despite its brevity, the AEQ-S is a reliable instrument that maintains the AEQ's conceptual scope and reproduces its structural relationships (e.g., with external criteria). This makes the AEQ-S a valuable instrument when administration time or space are limited.
 
 The **internal structure** of the AEQ-S is identical to the AEQ, as it uses a subset of items from all AEQ sections and scales. Accordingly, the AEQ-S is organized in three sections: class-related emotions, learning-related emotions, and test-related emotions. Each section consists of eight scales, and each scale comprises four items pertaining to an individual achievement emotion. The AEQ-S maintains the **component structure** of the AEQ as well. Each scale measures the affective, cognitive, motivational, and physiological component of the corresponding achievement emotion with one item each (except the physiological component of hope, for which no items exist in the AEQ).
-
 
 ## Usage
 
@@ -45,7 +35,6 @@ The Achievement Emotions Questionnaire - Short (AEQ-S) is licensed under a [Crea
 To give appropriate credit, please cite the following publication:
 
 Bieleke, M., Gogol, K., Goetz, T., Daniels, L., & Pekrun, R. (2021). The AEQ-S: A short version of the Achievement Emotions Questionnaire. *Contemporary Educational Psychology*, *65*, 101940. [ ](https://doi.org/10.1016/j.cedpsych.2020.101940)
-
 
 ## Adminstration
 
@@ -60,7 +49,6 @@ The instructions used for the AEQ-S focus on general emotional experiences acros
 ### Scoring and interpretation
 
 An overall score for each scale is obtained by averaging a participant's ratings across all four items. All items are formulated in the same direction so that no reverse-coding is neccessary.
-
 
 ## FAQ
 

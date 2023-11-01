@@ -1,0 +1,17 @@
+---
+title: "Nothing will stop me? Flexibly tenacious goal striving with implementation intentions"
+author:
+  - name: Eve Legrand
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Peter M. Gollwitzer
+    orcid: 0000-0003-4872-2929
+  - name: Astrid Mignon
+doi: 10.1037/mot0000050
+date: '2017'
+date-format: "YYYY"
+categories:
+  - journal article
+description: "**{{< fa newspaper >}} Motivation Science**"
+abstract: "Implementation intentions (if-then plans) help people to automatically perform goal-directed behaviors when they encounter goal-relevant critical situations. Besides the intended beneficial effects on goal attainment, however, goal-directed behaviors might entail various costs. Successful goal striving then requires flexible tenacity: tenaciously holding on to behaviors that inflict bearable costs but flexibly backing off from performing excessively costly behaviors. In the present research, we investigated whether goal striving with implementation intentions is characterized by such flexible tenacity. In Experiments 1 and 2, implementation intention participants held on to goal-directed behaviors that inflicted bearable costs (sustaining unpleasant noise and annoying effort), whereas participants with mere goal intentions reduced their performance of goal-directed behaviors. In Experiment 3, both goal and implementation intention participants backed off from performing an excessively costly behavior (involving monetary loss). This effect was more pronounced among implementation intention participants, who additionally lowered their goal commitment. We conclude that implementation intentions render goal striving tenaciously flexible, facilitating goal-directed behaviors unless this is associated with excessive costs."
+---
