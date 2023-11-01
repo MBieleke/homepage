@@ -17,11 +17,8 @@ doi: 10.1007/s11858-022-01425-8
 date: '2023'
 date-format: "YYYY"
 categories:
-  - achievement emotions
-  - Achievement Emotions Questionnaire - Mathematics (AEQ-M)
-  - cognitive appraisals
-  - Control-Value Theory (CVT)
-  - mathematics education
-description: "ZDM Mathematics Education"
+  - journal article
+  - scale development
+description: "**{{< fa newspaper >}} ZDM Mathematics Education**"
 abstract: "Understanding the structure, antecedents, and outcomes of students’ emotions has become a topic of major interest in research on mathematics education. Much of this work is based on the Achievement Emotions Questionnaire—Mathematics (AEQ-M), a self-report instrument assessing students’ mathematics-related emotions. The AEQ-M measures seven emotions (enjoyment, pride, anger, anxiety, shame, hopelessness, boredom) across class, learning, and test contexts (internal structure). Based on control-value theory, it is assumed that these emotions are evoked by control and value appraisals, and that they influence students’ motivation, learning strategies, and performance (external relations). Despite the popularity and frequent use of the AEQ-M, the research leading to its development has never been published, creating uncertainty about the validity of the proposed internal structure and external relations. We close this gap in Study 1 (*N* = 781 students, Grades 5–10, mean age 14.1 years, 53.5% female) by demonstrating that emotions are organized across contexts and linked to their proposed antecedents and outcomes. Study 2 (*N* = 699 students, Grade 7 and 9, mean age 14.0 years, 56.9% female) addresses another deficit in research on the AEQ-M, the lack of evidence regarding the assumption that emotions represent sets of interrelated affective, cognitive, motivational, and physiological/expressive components. We close this gap by evaluating extended AEQ-M scales, systematically assessing these components for five core mathematics emotions (enjoyment, anger, anxiety, hopelessness, boredom). Our work provides solid grounds for future research using the AEQ-M to assess emotions and their components in the domain of mathematics."
 ---

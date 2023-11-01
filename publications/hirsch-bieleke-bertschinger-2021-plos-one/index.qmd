@@ -14,12 +14,9 @@ doi: 10.1371/journal.pone.0259088
 date: '2021'
 date-format: "YYYY"
 categories:
-  - endurance
-  - sports
-  - exercise
-  - implementation intentions
-  - goals
-description: "PLoS ONE"
+  - journal article
+  - original research
+description: "**{{< fa newspaper >}} PLoS ONE**"
 abstract: "Endurance sports pose a plethora of mental demands that exercisers have to deal with. Unfortunately, investigations of exercise-specific demands and strategies to deal with them are insufficiently researched, leading to a gap in knowledge about athletic requirements and strategies used to deal with them. Here, we investigated which obstacles exercisers experience during an anaerobic (Wingate test) and an aerobic cycling test (incremental exercise test), as well as the strategies they considered helpful for dealing with these obstacles (qualitative analysis). In addition, we examined whether thinking of these obstacles and strategies in terms of if-then plans (or implementation intentions; i.e., 'If I encounter obstacle O, then I will apply strategy S!') improves performance over merely setting performance goals (i.e., goal intentions; quantitative analysis). *N* = 59 participants (age: *M* = 23.9 ± 6.5 years) performed both tests twice in a 2-within (Experimental session: 1 vs. 2) × 2-between (Condition: goal vs. implementation intention) design. Exercisers’ obstacles and strategies were assessed using structured interviews in Session 1 and subjected to thematic analysis. In both tests, feelings of exertion were the most frequently stated obstacle. Motivation to do well, self-encouragement, and focus on the body and on cycling were frequently stated strategies in both tests. There were also test-specific obstacles, such as boredom reported in the aerobic test. For session 2, the obstacles and strategies elicited in Session 1 were used to specify if-then plans. Bayesian mixed-factor ANOVA suggests, however, that if-then plans did not help exercisers to improve their performance. These findings shed novel light into the mental processes accompanying endurance exercise and the limits they pose on performance."
 ---
 

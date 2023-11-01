@@ -10,14 +10,8 @@ doi: 10.31234/osf.io/tgq95
 date: '2023'
 date-format: "YYYY"
 categories:
-  - boredom
-  - self-control
-  - Expected Value of Control (EVC)
-  - effort
-  - rewards
-  - goals
-  - exploration-exploitation tradeoff
-description: "PsyArXiv"
+  - preprint
+description: "**{{< ai psyarxiv >}} PsyArXiv**"
 abstract: "Self-control is a fragile mechanism by design, and there is an ongoing debate about the reasons for this fragility. A mechanistically plausible perspective is offered by reward-based models of self-control such as the expected value of control (EVC) theory. According to the EVC theory, the allocation of self-control requires effort, which serves as a dynamic signal that quantifies the costs of self-control. People thus use self-control sparingly and continuously adjust its allocation such that its expected value remains optimal. Boredom affects this process in two ways: It lowers the value of a focal activity compared to alternative activities and renders the maintenance of the focal activity more costly by increasing the required effort. Consequently, less control is allocated to an activity as it becomes boring, which in turn permits an optimal balance between goal-directed behavior (exploitation, directed exploration) and undirected exploration. The essential conclusion from the EVC perspective is that self-control must be fragile to be an adaptive function for behavior regulation. Conceiving self-control as a reward-based choice also helps to address some key open questions in the literature on boredom and self-control, such as the adequate conceptualization of trait boredom and the replicability of ego depletion effects."
 ---
 

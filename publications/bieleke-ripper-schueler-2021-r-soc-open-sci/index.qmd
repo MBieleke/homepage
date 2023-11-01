@@ -13,13 +13,10 @@ doi: 10.1098/rsos.211998
 date: '2022'
 date-format: "YYYY"
 categories:
-  - boredom
-  - boredom proneness
-  - functional theories of emotion
-  - (mal-)adaptive behavior
-  - psychometric networks
-  - boredom avoidance and escape tendency
-description: "Royal Society Open Science"
+  - journal article
+  - original research
+  - scale development
+description: "**{{< fa newspaper >}} Royal Society Open Science**"
 abstract: "Functional accounts of boredom propose that boredom serves as an impartial signal to change something about the current situation, which should give rise to adaptive and maladaptive behaviour alike. This seemingly contrasts with research on boredom proneness, which has overwhelmingly shown associations with maladaptive behaviour. To shed light on this discrepancy, we disentangled boredom proneness from individual differences in (i) the urge to avoid and escape boredom and (ii) adaptive and maladaptive ways of dealing with boredom by developing corresponding trait scales. In a study with *N* = 636 participants, psychometric network modelling revealed tight associations between boredom proneness and less adaptive and (especially) more maladaptive ways of dealing with boredom. However, its associations with the urge to avoid and escape boredom were rather weak. Importantly, a higher urge to avoid and escape boredom was linked not only to more maladaptive but also to more adaptive ways of dealing with boredom. This pattern of results was robust across various specific behaviours that have previously been linked to boredom. Our findings provide novel evidence for functional accounts of boredom from an individual difference perspective, cautioning against a shallow view of boredom as being associated with purely maladaptive behaviour."
 ---
 

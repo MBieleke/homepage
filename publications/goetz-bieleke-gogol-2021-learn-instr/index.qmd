@@ -18,11 +18,8 @@ doi: 10.1016/j.learninstruc.2020.101349
 date: '2021'
 date-format: "YYYY"
 categories:
-  - student-teacher relationship
-  - interpersonal closeness
-  - emotions
-  - achievement
-  - longitudinal study
-description: "Learning and Instruction"
+  - journal article
+  - original research
+description: "**{{< fa newspaper >}} Learning and Instruction**"
 abstract: "Relationship quality and emotional experience are both important constructs in learning environments but the question of how they are linked requires more attention in empirical research. We hypothesized reciprocal associations between student-teacher relationship quality (i.e., interpersonal closeness) and students' emotions in the classroom (i.e., enjoyment, pride, anxiety, anger, boredom, and shame). Data from a two-wave longitudinal study with annual assessments in grade 10 (Time 1) and 11 (Time 2) were used to test this hypothesis (*N* = 535; mean age at Time 1: 16.7 years, *SD* = 0.6). Student-perceived relationship quality and students’ emotions were assessed in the academic domains of mathematics, German, English, and French. In line with our hypothesis, cross-lagged panel models showed reciprocal associations: Higher relationship quality was associated with stronger positive emotions and weaker negative emotions over time. In turn, lower negative emotions and higher positive emotions were associated with higher relationship quality. The association between initial emotions and student-teacher relationship quality one year later was stronger than the reverse association. Further, the links between relationship quality and emotions were largely equivalent across school domains but differed in strength across emotions. Implications for future research and educational practice are discussed."
 ---

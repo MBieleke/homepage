@@ -34,7 +34,5 @@ execute:
 ---
 
 ::: {#about-me}
-
 I'm a senior researcher and data scientist at the University of Konstanz, Germany. With a background in psychology and economics, my interestes include human motivation, effort, and performance in basic and applied research. I passionately use R for data science and in my general workflow.
-
 :::

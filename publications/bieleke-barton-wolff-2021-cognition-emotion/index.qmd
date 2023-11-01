@@ -10,12 +10,9 @@ doi: 10.1080/02699931.2021.1901656
 date: '2021'
 date-format: "YYYY"
 categories:
-  - boredom
-  - ego depletion
-  - goals
-  - motivation
-  - self-control
-description: "Cognition and Emotion"
+  - journal article
+  - original research
+description: "**{{< fa newspaper >}} Cognition and Emotion**"
 abstract: "Self-control does not always work effectively. Whether this reflects the depletion of a global self-control resource is subject to an ongoing debate. We turned to boredom as a potential confounding variable to advance this debate. In a high-powered experiment (*N* = 719), participants worked on a primary (transcription) task of varying self-control demands (low, high) and length (2, 4, 8 min), followed by a secondary (Stroop) task with low and high self-control demanding trials. In addition to trait boredom, we measured effort, difficulty, tiredness, frustration, and boredom after the primary task and repeatedly during the secondary task. Effort, difficulty, tiredness, and frustration increased with the demand and duration of the primary task; however, without affecting performance in the secondary task. Importantly, participants rated both the primary and the secondary task as boring, and higher boredom at the state and the trait level was associated with lower effort and higher difficulty, tiredness, and frustration. During the secondary task, boredom increased steadily but was generally lower in more self-control demanding trials. Finally, boredom predicted performance in the secondary task. These results show an intricate relationship between self-control and boredom that research on these two constructs should carefully disentangle."
 ---
 

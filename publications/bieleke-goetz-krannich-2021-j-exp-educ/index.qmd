@@ -15,13 +15,9 @@ doi: 10.1080/00220973.2021.1947764
 date: '2023'
 date-format: "YYYY"
 categories:
-  - achievement emotions
-  - cognitive appraisals
-  - Control-Value Theory (CVT)
-  - perceived challenge
-  - task difficulty
-  - order effects
-description: "Journal of Experimental Education"
+  - journal article
+  - original research
+description: "**{{< fa newspaper >}} Journal of Experimental Education**"
 abstract: "Tests in educational contexts often start with easy tasks, assuming that this fosters positive experiences—a sense of control, higher valuing of the test, and more positive and less negative emotions. Although intuitive and widespread, this assumption lacks an empirical basis and a theoretical framework. We conducted a field experiment and randomly assigned 208 students to an easy-to-difficult or a difficult-to-easy condition in a mathematics test. Perceived challenge was measured along with control appraisals, value appraisals, and emotions (enjoyment, pride, anxiety, anger, boredom). While students starting with easy tasks felt less challenged than students starting with difficult tasks in Part 1, no differences emerged regarding control and value appraisals and emotions. In Part 2, students who had started with easy tasks proceeded to difficult tasks and reported a higher level of challenge, less value and control, and less positive and more negative emotions than students who proceeded from difficult-to-easy tasks. Control and value appraisals mediated the differences between the two conditions, especially regarding positive emotions. These results cast doubt on the preference for easy-to-difficult over difficult-to-easy task orders, revealing their potential for causing adverse experiences at the end of the test (e.g., reflecting contrast effects)."
 ---
 
