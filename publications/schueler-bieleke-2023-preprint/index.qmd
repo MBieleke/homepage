@@ -1,0 +1,16 @@
+---
+title: "Proactive behavior change techniques (ProBCTs) in physical activity and healthy eating"
+author:
+  - name: Julia Schüler
+    orcid: 0000-0002-7790-0491
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+doi: 10.21203/rs.3.rs-3133092/v1
+date: '2023'
+date-format: "YYYY"
+categories:
+  - preprint
+  - original research
+description: "**{{< ai open-materials >}} Research Square**"
+abstract: "**Background.** Extensive research has aimed to develop effective interventions for physical inactivity and unhealthy diets, but progress in behavior change techniques (BCTs) has been limited. This study introduces proactive behavior change techniques (ProBCTs) as a novel approach to the problem. By examining techniques people use naturally, without external intervention, the study explores associations, potential causes, and success in behavior change. **Methods.** We translated Abraham & Michie's (2008) 26-BCT taxonomy into a ProBCT questionnaire and administered it to 504 participants via a web survey. Participants reported self-imposed goals in physical activity (PA) and healthy nutrition (NUT), along with their importance, difficulty, and progress. Physical activity and healthy eating questionnaires served as indicators of successful behavior change. **Results.** Using Bayesian statistics, we found variations in the usage intensity of ProBCTs. Similarities and differences emerged between PA and NUT domains. For example, 'time management' was commonly used in both, while 'information seeking' was more prevalent in NUT. For some ProBCTs, weak evidence emerged for gender differences and age effects. ProBCTs formed clusters similar to BCTs, supported by Bayesian psychometric network analyses. Tests for potential preconditions and consequences of ProBCTs revealed moderate-to-strong support for positive relations with goal importance, and strong support for positive relationships of ProBCTs with behavior change. Moreover, PA was best predicted by a combination of the ProBCTs 'time management' plus'detailed plans,' whereas for NUT, a complex pattern of six ProBCTs was the best-fitting predictive model. **Discussion.** We discuss the potential of ProBCTs for promoting physical activity and healthy eating add what is still needed to make them work efficiently. **Conclusions.** The ProBCT approach can contribute to the scalability of health behaviour change strategies."
+---
