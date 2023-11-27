@@ -1,0 +1,20 @@
+---
+title: "A primer on the role of boredom in self-controlled sports and exercise behavior"
+author:
+  - name: Wanja Wolff
+    orcid: 0000-0001-8130-0272
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Corinna S. Martarelli
+    orcid: 0000-0001-9160-793X
+  - name: James Danckert
+    orcid: 0000-0001-8093-066X
+doi: 10.3389/fpsyg.2021.637839
+date: '2021'
+date-format: "YYYY"
+categories:
+  - journal article
+  - literature review
+description: "**{{< fa newspaper >}} Frontiers in Psychology**"
+abstract: "Self-control is critical for successful participation and performance in sports and therefore has attracted considerable research interest. Yet, knowledge about self-control remains surprisingly incomplete and inconsistent. Here, we draw attention to boredom as an experience that likely plays an important role in sports and exercise (e.g., exercise can be perceived as boring but can also be used to alleviate boredom). Specifically, we argue that studying boredom in the context of sports and exercise will also advance our understanding of self-control as a reward-based choice. We demonstrate this by discussing evidence for links between self-control and boredom and by highlighting the role boredom plays for guiding goal-directed behavior. As such, boredom is likely to interact with self-control in affecting sports performance and exercise participation. We close by highlighting several promising routes for integrating self-control and boredom research in the context of sports performance and exercise behavior."
+---

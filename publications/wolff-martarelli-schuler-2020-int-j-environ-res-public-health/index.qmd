@@ -1,0 +1,22 @@
+---
+title: "High boredom proneness and low trait self-control impair adherence to social distancing guidelines during the COVID-19 Pandemic"
+author:
+  - name: Wanja Wolff
+    orcid: 0000-0001-8130-0272
+  - name: Corinna S. Martarelli
+    orcid: 0000-0001-9160-793X
+  - name: Julia Schüler
+    orcid: 0000-0002-7790-0491
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+doi: 10.3390/ijerph17155420
+date: '2020'
+date-format: "YYYY"
+categories:
+  - journal article
+  - original research
+description: "**{{< fa newspaper >}} International Journal of Environmental Research and Public Health**"
+abstract: "Social distancing during the coronavirus-disease-2019 (COVID-19) pandemic is crucial to reduce the spread of the virus. However, its effectiveness hinges on adherence by individuals who face substantial burdens from the required behavioral restrictions. Here, we investigate sources of individual variation in adhering to social distancing guidelines. In a high-powered study (*N* = 895), we tested direct and indirect effects of boredom and self-control on adherence. The results showed that both traits were important predictors of adherence but the underlying mechanisms differed. Specifically, individuals high in boredom perceived social distancing as more difficult, which in turn reduced their adherence (i.e., a mediated effect). In contrast, individuals high in self-control adhered more to the guidelines without perceiving them as more or less difficult; however, self-control moderated the effect of difficulty on adherence. Our results are immediately relevant to improve the efficacy of social distancing guidelines in the COVID-19 response."
+---
+
+<a class="btn btn-dark rounded-pill" href="https://osf.io/7ky2q/" role="button">{{< ai osf >}} OSF</a>
