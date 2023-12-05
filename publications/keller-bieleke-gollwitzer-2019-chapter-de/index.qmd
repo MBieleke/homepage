@@ -7,7 +7,7 @@ author:
     orcid: 0000-0003-2586-1416
   - name: Peter M. Gollwitzer
     orcid: 0000-0003-4872-2929
-doi: 10.1007/978-3-030-13788-5_2
+doi: 10.1007/978-3-031-17529-9_2
 date: '2023'
 date-format: "YYYY"
 categories:
