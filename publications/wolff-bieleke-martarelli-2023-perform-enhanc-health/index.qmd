@@ -1,5 +1,5 @@
 ---
-title: "A primer on the role of boredom in self-controlled sports and exercise behavior"
+title: "Boredom, performance & health"
 author:
   - name: Wanja Wolff
     orcid: 0000-0001-8130-0272
