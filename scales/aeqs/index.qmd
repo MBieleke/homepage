@@ -13,7 +13,7 @@ author:
 doi: 10.1016/j.cedpsych.2020.101940
 date: '2021'
 date-format: "YYYY"
-image: featured.jpg
+image: featured.png
 ---
 
 <a class="btn btn-dark rounded-pill" href="aeqs.docx" download role="button">{{< fa file-word >}} Download Doc</a> <a class="btn btn-dark rounded-pill" href="aeqs.pdf" download role="button">{{< fa file-pdf >}} Download PDF</a>
