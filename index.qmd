@@ -39,4 +39,30 @@ execute:
 I'm a senior researcher and data scientist in the [sport psychology lab](https://www.sportwissenschaft.uni-konstanz.de/schueler/schueler/research/sport-psychology-lab/) at the University of Konstanz, Germany. My interestes include human motivation, effort, and performance in basic and applied research. I passionately use R for data science and in my general workflow.
 :::
 
+# {{< iconify fluent megaphone-loud-16-filled >}} News
+
+## Out Now: Handbook of Boredom
+
+::: columns
+::: {.column width="70%"}
+The Handbook of Boredom is now available! It brings together leading boredom researchers from various disciplines and provides a unique exploration of boredom. 
+
+What's inside:
+
+- Foundations: Insights into a multitude of theoretical, conceptual, historical, and methodologial aspects of boredom.
+- Correlates: Exploration of the properties of boredom and its links to self-control, mind-wandering, flow, and aggression.
+- Contexts: Approaches to studying boredom in various life domains and its role for health, well-being, and aesthetic experience.
+
+Bonus feature:
+
+The final chapter is a collective effort of all contributors, offering a panaoramic view of the field and outlining future directions for research.
+
+[Check it out!](https://www.routledge.com/The-Routledge-International-Handbook-of-Boredom/Bieleke-Wolff-Martarelli/p/book/9781032221861){.external target="_blank"}
+:::
+
+::: {.column width="30%"}
+[![Bieleke, M., Wolff, W., & Martarelli, C. (2024). *The Routledge International Handbook of Boredom*. Routledge.](img/boredom-book.png)](https://www.routledge.com/The-Routledge-International-Handbook-of-Boredom/Bieleke-Wolff-Martarelli/p/book/9781032221861){target="_blank"}
+:::
+:::
+
 
