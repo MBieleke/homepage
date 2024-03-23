@@ -1,11 +1,11 @@
 ---
 title: "Maik Bieleke"
 pagetitle: "Maik Bieleke"
-subtitle: "Senior Researcher &<br>Data Scientist"
+subtitle: "Senior Researcher & Data Scientist"
 image: "img/mbieleke.png"
 
 about:
-  template: trestles
+  template: jolla
   id: about-me
   image-width: 16em
   image-shape: round
@@ -35,7 +35,7 @@ execute:
   warning: false
 ---
 
-::: {#about-me}
+::: {#about-me style="text-align: center;"}
 I'm a senior researcher and data scientist in the [sport psychology lab](https://www.sportwissenschaft.uni-konstanz.de/schueler/schueler/research/sport-psychology-lab/) at the University of Konstanz, Germany. My interestes include human motivation, effort, and performance in basic and applied research. I passionately use R for data science and in my general workflow.
 :::
 
