@@ -26,7 +26,7 @@ The If-Then Planning Scale (ITPS) is licensed under a [Creative Commons Attribut
 
 To give appropriate credit, please cite the following publication:
 
-Bieleke, M., & Keller, L. (2021). Individual differences in if-then planning: Insights from the development and application of the If-Then Planning Scale (ITPS). *Personality and Individual Differences*, *170*, Article 110500. [ ](https://doi.org/10.1016/j.paid.2020.110500)
+Bieleke, M., & Keller, L. (2021). Individual differences in if-then planning: Insights from the development and application of the If-Then Planning Scale (ITPS). *Personality and Individual Differences*, *170*, Article 110500. [https://doi.org/10.1016/j.paid.2020.110500](https://doi.org/10.1016/j.paid.2020.110500)
 
 
 ## Adminstration

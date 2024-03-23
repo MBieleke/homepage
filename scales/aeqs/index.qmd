@@ -34,7 +34,7 @@ The Achievement Emotions Questionnaire - Short (AEQ-S) is licensed under a [Crea
 
 To give appropriate credit, please cite the following publication:
 
-Bieleke, M., Gogol, K., Goetz, T., Daniels, L., & Pekrun, R. (2021). The AEQ-S: A short version of the Achievement Emotions Questionnaire. *Contemporary Educational Psychology*, *65*, 101940. [ ](https://doi.org/10.1016/j.cedpsych.2020.101940)
+Bieleke, M., Gogol, K., Goetz, T., Daniels, L., & Pekrun, R. (2021). The AEQ-S: A short version of the Achievement Emotions Questionnaire. *Contemporary Educational Psychology*, *65*, 101940. [https://doi.org/10.1016/j.cedpsych.2020.101940](https://doi.org/10.1016/j.cedpsych.2020.101940)
 
 ## Adminstration
 
@@ -56,10 +56,10 @@ An overall score for each scale is obtained by averaging a participant's ratings
 
 Yes. Just make sure to give appropriate credit in the resulting publications (see above).
 
-### Can I translate or otherwise modifiy the AEQ-S?
+### Can I translate or otherwise modify the AEQ-S?
 
 Yes. You can adapt the AEQ-S in any way you want, including translations into other languages. Just make sure to give appropriate credit in the resulting publications (see above).
 
 ### Is the AEQ-S already available in languages other than English?
 
-The AEQ-S has so far been validated in English. However, it is worth noting that the items of the AEQ-S are drawn form a broader pool of original AEQ items. Consequently, it would be possible to use translations of the original AEQ to translate the AEQ-S. Naturally, these translations must then undergo thorough validation to ensure that their reliability and validity are maintained.
+The AEQ-S has so far been validated in English. However, the items of the AEQ-S are drawn form a broader pool of original AEQ items, which have been translated in other languages and can therefore serve as a starting point for translating the AEQ-S. Naturally, these translations must then undergo thorough validation to ensure that their reliability and validity are maintained.
