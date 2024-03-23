@@ -1,6 +1,5 @@
 ---
-title: "**AEQ-S**"
-subtitle: "Achievement Emotions Questionnaire - Short"
+title: "Achievement Emotions Questionnaire - Short"
 author:
   - name: Maik Bieleke
     orcid: 0000-0003-2586-1416
