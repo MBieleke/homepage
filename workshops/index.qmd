@@ -49,11 +49,11 @@ Topics:
 
 Details:
 
-- Duration: ideally 4 days, but can be adjusted to your needs
+- Duration: 3 to 4 days, but can be adjusted to your needs
 - Language: available in English and German
-- Location: either in-person or online
+- Location: either online or in-person
 
-If you are interested in the StartR workshop, [please contact me](mailto:maik.bieleke@uni-konstanz.de).
+<a class="btn btn-success btn-lg rounded-pill"  href="mailto:maik.bieleke@uni-konstanz.de?subject=StartR Workshop" role="button">{{< iconify entypo email >}} Get in touch</a>
 
 :::
 

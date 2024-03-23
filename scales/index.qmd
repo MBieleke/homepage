@@ -1,7 +1,5 @@
 ---
-title: "{{< iconify tabler pencil-x >}} Scales" 
-description: |
-  Here is a list of scales I have developed in my research. Each scale is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/){.external target="_blank"}. In short, this license allows anyone to share and adapt these scales for any purpose and without requiring my permission. The only requirement is to give appropriate credit, in general by citing the corresponding publication. Select a scale to see further details and get instructions for usage and referencing.
+title: "{{< iconify tabler pencil-x >}} Scales"
 listing: 
   contents: 
     - "**/index.qmd"
@@ -27,4 +25,7 @@ header-includes: >
   <link rel="stylesheet" href="../assets/listing-default.css">
 resources:
   - ../assets/listing-default.css
+---
+
+Here is a list of scales I have developed in my research. Each scale is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/){.external target="_blank"}. In short, this license allows anyone to share and adapt these scales for any purpose and without requiring my permission. The only requirement is to give appropriate credit, in general by citing the corresponding publication. Select a scale to see further details and get instructions for usage and referencing.
 ---

@@ -36,7 +36,7 @@ execute:
 ---
 
 ::: {#about-me style="text-align: center;"}
-I'm a senior researcher and data scientist in the [sport psychology lab](https://www.sportwissenschaft.uni-konstanz.de/schueler/schueler/research/sport-psychology-lab/) at the University of Konstanz, Germany. My interestes include human motivation, effort, and performance in basic and applied research. I passionately use R for data science and in my general workflow.
+I'm a senior researcher and data scientist in the [sport psychology lab](https://www.sportwissenschaft.uni-konstanz.de/schueler/schueler/research/sport-psychology-lab/){.external target="_blank"} at the University of Konstanz, Germany. My interestes include human motivation, effort, and performance in basic and applied research. I passionately use R for data science and in my general workflow.
 :::
 
 ::: {.callout-tip icon="false"}
@@ -56,7 +56,7 @@ Bonus:
 
 The final chapter is a collective effort of all contributors, offering a panoramic view of the field and outlining its future directions.
 
-[Check it out!](https://www.routledge.com/The-Routledge-International-Handbook-of-Boredom/Bieleke-Wolff-Martarelli/p/book/9781032221861){.external target="_blank"}
+<a class="btn btn-success rounded-pill" href="https://www.routledge.com/The-Routledge-International-Handbook-of-Boredom/Bieleke-Wolff-Martarelli/p/book/9781032221861" target="_blank" role="button"> Check it out {{< iconify bi box-arrow-up-right >}}</a>
 :::
 
 ::: {.column width="10%"}
