@@ -12,6 +12,8 @@ about:
   links:
     - icon: envelope
       href: "mailto:maik.bieleke@uni-konstanz.de"
+    - text: "{{< iconify simple-icons bluesky >}}"
+      href: https://bsky.app/profile/mbieleke.bsky.social
     - icon: twitter
       href: https://twitter.com/MBieleke
     - icon: github
@@ -34,5 +36,5 @@ execute:
 ---
 
 ::: {#about-me}
-I'm a senior researcher and data scientist at the University of Konstanz, Germany. With a background in psychology and economics, my interestes include human motivation, effort, and performance in basic and applied research. I passionately use R for data science and in my general workflow.
+I'm a senior researcher and data scientist in the [sport psychology lab](https://www.sportwissenschaft.uni-konstanz.de/schueler/schueler/research/sport-psychology-lab/) at the University of Konstanz, Germany. My interestes include human motivation, effort, and performance in basic and applied research. I passionately use R for data science and in my general workflow.
 :::
