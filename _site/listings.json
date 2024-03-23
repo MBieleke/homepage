@@ -60,12 +60,6 @@
     ]
   },
   {
-    "listing": "/questionnaires/index.html",
-    "items": [
-      "/questionnaires/aeqs/index.html"
-    ]
-  },
-  {
     "listing": "/scales/index.html",
     "items": [
       "/scales/aeqs/index.html",

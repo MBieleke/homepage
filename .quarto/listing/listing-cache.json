@@ -5,11 +5,6 @@
       "**/index.markdown",
       "**/index.md"
     ],
-    "questionnaires\\index.qmd": [
-      "**/index.qmd",
-      "**/index.markdown",
-      "**/index.md"
-    ],
     "scales\\index.qmd": [
       "**/index.qmd",
       "**/index.markdown",
