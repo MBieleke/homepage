@@ -39,18 +39,18 @@ execute:
 I'm a senior researcher and data scientist in the [sport psychology lab](https://www.sportwissenschaft.uni-konstanz.de/schueler/schueler/research/sport-psychology-lab/) at the University of Konstanz, Germany. My interestes include human motivation, effort, and performance in basic and applied research. I passionately use R for data science and in my general workflow.
 :::
 
-::: {.callout-tip icon=false}
-## {{< iconify fluent megaphone-loud-16-filled >}} Out Now: Handbook of Boredom
+::: {.callout-tip icon="false"}
+## {{< iconify fluent megaphone-loud-16-filled >}} Out Now: The Handbook of Boredom
 
 ::: columns
 ::: {.column width="65%"}
-With contributions from boredom researchers across various disciplines, this book provides a unique and comprehensive exploration of boredom. 
+With contributions from boredom researchers across various disciplines, this book provides a unique and comprehensive exploration of boredom.
 
 What's inside:
 
-- Foundations: Insights into a multitude of theoretical, conceptual, historical, and methodologial aspects of boredom.
-- Correlates: Exploration of the properties of boredom and its links to self-control, mind-wandering, flow, and aggression.
-- Contexts: Approaches to boredom in various life domains and its role for health, well-being, and aesthetic experience.
+-   Foundations: Overview of a multitude of theoretical, conceptual, historical, and methodological aspects of boredom.
+-   Correlates: Exploration of the properties of boredom and its links to self-control, mind-wandering, flow, and aggression.
+-   Contexts: Insights into boredom in various life domains and its role for health, well-being, and aesthetic experience.
 
 Bonus:
 
@@ -63,8 +63,7 @@ The final chapter is a collective effort of all contributors, offering a panoram
 :::
 
 ::: {.column width="25%"}
-[![The Handbook of Boredom edited by Maik Bieleke, Wanja Wolff, and Corinna Martarelli.](img/boredom-book.png)](https://www.routledge.com/The-Routledge-International-Handbook-of-Boredom/Bieleke-Wolff-Martarelli/p/book/9781032221861){target="_blank"}
+[![The Handbook of Boredom, edited by Maik Bieleke, Wanja Wolff, & Corinna Martarelli.](img/boredom-book.png)](https://www.routledge.com/The-Routledge-International-Handbook-of-Boredom/Bieleke-Wolff-Martarelli/p/book/9781032221861)
 :::
 :::
-
 :::

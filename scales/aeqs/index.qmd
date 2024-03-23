@@ -28,13 +28,13 @@ The **internal structure** of the AEQ-S is identical to the AEQ, as it uses a su
 
 ### License
 
-The Achievement Emotions Questionnaire - Short (AEQ-S) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/). In short, this license allows anyone to share and adapt the AEQ-S for any purpose and without requiring the authors' permission. The only requirement is to give appropriate credit (see next section).
+The Achievement Emotions Questionnaire - Short (AEQ-S) is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/){.external target="_blank"}. In short, this license allows anyone to share and adapt the AEQ-S for any purpose and without requiring the authors' permission. The only requirement is to give appropriate credit (see next section).
 
 ### Citation
 
 To give appropriate credit, please cite the following publication:
 
-Bieleke, M., Gogol, K., Goetz, T., Daniels, L., & Pekrun, R. (2021). The AEQ-S: A short version of the Achievement Emotions Questionnaire. *Contemporary Educational Psychology*, *65*, 101940. [https://doi.org/10.1016/j.cedpsych.2020.101940](https://doi.org/10.1016/j.cedpsych.2020.101940)
+Bieleke, M., Gogol, K., Goetz, T., Daniels, L., & Pekrun, R. (2021). The AEQ-S: A short version of the Achievement Emotions Questionnaire. *Contemporary Educational Psychology*, *65*, 101940. [https://doi.org/10.1016/j.cedpsych.2020.101940](https://doi.org/10.1016/j.cedpsych.2020.101940){.external target="_blank"}
 
 ## Adminstration
 

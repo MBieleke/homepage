@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Maik Bieleke</title>
+<title>Maik Bieleke -  Workshops</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +23,30 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./assets/images/icon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/iconify-1.0.8/iconify-icon.min.js"></script>
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../assets/images/icon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/iconify-1.0.8/iconify-icon.min.js"></script>
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/academicons-1.9.2/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -64,12 +67,44 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="styles.css">
+    const options = {
+      valueNames: ['listing-title','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: [],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<link rel="stylesheet" href="../assets/listing-default.css">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 
 <div id="quarto-search-results"></div>
@@ -77,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Maik Bieleke</span>
     </a>
   </div>
@@ -88,20 +123,20 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../index.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications/index.html" rel="" target="">
+    <a class="nav-link" href="../publications/index.html" rel="" target="">
  <span class="menu-text"><iconify-icon inline="" icon="ooui:articles-rtl"></iconify-icon> Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./scales/index.html" rel="" target="">
+    <a class="nav-link" href="../scales/index.html" rel="" target="">
  <span class="menu-text"><iconify-icon inline="" icon="tabler:pencil-x"></iconify-icon> Scales</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications/index.html" rel="" target="">
- <span class="menu-text"><iconify-icon inline="" icon="grommet-icons:workshop"></iconify-icon> Workshops</span></a>
+    <a class="nav-link active" href="../workshops/index.html" rel="" target="" aria-current="page">
+ <span class="menu-text"><iconify-icon inline="" icon="carbon:logo-r-script"></iconify-icon> Workshops</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -111,98 +146,72 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
-
-
-<div class="quarto-about-jolla">
-  <img src="img/mbieleke.png" class="about-image
-  round " style="height: 16em; width: 16em;">
- <header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Maik Bieleke</h1>
-<p class="subtitle lead">Senior Researcher &amp; Data Scientist</p>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header><div id="about-me" style="text-align: center;">
-<p>I’m a senior researcher and data scientist in the <a href="https://www.sportwissenschaft.uni-konstanz.de/schueler/schueler/research/sport-psychology-lab/">sport psychology lab</a> at the University of Konstanz, Germany. My interestes include human motivation, effort, and performance in basic and applied research. I passionately use R for data science and in my general workflow.</p>
-</div> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="mailto:maik.bieleke@uni-konstanz.de" class="about-link" rel="" target="">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://bsky.app/profile/mbieleke.bsky.social" class="about-link" rel="" target="">
-     <span class="about-link-text"><iconify-icon inline="" icon="simple-icons:bluesky"></iconify-icon></span>
-  </a>
-  <a href="https://twitter.com/MBieleke" class="about-link" rel="" target="">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://github.com/MBieleke/" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://www.linkedin.com/in/maik-bieleke/" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text"></span>
-  </a>
-  <a href="https://scholar.google.de/citations?user=EbGUz_gAAAAJ&amp;hl=en" class="about-link" rel="" target="">
-     <span class="about-link-text"><i class="ai  ai-google-scholar"></i></span>
-  </a>
-  <a href="https://orcid.org/0000-0003-2586-1416" class="about-link" rel="" target="">
-     <span class="about-link-text"><i class="ai  ai-orcid"></i></span>
-  </a>
-</div>
+<h1 class="title"><iconify-icon inline="" icon="carbon:logo-r-script"></iconify-icon> Workshops</h1>
 </div>
 
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<iconify-icon inline="" icon="fluent:megaphone-loud-16-filled"></iconify-icon> Out Now: The Handbook of Boredom
-</div>
-</div>
-<div class="callout-body-container callout-body">
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<p>As a data scientist with 10+ years of experience in R, I’m in a good position to support both beginners and advanced users in learning how to use R effectively for common data processing, analysis, visualization, and reporting tasks. I use R in my daily work and I have taught it in various settings, including university courses for students, professional workshops for researchers, and individual tutoring. If you are interested in learning R, please contact me to discuss your needs and goals. I am happy to provide you with more information and to answer any questions you may have.</p>
+<section id="startr-workshop" class="level2">
+<h2 class="anchored" data-anchor-id="startr-workshop">StartR Workshop</h2>
+<p>The StartR workshop is designed to provide a solid introduction to R. It is suitable for novices with no prior experience in R as well as for beginners who want to consolidate and improve their skills. The workshop comprises both interactive lectures and hands-on exercises using real-word data.</p>
 <div class="columns">
-<div class="column" style="width:65%;">
-<p>With contributions from boredom researchers across various disciplines, this book provides a unique and comprehensive exploration of boredom.</p>
-<p>What’s inside:</p>
+<div class="column" style="width:50%;">
+<p>Topics:</p>
 <ul>
-<li>Foundations: Overview of a multitude of theoretical, conceptual, historical, and methodological aspects of boredom.</li>
-<li>Correlates: Exploration of the properties of boredom and its links to self-control, mind-wandering, flow, and aggression.</li>
-<li>Contexts: Insights into boredom in various life domains and its role for health, well-being, and aesthetic experience.</li>
+<li>Introduction to R and RStudio</li>
+<li>Building blocks of the R language</li>
+<li>Creating and working with objects in R</li>
+<li>General workflow using R projects</li>
+<li>Data merging, reshaping, and aggregation</li>
+<li>Exploring and visualizing data</li>
+<li>Analyzing data and testing hypotheses</li>
 </ul>
-<p>Bonus:</p>
-<p>The final chapter is a collective effort of all contributors, offering a panoramic view of the field and outlining its future directions.</p>
-<p><a href="https://www.routledge.com/The-Routledge-International-Handbook-of-Boredom/Bieleke-Wolff-Martarelli/p/book/9781032221861" class="external" target="_blank">Check it out!</a></p>
+<p>Details:</p>
+<ul>
+<li>Duration: ideally 4 days, but can be adjusted to your needs</li>
+<li>Language: available in English and German</li>
+<li>Location: either in-person or online</li>
+</ul>
+<p>If you are interested in the StartR workshop, <a href="mailto:maik.bieleke@uni-konstanz.de">please contact me</a>.</p>
 </div><div class="column" style="width:10%;">
 
-</div><div class="column" style="width:25%;">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://www.routledge.com/The-Routledge-International-Handbook-of-Boredom/Bieleke-Wolff-Martarelli/p/book/9781032221861" target="_blank"><img src="img/boredom-book.png" class="img-fluid figure-img"></a></p>
-<figcaption class="figure-caption">The Handbook of Boredom, edited by Maik Bieleke, Wanja Wolff, &amp; Corinna Martarelli.</figcaption>
-</figure>
-</div>
-</div>
-</div>
+</div><div class="column" style="width:40%;">
+<p><img src="startr.png" class="img-fluid"></p>
 </div>
 </div>
 
 
 
+</section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -223,6 +232,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     

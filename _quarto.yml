@@ -10,10 +10,12 @@ website:
     left:
       - href: index.qmd
         text: About
-      - text: Publications
+      - text: "{{< iconify ooui articles-rtl >}} Publications"
         href: publications/index.qmd
-      - text: Scales
+      - text: "{{< iconify tabler pencil-x >}} Scales"
         href: scales/index.qmd
+      - text: "{{< iconify carbon logo-r-script >}} Workshops"
+        href: workshops/index.qmd
 
   page-footer:  
     left: >-

@@ -1,7 +1,7 @@
 ---
-title: "Publications" 
+title: "{{< iconify ooui articles-rtl >}} Publications" 
 description: |
-  Here is a list of my publications. Select a publication to see more details and links to OSF and PsyArXiv.
+  Most of my more recent publications are freely available as preprints on PsyArXiv. Data and materials are available via OSF. If you need an individual copy of a publication or access to additional data and materials, [send me an email](mailto:maik.bieleke@uni-konstanz.de).
 listing: 
   contents: 
     - "**/index.qmd"
