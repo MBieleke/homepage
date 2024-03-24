@@ -2,7 +2,7 @@
 title: "Maik Bieleke"
 pagetitle: "Maik Bieleke"
 subtitle: "Senior Researcher & Data Scientist"
-image: "img/mbieleke.png"
+image: "assets/images/mbieleke.png"
 
 about:
   template: jolla
@@ -63,7 +63,7 @@ The final chapter is a collective effort of all contributors, offering a panoram
 :::
 
 ::: {.column width="25%"}
-[![The Handbook of Boredom, edited by Maik Bieleke, Wanja Wolff, & Corinna Martarelli.](img/boredom-book.png)](https://www.routledge.com/The-Routledge-International-Handbook-of-Boredom/Bieleke-Wolff-Martarelli/p/book/9781032221861)
+[![The Handbook of Boredom, edited by Maik Bieleke, Wanja Wolff, & Corinna Martarelli.](assets/images/boredom-book.png)](https://www.routledge.com/The-Routledge-International-Handbook-of-Boredom/Bieleke-Wolff-Martarelli/p/book/9781032221861)
 :::
 :::
 :::
