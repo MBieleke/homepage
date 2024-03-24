@@ -40,13 +40,13 @@ I'm a senior researcher and data scientist in the [sport psychology lab](https:/
 :::
 
 ::: {.callout-tip icon="false"}
-## {{< iconify fluent megaphone-loud-16-filled >}} Out Now: The Handbook of Boredom
+## {{< iconify fluent megaphone-loud-16-filled >}} Out now: The Handbook of Boredom
 
 ::: columns
 ::: {.column width="65%"}
 With contributions from boredom researchers across various disciplines, this book provides a unique and comprehensive exploration of boredom.
 
-What's inside:
+Contents:
 
 -   Foundations: Overview of a multitude of theoretical, conceptual, historical, and methodological aspects of boredom.
 -   Correlates: Exploration of the properties of boredom and its links to self-control, mind-wandering, flow, and aggression.

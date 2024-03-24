@@ -1,5 +1,16 @@
 [
   {
+    "listing": "/workshops/index.html",
+    "items": []
+  },
+  {
+    "listing": "/scales/index.html",
+    "items": [
+      "/scales/aeqs/index.html",
+      "/scales/itps/index.html"
+    ]
+  },
+  {
     "listing": "/publications/index.html",
     "items": [
       "/publications/bieleke-goetz-krannich-2021-j-exp-educ/index.html",
@@ -58,16 +69,5 @@
       "/publications/martiny-huenger-bieleke-oettingen-2016-chapter/index.html",
       "/publications/janczyk-dambacher-bieleke-2015-psychol-res/index.html"
     ]
-  },
-  {
-    "listing": "/scales/index.html",
-    "items": [
-      "/scales/aeqs/index.html",
-      "/scales/itps/index.html"
-    ]
-  },
-  {
-    "listing": "/workshops/index.html",
-    "items": []
   }
 ]

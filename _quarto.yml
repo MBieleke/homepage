@@ -6,6 +6,7 @@ website:
   favicon: assets/images/icon.png
   page-navigation: true
   back-to-top-navigation: false
+  site-url: https://mbieleke.com
   navbar:
     left:
       - href: index.qmd
@@ -35,5 +36,5 @@ format:
     css: styles.css
     toc: true
 
-editor: visual
+editor: source
 
