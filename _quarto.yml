@@ -7,7 +7,9 @@ website:
   page-navigation: true
   back-to-top-navigation: false
   site-url: https://mbieleke.com
-  google-analytics: "G-DKJFT3XXCY"
+  google-analytics: 
+    tracking-id: "G-DKJFT3XXCY"
+    storage: "none"
   navbar:
     left:
       - href: index.qmd
