@@ -12,7 +12,23 @@ categories:
   - journal article
   - scale development
 description: "**{{< fa newspaper >}} Personality and Individual Differences**"
-abstract: "Making if-then plans is a self-regulation strategy that facilitates goal attainment. An open question is, however, whether there are individual differences in if-then planning. We, therefore, developed and validated the If-Then Planning Scale (ITPS) in three independent studies with more than 2600 participants. The ITPS is conceptually grounded in implementation intention theory, measuring whether individuals identify critical situations (if-part) and plan goal-directed behaviors (then-part) in terms of opportunities and obstacles. We established the psychometric qualities of the ITPS in Studies 1a and 1b and its convergent and discriminant validity in Studies 2 and 3. Applying the ITPS, we showed that if-then planning is associated with the attainment of environmental goals (Studies 1a and 1b), socioeconomic status (Studies 1a, 1b, and 2), and academic achievement (Study 3). Our results demonstrate individual differences in if-then planning that can be efficiently and reliably measured with the ITPS, and reveal systematic associations between these individual differences and goal attainment."
+abstract: |
+  Making if-then plans is a self-regulation strategy that facilitates goal attainment. An open question is, however, whether there are individual differences in if-then planning. We, therefore, developed and validated the If-Then Planning Scale (ITPS) in three independent studies with more than 2600 participants. The ITPS is conceptually grounded in implementation intention theory, measuring whether individuals identify critical situations (if-part) and plan goal-directed behaviors (then-part) in terms of opportunities and obstacles. We established the psychometric qualities of the ITPS in Studies 1a and 1b and its convergent and discriminant validity in Studies 2 and 3. Applying the ITPS, we showed that if-then planning is associated with the attainment of environmental goals (Studies 1a and 1b), socioeconomic status (Studies 1a, 1b, and 2), and academic achievement (Study 3). Our results demonstrate individual differences in if-then planning that can be efficiently and reliably measured with the ITPS, and reveal systematic associations between these individual differences and goal attainment.
 ---
 
-<a class="btn btn-dark rounded-pill" href="https://osf.io/w9635/" role="button">{{< ai osf >}} OSF</a> <a class="btn btn-dark rounded-pill" href="https://psyarxiv.com/2efnv/" role="button">{{< ai psyarxiv >}} PsyArXiv</a>
+<!-- OSF -->
+<a 
+  target = "_blank" 
+  class = "btn btn-dark rounded-pill" 
+  href = "https://osf.io/w9635/" 
+  role = "button">
+{{< ai osf >}} OSF
+</a>
+<!-- PsyArXiv -->
+<a 
+  target = "_blank"
+  class = "btn btn-dark rounded-pill"
+  href = "https://psyarxiv.com/2efnv/"
+  role = "button">
+{{< ai psyarxiv >}} PsyArXiv
+</a>

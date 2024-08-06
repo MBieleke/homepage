@@ -14,3 +14,12 @@ categories:
 description: "**{{< fa book >}} Routledge International Handbook of Consumer Psychology**"
 abstract: "Implementation intentions are if-then plans that help individuals attain their goals. Implementation intentions have proven beneficial in various domains in which individuals fall short of attaining their goals, from health behaviour through academic achievement to interpersonal issues. The aim of this chapter is to present research on how implementation intentions influence the affective, cognitive and conative components of consumer behaviour. We outline the nature of implementation intentions and describe moderators and mediators identified in previous research. Next, we adopt the perspective of comprehensive models of consumer behaviour and systematically review implementation intention effects along the lines of these models. Specifically, we describe how implementation intentions affect information acquisition, components of the decision process and internal and external influences on behaviour in consumer context. We conclude by outlining topics for future research on implementation intentions in the domain of consumer behavior."
 ---
+
+<!-- PsyArXiv -->
+<a 
+  target = "_blank"
+  class = "btn btn-dark rounded-pill"
+  href = "https://doi.org/10.31234/osf.io/u4znb"
+  role = "button">
+{{< ai psyarxiv >}} PsyArXiv
+</a>

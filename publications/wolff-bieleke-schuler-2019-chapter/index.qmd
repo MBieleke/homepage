@@ -14,5 +14,6 @@ categories:
   - book chapter
   - literature review
 description: "**{{< fa book >}} Endurance performance in sport: Psychological theory and interventions**"
-abstract: "People often struggle with attaining their goals. One important reason for this intention-behavior gap pertains to the difficulties of goal striving: to be successful, people must get started, stay on track, and bring their goal pursuits to a successful close. We show the importance of goal striving for endurance activities and describe the self-regulatory strategy of if-then planning (implementation intentions), which is known to facilitate goal striving in several domains. We illustrate when and how implementation intentions work, summarise the literature regarding their facilitative effects on goal attainment, and discuss their potential for enhancing endurance performance."
+abstract: |
+  People often struggle with attaining their goals. One important reason for this intention-behavior gap pertains to the difficulties of goal striving: to be successful, people must get started, stay on track, and bring their goal pursuits to a successful close. We show the importance of goal striving for endurance activities and describe the self-regulatory strategy of if-then planning (implementation intentions), which is known to facilitate goal striving in several domains. We illustrate when and how implementation intentions work, summarise the literature regarding their facilitative effects on goal attainment, and discuss their potential for enhancing endurance performance.
 ---

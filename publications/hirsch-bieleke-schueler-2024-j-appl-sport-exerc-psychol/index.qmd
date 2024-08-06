@@ -20,4 +20,19 @@ abstract: |
     As self-regulation is crucial in top-level performance, prior investigations aimed at studying the efficacy of the self-regulatory strategy of implementation intentions (i.e., if–then plans) in athletic performance. We investigated the inner obstacles (if) that athletes face in competitive situations and assessed the corresponding goal-directed behaviors (then) to design effective implementation intention theory-based interventions. We asked elite and youth-level cyclists (Study 1; *N* = 34; age: *M* = 23.7 ± 9.9 years) with a self-designed questionnaire and used a reworded version for assessing these research questions from a coach’s perspective (Study 2; *N* = 42; age: *M* = 50.2 ± 9.8 years). Dealing with demanding situations, pressure, and concentration were the most frequently named inner obstacles, while goal-directed behaviors were preparation, self-encouragement, relaxation (athletes), and concentration (coaches). The results highlight the emotional–psychological challenges that elite and youth-level cycling athletes face and provide insights for sport psychological research with implementation intentions.
 ---
 
-<a class="btn btn-dark rounded-pill" href="https://osf.io/2bqtx/" role="button">{{< ai osf >}} OSF</a> <a class="btn btn-dark rounded-pill" href="https://psyarxiv.com/heg9a/" role="button">{{< ai psyarxiv >}} PsyArXiv</a>
+<!-- OSF -->
+<a 
+  target = "_blank" 
+  class = "btn btn-dark rounded-pill" 
+  href = "https://osf.io/2bqtx/" 
+  role = "button">
+{{< ai osf >}} OSF
+</a>
+<!-- PsyArXiv -->
+<a 
+  target = "_blank"
+  class = "btn btn-dark rounded-pill"
+  href = "https://doi.org/10.31234/osf.io/heg9a"
+  role = "button">
+{{< ai psyarxiv >}} PsyArXiv
+</a>

@@ -14,7 +14,15 @@ categories:
   - journal article
   - original research
 description: "**{{< fa newspaper >}} PLoS ONE**"
-abstract: "Performance assessments play an essential role in performance diagnostics at schools. In practice, both announced and unannounced assessments are regularly used. However, it is unclear whether assessments are better administered announced or unannounced. From a theoretical perspective, it can be argued that announced assessments, mediated by the greater degree of students’ subjective control that accompanies them, should have a more beneficial effect on emotions, as well as the subsequently resulting performance, than unannounced assessments. To investigate these assumptions, emotion (enjoyment, anxiety) and achievement data (grades) were collected from 414 students in 19 lower- and upper-level tracks at a German secondary school on both announced and unannounced performance assessments. Less anxiety and more enjoyment occurred on the announced assessments. Moreover, enjoyment and anxiety were predictors of performance (i.e., school grades), which was better overall on announced assessments than on unannounced ones. The results of our field study suggest that announced assessments have more beneficial effects on emotions than unannounced assessments."
+abstract: |
+  Performance assessments play an essential role in performance diagnostics at schools. In practice, both announced and unannounced assessments are regularly used. However, it is unclear whether assessments are better administered announced or unannounced. From a theoretical perspective, it can be argued that announced assessments, mediated by the greater degree of students’ subjective control that accompanies them, should have a more beneficial effect on emotions, as well as the subsequently resulting performance, than unannounced assessments. To investigate these assumptions, emotion (enjoyment, anxiety) and achievement data (grades) were collected from 414 students in 19 lower- and upper-level tracks at a German secondary school on both announced and unannounced performance assessments. Less anxiety and more enjoyment occurred on the announced assessments. Moreover, enjoyment and anxiety were predictors of performance (i.e., school grades), which was better overall on announced assessments than on unannounced ones. The results of our field study suggest that announced assessments have more beneficial effects on emotions than unannounced assessments.
 ---
 
-<a class="btn btn-dark rounded-pill" href="https://osf.io/3pmr4/" role="button">{{< ai osf >}} OSF</a>
+<!-- OSF -->
+<a 
+  target = "_blank" 
+  class = "btn btn-dark rounded-pill" 
+  href = "https://osf.io/3pmr4/" 
+  role = "button">
+{{< ai osf >}} OSF
+</a>

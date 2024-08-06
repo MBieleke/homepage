@@ -14,7 +14,23 @@ categories:
   - journal article
   - original research
 description: "**{{< fa newspaper >}} Frontiers in Psychology**"
-abstract: "In response to the coronavirus disease 2019 (COVID-19) schools around the world have been closed to protect against the spread of coronavirus. In several countries, homeschooling has been introduced to replace classroom schooling. With a focus on individual differences, the present study examined 138 schoolers (age range = 6 to 21 years) regarding their self-control and boredom proneness. The results showed that both traits were important in predicting adherence to homeschooling. Schoolers with higher levels of self-control perceived homeschooling as less difficult, which in turn increased homeschooling adherence. In contrast, schoolers with higher levels of boredom proneness perceived homeschooling as more difficult, which in turn reduced homeschooling adherence. These results partially hold when it comes to studying in the classroom. However, boredom threatened adherence only in the homeschooling context. Our results indicate that boredom proneness is a critical construct to consider when educational systems switch to homeschooling during a pandemic."
+abstract: |
+  In response to the coronavirus disease 2019 (COVID-19) schools around the world have been closed to protect against the spread of coronavirus. In several countries, homeschooling has been introduced to replace classroom schooling. With a focus on individual differences, the present study examined 138 schoolers (age range = 6 to 21 years) regarding their self-control and boredom proneness. The results showed that both traits were important in predicting adherence to homeschooling. Schoolers with higher levels of self-control perceived homeschooling as less difficult, which in turn increased homeschooling adherence. In contrast, schoolers with higher levels of boredom proneness perceived homeschooling as more difficult, which in turn reduced homeschooling adherence. These results partially hold when it comes to studying in the classroom. However, boredom threatened adherence only in the homeschooling context. Our results indicate that boredom proneness is a critical construct to consider when educational systems switch to homeschooling during a pandemic.
 ---
 
-<a class="btn btn-dark rounded-pill" href="https://osf.io/32rwe/" role="button">{{< ai osf >}} OSF</a>
+<!-- OSF -->
+<a 
+  target = "_blank" 
+  class = "btn btn-dark rounded-pill" 
+  href = "https://osf.io/32rwe/" 
+  role = "button">
+{{< ai osf >}} OSF
+</a>
+<!-- PsyArXiv -->
+<a 
+  target = "_blank"
+  class = "btn btn-dark rounded-pill"
+  href = "https://doi.org/10.31234/osf.io/z2avp"
+  role = "button">
+{{< ai psyarxiv >}} PsyArXiv
+</a>

@@ -20,4 +20,27 @@ abstract: |
   Studies on voters have shown that emotions are an important factor in politics. However, less is known about emotions experienced by adolescents in the context of civic education. Applying the control-value theory to a cross-curricular context, we analyze the relations between two types of emotions experienced in civic education and their antecedents and effects on learning: achievement emotions experienced during in-class political discussions and epistemic emotions experienced during individual processing of political information in school. We hypothesized both types of emotions relate to control and value appraisal antecedents (e.g., internal political efficacy, personal importance). Further, we expected—depending on the specific emotion—positive or negative relations with academic outcomes (e.g., motivation, engagement, and knowledge). Data were collected with an online questionnaire in Austrian upper secondary schools with students (*N* = 594, *M*~age~ = 17.1) from grades 10 to 13. Bivariate latent correlations broadly support the expectations: We found mainly positive associations of antecedents and outcomes to enjoyment, hope, pride, curiosity, and surprise and negative associations to hopelessness, confusion, and boredom, but more complex correlation patterns for anxiety, anger, and shame. The results provide first insights into which emotions are experienced during political learning and underscore the importance of acknowledging the role of emotions in civic education.
 ---
 
-<a class="btn btn-dark rounded-pill" href="https://osf.io/kcunq/" role="button">{{< ai osf >}} OSF</a> <a class="btn btn-dark rounded-pill" href="https://doi.org/10.31234/osf.io/mfn8c" role="button">{{< ai psyarxiv >}} PsyArXiv</a>
+<!-- Preregistration -->
+<a 
+  target = "_blank" 
+  class = "btn btn-dark rounded-pill" 
+  href = "https://doi.org/10.17605/OSF.IO/R9A6G" 
+  role = "button">
+{{< ai preregistered >}} Preregistration
+</a>
+<!-- OSF -->
+<a 
+  target = "_blank" 
+  class = "btn btn-dark rounded-pill" 
+  href = "https://osf.io/kcunq/" 
+  role = "button">
+{{< ai osf >}} OSF
+</a>
+<!-- PsyArXiv -->
+<a 
+  target = "_blank"
+  class = "btn btn-dark rounded-pill"
+  href = "https://doi.org/10.31234/osf.io/mfn8c"
+  role = "button">
+{{< ai psyarxiv >}} PsyArXiv
+</a>

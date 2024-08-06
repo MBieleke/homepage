@@ -18,4 +18,11 @@ description: "**{{< fa newspaper >}} PLoS ONE**"
 abstract: "The tendency to be overly confident in one’s future and skills has long been studied. More recently, a correlate of this overconfidence, the tendency to overclaim knowledge, has been in the focus of research. Its antecedents and downstream behavioral consequences are still in question. In a sample of undergraduate students (*N* = 168), we tested whether a set of characteristics of the person (e.g., age, gender) and personality traits (i.e., the Dark Triad) is related to overclaiming knowledge. Moreover, we investigated whether overclaiming, in turn, predicts risk preferences. To this end, we asked individuals to rate their confidence in solving a set of different math problems and their familiarity with a set of math concepts. Some of these concepts were nonexistent, thereby allowing participants to overclaim knowledge. Participants then stated their general risk preference and performed three tasks revealing their general, financial, and social risk preferences. We demonstrated the hypothesized relationship between overclaiming and confidence. Furthermore, we observed that the assessed characteristics of the person were not correlated with overclaiming. If anything, height and digit ratio, a phenomenological correlate of hormonal differences during development, tended to be associated with overclaiming. Surprisingly, overclaiming was not at all related to risk preferences or personality traits. This set of results shows the need for relevant theoretical and methodological refinements."
 ---
 
-<a class="btn btn-dark rounded-pill" href="https://researchbox.org/201" role="button">{{< ai open-materials >}} Research Box</a>
+<!-- Research Box -->
+<a 
+  target = "_blank" 
+  class = "btn btn-dark rounded-pill" 
+  href = "https://researchbox.org/201" 
+  role = "button">
+{{< ai open-materials >}} Research Box
+</a>

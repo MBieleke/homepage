@@ -16,7 +16,15 @@ categories:
   - journal article
   - original research
 description: "**{{< fa newspaper >}} Journal of Behavioral Decision Making**"
-abstract: "We investigated whether social value orientation (SVO) moderates the effects of intuitive versus reflective information processing on responses to unfair offers. We measured SVO one week prior to an ultimatum game experiment in which participants had to accept or reject a series of 10 ultimatum offers including very low (unfair) ones. Before making these decisions, participants mentally contrasted their individual goals with the obstacle of pondering at length or acting in a hasty way; then they made the plan to adopt an intuitive or a reflective mode of processing (intuitive and reflective condition, respectively), or made no such plans (control condition). Participants with rather high (prosocial) SVO scores were more likely to accept unfair offers in the reflective than the intuitive condition. This effect also evinced for a subset of selfish individuals; however, the majority with rather low (selfish) scores made similar decisions in both conditions. This pattern of results suggests that SVO moderates the effects of intuitive versus reflective modes of processing on responses to low ultimatum offers."
+abstract: |
+  We investigated whether social value orientation (SVO) moderates the effects of intuitive versus reflective information processing on responses to unfair offers. We measured SVO one week prior to an ultimatum game experiment in which participants had to accept or reject a series of 10 ultimatum offers including very low (unfair) ones. Before making these decisions, participants mentally contrasted their individual goals with the obstacle of pondering at length or acting in a hasty way; then they made the plan to adopt an intuitive or a reflective mode of processing (intuitive and reflective condition, respectively), or made no such plans (control condition). Participants with rather high (prosocial) SVO scores were more likely to accept unfair offers in the reflective than the intuitive condition. This effect also evinced for a subset of selfish individuals; however, the majority with rather low (selfish) scores made similar decisions in both conditions. This pattern of results suggests that SVO moderates the effects of intuitive versus reflective modes of processing on responses to low ultimatum offers.
 ---
 
-<a class="btn btn-dark rounded-pill" href="https://psyarxiv.com/82rwb/" role="button">{{< ai psyarxiv >}} PsyArXiv</a>
+<!-- PsyArXiv -->
+<a 
+  target = "_blank"
+  class = "btn btn-dark rounded-pill"
+  href = "https://psyarxiv.com/82rwb/"
+  role = "button">
+{{< ai psyarxiv >}} PsyArXiv
+</a>

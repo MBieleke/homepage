@@ -98,3 +98,13 @@ description: "**{{< fa book >}} Handbook of Boredom**"
 abstract: |
   The concluding chapter of this book represents a collaborative effort between the editors and all contributing authors, resulting in a comprehensive overview of the current directions in boredom research. Summaries of each chapter not only underscore the multitude of perspectives on boredom but also elucidate the diverse approaches employed in its study. Furthermore, the chapter directs attention to both known and unknown aspects of boredom, providing a foundation for future research in the field.
 ---
+
+<!-- PsyArXiv -->
+<a 
+  target = "_blank"
+  class = "btn btn-dark rounded-pill"
+  href = "https://doi.org/10.31234/osf.io/xr9py"
+  role = "button">
+{{< ai psyarxiv >}} PsyArXiv
+</a>
+

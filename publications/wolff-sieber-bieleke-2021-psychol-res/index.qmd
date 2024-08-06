@@ -16,7 +16,15 @@ categories:
   - journal article
   - original research
 description: "**{{< fa newspaper >}} Psychological Research**"
-abstract: "The strength model of self-control proposes that all acts of self-control are energized by one global limited resource that becomes temporarily depleted by a primary self-control task, leading to impaired self-control performance in secondary self-control tasks. However, failed replications have cast doubt on the existence of this so-called ego depletion effect. Here, we investigated between-task (i.e., variation in self-control tasks) and within-task variation (i.e., task duration) as possible explanations for the conflicting literature on ego depletion effects. In a high-powered experiment (*N* = 709 participants), we used two established self-control tasks (Stroop task, transcription task) to test how variations in the duration of primary and secondary self-control tasks (2, 4, 8, or 16 min per task) affect the occurrence of an ego depletion effect (i.e., impaired performance in the secondary task). In line with the ego depletion hypothesis, subjects perceived longer lasting secondary tasks as more self-control demanding. Contrary to the ego depletion hypothesis, however, performance did neither suffer from prior self-control exertion, nor as a function of task duration. If anything, performance tended to improve when the primary self-control task lasted longer. These effects did not differ between the two self-control tasks, suggesting that the observed null findings were independent of task type."
+abstract: |
+  The strength model of self-control proposes that all acts of self-control are energized by one global limited resource that becomes temporarily depleted by a primary self-control task, leading to impaired self-control performance in secondary self-control tasks. However, failed replications have cast doubt on the existence of this so-called ego depletion effect. Here, we investigated between-task (i.e., variation in self-control tasks) and within-task variation (i.e., task duration) as possible explanations for the conflicting literature on ego depletion effects. In a high-powered experiment (*N* = 709 participants), we used two established self-control tasks (Stroop task, transcription task) to test how variations in the duration of primary and secondary self-control tasks (2, 4, 8, or 16 min per task) affect the occurrence of an ego depletion effect (i.e., impaired performance in the secondary task). In line with the ego depletion hypothesis, subjects perceived longer lasting secondary tasks as more self-control demanding. Contrary to the ego depletion hypothesis, however, performance did neither suffer from prior self-control exertion, nor as a function of task duration. If anything, performance tended to improve when the primary self-control task lasted longer. These effects did not differ between the two self-control tasks, suggesting that the observed null findings were independent of task type.
 ---
 
-<a class="btn btn-dark rounded-pill" href="https://psyarxiv.com/ub4p5/" role="button">{{< ai psyarxiv >}} PsyArXiv</a>
+<!-- PsyArXiv -->
+<a 
+  target = "_blank"
+  class = "btn btn-dark rounded-pill"
+  href = "https://doi.org/10.31234/osf.io/ub4p5"
+  role = "button">
+{{< ai psyarxiv >}} PsyArXiv
+</a>
