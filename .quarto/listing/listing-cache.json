@@ -9,11 +9,6 @@
       "**/index.qmd",
       "**/index.markdown",
       "**/index.md"
-    ],
-    "workshops\\index.qmd": [
-      "**/index.qmd",
-      "**/index.markdown",
-      "**/index.md"
     ]
   }
 }

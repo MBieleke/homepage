@@ -1,0 +1,20 @@
+---
+title: "On the virtues of fragile self-control: Boredom as a catalyst for adaptive behavior regulation"
+author:
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Wanja Wolff
+    orcid: 0000-0001-8130-0272
+  - name: Alex Bertrams
+    orcid: 0000-0003-1331-5178
+doi: 10.4324/9781003271536-11
+date: '2024 '
+date-format: "YYYY"
+categories:
+  - book chapter
+description: "**{{< fa book >}} Handbook of Boredom**"
+abstract: |
+  Self-control is a fragile mechanism by design, and there is an ongoing debate about the reasons for this fragility. A mechanistically plausible perspective is offered by reward-based models of self-control such as the expected value of control (EVC) theory. According to the EVC theory, the allocation of self-control requires effort, which serves as a dynamic signal that quantifies the costs of self-control. People thus use self-control sparingly and continuously adjust its allocation such that its expected value remains optimal. Boredom affects this process in two ways: It lowers the value of a focal activity compared to alternative activities and renders the maintenance of the focal activity more costly by increasing the required effort. Consequently, less control is allocated to an activity as it becomes boring, which in turn permits an optimal balance between goal-directed behavior (exploitation, directed exploration) and undirected exploration. The essential conclusion from the EVC perspective is that self-control must be fragile to be an adaptive function for behavior regulation. Conceiving self-control as a reward-based choice also helps to address some key open questions in the literature on boredom and self-control, such as the adequate conceptualization of trait boredom and the replicability of ego depletion effects.
+---
+
+<a class="btn btn-dark rounded-pill" href="https://psyarxiv.com/tgq95/" role="button">{{< ai psyarxiv >}} PsyArXiv</a>

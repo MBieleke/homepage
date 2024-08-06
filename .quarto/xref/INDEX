@@ -196,5 +196,23 @@
   },
   "workshops/index.qmd": {
     "index.html": "5a257174"
+  },
+  "publications/bieleke-wolff-martarelli-2024-handbook/index.qmd": {
+    "index.html": "faebe134"
+  },
+  "publications/bieleke-wolff-bertrams-2024-chapter/index.qmd": {
+    "index.html": "a57f5bc5"
+  },
+  "publications/bieleke-wolff-martarelli-2024-chapter-1/index.qmd": {
+    "index.html": "f4249938"
+  },
+  "publications/bieleke-wolff-martarelli-2024-chapter-2/index.qmd": {
+    "index.html": "1cb60e41"
+  },
+  "publications/hirsch-bieleke-schueler-2024-j-appl-sport-exerc-psychol/index.qmd": {
+    "index.html": "47c89628"
+  },
+  "publications/wolff-staehler-schueler-2024-preprint/index.qmd": {
+    "index.html": "5a169e10"
   }
 }

@@ -1,20 +1,20 @@
 ---
 title: "{{< iconify carbon logo-r-script >}} Workshops" 
-listing: 
-  contents: 
-    - "**/index.qmd"
-    - "**/index.markdown"
-    - "**/index.md"
-  sort: "name desc"
-  type: grid
-  categories: false
-  sort-ui: false
-  filter-ui: false
-  fields: [title, image]
-  image-align: left
-  date-format: "YYYY"
-  image-height: 300px
-  page-size: 25
+# listing: 
+#   contents: 
+#     - "**/index.qmd"
+#     - "**/index.markdown"
+#     - "**/index.md"
+#   sort: "name desc"
+#   type: grid
+#   categories: false
+#   sort-ui: false
+#   filter-ui: false
+#   fields: [title, image]
+#   image-align: left
+#   date-format: "YYYY"
+#   image-height: 300px
+#   page-size: 25
 
 format: 
   html: 

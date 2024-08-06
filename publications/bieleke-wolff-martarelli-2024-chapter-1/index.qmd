@@ -1,0 +1,18 @@
+---
+title: "Boredom is not boring"
+author:
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Wanja Wolff
+    orcid: 0000-0001-8130-0272
+  - name: Corinna S. Martarelli
+    orcid: 0000-0001-9160-793X
+doi: 10.4324/9781003271536
+date: '2024 '
+date-format: "YYYY"
+categories:
+  - book chapter
+description: "**{{< fa book >}} Handbook of Boredom**"
+abstract: |
+  That boredom is not boring is a long-established insight among many of the greatest thinkers in history. This is also reflected in a steadily increasing number of researchers who turn their attention to boredom across scientific disciplines. Their various insights and perspectives are the foundations of this book, to which the present chapter provides a brief introduction and overview.
+---

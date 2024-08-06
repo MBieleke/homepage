@@ -1,9 +1,5 @@
 [
   {
-    "listing": "/workshops/index.html",
-    "items": []
-  },
-  {
     "listing": "/scales/index.html",
     "items": [
       "/scales/aeqs/index.html",
@@ -13,23 +9,26 @@
   {
     "listing": "/publications/index.html",
     "items": [
+      "/publications/hirsch-bieleke-schueler-2024-j-appl-sport-exerc-psychol/index.html",
+      "/publications/wolff-staehler-schueler-2024-preprint/index.html",
+      "/publications/bieleke-wolff-bertrams-2024-chapter/index.html",
+      "/publications/bieleke-wolff-martarelli-2024-chapter-1/index.html",
+      "/publications/bieleke-wolff-martarelli-2024-chapter-2/index.html",
+      "/publications/bieleke-wolff-martarelli-2024-handbook/index.html",
       "/publications/bieleke-goetz-krannich-2021-j-exp-educ/index.html",
       "/publications/bieleke-goetz-yanagida-2022-zdm-math-educ/index.html",
       "/publications/bieleke-martarelli-wolff-2021-curr-psychol/index.html",
       "/publications/bieleke-staehler-wolff-2023-preprint/index.html",
       "/publications/bieleke-wolff-2021-perform-enhanc-health/index.html",
-      "/publications/bieleke-wolff-bertrams-2023-preprint/index.html",
       "/publications/brinkhof-ridderinkhof-bieleke-2023-curr-psychol/index.html",
       "/publications/goetz-bieleke-yanagida-2023-j-educ-psychol/index.html",
       "/publications/graf-goetz-bieleke-2023-polit-psychol/index.html",
-      "/publications/hirsch-bieleke-schueler-2021-preprint/index.html",
       "/publications/keller-bieleke-gollwitzer-2019-chapter-de/index.html",
       "/publications/martarelli-berthouzoz-bieleke-2022-sport-exerc-perform-psychol/index.html",
       "/publications/roos-goetz-krannich-2022-brit-j-educ-psychol/index.html",
       "/publications/schueler-bieleke-2023-preprint/index.html",
       "/publications/steahler-bieleke-wolff-2023-preprint/index.html",
       "/publications/wolff-bieleke-martarelli-2023-perform-enhanc-health/index.html",
-      "/publications/wolff-staehler-schueler-2023-preprint/index.html",
       "/publications/bieleke-ripper-schueler-2021-r-soc-open-sci/index.html",
       "/publications/bieleke-schwarzkopf-goetz-2022-plos-one/index.html",
       "/publications/bieleke-wolff-keller-2021-mot-emo/index.html",
