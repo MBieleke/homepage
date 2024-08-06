@@ -1,0 +1,31 @@
+---
+title: "Entwicklung eines kognitiven Trainings zur Steigerung der Informationsverarbeitungskompetenz unter Belastung für den Deutschen Segler-Verband"
+author:
+  - name: Kim-Marie Stadler
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Ole Benthien
+  - name: Wanja Wolff
+    orcid: 0000-0001-8130-0272
+date: '2021'
+date-format: "YYYY"
+categories:
+  - book chapter
+description: "**{{< fa book >}} BISp-Jahrbuch Forschungsförderung 2020/21**"
+abstract: |
+  **Ziel:** Über eine optimale körperliche Fitness hinaus, hängt Erfolg beim Segeln auch maßgeblich von psychologischen Faktoren ab. Athletinnen und Athleten müssen unter hoher körperlicher Belastung potentiell wettkampfentscheidende taktische Entscheidungen treffen. Hierzu ist eine optimale visuelle Informationsverarbeitung von zentraler Bedeutung. Ziel des Projektes ist es deswegen, eben diese Fertigkeit spezifisch zu schulen. Hierzu werden ein Test (RVIP Test) segelsportspezifisch adaptiert und in ein Training überführt. In Kombination mit dem regulären Athletiktraining wird erwartet, dass die erarbeiteten Verfahren für Athletinnen und Athleten des Deutschen Segler-Verbandes (DSV) leistungsförderlich sind. Diese Verfahren können nach Projektende dauerhaft vom DSV eingesetzt und evaluiert werden.
+
+  **Planung:** Das Projekt gliedert sich in drei Projektphasen (AP1, AP2a, AP2b und AP3). Zu Beginn wird ein computerisiertes Training zur visuellen Informationsverarbeitung erstellt (AP1). Daraufhin wird das Training an Nachwuchsathletinnen und -athleten des Bundesstützpunkts Friedrichshafen (AP2a) und Athletinnen und Athleten des Bundesstützpunkts Kiel (AP 2b) durchgeführt und kalibriert. Abschließend wird die dauerhafte Verfügbarmachung der entwickelten Verfahren durch Manualisierung der Inhalte gesichert (AP 3).
+  
+  **Ergebnisse:** Das Projekt generiert primär Ergebnisse und Methoden, die direkt für den Spitzensport - speziell für den Segelsport - nutzbar sind. Sowohl die Testdurchführung als auch die Auswertung werden leicht verständlich mit Open-Source Software erstellt. So fallen für den Verband keine weiteren Kosten an und das computerisierte RVIP Training kann auf beliebig vielen Computern ohne weitere wissenschaftliche Unterstützung durchgeführt und ausgewertet werden. Über den direkten Nutzen für den Segelsport ist es überdies denkbar, dass die entwickelten Verfahren auch für andere Bereiche des Spitzensports einsetzbar sind.
+---
+
+<!-- Link -->
+<a 
+  target = "_blank"
+  class = "btn btn-dark rounded-pill"
+  href = "https://www.bisp-surf.de/Record/PR020190700051"
+  role = "button">
+{{< iconify bi box-arrow-up-right >}} Link
+</a>
+

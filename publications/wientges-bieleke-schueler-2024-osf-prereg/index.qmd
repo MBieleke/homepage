@@ -1,0 +1,30 @@
+---
+title: "Testing a novel task paradigm for inducing cognitive and physical effort"
+author:
+  - name: Jonathan Wientges
+    orcid: 0009-0008-5376-6241
+  - name: Julia Schüler
+    orcid: 0000-0002-7790-0491
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+date: '2024'
+date-format: "YYYY"
+categories:
+  - preregistration
+description: "**{{< ai preregistered >}} OSF Registries**"
+abstract: |
+  Performing motor tasks requires a combination of physical and cognitive effort. In this study, we test a novel pegboard task paradigm designed to induce varying levels of physical and cognitive demand. The task paradigm includes two types of blocks: one primarily physically demanding and the other primarily cognitively demanding. The specific demand levels are changed independently in each block. 
+
+  We aim to examine how the experience of physical and cognitive effort varies across different blocks and demand levels. We also investigate cognitive, affective, and motivational experiences associated with these tasks. Furthermore, we examine the relationship between these experiences with individual differences in valuing cognitive and physical effort.
+  
+  Lastly, we focus on how individual differences in processing speed and working memory capacity relate to performance in the cognitive block. We expect that individuals with higher processing speed and working memory capacity will perform better in the cognitive block.
+---
+
+<!-- Preregistration -->
+<a 
+  target = "_blank" 
+  class = "btn btn-dark rounded-pill" 
+  href = "https://doi.org/10.17605/osf.io/dmfq4" 
+  role = "button">
+{{< ai preregistered >}} Preregistration
+</a>

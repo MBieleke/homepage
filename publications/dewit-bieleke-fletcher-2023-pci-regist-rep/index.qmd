@@ -1,0 +1,45 @@
+---
+title: "How long does it take to form a habit? A multi-center replication"
+author:
+  - name: Sanne de Wit
+    orcid: 0000-0003-1438-7085
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Paul Fletcher
+    orcid: 0000-0001-8257-1517
+  - name: Annette Horstmann
+    orcid: 0000-0001-6184-8484
+  - name: Julia Schüler
+    orcid: 0000-0002-7790-0491
+  - name: Lotte P. Brinkhof
+    orcid: 0000-0002-6763-6957
+  - name: Lukas J. Gunschera
+    orcid: 0000-0002-8241-0833
+  - name: Jaap Murre
+    orcid: 0000-0003-4447-9482
+doi: 10.17605/osf.io/bj9r2
+date: '2023'
+date-format: "YYYY"
+categories:
+  - preregistration
+description: "**{{< ai preregistered >}} PCI Registered Reports** (Stage 1)"
+abstract: |
+  How long does it take to form a habit? This question will be addressed by an innovative study by Lally et al. (2010), in which they tracked the subjective automaticity of a novel, daily (eating or exercise-related) routine, using the Self-Report Habit Index. They showed that the gradual automatization of a novel routine is best described by an asymptotic curve, and that it takes (a median of) 66 days to reach the asymptotic 'habit plateau', with a range of 18 to 254 days (based on statistical extrapolation). However, these findings were based on a small sample of 39 participants, and this influential study has not been replicated yet. Therefore, the aim of the present study is to conduct a near-exact, multi-centre replication at four different locations. We aim to recruit 800 participants to increase reliability.
+---
+
+<!-- Preregistration -->
+<a 
+  target = "_blank" 
+  class = "btn btn-dark rounded-pill" 
+  href = "https://osf.io/3te4b/" 
+  role = "button">
+{{< ai preregistered >}} Preregistration
+</a>
+<!-- OSF -->
+<a 
+  target = "_blank" 
+  class = "btn btn-dark rounded-pill" 
+  href = "https://osf.io/hpsft/?view_only=c8ec62553146496e8b5e4d100a0f08b5" 
+  role = "button">
+{{< ai osf >}} OSF
+</a>

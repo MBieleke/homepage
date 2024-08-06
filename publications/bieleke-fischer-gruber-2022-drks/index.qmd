@@ -1,0 +1,34 @@
+---
+title: "Promoting Physical Exercise in Lab and Life (ProPELL)"
+author:
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Ursula Fischer
+    orcid: 0000-0001-6907-6255
+  - name: Markus Gruber
+    orcid: 0000-0002-0233-3912
+  - name: Martina Kanning
+  - name: Daniel Keim
+  - name: Daniela Mier
+    orcid: 0000-0003-2518-7492
+  - name: Jens Pruessner
+    orcid: 0000-0002-8582-2980
+  - name: Julia Schüler
+    orcid: 0000-0002-7790-0491
+date: '2022'
+date-format: "YYYY"
+categories:
+  - preregistration
+description: "**{{< ai preregistered >}} German Clinical Trial Register** (Prospective Registration, ID: DRKS00029727)"
+abstract: |
+  Physical inactivity is a serious threat to public health and individual well-being, and levels of physical inactivity are soaring worldwide. Unfortunately, existing interventions aiming at the promotion of physical activity seem incapable of stopping or reversing this trend. In the ProPELL research project, we therefore adopt a novel multidisciplinary and multimethodological approach to promote physical activity with a dedicated focus on physical exercise. In a 21-week randomized controlled trial (RCT) study, participants in the experimental group receive an eight-week lab-based jump training, while participants in the control group receive no training. This is followed by an eight-week observation of physical activity and exercise behavior in both groups. Various physiological (e.g., cardiovascular, neuromuscular, and endocrine) and psychological (e.g., motivational, emotional, and behavioral) parameters are measured in both conditions at three time points: at baseline, after the intervention, and after the follow-up. This will be complemented by continuous measurements of exercise- and activity-related variables (e.g., physical activity, heart rate). The analyses will focus on changes and dynamic interactions of the assessed parameters during the intervention and the follow-up period, for instance, by capitalizing on visual data analytics.
+---
+
+<!-- Preregistration -->
+<a 
+  target = "_blank" 
+  class = "btn btn-dark rounded-pill" 
+  href = "https://drks.de/search/en/trial/DRKS00029727" 
+  role = "button">
+{{< ai preregistered >}} Preregistration
+</a>
