@@ -93,35 +93,6 @@ gtag('js', new Date());
 gtag('config', 'G-DKJFT3XXCY', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -226,7 +197,7 @@ window.Quarto = {
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    <p>Effort is instrumental for goal pursuit. But its exertion is aversive and people tend to invest as little effort as possible. Contrary to this general law of least effort, research shows that effort is sometimes treated as if it was valuable in its own right, and people exhibit stable differences with respect to their valuation of effort. Critically, individual-difference research that investigates if this valuation of effort is domain-general or specific to mental or physical contexts is lacking. Simply put, do people value (or not) any effort or are preferences specific to the mental and/or physical domain? Here, we investigate this question using a formalized mathematical approach (study 1) and from a developmental perspective (study 2). Study 1 employed a validated decomposed binary decision task to measure preferences regarding the allocation of mental versus physical effort. In a sample of <em>N</em> = 299 paid online workers (37% female, <span class="math inline">\(M_{\text{age}}\)</span> = 38.79 ± 11.24 years), we found that people differ markedly with respect to their preferred effort allocation. Multinomial regression analyses revealed that the disposition to value mental effort was linked to a preference for high mental effort, whereas the disposition to value physical effort was associated with a preference for physical effort. In study 2, we tested the robustness of these hypothetical preferences for effort allocations in a field context: In a sample of <em>N</em> = 300 schoolchildren (61% female, <span class="math inline">\(M_{\text{age}}\)</span> = 15.18 ± 1.54 years), we found that the disposition to value mental effort was linked to better grades in mathematics but not sports, whereas valuing physical effort was linked to better grades in sports but not mathematics. Supporting the hypothesis that people find activities of low value boring, valuing mental effort was linked to less boredom in mathematics and valuing physical effort was linked to less boredom in sports. Taken together, these results suggest that people are specific in the type of effort they value (or not), and these preferences are present already at young age. This has theoretical and practical implications with respect to how people approach effortful tasks.</p>
+    <p>Effort is instrumental for goal pursuit. But its exertion is aversive and people tend to invest as little effort as possible. Contrary to this general law of least effort, research shows that effort is sometimes treated as if it was valuable in its own right, and people exhibit stable differences with respect to their valuation of effort. Critically, individual-difference research that investigates if this valuation of effort is domain-general or specific to mental or physical contexts is lacking. Simply put, do people value (or not) any effort or are preferences specific to the mental and/or physical domain? Here, we investigate this question using a formalized mathematical approach (study 1) and from a developmental perspective (study 2). Study 1 employed a validated decomposed binary decision task to measure preferences regarding the allocation of mental versus physical effort. In a sample of <em>N</em> = 299 paid online workers (37% female, <em>M</em><sub>age</sub> = 38.79 ± 11.24 years), we found that people differ markedly with respect to their preferred effort allocation. Multinomial regression analyses revealed that the disposition to value mental effort was linked to a preference for high mental effort, whereas the disposition to value physical effort was associated with a preference for physical effort. In study 2, we tested the robustness of these hypothetical preferences for effort allocations in a field context: In a sample of <em>N</em> = 300 schoolchildren (61% female, <em>M</em><sub>age</sub> = 15.18 ± 1.54 years), we found that the disposition to value mental effort was linked to better grades in mathematics but not sports, whereas valuing physical effort was linked to better grades in sports but not mathematics. Supporting the hypothesis that people find activities of low value boring, valuing mental effort was linked to less boredom in mathematics and valuing physical effort was linked to less boredom in sports. Taken together, these results suggest that people are specific in the type of effort they value (or not), and these preferences are present already at young age. This has theoretical and practical implications with respect to how people approach effortful tasks.</p>
   </div>
 </div>
 
@@ -234,7 +205,8 @@ window.Quarto = {
 </header>
 
 
-<p><a class="btn btn-dark rounded-pill" href="https://psyarxiv.com/ycvxw/" role="button"><i class="ai  ai-psyarxiv"></i> PsyArXiv</a></p>
+<!-- OSF -->
+<p><a target="_blank" class="btn btn-dark rounded-pill" href="https://osf.io/fhdgc/" role="button"> <i class="ai  ai-osf"></i> OSF </a> <!-- PsyArXiv --> <a target="_blank" class="btn btn-dark rounded-pill" href="https://psyarxiv.com/ycvxw/" role="button"> <i class="ai  ai-psyarxiv"></i> PsyArXiv </a></p>
 
 
 
