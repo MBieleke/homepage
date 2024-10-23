@@ -1,0 +1,190 @@
+---
+title: "StartR Workshop"
+subtitle: "-- Introduction --"
+author: "Maik Bieleke, PhD"
+institute: "University of Konstanz"
+format: 
+  revealjs:
+    fontsize: 24pt
+    chalkboard: false
+    embed-resources: true
+    slide-number: true
+    theme: [simple, _styles/unikn.scss]
+    logo: _styles/icon.png
+    footer: "[www.maikbieleke.com](https://www.maikbieleke.com)"
+    margin: 0.2
+    incremental: false 
+    slide-level: 2
+    highlight-style: a11y
+from: markdown+emoji
+revealjs-plugins:
+  - attribution
+---
+
+```{=html}
+<style> td,th {font-size: 25px} </style>
+```
+
+
+
+# About me
+
+<!-- ## Short bio -->
+
+<!-- | When         | What                               |                                            | -->
+<!-- |--------------|------------------------------------|--------------------------------------------| -->
+<!-- | 2007 -- 2012 | Student                            | Psychology & Economics                     | -->
+<!-- | 2012 -- 2015 | Ph.D. Student                      | Psychology                                 | -->
+<!-- | 2015 -- 2018 | Research fellow                    | Psychology of motivation & Psychoeconomics | -->
+<!-- | 2018 -- 2019 | Research associate                 | Empirical educational research             | -->
+<!-- | 2019 -- 2021 | Senior researcher                  | Developmental and educational psychology   | -->
+<!-- | 2021 -- now  | Senior researcher & Data scientist | Sport psychology                           | -->
+
+<!-- : {tbl-colwidths="\[15, 36, 50\]"} -->
+
+
+
+<!-- ## My interests -->
+
+<!-- -   Self-control and boredom as predictors of human behavior -->
+<!-- -   Physical and mental effort and performance -->
+<!-- -   Individual differences in motivation and volitional processes -->
+<!-- -   Causes, correlates, and consequences of emotions -->
+<!-- -   Behavior change interventions -->
+
+<!-- And of course: Data science and visualization in R! -->
+
+
+
+# About you
+
+<!-- -   What's your name? -->
+<!-- -   What's your research? -->
+<!-- -   Why do you want to learn R? -->
+
+
+
+
+
+
+# About the workshop
+
+## Goals
+::: {.columns}
+:::: {.column width="55%"}
+- You know your way around R and RStudio.
+- You are familiar with the basic R syntax.
+- You know the most important data structures in R.
+- You have a workflow for project management.
+- You can import, explore, and visualize your data.
+- You can perform basic statistical analyses in R.
+::::
+:::: {.column width="45%"}
+![](figures/r-hate-love.jpg)
+::::
+:::
+
+
+# Day 1
+
+::: panel-tabset
+### Morning
+
+:clock9: 09:00 - 12:00
+
+1.  Introduction to the workshop (09:00 - 09:30)
+2.  Getting started with R and RStudio (09:30 - 10:30)
+3.  Building blocks of the R language (10:30 - 12:00)
+
+### Afternoon
+
+:clock1: 13:00 - 16:00
+
+4.  Working with scalars and vectors (13:00 - 14:30)
+5.  Matrices and data frames (14:30 - 15:30)
+6.  Wrap-up and Q&A (15:30 - 16:00)
+:::
+
+# Day 2
+
+::: panel-tabset
+### Morning
+
+:clock9: 09:00 - 12:00
+
+1.  Recap and real-world data (09:00 - 09:30)
+2.  R Projects and Workflow (09:30 - 10:30)
+3.  Merging, reshaping, aggregating data (10:30 - 12.00)
+
+### Afternoon
+
+:clock1: 13:00 - 16:00
+
+4.  Exploring and visualizing data (13:00 - 14:00)
+5.  Hypothesis testing (14:00 - 15:30)
+6.  Wrap-Up and looking forward (15:30 - 16:00)
+:::
+
+
+
+
+
+# Why R and RStudio?
+
+## Toolboxes for data processing
+![](figures/whyR-processing.png)
+
+::: footer
+[https://www.tidyverse.org/](https://www.tidyverse.org/)
+:::
+
+## State-of-the art data analysis
+![](figures/whyR-models.png)
+
+::: footer
+[Bieleke et al. (2022, Table 4)](https://royalsocietypublishing.org/doi/10.1098/rsos.211998)
+:::
+
+## Beautiful data visualization
+![](figures/whyR-visualization.png)
+
+::: footer
+[Bieleke et al. (2019, Figure 1)](https://www.mdpi.com/2076-328X/9/9/93)
+:::
+
+## Programming interactive applications
+![](figures/whyR-shiny.png)
+
+::: footer
+[https://vnijs.shinyapps.io/radiant/](https://vnijs.shinyapps.io/radiant/)
+:::
+
+## Designing presentations
+![](figures/whyR-presentations.png)
+
+## Interactive notebooks
+![](figures/whyR-codebook.png)
+
+::: footer
+[https://posit.co/blog/r-notebooks/](https://posit.co/blog/r-notebooks/)
+:::
+
+## Authoring books and reports
+![](figures/whyR-books.jpg)
+
+::: footer
+[https://bookdown.org/yihui/bookdown/](https://bookdown.org/yihui/bookdown/)
+:::
+
+## AI-assisted coding
+![](figures/whyR-copilot.png)
+
+::: footer
+[https://docs.posit.co/ide/user/ide/guide/tools/copilot.html](https://docs.posit.co/ide/user/ide/guide/tools/copilot.html)
+:::
+
+
+
+
+
+

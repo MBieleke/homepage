@@ -73,5 +73,35 @@
       "/publications/martiny-huenger-bieleke-oettingen-2016-chapter/index.html",
       "/publications/janczyk-dambacher-bieleke-2015-psychol-res/index.html"
     ]
+  },
+  {
+    "listing": "/workshops/startr/index.html",
+    "items": [
+      "/workshops/startr/slides/startr-01_intro.html"
+    ]
+  },
+  {
+    "listing": "/workshops/startr-2024-asp/index.html",
+    "items": [
+      "/workshops/startr-2024-asp/slides/startr-01_intro.html"
+    ]
+  },
+  {
+    "listing": "/workshops/index.html",
+    "items": [
+      "/workshops/slides/startr-2023-frankfurt/index.html"
+    ]
+  },
+  {
+    "listing": "/workshops/slides/startr-2024-asp/index.html",
+    "items": [
+      "/workshops/slides/startr-2024-asp/startr-01_intro.html"
+    ]
+  },
+  {
+    "listing": "/workshops/slides/startr-2023-frankfurt/index.html",
+    "items": [
+      "/workshops/slides/startr-2023-frankfurt/startr-01_intro.html"
+    ]
   }
 ]

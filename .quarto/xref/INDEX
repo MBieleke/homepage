@@ -235,5 +235,32 @@
   },
   "publications/bieleke-wolff-2021-in-mind/index.qmd": {
     "index.html": "ab38d279"
+  },
+  "workshops/startr/startr-01_intro.qmd": {
+    "startr-01_intro.html": "1f2ebcef"
+  },
+  "workshops/startr/index.qmd": {
+    "index.html": "e72539b8"
+  },
+  "workshops/startr/slides/startr-01_intro.qmd": {
+    "startr-01_intro.html": "3beda09e"
+  },
+  "workshops/startr-2024-asp/index.qmd": {
+    "index.html": "fcd67c1b"
+  },
+  "workshops/startr-2024-asp/slides/startr-01_intro.qmd": {
+    "startr-01_intro.html": "fcc7a944"
+  },
+  "workshops/slides/startr-2024-asp/index.qmd": {
+    "index.html": "52c9b8b6"
+  },
+  "workshops/slides/startr-2024-asp/startr-01_intro.qmd": {
+    "startr-01_intro.html": "c3b2837d"
+  },
+  "workshops/slides/startr-2023-frankfurt/index.qmd": {
+    "index.html": "b33bfe4a"
+  },
+  "workshops/slides/startr-2023-frankfurt/startr-01_intro.qmd": {
+    "startr-01_intro.html": "634ce961"
   }
 }

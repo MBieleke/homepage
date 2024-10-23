@@ -9,6 +9,23 @@
       "**/index.qmd",
       "**/index.markdown",
       "**/index.md"
+    ],
+    "workshops\\startr\\index.qmd": [
+      "B3049D40"
+    ],
+    "workshops\\startr-2024-asp\\index.qmd": [
+      "B3049D40"
+    ],
+    "workshops\\index.qmd": [
+      "B3049D40",
+      "slides/startr-2024-asp/index.qmd",
+      "slides/startr-2023-frankfurt/index.qmd"
+    ],
+    "workshops\\slides\\startr-2024-asp\\index.qmd": [
+      "B3049D40"
+    ],
+    "workshops\\slides\\startr-2023-frankfurt\\index.qmd": [
+      "B3049D40"
     ]
   }
 }

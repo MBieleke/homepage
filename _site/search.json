@@ -11,7 +11,7 @@
     "href": "workshops/index.html#startr-workshop",
     "title": " Workshops",
     "section": "StartR Workshop",
-    "text": "StartR Workshop\nThe StartR workshop is designed to provide a solid introduction to R. It is suitable for novices with no prior experience in R as well as for beginners who want to consolidate and improve their skills. The workshop comprises both interactive lectures and hands-on exercises using real-word data.\n\n\nTopics:\n\nIntroduction to R and RStudio\nBuilding blocks of the R language\nCreating and working with objects in R\nGeneral workflow using R projects\nData merging, reshaping, and aggregation\nExploring and visualizing data\nAnalyzing data and testing hypotheses\n\nDetails:\n\nDuration: 3 to 4 days, but can be adjusted to your needs\nLanguage: available in English and German\nLocation: either online or in-person\n\n Get in touch"
+    "text": "StartR Workshop\nThe StartR workshop is designed to provide a solid introduction to R. It is suitable for novices with no prior experience in R as well as for beginners who want to consolidate and improve their skills. The workshop comprises both interactive lectures and hands-on exercises using real-word data.\n\n\nTopics:\n\nIntroduction to R and RStudio\nBuilding blocks of the R language\nCreating and working with objects in R\nGeneral workflow using R projects\nData merging, reshaping, and aggregation\nExploring and visualizing data\nAnalyzing data and testing hypotheses\n\nDetails:\n\nDuration: 3 to 4 days, but can be adjusted to your needs\nLanguage: available in English and German\nLocation: either online or in-person\n\n Get in touch\n\n\n\n\n\n\n\nOverview of current StartR workshops\nHere you can find an overview of the current StartR workshops. The workshops are listed in chronological order. Click on the workshop title to get more information (login is required for access to the slides).\n\n\n\n\n\nDate\n\n\nTitle\n\n\nDescription\n\n\n\n\n\n\nNov 2023\n\n\nStartR Frankfurt ’23\n\n\nTwo-day workshop at the Department of Sport Sciences at Goethe University Frankfurt.\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "scales/index.html",
@@ -411,5 +411,348 @@
     "title": "Bug or Feature? Langeweile ist unangenehm und gerade deswegen wichtig",
     "section": "",
     "text": "Link"
+  },
+  {
+    "objectID": "workshops/startr/startr-01_intro.html#goals",
+    "href": "workshops/startr/startr-01_intro.html#goals",
+    "title": "StartR Workshop",
+    "section": "Goals",
+    "text": "Goals\n\n\n\nYou know your way around R and RStudio.\nYou are familiar with the basic R syntax.\nYou know the most important data structures in R.\nYou have a workflow for project management.\nYou can import, explore, and visualize your data.\nYou can perform basic statistical analyses in R."
+  },
+  {
+    "objectID": "workshops/startr/startr-01_intro.html#toolboxes-for-data-processing",
+    "href": "workshops/startr/startr-01_intro.html#toolboxes-for-data-processing",
+    "title": "StartR Workshop",
+    "section": "Toolboxes for data processing",
+    "text": "Toolboxes for data processing\n\n\nhttps://www.tidyverse.org/"
+  },
+  {
+    "objectID": "workshops/startr/startr-01_intro.html#state-of-the-art-data-analysis",
+    "href": "workshops/startr/startr-01_intro.html#state-of-the-art-data-analysis",
+    "title": "StartR Workshop",
+    "section": "State-of-the art data analysis",
+    "text": "State-of-the art data analysis\n\n\nBieleke et al. (2022, Table 4)"
+  },
+  {
+    "objectID": "workshops/startr/startr-01_intro.html#beautiful-data-visualization",
+    "href": "workshops/startr/startr-01_intro.html#beautiful-data-visualization",
+    "title": "StartR Workshop",
+    "section": "Beautiful data visualization",
+    "text": "Beautiful data visualization\n\n\nBieleke et al. (2019, Figure 1)"
+  },
+  {
+    "objectID": "workshops/startr/startr-01_intro.html#programming-interactive-applications",
+    "href": "workshops/startr/startr-01_intro.html#programming-interactive-applications",
+    "title": "StartR Workshop",
+    "section": "Programming interactive applications",
+    "text": "Programming interactive applications\n\n\nhttps://vnijs.shinyapps.io/radiant/"
+  },
+  {
+    "objectID": "workshops/startr/startr-01_intro.html#designing-presentations",
+    "href": "workshops/startr/startr-01_intro.html#designing-presentations",
+    "title": "StartR Workshop",
+    "section": "Designing presentations",
+    "text": "Designing presentations"
+  },
+  {
+    "objectID": "workshops/startr/startr-01_intro.html#interactive-notebooks",
+    "href": "workshops/startr/startr-01_intro.html#interactive-notebooks",
+    "title": "StartR Workshop",
+    "section": "Interactive notebooks",
+    "text": "Interactive notebooks\n\n\nhttps://posit.co/blog/r-notebooks/"
+  },
+  {
+    "objectID": "workshops/startr/startr-01_intro.html#authoring-books-and-reports",
+    "href": "workshops/startr/startr-01_intro.html#authoring-books-and-reports",
+    "title": "StartR Workshop",
+    "section": "Authoring books and reports",
+    "text": "Authoring books and reports\n\n\nhttps://bookdown.org/yihui/bookdown/"
+  },
+  {
+    "objectID": "workshops/startr/startr-01_intro.html#ai-assisted-coding",
+    "href": "workshops/startr/startr-01_intro.html#ai-assisted-coding",
+    "title": "StartR Workshop",
+    "section": "AI-assisted coding",
+    "text": "AI-assisted coding\n\n\nhttps://docs.posit.co/ide/user/ide/guide/tools/copilot.html\n\n\n\n\n\nwww.maikbieleke.com"
+  },
+  {
+    "objectID": "workshops/startr/index.html",
+    "href": "workshops/startr/index.html",
+    "title": "Vorlesungsfolien",
+    "section": "",
+    "text": "Hier haben Sie Zugriff auf die Vorlesungsfolien. Die Folien werden nach und nach im Laufe des Semesters hochgeladen und stehen jeweils zum Vorlesungstermin zur Verfügung.\n\n\n\n\n\nDatum\n\n\nTitel\n\n\nBeschreibung\n\n\n\n\n\n\n \n\n\nStartR Workshop\n\n\n\n\n\n\n\n\nKeine Treffer\n\n\n\nWie komme ich an die Folien?\nDie Folien auf dieser Seite sind mit einem Passwort geschützt, dass in der Vorlesung bekannt gegeben wird. Geben Sie das Passwort ein, wenn Sie im Browser dazu aufgefordert werden.\n\n\nKann ich die Folien auch als PDF haben?\nJa, das ist möglich. Die Vorlesungsfolien sind zusätzlich als PDFs in der Uni-Cloud hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig.\nBitte beachten: Die Konvertierung in das PDF und der Upload in die Cloud erfolgt automatisiert und ohne manuelle Kontrolle durch spezielle Software. Die oben bereit gestellten Folien sind daher verbindlich. Sollten Ihnen Abweichungen in den PDFs auffallen, kontaktieren Sie uns bitte."
+  },
+  {
+    "objectID": "workshops/startr/slides/startr-01_intro.html#goals",
+    "href": "workshops/startr/slides/startr-01_intro.html#goals",
+    "title": "StartR Workshop",
+    "section": "Goals",
+    "text": "Goals\n\n\n\nYou know your way around R and RStudio.\nYou are familiar with the basic R syntax.\nYou know the most important data structures in R.\nYou have a workflow for project management.\nYou can import, explore, and visualize your data.\nYou can perform basic statistical analyses in R."
+  },
+  {
+    "objectID": "workshops/startr/slides/startr-01_intro.html#toolboxes-for-data-processing",
+    "href": "workshops/startr/slides/startr-01_intro.html#toolboxes-for-data-processing",
+    "title": "StartR Workshop",
+    "section": "Toolboxes for data processing",
+    "text": "Toolboxes for data processing\n\n\nhttps://www.tidyverse.org/"
+  },
+  {
+    "objectID": "workshops/startr/slides/startr-01_intro.html#state-of-the-art-data-analysis",
+    "href": "workshops/startr/slides/startr-01_intro.html#state-of-the-art-data-analysis",
+    "title": "StartR Workshop",
+    "section": "State-of-the art data analysis",
+    "text": "State-of-the art data analysis\n\n\nBieleke et al. (2022, Table 4)"
+  },
+  {
+    "objectID": "workshops/startr/slides/startr-01_intro.html#beautiful-data-visualization",
+    "href": "workshops/startr/slides/startr-01_intro.html#beautiful-data-visualization",
+    "title": "StartR Workshop",
+    "section": "Beautiful data visualization",
+    "text": "Beautiful data visualization\n\n\nBieleke et al. (2019, Figure 1)"
+  },
+  {
+    "objectID": "workshops/startr/slides/startr-01_intro.html#programming-interactive-applications",
+    "href": "workshops/startr/slides/startr-01_intro.html#programming-interactive-applications",
+    "title": "StartR Workshop",
+    "section": "Programming interactive applications",
+    "text": "Programming interactive applications\n\n\nhttps://vnijs.shinyapps.io/radiant/"
+  },
+  {
+    "objectID": "workshops/startr/slides/startr-01_intro.html#designing-presentations",
+    "href": "workshops/startr/slides/startr-01_intro.html#designing-presentations",
+    "title": "StartR Workshop",
+    "section": "Designing presentations",
+    "text": "Designing presentations"
+  },
+  {
+    "objectID": "workshops/startr/slides/startr-01_intro.html#interactive-notebooks",
+    "href": "workshops/startr/slides/startr-01_intro.html#interactive-notebooks",
+    "title": "StartR Workshop",
+    "section": "Interactive notebooks",
+    "text": "Interactive notebooks\n\n\nhttps://posit.co/blog/r-notebooks/"
+  },
+  {
+    "objectID": "workshops/startr/slides/startr-01_intro.html#authoring-books-and-reports",
+    "href": "workshops/startr/slides/startr-01_intro.html#authoring-books-and-reports",
+    "title": "StartR Workshop",
+    "section": "Authoring books and reports",
+    "text": "Authoring books and reports\n\n\nhttps://bookdown.org/yihui/bookdown/"
+  },
+  {
+    "objectID": "workshops/startr/slides/startr-01_intro.html#ai-assisted-coding",
+    "href": "workshops/startr/slides/startr-01_intro.html#ai-assisted-coding",
+    "title": "StartR Workshop",
+    "section": "AI-assisted coding",
+    "text": "AI-assisted coding\n\n\nhttps://docs.posit.co/ide/user/ide/guide/tools/copilot.html\n\n\n\n\n\nwww.maikbieleke.com"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#goals",
+    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#goals",
+    "title": "StartR Workshop",
+    "section": "Goals",
+    "text": "Goals\n\n\n\nYou know your way around R and RStudio.\nYou are familiar with the basic R syntax.\nYou know the most important data structures in R.\nYou have a workflow for project management.\nYou can import, explore, and visualize your data.\nYou can perform basic statistical analyses in R."
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#toolboxes-for-data-processing",
+    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#toolboxes-for-data-processing",
+    "title": "StartR Workshop",
+    "section": "Toolboxes for data processing",
+    "text": "Toolboxes for data processing\n\n\nhttps://www.tidyverse.org/"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#state-of-the-art-data-analysis",
+    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#state-of-the-art-data-analysis",
+    "title": "StartR Workshop",
+    "section": "State-of-the art data analysis",
+    "text": "State-of-the art data analysis\n\n\nBieleke et al. (2022, Table 4)"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#beautiful-data-visualization",
+    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#beautiful-data-visualization",
+    "title": "StartR Workshop",
+    "section": "Beautiful data visualization",
+    "text": "Beautiful data visualization\n\n\nBieleke et al. (2019, Figure 1)"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#programming-interactive-applications",
+    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#programming-interactive-applications",
+    "title": "StartR Workshop",
+    "section": "Programming interactive applications",
+    "text": "Programming interactive applications\n\n\nhttps://vnijs.shinyapps.io/radiant/"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#designing-presentations",
+    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#designing-presentations",
+    "title": "StartR Workshop",
+    "section": "Designing presentations",
+    "text": "Designing presentations"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#interactive-notebooks",
+    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#interactive-notebooks",
+    "title": "StartR Workshop",
+    "section": "Interactive notebooks",
+    "text": "Interactive notebooks\n\n\nhttps://posit.co/blog/r-notebooks/"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#authoring-books-and-reports",
+    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#authoring-books-and-reports",
+    "title": "StartR Workshop",
+    "section": "Authoring books and reports",
+    "text": "Authoring books and reports\n\n\nhttps://bookdown.org/yihui/bookdown/"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#ai-assisted-coding",
+    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#ai-assisted-coding",
+    "title": "StartR Workshop",
+    "section": "AI-assisted coding",
+    "text": "AI-assisted coding\n\n\nhttps://docs.posit.co/ide/user/ide/guide/tools/copilot.html"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/index.html",
+    "href": "workshops/startr-2024-asp/index.html",
+    "title": "Vorlesungsfolien",
+    "section": "",
+    "text": "Hier haben Sie Zugriff auf die Vorlesungsfolien. Die Folien werden nach und nach im Laufe des Semesters hochgeladen und stehen jeweils zum Vorlesungstermin zur Verfügung.\n\n\n\n\n\nDatum\n\n\nTitel\n\n\nBeschreibung\n\n\n\n\n\n\n \n\n\nStartR Workshop\n\n\n\n\n\n\n\n\nKeine Treffer\n\n\n\nWie komme ich an die Folien?\nDie Folien auf dieser Seite sind mit einem Passwort geschützt, dass in der Vorlesung bekannt gegeben wird. Geben Sie das Passwort ein, wenn Sie im Browser dazu aufgefordert werden.\n\n\nKann ich die Folien auch als PDF haben?\nJa, das ist möglich. Die Vorlesungsfolien sind zusätzlich als PDFs in der Uni-Cloud hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig.\nBitte beachten: Die Konvertierung in das PDF und der Upload in die Cloud erfolgt automatisiert und ohne manuelle Kontrolle durch spezielle Software. Die oben bereit gestellten Folien sind daher verbindlich. Sollten Ihnen Abweichungen in den PDFs auffallen, kontaktieren Sie uns bitte."
+  },
+  {
+    "objectID": "workshops/slides/startr-2024-asp/index.html",
+    "href": "workshops/slides/startr-2024-asp/index.html",
+    "title": "StartR Frankfurt ’23",
+    "section": "",
+    "text": "Hier haben Sie Zugriff auf die Folien des StartR Workshops. Klicken Sie dazu einfach auf den gewünschten Foliensatz und geben Sie das im Workshop genannte Passwort ein.\nDie Folien sind zusätzlich auch als PDF in einer Cloud hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig. Bitte beachten Sie, dass die Konvertierung der der Folien in das PDF Format automatisiert erfolgt und daher Abweichungen möglich sind.\n\n\n\n\n\nDatum\n\n\nTitel\n\n\nBeschreibung\n\n\n\n\n\n\n \n\n\nStartR Workshop\n\n\n\n\n\n\n\n\nKeine Treffer"
+  },
+  {
+    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#goals",
+    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#goals",
+    "title": "StartR Workshop",
+    "section": "Goals",
+    "text": "Goals\n\n\n\nYou know your way around R and RStudio.\nYou are familiar with the basic R syntax.\nYou know the most important data structures in R.\nYou have a workflow for project management.\nYou can import, explore, and visualize your data.\nYou can perform basic statistical analyses in R."
+  },
+  {
+    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#toolboxes-for-data-processing",
+    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#toolboxes-for-data-processing",
+    "title": "StartR Workshop",
+    "section": "Toolboxes for data processing",
+    "text": "Toolboxes for data processing\n\n\nhttps://www.tidyverse.org/"
+  },
+  {
+    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#state-of-the-art-data-analysis",
+    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#state-of-the-art-data-analysis",
+    "title": "StartR Workshop",
+    "section": "State-of-the art data analysis",
+    "text": "State-of-the art data analysis\n\n\nBieleke et al. (2022, Table 4)"
+  },
+  {
+    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#beautiful-data-visualization",
+    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#beautiful-data-visualization",
+    "title": "StartR Workshop",
+    "section": "Beautiful data visualization",
+    "text": "Beautiful data visualization\n\n\nBieleke et al. (2019, Figure 1)"
+  },
+  {
+    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#programming-interactive-applications",
+    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#programming-interactive-applications",
+    "title": "StartR Workshop",
+    "section": "Programming interactive applications",
+    "text": "Programming interactive applications\n\n\nhttps://vnijs.shinyapps.io/radiant/"
+  },
+  {
+    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#designing-presentations",
+    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#designing-presentations",
+    "title": "StartR Workshop",
+    "section": "Designing presentations",
+    "text": "Designing presentations"
+  },
+  {
+    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#interactive-notebooks",
+    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#interactive-notebooks",
+    "title": "StartR Workshop",
+    "section": "Interactive notebooks",
+    "text": "Interactive notebooks\n\n\nhttps://posit.co/blog/r-notebooks/"
+  },
+  {
+    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#authoring-books-and-reports",
+    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#authoring-books-and-reports",
+    "title": "StartR Workshop",
+    "section": "Authoring books and reports",
+    "text": "Authoring books and reports\n\n\nhttps://bookdown.org/yihui/bookdown/"
+  },
+  {
+    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#ai-assisted-coding",
+    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#ai-assisted-coding",
+    "title": "StartR Workshop",
+    "section": "AI-assisted coding",
+    "text": "AI-assisted coding\n\n\nhttps://docs.posit.co/ide/user/ide/guide/tools/copilot.html"
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/index.html",
+    "href": "workshops/slides/startr-2023-frankfurt/index.html",
+    "title": "StartR Frankfurt ’23",
+    "section": "",
+    "text": "Hier haben Sie Zugriff auf die Folien des StartR Workshops. Klicken Sie dazu einfach auf den gewünschten Foliensatz und geben Sie das im Workshop genannte Passwort ein.\nDie Folien sind zusätzlich auch als PDF in einer Cloud hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig. Bitte beachten Sie, dass die Konvertierung der der Folien in das PDF Format automatisiert erfolgt und daher Abweichungen möglich sind.\n\n\n\n\n\nDatum\n\n\nTitel\n\n\nBeschreibung\n\n\n\n\n\n\n \n\n\nStartR Workshop\n\n\n\n\n\n\n\n\nKeine Treffer"
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#goals",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#goals",
+    "title": "StartR Workshop",
+    "section": "Goals",
+    "text": "Goals\n\n\n\nYou know your way around R and RStudio.\nYou are familiar with the basic R syntax.\nYou know the most important data structures in R.\nYou have a workflow for project management.\nYou can import, explore, and visualize your data.\nYou can perform basic statistical analyses in R."
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#toolboxes-for-data-processing",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#toolboxes-for-data-processing",
+    "title": "StartR Workshop",
+    "section": "Toolboxes for data processing",
+    "text": "Toolboxes for data processing\n\n\nhttps://www.tidyverse.org/"
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#state-of-the-art-data-analysis",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#state-of-the-art-data-analysis",
+    "title": "StartR Workshop",
+    "section": "State-of-the art data analysis",
+    "text": "State-of-the art data analysis\n\n\nBieleke et al. (2022, Table 4)"
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#beautiful-data-visualization",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#beautiful-data-visualization",
+    "title": "StartR Workshop",
+    "section": "Beautiful data visualization",
+    "text": "Beautiful data visualization\n\n\nBieleke et al. (2019, Figure 1)"
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#programming-interactive-applications",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#programming-interactive-applications",
+    "title": "StartR Workshop",
+    "section": "Programming interactive applications",
+    "text": "Programming interactive applications\n\n\nhttps://vnijs.shinyapps.io/radiant/"
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#designing-presentations",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#designing-presentations",
+    "title": "StartR Workshop",
+    "section": "Designing presentations",
+    "text": "Designing presentations"
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#interactive-notebooks",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#interactive-notebooks",
+    "title": "StartR Workshop",
+    "section": "Interactive notebooks",
+    "text": "Interactive notebooks\n\n\nhttps://posit.co/blog/r-notebooks/"
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#authoring-books-and-reports",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#authoring-books-and-reports",
+    "title": "StartR Workshop",
+    "section": "Authoring books and reports",
+    "text": "Authoring books and reports\n\n\nhttps://bookdown.org/yihui/bookdown/"
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#ai-assisted-coding",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#ai-assisted-coding",
+    "title": "StartR Workshop",
+    "section": "AI-assisted coding",
+    "text": "AI-assisted coding\n\n\nhttps://docs.posit.co/ide/user/ide/guide/tools/copilot.html\n\n\n\n\n\nwww.maikbieleke.com"
   }
 ]

@@ -20,7 +20,7 @@ website:
         href: scales/index.qmd
       - text: "{{< iconify carbon logo-r-script >}} Workshops"
         href: workshops/index.qmd
-
+        
   page-footer:  
     left: >-
      &#169; 2023 Dr. Maik Bieleke &#8729; Made with [Quarto](https://quarto.org)
