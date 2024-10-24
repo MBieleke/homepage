@@ -1,5 +1,68 @@
 [
   {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#goals",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#goals",
+    "title": "StartR Workshop",
+    "section": "Goals",
+    "text": "Goals\n\n\n\nYou know your way around R and RStudio.\nYou are familiar with the basic R syntax.\nYou know the most important data structures in R.\nYou have a workflow for project management.\nYou can import, explore, and visualize your data.\nYou can perform basic statistical analyses in R."
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#toolboxes-for-data-processing",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#toolboxes-for-data-processing",
+    "title": "StartR Workshop",
+    "section": "Toolboxes for data processing",
+    "text": "Toolboxes for data processing\n\n\nhttps://www.tidyverse.org/"
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#state-of-the-art-data-analysis",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#state-of-the-art-data-analysis",
+    "title": "StartR Workshop",
+    "section": "State-of-the art data analysis",
+    "text": "State-of-the art data analysis\n\n\nBieleke et al. (2022, Table 4)"
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#beautiful-data-visualization",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#beautiful-data-visualization",
+    "title": "StartR Workshop",
+    "section": "Beautiful data visualization",
+    "text": "Beautiful data visualization\n\n\nBieleke et al. (2019, Figure 1)"
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#programming-interactive-applications",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#programming-interactive-applications",
+    "title": "StartR Workshop",
+    "section": "Programming interactive applications",
+    "text": "Programming interactive applications\n\n\nhttps://vnijs.shinyapps.io/radiant/"
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#designing-presentations",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#designing-presentations",
+    "title": "StartR Workshop",
+    "section": "Designing presentations",
+    "text": "Designing presentations"
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#interactive-notebooks",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#interactive-notebooks",
+    "title": "StartR Workshop",
+    "section": "Interactive notebooks",
+    "text": "Interactive notebooks\n\n\nhttps://posit.co/blog/r-notebooks/"
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#authoring-books-and-reports",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#authoring-books-and-reports",
+    "title": "StartR Workshop",
+    "section": "Authoring books and reports",
+    "text": "Authoring books and reports\n\n\nhttps://bookdown.org/yihui/bookdown/"
+  },
+  {
+    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#ai-assisted-coding",
+    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#ai-assisted-coding",
+    "title": "StartR Workshop",
+    "section": "AI-assisted coding",
+    "text": "AI-assisted coding\n\n\nhttps://docs.posit.co/ide/user/ide/guide/tools/copilot.html\n\n\n\n\n\nwww.maikbieleke.com"
+  },
+  {
     "objectID": "workshops/index.html",
     "href": "workshops/index.html",
     "title": " Workshops",
@@ -63,11 +126,11 @@
     "text": "OSF     PsyArXiv"
   },
   {
-    "objectID": "publications/steahler-bieleke-wolff-2023-preprint/index.html",
-    "href": "publications/steahler-bieleke-wolff-2023-preprint/index.html",
-    "title": "Different functions of physical effort: A scoping review of the value of physical effort in physical activity and sports",
+    "objectID": "publications/stadler-bieleke-benthien-2021-chapter/index.html",
+    "href": "publications/stadler-bieleke-benthien-2021-chapter/index.html",
+    "title": "Entwicklung eines kognitiven Trainings zur Steigerung der Informationsverarbeitungskompetenz unter Belastung für den Deutschen Segler-Verband",
     "section": "",
-    "text": "OSF     PsyArXiv"
+    "text": "Link"
   },
   {
     "objectID": "publications/martarelli-wolff-bieleke-2021-humanit-soc-sci-commun/index.html",
@@ -112,25 +175,39 @@
     "text": "PsyArXiv"
   },
   {
-    "objectID": "publications/bieleke-wolff-martarelli-2024-chapter-1/index.html",
-    "href": "publications/bieleke-wolff-martarelli-2024-chapter-1/index.html",
-    "title": "Boredom is not boring",
+    "objectID": "publications/brinkhof-ridderinkhof-bieleke-2023-curr-psychol/index.html",
+    "href": "publications/brinkhof-ridderinkhof-bieleke-2023-curr-psychol/index.html",
+    "title": "Are older individuals predisposed to habitual control more resilient?",
+    "section": "",
+    "text": "Preregistration"
+  },
+  {
+    "objectID": "publications/bieleke-wolff-martarelli-2024-chapter-2/index.html",
+    "href": "publications/bieleke-wolff-martarelli-2024-chapter-2/index.html",
+    "title": "Overview of current directions in boredom research",
     "section": "",
     "text": "PsyArXiv"
   },
   {
-    "objectID": "publications/bieleke-wolff-englert-2021-z-sportpsychol/index.html",
-    "href": "publications/bieleke-wolff-englert-2021-z-sportpsychol/index.html",
-    "title": "If-then planning in sports: A scoping review",
+    "objectID": "publications/bieleke-wolff-keller-2021-mot-emo/index.html",
+    "href": "publications/bieleke-wolff-keller-2021-mot-emo/index.html",
+    "title": "Getting trapped in a dead end? Trait self-control and boredom are linked to goal adjustment",
+    "section": "",
+    "text": "OSF     PsyArXiv"
+  },
+  {
+    "objectID": "publications/bieleke-wolff-bertrams-2024-chapter/index.html",
+    "href": "publications/bieleke-wolff-bertrams-2024-chapter/index.html",
+    "title": "On the virtues of fragile self-control: Boredom as a catalyst for adaptive behavior regulation",
     "section": "",
     "text": "PsyArXiv"
   },
   {
-    "objectID": "publications/bieleke-wolff-2021-perform-enhanc-health/index.html",
-    "href": "publications/bieleke-wolff-2021-perform-enhanc-health/index.html",
-    "title": "Special Issue: The self-regulation of human performance",
+    "objectID": "publications/bieleke-wolff-2021-in-mind/index.html",
+    "href": "publications/bieleke-wolff-2021-in-mind/index.html",
+    "title": "Bug or Feature? Langeweile ist unangenehm und gerade deswegen wichtig",
     "section": "",
-    "text": "PsyArXiv"
+    "text": "Link"
   },
   {
     "objectID": "publications/bieleke-schwarzkopf-goetz-2022-plos-one/index.html",
@@ -168,18 +245,11 @@
     "text": "PsyArXiv"
   },
   {
-    "objectID": "publications/bieleke-barton-wolff-2021-cognition-emotion/index.html",
-    "href": "publications/bieleke-barton-wolff-2021-cognition-emotion/index.html",
-    "title": "Trajectories of boredom in self-control demanding tasks",
+    "objectID": "publications/bieleke-dohmen-gollwitzer-2020-j-exp-soc-psychol/index.html",
+    "href": "publications/bieleke-dohmen-gollwitzer-2020-j-exp-soc-psychol/index.html",
+    "title": "Effects of social value orientation (SVO) and decision mode on controlled information acquisition - A Mouselab perspective",
     "section": "",
     "text": "OSF     PsyArXiv"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
     "objectID": "index.html",
@@ -189,11 +259,25 @@
     "text": "I’m a senior researcher and data scientist in the sport psychology lab at the University of Konstanz, Germany. My interestes include human motivation, effort, and performance in basic and applied research. I passionately use R for data science and in my general workflow.\n \n  \n   \n  \n    \n     \n  \n  \n     \n  \n  \n    \n     \n  \n  \n    \n     \n  \n  \n    \n     \n  \n  \n     \n  \n  \n     \n  \n\n\n\n\n\n\n\n\n\n Out now: The Handbook of Boredom\n\n\n\n\n\nWith contributions from boredom researchers across various disciplines, this book provides a unique and comprehensive exploration of boredom.\nContents:\n\nFoundations: Overview of a multitude of theoretical, conceptual, historical, and methodological aspects of boredom.\nCorrelates: Exploration of the properties of boredom and its links to self-control, mind-wandering, flow, and aggression.\nContexts: Insights into boredom in various life domains and its role for health, well-being, and aesthetic experience.\n\nBonus:\nThe final chapter is a collective effort of all contributors, offering a panoramic view of the field and outlining its future directions.\n Check it out \n\n\n\n\n\n\nThe Handbook of Boredom, edited by Maik Bieleke, Wanja Wolff, & Corinna Martarelli."
   },
   {
-    "objectID": "publications/bieleke-dohmen-gollwitzer-2020-j-exp-soc-psychol/index.html",
-    "href": "publications/bieleke-dohmen-gollwitzer-2020-j-exp-soc-psychol/index.html",
-    "title": "Effects of social value orientation (SVO) and decision mode on controlled information acquisition - A Mouselab perspective",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "publications/bieleke-barton-wolff-2021-cognition-emotion/index.html",
+    "href": "publications/bieleke-barton-wolff-2021-cognition-emotion/index.html",
+    "title": "Trajectories of boredom in self-control demanding tasks",
     "section": "",
     "text": "OSF     PsyArXiv"
+  },
+  {
+    "objectID": "publications/bieleke-fischer-gruber-2022-drks/index.html",
+    "href": "publications/bieleke-fischer-gruber-2022-drks/index.html",
+    "title": "Promoting Physical Exercise in Lab and Life (ProPELL)",
+    "section": "",
+    "text": "Preregistration"
   },
   {
     "objectID": "publications/bieleke-gollwitzer-oettingen-2017-j-behav-dec-making/index.html",
@@ -231,32 +315,32 @@
     "text": "PsyArXiv"
   },
   {
-    "objectID": "publications/bieleke-wolff-bertrams-2024-chapter/index.html",
-    "href": "publications/bieleke-wolff-bertrams-2024-chapter/index.html",
-    "title": "On the virtues of fragile self-control: Boredom as a catalyst for adaptive behavior regulation",
+    "objectID": "publications/bieleke-wolff-2021-perform-enhanc-health/index.html",
+    "href": "publications/bieleke-wolff-2021-perform-enhanc-health/index.html",
+    "title": "Special Issue: The self-regulation of human performance",
     "section": "",
     "text": "PsyArXiv"
   },
   {
-    "objectID": "publications/bieleke-wolff-keller-2021-mot-emo/index.html",
-    "href": "publications/bieleke-wolff-keller-2021-mot-emo/index.html",
-    "title": "Getting trapped in a dead end? Trait self-control and boredom are linked to goal adjustment",
-    "section": "",
-    "text": "OSF     PsyArXiv"
-  },
-  {
-    "objectID": "publications/bieleke-wolff-martarelli-2024-chapter-2/index.html",
-    "href": "publications/bieleke-wolff-martarelli-2024-chapter-2/index.html",
-    "title": "Overview of current directions in boredom research",
+    "objectID": "publications/bieleke-wolff-englert-2021-z-sportpsychol/index.html",
+    "href": "publications/bieleke-wolff-englert-2021-z-sportpsychol/index.html",
+    "title": "If-then planning in sports: A scoping review",
     "section": "",
     "text": "PsyArXiv"
   },
   {
-    "objectID": "publications/brinkhof-ridderinkhof-bieleke-2023-curr-psychol/index.html",
-    "href": "publications/brinkhof-ridderinkhof-bieleke-2023-curr-psychol/index.html",
-    "title": "Are older individuals predisposed to habitual control more resilient?",
+    "objectID": "publications/bieleke-wolff-martarelli-2024-chapter-1/index.html",
+    "href": "publications/bieleke-wolff-martarelli-2024-chapter-1/index.html",
+    "title": "Boredom is not boring",
     "section": "",
-    "text": "Preregistration"
+    "text": "PsyArXiv"
+  },
+  {
+    "objectID": "publications/dewit-bieleke-fletcher-2023-pci-regist-rep/index.html",
+    "href": "publications/dewit-bieleke-fletcher-2023-pci-regist-rep/index.html",
+    "title": "How long does it take to form a habit? A multi-center replication",
+    "section": "",
+    "text": "Preregistration     OSF"
   },
   {
     "objectID": "publications/graf-goetz-bieleke-2024-polit-psychol/index.html",
@@ -299,6 +383,20 @@
     "title": "Deliberation decreases the likelihood of expressing dominant responses",
     "section": "",
     "text": "OSF"
+  },
+  {
+    "objectID": "publications/steahler-bieleke-wolff-2023-preprint/index.html",
+    "href": "publications/steahler-bieleke-wolff-2023-preprint/index.html",
+    "title": "Different functions of physical effort: A scoping review of the value of physical effort in physical activity and sports",
+    "section": "",
+    "text": "OSF     PsyArXiv"
+  },
+  {
+    "objectID": "publications/wientges-bieleke-schueler-2024-osf-prereg/index.html",
+    "href": "publications/wientges-bieleke-schueler-2024-osf-prereg/index.html",
+    "title": "Testing a novel task paradigm for inducing cognitive and physical effort",
+    "section": "",
+    "text": "Preregistration"
   },
   {
     "objectID": "publications/wolff-hirsch-bieleke-2021-chapter/index.html",
@@ -378,381 +476,10 @@
     "text": "Adminstration\n\nAdministration\nThe ITPS can be administered in an online or in a paper-and-pencil format. Completing it takes about 1-2 minutes. The items might be presented in random order to avoid order effects. Participants rate each of the eight items on a 7-point Likert scale from 1 (strongly disagree) to 7 (strongly agree).\n\n\nInstruction\nThe ITPS has been developed as a domain-general measure of if-then planning. Accordingly, the instruction refers to goals in general and not to a specific goal. The focus is on difficult and important goals as only these goals require if-then planning to facilitate goal attainment. However, the instruction can in principle also be tailored to specific goals (e.g., health goals, learning goals) if the focus is on if-then planning in a particular domain.\n\n\nScoring and interpretation\nAn overall score is obtained by averaging a participant’s ratings across all eight items. All items are formulated in the same direction so that no reverse-coding is neccessary. A higher ITPS score indicates a greater propensity to engage in if-then planning.\nNote that although the ITPS is composed of different subscales (e.g., thinking about potential obstacles), subscale scores should only be used for explorative analyses. In general, it is recommended to interpret the overall ITPS score."
   },
   {
-    "objectID": "publications/dewit-bieleke-fletcher-2023-pci-regist-rep/index.html",
-    "href": "publications/dewit-bieleke-fletcher-2023-pci-regist-rep/index.html",
-    "title": "How long does it take to form a habit? A multi-center replication",
-    "section": "",
-    "text": "Preregistration     OSF"
-  },
-  {
-    "objectID": "publications/bieleke-fischer-gruber-2022-drks/index.html",
-    "href": "publications/bieleke-fischer-gruber-2022-drks/index.html",
-    "title": "Promoting Physical Exercise in Lab and Life (ProPELL)",
-    "section": "",
-    "text": "Preregistration"
-  },
-  {
-    "objectID": "publications/wientges-bieleke-schueler-2024-osf-prereg/index.html",
-    "href": "publications/wientges-bieleke-schueler-2024-osf-prereg/index.html",
-    "title": "Testing a novel task paradigm for inducing cognitive and physical effort",
-    "section": "",
-    "text": "Preregistration"
-  },
-  {
-    "objectID": "publications/stadler-bieleke-benthien-2021-chapter/index.html",
-    "href": "publications/stadler-bieleke-benthien-2021-chapter/index.html",
-    "title": "Entwicklung eines kognitiven Trainings zur Steigerung der Informationsverarbeitungskompetenz unter Belastung für den Deutschen Segler-Verband",
-    "section": "",
-    "text": "Link"
-  },
-  {
-    "objectID": "publications/bieleke-wolff-2021-in-mind/index.html",
-    "href": "publications/bieleke-wolff-2021-in-mind/index.html",
-    "title": "Bug or Feature? Langeweile ist unangenehm und gerade deswegen wichtig",
-    "section": "",
-    "text": "Link"
-  },
-  {
-    "objectID": "workshops/startr/startr-01_intro.html#goals",
-    "href": "workshops/startr/startr-01_intro.html#goals",
-    "title": "StartR Workshop",
-    "section": "Goals",
-    "text": "Goals\n\n\n\nYou know your way around R and RStudio.\nYou are familiar with the basic R syntax.\nYou know the most important data structures in R.\nYou have a workflow for project management.\nYou can import, explore, and visualize your data.\nYou can perform basic statistical analyses in R."
-  },
-  {
-    "objectID": "workshops/startr/startr-01_intro.html#toolboxes-for-data-processing",
-    "href": "workshops/startr/startr-01_intro.html#toolboxes-for-data-processing",
-    "title": "StartR Workshop",
-    "section": "Toolboxes for data processing",
-    "text": "Toolboxes for data processing\n\n\nhttps://www.tidyverse.org/"
-  },
-  {
-    "objectID": "workshops/startr/startr-01_intro.html#state-of-the-art-data-analysis",
-    "href": "workshops/startr/startr-01_intro.html#state-of-the-art-data-analysis",
-    "title": "StartR Workshop",
-    "section": "State-of-the art data analysis",
-    "text": "State-of-the art data analysis\n\n\nBieleke et al. (2022, Table 4)"
-  },
-  {
-    "objectID": "workshops/startr/startr-01_intro.html#beautiful-data-visualization",
-    "href": "workshops/startr/startr-01_intro.html#beautiful-data-visualization",
-    "title": "StartR Workshop",
-    "section": "Beautiful data visualization",
-    "text": "Beautiful data visualization\n\n\nBieleke et al. (2019, Figure 1)"
-  },
-  {
-    "objectID": "workshops/startr/startr-01_intro.html#programming-interactive-applications",
-    "href": "workshops/startr/startr-01_intro.html#programming-interactive-applications",
-    "title": "StartR Workshop",
-    "section": "Programming interactive applications",
-    "text": "Programming interactive applications\n\n\nhttps://vnijs.shinyapps.io/radiant/"
-  },
-  {
-    "objectID": "workshops/startr/startr-01_intro.html#designing-presentations",
-    "href": "workshops/startr/startr-01_intro.html#designing-presentations",
-    "title": "StartR Workshop",
-    "section": "Designing presentations",
-    "text": "Designing presentations"
-  },
-  {
-    "objectID": "workshops/startr/startr-01_intro.html#interactive-notebooks",
-    "href": "workshops/startr/startr-01_intro.html#interactive-notebooks",
-    "title": "StartR Workshop",
-    "section": "Interactive notebooks",
-    "text": "Interactive notebooks\n\n\nhttps://posit.co/blog/r-notebooks/"
-  },
-  {
-    "objectID": "workshops/startr/startr-01_intro.html#authoring-books-and-reports",
-    "href": "workshops/startr/startr-01_intro.html#authoring-books-and-reports",
-    "title": "StartR Workshop",
-    "section": "Authoring books and reports",
-    "text": "Authoring books and reports\n\n\nhttps://bookdown.org/yihui/bookdown/"
-  },
-  {
-    "objectID": "workshops/startr/startr-01_intro.html#ai-assisted-coding",
-    "href": "workshops/startr/startr-01_intro.html#ai-assisted-coding",
-    "title": "StartR Workshop",
-    "section": "AI-assisted coding",
-    "text": "AI-assisted coding\n\n\nhttps://docs.posit.co/ide/user/ide/guide/tools/copilot.html\n\n\n\n\n\nwww.maikbieleke.com"
-  },
-  {
-    "objectID": "workshops/startr/index.html",
-    "href": "workshops/startr/index.html",
-    "title": "Vorlesungsfolien",
-    "section": "",
-    "text": "Hier haben Sie Zugriff auf die Vorlesungsfolien. Die Folien werden nach und nach im Laufe des Semesters hochgeladen und stehen jeweils zum Vorlesungstermin zur Verfügung.\n\n\n\n\n\nDatum\n\n\nTitel\n\n\nBeschreibung\n\n\n\n\n\n\n \n\n\nStartR Workshop\n\n\n\n\n\n\n\n\nKeine Treffer\n\n\n\nWie komme ich an die Folien?\nDie Folien auf dieser Seite sind mit einem Passwort geschützt, dass in der Vorlesung bekannt gegeben wird. Geben Sie das Passwort ein, wenn Sie im Browser dazu aufgefordert werden.\n\n\nKann ich die Folien auch als PDF haben?\nJa, das ist möglich. Die Vorlesungsfolien sind zusätzlich als PDFs in der Uni-Cloud hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig.\nBitte beachten: Die Konvertierung in das PDF und der Upload in die Cloud erfolgt automatisiert und ohne manuelle Kontrolle durch spezielle Software. Die oben bereit gestellten Folien sind daher verbindlich. Sollten Ihnen Abweichungen in den PDFs auffallen, kontaktieren Sie uns bitte."
-  },
-  {
-    "objectID": "workshops/startr/slides/startr-01_intro.html#goals",
-    "href": "workshops/startr/slides/startr-01_intro.html#goals",
-    "title": "StartR Workshop",
-    "section": "Goals",
-    "text": "Goals\n\n\n\nYou know your way around R and RStudio.\nYou are familiar with the basic R syntax.\nYou know the most important data structures in R.\nYou have a workflow for project management.\nYou can import, explore, and visualize your data.\nYou can perform basic statistical analyses in R."
-  },
-  {
-    "objectID": "workshops/startr/slides/startr-01_intro.html#toolboxes-for-data-processing",
-    "href": "workshops/startr/slides/startr-01_intro.html#toolboxes-for-data-processing",
-    "title": "StartR Workshop",
-    "section": "Toolboxes for data processing",
-    "text": "Toolboxes for data processing\n\n\nhttps://www.tidyverse.org/"
-  },
-  {
-    "objectID": "workshops/startr/slides/startr-01_intro.html#state-of-the-art-data-analysis",
-    "href": "workshops/startr/slides/startr-01_intro.html#state-of-the-art-data-analysis",
-    "title": "StartR Workshop",
-    "section": "State-of-the art data analysis",
-    "text": "State-of-the art data analysis\n\n\nBieleke et al. (2022, Table 4)"
-  },
-  {
-    "objectID": "workshops/startr/slides/startr-01_intro.html#beautiful-data-visualization",
-    "href": "workshops/startr/slides/startr-01_intro.html#beautiful-data-visualization",
-    "title": "StartR Workshop",
-    "section": "Beautiful data visualization",
-    "text": "Beautiful data visualization\n\n\nBieleke et al. (2019, Figure 1)"
-  },
-  {
-    "objectID": "workshops/startr/slides/startr-01_intro.html#programming-interactive-applications",
-    "href": "workshops/startr/slides/startr-01_intro.html#programming-interactive-applications",
-    "title": "StartR Workshop",
-    "section": "Programming interactive applications",
-    "text": "Programming interactive applications\n\n\nhttps://vnijs.shinyapps.io/radiant/"
-  },
-  {
-    "objectID": "workshops/startr/slides/startr-01_intro.html#designing-presentations",
-    "href": "workshops/startr/slides/startr-01_intro.html#designing-presentations",
-    "title": "StartR Workshop",
-    "section": "Designing presentations",
-    "text": "Designing presentations"
-  },
-  {
-    "objectID": "workshops/startr/slides/startr-01_intro.html#interactive-notebooks",
-    "href": "workshops/startr/slides/startr-01_intro.html#interactive-notebooks",
-    "title": "StartR Workshop",
-    "section": "Interactive notebooks",
-    "text": "Interactive notebooks\n\n\nhttps://posit.co/blog/r-notebooks/"
-  },
-  {
-    "objectID": "workshops/startr/slides/startr-01_intro.html#authoring-books-and-reports",
-    "href": "workshops/startr/slides/startr-01_intro.html#authoring-books-and-reports",
-    "title": "StartR Workshop",
-    "section": "Authoring books and reports",
-    "text": "Authoring books and reports\n\n\nhttps://bookdown.org/yihui/bookdown/"
-  },
-  {
-    "objectID": "workshops/startr/slides/startr-01_intro.html#ai-assisted-coding",
-    "href": "workshops/startr/slides/startr-01_intro.html#ai-assisted-coding",
-    "title": "StartR Workshop",
-    "section": "AI-assisted coding",
-    "text": "AI-assisted coding\n\n\nhttps://docs.posit.co/ide/user/ide/guide/tools/copilot.html\n\n\n\n\n\nwww.maikbieleke.com"
-  },
-  {
-    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#goals",
-    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#goals",
-    "title": "StartR Workshop",
-    "section": "Goals",
-    "text": "Goals\n\n\n\nYou know your way around R and RStudio.\nYou are familiar with the basic R syntax.\nYou know the most important data structures in R.\nYou have a workflow for project management.\nYou can import, explore, and visualize your data.\nYou can perform basic statistical analyses in R."
-  },
-  {
-    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#toolboxes-for-data-processing",
-    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#toolboxes-for-data-processing",
-    "title": "StartR Workshop",
-    "section": "Toolboxes for data processing",
-    "text": "Toolboxes for data processing\n\n\nhttps://www.tidyverse.org/"
-  },
-  {
-    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#state-of-the-art-data-analysis",
-    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#state-of-the-art-data-analysis",
-    "title": "StartR Workshop",
-    "section": "State-of-the art data analysis",
-    "text": "State-of-the art data analysis\n\n\nBieleke et al. (2022, Table 4)"
-  },
-  {
-    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#beautiful-data-visualization",
-    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#beautiful-data-visualization",
-    "title": "StartR Workshop",
-    "section": "Beautiful data visualization",
-    "text": "Beautiful data visualization\n\n\nBieleke et al. (2019, Figure 1)"
-  },
-  {
-    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#programming-interactive-applications",
-    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#programming-interactive-applications",
-    "title": "StartR Workshop",
-    "section": "Programming interactive applications",
-    "text": "Programming interactive applications\n\n\nhttps://vnijs.shinyapps.io/radiant/"
-  },
-  {
-    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#designing-presentations",
-    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#designing-presentations",
-    "title": "StartR Workshop",
-    "section": "Designing presentations",
-    "text": "Designing presentations"
-  },
-  {
-    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#interactive-notebooks",
-    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#interactive-notebooks",
-    "title": "StartR Workshop",
-    "section": "Interactive notebooks",
-    "text": "Interactive notebooks\n\n\nhttps://posit.co/blog/r-notebooks/"
-  },
-  {
-    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#authoring-books-and-reports",
-    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#authoring-books-and-reports",
-    "title": "StartR Workshop",
-    "section": "Authoring books and reports",
-    "text": "Authoring books and reports\n\n\nhttps://bookdown.org/yihui/bookdown/"
-  },
-  {
-    "objectID": "workshops/startr-2024-asp/slides/startr-01_intro.html#ai-assisted-coding",
-    "href": "workshops/startr-2024-asp/slides/startr-01_intro.html#ai-assisted-coding",
-    "title": "StartR Workshop",
-    "section": "AI-assisted coding",
-    "text": "AI-assisted coding\n\n\nhttps://docs.posit.co/ide/user/ide/guide/tools/copilot.html"
-  },
-  {
-    "objectID": "workshops/startr-2024-asp/index.html",
-    "href": "workshops/startr-2024-asp/index.html",
-    "title": "Vorlesungsfolien",
-    "section": "",
-    "text": "Hier haben Sie Zugriff auf die Vorlesungsfolien. Die Folien werden nach und nach im Laufe des Semesters hochgeladen und stehen jeweils zum Vorlesungstermin zur Verfügung.\n\n\n\n\n\nDatum\n\n\nTitel\n\n\nBeschreibung\n\n\n\n\n\n\n \n\n\nStartR Workshop\n\n\n\n\n\n\n\n\nKeine Treffer\n\n\n\nWie komme ich an die Folien?\nDie Folien auf dieser Seite sind mit einem Passwort geschützt, dass in der Vorlesung bekannt gegeben wird. Geben Sie das Passwort ein, wenn Sie im Browser dazu aufgefordert werden.\n\n\nKann ich die Folien auch als PDF haben?\nJa, das ist möglich. Die Vorlesungsfolien sind zusätzlich als PDFs in der Uni-Cloud hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig.\nBitte beachten: Die Konvertierung in das PDF und der Upload in die Cloud erfolgt automatisiert und ohne manuelle Kontrolle durch spezielle Software. Die oben bereit gestellten Folien sind daher verbindlich. Sollten Ihnen Abweichungen in den PDFs auffallen, kontaktieren Sie uns bitte."
-  },
-  {
-    "objectID": "workshops/slides/startr-2024-asp/index.html",
-    "href": "workshops/slides/startr-2024-asp/index.html",
-    "title": "StartR Frankfurt ’23",
-    "section": "",
-    "text": "Hier haben Sie Zugriff auf die Folien des StartR Workshops. Klicken Sie dazu einfach auf den gewünschten Foliensatz und geben Sie das im Workshop genannte Passwort ein.\nDie Folien sind zusätzlich auch als PDF in einer Cloud hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig. Bitte beachten Sie, dass die Konvertierung der der Folien in das PDF Format automatisiert erfolgt und daher Abweichungen möglich sind.\n\n\n\n\n\nDatum\n\n\nTitel\n\n\nBeschreibung\n\n\n\n\n\n\n \n\n\nStartR Workshop\n\n\n\n\n\n\n\n\nKeine Treffer"
-  },
-  {
-    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#goals",
-    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#goals",
-    "title": "StartR Workshop",
-    "section": "Goals",
-    "text": "Goals\n\n\n\nYou know your way around R and RStudio.\nYou are familiar with the basic R syntax.\nYou know the most important data structures in R.\nYou have a workflow for project management.\nYou can import, explore, and visualize your data.\nYou can perform basic statistical analyses in R."
-  },
-  {
-    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#toolboxes-for-data-processing",
-    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#toolboxes-for-data-processing",
-    "title": "StartR Workshop",
-    "section": "Toolboxes for data processing",
-    "text": "Toolboxes for data processing\n\n\nhttps://www.tidyverse.org/"
-  },
-  {
-    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#state-of-the-art-data-analysis",
-    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#state-of-the-art-data-analysis",
-    "title": "StartR Workshop",
-    "section": "State-of-the art data analysis",
-    "text": "State-of-the art data analysis\n\n\nBieleke et al. (2022, Table 4)"
-  },
-  {
-    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#beautiful-data-visualization",
-    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#beautiful-data-visualization",
-    "title": "StartR Workshop",
-    "section": "Beautiful data visualization",
-    "text": "Beautiful data visualization\n\n\nBieleke et al. (2019, Figure 1)"
-  },
-  {
-    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#programming-interactive-applications",
-    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#programming-interactive-applications",
-    "title": "StartR Workshop",
-    "section": "Programming interactive applications",
-    "text": "Programming interactive applications\n\n\nhttps://vnijs.shinyapps.io/radiant/"
-  },
-  {
-    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#designing-presentations",
-    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#designing-presentations",
-    "title": "StartR Workshop",
-    "section": "Designing presentations",
-    "text": "Designing presentations"
-  },
-  {
-    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#interactive-notebooks",
-    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#interactive-notebooks",
-    "title": "StartR Workshop",
-    "section": "Interactive notebooks",
-    "text": "Interactive notebooks\n\n\nhttps://posit.co/blog/r-notebooks/"
-  },
-  {
-    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#authoring-books-and-reports",
-    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#authoring-books-and-reports",
-    "title": "StartR Workshop",
-    "section": "Authoring books and reports",
-    "text": "Authoring books and reports\n\n\nhttps://bookdown.org/yihui/bookdown/"
-  },
-  {
-    "objectID": "workshops/slides/startr-2024-asp/startr-01_intro.html#ai-assisted-coding",
-    "href": "workshops/slides/startr-2024-asp/startr-01_intro.html#ai-assisted-coding",
-    "title": "StartR Workshop",
-    "section": "AI-assisted coding",
-    "text": "AI-assisted coding\n\n\nhttps://docs.posit.co/ide/user/ide/guide/tools/copilot.html"
-  },
-  {
     "objectID": "workshops/slides/startr-2023-frankfurt/index.html",
     "href": "workshops/slides/startr-2023-frankfurt/index.html",
     "title": "StartR Frankfurt ’23",
     "section": "",
     "text": "Hier haben Sie Zugriff auf die Folien des StartR Workshops. Klicken Sie dazu einfach auf den gewünschten Foliensatz und geben Sie das im Workshop genannte Passwort ein.\nDie Folien sind zusätzlich auch als PDF in einer Cloud hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig. Bitte beachten Sie, dass die Konvertierung der der Folien in das PDF Format automatisiert erfolgt und daher Abweichungen möglich sind.\n\n\n\n\n\nDatum\n\n\nTitel\n\n\nBeschreibung\n\n\n\n\n\n\n \n\n\nStartR Workshop\n\n\n\n\n\n\n\n\nKeine Treffer"
-  },
-  {
-    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#goals",
-    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#goals",
-    "title": "StartR Workshop",
-    "section": "Goals",
-    "text": "Goals\n\n\n\nYou know your way around R and RStudio.\nYou are familiar with the basic R syntax.\nYou know the most important data structures in R.\nYou have a workflow for project management.\nYou can import, explore, and visualize your data.\nYou can perform basic statistical analyses in R."
-  },
-  {
-    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#toolboxes-for-data-processing",
-    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#toolboxes-for-data-processing",
-    "title": "StartR Workshop",
-    "section": "Toolboxes for data processing",
-    "text": "Toolboxes for data processing\n\n\nhttps://www.tidyverse.org/"
-  },
-  {
-    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#state-of-the-art-data-analysis",
-    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#state-of-the-art-data-analysis",
-    "title": "StartR Workshop",
-    "section": "State-of-the art data analysis",
-    "text": "State-of-the art data analysis\n\n\nBieleke et al. (2022, Table 4)"
-  },
-  {
-    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#beautiful-data-visualization",
-    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#beautiful-data-visualization",
-    "title": "StartR Workshop",
-    "section": "Beautiful data visualization",
-    "text": "Beautiful data visualization\n\n\nBieleke et al. (2019, Figure 1)"
-  },
-  {
-    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#programming-interactive-applications",
-    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#programming-interactive-applications",
-    "title": "StartR Workshop",
-    "section": "Programming interactive applications",
-    "text": "Programming interactive applications\n\n\nhttps://vnijs.shinyapps.io/radiant/"
-  },
-  {
-    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#designing-presentations",
-    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#designing-presentations",
-    "title": "StartR Workshop",
-    "section": "Designing presentations",
-    "text": "Designing presentations"
-  },
-  {
-    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#interactive-notebooks",
-    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#interactive-notebooks",
-    "title": "StartR Workshop",
-    "section": "Interactive notebooks",
-    "text": "Interactive notebooks\n\n\nhttps://posit.co/blog/r-notebooks/"
-  },
-  {
-    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#authoring-books-and-reports",
-    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#authoring-books-and-reports",
-    "title": "StartR Workshop",
-    "section": "Authoring books and reports",
-    "text": "Authoring books and reports\n\n\nhttps://bookdown.org/yihui/bookdown/"
-  },
-  {
-    "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#ai-assisted-coding",
-    "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#ai-assisted-coding",
-    "title": "StartR Workshop",
-    "section": "AI-assisted coding",
-    "text": "AI-assisted coding\n\n\nhttps://docs.posit.co/ide/user/ide/guide/tools/copilot.html\n\n\n\n\n\nwww.maikbieleke.com"
   }
 ]
