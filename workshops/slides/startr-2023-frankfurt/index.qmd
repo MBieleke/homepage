@@ -1,25 +1,28 @@
 ---
 title: "StartR Frankfurt '23"
 date: 11/01/2023
-date-format: "MMMM YYYY"
+date-format: "MMM D, YYYY"
 published-title: "Date"
 description: "Two-day workshop at the Department of Sport Sciences at Goethe University Frankfurt."
 listing: 
   id: slides
   type: table
-  fields: [date, title, description]
+  fields: [date, subtitle, description]
   filter-ui: false
   sort-ui: false
   sort: date
+  date-format: "D.MM"
 lang: de
 format: 
   html: 
     toc: false
 ---
 
-Hier haben Sie Zugriff auf die Folien des StartR Workshops. Klicken Sie dazu einfach auf den gewünschten Foliensatz und geben Sie das im Workshop genannte Passwort ein.
+Liebes Team von der Uni Frankfurt,
 
-Die Folien sind zusätzlich auch als PDF in einer [Cloud](https://cloud.uni-konstanz.de/index.php/s/mQoYfKasxPkfaNm){.external target="_blank"} hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig. Bitte beachten Sie, dass die Konvertierung der der Folien in das PDF Format automatisiert erfolgt und daher Abweichungen möglich sind.
+hier habt Ihr Zugriff auf die Folien des StartR Workshops im November 2023. Klickt dazu einfach auf den gewünschten Foliensatz und gebt das im Workshop genannte Passwort ein. Wenn ihr auf "Remember password" klickt, dann müsst ihr das Passwort nicht für jeden Foliensatz erneut eingeben.
+
+Die Folien sind zusätzlich auch als PDF in einer [Cloud](https://cloud.uni-konstanz.de/index.php/s/mQoYfKasxPkfaNm){.external target="_blank"} hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig. Bitte beachtet, dass die Konvertierung der Folien in das PDF Format automatisiert erfolgt und daher Abweichungen von der Darstellung im Browser auftreten können.
 
 ::: {#slides}
 :::

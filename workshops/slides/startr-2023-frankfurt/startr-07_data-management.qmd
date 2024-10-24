@@ -1,6 +1,6 @@
 ---
-title: "StartR Workshop"
-subtitle: "-- Data Management --"
+title: "Data Management"
+subtitle: "StartR Workshop"
 description: "Merging | Reshaping | Aggregating | Pipes | Conditioning & Looping"
 author: "Maik Bieleke, PhD"
 institute: "University of Konstanz"

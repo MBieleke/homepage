@@ -1,6 +1,6 @@
 ---
-title: "StartR Workshop"
-subtitle: "-- Exploration and Visualization --"
+title: "Exploration and Visualization"
+subtitle: "StartR Workshop"
 description: "Data exploration | ggplot2 visualization"
 author: "Maik Bieleke, PhD"
 institute: "University of Konstanz"

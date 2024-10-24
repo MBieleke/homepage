@@ -1,6 +1,6 @@
 ---
-title: "StartR Workshop"
-subtitle: "-- Hypothesis Testing --"
+title: "Hypothesis Testing"
+subtitle: "StartR Workshop"
 description: "Correlation | Regression | t-Tests | ANOVA"
 author: "Maik Bieleke, PhD"
 institute: "University of Konstanz"

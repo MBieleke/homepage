@@ -1,6 +1,6 @@
 ---
-title: "StartR Workshop"
-subtitle: "-- Scalars and Vectors --"
+title: "Scalars and Vectors"
+subtitle: "StartR Workshop"
 description: "Scalars | Vectors | Indexing | Assignments | Operations | Missings"
 author: "Maik Bieleke, PhD"
 institute: "University of Konstanz"

@@ -1,6 +1,6 @@
 ---
-title: "StartR Workshop"
-subtitle: "-- Workflow --"
+title: "Workflow"
+subtitle: "StartR Workshop"
 description: "Organization | Datasets | Coding | Documentation"
 author: "Maik Bieleke, PhD"
 institute: "University of Konstanz"

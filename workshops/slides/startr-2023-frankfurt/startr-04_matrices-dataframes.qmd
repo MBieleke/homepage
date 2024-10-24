@@ -1,6 +1,6 @@
 ---
-title: "StartR Workshop"
-subtitle: "-- Matrices and Dataframes --"
+title: "Matrices and Dataframes"
+subtitle: "StartR Workshop"
 description: "Matrices | Dataframes | Indexing | Factors"
 author: "Maik Bieleke, PhD"
 institute: "University of Konstanz"

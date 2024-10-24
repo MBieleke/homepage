@@ -2,273 +2,273 @@
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#the-correlation-package",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#the-correlation-package",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "The correlation package",
     "text": "The correlation package\n\n\nThe correlation package is an easystats package focused on correlation analysis.\n\n# install.packages(\"correlation\")\nlibrary(correlation)\n\n\n\n\n\n\n\n\n\n\nhttps://easystats.github.io/easystats/"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#computing-single-correlations",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#computing-single-correlations",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Computing single correlations",
     "text": "Computing single correlations\nA single correlation can be determined with the cor_test() function.\n\n# Correlation between players' value and overall attribute\ncor_test(fifa, \"Overall\", \"Value\")\n\nParameter1 | Parameter2 |    r |       95% CI | t(17658) |         p\n--------------------------------------------------------------------\nOverall    |      Value | 0.56 | [0.55, 0.57] |    90.81 | &lt; .001***\n\nObservations: 17660"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#plotting-single-correlations",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#plotting-single-correlations",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Plotting single correlations",
     "text": "Plotting single correlations\nWe can plot the correlation using the plot() function.\n\nr &lt;- cor_test(fifa, \"Overall\", \"Value\")\nplot(r)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#computing-multiple-correlations",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#computing-multiple-correlations",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Computing multiple correlations",
     "text": "Computing multiple correlations\nWe can compute correlations between multiple variables with the correlation() function.\n\n# Select variables of interest\nvariables &lt;- select(fifa, Overall, Potential, Value, Wage)\n\n# Compute correlations\ncorrelation(variables)\n\n# Correlation Matrix (pearson-method)\n\nParameter1 | Parameter2 |    r |       95% CI | t(17658) |         p\n--------------------------------------------------------------------\nOverall    |  Potential | 0.71 | [0.70, 0.71] |   132.69 | &lt; .001***\nOverall    |      Value | 0.56 | [0.55, 0.57] |    90.81 | &lt; .001***\nOverall    |       Wage | 0.60 | [0.59, 0.61] |    99.55 | &lt; .001***\nPotential  |      Value | 0.51 | [0.50, 0.52] |    79.02 | &lt; .001***\nPotential  |       Wage | 0.48 | [0.47, 0.49] |    72.58 | &lt; .001***\nValue      |       Wage | 0.81 | [0.81, 0.82] |   183.96 | &lt; .001***\n\np-value adjustment method: Holm (1979)\nObservations: 17660"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#plotting-multiple-correlations",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#plotting-multiple-correlations",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Plotting multiple correlations",
     "text": "Plotting multiple correlations\nWe can use the summary()function to get a correlation matrix.\n\n# Compute and save correlations\nr &lt;- correlation(variables)\n\n# Generate correlation matrix\nsummary(r)\n\n# Correlation Matrix (pearson-method)\n\nParameter |    Wage |   Value | Potential\n-----------------------------------------\nOverall   | 0.60*** | 0.56*** |   0.71***\nPotential | 0.48*** | 0.51*** |          \nValue     | 0.81*** |         |          \n\np-value adjustment method: Holm (1979)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#correlation-plot",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#correlation-plot",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Correlation plot",
     "text": "Correlation plot\nWe can use the plot()function to plot the correlation matrix.\n\n# Compute and save correlations and correlation matrix\nr &lt;- correlation(variables)\nrmat &lt;- summary(r)\n\n# Generate correlation plot\nplot(rmat)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#overview",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#overview",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Overview",
     "text": "Overview\nThere are numerous regression models available in R. We will focus on the Base R implementation of the linear regression model.\n\n\nThere are three aspects of regression:\n\nmodel estimation: lm() function in base R\nparameter evaluation: parameters package\nmodel performance: performance package\n\n\n \n\n\nThe parameters and the performance package are part of the easystats package collection.\n\nhttps://easystats.github.io/easystats/"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#simple-regression",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#simple-regression",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Simple regression",
     "text": "Simple regression\nWe can use the lm() function to estimate a simple linear regression model.\n\n# estimate regression model with a single predictor: dv ~ iv\nmodel &lt;- lm(Wage ~ Overall, data = fifa)\n\n# get the standard output\nsummary(model)\n\n\nCall:\nlm(formula = Wage ~ Overall, data = fifa)\n\nResiduals:\n   Min     1Q Median     3Q    Max \n-39708  -7903  -2542   5097 399598 \n\nCoefficients:\n             Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) -88622.18     980.27  -90.41   &lt;2e-16 ***\nOverall       1527.74      15.35   99.55   &lt;2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 16390 on 17658 degrees of freedom\nMultiple R-squared:  0.3595,    Adjusted R-squared:  0.3595 \nF-statistic:  9911 on 1 and 17658 DF,  p-value: &lt; 2.2e-16"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#model-parameters-and-performance",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#model-parameters-and-performance",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Model parameters and performance",
     "text": "Model parameters and performance\nWe can use the parameters() and performance() to evaluate the model.\n\n# parameters\nparameters::parameters(model)\n\nParameter   | Coefficient |     SE |                 95% CI | t(17658) |      p\n-------------------------------------------------------------------------------\n(Intercept) |   -88622.18 | 980.27 | [-90543.60, -86700.76] |   -90.41 | &lt; .001\nOverall     |     1527.74 |  15.35 | [  1497.66,   1557.82] |    99.55 | &lt; .001\n\n# performance\nperformance::performance(model)\n\n# Indices of model performance\n\nAIC       |      AICc |       BIC |    R2 | R2 (adj.) |      RMSE |     Sigma\n-----------------------------------------------------------------------------\n3.929e+05 | 3.929e+05 | 3.929e+05 | 0.359 |     0.359 | 16387.478 | 16388.406"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#model-assumptions",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#model-assumptions",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Model assumptions",
     "text": "Model assumptions\nWe can use the check_model() function to check whether the assumptions of a linear regression are met.\n\nperformance::check_model(model)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#multiple-regression",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#multiple-regression",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Multiple regression",
     "text": "Multiple regression\nWe can also use the lm() function to estimate a multiple regression model.\n\n# estimate regression model with a single predictor: dv ~ iv\nmodel2 &lt;- lm(Wage ~ Overall + Value, data = fifa)\nsummary(model2)\n\n\nCall:\nlm(formula = Wage ~ Overall + Value, data = fifa)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-132632   -3555    -908    2282  316273 \n\nCoefficients:\n              Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept) -3.045e+04  8.083e+02  -37.67   &lt;2e-16 ***\nOverall      5.315e+02  1.300e+01   40.89   &lt;2e-16 ***\nValue        1.810e-03  1.332e-05  135.83   &lt;2e-16 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 11460 on 17657 degrees of freedom\nMultiple R-squared:  0.6868,    Adjusted R-squared:  0.6867 \nF-statistic: 1.936e+04 on 2 and 17657 DF,  p-value: &lt; 2.2e-16"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#comparing-models",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#comparing-models",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Comparing models",
     "text": "Comparing models\nWe can use the compare_performance() function to compare the performance of two or more models.\n\nperformance::compare_performance(model, model2, metrics = \"common\")\n\n# Comparison of Model Performance Indices\n\nName   | Model |   AIC (weights) |   BIC (weights) |    R2 | R2 (adj.) |      RMSE\n----------------------------------------------------------------------------------\nmodel  |    lm | 3.9e+05 (&lt;.001) | 3.9e+05 (&lt;.001) | 0.359 |     0.359 | 16387.478\nmodel2 |    lm | 3.8e+05 (&gt;.999) | 3.8e+05 (&gt;.999) | 0.687 |     0.687 | 11459.711"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#the-t-test-function",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#the-t-test-function",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "The t-test() function",
     "text": "The t-test() function\nThe t-test() function has two basic forms:\n\n\n\n\n\n\n\n\nTest\nWide Format\nLong Format\n\n\n\n\nOne-sample\nt.test(x)\n\n\n\nIndependent\nt.test(x, y)\nt.test(y ~ x, data)\n\n\nDependent\nt.test(x, y, paired = T)\nt.test(y ~ x, data, paired = T)\n\n\n\nThe function has various additional options, e.g.\n\nvar.equal for equal variances (TRUE or FALSE)\n\nalternative for one-sided tests (less or more)\nmu for the null hypothesis value (default is 0)\nconf.level for the confidence interval (default is 0.95)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#single-sample-t-test",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#single-sample-t-test",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Single sample t-test",
     "text": "Single sample t-test\nt-tests can be performed with the t.test() function in base R. If one variable is provided, a single sample t-test is performed.\n\n# Test whether pre-training performance is different from 0\nt.test(hiit$RSA_Pre)\n\n\n    One Sample t-test\n\ndata:  hiit$RSA_Pre\nt = 44.879, df = 21, p-value &lt; 2.2e-16\nalternative hypothesis: true mean is not equal to 0\n95 percent confidence interval:\n 4.786515 5.251667\nsample estimates:\nmean of x \n 5.019091"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#independent-t-test",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#independent-t-test",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Independent t-test",
     "text": "Independent t-test\n\n# Compare pre-training performance between males and females\nt.test(RSA_Pre ~ Sex, data = hiit)\n\n\n    Welch Two Sample t-test\n\ndata:  RSA_Pre by Sex\nt = -8.8367, df = 17.154, p-value = 8.54e-08\nalternative hypothesis: true difference in means between group female and group male is not equal to 0\n95 percent confidence interval:\n -1.1327500 -0.6963409\nsample estimates:\nmean in group female   mean in group male \n            4.561818             5.476364"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#dependent-t-test",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#dependent-t-test",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Dependent t-test",
     "text": "Dependent t-test\n\n# Compare pre- and post-training performance within individuals\nt.test(hiit$RSA_Pre, hiit$RSA_Post1, paired = TRUE)\n\n\n    Paired t-test\n\ndata:  hiit$RSA_Pre and hiit$RSA_Post1\nt = 6.9213, df = 21, p-value = 7.733e-07\nalternative hypothesis: true mean difference is not equal to 0\n95 percent confidence interval:\n 0.1255983 0.2334927\nsample estimates:\nmean difference \n      0.1795455"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#the-afex-and-the-emmeans-package",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#the-afex-and-the-emmeans-package",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "The afex and the emmeans package",
     "text": "The afex and the emmeans package\n\n\nafex (Analysis of Factorial EXperiments) is dedicated to analysis of variance.\n\n# install.packages(\"afex\")\nlibrary(afex)\n\n\n\n\n\nHenrik Singman, author of afex\n\n\n\n\n\n\nemmeans (Estimated Marginal MEANS) is dedicated to post-hoc tests.\n\n# install.packages(\"emmeans\")\nlibrary(emmeans)\n\n\n\n\n\nRussell Lenth, author of emmeans\n\n\n\n\n\nhttps://github.com/singmann/afex - https://github.com/rvlenth/emmeans"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#the-aov_4-function",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#the-aov_4-function",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "The aov_4() function",
     "text": "The aov_4() function\nThe aov_4() function is part of the afex package and can be used to estimate a variety of ANOVA models.\n\n\n\n\n\n\nGeneric format: aov_4(dv ~ iv_b + (iv_w | id), data)\n\n\n\n\n\n\n\ndv is the dependent variable\niv_b are the between-subject predictor variables\niv_w are the within-subject predictor variables\nid is the subject identifier variable\ndata is the data frame"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#the-emmeans-function",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#the-emmeans-function",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "The emmeans() function",
     "text": "The emmeans() function\nThe emmeans() function is part of the emmeans package. It has the following generic format:\n\n\n\n\n\n\nGeneric format: emmeans(model, ~ iv)\n\n\n\n\n\n\n\nmodel is the model object\niv are the predictor variables"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#one-factorial-anova",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#one-factorial-anova",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "One-factorial ANOVA",
     "text": "One-factorial ANOVA\nBetween-subject ANOVA\n\n# Between-subject predictor: Sex\ndata &lt;- dplyr::filter(hiit_long, Measure == \"RSA\" & Time == \"Pre\")\nafex::aov_4(Value ~ Sex + (1 | ID), data)\n\nAnova Table (Type 3 tests)\n\nResponse: Value\n  Effect    df  MSE         F  ges p.value\n1    Sex 1, 20 0.06 78.09 *** .796   &lt;.001\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1\n\n\nWithin-subject ANOVA\n\n# Within-subject predictor: Time\ndata &lt;- dplyr::filter(hiit_long, Measure == \"RSA\")\nafex::aov_4(Value ~ 1 + (Time | ID), data)\n\nAnova Table (Type 3 tests)\n\nResponse: Value\n  Effect          df  MSE       F  ges p.value\n1   Time 1.30, 27.20 0.04 7.16 ** .020    .008\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1\n\nSphericity correction method: GG"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#pairwise-comparisons",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#pairwise-comparisons",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Pairwise comparisons",
     "text": "Pairwise comparisons\n\n# Within-subject predictor: Time\ndata &lt;- dplyr::filter(hiit_long, Measure == \"RSA\")\nmodel &lt;- afex::aov_4(Value ~ 1 + (Time | ID), data)\n\n# Esimate the marginal means\nemm &lt;- emmeans::emmeans(model, ~ Time)\nemm\n\n Time  emmean    SE df lower.CL upper.CL\n Pre     5.02 0.112 21     4.79     5.25\n Post1   4.84 0.118 21     4.59     5.09\n Post2   4.97 0.119 21     4.73     5.22\n\nConfidence level used: 0.95 \n\n# Conduct pairwise comparisons\npairs(emm)\n\n contrast      estimate     SE df t.ratio p.value\n Pre - Post1     0.1795 0.0259 21   6.921  &lt;.0001\n Pre - Post2     0.0459 0.0601 21   0.764  0.7289\n Post1 - Post2  -0.1336 0.0548 21  -2.440  0.0589\n\nP value adjustment: tukey method for comparing a family of 3 estimates"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#mixed-anova",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#mixed-anova",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Mixed ANOVA",
     "text": "Mixed ANOVA\n\n# Between-subject predictor: Sex, Within-subject predictor: Time\ndata &lt;- dplyr::filter(hiit_long, Measure == \"RSA\")\nafex::aov_4(Value ~ Sex + (Time | ID), data)\n\nAnova Table (Type 3 tests)\n\nResponse: Value\n    Effect          df  MSE         F  ges p.value\n1      Sex       1, 20 0.16 90.01 *** .770   &lt;.001\n2     Time 1.26, 25.24 0.04   6.97 ** .081    .010\n3 Sex:Time 1.26, 25.24 0.04      0.43 .005    .566\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1\n\nSphericity correction method: GG"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#simple-effects",
     "href": "workshops/slides/startr-2023-frankfurt/startr-09_statistics.html#simple-effects",
-    "title": "StartR Workshop",
+    "title": "Hypothesis Testing",
     "section": "Simple effects",
     "text": "Simple effects\n\n# Between-subject predictor: Sex, Within-subject predictor: Time\ndata &lt;- dplyr::filter(hiit_long, Measure == \"RSA\")\nmodel &lt;- afex::aov_4(Value ~ Sex + (Time | ID), data)\n\n# Esimate the marginal means\nemm &lt;- emmeans::emmeans(model, ~ Sex * Time)\n\n# Estimate simple effects\nemmeans::joint_tests(emm, by = \"Time\")\n\nTime = Pre:\n model term df1 df2 F.ratio p.value\n Sex          1  20  78.087  &lt;.0001\n\nTime = Post1:\n model term df1 df2 F.ratio p.value\n Sex          1  20  99.553  &lt;.0001\n\nTime = Post2:\n model term df1 df2 F.ratio p.value\n Sex          1  20  43.946  &lt;.0001\n\n\n\n\n\n\nwww.maikbieleke.com"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#what-is-merging",
     "href": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#what-is-merging",
-    "title": "StartR Workshop",
+    "title": "Data Management",
     "section": "What is merging?",
     "text": "What is merging?\nMerging is the process of combining two (or more) data sets into one. Merging requires that the data sets have at least one variable in common, usually an ID variable.\n\n\nThere are four types of merging:\n\nfull join: keep all observations from both data sets\nleft join: keep all observations from the left data set\nright join: keep all observations from the right data set\nInner join: only keep observations that appear in both data sets\n\nWe use functinos from the dplyr package.\n\n\n\n\n\ninstall.packages(dplyr) # if not installed\nlibrary(dplyr)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#types-of-merging",
     "href": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#types-of-merging",
-    "title": "StartR Workshop",
+    "title": "Data Management",
     "section": "Types of merging",
     "text": "Types of merging"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#examples",
     "href": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#examples",
-    "title": "StartR Workshop",
+    "title": "Data Management",
     "section": "Examples",
     "text": "Examples\nWe create two data frames with the shared key variable id. They have observations from different participants and different variables.\n\n# Create two data frames\ndfA &lt;- data.frame(id = c(1, 2, 3), w = c(10, 8, 15), x = c(7, 9, 12))\ndfB &lt;- data.frame(id = c(1, 2, 4), y = c(2, 10, 11), z = c(5, 5, 3))\n\nNow we can use functions from the dplyr package to merge the data frames.\n\n\n\ndplyr::full_join(dfA, dfB)\n\n  id  w  x  y  z\n1  1 10  7  2  5\n2  2  8  9 10  5\n3  3 15 12 NA NA\n4  4 NA NA 11  3\n\ndplyr::inner_join(dfA, dfB)\n\n  id  w x  y z\n1  1 10 7  2 5\n2  2  8 9 10 5\n\n\n\n\ndplyr::left_join(dfA, dfB)\n\n  id  w  x  y  z\n1  1 10  7  2  5\n2  2  8  9 10  5\n3  3 15 12 NA NA\n\ndplyr::right_join(dfA, dfB)\n\n  id  w  x  y z\n1  1 10  7  2 5\n2  2  8  9 10 5\n3  4 NA NA 11 3"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#common-problems",
     "href": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#common-problems",
-    "title": "StartR Workshop",
+    "title": "Data Management",
     "section": "Common problems",
     "text": "Common problems\n\ndifferent names of the key variable\n\ndfA &lt;- data.frame(id = c(1, 2, 3), w = c(10, 8, 15), x = c(7, 9, 12))\ndfB &lt;- data.frame(IDENT = c(1, 2, 4), z = c(5, 5, 3))\ndplyr::full_join(dfA, dfB, join_by(id == IDENT))\n\n  id  w  x  z\n1  1 10  7  5\n2  2  8  9  5\n3  3 15 12 NA\n4  4 NA NA  3\n\n\nmultiple key variables\n\ndfA &lt;- data.frame(id = c(1, 1, 2, 2), wave = c(1, 2, 1, 2),\n                  anx = c(10, 8, 15, 16), dep = c(7, 9, 12, 11))\ndfB &lt;- data.frame(id = c(1, 1, 3, 3), wave = c(1, 2, 1, 2),\n                  ang = c(2, 4, 11, 11), dis = c(5, 5, 3, 5))\n\ndplyr::full_join(dfA, dfB, by = c(\"id\", \"wave\"))\n\n  id wave anx dep ang dis\n1  1    1  10   7   2   5\n2  1    2   8   9   4   5\n3  2    1  15  12  NA  NA\n4  2    2  16  11  NA  NA\n5  3    1  NA  NA  11   3\n6  3    2  NA  NA  11   5"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#what-is-reshaping",
     "href": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#what-is-reshaping",
-    "title": "StartR Workshop",
+    "title": "Data Management",
     "section": "What is reshaping?",
     "text": "What is reshaping?\nReshaping is the process of transforming data without changing the data itself.\n\n\nThere are two types of reshaping:\n\nwide to long: transform data from a wide format to a long format\nlong to wide: transform data from a long format to a wide format\n\nWe use functions from the tidyr package.\n\ninstall.packages(tidyr) # if not installed\nlibrary(tidyr)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#types-of-reshaping",
     "href": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#types-of-reshaping",
-    "title": "StartR Workshop",
+    "title": "Data Management",
     "section": "Types of reshaping",
     "text": "Types of reshaping"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#wide-to-long",
     "href": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#wide-to-long",
-    "title": "StartR Workshop",
+    "title": "Data Management",
     "section": "Wide-to-long",
     "text": "Wide-to-long\n\n\nWide\nWe start with a data frame in a wide format.\n\n# Define a wide data frame\ndfr &lt;- data.frame(\n  id = c(1, 2), \n  a_1 = c(10, 8), \n  a_2 = c(7, 9),\n  b_1 = c(2, 11),\n  b_2 = c(5, 5))\ndfr\n\n  id a_1 a_2 b_1 b_2\n1  1  10   7   2   5\n2  2   8   9  11   5\n\n\n\nLong\nTransform data frame to long format with pivot_longer().\n\n# from wide to long\ndfr_long &lt;- pivot_longer(\n  dfr, cols = c(a_1, a_2, b_1, b_2),\n  names_to = \"variable\", \n  values_to = \"value\")\ndfr_long\n\n# A tibble: 8 × 3\n     id variable value\n  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;\n1     1 a_1         10\n2     1 a_2          7\n3     1 b_1          2\n4     1 b_2          5\n5     2 a_1          8\n6     2 a_2          9\n7     2 b_1         11\n8     2 b_2          5"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#long-to-wide",
     "href": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#long-to-wide",
-    "title": "StartR Workshop",
+    "title": "Data Management",
     "section": "Long-to-wide",
     "text": "Long-to-wide\n\n\nLong\nThis time, we start with a data frame in a wide format.\n\n# Define a long data frame\ndfr &lt;- data.frame(\n  id = c(1, 1, 1, 1, 2, 2, 2, 2),\n  variable = c(\"a_1\", \"a_2\", \"b_1\", \"b_2\",\n               \"a_1\", \"a_2\", \"b_1\", \"b_2\"),\n  value = c(10, 7, 2, 5, 8, 9, 11, 5))\ndfr\n\n  id variable value\n1  1      a_1    10\n2  1      a_2     7\n3  1      b_1     2\n4  1      b_2     5\n5  2      a_1     8\n6  2      a_2     9\n7  2      b_1    11\n8  2      b_2     5\n\n\n\nWide\nTransform data frame to wide with pivot_wider():\n\ndfr_wide &lt;- pivot_wider(\n  dfr,\n  names_from = \"variable\", \n  values_from = \"value\")\ndfr_wide\n\n# A tibble: 2 × 5\n     id   a_1   a_2   b_1   b_2\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1    10     7     2     5\n2     2     8     9    11     5"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#hidden-identifiers",
     "href": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#hidden-identifiers",
-    "title": "StartR Workshop",
+    "title": "Data Management",
     "section": "Hidden identifiers",
     "text": "Hidden identifiers\nOften variable names in the wide format contain more than one piece of information. For example, the variable a_1 contains information about the variable a and the time point 1. This is called a hidden identifier.\n\n\nWide\n\n# Define a wide data frame\ndfr &lt;- data.frame(\n  id = c(1, 2), \n  a_1 = c(10, 8), \n  a_2 = c(7, 9),\n  b_1 = c(2, 11),\n  b_2 = c(5, 5))\ndfr\n\n  id a_1 a_2 b_1 b_2\n1  1  10   7   2   5\n2  2   8   9  11   5\n\n\n\nLong\n\n# from wide to long\ndfr_long &lt;- pivot_longer(\n  dfr, cols = c(a_1, a_2, b_1, b_2),\n  names_to = c(\"variable\", \"time\"), \n  names_sep = \"_\",\n  values_to = \"value\")\ndfr_long\n\n# A tibble: 8 × 4\n     id variable time  value\n  &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt; &lt;dbl&gt;\n1     1 a        1        10\n2     1 a        2         7\n3     1 b        1         2\n4     1 b        2         5\n5     2 a        1         8\n6     2 a        2         9\n7     2 b        1        11\n8     2 b        2         5"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#what-is-aggregation",
     "href": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#what-is-aggregation",
-    "title": "StartR Workshop",
+    "title": "Data Management",
     "section": "What is aggregation?",
     "text": "What is aggregation?\nAggregation is the process of combining multiple observations into a single observation.\n\n\nThere are two types of aggregation:\n\ncolumn-wise: combine observations from individual columns\nrow-wise: combine observations from multiple columns\n\nWe use functinos from the dplyr package."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#colum-wise-aggregation",
     "href": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#colum-wise-aggregation",
-    "title": "StartR Workshop",
+    "title": "Data Management",
     "section": "Colum-wise aggregation",
     "text": "Colum-wise aggregation\n\n# Define a wide data frame\ndfr &lt;- data.frame(id = c(1, 2, 3), a_1 = c(10, 8, 5), a_2 = c(7, 9, 2),\n                  b_1 = c(2, 11, 8),  b_2 = c(5, 5, 3))\n\nCompute various colum-wise statistics:\n\n# Compute mean of a single variable\nsummarize(dfr, MEAN = mean(a_1))\n\n      MEAN\n1 7.666667\n\n# Compute mean and standard deviation of a single variable\nsummarize(dfr, MEAN = mean(a_1), SD = sd(a_1))\n\n      MEAN       SD\n1 7.666667 2.516611\n\n# Compute mean of multiple variables\nsummarize(dfr, across(c(a_1, b_2), mean))\n\n       a_1      b_2\n1 7.666667 4.333333\n\n# Compute mean and standard deviation of multiple variables\nsummarize(dfr, across(c(a_1, b_2), list(MEAN = ~mean(.x), SD = ~sd(.x))))\n\n  a_1_MEAN   a_1_SD b_2_MEAN   b_2_SD\n1 7.666667 2.516611 4.333333 1.154701"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#row-wise-aggregation",
     "href": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#row-wise-aggregation",
-    "title": "StartR Workshop",
+    "title": "Data Management",
     "section": "Row-wise aggregation",
     "text": "Row-wise aggregation\n\n# Define a wide data frame\ndfr &lt;- data.frame(id = c(1, 2, 3), a_1 = c(10, 8, 5), a_2 = c(7, 9, 2),\n                  b_1 = c(2, 11, 8),  b_2 = c(5, 5, 3))\n\nCompute various row-wise statistics:\n\n# Compute mean of multiple variables\nsummarize(rowwise(dfr), MEAN = mean(c(a_1, a_2)))\n\n# A tibble: 3 × 1\n   MEAN\n  &lt;dbl&gt;\n1   8.5\n2   8.5\n3   3.5\n\n# Compute mean and standard deviationof multiple variables\nsummarize(rowwise(dfr), MEAN = mean(c(a_1, a_2)), SD = sd(c(a_1, a_2)))\n\n# A tibble: 3 × 2\n   MEAN    SD\n  &lt;dbl&gt; &lt;dbl&gt;\n1   8.5 2.12 \n2   8.5 0.707\n3   3.5 2.12"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#groupwise-aggregation",
     "href": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#groupwise-aggregation",
-    "title": "StartR Workshop",
+    "title": "Data Management",
     "section": "Groupwise aggregation",
     "text": "Groupwise aggregation\nWe can aggregate for different groups separately using group_by().\n\n# Define a wide data frame\ndfr &lt;- data.frame(id = c(1, 2, 3, 4), condition = c(\"A\", \"A\", \"B\", \"B\"),\n                  a_1 = c(10, 8, 5, 7), a_2 = c(7, 9, 2, 5),\n                  b_1 = c(2, 11, 8, 4),  b_2 = c(5, 5, 3, 1))\ndfr\n\n  id condition a_1 a_2 b_1 b_2\n1  1         A  10   7   2   5\n2  2         A   8   9  11   5\n3  3         B   5   2   8   3\n4  4         B   7   5   4   1\n\n\nAggregate for conditions A and B:\n\n# Compute mean of a single variable for each condition\nsummarize(group_by(dfr, condition), MEAN = mean(a_1))\n\n# A tibble: 2 × 2\n  condition  MEAN\n  &lt;chr&gt;     &lt;dbl&gt;\n1 A             9\n2 B             6"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#what-is-a-loop",
     "href": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#what-is-a-loop",
-    "title": "StartR Workshop",
+    "title": "Data Management",
     "section": "What is a loop?",
     "text": "What is a loop?\nA loop is used to repeat a sequence of commands multiple times, each time using a different value of a loop index.\nA loop consists of\n\na loop index (e.g., i) that takes on different values\na loop vector (e.g., 1:3) with all values that the loop index should take\na loop expression (e.g., print(i)) with the commands to be executed for each value of the loop index\n\nThese elements are combined in a loop statement:\nfor(index in vector){expression}\n\nfor(i in 1:3){print(i)}\n\n[1] 1\n[1] 2\n[1] 3"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#example",
     "href": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#example",
-    "title": "StartR Workshop",
+    "title": "Data Management",
     "section": "Example",
     "text": "Example\nLet’s use the example from above, where we computed means for different columns of a data frame.\n\n# Define a wide data frame\ndfr &lt;- data.frame(id = c(1, 2, 3), a_1 = c(10, 8, 5), a_2 = c(7, 9, 2),\n                  b_1 = c(2, 11, 8),  b_2 = c(5, 5, 3))\n\nfor(column in c(\"a_1\", \"a_2\", \"b_1\", \"b_2\")){\n  var &lt;- dfr[, column]\n  MEAN &lt;- mean(var)\n  print(MEAN)\n}\n\n[1] 7.666667\n[1] 6\n[1] 7\n[1] 4.333333\n\n\nLoops are rarely efficient, but especially beginners often use them because they are intuitive."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#what-is-a-conditional",
     "href": "workshops/slides/startr-2023-frankfurt/startr-07_data-management.html#what-is-a-conditional",
-    "title": "StartR Workshop",
+    "title": "Data Management",
     "section": "What is a conditional?",
     "text": "What is a conditional?\nA conditional is used to execute commands only if a certain condition is met. They typically consist of if and else statements.\n\nif(1 &gt; 0){\n  print(\"1 is larger than 0\")\n} else {\n  print(\"1 is not larger than 0\")\n}\n\n[1] \"1 is larger than 0\"\n\n\nA frequently used special form is the ifelse() statement, which can be used to replace the values of a vector depending on a condition.\n\n\n [1] \"smaller\" \"smaller\" \"smaller\" \"smaller\" \"smaller\" \"larger\"  \"larger\" \n [8] \"larger\"  \"larger\"  \"larger\" \n\n\n\n\n\n\nwww.maikbieleke.com"
   },
@@ -324,119 +324,119 @@
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html#basics",
     "href": "workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html#basics",
-    "title": "StartR Workshop",
+    "title": "Scalars and Vectors",
     "section": "Basics",
     "text": "Basics"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html#regular-vectors",
     "href": "workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html#regular-vectors",
-    "title": "StartR Workshop",
+    "title": "Scalars and Vectors",
     "section": "Regular vectors",
     "text": "Regular vectors"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html#exercise",
     "href": "workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html#exercise",
-    "title": "StartR Workshop",
+    "title": "Scalars and Vectors",
     "section": "Exercise ✏️",
     "text": "Exercise ✏️\n\nPhoto courtesy of @polarmermaid\n\n\nCreate the scalar object x with the value 10.\n\n\nSolution\nx &lt;- 10\n\n\nWhat is the length of vector y defined as y &lt;- 1:x?\n\n\nSolution\ny &lt;- 1:x\nlength(y)\n\n\nCreate a vector z from 11 to 100 in steps of 2.\n\n\nSolution\nz &lt;- seq(1, 100, by = 2)\n\n\nCreate a vector yz with all elements of y and z combined.\n\n\nSolution\nyz &lt;- c(y, z)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html#numerical-indexing",
     "href": "workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html#numerical-indexing",
-    "title": "StartR Workshop",
+    "title": "Scalars and Vectors",
     "section": "Numerical indexing",
     "text": "Numerical indexing"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html#logical-indexing",
     "href": "workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html#logical-indexing",
-    "title": "StartR Workshop",
+    "title": "Scalars and Vectors",
     "section": "Logical indexing",
     "text": "Logical indexing"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html#value-assignment",
     "href": "workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html#value-assignment",
-    "title": "StartR Workshop",
+    "title": "Scalars and Vectors",
     "section": "Value assignment",
     "text": "Value assignment"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html#operations-on-vectors",
     "href": "workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html#operations-on-vectors",
-    "title": "StartR Workshop",
+    "title": "Scalars and Vectors",
     "section": "Operations on vectors",
     "text": "Operations on vectors"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html#exercise-1",
     "href": "workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html#exercise-1",
-    "title": "StartR Workshop",
+    "title": "Scalars and Vectors",
     "section": "Exercise ✏️",
     "text": "Exercise ✏️\n\nPhoto courtesy of @amadorloureiro\n\n\nletters is a predefined vector of the English alphabet in R. Use it to extract the 15th letter of the alphabet.\n\n\nSolution\nletters[15]\n\n\nCreate a vector x with every second letter of the alphabet.\n\n\nSolution\nx &lt;- letters[seq(1, 26, by = 2)]\n\n\nUse the ! (not) and the %in% (set) operators to remove the vowels from x and assign the resulting vector to y.\n\n\nSolution\ny &lt;- x[!x %in% c(\"a\", \"e\", \"i\", \"o\", \"u\")]\n\n\nReplace the lower-case letter “m” in y by the uper-case letter “M”.\n\n\nSolution\ny[y == \"m\"] &lt;- \"M\""
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#goals",
     "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#goals",
-    "title": "StartR Workshop",
+    "title": "Introduction",
     "section": "Goals",
     "text": "Goals\n\n\n\nYou know your way around R and RStudio.\nYou are familiar with the basic R syntax.\nYou know the most important data structures in R.\nYou have a workflow for project management.\nYou can import, explore, and visualize your data.\nYou can perform basic statistical analyses in R."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#toolboxes-for-data-processing",
     "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#toolboxes-for-data-processing",
-    "title": "StartR Workshop",
+    "title": "Introduction",
     "section": "Toolboxes for data processing",
     "text": "Toolboxes for data processing\n\n\nhttps://www.tidyverse.org/"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#state-of-the-art-data-analysis",
     "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#state-of-the-art-data-analysis",
-    "title": "StartR Workshop",
+    "title": "Introduction",
     "section": "State-of-the art data analysis",
     "text": "State-of-the art data analysis\n\n\nBieleke et al. (2022, Table 4)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#beautiful-data-visualization",
     "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#beautiful-data-visualization",
-    "title": "StartR Workshop",
+    "title": "Introduction",
     "section": "Beautiful data visualization",
     "text": "Beautiful data visualization\n\n\nBieleke et al. (2019, Figure 1)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#programming-interactive-applications",
     "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#programming-interactive-applications",
-    "title": "StartR Workshop",
+    "title": "Introduction",
     "section": "Programming interactive applications",
     "text": "Programming interactive applications\n\n\nhttps://vnijs.shinyapps.io/radiant/"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#designing-presentations",
     "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#designing-presentations",
-    "title": "StartR Workshop",
+    "title": "Introduction",
     "section": "Designing presentations",
     "text": "Designing presentations"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#interactive-notebooks",
     "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#interactive-notebooks",
-    "title": "StartR Workshop",
+    "title": "Introduction",
     "section": "Interactive notebooks",
     "text": "Interactive notebooks\n\n\nhttps://posit.co/blog/r-notebooks/"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#authoring-books-and-reports",
     "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#authoring-books-and-reports",
-    "title": "StartR Workshop",
+    "title": "Introduction",
     "section": "Authoring books and reports",
     "text": "Authoring books and reports\n\n\nhttps://bookdown.org/yihui/bookdown/"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#ai-assisted-coding",
     "href": "workshops/slides/startr-2023-frankfurt/startr-01_intro.html#ai-assisted-coding",
-    "title": "StartR Workshop",
+    "title": "Introduction",
     "section": "AI-assisted coding",
     "text": "AI-assisted coding\n\n\nhttps://docs.posit.co/ide/user/ide/guide/tools/copilot.html\n\n\n\n\n\nwww.maikbieleke.com"
   },
@@ -858,607 +858,607 @@
     "href": "workshops/slides/startr-2023-frankfurt/index.html",
     "title": "StartR Frankfurt ’23",
     "section": "",
-    "text": "Hier haben Sie Zugriff auf die Folien des StartR Workshops. Klicken Sie dazu einfach auf den gewünschten Foliensatz und geben Sie das im Workshop genannte Passwort ein.\nDie Folien sind zusätzlich auch als PDF in einer Cloud hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig. Bitte beachten Sie, dass die Konvertierung der der Folien in das PDF Format automatisiert erfolgt und daher Abweichungen möglich sind.\n\n\n\n\n\nDatum\n\n\nTitel\n\n\nBeschreibung\n\n\n\n\n\n\nNovember 2024\n\n\nStartR Workshop\n\n\nWelcome | Why R? | Course\n\n\n\n\nNovember 2024\n\n\nStartR Workshop\n\n\nR | RStudio | Console | Source | Environment | Output\n\n\n\n\nNovember 2024\n\n\nStartR Workshop\n\n\nScalars | Vectors | Indexing | Assignments | Operations | Missings\n\n\n\n\nNovember 2024\n\n\nStartR Workshop\n\n\nMatrices | Dataframes | Indexing | Factors\n\n\n\n\nNovember 2024\n\n\nStartR Workshop\n\n\nHIIT dataset | FIFA dataset\n\n\n\n\nNovember 2024\n\n\nStartR Workshop\n\n\nOrganization | Datasets | Coding | Documentation\n\n\n\n\nNovember 2024\n\n\nStartR Workshop\n\n\nMerging | Reshaping | Aggregating | Pipes | Conditioning & Looping\n\n\n\n\nNovember 2024\n\n\nStartR Workshop\n\n\nData exploration | ggplot2 visualization\n\n\n\n\nNovember 2024\n\n\nStartR Workshop\n\n\nCorrelation | Regression | t-Tests | ANOVA\n\n\n\n\n\nKeine Treffer"
+    "text": "Liebes Team von der Uni Frankfurt,\nhier habt Ihr Zugriff auf die Folien des StartR Workshops im November 2023. Klickt dazu einfach auf den gewünschten Foliensatz und gebt das im Workshop genannte Passwort ein. Wenn ihr auf “Remember password” klickt, dann müsst ihr das Passwort nicht für jeden Foliensatz erneut eingeben.\nDie Folien sind zusätzlich auch als PDF in einer Cloud hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig. Bitte beachtet, dass die Konvertierung der Folien in das PDF Format automatisiert erfolgt und daher Abweichungen von der Darstellung im Browser auftreten können.\n\n\n\n\n\nDatum\n\n\nUntertitel\n\n\nBeschreibung\n\n\n\n\n\n\n23.11\n\n\nStartR Workshop\n\n\nWelcome | Why R? | Course\n\n\n\n\n23.11\n\n\nStartR Workshop\n\n\nR | RStudio | Console | Source | Environment | Output\n\n\n\n\n23.11\n\n\nStartR Workshop\n\n\nScalars | Vectors | Indexing | Assignments | Operations | Missings\n\n\n\n\n23.11\n\n\nStartR Workshop\n\n\nMatrices | Dataframes | Indexing | Factors\n\n\n\n\n24.11\n\n\n– Datasets –\n\n\nHIIT dataset | FIFA dataset\n\n\n\n\n24.11\n\n\nStartR Workshop\n\n\nOrganization | Datasets | Coding | Documentation\n\n\n\n\n24.11\n\n\nStartR Workshop\n\n\nMerging | Reshaping | Aggregating | Pipes | Conditioning & Looping\n\n\n\n\n24.11\n\n\nStartR Workshop\n\n\nData exploration | ggplot2 visualization\n\n\n\n\n24.11\n\n\nStartR Workshop\n\n\nCorrelation | Regression | t-Tests | ANOVA\n\n\n\n\n\nKeine Treffer"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#what-is-r",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#what-is-r",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "What is R?",
     "text": "What is R?\nR is a programming language and software environment for statistical computing and graphics. Some of its main advantages are:\n\nfree and open source software\neasy sharing of data and code for reproducible research\ncollaborative project with many contributors and resources\nextendible with tens of thousands of packages\nstate-of-the-art data analysis and visualization tools\ncross-platform software (Windows, Mac Os, UNIX/Linux)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#creators-of-the-r-programming-language",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#creators-of-the-r-programming-language",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "Creators of the R programming language",
     "text": "Creators of the R programming language\n\n\n\n\n\n\n\n\n\n\n\n(a) Robert Gentleman\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n(b) Ross Ihaka\n\n\n\n\n\n\n\nFigure 1: R has been developed in 1992 by two statisticians at the University of Auckland, New Zealand."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#section",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#section",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "",
     "text": "https://www.r-project.org/foundation/"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#r-as-standalone-program",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#r-as-standalone-program",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "R as standalone program",
     "text": "R as standalone program\n\n\n\n\n\n\nLocating R.exe on a windows computer\n\n\n\n\n\n\n\nRunning R.exe"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#graphical-user-interface-gui",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#graphical-user-interface-gui",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "Graphical user interface (Gui)",
     "text": "Graphical user interface (Gui)\n\n\n\n\n\n\nLocating RGui.exe on a windows computer\n\n\n\n\n\n\n\nRunning RGui.exe"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#integrated-development-environment-ide",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#integrated-development-environment-ide",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "Integrated Development Environment (IDE)",
     "text": "Integrated Development Environment (IDE)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#section-1",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#section-1",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "",
     "text": "https://posit.co/"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#what-is-rstudio",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#what-is-rstudio",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "What is RStudio?",
     "text": "What is RStudio?\nRStudio is an integrated development environment (IDE) for R and Python.\n\ndeveloped and maintained by Posit PBC\nfree software with optional commercial extensions\ntools for editing, debugging, visualization, and publishing\nworkflows for data projects and reproducible research\ncross-platform software (Windows, Mac, Linux)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#rstudio-panes",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#rstudio-panes",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "RStudio panes",
     "text": "RStudio panes\n\n\nhttps://docs.posit.co/ide/user/ide/guide/ui/ui-panes.html"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#what-is-the-console-pane",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#what-is-the-console-pane",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "What is the console pane?",
     "text": "What is the console pane?\n\n\nThe console is R within RStudio. It provides the area to interactively execute code and get an immediate response. It’s typically used only for quick calculations that one doesn’t want to save.\n\n\n\n\n\nThe &gt; signals that R is waiting for your input.\nThe + signals that R is waiting for you to complete your input.\n\nPress enter to submit your input or escape to cancel it."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#r-as-calculator",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#r-as-calculator",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "R as calculator",
     "text": "R as calculator\n\nPhoto courtesy of @markusspiske\n\nThe console is ideally suited for quick calculations that are not saved.\n\n\n\n\n\n\n1 + 1   # addition\n\n[1] 2\n\n\n\n\n\n4 - 3   # subtraction\n\n[1] 1\n\n\n\n\n\n2 * 5   # multiplication\n\n[1] 10\n\n\n\n\n\n12 / 3  # division\n\n[1] 4\n\n\n\n\n\n2^2     # exponentiation\n\n[1] 4\n\n\n\n\n\nsqrt(9) # functions (square root)\n\n[1] 3\n\n\n\n\n\npi      # constants\n\n[1] 3.141593"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#saving-results-in-objects",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#saving-results-in-objects",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "Saving results in objects",
     "text": "Saving results in objects\nAssignments are used in R to store information in objects.\n\nthe operator for assignments is &lt;-\nthe notation for an assignment is object &lt;- ...\n\na &lt;- 5\n\nto see the information stored in an object, call it by name\n\na\n\n[1] 5\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nThe shortut for the assignment operator is Alt + - (Windows) or Option + - (Mac)."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#naming-objects",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#naming-objects",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "Naming objects",
     "text": "Naming objects\nR is case sensitive, so a and A would refer to different objects.\n\nobjects names can consist of letters (a-z, A-Z), numbers (0-9), and a few special characters like dots (.) and underscores (_)\nif you call an object that does not exist, R will return an error\n\nA\n\nError in eval(expr, envir, enclos): object 'A' not found\n\n\nobject names cannot start with a number or contain spaces\n\n1_a &lt;- 5\n\nError: &lt;text&gt;:1:2: unexpected input\n1: 1_\n     ^\n\n\n\nmy a object &lt;- 5\n\nError: &lt;text&gt;:1:4: unexpected symbol\n1: my a\n       ^"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#using-objects",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#using-objects",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "Using objects",
     "text": "Using objects\n\nObjects can be used like variables.\n\n# object \"a\" is 5, so this is equal to 5 * 2\na * 2\n\n[1] 10\n\n\nThey can be used repeatedly in the same calculation.\n\n# using \"a\" multiple times in a calculation\n1 + (a - 2) * a\n\n[1] 16\n\n\nThe object’s value does not change when it’s used like that.\n\n# still the same value\na\n\n[1] 5"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#changing-objects",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#changing-objects",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "Changing objects",
     "text": "Changing objects\nTo change an object, it must be assigned again.\n\n\n\nusing new values\n\n# initialize value of \"a\"\na &lt;- 5\n\n# assign a new value to \"a\"\na &lt;- 100\na\n\n[1] 100\n\n\n\n\n\nusing the old value\n\n# initialize value of \"a\"\na &lt;- 5\n\n# increase the old value by 10\na &lt;- a + 10\na\n\n[1] 15"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#exercise",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#exercise",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "Exercise ✏️",
     "text": "Exercise ✏️\n\nImage: Getty Images\n\nThe women’s 100 m world record of 10.49 seconds was set by US athlete Florece Griffith-Joyner in 1988.\n\nStore the her finishing time in an object called record.\n\n\nSolution\nrecord &lt;- 10.49\n\n\nCompute her speed in m/s and save it as speed_ms.\n\n\nSolution\nspeed_ms &lt;- 100 / record\n\n\nCompute her speed in km/h and save it as speed_kmh. (Note that \\(km/h = m/s * 3.6\\).)\n\n\nSolution\nspeed_kmh &lt;- speed_ms * 3.6"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#what-is-the-source-pane",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#what-is-the-source-pane",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "What is the source pane?",
     "text": "What is the source pane?\n\n\nThe source pane is where you create and edit scripts for data processing and analysis.\n\nFor a new script, click File &gt; New File &gt; R Script.\nScripts are saved as text files with .R extension.\n\nThe code in a script is only evaluated after it was sent is sent to the console.\n\n\n\n\n\ncopy (Ctrl + C) and paste (Ctrl + V) code into the console\nplace the cursor on a single line or select code with the mouse and click Run\n\n\n\n\n\n\n\n\nTip\n\n\nThe shortut for Run is Ctrl/Cmd + Enter."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#comments",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#comments",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "Comments (#)",
     "text": "Comments (#)\n\n\nA comments is text that is not evaluated as code. Comments are mainly used to explain what the code does. They are also helpful to structure scripts and for debugging.\nComments are preceded by a hash # and can be placed on a line of their own or at the end of a line of code.\n\n\n\n\n\n# This is comment on a line of its own.\n10 - 5 # This is a comment at the end of a line of code.\n\n[1] 5"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#exercise-1",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#exercise-1",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "Exercise ✏️",
     "text": "Exercise ✏️\n\nImage: Getty Images\n\n\nOpen a new R script in RStudio.\nCopy your solution of the last exercise (women’s 100 m world record) into the script.\nAdd comments to explain what each line of code does.\n\n\nSolution\n# Save the record in an object called \"record\".\nrecord &lt;- 10.49\n\n# Compute the speed in m/s and save it as \"speed_ms\".\nspeed_ms &lt;- 100 / record\n\n# Convert the speed to km/h and save it as \"speed_kmh\".\nspeed_kmh &lt;- speed_ms * 3.6 # Note: km/h = m/s * 3.6\n\n\nSave your script.\nRun the script and check the results in the console."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#what-is-the-environment-pane",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#what-is-the-environment-pane",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "What is the environment pane?",
     "text": "What is the environment pane?\n\n\nAll objects created by an assignment are saved in the workspace.\n\nThe objects in your workspace are displayed in the environment.\nThe commands used to create objects are displayed in the history.\n\n\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nThe environment is useful for an overview of the available objects. Moreover, you can click on some objects like data frames to view them in a spreadsheet-like viewer."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#workspace",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#workspace",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "Workspace",
     "text": "Workspace\n\n\nThe workspace (“global environment”) is where all objects created by an assignment are saved.\nI recommend to deactivate automatic saving and restoring of the workspace because it can lead to unexpected results.\nYou can deactivate it in the Global Options under General - Workspace."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#what-is-the-output-pane",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#what-is-the-output-pane",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "What is the output pane?",
     "text": "What is the output pane?\n\n\nThe output pane provides access to several important features.\n\naccess and organize files\ndisplay and zoom into plots\nview and administer packages\nsearch for help and information\n…"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#packages",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#packages",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "Packages",
     "text": "Packages\nPackages are collections of R functions, datasets, help menus, and examples that extend the capabilities of Base R.\n\n\nInstall packages once with install.packages(), using quotation marks around the package name.\n\ninstall.packages(\"foo\")\n\n\n\n\n\n\n\nLoad a package every time you start a new R session with library(). No quotation marks needed.\n\nlibrary(foo)\n\n\n\n\n\nUse the :: operator (e.g., dplyr::filter()) to be specific about which package a function comes from."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#section-2",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#section-2",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "",
     "text": "Mora-Cantallops et al. (2020)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#functions",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#functions",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "Functions",
     "text": "Functions\nObjects are one fundamental thing in R. The other fundamental thing are functions. The basic syntax of a function is\nfunction_name(option1, option2, ...).\nFunctions are used to perform specific tasks. For example, the function mean() computes the mean of a vector of numbers. The result can be assigned to a new object.\n\n# Apply the sqrt() function to the number 9 and assign the result to x.\nx &lt;- sqrt(9)\nx\n\n[1] 3\n\n\nMany functions are available in Base R. Additional functions are provided by packages and can be used after loading the package."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#help",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#help",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "Help",
     "text": "Help\n\n\nThe help menu provides access to the documentation of functions and packages. With the ? operator, you can search for help on a specific function.\n\n# Get help for the function sqrt().\n?sqrt"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#exercise-2",
     "href": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#exercise-2",
-    "title": "StartR Workshop",
+    "title": "Building Blocks",
     "section": "Exercise ✏️",
     "text": "Exercise ✏️\n\nPhoto courtesy of @chuttersnap\n\n\nInstall the package ggplot2 and load it into your current R session.\n\n\nSolution\ninstall.packages(\"ggplot2\")\nlibrary(ggplot2)\n\n\n\n\nGet help about the ggsave() function. What does it do?\n\n\nSolution\n?ggsave\n\n\n\n\n\n\n\nwww.maikbieleke.com"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#what-are-matrices",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#what-are-matrices",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "What are matrices?",
     "text": "What are matrices?\nMatrices are combinations of vectors. Like vectors, they can only contain values of the same type (e.g., numeric or character). If you combine vectors of different types, they will be coerced into the same type.\nThere are two main ways to create matrices in R:\n\nfrom existing vectors with cbind() and rbind()\nfrom scratch with matrix()"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#matrices-from-existing-vectors-cbind",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#matrices-from-existing-vectors-cbind",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "Matrices from existing vectors: cbind()",
     "text": "Matrices from existing vectors: cbind()\n\n# Create vectors\nx &lt;- c(10, 11, 12, 13, 14, 15)\ny &lt;- c(20, 21, 22, 23, 24, 25)\nz &lt;- c(30, 31, 32, 33, 34, 35)\n\nThe cbind() function combines vectors into a matrix by binding them together by column.\n\n\n\ncbind(x, y, z)\n\n      x  y  z\n[1,] 10 20 30\n[2,] 11 21 31\n[3,] 12 22 32\n[4,] 13 23 33\n[5,] 14 24 34\n[6,] 15 25 35\n\n\nNote that the vector names are used as column names."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#matrices-from-existing-vectors-rbind",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#matrices-from-existing-vectors-rbind",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "Matrices from existing vectors: rbind()",
     "text": "Matrices from existing vectors: rbind()\n\n# Create vectors\nx &lt;- c(10, 11, 12, 13, 14, 15)\ny &lt;- c(20, 21, 22, 23, 24, 25)\nz &lt;- c(30, 31, 32, 33, 34, 35)\n\nThe rbind() function combines vectors into a matrix by binding them together by row\n\n\n\nrbind(x, y, z)\n\n  [,1] [,2] [,3] [,4] [,5] [,6]\nx   10   11   12   13   14   15\ny   20   21   22   23   24   25\nz   30   31   32   33   34   35\n\n\nNote that the vector names are used as row names."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#matrices-from-scratch-matrix",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#matrices-from-scratch-matrix",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "Matrices from scratch: matrix()",
     "text": "Matrices from scratch: matrix()\nThe matrix() function is an explicit way to create matrices from scratch. It takes the following arguments:\n\ndata: a vector containing the data\nnrow: the number of rows\nncol: the number of columns\nbyrow: logical value indicating whether the matrix should be filled by row (FALSE, default) or by column (TRUE)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#examples",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#examples",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "Examples",
     "text": "Examples\n\n# Create a vector with data\ndata &lt;- 1:10\n\nThe matrix function can transforms the data into a variety of matrices.\n\n# Create a matrix with 2 rows and 5 columns\nmatrix(data, nrow = 2, ncol = 5)\n\n     [,1] [,2] [,3] [,4] [,5]\n[1,]    1    3    5    7    9\n[2,]    2    4    6    8   10\n\n# Now fill by row instead of by column\nmatrix(data, nrow = 2, ncol = 5, byrow = TRUE)\n\n     [,1] [,2] [,3] [,4] [,5]\n[1,]    1    2    3    4    5\n[2,]    6    7    8    9   10\n\n# Create a matrix with 5 rows and 2 columns\nmatrix(data, nrow = 5, ncol = 2)\n\n     [,1] [,2]\n[1,]    1    6\n[2,]    2    7\n[3,]    3    8\n[4,]    4    9\n[5,]    5   10"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#indexing-with-matrices",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#indexing-with-matrices",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "Indexing with matrices",
     "text": "Indexing with matrices\n\nRemember that vectors are indexed like this: x[i]\n\n# Create a vector with values\nvec &lt;- 12:1\nvec\n\n [1] 12 11 10  9  8  7  6  5  4  3  2  1\n\nvec[3]\n\n[1] 10\n\n\nMatrices are indexed like this: x[i, j]\n\n# Create a matrix\nmat &lt;- matrix(vec, nrow = 4, ncol = 3)\nmat\n\n     [,1] [,2] [,3]\n[1,]   12    8    4\n[2,]   11    7    3\n[3,]   10    6    2\n[4,]    9    5    1\n\n# Get the value in the 2nd row and 3rd column\nmat[2, 3]\n\n[1] 3"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#examples-1",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#examples-1",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "Examples",
     "text": "Examples\n\nmat\n\n     [,1] [,2] [,3]\n[1,]   12    8    4\n[2,]   11    7    3\n[3,]   10    6    2\n[4,]    9    5    1\n\n\n\n\nUse vectors to index multiple rows and/or columns.\n\nGetting multiple row values\n\n# 2nd and 4th value in 1st column\nmat[c(2, 4), 1]\n\n[1] 11  9\n\n\nGetting multiple column values\n\n# 2nd to 3rd value in 4th row\nmat[4, 2:3]\n\n[1] 5 1\n\n\n\n\nLeave rows and/or column index empty to get all values.\n\nGetting all rows values\n\n# all row values in 1st column\nmat[, 1]\n\n[1] 12 11 10  9\n\n\nGetting all column values\n\n# ll column values in 4th row\nmat[4, ]\n\n[1] 9 5 1"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#exercise",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#exercise",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "Exercise ✏️",
     "text": "Exercise ✏️\n\nPhoto courtesy of @kolbymilton\n\n\nRecall that letters is a vector of the alphabet. Create a matrix m1 with 3 rows and 5 columns using the first 15 letters of the alphabet.\n\n\nSolution\nm1 &lt;- matrix(letters[1:15], nrow = 3, ncol = 5)\n\n\nUse cbind() to attach a sixth column with the letters p, q, and r.\n\n\nSolution\nm1 &lt;- cbind(m1, c(\"p\", \"q\", \"r\"))\n\n\nExtract the 2nd to 4th column assign them to a new matrix m2.\n\n\nSolution\nm2 &lt;- m1[, 2:4]\n\n\nCreate a new matrix m3 by removing the 3rd row of m2.\n\n\nSolution\nm3 &lt;- m2[-3, ]"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#what-are-dataframes",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#what-are-dataframes",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "What are dataframes?",
     "text": "What are dataframes?\nDataframes are similar to matrices, but they can contain different types of data (e.g., numeric and character). Because of this flexibility, they are commonly used to store data in R.\nDataframes are often imported from external sources (e.g., Excel, SPSS, or CSV files). However, we can also create dataframes from scratch with the data.frame()function.\n\ndata &lt;- data.frame(\"id\" = c(1, 2, 3, 4, 5),\n                   \"sex\" = c(\"m\", \"m\", \"m\", \"f\", \"f\"),\n                   \"age\" = c(99, 46, 23, 54, 23))\ndata\n\n  id sex age\n1  1   m  99\n2  2   m  46\n3  3   m  23\n4  4   f  54\n5  5   f  23"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#selecting-rows",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#selecting-rows",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "Selecting rows",
     "text": "Selecting rows\n\n\nWe can select rows based on their numerical index (slicing).\n\nNumeric indexing (slicing)\n\n# Get the 2nd and 3rd row\ndata[2:3, ]\n\n  id sex age\n2  2   m  46\n3  3   m  23\n\n\nUsing dplyr::slice()\n\n# Get the 2nd and 3rd row\ndplyr::slice(data, 2:3)\n\n  id sex age\n1  2   m  46\n2  3   m  23\n\n\n\n\nWe can select rows based on a logical condition (filtering).\n\nLogical indexing\n\n# Get rows for females\ndata[data$sex == \"f\", ]\n\n  id sex age\n4  4   f  54\n5  5   f  23\n\n\nUsing dplyr::filter()\n\n# Get rows for females\ndplyr::filter(data, sex == \"f\")\n\n  id sex age\n1  4   f  54\n2  5   f  23"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#selecting-columns",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#selecting-columns",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "Selecting columns",
     "text": "Selecting columns\n\n\n\nNumeric indexing\n\n# Get the 2nd and 3rd column\ndata[, 2:3]\n\n  sex age\n1   m  99\n2   m  46\n3   m  23\n4   f  54\n5   f  23\n\n\nUsing dplyr::select()\n\n# Get the 2nd and 3rd column\ndplyr::select(data, 2:3)\n\n  sex age\n1   m  99\n2   m  46\n3   m  23\n4   f  54\n5   f  23\n\n\n\n\n\nIndexing by name\n\n# Get the \"sex2 and \"age\" columns\ndata[, c(\"sex\", \"age\")]\n\n  sex age\n1   m  99\n2   m  46\n3   m  23\n4   f  54\n5   f  23\n\n\nUsing dplyr::select()\n\n# Get the \"sex2 and \"age\" columns\ndplyr::select(data, sex, age)\n\n  sex age\n1   m  99\n2   m  46\n3   m  23\n4   f  54\n5   f  23"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#the-operator",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#the-operator",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "The $ operator",
     "text": "The $ operator\n\n\nRetrieving a single column of a dataframe is so common that R provides an own shortcut for this task: the $ operator.\n\ndata\n\n  id sex age\n1  1   m  99\n2  2   m  46\n3  3   m  23\n4  4   f  54\n5  5   f  23\n\n\n\n# Get the \"age\" column\ndata$age\n\n[1] 99 46 23 54 23\n\n# Get the \"sex\" column\ndata$sex\n\n[1] \"m\" \"m\" \"m\" \"f\" \"f\"\n\n\nNote that the $ operator returns the variable as a vector."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#adding-columns",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#adding-columns",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "Adding columns",
     "text": "Adding columns\nThe $ operator is a simple way to add new columns to a dataframe.\n\n# Adding a new character and a new numeric column\ndata$condition &lt;- c(\"con\", \"con\", \"exp\", \"con\", \"exp\")\ndata$score &lt;- c(5.5, 2.3, 4.7, 6.7, 3.0)\ndata\n\n  id sex age condition score\n1  1   m  99       con   5.5\n2  2   m  46       con   2.3\n3  3   m  23       exp   4.7\n4  4   f  54       con   6.7\n5  5   f  23       exp   3.0\n\n\nAn alternative is the dplyr::mutate() function.\n\n# Adding a new character column\ndata &lt;- dplyr::mutate(data, \n                      time = c(\"t1\", \"t2\", \"t1\", \"t2\", \"t2\"),\n                      weight = c(70, 80, 65, 60, 75))\ndata\n\n  id sex age condition score time weight\n1  1   m  99       con   5.5   t1     70\n2  2   m  46       con   2.3   t2     80\n3  3   m  23       exp   4.7   t1     65\n4  4   f  54       con   6.7   t2     60\n5  5   f  23       exp   3.0   t2     75"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#renaming-columns",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#renaming-columns",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "Renaming columns",
     "text": "Renaming columns\nWe have already used the names of colums to select them. To see all names of a dataframe, use the names() function.\n\n# Get the names of the dataframe\nnames(data)\n\n[1] \"id\"        \"sex\"       \"age\"       \"condition\" \"score\"     \"time\"     \n[7] \"weight\"   \n\n\nThe names can be changed by assigning new values.\n\n# Adding a new character column\nnames(data)[4] &lt;- \"group\"\nnames(data)\n\n[1] \"id\"     \"sex\"    \"age\"    \"group\"  \"score\"  \"time\"   \"weight\"\n\n\nAn alternative is the dplyr::rename() function.\n\n# Adding a new character column\ndata &lt;- dplyr::rename(data, gender = sex)\nnames(data)\n\n[1] \"id\"     \"gender\" \"age\"    \"group\"  \"score\"  \"time\"   \"weight\""
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#exercise-1",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#exercise-1",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "Exercise ✏️",
     "text": "Exercise ✏️\n\nPhoto courtesy of @siora18\n\n\n\n\nCreate a dataframe demo based on the table on the right.\n\n\nSolution\ndemo &lt;- data.frame(\n  name = c(\"Alice\", \"Bob\", \"Charlie\", \"David\", \"Eva\"),\n  weight = c(165, 175, 180, NA, 160))\n\n\nCorrect the name of the second column to height.\n\n\nSolution\nnames(demo)[2] &lt;- \"height\" \n# alternative: demo &lt;- dplyr::rename(demo, height = weight)\n\n\nUsing the $ operator, convert height from cm to m.\n\n\nSolution\ndemo$height &lt;- demo$height / 100\n# alternative: demo &lt;- dplyr::mutate(demo, height = height / 100)\n\n\nCompute the average height.\n\n\nSolution\nheight_mean &lt;- mean(demo$height, na.rm = TRUE)\n\n\nSelect rows with above-average height.\n\n\nSolution\ndemo[demo$height &gt; height_mean, ]\n\n\n\n\n\n\n\nname\nweight\n\n\n\n\nAlice\n165\n\n\nBob\n175\n\n\nCharlie\n180\n\n\nDavid\n\n\n\nEva\n160"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#what-are-factors",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#what-are-factors",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "What are factors?",
     "text": "What are factors?\nDataframes often contain factors that are used to represent categorical variables (e.g., sex, education level, blood type).\n\n\n\nA factor can contain only predefined values (called levels) with unique labels. Factors are created using the factor() function.\n\n\n\n\n\n\n\n# Creating a character vector\nsex = c(\"m\", \"m\", \"m\", \"f\", \"f\")\nsex\n\n[1] \"m\" \"m\" \"m\" \"f\" \"f\"\n\n# Converting to factor with two levels labelled \"f\" and \"m\"\nfactor(sex)\n\n[1] m m m f f\nLevels: f m\n\n\nFactors are very similar to character vectors, but they are treated differently in many statistical analyses and data visualizations."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#change-level-order",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#change-level-order",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "Change level order",
     "text": "Change level order\nWe can change the order of the levels by explicitly specifying them in the factor() function.\n\n# Create a character vector\nsex = c(\"m\", \"m\", \"m\", \"f\", \"f\")\n\n# Order: \"f\", \"m\"\nfactor(sex, levels = c(\"f\", \"m\"))\n\n[1] m m m f f\nLevels: f m\n\n# Order: \"m\", \"f\"\nfactor(sex, levels = c(\"m\", \"f\"))\n\n[1] m m m f f\nLevels: m f\n\n\nThis can be useful for reordering the levels in an analysis or plot (e.g., to change the order of the bars for males and females in a barplot)."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#renaming-factor-levels",
     "href": "workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html#renaming-factor-levels",
-    "title": "StartR Workshop",
+    "title": "Matrices and Dataframes",
     "section": "Renaming factor levels",
     "text": "Renaming factor levels\nWe can also rename the levels of a factor by specifying the new names in the levels argument of the factor() function.\n\n# Create a character vector\nsex = c(\"m\", \"m\", \"m\", \"f\", \"f\")\n\n# Ordinary factor\nfactor(sex, levels = c(\"f\", \"m\"))\n\n[1] m m m f f\nLevels: f m\n\n# Renamed factor\nfactor(sex, levels = c(\"m\", \"f\"), labels = c(\"male\", \"female\"))\n\n[1] male   male   male   female female\nLevels: male female\n\n\nThis can be useful for relabelling the levels in an analysis or plot.\n\n\n\n\nwww.maikbieleke.com"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#workspace",
     "href": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#workspace",
-    "title": "StartR Workshop",
+    "title": "Workflow",
     "section": "Workspace",
     "text": "Workspace\n\n\nIt is highly recommended to deactivate automatic saving and restoring of the workspace because it can lead to unexpected results.\nYou can deactivate it in the Global Options under General - Workspace."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#working-directory",
     "href": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#working-directory",
-    "title": "StartR Workshop",
+    "title": "Workflow",
     "section": "Working directory",
     "text": "Working directory\nThe working directory is the directory from which R will read and write files. You can check the current working directory with getwd().\n\ngetwd()\n\n[1] \"C:/Users/maikb/Google Drive/Verwaltung/homepage/workshops/slides/startr-2023-frankfurt\""
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#absolute-and-relative-paths",
     "href": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#absolute-and-relative-paths",
-    "title": "StartR Workshop",
+    "title": "Workflow",
     "section": "Absolute and relative paths",
     "text": "Absolute and relative paths\n\nAbsolute paths start from the root directory (on windows: C:\\) and specify the complete location of a file or directory.\nExample: C:/Users/MMuster/Docs/intro2r/figures/pic.png\n\nhard to read and write\nbreak when moving files or directories\nnot portable across operating systems or users\n\nRelative paths start from the current working directory and specify the location of a file or directory relative to the current working directory.\nExample: figures/workflow.png when the current working directory is the intro2r directory."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#projects",
     "href": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#projects",
-    "title": "StartR Workshop",
+    "title": "Workflow",
     "section": "Projects",
     "text": "Projects\n\n\nProjects helps you to organize your work. Each project has its own working directory, workspace, and files. In general, it is recommended to have one project for each analysis you are working on.\nProjects can be created in the File menu either in a new directory or in an existing directory. This will produce a .Rproj file that you can double-click to open the project.\n\n\n\n\n\nhttps://support.posit.co/hc/en-us/articles/200526207-Using-RStudio-Projects"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#directory-structure",
     "href": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#directory-structure",
-    "title": "StartR Workshop",
+    "title": "Workflow",
     "section": "Directory structure",
     "text": "Directory structure\n\n\nIt is good practice to structure your projects’ working directory in a consistent way.\nAn example from Douglas et al. (2023) is shown on the right. You can adjust it to your needs.\n\n\n\n\n\nDouglas et al. (2023)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#data-import-and-export",
     "href": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#data-import-and-export",
-    "title": "StartR Workshop",
+    "title": "Workflow",
     "section": "Data import and export",
     "text": "Data import and export\n\n\nThe rio package (= R Import and Export) is a Swiss-Army knife for data import and export from and to various file formats.\n\n# install.packages(\"rio\")\nlibrary(rio)\n\nIt has two main functions:\n\nimport(): Import data\n\n# Import and assign the fifa dataset\nfifa &lt;- rio::import(\"data/fifa.csv\")\n\nexport(): Export data\n\n# Export the fifa dataset\nrio::export(fifa, \"data/fifa.xlsx\")\n\n\nNote that rio automatically detects the file format based on the file extension.\n\n\n\n\n\nImage: Pixabay\n\n\nhttps://cran.r-project.org/web/packages/rio/index.html"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#exercise",
     "href": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#exercise",
-    "title": "StartR Workshop",
+    "title": "Workflow",
     "section": "Exercise ✏️",
     "text": "Exercise ✏️\n\nPhoto courtesy of @fonsheijnsbroek_amsterdam_photos\n\n\nCreate two projects for analyzing the FIFA and HIIT data.\nEstablish directory structures with three folders:\n\ndata\nfigures\nscripts\n\nCopy the all datasets into the corresponding data file.\nImport the datasets fifa.xlsx and hiit.xlsx."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#sections",
     "href": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#sections",
-    "title": "StartR Workshop",
+    "title": "Workflow",
     "section": "Sections",
     "text": "Sections\n\n\nSections can help to structure a script. They start with a comment (#) followed by the section’s name and at least four dashes (-). You can also insert them via the “Code - Insert Section” menu (Ctrl/CMD + Shift + R).\n\nCode folding: Section content can be collapsed and expanded.\nCode outline: Sections are added to the script outline.\nCode navigation: Sections show up in the code navigation. drop-down.\n\n\n\n\n\n\n# Load Data ---------------------------------------------------------------\n\n# Plot Data ---------------------------------------------------------------"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#code-autocompletion",
     "href": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#code-autocompletion",
-    "title": "StartR Workshop",
+    "title": "Workflow",
     "section": "Code autocompletion",
     "text": "Code autocompletion\nRStudio offers code completion with fuzzy narrowing. It can be triggered by pressing the tab key.\n\npackages\nfunctions and arguments\nfiles and paths\n\nSnippets are templates for common code patterns. They can be triggered by entering a prefix and pressing the tab key twice.\n\nts + tab + tab: insert current date and time\nlib + tab + tab: insert library() call\n\nTo create custom snippets: Tools - Global Options - Code - Edit Snippets."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#diagnostics",
     "href": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#diagnostics",
-    "title": "StartR Workshop",
+    "title": "Workflow",
     "section": "Diagnostics",
     "text": "Diagnostics\nRStudio can help you to find problems in your code.\n\n\n\nSyntax errors are marked with a red cross at the left margin and a red squiggly line. Hover the mouse over them to see the message.\n\n\n\n\n\n\n\n\nWarning messages are marked with a yellow exclamation mark at the left margin and a yellow squiggly line. Hover the mouse over them to see the message.\n\n\n\n\n\nNote that you must save the file to see the diagnostics."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#style-guide",
     "href": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#style-guide",
-    "title": "StartR Workshop",
+    "title": "Workflow",
     "section": "Style guide",
     "text": "Style guide\n\n\nReview the tidyverse style guide for tips on\n\nproper file names\ngood code syntax\nworking with functions\n…\n\n\n\n\n\n\nhttps://style.tidyverse.org/index.html"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#information-about-the-session",
     "href": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#information-about-the-session",
-    "title": "StartR Workshop",
+    "title": "Workflow",
     "section": "Information about the session",
     "text": "Information about the session\nThe sessionInfo() function shows information about the current R session. This includes loaded packages and their versions, the operating system, and the R version.\n\nsessionInfo()\n\nR version 4.3.1 (2023-06-16 ucrt)\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\nRunning under: Windows 11 x64 (build 22631)\n\nMatrix products: default\n\n\nlocale:\n[1] LC_COLLATE=en_US.UTF-8  LC_CTYPE=en_US.UTF-8    LC_MONETARY=en_US.UTF-8\n[4] LC_NUMERIC=C            LC_TIME=en_US.UTF-8    \n\ntime zone: Europe/Berlin\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nother attached packages:\n[1] rio_0.5.30\n\nloaded via a namespace (and not attached):\n [1] zip_2.3.0         vctrs_0.6.3       cli_3.6.1         knitr_1.46       \n [5] rlang_1.1.1       xfun_0.43         stringi_1.7.12    forcats_1.0.0    \n [9] haven_2.5.3       jsonlite_1.8.8    data.table_1.14.8 glue_1.6.2       \n[13] htmltools_0.5.6   readxl_1.4.3      hms_1.1.3         fansi_1.0.4      \n[17] rmarkdown_2.24    cellranger_1.1.0  evaluate_0.21     tibble_3.2.1     \n[21] fastmap_1.1.1     openxlsx_4.2.5.2  yaml_2.3.7        lifecycle_1.0.3  \n[25] compiler_4.3.1    Rcpp_1.0.11       pkgconfig_2.0.3   rstudioapi_0.15.0\n[29] digest_0.6.33     foreign_0.8-84    utf8_1.2.3        pillar_1.9.0     \n[33] curl_5.0.2        magrittr_2.0.3    tools_4.3.1"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#citing-r",
     "href": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#citing-r",
-    "title": "StartR Workshop",
+    "title": "Workflow",
     "section": "Citing R",
     "text": "Citing R\nThe citation() function shows the citation for R.\n\ncitation()\n\nTo cite R in publications use:\n\n  R Core Team (2023). _R: A Language and Environment for Statistical\n  Computing_. R Foundation for Statistical Computing, Vienna, Austria.\n  &lt;https://www.R-project.org/&gt;.\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {R: A Language and Environment for Statistical Computing},\n    author = {{R Core Team}},\n    organization = {R Foundation for Statistical Computing},\n    address = {Vienna, Austria},\n    year = {2023},\n    url = {https://www.R-project.org/},\n  }\n\nWe have invested a lot of time and effort in creating R, please cite it\nwhen using it for data analysis. See also 'citation(\"pkgname\")' for\nciting R packages."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#citing-packages",
     "href": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#citing-packages",
-    "title": "StartR Workshop",
+    "title": "Workflow",
     "section": "Citing packages",
     "text": "Citing packages\nThe citation() function can also be used to show the citation for a package.\n\ncitation(\"ggplot2\")\n\nTo cite ggplot2 in publications, please use\n\n  H. Wickham. ggplot2: Elegant Graphics for Data Analysis.\n  Springer-Verlag New York, 2016.\n\nA BibTeX entry for LaTeX users is\n\n  @Book{,\n    author = {Hadley Wickham},\n    title = {ggplot2: Elegant Graphics for Data Analysis},\n    publisher = {Springer-Verlag New York},\n    year = {2016},\n    isbn = {978-3-319-24277-4},\n    url = {https://ggplot2.tidyverse.org},\n  }"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#advanced-documentation",
     "href": "workshops/slides/startr-2023-frankfurt/startr-06_workflow.html#advanced-documentation",
-    "title": "StartR Workshop",
+    "title": "Workflow",
     "section": "Advanced documentation",
     "text": "Advanced documentation\nThere are serveral advanced ways to document your code:\n\nmarkdown files\ninteractive notebooks\nversion control\n\n\n\n\n\nwww.maikbieleke.com"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#the-data-viewer",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#the-data-viewer",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "The data viewer",
     "text": "The data viewer\n\n\nRStudio has a built-in data viewer. You can open it by clicking on the dataset in the Environment pane or by applying the View() function to the dataset. It allows you to\n\nsort columns\nfilter rows\nsearch for text\n\n\n\n\n\n\nhttps://support.posit.co/hc/en-us/articles/205175388-Using-the-Data-Viewer-in-the-RStudio-IDE"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#overview-with-str",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#overview-with-str",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Overview with str()",
     "text": "Overview with str()\nA good overview of the structure of the dataset can be obtained with base R function str().\n\nstr(fifa)\n\n'data.frame':   17660 obs. of  13 variables:\n $ ID         : num  209658 212198 224334 192985 224232 ...\n $ Name       : chr  \"L. Goretzka\" \"Bruno Fernandes\" \"M. Acuña\" \"K. De Bruyne\" ...\n $ Age        : num  27 27 30 31 25 27 30 32 28 28 ...\n $ Nationality: chr  \"Germany\" \"Portugal\" \"Argentina\" \"Belgium\" ...\n $ Club       : chr  \"FC Bayern München\" \"Manchester United\" \"Sevilla FC\" \"Manchester City\" ...\n $ Reputation : num  4 3 2 4 3 4 4 3 3 3 ...\n $ Height     : chr  \"189\" \"179\" \"172\" \"181\" ...\n $ Weight     : chr  \"82\" \"69\" \"69\" \"70\" ...\n $ Overall    : num  87 86 85 91 86 89 86 83 82 88 ...\n $ Potential  : num  88 87 85 91 89 90 86 83 82 88 ...\n $ Value      : num  9.10e+07 7.85e+07 4.65e+07 1.08e+08 8.95e+07 ...\n $ Wage       : num  115000 190000 46000 350000 110000 130000 220000 61000 63000 250000 ...\n $ Foot       : chr  \"Right\" \"Right\" \"Left\" \"Right\" ..."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#overview-with-glimpse",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#overview-with-glimpse",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Overview with glimpse()",
     "text": "Overview with glimpse()\nAn alternative is the dplyr::glimpse() function.\n\ndplyr::glimpse(fifa)\n\nRows: 17,660\nColumns: 13\n$ ID          &lt;dbl&gt; 209658, 212198, 224334, 192985, 224232, 212622, 197445, 18…\n$ Name        &lt;chr&gt; \"L. Goretzka\", \"Bruno Fernandes\", \"M. Acuña\", \"K. De Bruyn…\n$ Age         &lt;dbl&gt; 27, 27, 30, 31, 25, 27, 30, 32, 28, 28, 26, 36, 27, 26, 27…\n$ Nationality &lt;chr&gt; \"Germany\", \"Portugal\", \"Argentina\", \"Belgium\", \"Italy\", \"G…\n$ Club        &lt;chr&gt; \"FC Bayern München\", \"Manchester United\", \"Sevilla FC\", \"M…\n$ Reputation  &lt;dbl&gt; 4, 3, 2, 4, 3, 4, 4, 3, 3, 3, 2, 4, 3, 1, 3, 1, 3, 3, 4, 3…\n$ Height      &lt;chr&gt; \"189\", \"179\", \"172\", \"181\", \"172\", \"177\", \"180\", \"183\", \"1…\n$ Weight      &lt;chr&gt; \"82\", \"69\", \"69\", \"70\", \"68\", \"75\", \"78\", \"80\", \"86\", \"74\"…\n$ Overall     &lt;dbl&gt; 87, 86, 85, 91, 86, 89, 86, 83, 82, 88, 84, 88, 86, 83, 84…\n$ Potential   &lt;dbl&gt; 88, 87, 85, 91, 89, 90, 86, 83, 82, 88, 87, 88, 87, 86, 85…\n$ Value       &lt;dbl&gt; 91000000, 78500000, 46500000, 107500000, 89500000, 1055000…\n$ Wage        &lt;dbl&gt; 115000, 190000, 46000, 350000, 110000, 130000, 220000, 610…\n$ Foot        &lt;chr&gt; \"Right\", \"Right\", \"Left\", \"Right\", \"Right\", \"Right\", \"Left…"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#dataset-properties",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#dataset-properties",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Dataset properties",
     "text": "Dataset properties\n\nnumber of rows\n\nnrow(fifa)\n\n[1] 17660\n\n\nnumber of columns\n\nncol(fifa)\n\n[1] 13\n\n\ndimensions (rows x columns)\n\ndim(fifa)\n\n[1] 17660    13\n\n\nnames of the variables\n\nnames(fifa)\n\n [1] \"ID\"          \"Name\"        \"Age\"         \"Nationality\" \"Club\"       \n [6] \"Reputation\"  \"Height\"      \"Weight\"      \"Overall\"     \"Potential\"  \n[11] \"Value\"       \"Wage\"        \"Foot\""
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#first-and-last-rows-with-head-and-tail",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#first-and-last-rows-with-head-and-tail",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "First and last rows with head() and tail()",
     "text": "First and last rows with head() and tail()\n\nshow the first 3 rows\n\nhead(fifa, 3) \n\n      ID            Name Age Nationality              Club Reputation Height\n1 209658     L. Goretzka  27     Germany FC Bayern München          4    189\n2 212198 Bruno Fernandes  27    Portugal Manchester United          3    179\n3 224334        M. Acuña  30   Argentina        Sevilla FC          2    172\n  Weight Overall Potential    Value   Wage  Foot\n1     82      87        88 91000000 115000 Right\n2     69      86        87 78500000 190000 Right\n3     69      85        85 46500000  46000  Left\n\n\nshow the last 3 rows\n\ntail(fifa, 3)\n\n          ID            Name Age Nationality           Club Reputation Height\n17658 270567        A. Demir  25      Turkey   Ümraniyespor          1    190\n17659 256624    21 S. Czajor  18      Poland Fleetwood Town          1    187\n17660 256376 21 F. Jakobsson  20      Sweden IFK Norrköping          1    186\n      Weight Overall Potential Value Wage  Foot\n17658     82      51        56 70000 2000 Right\n17659     79      50        65 90000  500 Right\n17660     78      50        61 90000  500  Left"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#overview-of-the-dataset-with-skimr",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#overview-of-the-dataset-with-skimr",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Overview of the dataset with skimr()",
     "text": "Overview of the dataset with skimr()\n\nskimr::skim(fifa)\n\n\n── Data Summary ────────────────────────\n                           Values\nName                       fifa  \nNumber of rows             17660 \nNumber of columns          13    \n_______________________          \nColumn type frequency:           \n  character                4     \n  numeric                  9     \n________________________         \nGroup variables            None  \n\n── Variable type: character ─────────────────────────────────────────────────────────────────────────────────────\n  skim_variable n_missing complete_rate min max empty n_unique whitespace\n1 Name                  0             1   3  25     0    17140          0\n2 Nationality           0             1   4  24     0      161          0\n3 Club                  0             1   0  45   211      927          0\n4 Foot                  0             1   4   5     0        2          0\n\n── Variable type: numeric ───────────────────────────────────────────────────────────────────────────────────────\n  skim_variable n_missing complete_rate       mean          sd  p0     p25    p50      p75      p100 hist \n1 ID                    0             1  246319.     31488.     16 240732. 257041  263028.    271340 ▁▁▁▁▇\n2 Age                   0             1      23.1        4.64   15     20      22      26         54 ▇▅▁▁▁\n3 Height                0             1     181.         6.96  149    176     181     186        206 ▁▁▇▅▁\n4 Weight                0             1      74.3        6.98   48     70      74      79        110 ▁▆▇▁▁\n5 Overall               0             1      63.4        8.04   43     58      63      69         91 ▂▇▆▃▁\n6 Potential             0             1      71.0        6.53   42     67      71      75         95 ▁▂▇▅▁\n7 Value                 0             1 2739788.   7841276.      0 325000  700000 1725000  190500000 ▇▁▁▁▁\n8 Wage                  0             1    8190.     20477.      0    550    2000    6000     450000 ▇▁▁▁▁\n9 Reputation            0             1       1.11       0.407   1      1       1       1          5 ▇▁▁▁▁"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#plotting-in-r",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#plotting-in-r",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Plotting in R",
     "text": "Plotting in R\nThere are many ways to create plots in R.\n\nBase R graphics\n\nlattice graphics\nggplot2 graphics\n…"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#grammar-of-graphics",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#grammar-of-graphics",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Grammar of Graphics",
     "text": "Grammar of Graphics\n\n\n\n\n\nLeland Wilkinson"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#ggplot2",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#ggplot2",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "ggplot2",
     "text": "ggplot2\n\n\n\n\n\n\n\nHadley Wickham"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#installing-and-loading-ggplot2",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#installing-and-loading-ggplot2",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Installing and loading ggplot2",
     "text": "Installing and loading ggplot2\nWe need to install the ggplot2 package once.\n\ninstall.packages(\"ggplot2\") # if not already installed\n\nNow we can load the package into our current R session.\n\nlibrary(ggplot2)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#the-ggplot-function",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#the-ggplot-function",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "The ggplot() function",
     "text": "The ggplot() function\nEvery plot is initialized with the ggplot() function. It has two main arguments:\n\ndata specifies the data frame to be used\nmapping specifies how variables are mapped to visual properties (aesthetics) of geoms\n\n\n\n\n\n\n\nAesthetics are the visual properties of geoms (e.g., position, color, size)."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#data",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#data",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Data",
     "text": "Data\nWe first specify the data frame to be used for plotting. This provides variables (columns) and observations (rows).\n\nggplot(data = fifa)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#global-aesthetics",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#global-aesthetics",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Global aesthetics",
     "text": "Global aesthetics\nWe map variables of the data frame to global visual properties (aesthetics) of the plot. Here, Overall and Wage are mapped to x and y positions.\n\nggplot(data = fifa, mapping = aes(x = Overall, y = Wage))"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#geometric-objects",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#geometric-objects",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Geometric objects",
     "text": "Geometric objects\nWe add geometric objects (geoms) with + and geom_*(). Here, we draw points at all x and y positions.\n\nggplot(fifa, aes(x = Overall, y = Wage)) + geom_point()"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#adding-geoms",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#adding-geoms",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Adding geoms",
     "text": "Adding geoms\nGeometric layers can be stacked to create more complex plots. Just add more + geom_*() calls.\n\nggplot(fifa, aes(x = Overall, y = Wage)) +\n  geom_point() + geom_smooth()"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#adding-global-aesthetics",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#adding-global-aesthetics",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Adding global aesthetics",
     "text": "Adding global aesthetics\nAdditional global aesthetics can be added to the ggplot() function. They will be applied to all geoms.\n\nggplot(fifa, aes(x = Overall, y = Wage, color = Foot)) +\n  geom_point() +\n  geom_smooth()"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#adding-local-aesthetics",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#adding-local-aesthetics",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Adding local aesthetics",
     "text": "Adding local aesthetics\nAesthetics can also be added locally to affect only a single geom.\n\nggplot(fifa, aes(x = Overall, y = Wage)) +\n  geom_point() +\n  geom_smooth(aes(color = Foot))"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#histograms-and-density-plots",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#histograms-and-density-plots",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Histograms and density plots",
     "text": "Histograms and density plots\n\n\n\nggplot(fifa, aes(x = Overall)) + \n  geom_histogram()\n\n\n\n\n\n\n\n\n\nggplot(fifa, aes(x = Overall)) + \n  geom_density()\n\n\n\n\n\n\n\n\n\n\nggplot(fifa, aes(x = Overall)) + \n  geom_histogram(color = \"white\")\n\n\n\n\n\n\n\n\n\nggplot(fifa, aes(x = Overall)) + \n  geom_density(aes(color = Foot))"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#boxplots-and-violin-plots",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#boxplots-and-violin-plots",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Boxplots and violin plots",
     "text": "Boxplots and violin plots\n\n\n\nggplot(fifa, aes(x = Overall)) + \n  geom_boxplot()\n\n\n\n\n\n\n\n\n\nggplot(fifa, aes(x = Foot, y = Overall)) + \n  geom_violin()\n\n\n\n\n\n\n\n\n\n\nggplot(fifa, aes(x = Overall)) + \n  geom_boxplot(aes(fill = Foot))\n\n\n\n\n\n\n\n\n\nggplot(fifa, aes(x = Foot, y = Overall)) + \n  geom_violin() + geom_boxplot(width = 0.1)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#barplots",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#barplots",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Barplots",
     "text": "Barplots\n\n\n\nggplot(fifa, aes(x = Foot)) + \n  geom_bar()\n\n\n\n\n\n\n\n\n\nggplot(fifa, aes(x = Reputation, \n                 fill = Foot)) + \n  geom_bar(position = \"stack\")\n\n\n\n\n\n\n\n\n\n\nggplot(fifa, aes(x = Foot)) + \n  geom_bar(aes(fill = Foot))\n\n\n\n\n\n\n\n\n\nggplot(fifa, aes(x = Reputation, \n                 fill = Foot)) + \n  geom_bar(position = \"dodge\")"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#facets",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#facets",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Facets",
     "text": "Facets\nFacets can be used to create multiple plots based on a categorical variable.\n\n# Create a plot for each foot\nggplot(fifa, aes(x = Overall, y = Wage)) + \n  geom_point() + geom_smooth() +\n  facet_wrap(~ Foot)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#scales",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#scales",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Scales",
     "text": "Scales\nScales control the mapping from data to aesthetics. They can be manually changed with scale_* functions.\n\n# Change the color used for the points\nggplot(fifa, aes(x = Overall, y = Wage, color = Foot)) + \n  geom_point() + \n  scale_color_manual(values = c(\"blue\", \"red\")) +\n  labs(x = \"Ability Score\", y = \"Wage in KEuro\", \n       title = \"Relationship between Ability and Wage\",\n       color = \"Preferred Foot\")"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#theme-elements",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#theme-elements",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Theme elements",
     "text": "Theme elements\nTheme elements control the non-data components of the plot. They can be changed with theme() function.\n\n# Change the position of the legend from the right to the bottom\nggplot(fifa, aes(x = Overall, y = Wage, color = Foot)) + \n  geom_point() + \n  theme(legend.position = \"bottom\")"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#themes",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#themes",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Themes",
     "text": "Themes\nThemes change the overall appearance of the plot. They can be changed with theme_* functions.\n\n# Use the black and white (bw) theme\nggplot(fifa, aes(x = Overall, y = Wage, color = Foot)) + \n  geom_point() + \n  theme_bw()"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#the-ggsave-function",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#the-ggsave-function",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "The ggsave() function",
     "text": "The ggsave() function\nThe ggsave() function saves plots to a file. By default, the last plot is saved into your current working directory.\n\nThe filename argument specifies the file name. The file type is automatically determined by the file extension (e.g., PNG, JPG).\nThe optional path argument specifies the path to the file.\nThe optional width and height arguments specify the width and height of the plot."
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#example",
     "href": "workshops/slides/startr-2023-frankfurt/startr-08_visualization.html#example",
-    "title": "StartR Workshop",
+    "title": "Exploration and Visualization",
     "section": "Example",
     "text": "Example\nThe following code saves a plot as a PNG file into the “figures” folder of the current working directory. The plot is named “myplot” and has a width of 9 inches and a height of 4 inches.\n\nggsave(filename = \"figures/myplot.png\", \n       width = 9, height = 4)\n\nThere are several additional options, e.g.\n\nplot to specify the plot to be saved\ndpi to specify the resolution of the plot\nunits to specify the units of the width and height arguments\n\n\n\n\n\nwww.maikbieleke.com"
   }
