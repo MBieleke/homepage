@@ -275,49 +275,49 @@
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-05_datasets.html#section",
     "href": "workshops/slides/startr-2023-frankfurt/startr-05_datasets.html#section",
-    "title": "StartR Workshop",
+    "title": "Datasets",
     "section": "",
     "text": "https://sofifa.com/ | https://kaggle.com/"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-05_datasets.html#variables",
     "href": "workshops/slides/startr-2023-frankfurt/startr-05_datasets.html#variables",
-    "title": "StartR Workshop",
+    "title": "Datasets",
     "section": "Variables",
     "text": "Variables\nThe dataset has the following variables:\n\n\n\n\n\n\n\n\n\nVariable\nMeaning\n\n\n\n\n\n\nID\nunique ID of the player\nName\nname of the player\n\n\nAge\nage of the player\nNationality\nnationality of the player\n\n\nClub\nclub of the player\nReputation\nreputation of the player (1 to 5)\n\n\nHeight\nheight of the player (in cm)\nWeight\nweight of the player (in kg)\n\n\nOverall\noverall attribute of the player (43 to 91)\nPotential\npotential attribute of the player (42 to 95)\n\n\nValue\nvalue of the player (in €)\nWage\nwage of the player (in €)\n\n\nFoot\npreferred foot (left, right)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-05_datasets.html#dataset",
     "href": "workshops/slides/startr-2023-frankfurt/startr-05_datasets.html#dataset",
-    "title": "StartR Workshop",
+    "title": "Datasets",
     "section": "Dataset",
     "text": "Dataset\n\nfifa.xlsx"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-05_datasets.html#section-1",
     "href": "workshops/slides/startr-2023-frankfurt/startr-05_datasets.html#section-1",
-    "title": "StartR Workshop",
+    "title": "Datasets",
     "section": "",
     "text": "https://doi.org/10.1371/journal.pone.0139801"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-05_datasets.html#study",
     "href": "workshops/slides/startr-2023-frankfurt/startr-05_datasets.html#study",
-    "title": "StartR Workshop",
+    "title": "Datasets",
     "section": "Study",
     "text": "Study\n\nPhoto courtesy of @nhoizey\n\n\n22 male and female team sport athletes (soccer, basketball, handball)\n6-day running-based HIIT training with 11 HIIT Sessions\nphysiological and performance tests at pre, post, and follow-up"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-05_datasets.html#variables-1",
     "href": "workshops/slides/startr-2023-frankfurt/startr-05_datasets.html#variables-1",
-    "title": "StartR Workshop",
+    "title": "Datasets",
     "section": "Variables",
     "text": "Variables\nThe dataset has the following variables:\n\n\n\n\n\n\n\n\n\n\nVariable\nExplanation\n\nVariable\nExplanation\n\n\n\n\nSex\nSex\n\nRSA\nRepeated Sprint Ability\n\n\nCMJ\nCountermovement Jump\n\nMRJ\nMultiple Rebound Jump\n\n\nRF\nRectus Femoris\n\nBF\nBiceps Femoris\n\n\nDm\nMaximal Radial Muscle Belly Displacement\n\nTc\nContraction Time between 10 and 90% Dm\n\n\nCK\nCreatinkinase\n\nCRP\nC-Reactive Protein\n\n\nDOMS\nDelayed Onset Muscle Soreness\n\nRPE\nRating of Perceived Exertion\n\n\n\n\nSex is a categorical variable (1 = male, 2 = female)\nRSA to DOMS were measured at _Pre, _Post1, and _Post2\nRPE was measured once in each HIIT session (_1 to _11)"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-05_datasets.html#dataset-1",
     "href": "workshops/slides/startr-2023-frankfurt/startr-05_datasets.html#dataset-1",
-    "title": "StartR Workshop",
+    "title": "Datasets",
     "section": "Dataset",
     "text": "Dataset\nThis overall dataset comes in two formats:\n\nWide format: hiit.xlsx\nLong format: hiit_long.xlsx\n\nMoreover, there are also subsets of the data in wide format:\n\nhiit_f_tst.xlsx: Test variables of females\nhiit_m_tst.xlsx: Test variables of males\nhiit_f_rpe.xlsx: RPE measures of females\nhiit_m_rpe.xlsx: RPE measures of males\n\n\n\n\n\nwww.maikbieleke.com"
   },
@@ -858,7 +858,7 @@
     "href": "workshops/slides/startr-2023-frankfurt/index.html",
     "title": "StartR Frankfurt ’23",
     "section": "",
-    "text": "Liebes Team von der Uni Frankfurt,\nhier habt Ihr Zugriff auf die Folien des StartR Workshops im November 2023. Klickt dazu einfach auf den gewünschten Foliensatz und gebt das im Workshop genannte Passwort ein. Wenn ihr auf “Remember password” klickt, dann müsst ihr das Passwort nicht für jeden Foliensatz erneut eingeben.\nDie Folien sind zusätzlich auch als PDF in einer Cloud hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig. Bitte beachtet, dass die Konvertierung der Folien in das PDF Format automatisiert erfolgt und daher Abweichungen von der Darstellung im Browser auftreten können.\n\n\n\n\n\nDatum\n\n\nUntertitel\n\n\nBeschreibung\n\n\n\n\n\n\n23.11\n\n\nStartR Workshop\n\n\nWelcome | Why R? | Course\n\n\n\n\n23.11\n\n\nStartR Workshop\n\n\nR | RStudio | Console | Source | Environment | Output\n\n\n\n\n23.11\n\n\nStartR Workshop\n\n\nScalars | Vectors | Indexing | Assignments | Operations | Missings\n\n\n\n\n23.11\n\n\nStartR Workshop\n\n\nMatrices | Dataframes | Indexing | Factors\n\n\n\n\n24.11\n\n\n– Datasets –\n\n\nHIIT dataset | FIFA dataset\n\n\n\n\n24.11\n\n\nStartR Workshop\n\n\nOrganization | Datasets | Coding | Documentation\n\n\n\n\n24.11\n\n\nStartR Workshop\n\n\nMerging | Reshaping | Aggregating | Pipes | Conditioning & Looping\n\n\n\n\n24.11\n\n\nStartR Workshop\n\n\nData exploration | ggplot2 visualization\n\n\n\n\n24.11\n\n\nStartR Workshop\n\n\nCorrelation | Regression | t-Tests | ANOVA\n\n\n\n\n\nKeine Treffer"
+    "text": "Liebes Team von der Uni Frankfurt,\nhier habt Ihr Zugriff auf die Folien des StartR Workshops im November 2023. Klickt dazu einfach auf den gewünschten Foliensatz und gebt das im Workshop genannte Passwort ein. Wenn ihr auf “Remember password” klickt, dann müsst ihr das Passwort nicht für jeden Foliensatz erneut eingeben.\nDie Folien sind zusätzlich auch als PDF in einer Cloud hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig. Bitte beachtet, dass die Konvertierung der Folien in das PDF Format automatisiert erfolgt und daher Abweichungen von der Darstellung im Browser auftreten können.\n\n\n\n\n\nDatum\n\n\nTitel\n\n\nBeschreibung\n\n\n\n\n\n\n23.11.\n\n\nIntroduction\n\n\nWelcome | Why R? | Course\n\n\n\n\n23.11.\n\n\nBuilding Blocks\n\n\nR | RStudio | Console | Source | Environment | Output\n\n\n\n\n23.11.\n\n\nScalars and Vectors\n\n\nScalars | Vectors | Indexing | Assignments | Operations | Missings\n\n\n\n\n23.11.\n\n\nMatrices and Dataframes\n\n\nMatrices | Dataframes | Indexing | Factors\n\n\n\n\n24.11.\n\n\nDatasets\n\n\nHIIT dataset | FIFA dataset\n\n\n\n\n24.11.\n\n\nWorkflow\n\n\nOrganization | Datasets | Coding | Documentation\n\n\n\n\n24.11.\n\n\nData Management\n\n\nMerging | Reshaping | Aggregating | Pipes | Conditioning & Looping\n\n\n\n\n24.11.\n\n\nExploration and Visualization\n\n\nData exploration | ggplot2 visualization\n\n\n\n\n24.11.\n\n\nHypothesis Testing\n\n\nCorrelation | Regression | t-Tests | ANOVA\n\n\n\n\n\nKeine Treffer"
   },
   {
     "objectID": "workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html#what-is-r",

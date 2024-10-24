@@ -1,6 +1,6 @@
 ---
-title: "StartR Workshop"
-subtitle: "-- Datasets --"
+title: "Datasets"
+subtitle: "StartR Workshop"
 description: "HIIT dataset | FIFA dataset"
 author: "Maik Bieleke, PhD"
 institute: "University of Konstanz"

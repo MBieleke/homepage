@@ -1,17 +1,17 @@
 ---
 title: "StartR Frankfurt '23"
 date: 11/01/2023
-date-format: "MMM D, YYYY"
+date-format: "MMMM D, YYYY"
 published-title: "Date"
 description: "Two-day workshop at the Department of Sport Sciences at Goethe University Frankfurt."
 listing: 
   id: slides
   type: table
-  fields: [date, subtitle, description]
+  fields: [date, title, description]
   filter-ui: false
   sort-ui: false
   sort: date
-  date-format: "D.MM"
+  date-format: "D.MM."
 lang: de
 format: 
   html: 
