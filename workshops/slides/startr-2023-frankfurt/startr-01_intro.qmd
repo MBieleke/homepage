@@ -1,8 +1,11 @@
 ---
 title: "StartR Workshop"
 subtitle: "-- Introduction --"
+description: "Welcome | Why R? | Course"
 author: "Maik Bieleke, PhD"
 institute: "University of Konstanz"
+date: 11/23/2024
+date-format: long
 format: 
   revealjs:
     fontsize: 24pt

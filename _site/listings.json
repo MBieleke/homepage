@@ -83,7 +83,15 @@
   {
     "listing": "/workshops/slides/startr-2023-frankfurt/index.html",
     "items": [
-      "/workshops/slides/startr-2023-frankfurt/startr-01_intro.html"
+      "/workshops/slides/startr-2023-frankfurt/startr-01_intro.html",
+      "/workshops/slides/startr-2023-frankfurt/startr-02_building-blocks.html",
+      "/workshops/slides/startr-2023-frankfurt/startr-03_scalars-vectors.html",
+      "/workshops/slides/startr-2023-frankfurt/startr-04_matrices-dataframes.html",
+      "/workshops/slides/startr-2023-frankfurt/startr-05_datasets.html",
+      "/workshops/slides/startr-2023-frankfurt/startr-06_workflow.html",
+      "/workshops/slides/startr-2023-frankfurt/startr-07_data-management.html",
+      "/workshops/slides/startr-2023-frankfurt/startr-08_visualization.html",
+      "/workshops/slides/startr-2023-frankfurt/startr-09_statistics.html"
     ]
   }
 ]
