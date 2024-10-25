@@ -1,0 +1,434 @@
+---
+title: "Hypothesis Testing"
+subtitle: "StartR Workshop"
+description: "Correlation | Regression | t-Tests | ANOVA"
+author: "Maik Bieleke, PhD"
+institute: "University of Konstanz"
+date: 11/24/2024
+date-format: long
+format: 
+  revealjs:
+    fontsize: 24pt
+    chalkboard: false
+    embed-resources: true
+    slide-number: true
+    theme: [simple, _styles/unikn.scss]
+    logo: _styles/icon.png
+    footer: "[www.maikbieleke.com](https://www.maikbieleke.com)"
+    margin: 0.2
+    incremental: false 
+    slide-level: 2
+    highlight-style: a11y
+    preview-links: true
+from: markdown+emoji
+revealjs-plugins:
+  - attribution
+---
+
+```{r}
+library(rio)
+library(dplyr)
+library(correlation)
+library(parameters)
+library(performance)
+fifa <- import("fifa/data/fifa.xlsx")
+hiit <- import("hiit/data/hiit.xlsx")
+hiit_long <- import("hiit/data/hiit_long.xlsx")
+```
+
+```{=html}
+<style> td,th {font-size: 25px} </style>
+```
+
+# Correlation
+
+## The *correlation* package
+
+::: columns
+::: {.column width="60%"}
+The *correlation* package is an [easystats package](https://easystats.github.io/easystats/) focused on correlation analysis.
+
+```{r}
+#| echo: true
+#| eval: false
+
+# install.packages("correlation")
+library(correlation)
+```
+:::
+
+::: {.column width="40%"}
+![](figures/correlation-hex.png){fig-align="center"}
+:::
+:::
+
+::: footer
+<https://easystats.github.io/easystats/>
+:::
+
+## Computing single correlations
+
+A single correlation can be determined with the `cor_test()` function.
+
+```{r}
+#| echo: true
+
+# Correlation between players' value and overall attribute
+cor_test(fifa, "Overall", "Value")
+```
+
+
+
+## Plotting single correlations
+
+We can plot the correlation using the `plot()` function.
+
+```{r}
+#| echo: true
+
+r <- cor_test(fifa, "Overall", "Value")
+plot(r)
+```
+
+
+
+## Computing multiple correlations
+
+We can compute correlations between multiple variables with the `correlation()` function.
+
+```{r}
+#| echo: true
+
+# Select variables of interest
+variables <- select(fifa, Overall, Potential, Value, Wage)
+
+# Compute correlations
+correlation(variables)
+```
+
+
+
+## Plotting multiple correlations
+
+We can use the `summary()`function to get a correlation matrix.
+
+```{r}
+#| echo: true
+
+# Compute and save correlations
+r <- correlation(variables)
+
+# Generate correlation matrix
+summary(r)
+```
+
+
+
+## Correlation plot
+
+We can use the `plot()`function to plot the correlation matrix.
+
+```{r}
+#| echo: true
+
+# Compute and save correlations and correlation matrix
+r <- correlation(variables)
+rmat <- summary(r)
+
+# Generate correlation plot
+plot(rmat)
+```
+
+
+
+
+
+
+
+
+
+
+
+# Regression
+
+## Overview
+
+There are numerous regression models available in R. We will focus on the Base R implementation of the linear regression model.
+
+::: columns
+::: {.column width="70%"}
+There are three aspects of regression:
+
+-   **model estimation**: `lm()` function in base R
+-   **parameter evaluation**: *parameters* package
+-   **model performance**: *performance* package
+:::
+
+::: {.column width="30%"}
+![](figures/parameters-hex.png) ![](figures/performance-hex.png)
+:::
+:::
+
+The *parameters* and the *performance* package are part of the [easystats](https://easystats.github.io/easystats/) package collection.
+
+::: footer
+<https://easystats.github.io/easystats/>
+:::
+
+## Simple regression
+
+We can use the `lm()` function to estimate a simple linear regression model.
+
+```{r}
+#| echo: true
+
+# estimate regression model with a single predictor: dv ~ iv
+model <- lm(Wage ~ Overall, data = fifa)
+
+# get the standard output
+summary(model)
+```
+
+## Model parameters and performance
+
+We can use the `parameters()` and `performance()` to evaluate the model.
+
+```{r}
+#| echo: true
+
+# parameters
+parameters::parameters(model)
+
+# performance
+performance::performance(model)
+```
+
+## Model assumptions
+
+We can use the `check_model()` function to check whether the assumptions of a linear regression are met.
+
+```{r}
+#| echo: true
+
+performance::check_model(model)
+```
+
+## Multiple regression
+
+We can also use the `lm()` function to estimate a multiple regression model.
+
+```{r}
+#| echo: true
+
+# estimate regression model with a single predictor: dv ~ iv
+model2 <- lm(Wage ~ Overall + Value, data = fifa)
+summary(model2)
+```
+
+## Comparing models
+
+We can use the `compare_performance()` function to compare the performance of two or more models.
+
+```{r}
+#| echo: true
+
+performance::compare_performance(model, model2, metrics = "common")
+```
+
+
+
+
+
+
+
+
+
+
+
+# t-Tests
+
+## The `t-test()` function
+
+The `t-test()` function has two basic forms:
+
+| Test          | Wide Format                | Long Format                       |
+|---------------|----------------------------|-----------------------------------|
+| One-sample | `t.test(x)`                |                                   |
+| Independent   | `t.test(x, y)`             | `t.test(y ~ x, data)`             |
+| Dependent     | `t.test(x, y, paired = T)` | `t.test(y ~ x, data, paired = T)` |
+
+: {tbl-colwidths="\[10, 40, 50\]"}
+
+The function has various additional options, e.g.
+
+- `var.equal` for equal variances (`TRUE` or `FALSE`)  
+- `alternative` for one-sided tests (`less` or `more`)
+- `mu` for the null hypothesis value (default is 0)
+- `conf.level` for the confidence interval (default is 0.95)
+
+## Single sample t-test
+
+t-tests can be performed with the `t.test()` function in base R. If one variable is provided, a single sample t-test is performed.
+
+```{r}
+#| echo: true
+
+# Test whether pre-training performance is different from 0
+t.test(hiit$RSA_Pre)
+```
+
+## Independent t-test
+
+```{r}
+#| echo: true
+
+# Compare pre-training performance between males and females
+t.test(RSA_Pre ~ Sex, data = hiit)
+```
+
+## Dependent t-test
+
+```{r}
+#| echo: true
+
+# Compare pre- and post-training performance within individuals
+t.test(hiit$RSA_Pre, hiit$RSA_Post1, paired = TRUE)
+```
+
+
+
+
+
+# ANOVA
+
+## The *afex* and the *emmeans* package
+
+::: columns
+::: {.column width="60%"}
+*afex* (**A**nalysis of **F**actorial **EX**periments) is dedicated to analysis of variance.
+```{r}
+#| echo: true
+# install.packages("afex")
+library(afex)
+```
+:::
+::: {.column width="20%"}
+![Henrik Singman, author of *afex*](figures/singmann.jpg)
+:::
+:::
+
+::: columns
+::: {.column width="60%"}
+*emmeans* (**E**stimated **M**arginal **MEANS**) is dedicated to post-hoc tests.
+```{r}
+#| echo: true
+# install.packages("emmeans")
+library(emmeans)
+```
+:::
+::: {.column width="20%"}
+![Russell Lenth, author of *emmeans*](figures/lenth.jpg)
+:::
+:::
+
+::: footer
+<https://github.com/singmann/afex> - <https://github.com/rvlenth/emmeans>
+:::
+
+
+
+## The `aov_4()` function
+
+The `aov_4()` function is part of the `afex` package and can be used to estimate a variety of ANOVA models. 
+
+::: callout-important
+## Generic format: `aov_4(dv ~ iv_b + (iv_w | id), data)`
+:::
+
+- `dv` is the dependent variable
+- `iv_b` are the between-subject predictor variables
+- `iv_w` are the within-subject predictor variables
+- `id` is the subject identifier variable
+- `data` is the data frame
+
+
+## The `emmeans()` function
+
+The `emmeans()` function is part of the `emmeans` package. It has the following generic format:
+
+::: callout-important
+## Generic format: `emmeans(model, ~ iv)`
+:::
+
+- `model` is the model object
+- `iv` are the predictor variables
+
+
+
+## One-factorial ANOVA
+
+**Between-subject ANOVA**
+```{r}
+#| echo: true
+
+# Between-subject predictor: Sex
+data <- dplyr::filter(hiit_long, Measure == "RSA" & Time == "Pre")
+afex::aov_4(Value ~ Sex + (1 | ID), data)
+```
+
+**Within-subject ANOVA**
+```{r}
+#| echo: true
+# Within-subject predictor: Time
+data <- dplyr::filter(hiit_long, Measure == "RSA")
+afex::aov_4(Value ~ 1 + (Time | ID), data)
+```
+
+
+
+## Pairwise comparisons
+
+```{r}
+#| echo: true
+
+# Within-subject predictor: Time
+data <- dplyr::filter(hiit_long, Measure == "RSA")
+model <- afex::aov_4(Value ~ 1 + (Time | ID), data)
+
+# Esimate the marginal means
+emm <- emmeans::emmeans(model, ~ Time)
+emm
+
+# Conduct pairwise comparisons
+pairs(emm)
+```
+
+
+
+## Mixed ANOVA
+
+```{r}
+#| echo: true
+
+# Between-subject predictor: Sex, Within-subject predictor: Time
+data <- dplyr::filter(hiit_long, Measure == "RSA")
+afex::aov_4(Value ~ Sex + (Time | ID), data)
+```
+
+
+
+## Simple effects
+
+```{r}
+#| echo: true
+
+# Between-subject predictor: Sex, Within-subject predictor: Time
+data <- dplyr::filter(hiit_long, Measure == "RSA")
+model <- afex::aov_4(Value ~ Sex + (Time | ID), data)
+
+# Esimate the marginal means
+emm <- emmeans::emmeans(model, ~ Sex * Time)
+
+# Estimate simple effects
+emmeans::joint_tests(emm, by = "Time")
+```

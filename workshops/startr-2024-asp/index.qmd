@@ -1,0 +1,148 @@
+---
+title: "StartR ASP '24"
+date: 11/01/2024
+date-format: "MMMM YYYY"
+published-title: "Date"
+description: "Four-day workshop for the German Association of Sport Psychology (Arbeitsgemeinschaft für Sportpsychologie, ASP)."
+# listing: 
+#   id: slides
+#   type: table
+#   fields: [date, title, description]
+#   filter-ui: false
+#   sort-ui: false
+#   sort: date
+#   date-format: "D.MM."
+lang: de
+format: 
+  html: 
+    toc: true
+from: markdown+emoji
+---
+
+---
+
+Liebe Teilnehmerinnen und Teilnehmer,
+
+herzlich willkommen zur ASP-Methodenfortbildung zu R! Die Fortbildung basiert auf meinem "StartR" Workshop, der in die statistische Programmierung mit R sowie die Datenverarbeitung und -analyse einführt. Auf dieser Seite findet ihr alle relevanten Informationen und Materialien zur Fortbildung.
+
+# Zoom Link
+
+Die Fortbildung findet online über Zoom statt. Hier ist der Link für beide Fortbildungen:
+
+[Zoom-Link](https://uni-konstanz-de.zoom.us/j/91445145498){.btn .btn-primary}
+
+Für den Beitritt zum Kurs ist ein Passwort notwendig, dass ich separat per E-Mail versende. Bitte beachtet, dass der Link nur für die registrierten Teilnehmerinnen und Teilnehmer bestimmt ist.
+
+# Vorbereitung
+
+Für den Kurs benötigt ihr zwei Software-Programme: R und RStudio. R ist die Programmiersprache, und RStudio bietet eine benutzerfreundliche Umgebung zur Entwicklung und Analyse in R. Wenn ihr die beiden Programme nicht ohnehin schon auf dem Rechner habt, dann folgt den Schritten unten, um sie zu installieren.
+
+## Schritt 1: R installieren
+* R-Download-Seite aufrufen: Geht auf die [Download-Seite von CRAN (The Comprehensive R Archive Network)](https://cran.r-project.org/).
+
+* Betriebssystem auswählen: Klickt auf das passende Betriebssystem für euren Computer (Windows, macOS oder Linux).
+
+* Installationsdatei herunterladen: Ladet die Installationsdatei für R herunter:
+
+  + Für Windows: Klickt auf "Download R for Windows" und dann auf "install R for the first time".
+  + Für macOS: Klickt auf "Download R for macOS" und wählt die Version passend zu eurer macOS-Version aus.
+  + Für Linux: Es gibt Anleitungen für verschiedene Distributionen im Netz (z.B. Debian, Ubuntu, Redhat, Fedora).
+  
+* Installation starten: Öffnet die heruntergeladene Datei und folgt den Anweisungen des Installationsassistenten, um R zu installieren.
+
+## Schritt 2: RStudio installieren
+* RStudio-Download-Seite aufrufen: Besucht die [RStudio-Download-Seite](https://posit.co/download/rstudio-desktop/).
+
+* Kostenlose Desktop-Version auswählen: Klickt auf "Download RStudio Desktop". Eurer Betriebssystem sollte automatisch erkannt werden und der Download starten.
+
+* Installation starten: Öffnet die heruntergeladene Datei und folgt den Installationsanweisungen.
+
+## Installation überprüfen
+
+Öffnet RStudio, das automatisch auf R zugreifen können sollte. Um zu überprüfen, ob RStudio R korrekt erkennt, gebt in der Konsole (englisch Console) von RStudio den folgenden Befehl ein und drückt Enter:
+
+```r
+R.version.string
+```
+Die installierte Version von R sollte angezeigt werden. Wenn ihr Probleme bei der Installation habt, könnt ihr mich gerne kontaktieren.
+
+
+
+# Ablauf
+
+Der folgende Ablauf soll als erste Orientierung dienen. Die genauen Zeiten werden an eure Bedürfnisse angepasst (z.B. Länge der Pausen, zusätzliche Wiederholungen etc.).
+
+## Teil 1: Grundlagen der statistischen Programmierung mit R
+
+::: panel-tabset
+### Samstag, 02. November
+
+**:clock9: 09:00 - 16:00**
+
+*  09:00 - 09:30 Uhr: Einführung in die Fortbildung
+*  09:30 - 10:30 Uhr: Erste Schritte mit R and RStudio
+*  10:30 - 10:45 Uhr: *Pause*
+*  10:45 - 12:15 Uhr: Grundlagen der Programmiersprache R
+*  12:15 - 13:15 Uhr: *Mittagspause*
+*  13:15 - 14:45 Uhr: Skalare und Vektoren
+*  14:45 - 15:00 Uhr: *Pause*
+*  15:00 - 16:30 Uhr: Matrizen und Datensätze
+
+### Sonntag, 03. November
+
+**:clock9: 09:00 - 12:00**
+
+*  09:00 - 10:30 Uhr: Übung
+*  10:30 - 10:45 Uhr: *Pause*
+*  10:45 - 12:00 Uhr: Zusammenfassung und Fragen
+:::
+
+## Teil 2: Angewandte Datenverarbeitung und -analyse mit R
+
+::: panel-tabset
+### Samstag, 16. November
+
+**:clock9: 09:00 - 16:00**
+
+*  09:00 - 09:30 Uhr: Wiederholung
+*  09:30 - 10:30 Uhr: R Projekte und Arbeitsabläufe
+*  10:30 - 10:45 Uhr: *Pause*
+*  10:45 - 12:15 Uhr: Datenverwalung und -manipulation
+*  12:15 - 13:15 Uhr: *Mittagspause*
+*  13:15 - 14:45 Uhr: Datenexploration und -visualisierung
+*  14:45 - 15:00 Uhr: *Pause*
+*  15:00 - 16:30 Uhr: Datenanalyse
+
+### Sonntag, 17. November
+
+**:clock9: 09:00 - 12:00**
+
+*  09:00 - 10:30 Uhr: Übung
+*  10:30 - 10:45 Uhr: *Pause*
+*  10:45 - 12:00 Uhr: Zusammenfassung und Fragen
+:::
+
+
+
+# Folien
+
+Hier habt ihr Zugriff auf die Folien der beiden Methodenfortbildungen. Klickt einfach auf den gewünschten Foliensatz und gebt das im Workshop genannte Passwort ein, die Folien öffnen sich dann im Browser. Wenn ihr auf "Remember password" klickt, müsst ihr das Passwort nicht für jeden Foliensatz erneut eingeben.
+
+## Übersicht
+
+<!-- ::: {#slides} -->
+<!-- ::: -->
+
+## Export als PDF
+
+Ihr könnt die Folien im Browser als PDF abspeichern. Geht dazu wie folgt vor:
+
+1.  Wechselt mit der Taste E (oder im Navigationsmenü) in die Druckansicht.
+2.  Öffnet den browserinternen Druckdialog (Strg + P).
+3.  Wählt bei Ziel "Als PDF speichern".
+4.  Ändert das Layout auf "Querformat".
+5.  Ändert die Ränder auf "Keine".
+6.  Aktiviert die Option "Hintergrundgrafik".
+7.  Klickt auf Speichern 🎉.
+
+Manche Browser unterstützen die Umwandlung in PDFs nicht. Daher sind von mir erstellte PDFs zusätzlich in einer [Cloud](https://cloud.uni-konstanz.de/index.php/s/o6F4HH3bHsMjoPq){.external target="_blank"} hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig. Bitte beachtet, dass die Konvertierung der Folien in das PDF Format automatisiert erfolgt und daher Abweichungen von der Darstellung im Browser auftreten können.

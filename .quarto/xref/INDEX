@@ -286,5 +286,35 @@
   },
   "workshops/slides/startr-2023-frankfurt/startr-09_statistics.qmd": {
     "startr-09_statistics.html": "8ba2b3bc"
+  },
+  "workshops/startr-2023-frankfurt/index.qmd": {
+    "index.html": "75a68854"
+  },
+  "workshops/startr-2023-frankfurt/startr-01_intro.qmd": {
+    "startr-01_intro.html": "699524be"
+  },
+  "workshops/startr-2023-frankfurt/startr-02_building-blocks.qmd": {
+    "startr-02_building-blocks.html": "4508132e"
+  },
+  "workshops/startr-2023-frankfurt/startr-03_scalars-vectors.qmd": {
+    "startr-03_scalars-vectors.html": "0942a907"
+  },
+  "workshops/startr-2023-frankfurt/startr-04_matrices-dataframes.qmd": {
+    "startr-04_matrices-dataframes.html": "2d458abe"
+  },
+  "workshops/startr-2023-frankfurt/startr-05_datasets.qmd": {
+    "startr-05_datasets.html": "54528ead"
+  },
+  "workshops/startr-2023-frankfurt/startr-06_workflow.qmd": {
+    "startr-06_workflow.html": "6ac7ad4e"
+  },
+  "workshops/startr-2023-frankfurt/startr-07_data-management.qmd": {
+    "startr-07_data-management.html": "e1da10bc"
+  },
+  "workshops/startr-2023-frankfurt/startr-08_visualization.qmd": {
+    "startr-08_visualization.html": "adc1d3ff"
+  },
+  "workshops/startr-2023-frankfurt/startr-09_statistics.qmd": {
+    "startr-09_statistics.html": "c199007e"
   }
 }

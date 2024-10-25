@@ -1,0 +1,134 @@
+---
+title: "Datasets"
+subtitle: "StartR Workshop"
+description: "HIIT dataset | FIFA dataset"
+author: "Maik Bieleke, PhD"
+institute: "University of Konstanz"
+date: 11/24/2024
+date-format: long
+format: 
+  revealjs:
+    fontsize: 24pt
+    chalkboard: false
+    embed-resources: true
+    slide-number: true
+    theme: [simple, _styles/unikn.scss]
+    logo: _styles/icon.png
+    footer: "[www.maikbieleke.com](https://www.maikbieleke.com)"
+    margin: 0.2
+    incremental: false 
+    slide-level: 2
+    highlight-style: a11y
+from: markdown+emoji
+revealjs-plugins:
+  - attribution
+---
+
+```{=html}
+<style> td,th {font-size: 25px} </style>
+```
+
+
+# Dataset 1: FIFA
+
+##  {data-menu-title="sofifa.com"}
+
+::: {.columns}
+:::: {.column width="50%"}
+![](figures/sofifa.png)
+::::
+:::: {.column width="50%"}
+![](figures/fifa-kaggle.png)
+::::
+:::
+
+::: footer
+[https://sofifa.com/](https://sofifa.com/)  |  [https://kaggle.com/](https://www.kaggle.com/datasets/bryanb/fifa-player-stats-database/data)
+:::
+
+
+
+## Variables
+
+The dataset has the following variables:
+
+ Variable  | Meaning                                    |               |                                              |
+|----------------|----------------|----------------|-------------------------|
+| `ID`      | unique ID of the player                    | `Name`        | name of the player                           |
+| `Age`     | age of the player                          | `Nationality` | nationality of the player                    |
+| `Club`    | club of the player                         | `Reputation`  | reputation of the player (1 to 5)            |
+| `Height`  | height of the player (in cm)               | `Weight`      | weight of the player (in kg)                 |
+| `Overall` | overall attribute of the player (43 to 91) | `Potential`   | potential attribute of the player (42 to 95) |
+| `Value`   | value of the player (in €)                 | `Wage`        | wage of the player (in €)                    |
+| `Foot`    | preferred foot (left, right) |               |                                              |
+
+: {tbl-colwidths="\[10, 40, 10, 40\]"}
+
+
+## Dataset
+
+- `fifa.xlsx`
+
+
+
+# Dataset 2: HIIT
+
+##  {data-menu-title="Wiewelhove et al. (2015)"}
+
+![](figures/hiit-title.png)
+
+::: footer
+[https://doi.org/10.1371/journal.pone.0139801](https://doi.org/10.1371/journal.pone.0139801)
+:::
+
+## Study {background-color="white" background-image="figures/hiit-sprint.jpg" background-opacity="0.2"}
+
+::: footer
+Photo courtesy of [\@nhoizey](https://unsplash.com/de/@nhoizey)
+:::
+
+-   22 male and female team sport athletes (soccer, basketball, handball)
+-   6-day running-based HIIT training with 11 HIIT Sessions
+-   physiological and performance tests at pre, post, and follow-up
+
+![](figures/hiit-design.png)
+
+## Variables
+
+The dataset has the following variables:
+
+| Variable | Explanation                              |     | Variable | Explanation                            |
+|----------|------------------------------------------|-----|----------|----------------------------------------|
+| `Sex`    | Sex                                      |     | `RSA`    | Repeated Sprint Ability                |
+| `CMJ`    | Countermovement Jump                     |     | `MRJ`    | Multiple Rebound Jump                  |
+| `RF`     | Rectus Femoris                           |     | `BF`     | Biceps Femoris                         |
+| `Dm`     | Maximal Radial Muscle Belly Displacement |     | `Tc`     | Contraction Time between 10 and 90% Dm |
+| `CK`     | Creatinkinase                            |     | `CRP`    | C-Reactive Protein                     |
+| `DOMS`   | Delayed Onset Muscle Soreness            |     | `RPE`    | Rating of Perceived Exertion           |
+
+: {tbl-colwidths="\[5, 44, 2, 5, 44\]"}
+
+- `Sex` is a categorical variable (1 = male, 2 = female)
+- `RSA` to `DOMS` were measured at `_Pre`, `_Post1`, and `_Post2`
+- `RPE` was measured once in each HIIT session (`_1` to `_11`)
+
+
+
+## Dataset
+
+This overall dataset comes in two formats:
+
+- Wide format: `hiit.xlsx`
+- Long format: `hiit_long.xlsx`
+
+Moreover, there are also subsets of the data in wide format:
+
+- `hiit_f_tst.xlsx`: Test variables of females
+- `hiit_m_tst.xlsx`: Test variables of males
+- `hiit_f_rpe.xlsx`: RPE measures of females
+- `hiit_m_rpe.xlsx`: RPE measures of males
+
+
+
+
+

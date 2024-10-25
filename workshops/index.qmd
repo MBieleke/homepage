@@ -3,7 +3,8 @@ title: "{{< iconify carbon logo-r-script >}} Workshops"
 listing: 
   id: workshops
   contents: 
-  - "slides/startr-2023-frankfurt/index.qmd"
+    - "startr-2023-frankfurt/index.qmd"
+    - "startr-2024-asp/index.qmd"
   type: table
   fields: [date, title, description]
   filter-ui: false
@@ -61,7 +62,7 @@ Details:
 
 ### Overview of current StartR workshops
 
-Here you can find an overview of the current StartR workshops. The workshops are listed in chronological order. Click on the workshop title to get more information (login is required for access to the slides).
+Here you can find an overview of recent and upcoming StartR workshops, listed in chronological order. Click on the workshop title to get more information (login required).
 
 ::: {#workshops}
 :::
