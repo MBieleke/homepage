@@ -11,7 +11,7 @@
     "href": "workshops/startr-2024-asp/index.html#schritt-1-r-installieren",
     "title": "StartR ASP ’24",
     "section": "Schritt 1: R installieren",
-    "text": "Schritt 1: R installieren\n\nR-Download-Seite aufrufen: Geht auf die Download-Seite von CRAN (The Comprehensive R Archive Network).\nBetriebssystem auswählen: Klickt auf das passende Betriebssystem für euren Computer (Windows, macOS oder Linux).\nInstallationsdatei herunterladen: Ladet die Installationsdatei für R herunter:\n\nFür Windows: Klickt auf “Download R for Windows” und dann auf “install R for the first time”.\nFür macOS: Klickt auf “Download R for macOS” und wählt die Version passend zu eurer macOS-Version aus.\nFür Linux: Es gibt Anleitungen für verschiedene Distributionen im Netz (z.B. Debian, Ubuntu, Redhat, Fedora).\n\nInstallation starten: Öffnet die heruntergeladene Datei und folgt den Anweisungen des Installationsassistenten, um R zu installieren."
+    "text": "Schritt 1: R installieren\n\nR-Download-Seite aufrufen: Geht auf die Download-Seite von CRAN (The Comprehensive R Archive Network)\nBetriebssystem auswählen: Klickt auf das passende Betriebssystem für euren Computer (Windows, macOS oder Linux).\nInstallationsdatei herunterladen: Ladet die Installationsdatei für R herunter:\n\nFür Windows: Klickt auf “Download R for Windows” und dann auf “install R for the first time”.\nFür macOS: Klickt auf “Download R for macOS” und wählt die Version passend zu eurer macOS-Version aus.\nFür Linux: Es gibt Anleitungen für verschiedene Distributionen im Netz (z.B. Debian, Ubuntu, Redhat, Fedora).\n\nInstallation starten: Öffnet die heruntergeladene Datei und folgt den Anweisungen des Installationsassistenten, um R zu installieren."
   },
   {
     "objectID": "workshops/startr-2024-asp/index.html#schritt-2-rstudio-installieren",
@@ -46,14 +46,14 @@
     "href": "workshops/startr-2024-asp/index.html#übersicht",
     "title": "StartR ASP ’24",
     "section": "Übersicht",
-    "text": "Übersicht"
+    "text": "Übersicht\nDie Folien werden zu Beginn der Fortbildungen nach und nach freigeschalten. Bitte beachtet, dass die Folien meines StartR Workshops auf Englisch sind, die Fortbildungen aber auf deutsch angeboten werden."
   },
   {
     "objectID": "workshops/startr-2024-asp/index.html#export-als-pdf",
     "href": "workshops/startr-2024-asp/index.html#export-als-pdf",
     "title": "StartR ASP ’24",
     "section": "Export als PDF",
-    "text": "Export als PDF\nIhr könnt die Folien im Browser als PDF abspeichern. Geht dazu wie folgt vor:\n\nWechselt mit der Taste E (oder im Navigationsmenü) in die Druckansicht.\nÖffnet den browserinternen Druckdialog (Strg + P).\nWählt bei Ziel “Als PDF speichern”.\nÄndert das Layout auf “Querformat”.\nÄndert die Ränder auf “Keine”.\nAktiviert die Option “Hintergrundgrafik”.\nKlickt auf Speichern 🎉.\n\nManche Browser unterstützen die Umwandlung in PDFs nicht. Daher sind von mir erstellte PDFs zusätzlich in einer Cloud hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig. Bitte beachtet, dass die Konvertierung der Folien in das PDF Format automatisiert erfolgt und daher Abweichungen von der Darstellung im Browser auftreten können."
+    "text": "Export als PDF\nIhr könnt die Folien im Browser selbst als PDF abspeichern. Geht dazu wie folgt vor:\n\nWechselt mit der Taste E (oder im Navigationsmenü) in die Druckansicht.\nÖffnet den browserinternen Druckdialog (Strg + P).\nWählt bei Ziel “Als PDF speichern”.\nÄndert das Layout auf “Querformat”.\nÄndert die Ränder auf “Keine”.\nAktiviert die Option “Hintergrundgrafik”.\nKlickt auf Speichern 🎉.\n\nManche Browser unterstützen diese Umwandlung in PDFs leider nicht. Daher sind von mir erstellte PDFs zusätzlich in einer Cloud hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig. Bitte beachtet, dass die Konvertierung der Folien in das PDF Format automatisiert erfolgt und daher Abweichungen von der Darstellung im Browser auftreten können."
   },
   {
     "objectID": "workshops/startr-2023-frankfurt/startr-08_visualization.html#the-data-viewer",

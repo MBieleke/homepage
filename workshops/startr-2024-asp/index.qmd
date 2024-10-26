@@ -27,18 +27,18 @@ herzlich willkommen zur ASP-Methodenfortbildung zu R! Die Fortbildung basiert au
 
 # Zoom Link
 
-Die Fortbildung findet online über Zoom statt. Hier ist der Link für beide Fortbildungen:
+Die Fortbildung findet online über Zoom statt. Beide Fortbildungen nutzen den gleichen Link:
 
 [Zoom-Link](https://uni-konstanz-de.zoom.us/j/91445145498){.btn .btn-primary}
 
-Für den Beitritt zum Kurs ist ein Passwort notwendig, dass ich separat per E-Mail versende. Bitte beachtet, dass der Link nur für die registrierten Teilnehmerinnen und Teilnehmer bestimmt ist.
+Für den Beitritt ist aus Sicherheitsgründen ein Passwort notwendig, dass ich separat per E-Mail versendet habe. Bitte beachtet, dass der Link nur für die registrierten Teilnehmerinnen und Teilnehmer bestimmt ist.
 
 # Vorbereitung
 
-Für den Kurs benötigt ihr zwei Software-Programme: R und RStudio. R ist die Programmiersprache, und RStudio bietet eine benutzerfreundliche Umgebung zur Entwicklung und Analyse in R. Wenn ihr die beiden Programme nicht ohnehin schon auf dem Rechner habt, dann folgt den Schritten unten, um sie zu installieren.
+Für den Kurs benötigt ihr zwei Programme: R und RStudio. R ist eine statistische Programmiersprache und RStudio bietet eine benutzerfreundliche Umgebung zur Programmierung und Analyse in R. Wenn ihr diese beiden Programme nicht ohnehin schon auf dem Rechner habt, folgt den Schritten unten um sie zu installieren.
 
 ## Schritt 1: R installieren
-* R-Download-Seite aufrufen: Geht auf die [Download-Seite von CRAN (The Comprehensive R Archive Network)](https://cran.r-project.org/).
+* R-Download-Seite aufrufen: Geht auf die [Download-Seite von CRAN (The Comprehensive R Archive Network)](https://cran.r-project.org/){.external target="_blank"}
 
 * Betriebssystem auswählen: Klickt auf das passende Betriebssystem für euren Computer (Windows, macOS oder Linux).
 
@@ -51,7 +51,7 @@ Für den Kurs benötigt ihr zwei Software-Programme: R und RStudio. R ist die Pr
 * Installation starten: Öffnet die heruntergeladene Datei und folgt den Anweisungen des Installationsassistenten, um R zu installieren.
 
 ## Schritt 2: RStudio installieren
-* RStudio-Download-Seite aufrufen: Besucht die [RStudio-Download-Seite](https://posit.co/download/rstudio-desktop/).
+* RStudio-Download-Seite aufrufen: Besucht die [RStudio-Download-Seite](https://posit.co/download/rstudio-desktop/){.external target="_blank"}.
 
 * Kostenlose Desktop-Version auswählen: Klickt auf "Download RStudio Desktop". Eurer Betriebssystem sollte automatisch erkannt werden und der Download starten.
 
@@ -64,6 +64,7 @@ Für den Kurs benötigt ihr zwei Software-Programme: R und RStudio. R ist die Pr
 ```r
 R.version.string
 ```
+
 Die installierte Version von R sollte angezeigt werden. Wenn ihr Probleme bei der Installation habt, könnt ihr mich gerne kontaktieren.
 
 
@@ -130,12 +131,14 @@ Hier habt ihr Zugriff auf die Folien der beiden Methodenfortbildungen. Klickt ei
 
 ## Übersicht
 
+Die Folien werden zu Beginn der Fortbildungen nach und nach freigeschalten. Bitte beachtet, dass die Folien meines StartR Workshops auf Englisch sind, die Fortbildungen aber auf deutsch angeboten werden.
+
 <!-- ::: {#slides} -->
 <!-- ::: -->
 
 ## Export als PDF
 
-Ihr könnt die Folien im Browser als PDF abspeichern. Geht dazu wie folgt vor:
+Ihr könnt die Folien im Browser selbst als PDF abspeichern. Geht dazu wie folgt vor:
 
 1.  Wechselt mit der Taste E (oder im Navigationsmenü) in die Druckansicht.
 2.  Öffnet den browserinternen Druckdialog (Strg + P).
@@ -145,4 +148,4 @@ Ihr könnt die Folien im Browser als PDF abspeichern. Geht dazu wie folgt vor:
 6.  Aktiviert die Option "Hintergrundgrafik".
 7.  Klickt auf Speichern 🎉.
 
-Manche Browser unterstützen die Umwandlung in PDFs nicht. Daher sind von mir erstellte PDFs zusätzlich in einer [Cloud](https://cloud.uni-konstanz.de/index.php/s/o6F4HH3bHsMjoPq){.external target="_blank"} hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig. Bitte beachtet, dass die Konvertierung der Folien in das PDF Format automatisiert erfolgt und daher Abweichungen von der Darstellung im Browser auftreten können.
+Manche Browser unterstützen diese Umwandlung in PDFs leider nicht. Daher sind von mir erstellte PDFs zusätzlich in einer [Cloud](https://cloud.uni-konstanz.de/index.php/s/o6F4HH3bHsMjoPq){.external target="_blank"} hinterlegt. Hierfür ist ebenfalls das im Kurs vergebene Passwort notwendig. Bitte beachtet, dass die Konvertierung der Folien in das PDF Format automatisiert erfolgt und daher Abweichungen von der Darstellung im Browser auftreten können.
