@@ -133,8 +133,8 @@ Hier habt ihr Zugriff auf die Folien der beiden Methodenfortbildungen. Klickt ei
 
 Die Folien werden zu Beginn der Fortbildungen nach und nach freigeschalten. Bitte beachtet, dass die Folien meines StartR Workshops auf Englisch sind, die Fortbildungen aber auf deutsch angeboten werden.
 
-<!-- ::: {#slides} -->
-<!-- ::: -->
+::: {#slides}
+:::
 
 ## Export als PDF
 
