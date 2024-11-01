@@ -1,0 +1,291 @@
+---
+title: "Introduction"
+subtitle: "Methodenfortbildung der ASP"
+description: "Welcome | Why R? | Course"
+author: "**Maik Bieleke, PhD**"
+institute: "University of Konstanz"
+date: 11/02/2024
+date-format: long
+format: 
+  revealjs:
+    transition: slide
+    fontsize: 20pt
+    chalkboard: true
+    slide-number: true
+    theme: [simple, _styles/unikn.scss]
+    footer: "[https://maikbieleke.com/workshops/startr-2024-asp/](https://maikbieleke.com/workshops/startr-2024-asp/)"
+    margin: 0.25
+    highlight-style: a11y
+from: markdown+emoji
+revealjs-plugins:
+  - attribution
+---
+
+# Welcome
+
+```{=html}
+<style> td,th {font-size: 25px} </style>
+```
+
+## About me
+
+![](figures/01-intro/Bieleke.png){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Dr. Maik Bieleke" width="150"}
+
+I'm senior researcher, laboratory head, and data scientist in the Department of Sport Science at the University of Konstanz. My research focus is on sport psychology, with a special emphasis on motivation, effort, and performance in both laboratory and real-life settings. 
+
+I have 10+ years of experience in working with R for data analysis and in my general workflow, as well as teaching R to students and researchers at various levels.
+
+And I'm looking forward to sharing my experience with you!
+
+::: footer
+For more information about my work, visit [www.maikbieleke.com](www.maikbieleke.com)
+:::
+
+## About you
+
+Please introduce yourself briefly. Try to answer the following questions:
+
+:::{.incremental}
+
+- What is your area of study/work? Does it involve data analysis?
+- If so, which data analysis software do you use? What do you like/dislike about it?
+- Have you heard about R before? What have you heard about it?
+- Do you have any experience with R? If so, what kind of experience?
+- What do you expect from this course?
+:::
+
+# About the workshop
+
+## Website
+
+Information about this course is on the course website:
+
+[https://maikbieleke.com/workshops/startr-2024-asp/](https://maikbieleke.com/workshops/startr-2024-asp/)
+
+- Information on contents
+- Access to lecture slides
+- Notes on installing R and RSTudio
+- Further information
+
+Note that the website is password-protected: 
+
+::: {.callout-important title="Important: Password for website"}
+The password for the website is `W6NPB8yY4I2V`
+:::
+
+## Slides
+
+The slides used in this workshop are provided on the course website (password required). They were created with quarto in RStudio and can be viewed in any browser. You can also download the slides as PDFs from the cloud:
+
+[https://cloud.uni-konstanz.de/index.php/s/o6F4HH3bHsMjoPq](https://cloud.uni-konstanz.de/index.php/s/o6F4HH3bHsMjoPq){.external target="blank"}
+
+::: {.callout-important title="Important: Password for cloud"}
+The password for the cloud is `W6NPB8yY4I2V`
+:::
+
+
+## Goals
+::: {.columns}
+:::: {.column width="55%"}
+- You know your way around R and RStudio.
+- You are familiar with the basic R syntax.
+- You know important data structures in R.
+- You have a workflow for project management.
+- You can import, explore, and visualize your data.
+- You can perform basic statistical analyses in R.
+::::
+:::: {.column width="45%"}
+![](figures/01-intro/r-hate-love.jpg)
+::::
+:::
+
+At the end of the workshop, you will receive a **certificate of participation**.
+
+
+# Why R?
+
+## Why not SPSS?
+
+::: {.fragment}
+![](figures/01-intro/spss.png)
+:::
+
+## Why not Excel?
+
+::: {.fragment}
+![](figures/01-intro/excel.png)
+:::
+
+## Why R and RStudio?
+
+:::  {.columns}
+::: {.column width="50%"}
+
+[{{< iconify carbon checkmark-filled >}} free and open source software]{.fragment fragment-index=1}
+
+[{{< iconify carbon checkmark-filled >}} huge and active community]{.fragment fragment-index=2}
+
+[{{< iconify carbon checkmark-filled >}} cross-platform compatibility]{.fragment fragment-index=3}
+
+[{{< iconify carbon checkmark-filled >}} tens of thousands of packages]{.fragment fragment-index=4}
+
+[{{< iconify carbon checkmark-filled >}} powerful toolboxes for data processing]{.fragment fragment-index=5}
+
+[{{< iconify carbon checkmark-filled >}} state-of-the-art data analyses]{.fragment fragment-index=6}
+
+[{{< iconify carbon checkmark-filled >}} data visualization]{.fragment fragment-index=7}
+
+[{{< iconify carbon checkmark-filled >}} open science]{.fragment fragment-index=8}
+
+[{{< iconify carbon checkmark-filled >}} version control]{.fragment fragment-index=9}
+
+[{{< iconify carbon checkmark-filled >}} interactive applications]{.fragment fragment-index=10}
+
+[{{< iconify carbon checkmark-filled >}} designing presentations]{.fragment fragment-index=11}
+
+[{{< iconify carbon checkmark-filled >}} interactive notebooks]{.fragment fragment-index=12}
+
+[{{< iconify carbon checkmark-filled >}} authoring books and reports]{.fragment fragment-index=13}
+
+[{{< iconify carbon checkmark-filled >}} creating websites]{.fragment fragment-index=14}
+
+[{{< iconify carbon checkmark-filled >}} AI-assisted coding]{.fragment fragment-index=15}
+
+:::
+::: {.column width="50%"}
+
+::: {.r-stack}
+
+:::{.fragment .fade-in-then-out fragment-index=1}
+![https://www.gnu.org/graphics/official%20gnu.svg](figures/01-intro/whyR-gnu.png)
+:::
+
+:::{.fragment .fade-in-then-out fragment-index=2}
+![https://benubah.github.io/r-community-explorer/rugs.html](figures/01-intro/whyR-community.png)
+:::
+
+:::{.fragment .fade-in-then-out fragment-index=3}
+![https://medium.com/@housenia.ro/i-am-a-javascript-developer-who-is-been-using-windows-linux-or-ios-over-the-15-years-8040481ab71d](figures/01-intro/whyR-platforms.jpg)
+:::
+
+:::{.fragment .fade-in-then-out fragment-index=4}
+![https://www.sciencedirect.com/science/article/pii/S0164121220301709](figures/01-intro/whyR-packages.png)
+:::
+
+:::{.fragment .fade-in-then-out fragment-index=5}
+![https://www.tidyverse.org/](figures/01-intro/whyR-processing.png)
+:::
+
+:::{.fragment .fade-in-then-out fragment-index=6}
+![https://royalsocietypublishing.org/doi/10.1098/rsos.211998](figures/01-intro/whyR-models.png)
+:::
+
+:::{.fragment .fade-in-then-out fragment-index=7}
+![https://www.mdpi.com/2076-328X/9/9/93](figures/01-intro/whyR-visualization.png)
+:::
+
+:::{.fragment .fade-in-then-out fragment-index=8}
+![hhttps://commons.wikimedia.org/wiki/File:Open_Science_Logo_v2.jpg](figures/01-intro/whyR-openscience.png)
+:::
+
+:::{.fragment .fade-in-then-out fragment-index=9}
+![https://github.com/](figures/01-intro/whyR-github.png)
+:::
+
+:::{.fragment .fade-in-then-out fragment-index=10}
+![https://vnijs.shinyapps.io/radiant/](figures/01-intro/whyR-shiny.png)
+:::
+
+:::{.fragment .fade-in-then-out fragment-index=11}
+![](figures/01-intro/whyR-presentations.png)
+:::
+
+:::{.fragment .fade-in-then-out fragment-index=12}
+![https://posit.co/blog/r-notebooks/](figures/01-intro/whyR-codebook.png)
+:::
+
+:::{.fragment .fade-in-then-out fragment-index=13}
+![https://bookdown.org/yihui/bookdown/](figures/01-intro/whyR-books.jpg)
+:::
+
+:::{.fragment .fade-in-then-out fragment-index=14}
+![https://mbieleke.github.io/SPO-14582_Data-Analysis/](figures/01-intro/whyR-website.png)
+:::
+
+:::{.fragment .fade-in-then-out fragment-index=15}
+![https://docs.posit.co/ide/user/ide/guide/tools/copilot.html](figures/01-intro/whyR-copilot.png)
+:::
+
+:::
+:::
+:::
+
+
+
+# Workshop 1
+
+## "Grundlagen der statistischen Programmierung mit R"
+
+::: panel-tabset
+### Saturday, Nov 2
+
+**:clock9: 09:00 - 16:00**
+
+*  09:00 - 09:30 Uhr: Introduction to the workshop
+*  09:30 - 10:30 Uhr: Getting started with R and RStudio
+*  10:30 - 10:45 Uhr: *Break*
+*  10:45 - 12:15 Uhr: Building blocks of the R language
+*  12:15 - 13:15 Uhr: *Lunch Break*
+*  13:15 - 14:45 Uhr: Scalars and vectors
+*  14:45 - 15:00 Uhr: *Break*
+*  15:00 - 16:30 Uhr: Matrices and data frames
+
+### Sunday, Nov 3
+
+**:clock9: 09:00 - 12:00**
+
+*  09:00 - 10:30 Uhr: Exercise
+*  10:30 - 10:45 Uhr: *Break*
+*  10:45 - 12:00 Uhr: Wrap-up and Q&A
+:::
+
+# Workshop 2
+
+## "Angewandte Datenverarbeitung und -analyse mit R"
+
+
+::: panel-tabset
+### Saturday, Nov 16
+
+**:clock9: 09:00 - 16:00**
+
+*  09:00 - 09:30 Uhr: Recap
+*  09:30 - 10:30 Uhr: R Projects and workflow
+*  10:30 - 10:45 Uhr: *Break*
+*  10:45 - 12:15 Uhr: Data management
+*  12:15 - 13:15 Uhr: *Lunch Break*
+*  13:15 - 14:45 Uhr: Exploration and visualization
+*  14:45 - 15:00 Uhr: *Break*
+*  15:00 - 16:30 Uhr: Data analysis
+
+
+### Sunday, Nov 17
+
+**:clock9: 09:00 - 12:00**
+
+*  09:00 - 10:30 Uhr: Exercise
+*  10:30 - 10:45 Uhr: *Break*
+*  10:45 - 12:00 Uhr: Wrap-up and Q&A
+:::
+
+
+
+
+
+
+
+
+
+
+
+

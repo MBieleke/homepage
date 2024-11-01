@@ -1,0 +1,54 @@
+/*-- scss:defaults --*/
+
+// fonts
+$font-family-sans-serif: "Source Sans Pro", "Arial", Helvetica,
+  FreeSerif, serif !default;
+$font-family-monospace: "Source Code Pro", monospace;
+
+// colors
+// $body-bg: #f0f1eb !default;
+// $link-color: #008ECE !default;
+// $selection-bg: #26351c;
+// $tabset-border-color: #008ECE !default;
+
+// headings
+$presentation-heading-font: "Source Sans Pro", "Arial", Helvetica,
+  FreeSerif, serif !default;
+$presentation-heading-text-transform: uppercase !default;
+$presentation-heading-color: #008ECE !default;
+$presentation-heading-letter-spacing: 0.05em !default;
+
+/*-- scss:rules --*/
+
+.reveal a {
+  line-height: 1.3em;
+}
+
+// Define a center-aligned class
+.center {
+  text-align: center !important
+}
+
+.alignr {
+  text-align: right !important
+}
+
+.reveal .callout.callout-style-default div.callout-body {
+ 	font-size: 20pt;
+ 	font-family: "Source Sans Pro", "Arial", Helvetica, FreeSerif, serif;
+}
+
+// Vertically centered content in columns
+#vcenter {
+  vertical-align: middle;
+}
+
+// Add line after the heading
+h2::after {
+  content: "";
+  display: block;
+  margin-top: 0em;
+  margin-bottom: 0.5em;
+  border-bottom: 5px solid #008ECE;
+}
+      

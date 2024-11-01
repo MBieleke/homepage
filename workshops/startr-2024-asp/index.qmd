@@ -108,7 +108,7 @@ Der folgende Ablauf soll als erste Orientierung dienen. Die genauen Zeiten werde
 *  09:00 - 09:30 Uhr: Wiederholung
 *  09:30 - 10:30 Uhr: R Projekte und Arbeitsabläufe
 *  10:30 - 10:45 Uhr: *Pause*
-*  10:45 - 12:15 Uhr: Datenverwalung und -manipulation
+*  10:45 - 12:15 Uhr: Datenverwaltung und -manipulation
 *  12:15 - 13:15 Uhr: *Mittagspause*
 *  13:15 - 14:45 Uhr: Datenexploration und -visualisierung
 *  14:45 - 15:00 Uhr: *Pause*

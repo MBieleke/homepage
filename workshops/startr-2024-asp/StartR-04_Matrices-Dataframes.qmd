@@ -1,0 +1,673 @@
+---
+title: "Matrices and Dataframes"
+subtitle: "Methodenfortbildung der ASP"
+description: "Matrices | Dataframes | Indexing | Factors"
+author: "Maik Bieleke, PhD"
+institute: "University of Konstanz"
+date: 11/02/2024
+date-format: long
+format: 
+  revealjs:
+    transition: slide
+    fontsize: 20pt
+    chalkboard: true
+    slide-number: true
+    theme: [simple, _styles/unikn.scss]
+    footer: "[https://maikbieleke.com/workshops/startr-2024-asp/](https://maikbieleke.com/workshops/startr-2024-asp/)"
+    margin: 0.25
+    highlight-style: a11y
+from: markdown+emoji
+revealjs-plugins:
+  - attribution
+---
+
+# Matrices {background-image="figures/04-matrices/matrix.jpg" background-opacity="0.1"}
+
+::: footer
+Photo courtesy of [@markusspiske](https://unsplash.com/de/@markusspiske)
+:::
+
+## What are matrices?
+
+Matrices are combinations of vectors. Like vectors, they can only contain values of the same type (e.g., numeric or character). If you combine vectors of different types, they will be coerced into the same type.
+
+. . .
+
+There are two main ways to create matrices in R:
+
+-   from existing vectors with `cbind()` and `rbind()`
+-   from scratch with `matrix()`
+
+## Matrices from existing vectors: cbind()
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+# Create vectors
+x <- c(10, 11, 12, 13, 14, 15)
+y <- c(20, 21, 22, 23, 24, 25)
+z <- c(30, 31, 32, 33, 34, 35)
+```
+
+The `cbind()` function combines vectors into a matrix by binding them together by column.
+
+::: columns
+::: {.column width="50%"}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+cbind(x, y, z)
+```
+
+Note that the vector names are used as column names.
+:::
+
+::: {.column width="50%"}
+![](figures/04-matrices/cbind.png)
+:::
+:::
+
+## Matrices from existing vectors: rbind()
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+# Create vectors
+x <- c(10, 11, 12, 13, 14, 15)
+y <- c(20, 21, 22, 23, 24, 25)
+z <- c(30, 31, 32, 33, 34, 35)
+```
+
+The `rbind()` function combines vectors into a matrix by binding them together by row
+
+::: columns
+::: {.column width="50%"}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+rbind(x, y, z)
+```
+
+Note that the vector names are used as row names.
+:::
+
+::: {.column width="50%"}
+![](figures/04-matrices/rbind.png)
+:::
+:::
+
+## Matrices from scratch: matrix()
+
+The `matrix()` function is an explicit way to create matrices from scratch. It takes the following arguments:
+
+::: {.incremental}
+-   `data`: a vector containing the data
+-   `nrow`: the number of rows
+-   `ncol`: the number of columns
+-   `byrow`: logical value indicating whether the matrix should be filled by row (`FALSE`, default) or by column (`TRUE`)
+:::
+
+## Examples
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Create a vector with data
+data <- 1:10
+```
+
+The matrix function can transforms the data into a variety of matrices.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+# Create a matrix with 2 rows and 5 columns
+matrix(data, nrow = 2, ncol = 5)
+
+# Now fill by row instead of by column
+matrix(data, nrow = 2, ncol = 5, byrow = TRUE)
+
+# Create a matrix with 5 rows and 2 columns
+matrix(data, nrow = 5, ncol = 2)
+```
+
+## Indexing with matrices
+
+::: {.incremental}
+-   Remember that vectors are indexed like this: `x[i]`
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Create a vector with values
+    vec <- 12:1
+    vec
+
+    vec[3]
+    ```
+
+-   Matrices are indexed like this: `x[i, j]`
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Create a matrix
+    mat <- matrix(vec, nrow = 4, ncol = 3)
+    mat
+
+    # Get the value in the 2nd row and 3rd column
+    mat[2, 3]
+    ```
+:::
+
+## Examples
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+mat
+```
+
+::: columns
+::: {.column width="50%" .fragment}
+Use vectors to index multiple rows and/or columns.
+
+-   Getting multiple row values
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # 2nd and 4th value in 1st column
+    mat[c(2, 4), 1]
+    ```
+
+-   Getting multiple column values
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # 2nd to 3rd value in 4th row
+    mat[4, 2:3]
+    ```
+:::
+
+::: {.column width="50%" .fragment}
+Leave rows and/or column index empty to get all values.
+
+-   Getting all rows values
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # all row values in 1st column
+    mat[, 1]
+    ```
+
+-   Getting all column values
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # ll column values in 4th row
+    mat[4, ]
+    ```
+:::
+:::
+
+## {{< iconify solar programming-bold >}} Exercise {background-image="figures/04-matrices/tiles.jpg" background-opacity="0.1"}
+
+::: attribution
+Photo courtesy of [\@kolbymilton](https://unsplash.com/@kolbymilton)
+:::
+
+:::: columns
+::: {.column width="50%"}
+Here is data from the three fastest 100m female sprinters in history.
+:::
+::: {.column width="50%"}
+| Rank | Time (s)  | Wind (m/s) |
+|------|-----------|------------|
+| 1    | 10.49     | ±0.0       |
+| 2    | 10.54     | +0.9       |
+| 3    | 11.60     | +1.7       |
+:::
+::::
+
+::: {.incremental}
+1.  Create a matrix `sprinters` with 3 rows and 4 columns using the data above.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    sprinters <- matrix(c(1, 10.49, 0,
+                          2, 10.54, 0.9,
+                          3, 11.60, 1.7), nrow = 3, ncol = 3, byrow = TRUE)
+    ```
+
+2.  Correct the finishing time of the third sprinter to 10.60.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    sprinters[3, 2] <- 10.60
+    ```
+    
+3.  Add the reaction times of the second (0.150s) and third sprinter (0.151s) in a new column.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    sprinters <- cbind(sprinters, c(NA, 0.151, 0.152))
+    ```
+
+4.  Save the wind-adjusted times in a new vector `times_corr` with the formula provided by [Mureika, 1997](https://arxiv.org/pdf/physics/9705004): $\text{Time}_\text{adj} = \left[1.03 - 0.03 \times \left( 1 -( \text{Wind} \times \text{Time})/100 \right)^2 \right] \times \text{Time}$.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    times_corr <- (1.03 - 0.03 * (1 - (sprinters[, 3] * sprinters[, 2]) / 100)^2) * sprinters[, 2]
+    ```
+
+:::
+
+
+
+
+
+# Dataframes {background-image="figures/04-matrices/dataframe.png" background-opacity="0.1"}
+
+## What are dataframes?
+
+Dataframes are similar to matrices, but they can contain different types of data (e.g., numeric and character). Because of this flexibility, they are commonly used to store data in R.
+
+Dataframes are often imported from external sources (e.g., Excel, SPSS, or CSV files). However, we can also create dataframes from scratch with the `data.frame()`function.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+data <- data.frame("id" = c(1, 2, 3, 4, 5),
+                   "sex" = c("m", "m", "m", "f", "f"),
+                   "age" = c(99, 46, 23, 54, 23))
+data
+```
+
+## Selecting rows
+
+::: columns
+::: {.column width="50%" .fragment}
+We can select rows based on their numerical index (slicing).
+
+-   Numeric indexing (slicing)
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Get the 2nd and 3rd row
+    data[2:3, ]
+    ```
+
+-   Using `dplyr::slice()`
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Get the 2nd and 3rd row
+    dplyr::slice(data, 2:3)
+    ```
+:::
+
+::: {.column width="50%" .fragment}
+We can select rows based on a logical condition (filtering).
+
+-   Logical indexing
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Get rows for females
+    data[data$sex == "f", ]
+    ```
+
+-   Using `dplyr::filter()`
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Get rows for females
+    dplyr::filter(data, sex == "f")
+    ```
+:::
+:::
+
+## Selecting columns
+
+::: columns
+::: {.column width="50%" .fragment}
+-   Numeric indexing
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Get the 2nd and 3rd column
+    data[, 2:3]
+    ```
+
+-   Using `dplyr::select()`
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Get the 2nd and 3rd column
+    dplyr::select(data, 2:3)
+    ```
+:::
+
+::: {.column width="50%" .fragment}
+-   Indexing by name
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Get the "sex2 and "age" columns
+    data[, c("sex", "age")]
+    ```
+
+-   Using `dplyr::select()`
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Get the "sex2 and "age" columns
+    dplyr::select(data, sex, age)
+    ```
+:::
+:::
+
+## The `$` operator
+
+::: columns
+::: {.column width="80%"}
+Retrieving a single column of a dataframe is so common that R provides an own shortcut for this task: **the `$` operator**.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+  
+data
+```
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Get the "age" column
+data$age
+
+# Get the "sex" column
+data$sex
+```
+
+Note that the `$` operator returns the variable as a vector.
+:::
+
+::: {.column width="20%"}
+![](figures/04-matrices/dollar.png)
+:::
+:::
+
+
+
+## Adding columns
+
+The `$` operator is a simple way to add new columns to a dataframe.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Adding a new character and a new numeric column
+data$condition <- c("con", "con", "exp", "con", "exp")
+data$score <- c(5.5, 2.3, 4.7, 6.7, 3.0)
+data
+```
+
+. . .
+
+An alternative is the `dplyr::mutate()` function.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Adding a new character column
+data <- dplyr::mutate(data, 
+                      time = c("t1", "t2", "t1", "t2", "t2"),
+                      weight = c(70, 80, 65, 60, 75))
+data
+```
+
+
+
+## Renaming columns
+
+We have already used the names of colums to select them. To see all names of a dataframe, use the `names()` function.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Get the names of the dataframe
+names(data)
+```
+
+. . .
+
+The names can be changed by assigning new values.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Adding a new character column
+names(data)[4] <- "group"
+names(data)
+```
+
+. . .
+
+An alternative is the `dplyr::rename()` function.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Adding a new character column
+data <- dplyr::rename(data, gender = sex)
+names(data)
+```
+
+
+
+## {{< iconify solar programming-bold >}} Exercise {background-image="figures/04-matrices/height.jpg" background-opacity="0.1"}
+
+::: attribution
+Photo courtesy of [@siora18](https://unsplash.com/@siora18)
+:::
+
+::: columns
+::: {.column width="80%" .incremental}
+1.  Create a dataframe `demo` based on the table on the right.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    demo <- data.frame(
+      name = c("Alice", "Bob", "Charlie", "David", "Eva"),
+      weight = c(165, 175, 180, NA, 160))
+    ```
+
+3.  Correct the name of the second column to `height`.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    names(demo)[2] <- "height" 
+    # alternative: demo <- dplyr::rename(demo, height = weight)
+    ```
+
+2.  Using the `$` operator, convert height from cm to m.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    demo$height <- demo$height / 100
+    # alternative: demo <- dplyr::mutate(demo, height = height / 100)
+    ```
+
+4.  Compute the average height.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    height_mean <- mean(demo$height, na.rm = TRUE)
+    ```
+    
+5.  Select rows with above-average height.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    demo[demo$height > height_mean, ]
+    ```
+:::
+::: {.column width="20%"}
+| name    | weight    |
+|---------|-----------|
+| Alice   | 165       |
+| Bob     | 175       |
+| Charlie | 180       |
+| David   |           |
+| Eva     | 160       |
+:::
+:::
+
+# Factors {background-image="figures/04-matrices/garbage.jpg" background-opacity="0.1"}
+
+::: footer
+Photo courtesy of [@pawel_czerwinski](https://unsplash.com/de/@pawel_czerwinski)
+:::
+
+
+
+## What are factors?
+
+Dataframes often contain factors that are used to represent categorical variables (e.g., sex, education level, blood type).
+
+::: {.callout-important icon="false"}
+## A factor can contain only predefined values (called levels) with unique labels. Factors are created using the `factor()` function.
+:::
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Creating a character vector
+sex = c("m", "m", "m", "f", "f")
+sex
+
+# Converting to factor with two levels labelled "f" and "m"
+factor(sex)
+```
+
+Factors are very similar to character vectors, but they are treated differently in many statistical analyses and data visualizations.
+
+## Change level order
+
+We can change the order of the levels by explicitly specifying them in the `factor()` function.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Create a character vector
+sex = c("m", "m", "m", "f", "f")
+
+# Order: "f", "m"
+factor(sex, levels = c("f", "m"))
+
+# Order: "m", "f"
+factor(sex, levels = c("m", "f"))
+```
+
+This can be useful for reordering the levels in an analysis or plot (e.g., to change the order of the bars for males and females in a barplot).
+
+## Renaming factor levels
+
+We can also rename the levels of a factor by specifying the new names in the `levels` argument of the `factor()` function.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Create a character vector
+sex = c("m", "m", "m", "f", "f")
+
+# Ordinary factor
+factor(sex, levels = c("f", "m"))
+
+# Renamed factor
+factor(sex, levels = c("m", "f"), labels = c("male", "female"))
+```
+
+This can be useful for relabelling the levels in an analysis or plot.

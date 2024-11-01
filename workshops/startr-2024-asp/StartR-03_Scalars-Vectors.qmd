@@ -1,0 +1,1144 @@
+---
+title: "Scalars and Vectors"
+subtitle: "Methodenfortbildung der ASP"
+description: "Scalars | Vectors | Indexing | Assignments | Operations | Missings"
+author: "**Maik Bieleke, PhD**"
+institute: "University of Konstanz"
+date: 11/02/2024
+date-format: long
+format: 
+  revealjs:
+    transition: slide
+    fontsize: 20pt
+    chalkboard: true
+    slide-number: true
+    theme: [simple, _styles/unikn.scss]
+    footer: "[https://maikbieleke.com/workshops/startr-2024-asp/](https://maikbieleke.com/workshops/startr-2024-asp/)"
+    margin: 0.25
+    highlight-style: a11y
+from: markdown+emoji
+revealjs-plugins:
+  - attribution
+---
+
+
+# Scalars {background-image="figures/03-vectors/scalars.png" background-opacity="0.1"}
+
+## What are scalars?
+
+Scalars are the simplest object in R. They are single values that can be assigned to a variable.
+
+::: callout-important
+## The assignment operator `<-` is used for creating objects like scalars.
+
+`scalar <- ...`
+:::
+
+The most common types of scalars are **numerical** and **character**.
+
+::: columns
+::: {.column width="50%" .fragment}
+-   numerical scalars
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    x <- 10
+    x
+    ```
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    y <- 3 / 100
+    y
+    ```
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    z <- (x + y) / y
+    z
+    ```
+:::
+
+::: {.column width="50%" .fragment}
+-   character scalars
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    a <- "Hello"
+    a
+    ```
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    b <- "12345"
+    b
+    ```
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    c <- "Hello World!"
+    c
+    ```
+:::
+:::
+
+## Types of Scalars
+
+R treats different types of scalars differently. For example, you can add two numerical values, but you cannot add two character values.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Adding two numerical values: works fine
+a <- 1
+b <- 2
+a + b
+```
+
+```{r}
+#| echo: true
+#| error: true
+#| code-line-numbers: false
+
+# Adding two character values: gives an error
+a <- "1"
+b <- "2"
+a + b
+```
+
+## Mathematical functions 
+
+R has many built-in mathematical functions that can be applied to scalars.
+
+::: {style="font-size: 75%;"}
+
+| Function                 | Description                                       | Example                  |
+|-------------------|-----------------------------------|-------------------|
+| `abs(x)`                 | absolute value of x                               | `abs(-4) = 4`            |
+| `sqrt(x)`                | square root of x                                  | `sqrt(25) = 5`           |
+| `ceiling(x), floor(x)`   | smallest integer not less (greater) than x        | `ceiling(3.475) = 4`     |
+| `trunc(x)`               | integer formed by truncating values in x toward 0 | `trunc(5.99) = 5`        |
+| `round(x, n)`            | round x to n decimal places                       | `round(3.475, 2) = 3.48` |
+| `signif(x, n)`           | round x to n significant digits                   | `signif(3.475, 2) = 3.5` |
+| `cos(x), sin(x), tan(x)` | trigonometric functions                           | `cos(2) = -0.416`        |
+| `log(x, n)`              | Logarithm of x to the base n                      | `log(5, 2) = 2.32`       |
+| `log(x), log10(x)`       | natural and common logarithm                      | `log(10) = 2.3026`       |
+| `exp(x)`                 | exponential function                              | `exp(2.3026) = 10`       |
+| `x %% y`                 | x modulo y (remainder of x divided by y)          | `7 %% 3 = 1`             |
+:::
+
+Note that these functions can also be applied to vectors, in which case they will be applied elementwise.
+
+
+
+
+
+
+
+
+
+
+# Vectors {background-image="figures/03-vectors/vectors.png" background-opacity="0.1"}
+
+## What are vectors?
+
+Vectors can be thought of as a collection of scalars. They are the most common data type in R.
+
+::: callout-important
+## The `c()` function is used for creating vectors.
+
+`vector <- c(...)`
+:::
+
+::: columns
+::: {.column width="50%" .fragment}
+-   Vectors from scalars
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Combining scalars
+    a <- c(1, 3, 5)
+    a
+    ```
+:::
+
+::: {.column width="50%" .fragment}
+-   Vectors from vectors
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Combining vectors
+    a <- c("a", "b", "c")
+    b <- c("d", "e")
+    c <- c(a, b)
+    c
+    ```
+:::
+:::
+
+## Types of vectors
+
+::: columns
+::: {.column width="60%"}
+Analogous to scalars, vectors can only contain values of the same type. Different types will be coerced into the same type.
+
+For numerical and character values, coercion will always result in character values.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+a <- c(1, 2, 3, "a", "b", "c")
+a
+```
+:::
+
+::: {.column width="40%"}
+![](figures/03-vectors/coercion.jpg)
+:::
+:::
+
+## Length of vectors
+
+The length of a vector is the number of elements it contains.
+
+::: callout-important
+## The `length()` function returns the number of elements in a vector.
+:::
+
+::: columns
+::: {.column width="50%" .fragment}
+-   Numerical scalar
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+    a <- 1
+    length(a)
+    ```
+    
+-   Character scalar
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+    a <- "This is a sentence."
+    length(a)
+    ```
+:::
+
+::: {.column width="50%" .fragment}
+-   Numerical vector
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+    a <- c(11, 2, 333, 4, 5555)
+    length(a)
+    ```
+    
+-   Character vector
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+    a <- c("abc", "def", "geh")
+    length(a)
+    ```
+:::
+:::
+
+
+
+# Regular vectors
+
+## Colon operator (`:`)
+
+R has built-in operators and functions for creating regular sequences as vectors.
+
+::: callout-important
+## The colon operator (a`:`b) creates a numeric vector from a to b in steps of 1.
+
+`a:b`
+:::
+
+::: columns
+::: {.column width="50%" .fragment}
+-   Counting up
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    1:5
+    ```
+
+-   Counting down
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    5:1
+    ```
+:::
+
+::: {.column width="50%" .fragment}
+-   Decimal values
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    5.5:10.5
+    ```
+
+-   Excluding boundaries
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    5.5:10
+    ```
+:::
+:::
+
+## Sequence function: `seq()`
+
+Sometimes more flexibility is needed when creating a sequence of numbers than the colon operator can provide.
+
+::: callout-important
+## The `seq()` function creates a numeric vector from a to b with a desired number of steps or a desired length.
+
+`seq(from = a, to = b, by = step, length.out = length)`
+:::
+
+::: columns
+::: {.column width="50%" .fragment}
+-   Steps
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    seq(from = 1, to = 3, 
+        by = 0.5)
+    ```
+:::
+
+::: {.column width="50%" .fragment}
+-   Length
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    seq(from = 1, to = 10, 
+        length.out = 4)
+    ```
+:::
+:::
+
+## Repetition function: `rep()`
+
+We can also create vectors in which certain values are repeated.
+
+::: callout-important
+## The `rep()` function creates a numeric or character vector in which a scalar or vector is repeated a desired number of times or to a desired length.
+
+`rep(x, times = n, length.out = n, each = n)`
+:::
+
+::: columns
+::: {.column width="25%" .fragment}
+-   Repeat x
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    rep(x = 3, 
+        times = 5)
+    ```
+:::
+
+::: {.column width="37%" .fragment}
+-   Repeat values of x
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    rep(x = c(1, 2), 
+        each = 2)
+    ```
+:::
+
+::: {.column width="37%" .fragment}
+-   Desired length
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    rep(x = c("a", "b"), 
+        length.out = 5)
+    ```
+:::
+:::
+
+
+
+## {{< iconify solar programming-bold >}} Exercise { background-image="figures/03-vectors/sequence.jpg" background-opacity="0.1"}
+
+::: {.attribution}
+Photo courtesy of [@polarmermaid](https://unsplash.com/@polarmermaid)
+:::
+
+::: {.incremental}
+1.  Create the scalar `x` with the value `10`.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    x <- 10
+    ```
+
+2.  What is the length of vector `y` defined as `y <- 1:x`?
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    y <- 1:x
+    length(y)
+    ```
+    
+3.  Create a vector `z` from 11 to 100 in steps of 2.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    z <- seq(11, 100, by = 2)
+    ```
+
+4.  Create a vector `yz` with all elements of `y` and `z` combined.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    yz <- c(y, z)
+    ```
+:::
+
+
+
+
+
+
+
+
+
+
+
+# Indexing Vectors {background-image="figures/03-vectors/select-vector.jpg" background-opacity="0.1"}
+
+::: footer
+Photo courtesy of Pixabay
+:::
+
+## Indexing with positive integers: Include
+
+To select elements of a vector, specify either a scalar or a vector of positive integers corresponding to the values you want to include.
+
+::: callout-important
+## The `[]`operator is used for indexing vectors.
+:::
+
+::: columns
+::: {.column width="50%" .fragment}
+-   Extract a single value using an integer
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Extract the 3rd value
+    x <- c("a", "b", "c", "d", "e")
+    x[3]
+    ```
+:::
+
+::: {.column width="50%" .fragment}
+-   Extract several values using a vector
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Extract the first three values
+    x <- c("a", "b", "c", "d", "e")
+    x[1:3]
+    ```
+:::
+:::
+
+## Indexing with negative integers: Exclude
+
+To remove elements of a vector, specify a scalar or a vector of negative integers corresponding to the values you want to exclude.
+
+::: columns
+::: {.column width="50%" .fragment}
+-   Exclude a single value
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Exclude the 5th value
+    x <- c("a", "b", "c", "d", "e")
+    x[-5]
+    ```
+:::
+
+::: {.column width="50%" .fragment}
+-   Exclude several values
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Exclude every second value
+    x <- c("a", "b", "c", "d", "e")
+    x[-seq(from = 1, to = 5, by = 2)]
+    ```
+:::
+:::
+
+## Logical vectors
+
+We already know numerical and character vectors. Logical vectors are the third type of vectors in R. They can only have the values `TRUE` and `FALSE` (or `T` and `F` also works).
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Create a logical vector manually
+x <- c(TRUE, FALSE, TRUE, FALSE, TRUE)
+x
+```
+
+. . .
+
+Logical vectors are commonly created by applying **logical operations** to numerical or character vectors. One example is the equality operator `==` which returns `TRUE` if two values are equal and `FALSE` otherwise.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+x <- 5 # set the value of x to 5
+x == 5 # check whether x has the value 5
+```
+
+## Logical operators
+
+An overview of the most common logical operators:
+
+|        |           |        |              |          |                       |
+|--------|-----------|--------|--------------|----------|-----------------------|
+| `a==b` | equal     | `a>b`  | greater than | `a>=b`   | greater than or equal |
+| `a!=b` | not equal | `a<b`  | less than    | `a<=b`   | smaller than or equal |
+| `a|b`  | or        | `!a`   | not          | `any(a)` | at least one          |
+| `a&b`  | and       | `%in%` | in set       | `all(a)` | everything            |
+
+## Examples
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+3 < 5 # is 3 smaller than 5?
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+5 <= 2 # is 5 smaller than or equal to 2?
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+!(3 == 5) # is 3 not equal to 5?
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+c(4, 5) %in% c(1, 2, 3, 4) # are 4 and 5 in the vector ?
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+c("a", "b", "c", "d") == "c" # are the values of the vector equal to "c"?
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+any(c("a", "b", "c", "d") == "c" ) # is at least one value equal to "c"?
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+(3 > 7) | (5 < 10) # is 3 greater than 7 OR 5 smaller than 10?
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+(3 > 7) & (5 < 10) # is 3 greater than 7 AND 5 smaller than 10?
+```
+:::
+
+
+## Indexing with logical vectors
+
+You need to provide a logical vector of the same length as the vector you want to subset. The logical vector indicates which elements to include in the subset.
+
+![](figures/03-vectors/logical-indexing.png)
+
+## Examples
+
+::: columns
+::: {.column width="50%" .fragment}
+-   equality operator
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    x <- c("a", "b", "c", "d", "e")
+    x[x == "c"]
+    ```
+
+-   inequality operator
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    a <- 1:5
+    a[a < 3]
+    ```
+
+-   negation operator
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    a <- 1:5
+    b <- 3
+    a[!a == b]
+    ```
+:::
+
+::: {.column width="50%" .fragment}
+-   and-operator
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    a <- 1:10
+    a[a < 4 & a > 6]
+    ```
+
+-   or-operator
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    a <- 1:10
+    a[a < 3 | a > 7]
+    ```
+
+-   set-operator
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    x <- c("a", "b", "c", "d", "e")
+    y <- c("b", "g")
+    y[y %in% x]
+    ```
+:::
+:::
+
+## {{< iconify solar programming-bold >}} Exercise {background-image="figures/03-vectors/letters.jpg" background-opacity="0.1"}
+
+::: {.attribution}
+Photo courtesy of [@amadorloureiro](https://unsplash.com/@amadorloureiro)
+:::
+
+::: {.incremental}
+1.  `letters` is a predefined, ordered vector of the letters of the English alphabet. Type `letters` in the console and press enter to see the vector. 
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    letters
+    ```
+
+2.  Use indexing with a positive integer to show the 15th letter of the alphabet.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    letters[15]
+    ```
+
+3.  Create a vector `x` with every second letter of the alphabet: 1, 3, 5, etc.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    x <- letters[seq(1, 26, by = 2)] # Alternative: letters[c(T, F)]
+    ```
+    
+4.  Advanced: Use the `!` (not) and the `%in%` (set) operators to remove the vowels from `x` and assign the resulting vector to `y`.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    y <- x[!x %in% c("a", "e", "i", "o", "u")]
+    ```
+:::
+
+
+
+# Value assignment
+
+## Changing vector values
+
+Combine the principles of **indexing** and the **assignment operation** to change values.
+
+::: columns
+::: {.column width="50%"}
+-   Change a single value
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Define a new vector
+    x <- c(1, 2, 3, 4, 5)
+
+    # Change the 3rd value to 8
+    x[3] <- 8
+    x
+    ```
+:::
+
+::: {.column width="50%" .fragment}
+-   Change several values
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    # Define a new vector
+    x <- c(1, 2, 3, 4, 5)
+
+    # Change the last two values to 7 and 9
+    x[c(4, 5)] <- c(7, 9)
+    x
+    ```
+:::
+:::
+
+. . .
+
+And of course, we can use logical indexing to change values as well.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+x <- c("a", "b", "b", "c", "d", "b", "e", "f", "b", "b")
+
+# Change all instances of letter "b" to letter "z"
+x[x == "b"] <- "z"
+x
+```
+
+# Operations on vectors
+
+## Elementwise operations
+
+Operations on vectors are performed element-by-element.
+
+::: columns
+::: {.column width="50%" .incremental}
+-   Adding a single value
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    a <- c(1, 2, 3, 4, 5)
+    a + 1
+    ```
+
+-   Adding two vectors
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    a <- c(1, 2, 3, 4, 5)
+    b <- c(10, 20, 30, 40, 50)
+    a + b
+    ```
+
+-   Computing the square root
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    b <- c(4, 9, 16)
+    sqrt(b)
+    ```
+:::
+
+::: {.column width="50%" .incremental}
+-   Dividing by a single value
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    d <- c(10, 100, 1000)
+    d / 10
+    ```
+
+-   Product of two vectors
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    a <- c(10, 100, 1000)
+    b <- c(2, 3, 4)
+    a * b
+    ```
+
+-   Exponentiation of vectors
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+
+    a <- c(2, 3, 4)
+    b <- c(2, 3, 4)
+    a^b
+    ```
+:::
+:::
+
+## Recycling principle
+
+::: columns
+::: {.column width="70%"}
+An operation on two vectors of different lengths will recycle the shorter vector to match the length of the longer vector -- without warning.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+a <- c(1, 2, 3, 4, 5)
+b <- c(0.5, 1.0)
+a + b
+```
+:::
+
+::: {.column width="30%"}
+![](figures/03-vectors/recycling.png)
+:::
+:::
+
+. . .
+
+This is also why operations with scalars work on vectors: They are simply recycled to the length of the vector.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+a <- c(2, 3, 4)
+a^2
+
+b <- c(2, 2, 2)
+a^b
+```
+
+## Statistical functions
+
+R has many built-in statistical functions that can be applied to vectors.
+
+| Function    | Description             | Example for `x <- c(1, 2, 2, 5)` |
+|-------------|-------------------------|----------------------------------|
+| `mean(x)`   | mean                    | `mean(x) = 2.5`                  |
+| `sum(x)`    | sum                     | `sum(x) = 10`                    |
+| `median(x)` | median                  | `median(x) = 2`                  |
+| `sd(x)`     | standard deviation      | `sd(x) = 1.732051`               |
+| `var(x)`    | variance                | `var(x) = 3`                     |
+| `range(x)`  | range                   | `range(x) = 1 5`                 |
+| `min(x)`    | minimum                 | `min(x) = 1`                     |
+| `max(x)`    | maximum                 | `max(x) = 5`                     |
+
+
+
+## Other functions
+
+Some other, non-statisitcal functions for vectors are:
+
+| Function    | Description                | Example for `x <- c(3, 8, 8, 5)` |
+|-------------|----------------------------|----------------------------------|
+| `sort(x)`   | sorts the elements         | `sort(x) = 3 5 8 8`              |
+| `rev(x)`    | reversed order of elements | `rev(x) = 5 8 8 3`               |
+| `length(x)` | number of elements         | `length(x) = 4`                  |
+| `unique(x)` | unique elements            | `unique(x) = 3 8 5`              |
+
+
+
+# Missings {background-image="figures/03-vectors/missings.jpg" background-opacity="0.1"}
+
+::: footer
+Photo courtesy of [@sigmund](https://unsplash.com/de/@sigmund)
+:::
+
+
+
+## What are missings?
+
+Missings are values that are not available for some reason. They can be treated like regular numbers.
+
+::: callout-important
+## Missing values are represented by `NA` (= not available, unknown). 
+
+You might also encounter `NaN` (= not a number; mathematically illdefined), `NULL` (empty object, unknowable), or `Inf` (= infinity).
+:::
+
+::: columns
+::: {.column width="50%" .fragment}
+-   Assign missings to vector
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+    a <- c(1, 2, NA, 4, 5)
+    a
+    ```
+:::
+::: {.column width="50%" .fragment}
+-   Replace missings manually
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+    a <- c(1, 2, NA, 4, 5)
+    a[3] <- 9
+    a
+    ```
+:::
+:::
+
+. . .
+
+Logical indexing can be used to identify and replace missings.
+
+::: columns
+::: {.column width="50%"}
+-   Find missings with `is.na()`
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+    a <- c(1, 2, NA, 4, 5)
+    is.na(a)
+    ```
+:::
+::: {.column width="50%" .fragment}
+-   Replace missings logically
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+    a <- c(1, 2, NA, 4, 5)
+    a[is.na(a)] <- 9
+    a
+    ```
+:::
+:::
+
+
+
+## Missings in functions
+
+Many descriptive statistics functions return `NA` if the vector contains missings.
+
+```{r}
+#| echo: true
+
+# Define a vector with missings
+a <- c(5, 2, NA, 9, 2, NA, NA, 3)
+
+mean(a)
+sum(a)
+range(a)
+```
+
+. . .
+
+To avoid this, these functions have a `na.rm` option that you can set to `TRUE` to remove missings before computing the statistic (i.e., listwise deletion).
+
+```{r}
+#| echo: true
+
+mean(a, na.rm = T)
+sum(a, na.rm = T)
+range(a, na.rm = T)
+```
+
+
+
+## {{< iconify solar programming-bold >}} Exercise {background-image="figures/03-vectors/running-lanes.jpg" background-opacity=0.1}
+
+::: {.attribution}
+Image: Daniel Foster (Flickr)
+:::
+
+The four fastest women's 100m times ever recorded are **10.49** seconds by Florence Griffith-Joyner (wind +0.0), **10.54** seconds by Elaine Thompson-Herah (wind +0.9), **10.57** seconds by Sha'Carri Richardson  (wind +4.1), and **10.60** seconds by Shelly-Ann Fraser-Pryce (wind +1.7).
+
+::: {.incremental}
+1.  Create the vector `times` with the four times as shown in the table.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    times <- c(10.49, 10.54, 10.57, 10.60)
+    ```
+
+2.  Set performances with tailwind >2.0 to `NA` (missing value).
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    times[times > 2] <- NA
+    ```
+    
+3.  Compute speeds for each time in m/s and save them in a vector called `speeds`. 
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    speeds <- 100 / times
+    ```
+
+4.  Compute the average speed with a statistical function.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+
+    mean(speeds, na.rm = TRUE)
+    ```
+:::

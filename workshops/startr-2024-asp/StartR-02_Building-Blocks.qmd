@@ -1,0 +1,791 @@
+---
+title: "Building Blocks"
+subtitle: "Methodenfortbildung der ASP"
+description: "R | RStudio | Console | Source | Environment | Output"
+author: "**Maik Bieleke, PhD**"
+institute: "University of Konstanz"
+date: 11/02/2024
+date-format: long
+format: 
+  revealjs:
+    transition: slide
+    fontsize: 20pt
+    chalkboard: true
+    slide-number: true
+    theme: [simple, _styles/unikn.scss]
+    footer: "[https://maikbieleke.com/workshops/startr-2024-asp/](https://maikbieleke.com/workshops/startr-2024-asp/)"
+    margin: 0.25
+    highlight-style: a11y
+from: markdown+emoji
+revealjs-plugins:
+  - attribution
+---
+
+# About R 
+
+::: footer 
+<https://www.r-project.org/>
+:::
+
+
+## The R programming language
+
+R is an open-source programming language and software environment for statistical computing and data visualization. It has been developed in 1991 by two statisticians at the University of Auckland, New Zealand.
+
+:::: {columns}
+::: {.column width="25%" .fragment fragment-index=1}
+![**Ross Ihaka**](figures/02-language/ihaka.jpg)
+:::
+::: {.column width="3%"}
+:::
+::: {.column width="40%" .fragment fragment-index=3}
+![](figures/02-language/r-article.png)
+:::
+::: {.column width="3%"}
+:::
+::: {.column width="25%" .fragment fragment-index=2}
+![**Robert Gentleman**](figures/02-language/gentleman.png)
+:::
+::::
+
+::: {.fragment fragment-index=4 .center}
+**Why the name R?**
+
+"We have named our language R---in part to acknowledge the influence of S and in part to celebrate our own efforts." (p. 300)
+:::
+
+::: footer
+<https://bookdown.org/rdpeng/rprogdatascience/history-and-overview-of-r.html>
+:::
+
+
+
+## The R Foundation {background-image="figures/vienna.jpeg" background-opacity=0.1}
+
+![](figures/02-language/R-foundation.png)
+
+::: footer
+[https://www.r-project.org/foundation/](https://www.r-project.org/foundation/)
+:::
+
+
+
+## R as standalone program
+
+R is a **standalone program** that you can locate and execute on your computer. In principle, it is possible to work with R without any additional software.
+
+::: {layout-ncol=2}
+![Locating R.exe on a windows computer](figures/02-language/Rexe-folder.png)
+
+![Running R.exe](figures/02-language/Rexe.png)
+:::
+
+## Graphical user interface (RGui)
+
+To make working with R more user-friendly, there is a pre-installed graphical user interface (GUI) called **RGui**.
+
+::: {layout-ncol=2}
+![Locating RGui.exe on a windows computer](figures/02-language/RGui-folder.png)
+
+![Running RGui.exe](figures/02-language/rgui.png)
+:::
+
+
+## Integrated Development Environment (IDE)
+
+However, R is most conveniently used with an integrated development environment (IDE) like **RStudio** that provides tools for editing, debugging, visualization, and publishing.
+
+![](figures/02-language/RStudio.png)
+
+
+
+
+# About RStudio
+
+::: footer 
+<https://posit.co/products/open-source/rstudio/>
+:::
+
+
+
+## Posit {background-image="figures/posit-background.png" background-opacity=0.1}
+
+![](figures/02-language/posit.png)
+
+::: footer
+[https://posit.co/](https://posit.co/)
+:::
+
+
+
+## What is RStudio?
+RStudio is an integrated development environment (IDE) for R and Python.
+
+- developed and maintained by Posit PBC 
+- free software with optional commercial extensions
+- tools for editing, debugging, visualization, and publishing
+- workflows for data projects and reproducible research
+- cross-platform software (Windows, Mac, Linux)
+
+
+
+## RStudio panes
+
+![](figures/02-language/RStudio-panes.jpg){width=100%}
+
+::: footer
+[https://docs.posit.co/ide/user/ide/guide/ui/ui-panes.html](https://docs.posit.co/ide/user/ide/guide/ui/ui-panes.html)
+:::
+
+
+
+# Console {background-image="figures/02-language/r-console.png" background-opacity="0.1"}
+
+
+## Console pane
+
+:::: {.columns}
+::: {.column width="60%"}
+The console is R within RStudio. It provides the area to interactively execute code and get an immediate response. It's typically used only for quick calculations that one doesn't want to save.
+
+![](figures/02-language/Rstudio-console.jpg)
+
+:::{.fragment fragment-index=1}
+- The `>` signals that R is waiting for your input.
+- The `+` signals that R is waiting for you to complete your input.
+
+Press **enter** to submit your input or **escape** to cancel it.
+:::
+:::
+::: {.column width="40%"}
+![](figures/02-language/meme-console.jpg)
+:::
+::::
+
+
+## R as calculator
+
+::: footer
+Photo courtesy of [@markusspiske](https://unsplash.com/de/@markusspiske)
+:::
+
+The console is ideally suited for quick calculations that you do not want to save.
+
+:::: {.columns}
+::: {.column width="30%"}
+![](figures/02-language/calculator.jpg)
+:::
+::: {.column width="50%"}
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+1 + 1   # addition
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+4 - 3   # subtraction
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+2 * 5   # multiplication
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+12 / 3  # division
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+2^2     # exponentiation
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+sqrt(9) # functions (square root)
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+pi      # constants
+```
+:::
+
+:::
+::::
+
+::: {.fragment}
+::: {.callout-tip}
+The `[1]` at the beginning of the output is an index that can usually be ignored.
+:::
+:::
+
+
+
+## Saving results in objects
+
+::: {.columns}
+::: {.column width="75%"}
+
+:::{.incremental}
+**Assignments** are used in R to store information in **objects**.
+
+- the operator for assignments is `<-`
+- the notation for an assignment is `object <- ...`
+
+  ```{r}
+  #| echo: true
+  #| code-line-numbers: false
+  
+  a <- 5
+  ```
+  
+- to see the information stored in an object, call it by name
+
+  ```{r}
+  #| echo: true
+  #| code-line-numbers: false
+  
+  a
+  ```
+:::
+
+::: {.fragment}
+::: {.callout-tip title="Tip"}
+The shortut for the assignment operator is Alt + - (Windows) or Option + - (Mac).
+:::
+:::
+
+:::
+::: {.column width="25%"}
+![](figures/02-language/meme-assignment.jpg)
+:::
+:::
+
+
+
+
+## Naming objects
+
+R is case sensitive, so `a` and `A` would refer to different objects.
+
+:::{.incremental}
+- objects names can consist of letters (a-z, A-Z), numbers (0-9), and a few special characters like dots (.) and underscores (_)
+
+- if you call an object that does not exist, R will return an error
+
+  ```{r}
+  #| echo: true
+  #| error: true
+  #| code-line-numbers: false
+  
+  A
+  ```
+- object names cannot start with a number or contain spaces
+
+  ```{r}
+  #| echo: true
+  #| error: true
+  #| code-line-numbers: false
+  
+  1_a <- 5
+  ```
+  
+  ```{r}
+  #| echo: true
+  #| error: true
+  #| code-line-numbers: false
+  
+  my a object <- 5
+  ```
+:::
+
+## Using objects
+
+:::{.incremental}
+- Objects can be used like variables.
+
+  ```{r}
+  #| echo: true
+  #| error: true
+  #| code-line-numbers: false
+  
+  # object "a" is 5, so this is equal to 5 * 2
+  a * 2
+  ```
+
+- They can be used repeatedly in the same calculation.
+
+  ```{r}
+  #| echo: true
+  #| error: true
+  #| code-line-numbers: false
+  
+  # using "a" multiple times in a calculation
+  1 + (a - 2) * a
+  ```
+
+- The object's value does not change when it's used like that.
+
+  ```{r}
+  #| echo: true
+  #| error: true
+  #| code-line-numbers: false
+  
+  # still the same value
+  a
+  ```
+:::
+
+## Changing objects
+
+To change an object, it must be assigned again.
+
+:::: {.columns}
+
+::: {.column width="50%" .fragment}
+- using new values
+
+  ```{r}
+  #| echo: true
+  #| error: true
+  #| code-line-numbers: false
+
+  # initialize value of "a"
+  a <- 5
+
+  # assign a new value to "a"
+  a <- 100
+  a
+  ```
+:::
+
+::: {.column width="50%" .fragment}
+- using the old value
+
+  ```{r}
+  #| echo: true
+  #| error: true
+  #| code-line-numbers: false
+
+  # initialize value of "a"
+  a <- 5
+  
+  # increase the old value by 10
+  a <- a + 10
+  a
+  ```
+:::
+
+::::
+
+
+## {{< iconify solar programming-bold >}} Exercise {background-image="figures/02-language/florence-griffith-joyner.png" background-opacity=0.1}
+
+::: {.attribution}
+Image: Getty Images
+:::
+
+The women's 100 m world record of **10.49 seconds** was set by US athlete Florece Griffith-Joyner in 1988.
+
+::: {.incremental}
+1. Store the her finishing time in an object called `record`.
+
+   ```{r}
+   #| echo: true
+   #| code-line-numbers: false
+   #| code-fold: true
+   #| code-summary: Solution
+   
+   record <- 10.49
+   ```
+
+2. Compute her speed in m/s and save it as `speed_ms`.
+
+   ```{r}
+   #| echo: true
+   #| code-line-numbers: false
+   #| code-fold: true
+   #| code-summary: Solution
+   
+   speed_ms <- 100 / record
+   ```
+
+3. Compute her speed in km/h and save it as `speed_kmh`. (Note that $km/h = m/s * 3.6$.)
+
+   ```{r}
+   #| echo: true
+   #| code-line-numbers: false
+   #| code-fold: true
+   #| code-summary: Solution
+   
+   speed_kmh <- speed_ms * 3.6
+   ```
+:::
+
+
+# Source {background-image="figures/02-language/script.png" background-opacity="0.1"}
+
+## Source pane
+
+:::: {.columns}
+::: {.column width="65%"}
+::: {.fragment fragment-index=1}
+The source pane is where you create and edit scripts for data processing and analysis. It appears when you open a script.
+:::
+
+::: {.fragment fragment-index=2}
+- For a new script, click **File** > **New File** > **R Script**.
+- Scripts are saved as text files with the `.R` extension. 
+
+The code in a script is only evaluated after it was "sent" to the console. But how do you do that?
+:::
+:::
+::: {.column width="35%" .fragment fragment-index=1}
+![](figures/02-language/Rstudio-source.jpg)
+:::
+::::
+
+::: {.fragment fragment-index=3}
+- copy (`Ctrl` + `C`) and paste (`Ctrl` + `V`) code into the console
+- place the cursor on a single line or select code with the mouse and click **Run**
+:::
+
+::: {.fragment fragment-index=4}
+::: {.callout-tip title="Tip"}
+The shortut for **Run** is Ctrl/Cmd + Enter.
+:::
+:::
+
+
+
+## Comments (`#`)
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+A comment is text that is not evaluated as code. Comments are used to **structure** scripts,  **explain** what the code does, and **debug** code. Comments are preceded by a hash `#`. They can be placed...
+
+::: {.incremental}
+- ...on lines of their own (long explanations)
+  ```{r}
+  #| echo: true
+  #| code-line-numbers: false
+  # Here, we calculate stuff because it makes sense to do so.
+  10 - 5 + 3
+  ```
+  
+- ...at the end of a line of code (short explanations)
+  ```{r}
+  #| echo: true
+  #| code-line-numbers: false
+  10 - 5 + 3 # calculate stuff
+  ```
+  
+- ...before a line of code
+  ```{r}
+  #| echo: true
+  #| code-line-numbers: false
+  # 10 - 5 + 3
+  ```
+
+- ...within a line of code
+  ```{r}
+  #| echo: true
+  #| code-line-numbers: false
+  10 - 5 #  + 3
+  ```
+:::
+:::
+
+::: {.column width="40%"}
+![](figures/02-language/comments.jpg)
+:::
+::::
+
+
+
+## {{< iconify solar programming-bold >}} Exercise {background-image="figures/02-language/florence-griffith-joyner.png" background-opacity=0.2}
+
+::: {.attribution}
+Image: Getty Images
+:::
+
+::: {.incremental}
+1. Open a new R script in RStudio.
+
+2. Copy your solution of the last exercise (women's 100 m world record) from the console into the script.
+
+3. Add comments to explain what each line of code does.
+
+   ```{r}
+   #| echo: true
+   #| code-line-numbers: false
+   #| code-fold: true
+   #| code-summary: Solution
+   
+   # Save the record in an object called "record".
+   record <- 10.49
+   
+   # Compute the speed in m/s and save it as "speed_ms".
+   speed_ms <- 100 / record
+   
+   # Convert the speed to km/h and save it as "speed_kmh".
+   speed_kmh <- speed_ms * 3.6 # Note: km/h = m/s * 3.6
+   ```
+
+4. Save your script as `.r` file.
+
+5. Run the script and check the results in the console.
+:::
+
+
+
+# Environment {background-image="figures/02-language/storage.jpg" background-opacity="0.1"}
+
+::: footer
+Photo courtesy of [@ruchindra](https://unsplash.com/de/@ruchindra)
+:::
+
+## Environment pane
+
+:::: {.columns}
+::: {.column width="55%"}
+All objects created by an assignment are saved in the **workspace**.
+
+- The objects in your workspace are displayed in the **environment**. 
+- The commands used to create objects are displayed in the **history**. 
+
+Only objects in the workspace can be used in the console.
+:::
+::: {.column width="45%"}
+![](figures/02-language/Rstudio-environment.jpg)
+:::
+::::
+
+:::{.fragment}
+::: {.callout-tip title="Tip"}
+The environment is useful for an overview of the available objects. Moreover, you can click on some objects like data frames to view them in a spreadsheet-like viewer.
+:::
+:::
+
+
+## Workspace
+
+:::: {.columns}
+::: {.column width="50%"}
+The workspace ("global environment") is where all objects created by an assignment are saved.
+
+I recommend to deactivate automatic saving and restoring of the workspace because it can lead to unexpected results.
+
+You can deactivate it in the **Global Options** under **General - Workspace**.
+:::
+::: {.column width="50%"}
+![](figures/02-language/workspace.png)
+:::
+::::
+
+
+
+# Output {background-image="figures/02-language/administration.jpg" background-opacity="0.1"}
+
+::: footer
+Photo courtesy of [@seargreyson](https://unsplash.com/de/@seargreyson)
+:::
+
+## Output pane
+
+:::: {.columns}
+::: {.column width="50%"}
+The output pane provides access to several important features.
+
+:::{.incremental}
+- access and organize files
+- display and zoom into plots
+- view and administer packages
+- search for help and information
+- ...
+:::
+:::
+::: {.column width="50%"}
+![](figures/02-language/Rstudio-output.jpg)
+:::
+::::
+
+
+
+## Packages
+
+Packages are collections of R functions, datasets, help menus, and examples that extend the capabilities of Base R.
+
+:::: {.columns}
+::: {.column width="70%" .fragment fragment-index=1}
+Install packages once with `install.packages()`, using quotation marks around the package name.
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: false
+
+install.packages("foo")
+```
+:::
+::: {.column width="30%" .fragment fragment-index=1}
+![](figures/02-language/packages-lightbulbs-1.png){width=70%}
+:::
+::::
+
+:::: {.columns}
+::: {.column width="70%" .fragment fragment-index=2}
+Load a package every time you start a new R session with `library()`. No quotation marks needed.
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: false
+
+library(foo)
+```
+:::
+::: {.column width="30%" .fragment fragment-index=2}
+![](figures/02-language/packages-lightbulbs-2.png){width=70%}
+:::
+::::
+
+:::{.fragment}
+::: {.callout-tip title="Tip"}
+Use the `::` operator (e.g., `dplyr::filter()`) to be specific about which package a function comes from. Note that this does not load the package.
+:::
+:::
+
+
+
+
+
+## Popular packages
+
+![](figures/02-language/package-network.jpg){fig-align="center"}
+
+::: footer
+[Mora-Cantallops et al. (2020)](https://doi.org/10.1016/j.jss.2020.110744)
+:::
+
+
+
+## Functions
+
+Objects are one fundamental thing in R. The other fundamental thing are **functions**. The basic syntax of a function is 
+
+`function_name(option1, option2, ...)`.
+
+::: {.fragment}
+Functions are used to perform specific tasks. For example, the function `sqrt()` computes the square root of a number. The result can be assigned to a new object.
+
+```{r}
+#| echo: true
+# Apply the sqrt() function to the number 9 and assign the result to x.
+x <- sqrt(9)
+x
+```
+:::
+
+::: {.fragment}
+While many functions are available in base R, you often want specific functions from additional packages. For example, the function `str_to_upper()` is available after installing the `stringr` package, which then needs to be loaded with `library(stringr)` or called with `::` operator.
+
+```{r}
+#| echo: true
+stringr::str_to_upper("hello")
+```
+:::
+
+
+## Help
+
+:::: {.columns}
+::: {.column width="50%"}
+The help menu provides access to the documentation of functions and packages. With the `?` operator, you can search for help on a specific function.
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: false
+
+# Get help for the function sqrt().
+?sqrt
+```
+:::
+::: {.column width="50%"}
+![](figures/02-language/help.png)
+:::
+::::
+
+
+
+
+
+## {{< iconify solar programming-bold >}} Exercise {background-image="figures/02-language/packages.jpg" background-opacity="0.2"}
+
+::: {.attribution}
+Photo courtesy of [@chuttersnap](https://unsplash.com/@chuttersnap)
+:::
+
+::: {.incremental}
+1.  Install the package `ggplot2` and load it into your current R session.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    install.packages("ggplot2")
+    library(ggplot2)
+    ```
+
+```{r}
+library(ggplot2)
+```
+
+2.  Get help about the `ggsave()` function. What does it do?
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    ?ggsave
+    ```
+:::
