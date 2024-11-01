@@ -4,14 +4,14 @@ date: 11/01/2024
 date-format: "MMMM YYYY"
 published-title: "Date"
 description: "Four-day workshop for the German Association of Sport Psychology (Arbeitsgemeinschaft für Sportpsychologie, ASP)."
-# listing: 
-#   id: slides
-#   type: table
-#   fields: [date, title, description]
-#   filter-ui: false
-#   sort-ui: false
-#   sort: date
-#   date-format: "D.MM."
+listing:
+  id: slides
+  type: table
+  fields: [date, title, description]
+  filter-ui: false
+  sort-ui: false
+  sort: date
+  date-format: "D.MM."
 lang: de
 format: 
   html: 

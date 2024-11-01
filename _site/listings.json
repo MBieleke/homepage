@@ -1,5 +1,14 @@
 [
   {
+    "listing": "/workshops/startr-2024-asp/index.html",
+    "items": [
+      "/workshops/startr-2024-asp/startr-01_intro.html",
+      "/workshops/startr-2024-asp/startr-02_building-blocks.html",
+      "/workshops/startr-2024-asp/startr-03_scalars-vectors.html",
+      "/workshops/startr-2024-asp/startr-04_matrices-dataframes.html"
+    ]
+  },
+  {
     "listing": "/workshops/startr-2023-frankfurt/index.html",
     "items": [
       "/workshops/startr-2023-frankfurt/startr-01_intro.html",
