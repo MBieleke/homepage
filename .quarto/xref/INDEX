@@ -316,5 +316,35 @@
   },
   "workshops/startr-2023-frankfurt/startr-09_statistics.qmd": {
     "startr-09_statistics.html": "c199007e"
+  },
+  "workshops/startr-2024-asp/startr-01_intro.qmd": {
+    "startr-01_intro.html": "c9bdeb73"
+  },
+  "workshops/startr-2024-asp/StartR-02_Building-Blocks.qmd": {
+    "StartR-02_Building-Blocks.html": "481334ff"
+  },
+  "workshops/startr-2024-asp/StartR-03_Scalars-Vectors.qmd": {
+    "StartR-03_Scalars-Vectors.html": "c1240630"
+  },
+  "workshops/startr-2024-asp/StartR-04_Matrices-Dataframes.qmd": {
+    "StartR-04_Matrices-Dataframes.html": "27f0e997"
+  },
+  "workshops/startr-2024-asp/startr-02_Building-Blocks.qmd": {
+    "startr-02_Building-Blocks.html": "86a88d4d"
+  },
+  "workshops/startr-2024-asp/startr-03_Scalars-Vectors.qmd": {
+    "startr-03_Scalars-Vectors.html": "f0768317"
+  },
+  "workshops/startr-2024-asp/startr-04_Matrices-Dataframes.qmd": {
+    "startr-04_Matrices-Dataframes.html": "15c349e7"
+  },
+  "workshops/startr-2024-asp/startr-02_building-blocks.qmd": {
+    "startr-02_building-blocks.html": "6f8bff70"
+  },
+  "workshops/startr-2024-asp/startr-03_scalars-vectors.qmd": {
+    "startr-03_scalars-vectors.html": "1c3f8cd0"
+  },
+  "workshops/startr-2024-asp/startr-04_matrices-dataframes.qmd": {
+    "startr-04_matrices-dataframes.html": "e49446c7"
   }
 }
