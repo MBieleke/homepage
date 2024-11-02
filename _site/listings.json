@@ -1,25 +1,16 @@
 [
   {
-    "listing": "/workshops/startr-2024-asp/index.html",
+    "listing": "/workshops/index.html",
     "items": [
-      "/workshops/startr-2024-asp/startr-01_intro.html",
-      "/workshops/startr-2024-asp/startr-02_building-blocks.html",
-      "/workshops/startr-2024-asp/startr-03_scalars-vectors.html",
-      "/workshops/startr-2024-asp/startr-04_matrices-dataframes.html"
+      "/workshops/startr-2023-frankfurt/index.html",
+      "/workshops/startr-2024-asp/index.html"
     ]
   },
   {
-    "listing": "/workshops/startr-2023-frankfurt/index.html",
+    "listing": "/scales/index.html",
     "items": [
-      "/workshops/startr-2023-frankfurt/startr-01_intro.html",
-      "/workshops/startr-2023-frankfurt/startr-02_building-blocks.html",
-      "/workshops/startr-2023-frankfurt/startr-03_scalars-vectors.html",
-      "/workshops/startr-2023-frankfurt/startr-04_matrices-dataframes.html",
-      "/workshops/startr-2023-frankfurt/startr-05_datasets.html",
-      "/workshops/startr-2023-frankfurt/startr-06_workflow.html",
-      "/workshops/startr-2023-frankfurt/startr-07_data-management.html",
-      "/workshops/startr-2023-frankfurt/startr-08_visualization.html",
-      "/workshops/startr-2023-frankfurt/startr-09_statistics.html"
+      "/scales/aeqs/index.html",
+      "/scales/itps/index.html"
     ]
   },
   {
@@ -91,17 +82,27 @@
     ]
   },
   {
-    "listing": "/scales/index.html",
+    "listing": "/workshops/startr-2023-frankfurt/index.html",
     "items": [
-      "/scales/aeqs/index.html",
-      "/scales/itps/index.html"
+      "/workshops/startr-2023-frankfurt/startr-01_intro.html",
+      "/workshops/startr-2023-frankfurt/startr-02_building-blocks.html",
+      "/workshops/startr-2023-frankfurt/startr-03_scalars-vectors.html",
+      "/workshops/startr-2023-frankfurt/startr-04_matrices-dataframes.html",
+      "/workshops/startr-2023-frankfurt/startr-05_datasets.html",
+      "/workshops/startr-2023-frankfurt/startr-06_workflow.html",
+      "/workshops/startr-2023-frankfurt/startr-07_data-management.html",
+      "/workshops/startr-2023-frankfurt/startr-08_visualization.html",
+      "/workshops/startr-2023-frankfurt/startr-09_statistics.html"
     ]
   },
   {
-    "listing": "/workshops/index.html",
+    "listing": "/workshops/startr-2024-asp/index.html",
     "items": [
-      "/workshops/startr-2023-frankfurt/index.html",
-      "/workshops/startr-2024-asp/index.html"
+      "/workshops/startr-2024-asp/startr-00_exercise-1.html",
+      "/workshops/startr-2024-asp/startr-01_intro.html",
+      "/workshops/startr-2024-asp/startr-02_building-blocks.html",
+      "/workshops/startr-2024-asp/startr-03_scalars-vectors.html",
+      "/workshops/startr-2024-asp/startr-04_matrices-dataframes.html"
     ]
   }
 ]
