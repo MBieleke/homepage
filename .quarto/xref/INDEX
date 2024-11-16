@@ -349,5 +349,17 @@
   },
   "workshops/startr-2024-asp/startr-00_exercise-1.qmd": {
     "startr-00_exercise-1.html": "867579b3"
+  },
+  "workshops/startr-2024-asp/startr-05_workflow.qmd": {
+    "startr-05_workflow.html": "00c34644"
+  },
+  "workshops/startr-2024-asp/startr-06_data-management.qmd": {
+    "startr-06_data-management.html": "19499b47"
+  },
+  "workshops/startr-2024-asp/startr-07_exploration.qmd": {
+    "startr-07_exploration.html": "bda1f09e"
+  },
+  "workshops/startr-2024-asp/startr-08_statistics.qmd": {
+    "startr-08_statistics.html": "7c253a74"
   }
 }

@@ -102,7 +102,11 @@
       "/workshops/startr-2024-asp/startr-01_intro.html",
       "/workshops/startr-2024-asp/startr-02_building-blocks.html",
       "/workshops/startr-2024-asp/startr-03_scalars-vectors.html",
-      "/workshops/startr-2024-asp/startr-04_matrices-dataframes.html"
+      "/workshops/startr-2024-asp/startr-04_matrices-dataframes.html",
+      "/workshops/startr-2024-asp/startr-05_workflow.html",
+      "/workshops/startr-2024-asp/startr-06_data-management.html",
+      "/workshops/startr-2024-asp/startr-07_exploration.html",
+      "/workshops/startr-2024-asp/startr-08_statistics.html"
     ]
   }
 ]

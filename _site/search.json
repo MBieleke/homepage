@@ -1,5 +1,362 @@
 [
   {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#the-correlation-package",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#the-correlation-package",
+    "title": "Data Analysis",
+    "section": "The correlation package",
+    "text": "The correlation package\n\n\nThe correlation package is an easystats package focused on correlation analysis.\n\n# install.packages(\"correlation\")\nlibrary(correlation)\n\n\n\n\n\n\n\n\n\n\nhttps://easystats.github.io/easystats/"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#computing-single-correlations",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#computing-single-correlations",
+    "title": "Data Analysis",
+    "section": "Computing single correlations",
+    "text": "Computing single correlations\nA single correlation can be determined with the cor_test() function.\n\n# Correlation between players' value and overall attribute\ncor_test(pes, \"approach_effort\", \"avoid_effort\")\n\nParameter1      |   Parameter2 |     r |         95% CI | t(287) |         p\n----------------------------------------------------------------------------\napproach_effort | avoid_effort | -0.79 | [-0.83, -0.74] | -21.97 | &lt; .001***\n\nObservations: 289"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#plotting-single-correlations",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#plotting-single-correlations",
+    "title": "Data Analysis",
+    "section": "Plotting single correlations",
+    "text": "Plotting single correlations\nWe can plot the correlation using the plot() function.\n\nr &lt;- cor_test(pes, \"approach_effort\", \"avoid_effort\")\nplot(r)"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#computing-multiple-correlations",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#computing-multiple-correlations",
+    "title": "Data Analysis",
+    "section": "Computing multiple correlations",
+    "text": "Computing multiple correlations\nWe can compute correlations between sets of variables with the correlation() function.\n\n# Select variables of interest\nvariables_pes &lt;- select(pes, approach_effort, avoid_effort)\nvariables_ipaq &lt;- select(pes, ipaq_sitt, ipaq_walk, ipaq_mopa, ipaq_vipa, ipaq_mvpa)\n\n# Compute correlations\ncorrelation(data = variables_pes, data2 = variables_ipaq)\n\n# Correlation Matrix (pearson-method)\n\nParameter1      | Parameter2 |        r |         95% CI |   t(287) |         p\n-------------------------------------------------------------------------------\napproach_effort |  ipaq_sitt |    -0.28 | [-0.38, -0.17] |    -4.96 | &lt; .001***\napproach_effort |  ipaq_walk | 1.74e-04 | [-0.12,  0.12] | 2.95e-03 | &gt; .999   \napproach_effort |  ipaq_mopa |     0.18 | [ 0.06,  0.29] |     3.04 | 0.010*   \napproach_effort |  ipaq_vipa |     0.31 | [ 0.20,  0.41] |     5.49 | &lt; .001***\napproach_effort |  ipaq_mvpa |     0.28 | [ 0.17,  0.38] |     4.88 | &lt; .001***\navoid_effort    |  ipaq_sitt |     0.27 | [ 0.16,  0.37] |     4.74 | &lt; .001***\navoid_effort    |  ipaq_walk | 1.85e-03 | [-0.11,  0.12] |     0.03 | &gt; .999   \navoid_effort    |  ipaq_mopa |    -0.16 | [-0.27, -0.05] |    -2.79 | 0.017*   \navoid_effort    |  ipaq_vipa |    -0.28 | [-0.38, -0.17] |    -4.90 | &lt; .001***\navoid_effort    |  ipaq_mvpa |    -0.25 | [-0.36, -0.14] |    -4.39 | &lt; .001***\n\np-value adjustment method: Holm (1979)\nObservations: 289"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#correlation-matrix",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#correlation-matrix",
+    "title": "Data Analysis",
+    "section": "Correlation matrix",
+    "text": "Correlation matrix\nWe can use the summary()function to get a correlation matrix.\n\n# Take all variables together\nvariables &lt;- select(pes, approach_effort, avoid_effort, \n                    ipaq_sitt, ipaq_walk, ipaq_mopa, ipaq_vipa, ipaq_mvpa)\n\n# Compute and save correlations\nr &lt;- correlation(variables)\n\n# Generate correlation matrix\nsummary(r)\n\n# Correlation Matrix (pearson-method)\n\nParameter       | ipaq_mvpa | ipaq_vipa | ipaq_mopa | ipaq_walk | ipaq_sitt | avoid_effort\n------------------------------------------------------------------------------------------\napproach_effort |   0.28*** |   0.31*** |     0.18* |  1.74e-04 |  -0.28*** |     -0.79***\navoid_effort    |  -0.25*** |  -0.28*** |    -0.16* |  1.85e-03 |   0.27*** |             \nipaq_sitt       | -8.59e-03 |     -0.03 |      0.02 |   0.29*** |           |             \nipaq_walk       |   0.26*** |     0.17* |   0.31*** |           |           |             \nipaq_mopa       |   0.88*** |   0.60*** |           |           |           |             \nipaq_vipa       |   0.91*** |           |           |           |           |             \n\np-value adjustment method: Holm (1979)"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#correlation-plot",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#correlation-plot",
+    "title": "Data Analysis",
+    "section": "Correlation plot",
+    "text": "Correlation plot\nWe can use the plot()function to plot the correlation matrix.\n\n# Compute and save correlations and correlation matrix\nr &lt;- correlation(variables)\nrmat &lt;- summary(r)\n\n# Generate correlation plot\nplot(rmat)"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#overview",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#overview",
+    "title": "Data Analysis",
+    "section": "Overview",
+    "text": "Overview\nThere are numerous regression models available in R. We will focus on the Base R implementation of the linear regression model.\n\n\nThere are three aspects of regression:\n\nmodel estimation: lm() function in base R\nparameter evaluation: parameters package\nmodel performance: performance package\n\n\n \n\n\nThe parameters and the performance package are part of the easystats package collection.\n\nhttps://easystats.github.io/easystats/"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#simple-regression",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#simple-regression",
+    "title": "Data Analysis",
+    "section": "Simple regression",
+    "text": "Simple regression\nWe can use the lm() function to estimate a simple linear regression model. The summary() function provides the standard output.\n\n# estimate regression model with a single predictor: dv ~ iv\nmodel &lt;- lm(ipaq_mvpa ~ approach_effort, data = pes)\n\n# get the standard output\nsummary(model)\n\n\nCall:\nlm(formula = ipaq_mvpa ~ approach_effort, data = pes)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-485.63 -242.97 -119.10   93.56 2867.03 \n\nCoefficients:\n                Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)      -148.47     110.85  -1.339    0.181    \napproach_effort   146.13      29.95   4.879 1.77e-06 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 443.2 on 287 degrees of freedom\nMultiple R-squared:  0.07658,   Adjusted R-squared:  0.07336 \nF-statistic:  23.8 on 1 and 287 DF,  p-value: 1.774e-06"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#model-parameters-and-performance",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#model-parameters-and-performance",
+    "title": "Data Analysis",
+    "section": "Model parameters and performance",
+    "text": "Model parameters and performance\nWe can use the parameters() and performance() to extract parameters and performance metrics.\n\nParameters\n\n# parameters\nparameters::parameters(model)\n\nParameter       | Coefficient |     SE |            95% CI | t(287) |      p\n----------------------------------------------------------------------------\n(Intercept)     |     -148.47 | 110.85 | [-366.65,  69.70] |  -1.34 | 0.181 \napproach effort |      146.13 |  29.95 | [  87.17, 205.08] |   4.88 | &lt; .001\n\n\nStandardized parameters\n\n# parameters\nparameters::parameters(model, standardize = \"refit\")\n\nParameter       | Coefficient |   SE |        95% CI |   t(287) |      p\n------------------------------------------------------------------------\n(Intercept)     |    2.10e-16 | 0.06 | [-0.11, 0.11] | 3.70e-15 | &gt; .999\napproach effort |        0.28 | 0.06 | [ 0.17, 0.39] |     4.88 | &lt; .001\n\n\nPerformance metrics\n\n# performance\nperformance::performance(model)\n\n# Indices of model performance\n\nAIC      |     AICc |      BIC |    R2 | R2 (adj.) |    RMSE |   Sigma\n----------------------------------------------------------------------\n4346.450 | 4346.534 | 4357.449 | 0.077 |     0.073 | 441.638 | 443.174"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#model-assumptions",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#model-assumptions",
+    "title": "Data Analysis",
+    "section": "Model assumptions",
+    "text": "Model assumptions\nWe can use the check_model() function to check whether the assumptions of a linear regression are met.\n\nperformance::check_model(model)"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#multiple-regression",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#multiple-regression",
+    "title": "Data Analysis",
+    "section": "Multiple regression",
+    "text": "Multiple regression\nWe can also use the lm() function to estimate a multiple regression model. Add additional predictors with the + operator.\n\n# estimate regression model with a single predictor: dv ~ iv\nmodel2 &lt;- lm(ipaq_mvpa ~ approach_effort +\n               age + gender + intention + attitudes_instru + self_efficacy, data = pes)\nsummary(model2)\n\n\nCall:\nlm(formula = ipaq_mvpa ~ approach_effort + age + gender + intention + \n    attitudes_instru + self_efficacy, data = pes)\n\nResiduals:\n   Min     1Q Median     3Q    Max \n-589.3 -228.8  -85.6   59.4 2773.2 \n\nCoefficients:\n                 Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)      -375.849    200.309  -1.876 0.061660 .  \napproach_effort    78.790     35.400   2.226 0.026842 *  \nage                 6.954      6.917   1.005 0.315570    \ngenderMale        106.515     56.090   1.899 0.058603 .  \nintention          66.808     19.735   3.385 0.000814 ***\nattitudes_instru  -13.629     23.127  -0.589 0.556146    \nself_efficacy       8.002     39.649   0.202 0.840212    \n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 404.4 on 277 degrees of freedom\n  (5 observations deleted due to missingness)\nMultiple R-squared:  0.1396,    Adjusted R-squared:  0.1209 \nF-statistic: 7.489 on 6 and 277 DF,  p-value: 1.892e-07\n\n\nAdd interactions with the : operator (e.g., Overall:Value). Include all main effects and interactions with the * operator (e.g., Overall*Value)."
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#comparing-models",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#comparing-models",
+    "title": "Data Analysis",
+    "section": "Comparing models",
+    "text": "Comparing models\nWe can use the compare_performance() function to compare the performance of two or more models.\n\nperformance::compare_performance(model, model2, metrics = \"common\")\n\n# Comparison of Model Performance Indices\n\nName   | Model |  AIC (weights) |  BIC (weights) |    R2 | R2 (adj.) |    RMSE\n------------------------------------------------------------------------------\nmodel  |    lm | 4346.4 (&lt;.001) | 4357.4 (&lt;.001) | 0.077 |     0.073 | 441.638\nmodel2 |    lm | 4224.3 (&gt;.999) | 4253.5 (&gt;.999) | 0.140 |     0.121 | 399.403"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#the-lavaan-package",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#the-lavaan-package",
+    "title": "Data Analysis",
+    "section": "The lavaan package",
+    "text": "The lavaan package\n\n\nlavaan (LAtent VAriable ANalysis) is dedicated to strcutrual equation modeling (SEM)\n\n# install.packages(\"lavaan\")\nlibrary(lavaan)\n\n\n\n\n\nYves Rosseel, author of lavaan\n\n\n\n\n\nhttps://lavaan.ugent.be/"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#exploratory-factor-analysis-efa",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#exploratory-factor-analysis-efa",
+    "title": "Data Analysis",
+    "section": "Exploratory factor analysis (EFA)",
+    "text": "Exploratory factor analysis (EFA)\nEFA can be conducted with the efa() function.\n\n# select variables of the PES\ndata &lt;- select(pes, effort_1:effort_8)\n\n# estimate the EFA model\nfit_efa &lt;- lavaan::efa(data = data, nfactors = 1:3)\n\n# get detailed summary of the model and request standardized loadings\nsummary(fit_efa, standardized = TRUE)\n\nThis is lavaan 0.6.16 -- running exploratory factor analysis\n\n  Estimator                                         ML\n  Rotation method                       GEOMIN OBLIQUE\n  Geomin epsilon                                 0.001\n  Rotation algorithm (rstarts)                GPA (30)\n  Standardized metric                             TRUE\n  Row weights                                     None\n\n  Number of observations                           289\n\nOverview models:\n                    aic      bic    sabic   chisq df pvalue   cfi rmsea\n  nfactors = 1 5075.525 5134.188 5083.449 182.441 20  0.000 0.913 0.168\n  nfactors = 2 4975.991 5060.319 4987.382  68.907 13  0.000 0.970 0.122\n  nfactors = 3 4938.208 5044.534 4952.571  19.124  7  0.008 0.994 0.077\n\nEigenvalues correlation matrix:\n\n    ev1     ev2     ev3     ev4     ev5     ev6     ev7     ev8 \n  5.641   0.663   0.406   0.390   0.273   0.245   0.214   0.168 \n\nNumber of factors:  1 \n\nStandardized loadings: (* = significant at 1% level)\n\n             f1       unique.var   communalities\neffort_1  0.813*           0.339           0.661\neffort_2 -0.796*           0.366           0.634\neffort_3  0.764*           0.416           0.584\neffort_4 -0.817*           0.333           0.667\neffort_5 -0.823*           0.322           0.678\neffort_6  0.816*           0.334           0.666\neffort_7 -0.856*           0.267           0.733\neffort_8  0.826*           0.318           0.682\n\n                           f1\nSum of squared loadings 5.306\nProportion of total     1.000\nProportion var          0.663\nCumulative var          0.663\n\nNumber of factors:  2 \n\nStandardized loadings: (* = significant at 1% level)\n\n             f1      f2       unique.var   communalities\neffort_1          0.855*           0.264           0.736\neffort_2  0.820*                   0.303           0.697\neffort_3          0.736*           0.379           0.621\neffort_4  0.954*                   0.222           0.778\neffort_5  0.677*      .            0.311           0.689\neffort_6          0.908*           0.243           0.757\neffort_7  0.714*      .            0.245           0.755\neffort_8      .   0.735*           0.282           0.718\n\n                              f2    f1 total\nSum of sq (obliq) loadings 2.943 2.809 5.752\nProportion of total        0.512 0.488 1.000\nProportion var             0.368 0.351 0.719\nCumulative var             0.368 0.719 0.719\n\nFactor correlations: (* = significant at 1% level)\n\n       f1      f2 \nf1  1.000         \nf2 -0.834*  1.000 \n\nNumber of factors:  3 \n\nStandardized loadings: (* = significant at 1% level)\n\n             f1      f2      f3       unique.var   communalities\neffort_1      .   0.896*                   0.211           0.789\neffort_2  0.323*          0.864*           0.210           0.790\neffort_3          0.727*                   0.375           0.625\neffort_4      .           0.884*           0.250           0.750\neffort_5              .   0.690*           0.315           0.685\neffort_6      .   0.857*                   0.228           0.772\neffort_7      .           0.900*           0.050           0.950\neffort_8          0.717*      .            0.292           0.708\n\n                              f3    f2    f1 total\nSum of sq (obliq) loadings 3.030 2.815 0.223 6.069\nProportion of total        0.499 0.464 0.037 1.000\nProportion var             0.379 0.352 0.028 0.759\nCumulative var             0.379 0.731 0.759 0.759\n\nFactor correlations: (* = significant at 1% level)\n\n       f1      f2      f3 \nf1  1.000                 \nf2  0.050   1.000         \nf3 -0.128  -0.822*  1.000"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#confirmatory-factor-analysis-cfa",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#confirmatory-factor-analysis-cfa",
+    "title": "Data Analysis",
+    "section": "Confirmatory factor analysis (CFA)",
+    "text": "Confirmatory factor analysis (CFA)\nCFA can be conducted with the cfa() function.\n\n# define the model as character string\nmodel &lt;- \"\n  approach  =~ effort_1 + effort_3 + effort_6 + effort_8 # `=~` defines latent variables\n  avoidance =~ effort_2 + effort_4 + effort_5 + effort_7\n\n  approach ~~ avoidance  # `=~` defines relationships between latent variables\n\"\n\n# estimate the CFA model and request orthogonal rotation\nfit_cfa &lt;- lavaan::cfa(model, data = pes)\n\n# get detailed summary of the model\nsummary(fit_cfa, fit.measures = TRUE, standardized = TRUE)\n\nlavaan 0.6.16 ended normally after 30 iterations\n\n  Estimator                                         ML\n  Optimization method                           NLMINB\n  Number of model parameters                        17\n\n  Number of observations                           289\n\nModel Test User Model:\n                                                      \n  Test statistic                                76.292\n  Degrees of freedom                                19\n  P-value (Chi-square)                           0.000\n\nModel Test Baseline Model:\n\n  Test statistic                              1894.480\n  Degrees of freedom                                28\n  P-value                                        0.000\n\nUser Model versus Baseline Model:\n\n  Comparative Fit Index (CFI)                    0.969\n  Tucker-Lewis Index (TLI)                       0.955\n\nLoglikelihood and Information Criteria:\n\n  Loglikelihood user model (H0)              -2468.688\n  Loglikelihood unrestricted model (H1)      -2430.542\n                                                      \n  Akaike (AIC)                                4971.376\n  Bayesian (BIC)                              5033.705\n  Sample-size adjusted Bayesian (SABIC)       4979.796\n\nRoot Mean Square Error of Approximation:\n\n  RMSEA                                          0.102\n  90 Percent confidence interval - lower         0.079\n  90 Percent confidence interval - upper         0.127\n  P-value H_0: RMSEA &lt;= 0.050                    0.000\n  P-value H_0: RMSEA &gt;= 0.080                    0.941\n\nStandardized Root Mean Square Residual:\n\n  SRMR                                           0.026\n\nParameter Estimates:\n\n  Standard errors                             Standard\n  Information                                 Expected\n  Information saturated (h1) model          Structured\n\nLatent Variables:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all\n  approach =~                                                           \n    effort_1          1.000                               0.868    0.859\n    effort_3          0.942    0.058   16.375    0.000    0.817    0.790\n    effort_6          0.952    0.051   18.752    0.000    0.826    0.858\n    effort_8          0.924    0.050   18.617    0.000    0.802    0.854\n  avoidance =~                                                          \n    effort_2          1.000                               0.922    0.822\n    effort_4          1.041    0.060   17.401    0.000    0.960    0.853\n    effort_5          1.014    0.059   17.140    0.000    0.935    0.845\n    effort_7          1.018    0.056   18.338    0.000    0.939    0.884\n\nCovariances:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all\n  approach ~~                                                           \n    avoidance        -0.697    0.075   -9.342    0.000   -0.871   -0.871\n\nVariances:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all\n   .effort_1          0.268    0.029    9.177    0.000    0.268    0.263\n   .effort_3          0.401    0.039   10.354    0.000    0.401    0.375\n   .effort_6          0.244    0.027    9.192    0.000    0.244    0.264\n   .effort_8          0.238    0.026    9.283    0.000    0.238    0.270\n   .effort_2          0.408    0.041   10.052    0.000    0.408    0.324\n   .effort_4          0.344    0.036    9.475    0.000    0.344    0.272\n   .effort_5          0.351    0.036    9.657    0.000    0.351    0.286\n   .effort_7          0.247    0.029    8.622    0.000    0.247    0.219\n    approach          0.753    0.084    8.952    0.000    1.000    1.000\n    avoidance         0.851    0.101    8.381    0.000    1.000    1.000"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#structural-equation-modeling-sem",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#structural-equation-modeling-sem",
+    "title": "Data Analysis",
+    "section": "Structural equation modeling (SEM)",
+    "text": "Structural equation modeling (SEM)\nSEM can be conducted with the sem() function.\n\n# define the model as character string\nmodel &lt;- \"\n  approach  =~ effort_1 + effort_3 + effort_6 + effort_8\n  avoidance =~ effort_2 + effort_4 + effort_5 + effort_7\n\n  approach ~~ avoidance\n  approach  ~ intention + automaticity + self_efficacy + motivation_auto + attitudes_affect\n  avoidance ~ intention + automaticity + self_efficacy + motivation_auto + attitudes_affect\n\"\n\n# estimate the CFA model and request orthogonal rotation\nfit_sem &lt;- lavaan::sem(model, data = pes)\n\n# get detailed summary of the model\nsummary(fit_sem, fit.measures = TRUE, standardized = TRUE)\n\nlavaan 0.6.16 ended normally after 35 iterations\n\n  Estimator                                         ML\n  Optimization method                           NLMINB\n  Number of model parameters                        27\n\n                                                  Used       Total\n  Number of observations                           285         289\n\nModel Test User Model:\n                                                      \n  Test statistic                               129.692\n  Degrees of freedom                                49\n  P-value (Chi-square)                           0.000\n\nModel Test Baseline Model:\n\n  Test statistic                              2224.158\n  Degrees of freedom                                68\n  P-value                                        0.000\n\nUser Model versus Baseline Model:\n\n  Comparative Fit Index (CFI)                    0.963\n  Tucker-Lewis Index (TLI)                       0.948\n\nLoglikelihood and Information Criteria:\n\n  Loglikelihood user model (H0)              -2286.297\n  Loglikelihood unrestricted model (H1)      -2221.451\n                                                      \n  Akaike (AIC)                                4626.594\n  Bayesian (BIC)                              4725.212\n  Sample-size adjusted Bayesian (SABIC)       4639.593\n\nRoot Mean Square Error of Approximation:\n\n  RMSEA                                          0.076\n  90 Percent confidence interval - lower         0.060\n  90 Percent confidence interval - upper         0.092\n  P-value H_0: RMSEA &lt;= 0.050                    0.004\n  P-value H_0: RMSEA &gt;= 0.080                    0.356\n\nStandardized Root Mean Square Residual:\n\n  SRMR                                           0.027\n\nParameter Estimates:\n\n  Standard errors                             Standard\n  Information                                 Expected\n  Information saturated (h1) model          Structured\n\nLatent Variables:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all\n  approach =~                                                           \n    effort_1          1.000                               0.885    0.875\n    effort_3          0.929    0.054   17.050    0.000    0.822    0.793\n    effort_6          0.913    0.048   18.906    0.000    0.808    0.840\n    effort_8          0.894    0.046   19.260    0.000    0.791    0.848\n  avoidance =~                                                          \n    effort_2          1.000                               0.927    0.826\n    effort_4          1.052    0.059   17.693    0.000    0.975    0.862\n    effort_5          1.008    0.059   17.061    0.000    0.934    0.842\n    effort_7          1.007    0.055   18.183    0.000    0.934    0.878\n\nRegressions:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all\n  approach ~                                                            \n    intention         0.033    0.028    1.149    0.251    0.037    0.054\n    automaticity      0.125    0.030    4.205    0.000    0.142    0.216\n    self_efficacy     0.128    0.054    2.394    0.017    0.145    0.109\n    motivation_aut    0.470    0.062    7.630    0.000    0.531    0.505\n    attitudes_ffct    0.069    0.035    1.969    0.049    0.078    0.102\n  avoidance ~                                                           \n    intention        -0.083    0.037   -2.271    0.023   -0.090   -0.132\n    automaticity     -0.044    0.038   -1.144    0.253   -0.047   -0.072\n    self_efficacy    -0.071    0.069   -1.025    0.305   -0.076   -0.057\n    motivation_aut   -0.481    0.080   -6.023    0.000   -0.518   -0.492\n    attitudes_ffct   -0.041    0.045   -0.899    0.369   -0.044   -0.057\n\nCovariances:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all\n .approach ~~                                                           \n   .avoidance        -0.232    0.029   -7.918    0.000   -0.741   -0.741\n\nVariances:\n                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all\n   .effort_1          0.240    0.026    9.277    0.000    0.240    0.234\n   .effort_3          0.399    0.038   10.589    0.000    0.399    0.371\n   .effort_6          0.273    0.027   10.009    0.000    0.273    0.294\n   .effort_8          0.244    0.025    9.867    0.000    0.244    0.280\n   .effort_2          0.400    0.040    9.947    0.000    0.400    0.318\n   .effort_4          0.329    0.036    9.240    0.000    0.329    0.257\n   .effort_5          0.359    0.037    9.679    0.000    0.359    0.292\n   .effort_7          0.260    0.030    8.808    0.000    0.260    0.230\n   .approach          0.228    0.029    7.830    0.000    0.291    0.291\n   .avoidance         0.431    0.054    7.974    0.000    0.502    0.502"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#plotting-the-model",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#plotting-the-model",
+    "title": "Data Analysis",
+    "section": "Plotting the model",
+    "text": "Plotting the model\nWe can use the semPaths() function in the semPlot package to plot the estimated models.\n\n# install.packages(\"semPlot\")\nlibrary(semPlot)\nsemPaths(fit_sem, what = \"std\")"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#exercise",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#exercise",
+    "title": "Data Analysis",
+    "section": " Exercise",
+    "text": "Exercise\n\n\nOpen your pes project (see work flow) and import the data from the file pes.csv.\n\n\nSolution\nlibrary(rio)\npes &lt;- import(\"data/pes.csv\")\n\n\nCompute the correlation of approach_effort and avoid_effort with ipaq_mvpa.\n\n\nSolution\ncorrelation(pes, data = select(pes, approach_effort, avoid_effort),\n                 data2 = select(pes, ipaq_mvpa))\n\n\nRegress ipaq_mvpa on approach_effort and avoid_effort. Investigate the standardized parameters and the model performance.\n\n\nSolution\nreg_model &lt;- lm(ipaq_mvpa ~ approach_effort + avoid_effort, data = pes)\nparameters::parameters(reg_model, standardize = \"refit\")\nperformance::performance(reg_model)\n\n\nEstimate a SEM model with approach_effort and avoid_effort as latent variables and predictors of the manifest variable ipaq_mvpa.\n\n\nSolution\nmodel &lt;- \"approach  =~ effort_1 + effort_3 + effort_6 + effort_8\n          avoidance =~ effort_2 + effort_4 + effort_5 + effort_7\n\n          approach ~~ avoidance\n          ipaq_mvpa_std ~ approach + avoidance\"\n\nfit_sem &lt;- lavaan::sem(model, data = pes)\nsummary(fit_sem, fit.measures = TRUE, standardized = TRUE)"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#single-sample-t-test",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#single-sample-t-test",
+    "title": "Data Analysis",
+    "section": "Single sample t-test",
+    "text": "Single sample t-test\nt-tests can be performed with the t.test() function in base R. If one variable is provided, a single sample t-test is performed. Similar to regression, the model paramters can be examined with the parameters() function of the parameters package.\n\n# test whether pre-training performance is different from 0\nmodel &lt;- t.test(hiit$RSA_Pre)\n\n# get the standard output\nmodel\n\n\n    One Sample t-test\n\ndata:  hiit$RSA_Pre\nt = 44.879, df = 21, p-value &lt; 2.2e-16\nalternative hypothesis: true mean is not equal to 0\n95 percent confidence interval:\n 4.786515 5.251667\nsample estimates:\nmean of x \n 5.019091 \n\n# get tidy output with parameters()\nparameters::parameters(model, es_type = \"cohens_d\")\n\nOne Sample t-test\n\nParameter    |   mu | Difference |       95% CI | Cohen's d |      d 95% CI | t(21) |      p\n--------------------------------------------------------------------------------------------\nhiit$RSA_Pre | 0.00 |       5.02 | [4.79, 5.25] |      9.57 | [6.66, 12.38] | 44.88 | &lt; .001\n\nAlternative hypothesis: true mean is not equal to 0"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#independent-t-test",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#independent-t-test",
+    "title": "Data Analysis",
+    "section": "Independent t-test",
+    "text": "Independent t-test\nAn independent t-Test using the formula approach.\n\n# Compare pre-training performance between males and females\nmodel &lt;- t.test(RSA_Pre ~ Sex, data = hiit)\n\n# get tidy output with parameters()\nparameters::parameters(model, es_type = \"cohens_d\")\n\nWelch Two Sample t-test\n\nParameter | Group | Mean_Group1 | Mean_Group2 | Difference |         95% CI |     d |       d 95% CI | t(17.15) |      p\n------------------------------------------------------------------------------------------------------------------------\nRSA_Pre   |   Sex |        4.56 |        5.48 |      -0.91 | [-1.13, -0.70] | -4.27 | [-5.95, -2.54] |    -8.84 | &lt; .001\n\nAlternative hypothesis: true difference in means between group female and group male is not equal to 0"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#dependent-t-test",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#dependent-t-test",
+    "title": "Data Analysis",
+    "section": "Dependent t-test",
+    "text": "Dependent t-test\nA dependent t-Test specifying both variables and using the paired argument.\n\n# Compare pre- and post-training performance within individuals\nmodel &lt;- t.test(hiit$RSA_Pre, hiit$RSA_Post1, paired = TRUE)\n\n# get tidy output with parameters()\nparameters::parameters(model, es_type = \"cohens_d\")\n\nPaired t-test\n\nParameter    |          Group | Difference |       95% CI | Cohen's d |     d 95% CI | t(21) |      p\n-----------------------------------------------------------------------------------------------------\nhiit$RSA_Pre | hiit$RSA_Post1 |       0.18 | [0.13, 0.23] |      1.48 | [0.86, 2.08] |  6.92 | &lt; .001\n\nAlternative hypothesis: true mean difference is not equal to 0"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#the-afex-and-the-emmeans-package",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#the-afex-and-the-emmeans-package",
+    "title": "Data Analysis",
+    "section": "The afex and the emmeans package",
+    "text": "The afex and the emmeans package\n\n\nafex (Analysis of Factorial EXperiments) is dedicated to analysis of variance.\n\n# install.packages(\"afex\")\nlibrary(afex)\n\n\n\n\n\nHenrik Singman, author of afex\n\n\n\n\n\n\nemmeans (Estimated Marginal MEANS) is dedicated to follow-up contrasts and post-hoc tests.\n\n# install.packages(\"emmeans\")\nlibrary(emmeans)\n\n\n\n\n\nRussell Lenth, author of emmeans\n\n\n\n\n\nhttps://github.com/singmann/afex - https://github.com/rvlenth/emmeans"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#the-aov_4-function",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#the-aov_4-function",
+    "title": "Data Analysis",
+    "section": "The aov_4() function",
+    "text": "The aov_4() function\nThe aov_4() function is part of the afex package and can be used to estimate a variety of ANOVA models.\n\n\n\n\n\n\nGeneric format: aov_4(dv ~ iv_b + (iv_w | id), data)\n\n\n\n\n\n\n\ndv is the dependent variable\niv_b are the between-subject predictor variables\niv_w are the within-subject predictor variables\nid is the subject identifier variable\ndata is the data frame"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#the-emmeans-function",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#the-emmeans-function",
+    "title": "Data Analysis",
+    "section": "The emmeans() function",
+    "text": "The emmeans() function\nThe emmeans() function is part of the emmeans package. It has the following generic format:\n\n\n\n\n\n\nGeneric format: emmeans(model, ~ iv)\n\n\n\n\n\n\n\nmodel is the model object\niv are the predictor variables"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#reshaping-the-hiit-dataset",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#reshaping-the-hiit-dataset",
+    "title": "Data Analysis",
+    "section": "Reshaping the HIIT dataset",
+    "text": "Reshaping the HIIT dataset\nFor the ANOVA, we need a long version of the HIIT dataset. We can use the pivot_longer() function from the tidyr package to convert the dataset from wide to long format (see “data management”).\n\n# wide format\nhead(hiit[, 1:10])\n\n   ID  Sex RSA_Pre RSA_Post1 RSA_Post2 CMJ_Pre CMJ_Post1 CMJ_Post2 MRJ_Pre\n1  P4 male    5.79      5.74      5.81    42.5      40.7      39.7    2.13\n2  P7 male    5.10      4.87      5.09    40.7      33.3      35.1    1.98\n3  P8 male    5.71      5.45      5.57    38.5      34.6      34.8    1.42\n4  P9 male    5.61      5.38      5.43    48.3      44.3      46.8    2.07\n5 P10 male    5.51      5.38      5.49    39.8      37.1      37.4    1.88\n6 P11 male    5.25      5.12      5.16    33.9      31.3      33.6    1.62\n  MRJ_Post1\n1      1.97\n2      1.46\n3      1.08\n4      1.80\n5      1.37\n6      1.59\n\n# convert to long format\nhiit_long &lt;- tidyr::pivot_longer(hiit, cols = -c(ID, Sex), names_sep = \"_\",\n                                 names_to = c(\"Measurement\", \"Time\"), values_to = \"Value\")\n\n# wide format\nhead(hiit_long)\n\n# A tibble: 6 × 5\n  ID    Sex   Measurement Time  Value\n  &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;       &lt;chr&gt; &lt;dbl&gt;\n1 P4    male  RSA         Pre    5.79\n2 P4    male  RSA         Post1  5.74\n3 P4    male  RSA         Post2  5.81\n4 P4    male  CMJ         Pre   42.5 \n5 P4    male  CMJ         Post1 40.7 \n6 P4    male  CMJ         Post2 39.7"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#one-factorial-anova",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#one-factorial-anova",
+    "title": "Data Analysis",
+    "section": "One-factorial ANOVA",
+    "text": "One-factorial ANOVA\nBetween-subject ANOVA\n\n# Select data for the RSA measurement at the pre-training time point\ndata &lt;- dplyr::filter(hiit_long, Measurement == \"RSA\" & Time == \"Pre\")\n\n# Test whether the pre RSA values differ between females and males\nafex::aov_4(Value ~ Sex + (1 | ID), data)\n\nAnova Table (Type 3 tests)\n\nResponse: Value\n  Effect    df  MSE         F  ges p.value\n1    Sex 1, 20 0.06 78.09 *** .796   &lt;.001\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1\n\n\n\nWithin-subject ANOVA\n\n# Select data for the RSA measurement (all time points)\ndata &lt;- dplyr::filter(hiit_long, Measurement == \"RSA\")\n\n# Test whether the RSA values differ between the time points\nafex::aov_4(Value ~ 1 + (Time | ID), data)\n\nAnova Table (Type 3 tests)\n\nResponse: Value\n  Effect          df  MSE       F  ges p.value\n1   Time 1.30, 27.20 0.04 7.16 ** .020    .008\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1\n\nSphericity correction method: GG \n\n\nNote that a sphericity correction is applied by default."
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#pairwise-comparisons",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#pairwise-comparisons",
+    "title": "Data Analysis",
+    "section": "Pairwise comparisons",
+    "text": "Pairwise comparisons\nWe can use the emmeans() function to estimate marginal means and the pairs() function to conduct pairwise comparisons. Per default, the Tukey adjustment is used.\n\n# Select data for the RSA measurement (all time points)\ndata  &lt;- dplyr::filter(hiit_long, Measurement == \"RSA\")\n\n# Estimate the ANOVA model with Time as within-subject predictor\nmodel &lt;- afex::aov_4(Value ~ 1 + (Time | ID), data)\n\n# Esimate the marginal means\nemm &lt;- emmeans::emmeans(model, ~ Time)\nemm\n\n Time  emmean    SE df lower.CL upper.CL\n Pre     5.02 0.112 21     4.79     5.25\n Post1   4.84 0.118 21     4.59     5.09\n Post2   4.97 0.119 21     4.73     5.22\n\nConfidence level used: 0.95 \n\n# Conduct pairwise comparisons\npairs(emm)\n\n contrast      estimate     SE df t.ratio p.value\n Pre - Post1     0.1795 0.0259 21   6.921  &lt;.0001\n Pre - Post2     0.0459 0.0601 21   0.764  0.7289\n Post1 - Post2  -0.1336 0.0548 21  -2.440  0.0589\n\nP value adjustment: tukey method for comparing a family of 3 estimates"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#mixed-anova",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#mixed-anova",
+    "title": "Data Analysis",
+    "section": "Mixed ANOVA",
+    "text": "Mixed ANOVA\nFor a mixed ANOVA, we can include both between- and within-subject predictors in the aox_4() function.\n\n# Select data for the RSA measurement (all time points)\ndata &lt;- dplyr::filter(hiit_long, Measurement == \"RSA\")\n\n# Estimate the ANOVA model with Sex as between-subject and Time as within-subject predictor\nafex::aov_4(Value ~ Sex + (Time | ID), data)\n\nAnova Table (Type 3 tests)\n\nResponse: Value\n    Effect          df  MSE         F  ges p.value\n1      Sex       1, 20 0.16 90.01 *** .770   &lt;.001\n2     Time 1.26, 25.24 0.04   6.97 ** .081    .010\n3 Sex:Time 1.26, 25.24 0.04      0.43 .005    .566\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '+' 0.1 ' ' 1\n\nSphericity correction method: GG"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#simple-effects",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#simple-effects",
+    "title": "Data Analysis",
+    "section": "Simple effects",
+    "text": "Simple effects\nTo follow up on significant interactions, we can estimate simple main effects using the joint_tests() function. Here, we test the simple effects of Sex at each level of Time.\n\n# Select data for the RSA measurement (all time points)\ndata &lt;- dplyr::filter(hiit_long, Measurement == \"RSA\")\n\n# Estimate the ANOVA model with Sex as between-subject and Time as within-subject predictor\nmodel &lt;- afex::aov_4(Value ~ Sex + (Time | ID), data)\n\n# Esimate the marginal means\nemm &lt;- emmeans::emmeans(model, ~ Sex * Time)\n\n# Estimate simple effects\nemmeans::joint_tests(emm, by = \"Time\")\n\nTime = Pre:\n model term df1 df2 F.ratio p.value\n Sex          1  20  78.087  &lt;.0001\n\nTime = Post1:\n model term df1 df2 F.ratio p.value\n Sex          1  20  99.553  &lt;.0001\n\nTime = Post2:\n model term df1 df2 F.ratio p.value\n Sex          1  20  43.946  &lt;.0001"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-08_statistics.html#exercise-1",
+    "href": "workshops/startr-2024-asp/startr-08_statistics.html#exercise-1",
+    "title": "Data Analysis",
+    "section": " Exercise",
+    "text": "Exercise\n\n\nOpen your hiit project (see work flow) and import the data from the file hiit.csv.\n\n\nSolution\nlibrary(rio)\nhiit &lt;- import(\"data/hiit.csv\")\n\n\nRun a t-test to examine gender differences in CMJ performance at time point pre.\n\n\nSolution\nmodel &lt;- t.test(hiit$CMJ_Pre ~ hiit$Sex)\nparameters::parameters(model)\n\n\nRun an ANOVA to examine gender differences in CMJ performance at all three time points. Use the following code to reshape the data for the analysis.\n\nhiit_long &lt;- tidyr::pivot_longer(hiit, cols = -c(ID, Sex), names_sep = \"_\",\n                             names_to = c(\"Measurement\", \"Time\"), values_to = \"Value\")\n\n\n\nSolution\ndata &lt;- dplyr::filter(hiit_long, Measurement == \"CMJ\")\nmodel &lt;- afex::aov_4(Value ~ Sex + (1 + Time | ID), data)\nmodel\n\n\nDetermine the simple effects of gender at each time point.\n\n\nSolution\n# Esimate the marginal means\nemm &lt;- emmeans::emmeans(model, ~ Sex * Time)\n\n# Estimate simple effects\nemmeans::joint_tests(emm, by = \"Time\")\n\n\n\n\n\n\n\nhttps://maikbieleke.com/workshops/startr-2024-asp/"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#what-is-merging",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#what-is-merging",
+    "title": "StartR Workshop",
+    "section": "What is merging?",
+    "text": "What is merging?\nMerging is the process of combining two (or more) data sets into one. This is useful when the data is spread across data files that need to be combined for analysis or visualization.\n\ndata from different sources (e.g., survey data and task performance)\ndata from different time points (e.g., pre- and post-test)\n\nMerging requires that the data sets have one variable in common to match the observations.\n\n\n\nThere are four types of merging:\n\nfull join: keep all observations from both data sets\nleft join: keep all observations from the left data set\nright join: keep all observations from the right data set\nInner join: only keep observations that appear in both data sets\n\nWe use functions from the dplyr package.\n\n\n\n\n\ninstall.packages(dplyr) # if not installed\nlibrary(dplyr)"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#types-of-merging",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#types-of-merging",
+    "title": "StartR Workshop",
+    "section": "Types of merging",
+    "text": "Types of merging"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#examples",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#examples",
+    "title": "StartR Workshop",
+    "section": "Examples",
+    "text": "Examples\nWe create two data frames with the shared key variable id. They have observations from different participants and different variables.\n\n# Create two data frames\ndfA &lt;- data.frame(id = c(1, 2, 3), w = c(10, 8, 15), x = c(7, 9, 12))\ndfB &lt;- data.frame(id = c(1, 2, 4), y = c(2, 10, 11), z = c(5, 5, 3))\n\nNow we can use functions from the dplyr package to merge the data frames.\n\n\n\ndplyr::full_join(dfA, dfB)\n\n  id  w  x  y  z\n1  1 10  7  2  5\n2  2  8  9 10  5\n3  3 15 12 NA NA\n4  4 NA NA 11  3\n\ndplyr::inner_join(dfA, dfB)\n\n  id  w x  y z\n1  1 10 7  2 5\n2  2  8 9 10 5\n\n\n\n\ndplyr::left_join(dfA, dfB)\n\n  id  w  x  y  z\n1  1 10  7  2  5\n2  2  8  9 10  5\n3  3 15 12 NA NA\n\ndplyr::right_join(dfA, dfB)\n\n  id  w  x  y z\n1  1 10  7  2 5\n2  2  8  9 10 5\n3  4 NA NA 11 3"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#common-problems",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#common-problems",
+    "title": "StartR Workshop",
+    "section": "Common problems",
+    "text": "Common problems\n\n\ndifferent names of the key variable: use join_by()\n\ndfA &lt;- data.frame(id = c(1, 2, 3), w = c(10, 8, 15), x = c(7, 9, 12))\ndfB &lt;- data.frame(IDENT = c(1, 2, 4), z = c(5, 5, 3))\ndplyr::full_join(dfA, dfB, join_by(id == IDENT))\n\n  id  w  x  z\n1  1 10  7  5\n2  2  8  9  5\n3  3 15 12 NA\n4  4 NA NA  3\n\n\nmultiple key variables: use by()\n\ndfA &lt;- data.frame(id = c(1, 1, 2, 2), wave = c(1, 2, 1, 2),\n                  anx = c(10, 8, 15, 16), dep = c(7, 9, 12, 11))\ndfB &lt;- data.frame(id = c(1, 1, 3, 3), wave = c(1, 2, 1, 2),\n                  ang = c(2, 4, 11, 11), dis = c(5, 5, 3, 5))\n\ndplyr::full_join(dfA, dfB, by = c(\"id\", \"wave\"))\n\n  id wave anx dep ang dis\n1  1    1  10   7   2   5\n2  1    2   8   9   4   5\n3  2    1  15  12  NA  NA\n4  2    2  16  11  NA  NA\n5  3    1  NA  NA  11   3\n6  3    2  NA  NA  11   5"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#exercise",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#exercise",
+    "title": "StartR Workshop",
+    "section": " Exercise",
+    "text": "Exercise\nA researcher tracks the performance and subjective exertion ratings of athletes during two training sessions. Each athlete’s performance metrics and self-reported effort were collected separately. Our goal is to merge these two datasets to analyze how perceived exertion aligns with physical performance.\n\n\nCreate the following data frames by copying the code below:\n\nperformance &lt;- data.frame(id = c(\"A\", \"A\", \"B\", \"B\", \"C\"), session = c(1, 2, 1, 2, 1),\n                          speed = c(12.5, 13.0, 11.8, 12.0, 12.2), distance = c(5, 6, 4, 5, 5))\nratings &lt;- data.frame(id = c(\"A\", \"A\", \"B\", \"B\", \"C\", \"C\"), session = c(1, 2, 1, 2, 1, 2),\n                      exertion = c(7, 8, 6, 5, 7, 9))\n\nWhich two variables uniquely identify each observation in the data frames?\n\n\nSolution\n# id and session\n\n\nMerge the two data frames using a dplyr::full_join.\n\n\nSolution\ndplyr::full_join(performance, ratings, by = c(\"id\", \"session\"))\n\n# dplyr automatically infers the key variables when they have the same name:\n# dplyr::full_join(performance, ratings)\n\n\nUse dplyr::left_join() to keep all athletes from performance and add exertion ratings where available. What is the difference to the previous join?\n\n\nSolution\ndplyr::left_join(performance, ratings, by = c(\"id\", \"session\"))\n# Difference: exertion data from Participant C in Session 2 is removed because no performance data is available"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#what-is-reshaping",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#what-is-reshaping",
+    "title": "StartR Workshop",
+    "section": "What is reshaping?",
+    "text": "What is reshaping?\nReshaping is the process of changing the data format without adding or removing information. This is useful when the data is not in the right format for the desired analysis or visualization.\n\nrepeated measures stored in columns versus rows\ninformation stored in variable names versus values\n\n\n\n\nThere are two types of reshaping:\n\nwide to long: transform data from a wide format to a long format\nlong to wide: transform data from a long format to a wide format\n\nWe use the pivot_longer() and the pivot_wider() functions from the tidyr package.\n\ninstall.packages(tidyr) # if not installed\nlibrary(tidyr)"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#tidy-data",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#tidy-data",
+    "title": "StartR Workshop",
+    "section": "Tidy Data",
+    "text": "Tidy Data\n\n\nhttps://doi.org/10.18637/jss.v059.i10"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#example",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#example",
+    "title": "StartR Workshop",
+    "section": "Example",
+    "text": "Example\n\n\nUntidy data:\n\n\n\n\n\n\nTidy data:\n\n\n\n\n\n\n\n\nhttps://doi.org/10.18637/jss.v059.i10"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#wide-to-long",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#wide-to-long",
+    "title": "StartR Workshop",
+    "section": "Wide-to-long",
+    "text": "Wide-to-long\n\n\nWide Format:\nWe start with a data frame in a wide format.\n\n# Define a wide data frame\ndfr &lt;- data.frame(\n  id = c(1, 2), \n  a_1 = c(10, 8), \n  a_2 = c(7, 9),\n  b_1 = c(2, 11),\n  b_2 = c(5, 5))\ndfr\n\n  id a_1 a_2 b_1 b_2\n1  1  10   7   2   5\n2  2   8   9  11   5\n\n\n\nLong Format:\nTransform data frame to long format with pivot_longer().\n\n# from wide to long\ndfr_long &lt;- pivot_longer(\n  dfr, \n  cols = c(a_1, a_2, b_1, b_2),\n  names_to = \"variable\", \n  values_to = \"value\")\ndfr_long\n\n# A tibble: 8 × 3\n     id variable value\n  &lt;dbl&gt; &lt;chr&gt;    &lt;dbl&gt;\n1     1 a_1         10\n2     1 a_2          7\n3     1 b_1          2\n4     1 b_2          5\n5     2 a_1          8\n6     2 a_2          9\n7     2 b_1         11\n8     2 b_2          5"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#long-to-wide",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#long-to-wide",
+    "title": "StartR Workshop",
+    "section": "Long-to-wide",
+    "text": "Long-to-wide\n\n\nLong Format:\nThis time, we start with a data frame in a wide format.\n\n# Define a long data frame\ndfr &lt;- data.frame(\n  id = c(1, 1, 1, 1, 2, 2, 2, 2),\n  variable = c(\"a_1\", \"a_2\", \"b_1\", \"b_2\",\n               \"a_1\", \"a_2\", \"b_1\", \"b_2\"),\n  value = c(10, 7, 2, 5, 8, 9, 11, 5))\ndfr\n\n  id variable value\n1  1      a_1    10\n2  1      a_2     7\n3  1      b_1     2\n4  1      b_2     5\n5  2      a_1     8\n6  2      a_2     9\n7  2      b_1    11\n8  2      b_2     5\n\n\n\nWide Format:\nTransform data frame to wide with pivot_wider():\n\ndfr_wide &lt;- pivot_wider(\n  dfr,\n  names_from = \"variable\", \n  values_from = \"value\")\ndfr_wide\n\n# A tibble: 2 × 5\n     id   a_1   a_2   b_1   b_2\n  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;\n1     1    10     7     2     5\n2     2     8     9    11     5"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#hidden-identifiers",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#hidden-identifiers",
+    "title": "StartR Workshop",
+    "section": "Hidden identifiers",
+    "text": "Hidden identifiers\nOften variable names in the wide format contain more than one piece of information. For example, the variable a_1 contains information about the variable a and the time point 1. This is called a hidden identifier.\n\n\nWide Format:\n\n# Define a wide data frame\ndfr &lt;- data.frame(\n  id = c(1, 2), \n  a_1 = c(10, 8), \n  a_2 = c(7, 9),\n  b_1 = c(2, 11),\n  b_2 = c(5, 5))\ndfr\n\n  id a_1 a_2 b_1 b_2\n1  1  10   7   2   5\n2  2   8   9  11   5\n\n\n\nLong Format:\n\n# from wide to long\ndfr_long &lt;- pivot_longer(\n  dfr, \n  cols = c(a_1, a_2, b_1, b_2),\n  names_to = c(\"variable\", \"time\"), \n  names_sep = \"_\",\n  values_to = \"value\")\ndfr_long\n\n# A tibble: 8 × 4\n     id variable time  value\n  &lt;dbl&gt; &lt;chr&gt;    &lt;chr&gt; &lt;dbl&gt;\n1     1 a        1        10\n2     1 a        2         7\n3     1 b        1         2\n4     1 b        2         5\n5     2 a        1         8\n6     2 a        2         9\n7     2 b        1        11\n8     2 b        2         5"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#exercise-1",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#exercise-1",
+    "title": "StartR Workshop",
+    "section": " Exercise",
+    "text": "Exercise\nA study records athletes’ heart rates and perceived exertion over two sessions. The data is initially in a wide format, with each session’s data in separate columns. To analyze trends over time, we need to reshape it into a long format.\n\n\nCreate the following wide-format data frame by copying the code below:\n\ndata &lt;- data.frame(id = c(101, 102), hr_1 = c(140, 130), hr_2 = c(135, 128),\n                   exertion_1 = c(7, 6), exertion_2 = c(6, 5))\n\nUse tidyr::pivot_longer() to transform this data into a long format data_long, with id, measure, session, and value columns. Use the names_sep = \"_\" option to split the variable names into measure and session.\n\n\nSolution\ndata_long &lt;- tidyr::pivot_longer(data, cols = c(hr_1, hr_2, exertion_1, exertion_2),\n                                 names_to = c(\"measure\", \"session\"), names_sep = \"_\")\n\n\nConvert the long-format data back to wide format using pivot_wider(), with each session’s data in a separate column for each metric.\n\n\nSolution\ndata_wide &lt;- tidyr::pivot_wider(data_long, names_from = c(\"measure\", \"session\"), values_from = \"value\")"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#what-is-aggregation",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#what-is-aggregation",
+    "title": "StartR Workshop",
+    "section": "What is aggregation?",
+    "text": "What is aggregation?\nAggregating is the process of summarising information from multiple observations into a single piece of information.\n\naveraging scale items into an overall score\ncounting the number of observations in a category\n\n\n\n\nThere are two types of aggregation:\n\ncolumn-wise: combine observations from individual columns\nrow-wise: combine observations from multiple columns\n\nWe use the summarize() function and some helper functions from the dplyr package."
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#column-wise-aggregation",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#column-wise-aggregation",
+    "title": "StartR Workshop",
+    "section": "Column-wise aggregation",
+    "text": "Column-wise aggregation\nColumn-wise aggregation is used to compute summary statistics (e.g., mean, standard deviation) for one ore more columns.\n\n# Define a wide data frame\ndfr &lt;- data.frame(id = c(1, 2, 3), a_1 = c(10, 8, 5), a_2 = c(7, 9, 2),\n                  b_1 = c(2, 11, 8),  b_2 = c(5, 5, 3)); dfr\n\n  id a_1 a_2 b_1 b_2\n1  1  10   7   2   5\n2  2   8   9  11   5\n3  3   5   2   8   3\n\n\n\n\n\n# Compute mean of a single variable\nsummarize(dfr, mean_a1 = mean(a_1))\n\n   mean_a1\n1 7.666667\n\n\n\n\n\n# Compute mean and standard deviation of a single variable\nsummarize(dfr, mean_a1 = mean(a_1), sd_a1 = sd(a_1))\n\n   mean_a1    sd_a1\n1 7.666667 2.516611\n\n\n\n\n\n# Compute a single mean of multiple variables\nsummarize(dfr, mean_a = mean(c(a_1, a_2)))\n\n    mean_a\n1 6.833333\n\n\n\n\nThe across() function allows us to apply the same function to multiple columns.\n\n# Compute separate means of multiple variables with across()\nsummarize(dfr, across(c(a_1, a_2), mean))\n\n       a_1 a_2\n1 7.666667   6"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#row-wise-aggregation",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#row-wise-aggregation",
+    "title": "StartR Workshop",
+    "section": "Row-wise aggregation",
+    "text": "Row-wise aggregation\nRow-wise aggregation is used to compute summary statistics for multiple columns for each observation. We need to use the rowwise() function to apply the aggregation to each row.\n\n# Define a wide data frame\ndfr &lt;- data.frame(id = c(1, 2, 3), a_1 = c(10, 8, 5), a_2 = c(7, 9, 2),\n                  b_1 = c(2, 11, 8),  b_2 = c(5, 5, 3)); dfr\n\n  id a_1 a_2 b_1 b_2\n1  1  10   7   2   5\n2  2   8   9  11   5\n3  3   5   2   8   3\n\n\n\n\n\n# Compute mean of multiple variables\nsummarize(rowwise(dfr), MEAN = mean(c(a_1, a_2)))\n\n# A tibble: 3 × 1\n   MEAN\n  &lt;dbl&gt;\n1   8.5\n2   8.5\n3   3.5\n\n\n\n\n\n# Compute mean and standard deviation of multiple variables\nsummarize(rowwise(dfr), MEAN = mean(c(a_1, a_2)), SD = sd(c(a_1, a_2)))\n\n# A tibble: 3 × 2\n   MEAN    SD\n  &lt;dbl&gt; &lt;dbl&gt;\n1   8.5 2.12 \n2   8.5 0.707\n3   3.5 2.12"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#group-wise-aggregation",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#group-wise-aggregation",
+    "title": "StartR Workshop",
+    "section": "Group-wise aggregation",
+    "text": "Group-wise aggregation\nWe can aggregate for different groups separately using group_by().\n\n# Define a wide data frame\ndfr &lt;- data.frame(id = c(1, 2, 3, 4), condition = c(\"A\", \"A\", \"B\", \"B\"),\n                  a_1 = c(10, 8, 5, 7), a_2 = c(7, 9, 2, 5),\n                  b_1 = c(2, 11, 8, 4),  b_2 = c(5, 5, 3, 1))\ndfr\n\n  id condition a_1 a_2 b_1 b_2\n1  1         A  10   7   2   5\n2  2         A   8   9  11   5\n3  3         B   5   2   8   3\n4  4         B   7   5   4   1\n\n\nAggregate for conditions A and B:\n\n# Compute mean of a single variable for each condition\nsummarize(group_by(dfr, condition), MEAN = mean(a_1))\n\n# A tibble: 2 × 2\n  condition  MEAN\n  &lt;chr&gt;     &lt;dbl&gt;\n1 A             9\n2 B             6"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#exercise-2",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#exercise-2",
+    "title": "StartR Workshop",
+    "section": " Exercise",
+    "text": "Exercise\nIn this exercise, you have data on athletes’ perceived exertion scores during two session in two different conditions (e.g., training and competition).\n\n\nCreate the following data frame by copying the code below:\n\ndata &lt;- data.frame(id = c(101, 102, 103, 104), condition = c(\"Training\", \"Training\", \"Competition\", \"Competition\"),\n                   rpe_1 = c(7, 6, 8, 6), rpe_2 = c(6, 5, 7, 6))\n\nDetermine the average RPE score in each session.\n\n\nSolution\n# Here, we use `across()` to compute the mean for both rpe_1 and rpe_2.\nsummarize(data, across(c(rpe_1, rpe_2), mean))\n\n\nCompute the average RPE score for each athlete across sessions.\n\n\nSolution\n# This computes the mean of the two columns (rpe_1 and rpe_2) for each athlete.\nsummarize(rowwise(data), mean_rpe = mean(c(rpe_1, rpe_2)))\n\n\nCompute the average RPE score for each condition across sessions.\n\n\nSolution\n# This groups the data by the condition variable and computes the mean for each group.\nsummarize(group_by(data, condition), mean_rpe = mean(c(rpe_1, rpe_2)))"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#excurse-pipes",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#excurse-pipes",
+    "title": "StartR Workshop",
+    "section": "Excurse: Pipes",
+    "text": "Excurse: Pipes\nPipes are used to chain multiple operations together by inserting the left-hand side as the first argument of the right-hand side. The dplyr package provides the %&gt;% operator, while base R uses the |&gt; operator (activate in Global Options &gt; Code &gt; Editing). The shortcut Ctrl + Shift + M inserts the pipe operator in RStudio.\n\n\nExample:\n\n# Without pipes\nsummarize(group_by(dfr, condition), MEAN = mean(a_1))\n\n# A tibble: 2 × 2\n  condition  MEAN\n  &lt;chr&gt;     &lt;dbl&gt;\n1 A             9\n2 B             6\n\n# With pipes\ndfr %&gt;% \n  group_by(condition) %&gt;% \n  summarize(MEAN = mean(a_1))\n\n# A tibble: 2 × 2\n  condition  MEAN\n  &lt;chr&gt;     &lt;dbl&gt;\n1 A             9\n2 B             6\n\n\n\n\n\n\nThe %&gt;% pipe comes from the magrittr package. Where do you think the package got its name from?\n\n\n\n\nPipes make code more readable and easier to understand, especially when chaining multiple operations together."
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#conditional",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#conditional",
+    "title": "StartR Workshop",
+    "section": "Conditional",
+    "text": "Conditional\nConditional are used to execute commands only if a certain condition is met. They typically consist of if and else statements.\n\nif(1 &gt; 0){\n  print(\"1 is larger than 0\")\n} else {\n  print(\"1 is not larger than 0\")\n}\n\n[1] \"1 is larger than 0\"\n\n\nA frequently used special form is the ifelse() statement, which can be used to replace the values of a vector depending on a condition.\n\n# Vector from 1 to 10 replaced by \"larger\" if larger than 5, otherwise \"smaller\"\nifelse(1:10 &gt; 5, \"larger\", \"smaller\")\n\n [1] \"smaller\" \"smaller\" \"smaller\" \"smaller\" \"smaller\" \"larger\"  \"larger\" \n [8] \"larger\"  \"larger\"  \"larger\""
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#loops",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#loops",
+    "title": "StartR Workshop",
+    "section": "Loops",
+    "text": "Loops\nA loop is used to repeat a sequence of commands multiple times, each time using a different value of a loop index.\nA loop consists of\n\na loop index (e.g., i) that takes on different values\na loop vector (e.g., 1:3) with all values that the loop index should take\na loop expression (e.g., print(i)) with the commands to be executed for each value of the loop index\n\nThese elements are combined in a loop statement:\nfor(index in vector){expression}\n\nfor(i in 1:3){print(i)}\n\n[1] 1\n[1] 2\n[1] 3\n\n\nNote that loops are rarely efficient in R (in contrast to other programming languages)."
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-06_data-management.html#example-1",
+    "href": "workshops/startr-2024-asp/startr-06_data-management.html#example-1",
+    "title": "StartR Workshop",
+    "section": "Example",
+    "text": "Example\nLet’s use the example from above, where we computed means for different columns of a data frame.\n\n# Define a wide data frame\ndfr &lt;- data.frame(id = c(1, 2, 3), a_1 = c(10, 8, 5), a_2 = c(7, 9, 2),\n                  b_1 = c(2, 11, 8),  b_2 = c(5, 5, 3))\n\nfor(column in c(\"a_1\", \"a_2\", \"b_1\", \"b_2\")){\n  var &lt;- dfr[, column]\n  MEAN &lt;- mean(var)\n  print(MEAN)\n}\n\n[1] 7.666667\n[1] 6\n[1] 7\n[1] 4.333333\n\n\n\n\n\nhttps://maikbieleke.com/workshops/startr-2024-asp/"
+  },
+  {
     "objectID": "workshops/startr-2024-asp/startr-04_matrices-dataframes.html#what-are-matrices",
     "href": "workshops/startr-2024-asp/startr-04_matrices-dataframes.html#what-are-matrices",
     "title": "Matrices and Dataframes",
@@ -1873,7 +2230,7 @@
     "href": "workshops/startr-2024-asp/index.html#übersicht",
     "title": "StartR ASP ’24",
     "section": "Übersicht",
-    "text": "Übersicht\nDie Folien werden zu Beginn der Fortbildungen nach und nach freigeschalten. Bitte beachtet, dass die Folien meines StartR Workshops auf Englisch sind, die Fortbildungen aber auf deutsch angeboten werden.\n\n\n\n\n\nDatum\n\n\nTitel\n\n\nBeschreibung\n\n\n\n\n\n\n2.11.\n\n\nÜbung: ‘Grundlagen der statistischen Programmierung mit R’\n\n\nExercises for Day 1 of the workshop\n\n\n\n\n2.11.\n\n\nIntroduction\n\n\nWelcome | Why R? | Course\n\n\n\n\n2.11.\n\n\nBuilding Blocks\n\n\nR | RStudio | Console | Source | Environment | Output\n\n\n\n\n2.11.\n\n\nScalars and Vectors\n\n\nScalars | Vectors | Indexing | Assignments | Operations | Missings\n\n\n\n\n2.11.\n\n\nMatrices and Dataframes\n\n\nMatrices | Dataframes | Indexing | Factors\n\n\n\n\n\nKeine Treffer"
+    "text": "Übersicht\nDie Folien werden zu Beginn der Fortbildungen nach und nach freigeschalten. Bitte beachtet, dass die Folien meines StartR Workshops auf Englisch sind, die Fortbildungen aber auf deutsch angeboten werden.\n\n\n\n\n\nDatum\n\n\nTitel\n\n\nBeschreibung\n\n\n\n\n\n\n2.11.\n\n\nÜbung: ‘Grundlagen der statistischen Programmierung mit R’\n\n\nExercises for Day 1 of the workshop\n\n\n\n\n2.11.\n\n\nIntroduction\n\n\nWelcome | Why R? | Course\n\n\n\n\n2.11.\n\n\nBuilding Blocks\n\n\nR | RStudio | Console | Source | Environment | Output\n\n\n\n\n2.11.\n\n\nScalars and Vectors\n\n\nScalars | Vectors | Indexing | Assignments | Operations | Missings\n\n\n\n\n2.11.\n\n\nMatrices and Dataframes\n\n\nMatrices | Dataframes | Indexing | Factors\n\n\n\n\n16.11.\n\n\nProject Workflow\n\n\nOrganization | Datasets | Coding | Documentation\n\n\n\n\n16.11.\n\n\nStartR Workshop\n\n\nMerging | Reshaping | Aggregating | Pipes | Conditioning & Looping\n\n\n\n\n16.11.\n\n\nExploration and Visualization\n\n\n\n\n\n\n\n16.11.\n\n\nData Analysis\n\n\nCorrelation | Regression | t-Tests | ANOVA\n\n\n\n\n\nKeine Treffer"
   },
   {
     "objectID": "workshops/startr-2024-asp/index.html#export-als-pdf",
@@ -2133,5 +2490,355 @@
     "title": "Scalars and Vectors",
     "section": " Exercise",
     "text": "Exercise\n\nImage: Daniel Foster (Flickr)\n\nThe four fastest women’s 100m times ever recorded are 10.49 seconds by Florence Griffith-Joyner (wind +0.0), 10.54 seconds by Elaine Thompson-Herah (wind +0.9), 10.57 seconds by Sha’Carri Richardson (wind +4.1), and 10.60 seconds by Shelly-Ann Fraser-Pryce (wind +1.7).\n\n\nCreate the vector times with the four times as shown in the table.\n\n\nSolution\ntimes &lt;- c(10.49, 10.54, 10.57, 10.60)\n\n\nSet performances with tailwind &gt;2.0 to NA (missing value).\n\n\nSolution\ntimes[times &gt; 2] &lt;- NA\n\n\nCompute speeds for each time in m/s and save them in a vector called speeds.\n\n\nSolution\nspeeds &lt;- 100 / times\n\n\nCompute the average speed with a statistical function.\n\n\nSolution\nmean(speeds, na.rm = TRUE)\n\n\n\n\n\n\n\nhttps://maikbieleke.com/workshops/startr-2024-asp/"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#working-directory",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#working-directory",
+    "title": "Project Workflow",
+    "section": "Working directory",
+    "text": "Working directory\nThe working directory is the default directory from which R will try to read and write files. You can check the current working directory with getwd().\n\ngetwd()\n\n[1] \"C:/Users/maikb/Google Drive/Verwaltung/homepage/workshops/startr-2024-asp\"\n\n\n\nThe default directory on a Windows system is usually something like C:/Users/username/Documents.\nThe function setwd() allows to manually specify an alternative working directory, such as setwd(\"C:/Users/username/Work/2023\").\nThe current working directory is shown at the top of the RStudio console."
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#absolute-and-relative-paths",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#absolute-and-relative-paths",
+    "title": "Project Workflow",
+    "section": "Absolute and relative paths",
+    "text": "Absolute and relative paths\n\nAbsolute paths start from the root directory (on windows: C:) and specify the complete location of a file or directory.\nExample: C:/Users/MMuster/Docs/intro2r/figures/05-workflow/workflow.png\n\nhard to read and write\nbreaks when moving files or directories\nnot portable across operating systems or devices\n\n\n\n\nRelative paths start from the current working directory and specify the location of a file or directory relative to the current working directory.\nExample: figures/05-workflow/workflow.png when the current working directory is the intro2r directory."
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#projects",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#projects",
+    "title": "Project Workflow",
+    "section": "Projects",
+    "text": "Projects\n\n\nProjects helps you to organize your work. Each project has its own working directory, workspace, and files. In general, it is recommended to have one project for each analysis you are working on.\nProjects can be created in the File menu either in a new directory or in an existing directory. This will produce a .Rproj file that you can double-click to open the project.\n\n\n\n\n\nhttps://support.posit.co/hc/en-us/articles/200526207-Using-RStudio-Projects"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#project-directory",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#project-directory",
+    "title": "Project Workflow",
+    "section": "Project directory",
+    "text": "Project directory\n\n\nIt is good practice to structure your projects’ directory in a consistent way that works for you.\nAn example from Douglas et al. (2023) is shown on the right. You can adjust it to your needs.\n\n\n\n\n\nDouglas et al. (2023)"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#data-import-and-export",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#data-import-and-export",
+    "title": "Project Workflow",
+    "section": "Data import and export",
+    "text": "Data import and export\n\n\nThe rio package (= R Import and Export) is a Swiss-Army knife for data import and export from and to various file formats (e.g., .xlsx, .csv, .sav).\n\n# install.packages(\"rio\")\nlibrary(rio)\n\nIt has two main functions:\n\nimport(): Import data\n\n# Import and assign the fifa dataset\nfifa &lt;- rio::import(\"data/hiit.xlsx\")\n\nexport(): Export data\n\n# Export the fifa dataset\nrio::export(fifa, \"data/hiit.xlsx\")\n\n\nNote that rio automatically detects the file format based on the file extension.\n\n\n\n\n\nImage: Pixabay\n\n\nhttps://cran.r-project.org/web/packages/rio/index.html"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#pes-dataset",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#pes-dataset",
+    "title": "Project Workflow",
+    "section": "PES Dataset",
+    "text": "PES Dataset\n\n\nhttps://doi.org/10.1016/j.psychsport.2024.102607"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#overview",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#overview",
+    "title": "Project Workflow",
+    "section": "Overview",
+    "text": "Overview\n\n\n\nDevelopment and validation of the “Physical Effort Scale” (PES)\nDatas are publicly available (https://zenodo.org/records/8358572) along with data preparation and analysis scripts\nWe use the cross-sectional dataset from Study 3 (dimensionality, reliability, validity).\nPossible analyses:\n\ncorrelation\nregression analysis\nfactor analysis\nreliability analysis\netc."
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#data",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#data",
+    "title": "Project Workflow",
+    "section": "Data",
+    "text": "Data\n\n\nRows: 297\nColumns: 28\n$ id                   &lt;chr&gt; \"dkind\", \"325144\", \"323575\", \"324922\", \"321253\", …\n$ gender               &lt;chr&gt; \"Female\", \"Male\", \"Female\", \"Female\", \"Male\", \"Fe…\n$ age                  &lt;int&gt; 21, 21, 18, 19, 18, 47, 18, 21, 19, 19, 18, 20, 2…\n$ effort_1             &lt;int&gt; 5, 4, 4, 4, 4, 4, 4, 2, 4, 2, 5, 1, 2, 5, 4, 5, 3…\n$ effort_2             &lt;int&gt; 2, 2, 2, 2, 3, 2, 2, 1, 3, 4, 1, 5, 3, 1, 2, 2, 2…\n$ effort_3             &lt;int&gt; 4, 4, 3, 4, 3, 4, 4, 1, 3, 3, 5, 2, 2, 5, 4, 4, 4…\n$ effort_4             &lt;int&gt; 1, 2, 4, 1, 3, 2, 2, 5, 3, 3, 1, 4, 4, 1, 2, 2, 2…\n$ effort_5             &lt;int&gt; 1, 2, 3, 2, 3, 2, 2, 5, 2, 2, 1, 5, 4, 1, 1, 2, 2…\n$ effort_6             &lt;int&gt; 5, 4, 4, 2, 4, 4, 4, 2, 4, 4, 5, 2, 2, 5, 5, 4, 4…\n$ effort_7             &lt;int&gt; 1, 2, 2, 2, 3, 2, 2, 5, 2, 3, 1, 4, 4, 1, 1, 2, 2…\n$ effort_8             &lt;int&gt; 5, 4, 4, 3, 4, 4, 4, 2, 4, 4, 5, 1, 3, 5, 4, 4, 4…\n$ ipaq_sitt            &lt;int&gt; 1680, 1260, 1260, 300, 1320, 360, 240, 4200, 2100…\n$ ipaq_walk            &lt;int&gt; 210, 90, 180, 30, 1200, 120, 30, 420, 360, 240, 1…\n$ ipaq_mopa            &lt;int&gt; 60, 120, 150, 45, 0, 180, 300, 0, 0, 0, 60, 60, 0…\n$ ipaq_vipa            &lt;int&gt; 360, 60, 180, 30, 0, 180, 60, 0, 120, 480, 240, 1…\n$ ipaq_mvpa            &lt;int&gt; 420, 180, 330, 75, 0, 360, 360, 0, 120, 480, 300,…\n$ intention            &lt;dbl&gt; 7.0, 3.0, 5.0, 5.0, 5.0, 7.0, 6.0, 2.5, 4.0, 6.0,…\n$ self_efficacy        &lt;dbl&gt; 5.000000, 5.000000, 4.000000, 4.333333, 4.000000,…\n$ automaticity         &lt;dbl&gt; 4.50, 4.75, 3.00, 4.00, 3.25, 4.50, 2.00, 2.00, 3…\n$ attitudes_instru     &lt;dbl&gt; 7.000000, 7.000000, 6.333333, 6.000000, 5.333333,…\n$ attitudes_affect     &lt;dbl&gt; 6.333333, 6.333333, 5.000000, 6.333333, 4.333333,…\n$ motivation_auto      &lt;dbl&gt; 5.000000, 4.000000, 3.333333, 4.000000, 3.833333,…\n$ motivation_cont      &lt;dbl&gt; 2.50, 2.25, 1.50, 2.75, 2.75, 3.00, 2.50, 4.50, 3…\n$ need_cognition       &lt;dbl&gt; 3.166667, 4.833333, 4.166667, 3.500000, 4.166667,…\n$ approach_effort      &lt;dbl&gt; 4.75, 4.00, 3.75, 3.25, 3.75, 4.00, 4.00, 1.75, 3…\n$ avoid_effort         &lt;dbl&gt; 1.25, 2.00, 2.75, 1.75, 3.00, 2.00, 2.00, 4.00, 2…\n$ approach_temperament &lt;dbl&gt; 6.20, 5.80, 5.00, 4.40, 4.80, 6.20, 5.80, 6.20, 5…\n$ avoid_temperament    &lt;dbl&gt; 5.857143, 5.571429, 5.000000, 4.142857, 2.857143,…\n\n\n\neffort_1, effort_3, effort_6, and effort_8 assess approach of physical effort\neffort_2, effort_4, effort_5, and effort_7 assess avoidance of physical effort\nthe ipaq_ items assess self-reported levels of physical activity vs. inactivity\nall other variables represent assumed convergent and divergent motivational constructs"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#hiit-dataset",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#hiit-dataset",
+    "title": "Project Workflow",
+    "section": "HIIT Dataset",
+    "text": "HIIT Dataset\n\n\nhttps://doi.org/10.1371/journal.pone.0139801"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#study",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#study",
+    "title": "Project Workflow",
+    "section": "Study",
+    "text": "Study\n\n22 male and female team sport athletes (soccer, basketball, handball)\n6-day running-based HIIT training with 11 HIIT sessions\nphysiological and performance tests at pre, post, and follow-up"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#data-1",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#data-1",
+    "title": "Project Workflow",
+    "section": "Data",
+    "text": "Data\n\n\nRows: 22\nColumns: 49\n$ ID           &lt;chr&gt; \"P4\", \"P7\", \"P8\", \"P9\", \"P10\", \"P11\", \"P12\", \"P13\", \"P14\"…\n$ Sex          &lt;chr&gt; \"male\", \"male\", \"male\", \"male\", \"male\", \"male\", \"male\", \"…\n$ RSA_Pre      &lt;dbl&gt; 5.79, 5.10, 5.71, 5.61, 5.51, 5.25, 5.73, 4.98, 5.59, 5.2…\n$ RSA_Post1    &lt;dbl&gt; 5.74, 4.87, 5.45, 5.38, 5.38, 5.12, 5.45, 5.04, 5.47, 5.1…\n$ RSA_Post2    &lt;dbl&gt; 5.81, 5.09, 5.57, 5.43, 5.49, 5.16, 5.60, 5.10, 5.46, 5.2…\n$ CMJ_Pre      &lt;dbl&gt; 42.5, 40.7, 38.5, 48.3, 39.8, 33.9, 47.1, 37.7, 40.1, 43.…\n$ CMJ_Post1    &lt;dbl&gt; 40.7, 33.3, 34.6, 44.3, 37.1, 31.3, 42.5, 35.0, 35.1, 43.…\n$ CMJ_Post2    &lt;dbl&gt; 39.7, 35.1, 34.8, 46.8, 37.4, 33.6, 47.1, 35.8, 35.7, 46.…\n$ MRJ_Pre      &lt;dbl&gt; 2.13, 1.98, 1.42, 2.07, 1.88, 1.62, 2.04, 2.07, 1.62, 1.9…\n$ MRJ_Post1    &lt;dbl&gt; 1.97, 1.46, 1.08, 1.80, 1.37, 1.59, 1.38, 1.68, 1.43, 1.8…\n$ MRJ_Post2    &lt;dbl&gt; 2.09, 1.51, 1.28, 1.74, 1.78, 1.62, 1.62, 1.83, 1.56, 2.1…\n$ Sprint_Pre   &lt;dbl&gt; 3.06, 3.22, 3.10, 2.95, 3.04, 3.30, 2.98, 3.08, 3.14, 3.0…\n$ Sprint_Post1 &lt;dbl&gt; 3.03, 3.33, 3.31, 3.02, 3.07, 3.31, 3.02, 3.10, 3.23, 3.2…\n$ Sprint_Post2 &lt;dbl&gt; 3.11, 3.34, 3.46, 3.04, 3.12, 3.26, 3.06, 3.17, 3.10, 3.1…\n$ RFTc_Pre     &lt;dbl&gt; 29.2, 29.2, 27.3, 26.1, 31.6, 22.2, 25.7, 38.0, 29.3, 30.…\n$ RFTc_Post1   &lt;dbl&gt; 29.3, 29.7, 30.5, 32.8, 31.3, 30.7, 27.8, 36.8, 34.8, 30.…\n$ RFTc_Post2   &lt;dbl&gt; 26.8, 31.8, 31.2, 33.4, 35.8, 29.5, 24.6, 34.2, 31.8, 30.…\n$ RFDm_Pre     &lt;dbl&gt; 6.9, 7.5, 5.2, 10.6, 8.6, 8.1, 8.4, 9.9, 12.7, 10.7, 10.0…\n$ RFDm_Post1   &lt;dbl&gt; 6.8, 7.7, 7.4, 9.4, 7.5, 5.4, 8.8, 9.9, 11.6, 8.5, 14.2, …\n$ RFDm_Post2   &lt;dbl&gt; 7.3, 8.2, 6.9, 9.8, 7.5, 5.4, 8.5, 9.7, 11.8, 7.3, 15.6, …\n$ BFTc_Pre     &lt;dbl&gt; 48.2, 36.8, 16.8, 25.3, 41.0, 47.6, 39.2, 54.7, 22.4, 24.…\n$ BFTc_Post1   &lt;dbl&gt; 54.3, 38.5, 16.9, 46.3, 39.1, 57.7, 46.1, 22.4, 59.1, 68.…\n$ BFTc_Post2   &lt;dbl&gt; 51.7, 42.4, 17.0, 46.2, 44.0, 57.6, 54.3, 62.1, 13.0, 62.…\n$ BFDm_Pre     &lt;dbl&gt; 11.0, 12.5, 3.2, 7.7, 6.2, 11.2, 15.1, 6.9, 7.9, 4.5, 9.2…\n$ BFDm_Post1   &lt;dbl&gt; 9.8, 12.3, 2.9, 9.0, 4.5, 7.0, 11.8, 3.7, 9.4, 6.4, 10.3,…\n$ BFDm_Post2   &lt;dbl&gt; 8.9, 11.9, 2.7, 7.8, 7.1, 7.8, 13.4, 6.6, 1.1, 7.6, 8.5, …\n$ CK_Pre       &lt;int&gt; 147, 200, 117, 111, 150, 99, 145, 112, 270, 138, 178, 158…\n$ CK_Post1     &lt;int&gt; 276, 686, 820, 850, 499, 2021, 404, 1010, 524, 2276, 4114…\n$ CK_Post2     &lt;int&gt; 98, 226, 204, 422, 176, 412, 159, 250, 158, 330, 579, 108…\n$ CRP_Pre      &lt;dbl&gt; NA, 2.9, 0.5, 0.2, 1.0, 0.0, 0.0, NA, 0.0, 0.4, 0.0, 0.0,…\n$ CRP_Post1    &lt;dbl&gt; NA, 1.6, 0.6, 0.4, 0.4, 0.5, 0.6, NA, 0.0, 1.2, 1.4, 0.0,…\n$ CRP_Post2    &lt;dbl&gt; NA, 0.3, 0.7, 0.3, 0.3, 0.0, 0.4, NA, 0.0, 0.5, 0.4, 0.0,…\n$ UREA_Pre     &lt;int&gt; NA, 39, 28, 28, 21, 43, 30, NA, 33, 43, 32, 34, 26, 27, 2…\n$ UREA_Post1   &lt;int&gt; NA, 42, 28, 36, 29, 47, 30, NA, 40, 55, 33, 26, 21, 32, 2…\n$ UREA_Post2   &lt;int&gt; NA, 39, 34, 31, 31, 33, 30, NA, 34, 37, 23, 27, 19, 30, 2…\n$ DOMS_Pre     &lt;dbl&gt; 0.3, 0.1, 0.2, 0.3, 0.4, 0.0, 0.1, 0.2, 0.3, 0.4, 0.1, 0.…\n$ DOMS_Post1   &lt;dbl&gt; 4.9, 1.5, 1.6, 0.5, 4.5, 1.7, 6.0, 5.2, 3.5, 0.8, 2.3, 1.…\n$ DOMS_Post2   &lt;dbl&gt; 1.0, 1.2, 0.0, 0.0, 0.6, 0.2, 1.9, 0.5, 0.7, 0.0, 2.0, 0.…\n$ RPE_1        &lt;int&gt; 8, 4, 7, 7, 8, 7, 8, 7, 10, 7, 3, 4, 4, 7, 5, 6, 7, 8, 8,…\n$ RPE_2        &lt;int&gt; 7, 7, 5, 3, 9, 9, 7, 8, 9, 6, 4, 6, 6, 4, 7, 5, 4, 4, 6, …\n$ RPE_3        &lt;int&gt; 8, 7, 7, 4, 9, 8, 7, 8, 7, 6, 5, 5, 7, 5, 7, 7, 6, 7, 7, …\n$ RPE_4        &lt;int&gt; 7, 9, 6, 10, 8, 10, 9, 9, 8, 5, 6, 10, 10, 8, 8, 8, 4, 8,…\n$ RPE_5        &lt;int&gt; 8, 4, 3, 4, 8, 6, 7, 5, 10, 7, 5, 5, 5, 3, 4, 7, 7, 5, 7,…\n$ RPE_6        &lt;int&gt; 7, 5, 7, 4, NA, 7, 7, 9, 9, 5, 4, 4, 8, 8, 7, 9, 6, 3, 7,…\n$ RPE_7        &lt;int&gt; 8, 7, 5, 8, 8, 8, 7, 10, 9, 7, 5, 8, 5, 5, 7, 9, 6, 10, 8…\n$ RPE_8        &lt;int&gt; 9, 3, 4, 4, 9, 6, 6, 10, NA, 7, 5, 4, 3, 6, NA, 8, 6, 8, …\n$ RPE_9        &lt;int&gt; 8, 5, 7, 7, 9, 8, 8, 8, 8, 5, 3, 5, 7, 9, NA, 10, 4, 5, 8…\n$ RPE_10       &lt;int&gt; 8, 5, 5, 7, 10, 7, 8, 7, NA, 6, 6, 5, 5, 9, 5, 8, 8, NA, …\n$ RPE_11       &lt;int&gt; 9, 6, 4, 8, 9, 7, 9, 10, NA, 9, 6, 6, 9, 10, 7, 9, 9, NA,…\n\n\n\nMost variables represent some kind of physiological or performance marker measured at _Pre, _Post1, and _Post2, e.g.\n\nRSA = Repeated Sprint Ability (m/s)\nCMJ = Counter-movement jump height (cm)\n\nRPE was measured once in each HIIT session (_1 to _11)"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#demonstration-hiit-project",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#demonstration-hiit-project",
+    "title": "Project Workflow",
+    "section": "Demonstration: HIIT Project",
+    "text": "Demonstration: HIIT Project"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#exercise",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#exercise",
+    "title": "Project Workflow",
+    "section": " Exercise",
+    "text": "Exercise\n\n\nGo to the Uni Cloud (PW: W6NPB8yY4I2V) and download the PES data (pes.csv).\nCreate a new project in RStudio called pes.\nIn your project directory, add a folder data and copy the downloaded dataset into it.\nCreate additional folders scripts and figures.\nOpen the project and import pes.csv with the rio package.\n(See next slide for solution.)"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#solution",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#solution",
+    "title": "Project Workflow",
+    "section": " Solution",
+    "text": "Solution\n\nClick on the link to open the cloud in your browser. Then, click on the three-dot menu next to pes.csv and click on “Download”/“Herunterladen” to save the file on your computer (e.g., into the Downloads folder).\nIn RStudio, click on “File” - “New Project” - “New Directory” - “New Project”. As directory name, enter pes. Choose a subdirectory where the new pes project directory will be created. Confirm and the project will open automatically in RStudio.\nNavigate to the Files pane in RStudio, verify that your working directory corresponds to the pes project directory. Then, click on the “New Folder” icon and create a folder called data. Drag and drop the downloaded pes.csv file into the data folder.\nCreate two additional folders in the pes project directory: scripts and figures. You can do this by clicking on the “New Folder” icon in the Files pane.\nIn the R script editor, import the pes.csv file using the rio package and a path relative to the pes working directory. The code should look like this:\n\nlibrary(rio)\npes &lt;- import(\"data/pes.csv\")"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#sections",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#sections",
+    "title": "Project Workflow",
+    "section": "Sections",
+    "text": "Sections\n\n\nSections can help to structure a script. They start with a comment (#) followed by the section’s name and at least four dashes (-). You can also insert them via the “Code - Insert Section” menu (Ctrl/CMD + Shift + R).\n\nCode folding: Section content can be collapsed and expanded.\nCode outline: Sections are added to the script outline.\nCode navigation: Sections show up in the code navigation. drop-down.\n\n\n\n\n\n\n# Load Data ---------------------------------------------------------------\n\n# Plot Data ---------------------------------------------------------------"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#code-autocompletion",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#code-autocompletion",
+    "title": "Project Workflow",
+    "section": "Code autocompletion",
+    "text": "Code autocompletion\nRStudio offers code completion with fuzzy narrowing. It can be triggered by pressing the tab key. It recognizes:\n\npackages\nfunctions and arguments\nfiles and paths\n\n\nSnippets are templates for common code patterns. They can be triggered by entering a prefix and pressing the tab key twice.\n\nts + tab + tab: insert current date and time\nlib + tab + tab: insert library() call\n\nTo create custom snippets: Tools - Global Options - Code - Edit Snippets."
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#diagnostics",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#diagnostics",
+    "title": "Project Workflow",
+    "section": "Diagnostics",
+    "text": "Diagnostics\nRStudio can help you to find problems in your code.\n\n\n\nSyntax errors are marked with a red cross at the left margin and a red squiggly line. Hover the mouse over them to see the message.\n\n\n\n\n\n\n\n\n\nWarning messages are marked with a yellow exclamation mark at the left margin and a yellow squiggly line. Hover the mouse over them to see the message.\n\n\n\n\n\nNote that you must save the file to see the diagnostics."
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#style-guide",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#style-guide",
+    "title": "Project Workflow",
+    "section": "Style guide",
+    "text": "Style guide\n\n\nReview the tidyverse style guide for tips on\n\nproper file names\ngood code syntax\nworking with functions\n…\n\n\n\n\n\n\nhttps://style.tidyverse.org/index.html"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#information-about-the-session",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#information-about-the-session",
+    "title": "Project Workflow",
+    "section": "Information about the session",
+    "text": "Information about the session\nThe sessionInfo() function shows information about the current R session. This includes loaded packages and their versions, the operating system, and the R version.\n\nsessionInfo()\n\nR version 4.3.1 (2023-06-16 ucrt)\nPlatform: x86_64-w64-mingw32/x64 (64-bit)\nRunning under: Windows 11 x64 (build 22631)\n\nMatrix products: default\n\n\nlocale:\n[1] LC_COLLATE=en_US.UTF-8  LC_CTYPE=en_US.UTF-8    LC_MONETARY=en_US.UTF-8\n[4] LC_NUMERIC=C            LC_TIME=en_US.UTF-8    \n\ntime zone: Europe/Berlin\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nother attached packages:\n[1] rio_0.5.30\n\nloaded via a namespace (and not attached):\n [1] zip_2.3.0         vctrs_0.6.3       cli_3.6.1         knitr_1.46       \n [5] rlang_1.1.1       xfun_0.43         stringi_1.7.12    forcats_1.0.0    \n [9] generics_0.1.3    haven_2.5.3       jsonlite_1.8.8    data.table_1.14.8\n[13] glue_1.6.2        htmltools_0.5.6   readxl_1.4.3      hms_1.1.3        \n[17] fansi_1.0.4       rmarkdown_2.24    cellranger_1.1.0  evaluate_0.21    \n[21] tibble_3.2.1      fastmap_1.1.1     openxlsx_4.2.5.2  yaml_2.3.7       \n[25] lifecycle_1.0.3   compiler_4.3.1    dplyr_1.1.3       Rcpp_1.0.11      \n[29] pkgconfig_2.0.3   rstudioapi_0.15.0 digest_0.6.33     R6_2.5.1         \n[33] tidyselect_1.2.0  foreign_0.8-84    utf8_1.2.3        pillar_1.9.0     \n[37] curl_5.0.2        magrittr_2.0.3    tools_4.3.1"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#citing-r",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#citing-r",
+    "title": "Project Workflow",
+    "section": "Citing R",
+    "text": "Citing R\nThe citation() function shows the citation for R.\n\ncitation()\n\nTo cite R in publications use:\n\n  R Core Team (2023). _R: A Language and Environment for Statistical\n  Computing_. R Foundation for Statistical Computing, Vienna, Austria.\n  &lt;https://www.R-project.org/&gt;.\n\nA BibTeX entry for LaTeX users is\n\n  @Manual{,\n    title = {R: A Language and Environment for Statistical Computing},\n    author = {{R Core Team}},\n    organization = {R Foundation for Statistical Computing},\n    address = {Vienna, Austria},\n    year = {2023},\n    url = {https://www.R-project.org/},\n  }\n\nWe have invested a lot of time and effort in creating R, please cite it\nwhen using it for data analysis. See also 'citation(\"pkgname\")' for\nciting R packages."
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#citing-packages",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#citing-packages",
+    "title": "Project Workflow",
+    "section": "Citing packages",
+    "text": "Citing packages\nThe citation() function can also be used to show the citation for a package.\n\ncitation(\"ggplot2\")\n\nTo cite ggplot2 in publications, please use\n\n  H. Wickham. ggplot2: Elegant Graphics for Data Analysis.\n  Springer-Verlag New York, 2016.\n\nA BibTeX entry for LaTeX users is\n\n  @Book{,\n    author = {Hadley Wickham},\n    title = {ggplot2: Elegant Graphics for Data Analysis},\n    publisher = {Springer-Verlag New York},\n    year = {2016},\n    isbn = {978-3-319-24277-4},\n    url = {https://ggplot2.tidyverse.org},\n  }"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-05_workflow.html#advanced-documentation",
+    "href": "workshops/startr-2024-asp/startr-05_workflow.html#advanced-documentation",
+    "title": "Project Workflow",
+    "section": "Advanced documentation",
+    "text": "Advanced documentation\nThere are serveral advanced ways to document your code:\n\nmarkdown files\ninteractive notebooks\nversion control"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#the-data-viewer",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#the-data-viewer",
+    "title": "Exploration and Visualization",
+    "section": "The data viewer",
+    "text": "The data viewer\n\n\nRStudio has a built-in data viewer. You can open it by clicking on the dataset in the Environment pane or by applying the View() function to the dataset. It allows you to\n\nsort columns\nfilter rows\nsearch for text\n\n\n\n\n\n\nhttps://support.posit.co/hc/en-us/articles/205175388-Using-the-Data-Viewer-in-the-RStudio-IDE"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#overview-with-str",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#overview-with-str",
+    "title": "Exploration and Visualization",
+    "section": "Overview with str()",
+    "text": "Overview with str()\nA good overview of the structure of the dataset can be obtained with base R function str().\n\nstr(pes)\n\n'data.frame':   289 obs. of  28 variables:\n $ id                  : chr  \"dkind\" \"325144\" \"323575\" \"324922\" ...\n $ gender              : chr  \"Female\" \"Male\" \"Female\" \"Female\" ...\n $ age                 : int  21 21 18 19 18 47 18 21 19 19 ...\n $ effort_1            : int  5 4 4 4 4 4 4 2 4 2 ...\n $ effort_2            : int  2 2 2 2 3 2 2 1 3 4 ...\n $ effort_3            : int  4 4 3 4 3 4 4 1 3 3 ...\n $ effort_4            : int  1 2 4 1 3 2 2 5 3 3 ...\n $ effort_5            : int  1 2 3 2 3 2 2 5 2 2 ...\n $ effort_6            : int  5 4 4 2 4 4 4 2 4 4 ...\n $ effort_7            : int  1 2 2 2 3 2 2 5 2 3 ...\n $ effort_8            : int  5 4 4 3 4 4 4 2 4 4 ...\n $ ipaq_sitt           : int  1680 1260 1260 300 1320 360 240 4200 2100 600 ...\n $ ipaq_walk           : int  210 90 180 30 1200 120 30 420 360 240 ...\n $ ipaq_mopa           : int  60 120 150 45 0 180 300 0 0 0 ...\n $ ipaq_vipa           : int  360 60 180 30 0 180 60 0 120 480 ...\n $ ipaq_mvpa           : int  420 180 330 75 0 360 360 0 120 480 ...\n $ intention           : num  7 3 5 5 5 7 6 2.5 4 6 ...\n $ self_efficacy       : num  5 5 4 4.33 4 ...\n $ automaticity        : num  4.5 4.75 3 4 3.25 4.5 2 2 3.5 4.5 ...\n $ attitudes_instru    : num  7 7 6.33 6 5.33 ...\n $ attitudes_affect    : num  6.33 6.33 5 6.33 4.33 ...\n $ motivation_auto     : num  5 4 3.33 4 3.83 ...\n $ motivation_cont     : num  2.5 2.25 1.5 2.75 2.75 3 2.5 4.5 3.25 2.5 ...\n $ need_cognition      : num  3.17 4.83 4.17 3.5 4.17 ...\n $ approach_effort     : num  4.75 4 3.75 3.25 3.75 4 4 1.75 3.75 3.25 ...\n $ avoid_effort        : num  1.25 2 2.75 1.75 3 2 2 4 2.5 3 ...\n $ approach_temperament: num  6.2 5.8 5 4.4 4.8 6.2 5.8 6.2 5.6 6.2 ...\n $ avoid_temperament   : num  5.86 5.57 5 4.14 2.86 ..."
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#overview-with-glimpse",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#overview-with-glimpse",
+    "title": "Exploration and Visualization",
+    "section": "Overview with glimpse()",
+    "text": "Overview with glimpse()\nAn alternative is the dplyr::glimpse() function.\n\ndplyr::glimpse(pes)\n\nRows: 289\nColumns: 28\n$ id                   &lt;chr&gt; \"dkind\", \"325144\", \"323575\", \"324922\", \"321253\", …\n$ gender               &lt;chr&gt; \"Female\", \"Male\", \"Female\", \"Female\", \"Male\", \"Fe…\n$ age                  &lt;int&gt; 21, 21, 18, 19, 18, 47, 18, 21, 19, 19, 18, 20, 2…\n$ effort_1             &lt;int&gt; 5, 4, 4, 4, 4, 4, 4, 2, 4, 2, 5, 2, 5, 4, 5, 3, 4…\n$ effort_2             &lt;int&gt; 2, 2, 2, 2, 3, 2, 2, 1, 3, 4, 1, 3, 1, 2, 2, 2, 2…\n$ effort_3             &lt;int&gt; 4, 4, 3, 4, 3, 4, 4, 1, 3, 3, 5, 2, 5, 4, 4, 4, 3…\n$ effort_4             &lt;int&gt; 1, 2, 4, 1, 3, 2, 2, 5, 3, 3, 1, 4, 1, 2, 2, 2, 2…\n$ effort_5             &lt;int&gt; 1, 2, 3, 2, 3, 2, 2, 5, 2, 2, 1, 4, 1, 1, 2, 2, 1…\n$ effort_6             &lt;int&gt; 5, 4, 4, 2, 4, 4, 4, 2, 4, 4, 5, 2, 5, 5, 4, 4, 4…\n$ effort_7             &lt;int&gt; 1, 2, 2, 2, 3, 2, 2, 5, 2, 3, 1, 4, 1, 1, 2, 2, 2…\n$ effort_8             &lt;int&gt; 5, 4, 4, 3, 4, 4, 4, 2, 4, 4, 5, 3, 5, 4, 4, 4, 4…\n$ ipaq_sitt            &lt;int&gt; 1680, 1260, 1260, 300, 1320, 360, 240, 4200, 2100…\n$ ipaq_walk            &lt;int&gt; 210, 90, 180, 30, 1200, 120, 30, 420, 360, 240, 1…\n$ ipaq_mopa            &lt;int&gt; 60, 120, 150, 45, 0, 180, 300, 0, 0, 0, 60, 0, 33…\n$ ipaq_vipa            &lt;int&gt; 360, 60, 180, 30, 0, 180, 60, 0, 120, 480, 240, 0…\n$ ipaq_mvpa            &lt;int&gt; 420, 180, 330, 75, 0, 360, 360, 0, 120, 480, 300,…\n$ intention            &lt;dbl&gt; 7.0, 3.0, 5.0, 5.0, 5.0, 7.0, 6.0, 2.5, 4.0, 6.0,…\n$ self_efficacy        &lt;dbl&gt; 5.000000, 5.000000, 4.000000, 4.333333, 4.000000,…\n$ automaticity         &lt;dbl&gt; 4.50, 4.75, 3.00, 4.00, 3.25, 4.50, 2.00, 2.00, 3…\n$ attitudes_instru     &lt;dbl&gt; 7.000000, 7.000000, 6.333333, 6.000000, 5.333333,…\n$ attitudes_affect     &lt;dbl&gt; 6.333333, 6.333333, 5.000000, 6.333333, 4.333333,…\n$ motivation_auto      &lt;dbl&gt; 5.000000, 4.000000, 3.333333, 4.000000, 3.833333,…\n$ motivation_cont      &lt;dbl&gt; 2.50, 2.25, 1.50, 2.75, 2.75, 3.00, 2.50, 4.50, 3…\n$ need_cognition       &lt;dbl&gt; 3.166667, 4.833333, 4.166667, 3.500000, 4.166667,…\n$ approach_effort      &lt;dbl&gt; 4.75, 4.00, 3.75, 3.25, 3.75, 4.00, 4.00, 1.75, 3…\n$ avoid_effort         &lt;dbl&gt; 1.25, 2.00, 2.75, 1.75, 3.00, 2.00, 2.00, 4.00, 2…\n$ approach_temperament &lt;dbl&gt; 6.20, 5.80, 5.00, 4.40, 4.80, 6.20, 5.80, 6.20, 5…\n$ avoid_temperament    &lt;dbl&gt; 5.857143, 5.571429, 5.000000, 4.142857, 2.857143,…"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#dataset-properties",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#dataset-properties",
+    "title": "Exploration and Visualization",
+    "section": "Dataset properties",
+    "text": "Dataset properties\n\n\nnumber of rows\n\nnrow(pes)\n\n[1] 289\n\n\nnumber of columns\n\nncol(pes)\n\n[1] 28\n\n\ndimensions (rows x columns)\n\ndim(pes)\n\n[1] 289  28\n\n\nnames of the variables\n\nnames(pes)\n\n [1] \"id\"                   \"gender\"               \"age\"                 \n [4] \"effort_1\"             \"effort_2\"             \"effort_3\"            \n [7] \"effort_4\"             \"effort_5\"             \"effort_6\"            \n[10] \"effort_7\"             \"effort_8\"             \"ipaq_sitt\"           \n[13] \"ipaq_walk\"            \"ipaq_mopa\"            \"ipaq_vipa\"           \n[16] \"ipaq_mvpa\"            \"intention\"            \"self_efficacy\"       \n[19] \"automaticity\"         \"attitudes_instru\"     \"attitudes_affect\"    \n[22] \"motivation_auto\"      \"motivation_cont\"      \"need_cognition\"      \n[25] \"approach_effort\"      \"avoid_effort\"         \"approach_temperament\"\n[28] \"avoid_temperament\""
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#first-and-last-rows-with-head-and-tail",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#first-and-last-rows-with-head-and-tail",
+    "title": "Exploration and Visualization",
+    "section": "First and last rows with head() and tail()",
+    "text": "First and last rows with head() and tail()\n\n\nshow the first 3 rows\n\nhead(pes, 3) \n\n      id gender age effort_1 effort_2 effort_3 effort_4 effort_5 effort_6\n1  dkind Female  21        5        2        4        1        1        5\n2 325144   Male  21        4        2        4        2        2        4\n3 323575 Female  18        4        2        3        4        3        4\n  effort_7 effort_8 ipaq_sitt ipaq_walk ipaq_mopa ipaq_vipa ipaq_mvpa intention\n1        1        5      1680       210        60       360       420         7\n2        2        4      1260        90       120        60       180         3\n3        2        4      1260       180       150       180       330         5\n  self_efficacy automaticity attitudes_instru attitudes_affect motivation_auto\n1             5         4.50         7.000000         6.333333        5.000000\n2             5         4.75         7.000000         6.333333        4.000000\n3             4         3.00         6.333333         5.000000        3.333333\n  motivation_cont need_cognition approach_effort avoid_effort\n1            2.50       3.166667            4.75         1.25\n2            2.25       4.833333            4.00         2.00\n3            1.50       4.166667            3.75         2.75\n  approach_temperament avoid_temperament\n1                  6.2          5.857143\n2                  5.8          5.571429\n3                  5.0          5.000000\n\n\ntail(pes, 3) would show the last 3 rows"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#overview-of-the-dataset-with-skimr",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#overview-of-the-dataset-with-skimr",
+    "title": "Exploration and Visualization",
+    "section": "Overview of the dataset with skimr()",
+    "text": "Overview of the dataset with skimr()\n\nskimr::skim(pes)\n\n\n── Data Summary ────────────────────────\n                           Values\nName                       pes   \nNumber of rows             297   \nNumber of columns          28    \n_______________________          \nColumn type frequency:           \n  character                2     \n  numeric                  26    \n________________________         \nGroup variables            None  \n\n── Variable type: character ──────────────────────────────────────────────────────────────────────────────────────────────\n  skim_variable n_missing complete_rate min max empty n_unique whitespace\n1 id                    0             1   1   6     0      296          0\n2 gender                0             1   0   6     8        3          0\n\n── Variable type: numeric ────────────────────────────────────────────────────────────────────────────────────────────────\n   skim_variable        n_missing complete_rate    mean       sd    p0    p25    p50     p75 p100 hist \n 1 age                          3         0.990   20.3     3.49  17     19     20      21      54 ▇▁▁▁▁\n 2 effort_1                     0         1        3.55    1.03   1      3      4       4       5 ▁▂▅▇▃\n 3 effort_2                     0         1        2.61    1.13   1      2      2       3       5 ▃▇▅▅▁\n 4 effort_3                     0         1        3.35    1.04   1      3      3       4       5 ▁▅▇▇▃\n 5 effort_4                     0         1        2.46    1.13   1      2      2       3       5 ▅▇▃▃▁\n 6 effort_5                     0         1        2.51    1.12   1      2      2       3       5 ▃▇▃▃▁\n 7 effort_6                     0         1        3.64    0.962  1      3      4       4       5 ▁▂▅▇▃\n 8 effort_7                     0         1        2.36    1.06   1      2      2       3       5 ▃▇▃▃▁\n 9 effort_8                     0         1        3.80    0.948  1      3      4       4       5 ▁▂▃▇▃\n10 ipaq_sitt                    0         1     1257.   1388.     0    360    840    1680    8655 ▇▂▁▁▁\n11 ipaq_walk                    0         1      385.    705.     0     90    210     390    9000 ▇▁▁▁▁\n12 ipaq_mopa                    0         1      175.    241.     0     30    120     240    1930 ▇▁▁▁▁\n13 ipaq_vipa                    0         1      208.    303.     0      0    105     300    2400 ▇▁▁▁▁\n14 ipaq_mvpa                    0         1      383     492.     0     90    240     480    3600 ▇▁▁▁▁\n15 intention                    0         1        5.06    1.49   1      4      5.5     6       7 ▂▂▃▅▇\n16 self_efficacy                1         0.997    4.24    0.758  1.67   4      4.33    5       5 ▁▂▁▇▇\n17 automaticity                 2         0.993    4.09    1.52   1      3      4       5.12    7 ▃▆▇▆▃\n18 attitudes_instru             1         0.997    5.95    1.19   1      5      6.33    7       7 ▁▁▁▃▇\n19 attitudes_affect             1         0.997    5.00    1.30   1      4      5       6       7 ▁▂▅▇▆\n20 motivation_auto              0         1        3.68    0.958  1      3      3.67    4.5     5 ▁▂▆▇▇\n21 motivation_cont              0         1        2.62    0.961  1      2      2.5     3.25    5 ▆▇▇▃▂\n22 need_cognition               0         1        3.38    0.721  1.33   3      3.33    3.83    5 ▁▃▇▆▂\n23 approach_effort              0         1        3.59    0.879  1      3      3.75    4       5 ▁▂▅▇▅\n24 avoid_effort                 0         1        2.48    0.988  1      1.75   2.25    3.25    5 ▆▇▅▃▁\n25 approach_temperament         0         1        4.89    0.949  1.2    4.4    5       5.6     7 ▁▁▅▇▂\n26 avoid_temperament            0         1        4.28    1.08   1.29   3.57   4.29    5       7 ▁▃▇▅▁"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#plotting-in-r",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#plotting-in-r",
+    "title": "Exploration and Visualization",
+    "section": "Plotting in R",
+    "text": "Plotting in R\nThere are many ways to create plots in R.\n\nBase R graphics\n\nlattice graphics\nggplot2 graphics\n…\n\nBy far the most powerful and most popular package for creating plots in R is ggplot2."
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#grammar-of-graphics",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#grammar-of-graphics",
+    "title": "Exploration and Visualization",
+    "section": "Grammar of Graphics",
+    "text": "Grammar of Graphics\n\n\n\n\n\nLeland Wilkinson"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#ggplot2",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#ggplot2",
+    "title": "Exploration and Visualization",
+    "section": "ggplot2",
+    "text": "ggplot2\n\n\n\n\n\n\n\nHadley Wickham"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#installing-and-loading-ggplot2",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#installing-and-loading-ggplot2",
+    "title": "Exploration and Visualization",
+    "section": "Installing and loading ggplot2",
+    "text": "Installing and loading ggplot2\nWe need to install the ggplot2 package once.\n\ninstall.packages(\"ggplot2\") # if not already installed\n\nNow we can load the package into our current R session.\n\nlibrary(ggplot2)"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#the-ggplot-function",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#the-ggplot-function",
+    "title": "Exploration and Visualization",
+    "section": "The ggplot() function",
+    "text": "The ggplot() function\nEvery plot is initialized with the ggplot() function. It has two main arguments:\n\ndata specifies the data frame to be used\nmapping specifies how variables are mapped to visual properties (aesthetics) of geoms\n\n\n\n\n\n\n\nAesthetics are the visual properties of geoms (e.g., position, color, size)."
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#data",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#data",
+    "title": "Exploration and Visualization",
+    "section": "Data",
+    "text": "Data\nWe first specify the data frame to be used for plotting. This provides variables (columns) and observations (rows).\n\nggplot(data = pes)"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#global-aesthetics",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#global-aesthetics",
+    "title": "Exploration and Visualization",
+    "section": "Global aesthetics",
+    "text": "Global aesthetics\nWe map variables of the data frame to global visual properties (aesthetics) of the plot. Here, Overall and Wage are mapped to x and y positions.\n\nggplot(data = pes, mapping = aes(x = approach_effort, y = avoid_effort))"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#geometric-objects",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#geometric-objects",
+    "title": "Exploration and Visualization",
+    "section": "Geometric objects",
+    "text": "Geometric objects\nWe add geometric objects (geoms) with + and geom_*(). Here, we draw points at all x and y positions.\n\nggplot(pes, aes(x = approach_effort, y = avoid_effort)) + geom_point()"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#adding-geoms",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#adding-geoms",
+    "title": "Exploration and Visualization",
+    "section": "Adding geoms",
+    "text": "Adding geoms\nGeometric layers can be stacked to create more complex plots. Just add more + geom_*() calls.\n\nggplot(pes, aes(x = approach_effort, y = avoid_effort)) +\n  geom_point() + geom_smooth()"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#adding-global-aesthetics",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#adding-global-aesthetics",
+    "title": "Exploration and Visualization",
+    "section": "Adding global aesthetics",
+    "text": "Adding global aesthetics\nAdditional global aesthetics can be added to the ggplot() function. They will be applied to all geoms.\n\nggplot(pes, aes(x = approach_effort, y = avoid_effort, color = gender)) +\n  geom_point() +\n  geom_smooth()"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#adding-local-aesthetics",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#adding-local-aesthetics",
+    "title": "Exploration and Visualization",
+    "section": "Adding local aesthetics",
+    "text": "Adding local aesthetics\nAesthetics can also be added locally to affect only a single geom.\n\nggplot(pes, aes(x = approach_effort, y = avoid_effort)) +\n  geom_point() +\n  geom_smooth(aes(color = gender))"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#exercise",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#exercise",
+    "title": "Exploration and Visualization",
+    "section": " Exercise",
+    "text": "Exercise\nOpen your pes project (see workflow) and import the data from the file pes.csv.\n\n\nCreate a scatterplot showing the relationship between intention (x-axis) and approach_effort (y-axis) using ggplot(), aes() and geom_point().\n\n\nSolution\nggplot(pes, aes(x = intention, y = approach_effort)) + geom_point()\n\n\nThe alpha aesthetic can be used to make the points transparent. Add alpha = 0.1 to the geom_point() function. Why is this useful?\n\n\nSolution\nggplot(pes, aes(x = intention, y = approach_effort)) + \n  geom_point(alpha = 0.1)\n\n\nNow fit a regression line to the plot using geom_smooth(method = \"lm\").\n\n\nSolution\nggplot(pes, aes(x = intention, y = approach_effort)) + \n  geom_point(alpha = 0.1) + geom_smooth(method = \"lm\")"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#histograms-and-density-plots",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#histograms-and-density-plots",
+    "title": "Exploration and Visualization",
+    "section": "Histograms and density plots",
+    "text": "Histograms and density plots\n\n\n\nggplot(pes, aes(x = approach_effort)) + \n  geom_histogram()\n\n\n\n\n\n\n\n\n\nggplot(pes, aes(x = approach_effort)) + \n  geom_density()\n\n\n\n\n\n\n\n\n\n\nggplot(pes, aes(x = approach_effort)) + \n  geom_histogram(color = \"white\")\n\n\n\n\n\n\n\n\n\nggplot(pes, aes(x = approach_effort)) + \n  geom_density(aes(color = gender))"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#boxplots-and-violin-plots",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#boxplots-and-violin-plots",
+    "title": "Exploration and Visualization",
+    "section": "Boxplots and violin plots",
+    "text": "Boxplots and violin plots\n\n\n\nggplot(pes, aes(x = approach_effort)) + \n  geom_boxplot()\n\n\n\n\n\n\n\n\n\nggplot(pes, aes(x = gender, y = approach_effort)) + \n  geom_violin()\n\n\n\n\n\n\n\n\n\n\nggplot(pes, aes(x = approach_effort)) + \n  geom_boxplot(aes(fill = gender))\n\n\n\n\n\n\n\n\n\nggplot(pes, aes(x = gender, y = approach_effort)) + \n  geom_violin() + geom_boxplot(width = 0.1)"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#barplots",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#barplots",
+    "title": "Exploration and Visualization",
+    "section": "Barplots",
+    "text": "Barplots\n\n\n\nggplot(pes, aes(x = gender)) + \n  geom_bar()\n\n\n\n\n\n\n\n\n\nggplot(pes, aes(x = approach_effort, \n                fill = gender)) + \n  geom_bar(position = \"stack\")\n\n\n\n\n\n\n\n\n\n\nggplot(pes, aes(x = gender)) + \n  geom_bar(aes(fill = gender))\n\n\n\n\n\n\n\n\n\nggplot(pes, aes(x = approach_effort, \n                 fill = gender)) + \n  geom_bar(position = \"dodge\")"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#facets",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#facets",
+    "title": "Exploration and Visualization",
+    "section": "Facets",
+    "text": "Facets\nFacets can be used to create multiple plots based on a categorical variable.\n\n# Create a plot for each foot\nggplot(pes, aes(x = approach_effort, y = avoid_effort)) + \n  geom_point() + geom_smooth() +\n  facet_wrap(~ gender)"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#scales",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#scales",
+    "title": "Exploration and Visualization",
+    "section": "Scales",
+    "text": "Scales\nScales control the mapping from data to aesthetics. They can be manually changed with scale_* functions.\n\n# Change the color used for the points\nggplot(pes, aes(x = approach_effort, y = avoid_effort, color = gender)) + \n  geom_point() + \n  scale_color_manual(values = c(\"blue\", \"red\")) +\n  labs(x = \"Approach of Effort\", y = \"Avoidance of Effort\", \n       title = \"Relationship between Approach and Avoidance of Effort\",\n       color = \"Gender\")"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#theme-elements",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#theme-elements",
+    "title": "Exploration and Visualization",
+    "section": "Theme elements",
+    "text": "Theme elements\nTheme elements control the non-data components of the plot. They can be changed with theme() function.\n\n# Change the position of the legend from the right to the bottom\nggplot(pes, aes(x = approach_effort, y = avoid_effort, color = gender)) + \n  geom_point() + \n  theme(legend.position = \"bottom\")"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#themes",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#themes",
+    "title": "Exploration and Visualization",
+    "section": "Themes",
+    "text": "Themes\nThemes change the overall appearance of the plot. They can be changed with theme_* functions.\n\n# Use the black and white (bw) theme\nggplot(pes, aes(x = approach_effort, y = avoid_effort, color = gender)) + \n  geom_point() + \n  theme_bw()"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#the-ggsave-function",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#the-ggsave-function",
+    "title": "Exploration and Visualization",
+    "section": "The ggsave() function",
+    "text": "The ggsave() function\nThe ggsave() function saves plots to a file. By default, the last plot is saved into your current working directory.\n\nThe filename argument specifies the file name. The file type is automatically determined by the file extension (e.g., PNG, JPG).\nThe optional path argument specifies the path to the file.\nThe optional width and height arguments specify the width and height of the plot."
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#example",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#example",
+    "title": "Exploration and Visualization",
+    "section": "Example",
+    "text": "Example\nThe following code saves a plot as a PNG file into the “figures” folder of the current working directory. The plot is named “myplot” and has a width of 9 inches and a height of 4 inches.\n\nggsave(filename = \"figures/07-exploration/myplot.png\", \n       width = 9, height = 4)\n\nThere are several additional options, e.g.\n\nplot to specify the plot to be saved\ndpi to specify the resolution of the plot\nunits to specify the units of the width and height arguments"
+  },
+  {
+    "objectID": "workshops/startr-2024-asp/startr-07_exploration.html#exercise-1",
+    "href": "workshops/startr-2024-asp/startr-07_exploration.html#exercise-1",
+    "title": "Exploration and Visualization",
+    "section": " Exercise",
+    "text": "Exercise\n\nThere are many packages available for R that extend the functionality of ggplot2. One of these packages is ggrain, which provides a geom_rain() function for raincloud plots.\n\nInstall and load the ggrain package.\n\n\nSolution\n# install.packages(\"ggrain\")\nlibrary(ggrain)\n\n\nCreate a raincloud plot showing the distribution of approach_effort for each gender.\n\n\nSolution\np &lt;- ggplot(pes, aes(x = gender, y = approach_effort, fill =  gender)) +\n     geom_rain()\n\n\nChange the theme to theme_minimal().\n\n\nSolution\np &lt;- p + theme_minimal()\n\n\nLabel the axes with labs().\n\n\nSolution\np &lt;- p + labs(x = \"Gender\", y = \"Approach of Effort\")\n\n\nSave the plot as “raincloud.pdf” in the “figures” folder of your project.\n\n\nSolution\nggsave(filename = \"figures/raincloud.pdf\", plot = p)\n\n\n\n\n\n\n\nhttps://maikbieleke.com/workshops/startr-2024-asp/"
   }
 ]

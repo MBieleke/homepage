@@ -1,0 +1,716 @@
+---
+title: "Data Analysis"
+subtitle: "Methodenfortbildung der ASP"
+description: "Correlation | Regression | t-Tests | ANOVA"
+author: "**Maik Bieleke, PhD**"
+institute: "University of Konstanz"
+date: 11/16/2024
+date-format: long
+format: 
+  revealjs:
+    transition: slide
+    fontsize: 20pt
+    chalkboard: true
+    slide-number: true
+    theme: [simple, _styles/unikn.scss]
+    footer: "[https://maikbieleke.com/workshops/startr-2024-asp/](https://maikbieleke.com/workshops/startr-2024-asp/)"
+    margin: 0.25
+    highlight-style: a11y
+from: markdown+emoji
+revealjs-plugins:
+  - attribution
+---
+
+```{r}
+library(rio)
+library(dplyr)
+library(correlation)
+library(parameters)
+library(performance)
+pes <- import("data/pes.csv") |> filter(gender != "")
+hiit <- import("data/hiit.csv")
+```
+
+# Correlation
+
+## The *correlation* package
+
+::: columns
+::: {.column width="60%"}
+The *correlation* package is an [easystats package](https://easystats.github.io/easystats/) focused on correlation analysis.
+
+```{r}
+#| echo: true
+#| eval: false
+
+# install.packages("correlation")
+library(correlation)
+```
+:::
+
+::: {.column width="40%"}
+![](figures/08-analysis/correlation-hex.png){fig-align="center"}
+:::
+:::
+
+::: footer
+<https://easystats.github.io/easystats/>
+:::
+
+## Computing single correlations
+
+A single correlation can be determined with the `cor_test()` function.
+
+```{r}
+#| echo: true
+
+# Correlation between players' value and overall attribute
+cor_test(pes, "approach_effort", "avoid_effort")
+```
+
+
+
+## Plotting single correlations
+
+We can plot the correlation using the `plot()` function.
+
+```{r}
+#| echo: true
+
+r <- cor_test(pes, "approach_effort", "avoid_effort")
+plot(r)
+```
+
+
+
+## Computing multiple correlations
+
+We can compute correlations between sets of variables with the `correlation()` function.
+
+```{r}
+#| echo: true
+
+# Select variables of interest
+variables_pes <- select(pes, approach_effort, avoid_effort)
+variables_ipaq <- select(pes, ipaq_sitt, ipaq_walk, ipaq_mopa, ipaq_vipa, ipaq_mvpa)
+
+# Compute correlations
+correlation(data = variables_pes, data2 = variables_ipaq)
+```
+
+
+
+## Correlation matrix
+
+We can use the `summary()`function to get a correlation matrix.
+
+```{r}
+#| echo: true
+
+# Take all variables together
+variables <- select(pes, approach_effort, avoid_effort, 
+                    ipaq_sitt, ipaq_walk, ipaq_mopa, ipaq_vipa, ipaq_mvpa)
+
+# Compute and save correlations
+r <- correlation(variables)
+
+# Generate correlation matrix
+summary(r)
+```
+
+
+
+## Correlation plot
+
+We can use the `plot()`function to plot the correlation matrix.
+
+```{r}
+#| echo: true
+
+# Compute and save correlations and correlation matrix
+r <- correlation(variables)
+rmat <- summary(r)
+
+# Generate correlation plot
+plot(rmat)
+```
+
+
+
+
+
+
+
+
+
+
+
+# Regression
+
+## Overview
+
+There are numerous regression models available in R. We will focus on the Base R implementation of the linear regression model.
+
+::: columns
+::: {.column width="70%"}
+There are three aspects of regression:
+
+-   **model estimation**: `lm()` function in base R
+-   **parameter evaluation**: *parameters* package
+-   **model performance**: *performance* package
+:::
+
+::: {.column width="30%"}
+![](figures/08-analysis/parameters-hex.png) ![](figures/08-analysis/performance-hex.png)
+:::
+:::
+
+The *parameters* and the *performance* package are part of the [easystats](https://easystats.github.io/easystats/) package collection.
+
+::: footer
+<https://easystats.github.io/easystats/>
+:::
+
+## Simple regression
+
+We can use the `lm()` function to estimate a simple linear regression model. The `summary()` function provides the standard output.
+
+```{r}
+#| echo: true
+
+# estimate regression model with a single predictor: dv ~ iv
+model <- lm(ipaq_mvpa ~ approach_effort, data = pes)
+
+# get the standard output
+summary(model)
+```
+
+## Model parameters and performance
+
+We can use the `parameters()` and `performance()` to extract parameters and performance metrics.
+
+- Parameters
+
+  ```{r}
+  #| echo: true
+  
+  # parameters
+  parameters::parameters(model)
+  ```
+
+- Standardized parameters
+
+  ```{r}
+  #| echo: true
+  
+  # parameters
+  parameters::parameters(model, standardize = "refit")
+  ```
+  
+- Performance metrics
+
+  ```{r}
+  #| echo: true
+  
+  # performance
+  performance::performance(model)
+  ```
+
+## Model assumptions
+
+We can use the `check_model()` function to check whether the assumptions of a linear regression are met.
+
+```{r}
+#| echo: true
+
+performance::check_model(model)
+```
+
+## Multiple regression
+
+We can also use the `lm()` function to estimate a multiple regression model. Add additional predictors with the `+` operator.
+
+```{r}
+#| echo: true
+
+# estimate regression model with a single predictor: dv ~ iv
+model2 <- lm(ipaq_mvpa ~ approach_effort +
+               age + gender + intention + attitudes_instru + self_efficacy, data = pes)
+summary(model2)
+```
+
+Add interactions with the `:` operator (e.g., `Overall:Value`). Include all main effects and interactions with the `*` operator (e.g., `Overall*Value`).
+
+## Comparing models
+
+We can use the `compare_performance()` function to compare the performance of two or more models.
+
+```{r}
+#| echo: true
+
+performance::compare_performance(model, model2, metrics = "common")
+```
+
+
+
+# Multivariate analyis
+
+## The *lavaan* package
+
+::: columns
+::: {.column width="60%"}
+*lavaan* (**LA**tent **VA**riable **AN**alysis) is dedicated to strcutrual equation modeling (SEM)
+```{r}
+#| echo: true
+# install.packages("lavaan")
+library(lavaan)
+```
+:::
+::: {.column width="20%"}
+![Yves Rosseel, author of *lavaan*](figures/08-analysis/rosseel.jpg)
+:::
+:::
+
+::: footer
+<https://lavaan.ugent.be/>
+:::
+
+
+## Exploratory factor analysis (EFA)
+
+EFA can be conducted with the `efa()` function.
+
+```{r}
+#| echo: true
+
+# select variables of the PES
+data <- select(pes, effort_1:effort_8)
+
+# estimate the EFA model
+fit_efa <- lavaan::efa(data = data, nfactors = 1:3)
+
+# get detailed summary of the model and request standardized loadings
+summary(fit_efa, standardized = TRUE)
+```
+
+
+## Confirmatory factor analysis (CFA)
+
+CFA can be conducted with the `cfa()` function.
+  
+```{r}
+#| echo: true
+
+# define the model as character string
+model <- "
+  approach  =~ effort_1 + effort_3 + effort_6 + effort_8 # `=~` defines latent variables
+  avoidance =~ effort_2 + effort_4 + effort_5 + effort_7
+
+  approach ~~ avoidance  # `=~` defines relationships between latent variables
+"
+
+# estimate the CFA model and request orthogonal rotation
+fit_cfa <- lavaan::cfa(model, data = pes)
+
+# get detailed summary of the model
+summary(fit_cfa, fit.measures = TRUE, standardized = TRUE)
+```
+
+## Structural equation modeling (SEM)
+
+SEM can be conducted with the `sem()` function.
+
+```{r}
+#| echo: true
+
+# define the model as character string
+model <- "
+  approach  =~ effort_1 + effort_3 + effort_6 + effort_8
+  avoidance =~ effort_2 + effort_4 + effort_5 + effort_7
+
+  approach ~~ avoidance
+  approach  ~ intention + automaticity + self_efficacy + motivation_auto + attitudes_affect
+  avoidance ~ intention + automaticity + self_efficacy + motivation_auto + attitudes_affect
+"
+
+# estimate the CFA model and request orthogonal rotation
+fit_sem <- lavaan::sem(model, data = pes)
+
+# get detailed summary of the model
+summary(fit_sem, fit.measures = TRUE, standardized = TRUE)
+```
+
+## Plotting the model
+
+We can use the `semPaths()` function in the `semPlot` package to plot the estimated models. 
+
+```{r}
+#| echo: true
+# install.packages("semPlot")
+library(semPlot)
+semPaths(fit_sem, what = "std")
+```
+
+
+## {{< iconify solar programming-bold >}} Exercise
+
+::: {.incremental}
+1.  Open your `pes` project (see work flow) and import the data from the file `pes.csv`.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    library(rio)
+    pes <- import("data/pes.csv")
+    ```
+
+2.  Compute the correlation of `approach_effort` and `avoid_effort` with `ipaq_mvpa`.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    correlation(pes, data = select(pes, approach_effort, avoid_effort),
+                     data2 = select(pes, ipaq_mvpa))
+    ```
+
+3.  Regress `ipaq_mvpa` on `approach_effort` and `avoid_effort`. Investigate the standardized parameters and the model performance.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    reg_model <- lm(ipaq_mvpa ~ approach_effort + avoid_effort, data = pes)
+    parameters::parameters(reg_model, standardize = "refit")
+    performance::performance(reg_model)
+    ```
+
+4.  Estimate a SEM model with `approach_effort` and `avoid_effort` as latent variables and predictors of the manifest variable `ipaq_mvpa`. 
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    model <- "approach  =~ effort_1 + effort_3 + effort_6 + effort_8
+              avoidance =~ effort_2 + effort_4 + effort_5 + effort_7
+
+              approach ~~ avoidance
+              ipaq_mvpa_std ~ approach + avoidance"
+
+    fit_sem <- lavaan::sem(model, data = pes)
+    summary(fit_sem, fit.measures = TRUE, standardized = TRUE)
+    ```
+
+:::
+
+
+
+
+
+
+
+
+# t-Tests
+
+## Single sample *t*-test
+
+*t*-tests can be performed with the `t.test()` function in base R. If one variable is provided, a single sample *t*-test is performed. Similar to regression, the model paramters can be examined with the `parameters()` function of the *parameters* package.
+
+```{r}
+#| echo: true
+
+# test whether pre-training performance is different from 0
+model <- t.test(hiit$RSA_Pre)
+
+# get the standard output
+model
+
+# get tidy output with parameters()
+parameters::parameters(model, es_type = "cohens_d")
+```
+
+## Independent *t*-test
+
+An independent *t*-Test using the formula approach.
+
+```{r}
+#| echo: true
+
+# Compare pre-training performance between males and females
+model <- t.test(RSA_Pre ~ Sex, data = hiit)
+
+# get tidy output with parameters()
+parameters::parameters(model, es_type = "cohens_d")
+```
+
+## Dependent *t*-test
+
+A dependent *t*-Test specifying both variables and using the `paired` argument.
+
+```{r}
+#| echo: true
+
+# Compare pre- and post-training performance within individuals
+model <- t.test(hiit$RSA_Pre, hiit$RSA_Post1, paired = TRUE)
+
+# get tidy output with parameters()
+parameters::parameters(model, es_type = "cohens_d")
+```
+
+
+
+
+
+# ANOVA
+
+## The *afex* and the *emmeans* package
+
+::: columns
+::: {.column width="60%"}
+*afex* (**A**nalysis of **F**actorial **EX**periments) is dedicated to analysis of variance.
+```{r}
+#| echo: true
+# install.packages("afex")
+library(afex)
+```
+:::
+::: {.column width="20%"}
+![Henrik Singman, author of *afex*](figures/08-analysis/singmann.jpg)
+:::
+:::
+
+::: columns
+::: {.column width="60%"}
+*emmeans* (**E**stimated **M**arginal **MEANS**) is dedicated to follow-up contrasts and post-hoc tests.
+```{r}
+#| echo: true
+# install.packages("emmeans")
+library(emmeans)
+```
+:::
+::: {.column width="20%"}
+![Russell Lenth, author of *emmeans*](figures/08-analysis/lenth.jpg)
+:::
+:::
+
+::: footer
+<https://github.com/singmann/afex> - <https://github.com/rvlenth/emmeans>
+:::
+
+
+
+## The `aov_4()` function
+
+The `aov_4()` function is part of the `afex` package and can be used to estimate a variety of ANOVA models. 
+
+::: callout-important
+## Generic format: `aov_4(dv ~ iv_b + (iv_w | id), data)`
+:::
+
+- `dv` is the dependent variable
+- `iv_b` are the between-subject predictor variables
+- `iv_w` are the within-subject predictor variables
+- `id` is the subject identifier variable
+- `data` is the data frame
+
+
+## The `emmeans()` function
+
+The `emmeans()` function is part of the `emmeans` package. It has the following generic format:
+
+::: callout-important
+## Generic format: `emmeans(model, ~ iv)`
+:::
+
+- `model` is the model object
+- `iv` are the predictor variables
+
+
+
+## Reshaping the HIIT dataset
+
+For the ANOVA, we need a long version of the HIIT dataset. We can use the `pivot_longer()` function from the `tidyr` package to convert the dataset from wide to long format (see "data management").
+
+```{r}
+#| echo: true
+
+# wide format
+head(hiit[, 1:10])
+
+# convert to long format
+hiit_long <- tidyr::pivot_longer(hiit, cols = -c(ID, Sex), names_sep = "_",
+                                 names_to = c("Measurement", "Time"), values_to = "Value")
+
+# wide format
+head(hiit_long)
+```
+
+
+
+## One-factorial ANOVA
+
+**Between-subject ANOVA**
+```{r}
+#| echo: true
+
+# Select data for the RSA measurement at the pre-training time point
+data <- dplyr::filter(hiit_long, Measurement == "RSA" & Time == "Pre")
+
+# Test whether the pre RSA values differ between females and males
+afex::aov_4(Value ~ Sex + (1 | ID), data)
+```
+
+. . .
+
+**Within-subject ANOVA**
+```{r}
+#| echo: true
+
+# Select data for the RSA measurement (all time points)
+data <- dplyr::filter(hiit_long, Measurement == "RSA")
+
+# Test whether the RSA values differ between the time points
+afex::aov_4(Value ~ 1 + (Time | ID), data)
+```
+
+Note that a sphericity correction is applied by default.
+
+
+## Pairwise comparisons
+
+We can use the `emmeans()` function to estimate marginal means and the `pairs()` function to conduct pairwise comparisons. Per default, the Tukey adjustment is used.
+
+```{r}
+#| echo: true
+
+# Select data for the RSA measurement (all time points)
+data  <- dplyr::filter(hiit_long, Measurement == "RSA")
+
+# Estimate the ANOVA model with Time as within-subject predictor
+model <- afex::aov_4(Value ~ 1 + (Time | ID), data)
+
+# Esimate the marginal means
+emm <- emmeans::emmeans(model, ~ Time)
+emm
+
+# Conduct pairwise comparisons
+pairs(emm)
+```
+
+
+
+## Mixed ANOVA
+
+For a mixed ANOVA, we can include both between- and within-subject predictors in the `aox_4()` function.
+
+```{r}
+#| echo: true
+
+# Select data for the RSA measurement (all time points)
+data <- dplyr::filter(hiit_long, Measurement == "RSA")
+
+# Estimate the ANOVA model with Sex as between-subject and Time as within-subject predictor
+afex::aov_4(Value ~ Sex + (Time | ID), data)
+```
+
+
+
+## Simple effects
+
+To follow up on significant interactions, we can estimate simple main effects using the `joint_tests()` function. Here, we test the simple effects of `Sex` at each level of `Time`.
+
+```{r}
+#| echo: true
+
+# Select data for the RSA measurement (all time points)
+data <- dplyr::filter(hiit_long, Measurement == "RSA")
+
+# Estimate the ANOVA model with Sex as between-subject and Time as within-subject predictor
+model <- afex::aov_4(Value ~ Sex + (Time | ID), data)
+
+# Esimate the marginal means
+emm <- emmeans::emmeans(model, ~ Sex * Time)
+
+# Estimate simple effects
+emmeans::joint_tests(emm, by = "Time")
+```
+
+
+## {{< iconify solar programming-bold >}} Exercise
+
+::: {.incremental}
+1.  Open your `hiit` project (see work flow) and import the data from the file `hiit.csv`.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    library(rio)
+    hiit <- import("data/hiit.csv")
+    ```
+
+2.  Run a t-test to examine gender differences in `CMJ` performance at time point `pre`.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    model <- t.test(hiit$CMJ_Pre ~ hiit$Sex)
+    parameters::parameters(model)
+    ```
+
+3.  Run an ANOVA to examine gender differences in `CMJ` performance at all three time points. Use the following code to reshape the data for the analysis.
+
+    ```{r}
+    #| echo: true
+    hiit_long <- tidyr::pivot_longer(hiit, cols = -c(ID, Sex), names_sep = "_",
+                                 names_to = c("Measurement", "Time"), values_to = "Value")
+    ```
+    
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    data <- dplyr::filter(hiit_long, Measurement == "CMJ")
+    model <- afex::aov_4(Value ~ Sex + (1 + Time | ID), data)
+    model
+    ```
+
+4.  Determine the simple effects of gender at each time point.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    # Esimate the marginal means
+    emm <- emmeans::emmeans(model, ~ Sex * Time)
+
+    # Estimate simple effects
+    emmeans::joint_tests(emm, by = "Time")
+    ```
+:::

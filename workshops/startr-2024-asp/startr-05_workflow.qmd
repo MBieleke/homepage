@@ -1,0 +1,442 @@
+---
+title: "Project Workflow"
+subtitle: "Methodenfortbildung der ASP"
+description: "Organization | Datasets | Coding | Documentation"
+author: "**Maik Bieleke, PhD**"
+institute: "University of Konstanz"
+date: 11/16/2024
+date-format: long
+format: 
+  revealjs:
+    transition: slide
+    fontsize: 20pt
+    chalkboard: true
+    slide-number: true
+    theme: [simple, _styles/unikn.scss]
+    footer: "[https://maikbieleke.com/workshops/startr-2024-asp/](https://maikbieleke.com/workshops/startr-2024-asp/)"
+    margin: 0.25
+    highlight-style: a11y
+from: markdown+emoji
+revealjs-plugins:
+  - attribution
+---
+
+# Organization {background-image="figures/05-workflow/organization.jpg" background-opacity="0.1"}
+
+::: footer
+Photo courtesy of [@shawnanggg](https://unsplash.com/de/@shawnanggg)
+:::
+
+
+## Working directory
+
+The working directory is the default directory from which R will try to read and write files. You can check the current working directory with `getwd()`.
+
+```{r}  
+#| echo: true  
+#| code-line-numbers: false
+#| class: output
+
+getwd()
+```
+
+* The default directory on a Windows system is usually something like `C:/Users/username/Documents`.
+* The function `setwd()` allows to manually specify an alternative working directory, such as `setwd("C:/Users/username/Work/2023")`.
+* The current working directory is shown at the top of the RStudio console.
+
+## Absolute and relative paths
+
+- **Absolute paths** start from the root directory (on windows: `C:`) and specify the complete location of a file or directory.
+
+  Example: `C:/Users/MMuster/Docs/intro2r/figures/05-workflow/workflow.png`
+  
+  - hard to read and write
+  - breaks when moving files or directories
+  - not portable across operating systems or devices
+  
+. . .
+  
+- **Relative paths** start from the current working directory and specify the location of a file or directory relative to the current working directory.
+
+  Example: `figures/05-workflow/workflow.png` when the current working directory is the `intro2r` directory.  
+
+
+
+
+
+
+## Projects
+
+:::: {.columns}
+::: {.column width="50%"}
+**Projects** helps you to organize your work. Each project has its own working directory, workspace, and files. In general, it is recommended to have one project for each analysis you are working on.
+
+Projects can be created in the **File** menu either in a new directory or in an existing directory. This will produce a `.Rproj ` file that you can double-click to open the project.
+:::
+::: {.column width="50%"}
+![](figures/05-workflow/projects.png)
+:::
+::::
+
+
+
+::: footer
+[https://support.posit.co/hc/en-us/articles/200526207-Using-RStudio-Projects](https://support.posit.co/hc/en-us/articles/200526207-Using-RStudio-Projects)
+:::
+
+
+
+## Project directory
+
+:::: {.columns}
+::: {.column width="70%"}
+It is good practice to structure your projects' directory in a consistent way that works for you.
+
+An example from Douglas et al. (2023) is shown on the right. You can adjust it to your needs.
+:::
+::: {.column width="30%"}
+![](figures/05-workflow/directory.png)
+:::
+::::
+
+::: footer
+[Douglas et al. (2023)](https://intro2r.com/dir_struct.html)
+:::
+
+
+
+## Data import and export
+
+::: {.columns}
+:::: {.column width="60%"}
+The **rio** package (= **R** **I**mport and **E**xport) is a Swiss-Army knife for data import and export from and to various file formats (e.g., `.xlsx`, `.csv`, `.sav`). 
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+# install.packages("rio")
+library(rio)
+```
+
+
+It has two main functions:
+
+-  `import()`: Import data
+   ```{r}
+   #| echo: true
+   #| eval: false
+   
+   # Import and assign the fifa dataset
+   fifa <- rio::import("data/hiit.xlsx")
+   ```
+
+
+-  `export()`: Export data
+   ```{r}
+   #| echo: true
+   #| eval: false
+   
+   # Export the fifa dataset
+   rio::export(fifa, "data/hiit.xlsx")
+   ```
+
+Note that rio automatically detects the file format based on the file extension.
+
+::::
+:::: {.column width="40%"}
+![](figures/05-workflow/swiss-knife.png)
+::::
+:::
+
+::: {.attribution}
+Image: [Pixabay](https://pixabay.com/de/vectors/schweizer-taschenmesser-messer-152394/)
+:::
+
+::: footer
+[https://cran.r-project.org/web/packages/rio/index.html](https://cran.r-project.org/web/packages/rio/index.html)
+:::
+
+
+
+
+# Datasets
+
+## PES Dataset
+
+![](figures/05-workflow/pes-title.png)
+
+::: footer
+[https://doi.org/10.1016/j.psychsport.2024.102607](https://doi.org/10.1016/j.psychsport.2024.102607)
+:::
+
+
+## Overview
+
+:::: {.columns}
+::: {.column width="40%"}
+
+- Development and validation of the "Physical Effort Scale" (PES)
+- Datas are publicly available ([https://zenodo.org/records/8358572](https://zenodo.org/records/8358572)) along with data preparation and analysis scripts
+- We use the cross-sectional dataset from Study 3 (dimensionality, reliability, validity).
+- Possible analyses:
+  - correlation
+  - regression analysis
+  - factor analysis
+  - reliability analysis
+  - etc.
+
+:::
+::: {.column width="5%"}
+:::
+::: {.column width="50%"}
+![](figures/05-workflow/pes-items.png)
+![](figures/05-workflow/pes-correlations.png)
+:::
+::::
+
+## Data
+
+```{r}
+pes <- import("data/pes.csv")
+dplyr::glimpse(pes)
+```
+
+
+- `effort_1`, `effort_3`, `effort_6`, and `effort_8` assess **approach of physical effort**
+- `effort_2`, `effort_4`, `effort_5`, and `effort_7` assess **avoidance of physical effort**
+- the `ipaq_` items assess self-reported levels of physical activity vs. inactivity
+- all other variables represent assumed convergent and divergent motivational constructs
+
+## HIIT Dataset
+
+![](figures/05-workflow/hiit-title.png)
+
+::: footer
+[https://doi.org/10.1371/journal.pone.0139801](https://doi.org/10.1371/journal.pone.0139801)
+:::
+
+## Study
+
+-   22 male and female team sport athletes (soccer, basketball, handball)
+-   6-day running-based HIIT training with 11 HIIT sessions
+-   physiological and performance tests at pre, post, and follow-up
+
+![](figures/05-workflow/hiit-design.png)
+
+## Data
+
+```{r}
+hiit <- import("data/hiit.csv")
+dplyr::glimpse(hiit)
+```
+
+- Most variables represent some kind of physiological or performance marker measured at `_Pre`, `_Post1`, and `_Post2`, e.g.
+
+  - `RSA` = Repeated Sprint Ability (m/s)
+  - `CMJ` = Counter-movement jump height (cm)
+  
+- `RPE` was measured once in each HIIT session (`_1` to `_11`)
+
+## Demonstration: HIIT Project
+
+
+
+## {{< iconify solar programming-bold >}} Exercise {background-image="figures/05-workflow/height.jpg" background-opacity="0.1"}
+
+::: {.incremental}
+
+1. [Go to the Uni Cloud](https://cloud.uni-konstanz.de/index.php/s/o6F4HH3bHsMjoPq) (PW: W6NPB8yY4I2V) and download the PES data (`pes.csv`).
+
+2. Create a new project in RStudio called `pes`.
+
+3. In your project directory, add a folder `data` and copy the downloaded dataset into it.
+
+4. Create additional folders `scripts` and `figures`.
+
+5. Open the project and import `pes.csv` with the `rio` package.
+
+   (See next slide for solution.)
+
+:::
+
+
+
+## {{< iconify solar programming-bold >}} Solution {background-image="figures/05-workflow/height.jpg" background-opacity="0.1"}
+
+1. Click on the link to open the cloud in your browser. Then, click on the three-dot menu next to `pes.csv` and click on "Download"/"Herunterladen" to save the file on your computer (e.g., into the Downloads folder).
+
+2. In RStudio, click on "File" - "New Project" - "New Directory" - "New Project". As directory name, enter `pes`. Choose a subdirectory where the new `pes` project directory will be created. Confirm and the project will open automatically in RStudio.
+
+3. Navigate to the Files pane in RStudio, verify that your working directory corresponds to the `pes` project directory. Then, click on the "New Folder" icon and create a folder called `data`. Drag and drop the downloaded `pes.csv` file into the `data` folder.
+
+4. Create two additional folders in the `pes` project directory: `scripts` and `figures`. You can do this by clicking on the "New Folder" icon in the Files pane.
+
+5. In the R script editor, import the `pes.csv` file using the `rio` package and a path relative to the `pes` working directory. The code should look like this:
+
+```r
+library(rio)
+pes <- import("data/pes.csv")
+```
+
+
+
+
+
+# Coding {background-image="figures/05-workflow/coding.jpg" background-opacity="0.2"}
+
+::: footer
+Photo by [StockSnap](https://pixabay.com/de/users/stocksnap-894430/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2557644) on [Pixabay](https://pixabay.com/de//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2557644)
+:::
+
+
+## Sections
+
+:::: {.columns}
+::: {.column width="60%"}
+Sections can help to structure a script. They start with a comment (`#`) followed by the section's name and at least four dashes (`-`). You can also insert them via the "Code - Insert Section" menu (Ctrl/CMD + Shift + R).
+
+- **Code folding:** Section content can be collapsed and expanded.
+- **Code outline:** Sections are added to the script outline.
+- **Code navigation:** Sections show up in the code navigation. drop-down.
+:::
+::: {.column width="40%"}
+![](figures/05-workflow/sections.png)
+:::
+::::
+
+```{r}  
+#| echo: true  
+#| code-line-numbers: false
+#| class: output
+
+# Load Data ---------------------------------------------------------------
+
+# Plot Data ---------------------------------------------------------------
+```
+
+
+
+## Code autocompletion
+
+RStudio offers **code completion** with fuzzy narrowing. It can be triggered by pressing the tab key. It recognizes:
+
+- packages
+- functions and arguments
+- files and paths
+
+. . .
+
+**Snippets** are templates for common code patterns. They can be triggered by entering a prefix and pressing the tab key twice.
+
+- `ts` + tab + tab: insert current date and time
+- `lib` + tab + tab: insert library() call
+
+To create custom snippets: Tools - Global Options - Code - Edit Snippets.
+
+
+
+## Diagnostics
+
+RStudio can help you to find problems in your code.
+
+:::: {.columns}
+::: {.column width="60%"}
+- **Syntax errors** are marked with a red cross at the left margin and a red squiggly line. Hover the mouse over them to see the message.
+:::
+::: {.column width="40%"}
+![](figures/05-workflow/diagnostics_error.png)
+:::
+::::
+
+. . .
+
+:::: {.columns}
+::: {.column width="60%"}
+- **Warning messages** are marked with a yellow exclamation mark at the left margin and a yellow squiggly line. Hover the mouse over them to see the message.
+:::
+::: {.column width="40%"}
+![](figures/05-workflow/diagnostics_warning.png)
+:::
+::::
+
+Note that you must save the file to see the diagnostics.
+
+
+## Style guide
+
+:::: {.columns}
+::: {.column width="60%"}
+Review the tidyverse style guide for tips on 
+
+- proper file names
+- good code syntax
+- working with functions
+- ...
+:::
+::: {.column width="40%"}
+![](figures/05-workflow/finaldoc.jpg)
+:::
+::::
+
+::: footer
+[https://style.tidyverse.org/index.html](https://style.tidyverse.org/index.html)
+:::
+
+
+
+# Documentation {background-image="figures/05-workflow/documentation.jpg" background-opacity="0.1"}
+
+::: footer
+Photo courtesy of [@beatriz_perez](https://unsplash.com/de/@beatriz_perez)
+:::
+
+
+
+## Information about the session
+
+The `sessionInfo()` function shows information about the current R session. This includes loaded packages and their versions, the operating system, and the R version.
+
+```{r}
+#| echo: true  
+#| code-line-numbers: false
+sessionInfo()
+```
+
+
+## Citing R
+
+The `citation()` function shows the citation for R.
+
+```{r}
+#| echo: true  
+#| code-line-numbers: false
+citation()
+```
+
+
+
+## Citing packages
+
+The `citation()` function  can also be used to show the citation for a package.
+
+```{r}
+#| echo: true  
+#| code-line-numbers: false
+citation("ggplot2")
+```
+
+
+## Advanced documentation
+
+There are serveral advanced ways to document your code:
+
+- markdown files
+- interactive notebooks
+- version control
+
+
+# Github Copilot {background-image="figures/05-workflow/whyR-copilot.png" background-opacity="0.1"}
+
+::: footer
+[https://github.com/features/copilot](https://github.com/features/copilot)
+:::

@@ -1,0 +1,741 @@
+---
+title: "StartR Workshop"
+subtitle: "Methodenfortbildung der ASP"
+description: "Merging | Reshaping | Aggregating | Pipes | Conditioning & Looping"
+author: "**Maik Bieleke, PhD**"
+institute: "University of Konstanz"
+date: 11/16/2024
+date-format: long
+format: 
+  revealjs:
+    transition: slide
+    fontsize: 20pt
+    chalkboard: true
+    slide-number: true
+    theme: [simple, _styles/unikn.scss]
+    footer: "[https://maikbieleke.com/workshops/startr-2024-asp/](https://maikbieleke.com/workshops/startr-2024-asp/)"
+    margin: 0.25
+    highlight-style: a11y
+from: markdown+emoji
+revealjs-plugins:
+  - attribution
+---
+
+```{r}
+library(dplyr)
+library(tidyr)
+```
+
+
+
+# Merging {background-image="figures/06-management/merge.jpg" background-opacity="0.1"}
+
+::: footer
+Photo courtesy of [@lg17](https://unsplash.com/de/@lg17)
+:::
+
+## What is merging?
+
+Merging is the process of **combining two (or more) data sets into one**. This is useful when the data is spread across data files that need to be combined for analysis or visualization.
+
+- data from different sources (e.g., survey data and task performance)
+- data from different time points (e.g., pre- and post-test)
+
+Merging requires that the data sets have one variable in common to match the observations.
+
+. . .
+
+:::: {.columns}
+::: {.column width="70%"}
+There are four types of merging:
+
+- **full join**: keep all observations from both data sets
+- **left join**: keep all observations from the left data set
+- **right join**: keep all observations from the right data set
+- **Inner join**: only keep observations that appear in both data sets
+
+We use functions from the `dplyr` package.
+:::
+
+::: {.column width="30%"}
+![](figures/06-management/dplyr-hex.png)
+:::
+::::
+
+
+
+```{r}
+#| echo: true
+#| eval: false
+install.packages(dplyr) # if not installed
+library(dplyr)
+```
+
+## Types of merging
+
+![](figures/06-management/merging.jpg){fig-align="center"}
+
+
+## Examples
+
+We create two data frames with the shared key variable `id`. They have observations from different participants and different variables.
+
+```{r}
+#| echo: true
+
+# Create two data frames
+dfA <- data.frame(id = c(1, 2, 3), w = c(10, 8, 15), x = c(7, 9, 12))
+dfB <- data.frame(id = c(1, 2, 4), y = c(2, 10, 11), z = c(5, 5, 3))
+```
+
+Now we can use functions from the dplyr package to merge the data frames.
+
+:::: {.columns}
+::: {.column width="50%" .fragment}
+```{r}
+#| echo: true
+
+dplyr::full_join(dfA, dfB)
+dplyr::inner_join(dfA, dfB)
+```
+:::
+
+::: {.column width="50%" .fragment}
+```{r}
+#| echo: true
+
+dplyr::left_join(dfA, dfB)
+dplyr::right_join(dfA, dfB)
+```
+:::
+::::
+
+## Common problems
+
+::: {.incremental}
+- different names of the key variable: use `join_by()`
+  ```{r}
+  #| echo: true
+  dfA <- data.frame(id = c(1, 2, 3), w = c(10, 8, 15), x = c(7, 9, 12))
+  dfB <- data.frame(IDENT = c(1, 2, 4), z = c(5, 5, 3))
+  dplyr::full_join(dfA, dfB, join_by(id == IDENT))
+  ```
+  
+- multiple key variables: use `by()`
+  ```{r}
+  #| echo: true
+  dfA <- data.frame(id = c(1, 1, 2, 2), wave = c(1, 2, 1, 2),
+                    anx = c(10, 8, 15, 16), dep = c(7, 9, 12, 11))
+  dfB <- data.frame(id = c(1, 1, 3, 3), wave = c(1, 2, 1, 2),
+                    ang = c(2, 4, 11, 11), dis = c(5, 5, 3, 5))
+  
+  dplyr::full_join(dfA, dfB, by = c("id", "wave"))
+  ```
+:::
+
+
+
+## {{< iconify solar programming-bold >}} Exercise
+
+A researcher tracks the performance and subjective exertion ratings of athletes during two training sessions. Each athlete's performance metrics and self-reported effort were collected separately. Our goal is to merge these two datasets to analyze how perceived exertion aligns with physical performance.
+
+::: {.incremental}
+1. Create the following data frames by copying the code below:
+
+   ```{r}
+   #| echo: true
+   #| code-line-numbers: false
+   
+   performance <- data.frame(id = c("A", "A", "B", "B", "C"), session = c(1, 2, 1, 2, 1),
+                             speed = c(12.5, 13.0, 11.8, 12.0, 12.2), distance = c(5, 6, 4, 5, 5))
+   ratings <- data.frame(id = c("A", "A", "B", "B", "C", "C"), session = c(1, 2, 1, 2, 1, 2),
+                         exertion = c(7, 8, 6, 5, 7, 9))
+   ```
+
+2. Which two variables uniquely identify each observation in the data frames?
+
+   ```{r}
+   #| echo: true
+   #| code-line-numbers: false
+   #| code-fold: true
+   #| code-summary: Solution
+   
+   # id and session
+   ```
+
+3. Merge the two data frames using a `dplyr::full_join`.
+
+   ```{r}
+   #| echo: true
+   #| eval: false
+   #| code-line-numbers: false
+   #| code-fold: true
+   #| code-summary: Solution
+   
+   dplyr::full_join(performance, ratings, by = c("id", "session"))
+   
+   # dplyr automatically infers the key variables when they have the same name:
+   # dplyr::full_join(performance, ratings)
+   ```
+
+4. Use `dplyr::left_join()` to keep all athletes from `performance` and add exertion ratings where available. What is the difference to the previous join?
+
+   ```{r}
+   #| echo: true
+   #| eval: false
+   #| code-line-numbers: false
+   #| code-fold: true
+   #| code-summary: Solution
+   
+   dplyr::left_join(performance, ratings, by = c("id", "session"))
+   # Difference: exertion data from Participant C in Session 2 is removed because no performance data is available
+   ```
+:::
+
+
+
+
+# Reshaping {background-image="figures/06-management/stapel.jpg" background-opacity="0.1"}
+
+::: footer
+Photo courtesy of [@hansreniers](https://unsplash.com/de/@hansreniers)
+:::
+
+## What is reshaping?
+
+Reshaping is the process of **changing the data format without adding or removing information**. This is useful when the data is not in the right format for the desired analysis or visualization.
+
+- repeated measures stored in columns versus rows
+- information stored in variable names versus values
+
+. . .
+
+:::: {.columns}
+::: {.column width="70%"}
+There are two types of reshaping:
+
+- **wide to long**: transform data from a wide format to a long format
+- **long to wide**: transform data from a long format to a wide format
+
+We use the `pivot_longer()` and the `pivot_wider()` functions from the `tidyr` package.
+
+```{r}
+#| echo: true
+#| eval: false
+install.packages(tidyr) # if not installed
+library(tidyr)
+```
+:::
+
+::: {.column width="30%"}
+![](figures/06-management/tidyr-hex.png)
+:::
+::::
+
+
+
+## Tidy Data
+
+![](figures/06-management/tidy-data.png){fig-align="center"}
+
+::: footer
+<https://doi.org/10.18637/jss.v059.i10>
+:::
+
+## Example
+
+:::: {.columns}
+::: {.column width="50%"}
+**Untidy data:**
+
+![](figures/06-management/untidy-example.png){fig-align="center"}
+:::
+::: {.column width="50%" .fragment}
+**Tidy data:**
+
+![](figures/06-management/tidy-example.png){fig-align="center"}
+:::
+::::
+
+::: footer
+<https://doi.org/10.18637/jss.v059.i10>
+:::
+
+
+
+
+
+## Wide-to-long
+
+:::: {.columns}
+::: {.column width="40%"}
+
+**Wide Format:**
+
+We start with a data frame in a wide format.
+
+```{r}
+#| echo: true
+
+# Define a wide data frame
+dfr <- data.frame(
+  id = c(1, 2), 
+  a_1 = c(10, 8), 
+  a_2 = c(7, 9),
+  b_1 = c(2, 11),
+  b_2 = c(5, 5))
+dfr
+```
+:::
+::: {.column width="60%" .fragment}
+
+**Long Format:**
+
+Transform data frame to long format with `pivot_longer()`.
+
+```{r}
+#| echo: true
+
+# from wide to long
+dfr_long <- pivot_longer(
+  dfr, 
+  cols = c(a_1, a_2, b_1, b_2),
+  names_to = "variable", 
+  values_to = "value")
+dfr_long
+```
+:::
+::::
+
+
+## Long-to-wide
+
+:::: {.columns}
+::: {.column width="60%"}
+
+**Long Format:**
+
+This time, we start with a data frame in a wide format.
+
+```{r}
+#| echo: true
+
+# Define a long data frame
+dfr <- data.frame(
+  id = c(1, 1, 1, 1, 2, 2, 2, 2),
+  variable = c("a_1", "a_2", "b_1", "b_2",
+               "a_1", "a_2", "b_1", "b_2"),
+  value = c(10, 7, 2, 5, 8, 9, 11, 5))
+dfr
+```
+:::
+::: {.column width="40%" .fragment}
+
+**Wide Format:**
+
+Transform data frame to wide with `pivot_wider()`:
+
+```{r}
+#| echo: true
+
+dfr_wide <- pivot_wider(
+  dfr,
+  names_from = "variable", 
+  values_from = "value")
+dfr_wide
+```
+:::
+::::
+
+
+
+## Hidden identifiers
+
+Often variable names in the wide format contain more than one piece of information. For example, the variable `a_1` contains information about the variable `a` and the time point `1`.  This is called a **hidden identifier**. 
+
+:::: {.columns}
+::: {.column width="40%"}
+
+**Wide Format:**
+
+```{r}
+#| echo: true
+
+# Define a wide data frame
+dfr <- data.frame(
+  id = c(1, 2), 
+  a_1 = c(10, 8), 
+  a_2 = c(7, 9),
+  b_1 = c(2, 11),
+  b_2 = c(5, 5))
+dfr
+```
+:::
+::: {.column width="60%" .fragment}
+
+**Long Format:**
+
+```{r}
+#| echo: true
+#| code-line-numbers: "|6"
+
+# from wide to long
+dfr_long <- pivot_longer(
+  dfr, 
+  cols = c(a_1, a_2, b_1, b_2),
+  names_to = c("variable", "time"), 
+  names_sep = "_",
+  values_to = "value")
+dfr_long
+```
+:::
+::::
+
+## {{< iconify solar programming-bold >}} Exercise
+
+A study records athletes’ heart rates and perceived exertion over two sessions. The data is initially in a wide format, with each session’s data in separate columns. To analyze trends over time, we need to reshape it into a long format.
+
+::: {.incremental}
+1. Create the following wide-format data frame by copying the code below:
+
+   ```{r}
+   #| echo: true
+   #| code-line-numbers: false
+   
+   data <- data.frame(id = c(101, 102), hr_1 = c(140, 130), hr_2 = c(135, 128),
+                      exertion_1 = c(7, 6), exertion_2 = c(6, 5))
+   ```
+
+2. Use `tidyr::pivot_longer()` to transform this data into a long format `data_long`, with `id`, `measure`, `session`, and `value` columns. Use the `names_sep = "_"` option to split the variable names into measure and session.
+
+   ```{r}
+   #| echo: true
+   #| code-line-numbers: false
+   #| code-fold: true
+   #| code-summary: Solution
+   
+   data_long <- tidyr::pivot_longer(data, cols = c(hr_1, hr_2, exertion_1, exertion_2),
+                                    names_to = c("measure", "session"), names_sep = "_")
+   ```
+
+3. Convert the long-format data back to wide format using `pivot_wider()`, with each session’s data in a separate column for each metric.
+
+   ```{r}
+   #| echo: true
+   #| eval: false
+   #| code-line-numbers: false
+   #| code-fold: true
+   #| code-summary: Solution
+   
+   data_wide <- tidyr::pivot_wider(data_long, names_from = c("measure", "session"), values_from = "value")
+   ```
+:::
+
+
+# Aggregating {background-image="figures/06-management/funnel.jpg" background-opacity="0.1"}
+
+::: footer
+Photo from [shutterstock](https://www.shutterstock.com/image-photo/143149924)
+:::
+ 
+## What is aggregation?
+
+Aggregating is the process of **summarising information from multiple observations into a single piece of information**.
+
+- averaging scale items into an overall score
+- counting the number of observations in a category
+
+. . .
+
+:::: {.columns}
+::: {.column width="70%"}
+There are two types of aggregation:
+
+- **column-wise**: combine observations from individual columns
+- **row-wise**: combine observations from multiple columns
+
+We use the `summarize()` function and some helper functions from the `dplyr` package.
+:::
+
+::: {.column width="30%"}
+![](figures/06-management/dplyr-hex.png)
+:::
+::::
+
+
+
+## Column-wise aggregation
+
+Column-wise aggregation is used to compute summary statistics (e.g., mean, standard deviation) for one ore more columns.
+
+```{r}
+#| echo: true
+
+# Define a wide data frame
+dfr <- data.frame(id = c(1, 2, 3), a_1 = c(10, 8, 5), a_2 = c(7, 9, 2),
+                  b_1 = c(2, 11, 8),  b_2 = c(5, 5, 3)); dfr
+```
+
+. . .
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Compute mean of a single variable
+summarize(dfr, mean_a1 = mean(a_1))
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Compute mean and standard deviation of a single variable
+summarize(dfr, mean_a1 = mean(a_1), sd_a1 = sd(a_1))
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Compute a single mean of multiple variables
+summarize(dfr, mean_a = mean(c(a_1, a_2)))
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+The `across()` function allows us to apply the same function to multiple columns.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Compute separate means of multiple variables with across()
+summarize(dfr, across(c(a_1, a_2), mean))
+```
+:::
+
+
+
+
+## Row-wise aggregation
+
+Row-wise aggregation is used to compute summary statistics for multiple columns for each observation. We need to use the `rowwise()` function to apply the aggregation to each row.
+
+```{r}
+#| echo: true
+
+# Define a wide data frame
+dfr <- data.frame(id = c(1, 2, 3), a_1 = c(10, 8, 5), a_2 = c(7, 9, 2),
+                  b_1 = c(2, 11, 8),  b_2 = c(5, 5, 3)); dfr
+```
+
+. . .
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Compute mean of multiple variables
+summarize(rowwise(dfr), MEAN = mean(c(a_1, a_2)))
+```
+:::
+
+::: {.fragment .fade-in-then-semi-out}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Compute mean and standard deviation of multiple variables
+summarize(rowwise(dfr), MEAN = mean(c(a_1, a_2)), SD = sd(c(a_1, a_2)))
+```
+:::
+
+
+
+## Group-wise aggregation
+
+We can aggregate for different groups separately using `group_by()`.
+
+```{r}
+#| echo: true
+
+# Define a wide data frame
+dfr <- data.frame(id = c(1, 2, 3, 4), condition = c("A", "A", "B", "B"),
+                  a_1 = c(10, 8, 5, 7), a_2 = c(7, 9, 2, 5),
+                  b_1 = c(2, 11, 8, 4),  b_2 = c(5, 5, 3, 1))
+dfr
+```
+
+Aggregate for conditions A and B:
+
+```{r}
+#| echo: true
+
+# Compute mean of a single variable for each condition
+summarize(group_by(dfr, condition), MEAN = mean(a_1))
+```
+
+## {{< iconify solar programming-bold >}} Exercise
+
+In this exercise, you have data on athletes' perceived exertion scores during two session in two different conditions (e.g., training and competition).
+
+::: {.incremental}
+1. Create the following data frame by copying the code below:
+
+   ```{r}
+   #| echo: true
+   #| code-line-numbers: false
+   
+   data <- data.frame(id = c(101, 102, 103, 104), condition = c("Training", "Training", "Competition", "Competition"),
+                      rpe_1 = c(7, 6, 8, 6), rpe_2 = c(6, 5, 7, 6))
+   ```
+
+2. Determine the average RPE score in each session.
+
+   ```{r}
+   #| echo: true
+   #| eval: false
+   #| code-line-numbers: false
+   #| code-fold: true
+   #| code-summary: Solution
+   
+   # Here, we use `across()` to compute the mean for both rpe_1 and rpe_2.
+   summarize(data, across(c(rpe_1, rpe_2), mean))
+   ```
+  
+3. Compute the average RPE score for each athlete across sessions.
+
+   ```{r}
+   #| echo: true
+   #| eval: false
+   #| code-line-numbers: false
+   #| code-fold: true
+   #| code-summary: Solution
+   
+   # This computes the mean of the two columns (rpe_1 and rpe_2) for each athlete.
+   summarize(rowwise(data), mean_rpe = mean(c(rpe_1, rpe_2)))
+   ```
+   
+4. Compute the average RPE score for each condition across sessions.
+
+   ```{r}
+   #| echo: true
+   #| eval: false
+   #| code-line-numbers: false
+   #| code-fold: true
+   #| code-summary: Solution
+   
+   # This groups the data by the condition variable and computes the mean for each group.
+   summarize(group_by(data, condition), mean_rpe = mean(c(rpe_1, rpe_2)))
+   ```
+:::
+
+## Excurse: Pipes
+
+Pipes are used to **chain multiple operations together** by inserting the left-hand side as the first argument of the right-hand side. The `dplyr` package provides the `%>%` operator, while base R uses the `|>` operator (activate in Global Options > Code > Editing). The shortcut `Ctrl` + `Shift` + `M` inserts the pipe operator in RStudio.
+
+:::: {.columns}
+::: {.column width="70%"}
+
+**Example:**
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+# Without pipes
+summarize(group_by(dfr, condition), MEAN = mean(a_1))
+
+# With pipes
+dfr %>% 
+  group_by(condition) %>% 
+  summarize(MEAN = mean(a_1))
+```
+
+:::
+::: {.column width="30%"}
+![The `%>%` pipe comes from the *magrittr* package. Where do you think the package got its name from?](figures/06-management/pipe.jpg)
+:::
+::::
+
+Pipes make code more readable and easier to understand, especially when chaining multiple operations together.
+
+
+
+# Conditioning and looping {background-image="figures/06-management/loop.jpg" background-opacity="0.1"}
+
+## Conditional
+
+Conditional are used to execute commands only if a certain condition is met. They typically consist of **if and else statements**.
+
+
+```{r}
+#| echo: true
+
+if(1 > 0){
+  print("1 is larger than 0")
+} else {
+  print("1 is not larger than 0")
+}
+
+```
+
+A frequently used special form is the `ifelse()` statement, which can be used to replace the values of a vector depending on a condition.
+
+```{r}
+#| echo: true
+
+# Vector from 1 to 10 replaced by "larger" if larger than 5, otherwise "smaller"
+ifelse(1:10 > 5, "larger", "smaller")
+```
+
+## Loops
+
+A loop is used to repeat a sequence of commands multiple times, each time using a different value of a loop index.
+
+A loop consists of
+
+- a **loop index** (e.g., `i`) that takes on different values
+- a **loop vector** (e.g., `1:3`) with all values that the loop index should take
+- a **loop expression** (e.g., `print(i)`) with the commands to be executed for each value of the loop index
+
+These elements are combined in a **loop statement**:
+
+`for(index in vector){expression}`
+
+```{r}
+#| echo: true
+for(i in 1:3){print(i)}
+```
+
+Note that loops are rarely efficient in R (in contrast to other programming languages). 
+
+## Example
+
+Let's use the example from above, where we computed means for different columns of a data frame.
+
+```{r}
+#| echo: true
+
+# Define a wide data frame
+dfr <- data.frame(id = c(1, 2, 3), a_1 = c(10, 8, 5), a_2 = c(7, 9, 2),
+                  b_1 = c(2, 11, 8),  b_2 = c(5, 5, 3))
+
+for(column in c("a_1", "a_2", "b_1", "b_2")){
+  var <- dfr[, column]
+  MEAN <- mean(var)
+  print(MEAN)
+}
+```
+
+
+
+
+
