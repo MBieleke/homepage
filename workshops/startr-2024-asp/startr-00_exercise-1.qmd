@@ -4,12 +4,11 @@ subtitle: "Methodenfortbildung der ASP"
 description: "Exercises for Day 1 of the workshop"
 author: "Maik Bieleke, PhD"
 institute: "University of Konstanz"
-date: 11/02/2024
+date: 11/03/2024
 date-format: long
 format: 
   html:
     toc: true
-    embed-resources: false
 ---
 
 # Building blocks
@@ -68,11 +67,7 @@ format:
 
 @.  Run the following code, which assigns distances run in kilometers and miles to objects `km1`, `km2`, `km3`, `mi1`, and `mi2`.
 
-    ```{r}
-    #| echo: true
-    #| eval: false
-    #| code-line-numbers: false
-    
+    ```
     km1 <- 5  # Distance in km for the first run
     km2 <- 8  # Distance in km for the second run
     km3 <- 10 # Distance in km for the third run
@@ -167,7 +162,7 @@ format:
     #| code-fold: true
     #| code-summary: Solution
     
-    # install.packages("praise")
+    install.packages("praise")
     library(praise)
     praise()
     ```
@@ -219,12 +214,12 @@ format:
     #| code-line-numbers: false
     
     % Hours spent in each activity type:
-    vigorous_minutes = 120
-    moderate_minutes = 240
-    walking_minutes  = 420
+    vig_min = 120
+    mod_min = 240
+    wal_min  = 420
     
     % Calculate the total score:
-    total_score = (vigorous_minutes * 8.0) + (moderate_minutes * 4,0) + (walking_minutes * 3.3
+    total_score = (vig_min * 8.0) + (mod_min * 4,0) + (wal_min * 3.3
     
     % Print the total score:
     total.score
@@ -244,12 +239,12 @@ format:
     # ISSUE 5: missing closing parenthesis in the formula (add ) after 3.3)
     
     # Hours spent in each activity type
-    vigorous_minutes <- 120 
-    moderate_minutes <- 240
-    walking_minutes  <- 420
+    vig_min <- 120 
+    mod_min <- 240
+    wal_min  <- 420
     
     # Calculate the total score
-    total_score <- (vigorous_minutes * 8.0) + (moderate_minutes * 4.0) + (walking_minutes * 3.3)
+    total_score <- (vig_min * 8.0) + (mod_min * 4.0) + (wal_min * 3.3)
     
     # Print the total score
     total_score
@@ -311,11 +306,7 @@ An experience sampling study collects data on mood ratings from several particip
     
 @.  Run the following code:
 
-    ```{r}
-    #| echo: true
-    #| eval: false
-    #| code-line-numbers: false
-
+    ```
     expand.grid(participant = participants, weekday = weekdays, time = times)
     ```
     
@@ -328,8 +319,10 @@ An experience sampling study collects data on mood ratings from several particip
     #| code-fold: true
     #| code-summary: Solution
     
-    # expand.grid() creates a data frame with all combinations of the input vectors.
-    # The output shows all possible combinations of participants, weekdays, and times, which can be useful for organizing the data for the study.
+    # expand.grid() creates a data frame with all combinations of the input
+    # vectors. The output shows all possible combinations of participants, 
+    # weekdays, and times, which can be useful for organizing the data for
+    # the study.
     ```
     
 ## Indexing and subsetting
@@ -338,11 +331,7 @@ You are working with data collected from athletes during a training study. The v
 
 Here is the vector:
 
-```{r}
-#| echo: true
-#| eval: false
-#| code-line-numbers: false
-
+```
 heart_rate <- c(80, 85, 110, 135, 150, 165, 180, 175, 160, 140, 120, 100)
 ```
     
@@ -556,7 +545,7 @@ heart_rate <- c(80, 85, 110, 135, 150, 165, 180, 175, 160, 140, 120, 100)
 
 ## Data frames
 
-@.  Create a data frame called `training_data` using the following information:
+@.  Create a data frame called `data` using the following information:
 
     - `athlete_id`: Unique identifier for each athlete (values: 1, 2, 3, 4, 5)
     - `training_type`: Type of training (values: "Strength", "Endurance", "Strength", "Endurance", "Strength")
@@ -570,15 +559,15 @@ heart_rate <- c(80, 85, 110, 135, 150, 165, 180, 175, 160, 140, 120, 100)
     #| code-fold: true
     #| code-summary: Solution
     
-    training_data <- data.frame(
-      athlete_id = c(1, 2, 3, 4, 5),
-      training_type = c("Strength", "Endurance", "Strength", "Endurance", "Strength"),
+    data <- data.frame(
+      id = c(1, 2, 3, 4, 5),
+      training = c("Strength", "Endurance", "Strength", "Endurance", "Strength"),
       duration_min = c(45, 60, 50, 75, 40),
       perceived_effort = c(7, 5, 8, 6, 9)
     )
     ```
 
-@.  Select only the `athlete_id` and `duration_min` columns.
+@.  Select only the `id` and `duration_min` columns.
 
     ```{r}
     #| echo: true
@@ -587,8 +576,8 @@ heart_rate <- c(80, 85, 110, 135, 150, 165, 180, 175, 160, 140, 120, 100)
     #| code-fold: true
     #| code-summary: Solution
     
-    training_data[, c("athlete_id", "duration_min")]
-    # dplyr::select(training_data, athlete_id, duration_min)
+    data[, c("id", "duration_min")]
+    # dplyr::select(data, id, duration_min)
     ```
     
 @.  Select rows where the training type is `"Strength"`.
@@ -600,8 +589,8 @@ heart_rate <- c(80, 85, 110, 135, 150, 165, 180, 175, 160, 140, 120, 100)
     #| code-fold: true
     #| code-summary: Solution
     
-    training_data[training_data$training_type == "Strength", ]
-    # dplyr::filter(training_data, training_type == "Strength")
+    data[data$training == "Strength", ]
+    # dplyr::filter(data, training == "Strength")
     ```
 
 @.  Add a new column called `calories_burned` using the formula: `duration_min * 10`. Assume that, on average, athletes burn 10 calories per minute.
@@ -613,9 +602,9 @@ heart_rate <- c(80, 85, 110, 135, 150, 165, 180, 175, 160, 140, 120, 100)
     #| code-fold: true
     #| code-summary: Solution
     
-    training_data$calories_burned <- training_data$duration_min * 10
-    training_data
-    # dplyr::mutate(training_data, calories_burned = duration_min * 10)
+    data$calories_burned <- data$duration_min * 10
+    data
+    # dplyr::mutate(data, calories_burned = duration_min * 10)
     ```
 
 @.  Rename `duration_min` to `session_duration` and `perceived_effort` to `effort_rating.`
@@ -627,10 +616,12 @@ heart_rate <- c(80, 85, 110, 135, 150, 165, 180, 175, 160, 140, 120, 100)
     #| code-fold: true
     #| code-summary: Solution
     
-    names(training_data)[names(training_data) == "duration_min"] <- "session_duration"
-    names(training_data)[names(training_data) == "perceived_effort"] <- "effort_rating"
+    names(data)[names(data) == "duration_min"] <- "session_duration"
+    names(data)[names(data) == "perceived_effort"] <- "effort_rating"
     
-    # dplyr::rename(training_data, session_duration = duration_min, effort_rating = perceived_effort)
+    # dplyr::rename(data, 
+    #              session_duration = duration_min, 
+    #              effort_rating = perceived_effort)
     ```
 
 @.  Select athletes who did `"Endurance"` training and had an `effort_rating` of 6 or more.
@@ -642,8 +633,8 @@ heart_rate <- c(80, 85, 110, 135, 150, 165, 180, 175, 160, 140, 120, 100)
     #| code-fold: true
     #| code-summary: Solution
     
-    training_data[training_data$training_type == "Endurance" & training_data$effort_rating >= 6, ]
-    # dplyr::filter(training_data, training_type == "Endurance" & effort_rating >= 6)
+    data[data$training == "Endurance" & data$effort_rating >= 6, ]
+    # dplyr::filter(data, training == "Endurance" & effort_rating >= 6)
     ```
 
 @.  Compute the mean `session_duration` and `effort_rating` for each training type.
@@ -655,15 +646,15 @@ heart_rate <- c(80, 85, 110, 135, 150, 165, 180, 175, 160, 140, 120, 100)
     #| code-fold: true
     #| code-summary: Solution
     
-    mean(training_data[training_data$training_type == "Strength",]$session_duration)
-    mean(training_data[training_data$training_type == "Strength",]$effort_rating)
-    mean(training_data[training_data$training_type == "Endurance",]$session_duration)
-    mean(training_data[training_data$training_type == "Endurance",]$effort_rating)
+    mean(data[data$training == "Strength",]$session_duration)
+    mean(data[data$training == "Strength",]$effort_rating)
+    mean(data[data$training == "Endurance",]$session_duration)
+    mean(data[data$training == "Endurance",]$effort_rating)
     
-    dplyr::summarize(dplyr::filter(training_data, training_type == "Strength"), 
-                     mean_duration = mean(session_duration), 
-                     mean_effort = mean(effort_rating))
-    dplyr::summarize(dplyr::filter(training_data, training_type == "Endurance"), 
-                     mean_duration = mean(session_duration), 
-                     mean_effort = mean(effort_rating))
+    # dplyr::summarize(dplyr::filter(data, training == "Strength"), 
+    #                  mean_duration = mean(session_duration), 
+    #                  mean_effort = mean(effort_rating))
+    # dplyr::summarize(dplyr::filter(data, training == "Endurance"), 
+    #                  mean_duration = mean(session_duration), 
+    #                  mean_effort = mean(effort_rating))
     ```

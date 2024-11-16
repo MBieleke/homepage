@@ -1,5 +1,5 @@
 ---
-title: "StartR Workshop"
+title: "Data Management"
 subtitle: "Methodenfortbildung der ASP"
 description: "Merging | Reshaping | Aggregating | Pipes | Conditioning & Looping"
 author: "**Maik Bieleke, PhD**"

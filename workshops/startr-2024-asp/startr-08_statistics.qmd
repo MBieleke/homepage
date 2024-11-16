@@ -1,7 +1,7 @@
 ---
 title: "Data Analysis"
 subtitle: "Methodenfortbildung der ASP"
-description: "Correlation | Regression | t-Tests | ANOVA"
+description: "Correlation | Regression | Multivariate Analysis | t-Tests | ANOVA"
 author: "**Maik Bieleke, PhD**"
 institute: "University of Konstanz"
 date: 11/16/2024

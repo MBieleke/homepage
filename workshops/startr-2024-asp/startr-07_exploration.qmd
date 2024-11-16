@@ -1,6 +1,7 @@
 ---
 title: "Exploration and Visualization"
 subtitle: "Methodenfortbildung der ASP"
+description: "Exploration Functions | ggplot2 Visualization"
 author: "**Maik Bieleke, PhD**"
 institute: "University of Konstanz"
 date: 11/16/2024
