@@ -1,11 +1,16 @@
 ---
 title: "Übung: 'Grundlagen der statistischen Programmierung mit R'"
 subtitle: "Methodenfortbildung der ASP"
-description: "Exercises for Day 1 of the workshop"
+description: "Exercises for Day 1&2 of the workshop"
 author: "Maik Bieleke, PhD"
 institute: "University of Konstanz"
 date: 11/03/2024
 date-format: long
+# format: 
+#   pdf:
+#     toc: true
+#     execute:
+#       include: false
 format: 
   html:
     toc: true

@@ -1,0 +1,255 @@
+---
+title: "Übung: 'Angewandte Datenverarbeitung und -analyse mit R'"
+subtitle: "Methodenfortbildung der ASP"
+description: "Exercises for Day 3&4 of the workshop"
+author: "Maik Bieleke, PhD"
+institute: "University of Konstanz"
+date: 11/17/2024
+date-format: long
+# format: 
+#   pdf:
+#     toc: true
+#     execute:
+#       include: false
+format: 
+  html:
+    toc: true
+---
+
+# Introduction
+
+In this exercise, you will practice data processing and data analysis with R. The exercises are based on published data from this paper:
+
+Wiewelhove, T., Raeder, C., Meyer, T., Kellmann, M., Pfeiffer, M., & Ferrauti, A. (2015). Markers for routine assessment of fatigue and recovery in male and female team sport athletes during high-intensity interval training. *PloS One*, *10*(10), e0139801. <https://doi.org/10.1371/journal.pone.0139801>
+
+# Project Setup
+
+@.  Create a new project in RStudio with folders for data and figures.
+    
+@.  Download the data from [this figshare repository](https://figshare.com/articles/dataset/_Markers_for_Routine_Assessment_of_Fatigue_and_Recovery_in_Male_and_Female_Team_Sport_Athletes_during_High_Intensity_Interval_Training_/1567810?file=2349341) and save the `.xlsx` file in the data folder of your project.
+
+@.  Import the Excel file as data frame into R.
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    # load the rio package
+    library(rio)
+    
+    # relative path assumes that data folder is in project directory
+    data <- import("data/pone.0139801.s001.xlsx")
+    ```
+    
+# Data exploration
+
+@.  Inspect the dataset: 
+
+    - How many rows and columns does it have?
+    - What are the column names?
+    - What type of data is stored in each column?
+    - Which values are stored?
+    - Are there any missing values?
+    - ...
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    # one function that shows you all of this information is skimr::skim().
+    skimr::skim(data)
+    ```
+
+# Data management
+
+@.  Add a variable `ID` to the dataset that uniquely identifies each athlete.
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    data$ID <- 1:nrow(data)
+    ```
+
+@.  Rename the column `Sex [1=male]` to `Sex` and convert it from a numeric variable to a factor variable (with 1 = male, 2 = female).
+
+    ```{r}
+    #| echo: true
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    # rename the column with dplyr::rename()
+    data <- dplyr::rename(data, Sex = `Sex [1=male]`)
+    
+    # convert it to a factor with factor().
+    data$Sex <- factor(data$Sex, levels = c(1, 2), 
+                       labels = c("male", "female"))
+    ```
+    
+@.  The `table()` function is useful to count the distinct values of a variable (we did not cover this function in the workshop). Use it to count the number of females and males in the dataset by applying it to the `Sex` column.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    table(data$Sex)
+    ```  
+
+
+    
+# Data analysis
+
+@.  Athletes rated the delayed onset muscle soreness (DOMS) on a visual analogue scale from 0 to 100 at all three measurement points (variables `DOMS_Pre`, `DOMS_Post1`, and `DOMS_Post2`). Compute means and standard deviations for all three measurement points (1) across all athletes and (2) separately for females and males.
+
+    ```{r}
+    #| echo: true
+    #| eval: false
+    #| warning: false
+    #| message: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    library(dplyr)
+    
+    # across all athletes
+    summarize(data, 
+              across(c(DOMS_Pre, DOMS_Post1, DOMS_Post2), mean))
+    summarize(data, 
+              across(c(DOMS_Pre, DOMS_Post1, DOMS_Post2), sd))
+    
+    # separately by gender
+    summarize(group_by(data, Sex), 
+              across(c(DOMS_Pre, DOMS_Post1, DOMS_Post2), mean))
+    summarize(group_by(data, Sex), 
+              across(c(DOMS_Pre, DOMS_Post1, DOMS_Post2), sd))
+    ```
+
+@.  For an ANOVA analysis, we need the data in a long format. This can be achieved with the `pivot_longer()` function from the `tidyr` package. However, we need a [regular expression](https://en.wikipedia.org/wiki/Regular_expression) to separate the variable names into two columns (`names_sep = "_(?=[^_]+$)"`) because the variable names are irregular. We did not cover this in the workshop, but you can use the following code snippet to achieve this:
+
+    ```
+    library(tidyr)
+    
+    # use the pivot_longer() function as we have done in the workshop
+    # the only difference is that we use the regular expression in names_sep
+    # because the number of dashes varies in the variable names
+    data_long <- tidyr::pivot_longer(data, cols = -c(ID, Sex), 
+                                     names_sep = "_(?=[^_]+$)",
+                                     names_to = c("Measurement", "Time"), 
+                                     values_to = "Value")
+    ```
+
+    ```{r}
+    #| echo: false
+    #| warning: false
+    #| message: false
+    
+    library(tidyr)
+    data_long <- tidyr::pivot_longer(data, cols = -c(ID, Sex), 
+                                     names_sep = "_(?=[^_]+$)",
+                                     names_to = c("Measurement", "Time"), 
+                                     values_to = "Value")
+    ```
+
+    Make sure that you understand how this works in principle. You might ask ChatGPT for a detailed explanation of the regular expression if you are interested.
+
+@.  Based on `data_long`, conduct a mixed-effects ANOVA to examine the effect of `Sex` and `Time` on RPE measurements (`Session_RPE`) during the HIIT training .
+
+    ```{r}
+    #| echo: true
+    #| warning: false
+    #| message: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    library(afex)
+    
+    # the RPE measurements must be filtered from data_long for the analysis
+    data_anova <- dplyr::filter(data_long, Measurement == "Session_RPE")
+    
+    # estimate the ANOVA model
+    model <- afex::aov_4(Value ~ Sex + (Time | ID), data_anova)
+    ```
+    
+    Note that the model automatically deletes participants with missing data.
+    
+@.  Follow up the significant main effect of `Time` with polynomial contrasts. First, use the `emmeans` package to estimate marginal means of `Time` from the ANOVA model and assign them to an object `emm`. Then, use `contrast(emm, "poly")` to get polynomial contrasts for the `Time` variable. Is there any evidence for a linear trend in the data?
+
+    ```{r}
+    #| echo: true
+    #| warning: false
+    #| message: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    library(emmeans)
+    
+    # estimate the marginal means based on the ANOVA model
+    emm <- emmeans::emmeans(model, ~ Time)
+    
+    # use function provided in the instructions to estimate contrasts
+    emm_contrasts <- contrast(emm, "poly")
+    
+    # linear contrast is the first row of the output and significant
+    ```
+
+# Data visualization
+
+@.  Create a plot that visualizes the estimated marginal means of `Time` along with their 95% confidence intervals with *ggplot2*.
+
+    - Convert the estimated means `emm` object to a data frame using the `as.data.frame()` function. Inspect the result to see in which columns the means and CIs are.
+    - Use the `ggplot()` function to create a plot with `Time` on the x-axis and the estimated marginal means on the y-axis.
+    - Add error bars to the plot using `geom_errorbar()`. Consult the documentation of `geom_errorbar()` to learn how to specify the `ymin` and `ymax` aesthetics. (Hint: Review the examples at the end of the documentation.)
+    - Add points to the plot using `geom_point()`.
+    - Change the theme to `theme_bw()`.
+    - Label the x-axis as "Time", the y-axis as "Estimated marginal means of RPE", and the title as "Polynomial contrasts of RPE over time".
+    - Save the plot as a PNG file in the figures folder of your project.
+
+    ```{r}
+    #| echo: true
+    #| warning: false
+    #| message: false
+    #| code-line-numbers: false
+    #| code-fold: true
+    #| code-summary: Solution
+    
+    library(ggplot2)
+    
+    # convert estimated means object to a data frame
+    emm.df <- as.data.frame(emm) # inspect the data frame
+    
+    # create the plot
+    p <- ggplot(data = emm.df, aes(x = Time, y = emmean)) +
+      theme_bw() +
+      geom_errorbar(aes(ymin = lower.CL, ymax = upper.CL), width = 0.1) +
+      geom_point() +
+      labs(x = "Time", y = "Estimated marginal means of RPE", 
+           title = "Polynomial contrasts of RPE over time")
+    
+    # save the plot
+    ggsave("figures/polynomial_contrasts.png", plot = p, 
+           width = 6, height = 4, dpi = 300)
+    ```
+    
+    Below you see the desired result.
+    
+    ```{r}
+    #| echo: false
+    #| include: true
+    p
+    ```
+    
+Congratulations, you made it to the end of the exercise! If you want, you can also try to reproduce the analyses from the paper.
