@@ -364,5 +364,23 @@
   },
   "workshops/startr-2024-asp/startr-00_exercise-2.qmd": {
     "startr-00_exercise-2.html": "a2d571eb"
+  },
+  "publications/schueler-bieleke-2024-curr-psychol/index.qmd": {
+    "index.html": "1f366213"
+  },
+  "publications/staehler-wolff-bieleke-2024-preprint/index.qmd": {
+    "index.html": "6f6e4978"
+  },
+  "publications/bieleke-keller-englert-2024-chapter/index.qmd": {
+    "index.html": "7871fdb9"
+  },
+  "publications/wolff-rewitz-bieleke-2024-in-mind/index.qmd": {
+    "index.html": "b3a71344"
+  },
+  "publications/bieleke-wolff-goetz-2025-preprint/index.qmd": {
+    "index.html": "194520cf"
+  },
+  "publications/staehler-bieleke-wolff-2023-preprint/index.qmd": {
+    "index.html": "45fa732e"
   }
 }

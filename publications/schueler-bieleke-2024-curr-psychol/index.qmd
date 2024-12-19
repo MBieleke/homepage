@@ -1,0 +1,26 @@
+---
+title: "Assessing and exploring self-enacted behavior change techniques: Frequency, structure, and relevance for physical activity and healthy eating"
+author:
+  - name: Julia Schüler
+    orcid: 0000-0002-7790-0491
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+doi: 10.1007/s12144-024-06899-1
+date: '2024'
+date-format: "YYYY"
+categories:
+  - journal article
+  - original research
+description: "**{{< fa newspaper >}} Current Psychology**"
+abstract: |
+  Self-enactable behavior change techniques (Knittle et al., 2020), are active components of interventions that individuals can also employ on their own. The study explored the frequency of self-enactable behavior change techniques (SE-BCTs) usage, their psychometric structure, and their association with physical activity and healthy nutrition. To evaluate SE-BCTs, Abraham & Michie’s (2008) 26-BCT taxonomy was translated into a SE-BCT questionnaire and administered to 504 participants via a web survey. Participants reported self-enacted goals in physical activity (PA) and healthy nutrition (NUT), along with their importance, difficulty, and progress. Physical activity and healthy eating questionnaires served as indicators of successful behavior change. Using Bayesian statistics, we found variations in the usage intensity of SE-BCTs. Similarities and differences emerged between PA and NUT domains. For example, “time management” was commonly used in both, while “information seeking” was more prevalent in NUT. For some SE-BCTs, weak evidence emerged for gender differences and age effects. SE-BCTs formed clusters similar to BCTs, supported by Bayesian psychometric network analyses. Tests for potential preconditions and consequences of SE-BCTs revealed moderate-to-strong support for positive relations with goal importance, and strong support for positive relationships of SE-BCTs with behavior change. Moreover, PA was best predicted by a combination of the SE-BCTs “time management” plus “detailed plans,” whereas for NUT, a complex pattern of six SE-BCTs was the best-fitting predictive model. We discuss the potential of SE-BCTs for promoting physical activity and healthy eating add what is still needed to make them work efficiently.
+---
+
+<!-- OSF -->
+<a 
+  target = "_blank" 
+  class = "btn btn-dark rounded-pill" 
+  href = "https://osf.io/g6c8r/?view_only=957a269b9d3242c4af72f483e299aaa6" 
+  role = "button">
+{{< ai osf >}} OSF
+</a>

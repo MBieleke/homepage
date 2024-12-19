@@ -1,0 +1,26 @@
+---
+title: "Bug or feature? Boredom feels aversive, and this is why it matters"
+author:
+  - name: Wanja Wolff
+    orcid: 0000-0001-8130-0272
+  - name: Katja Rewitz
+    orcid: 0009-0008-8353-6340
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+date: '2024'
+date-format: "YYYY"
+categories:
+  - miscellaneous
+description: "**{{< fa newspaper >}} In-Mind**"
+abstract: |
+  In class, during exercise, at work: boredom is an everyday experience that is generally regarded as an annoying and rather useless nuisance. In keeping with this attested uselessness, boredom had not gathered much research interest for a long time. Fortunately, this has changed and new and exciting research paints a different picture of boredom, highlighting its function and its relevance for human behavior. Indeed, boredom appears to play a key role in goal-striving because it acts as a catalyst for change. Simply put, boredom tells us that we are wasting our resources and that we should look for other things to do. To provide an overview of the emerging research on boredom, this article covers what boredom is, when it occurs, what it does, and why it matters.  
+---
+
+<!-- Link -->
+<a 
+  target = "_blank"
+  class = "btn btn-dark rounded-pill"
+  href = "https://www.in-mind.org/article/bug-or-feature-boredom-feels-aversive-and-this-is-why-it-matters"
+  role = "button">
+{{< iconify bi box-arrow-up-right >}} Link
+</a>

@@ -1,0 +1,18 @@
+---
+title: "Anstrengung, Langeweile, Krisen: Neue Perspektiven und Ansätze zur Selbstkontrolle im Sport"
+author:
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Lucas Keller
+    orcid: 0000-0002-5533-3481
+  - name: Chris Englert
+    orcid: 0000-0002-4757-8040
+doi: 10.36198/9783838562902-66-83
+date: '2024'
+date-format: "YYYY"
+categories:
+  - book chapter
+description: "**{{< fa book >}} Sportpsychologie: Grundlagen und Trends**"
+abstract: |
+  Wie einfach es ist, sich Ziele zu setzen, zeigt ein Blick auf die vielfach gefassten, jedoch selten erfolgreich umgesetzten Neujahrsvorsätze vieler Menschen. Ziele zu erreichen ist ungleich schwieriger, da situativ attraktiver erscheinende Handlungsalternativen willentlich unterdrückt werden müssen und stattdessen als aversiv wahrgenommene Verhaltensweisen auszuführen sind (z. B. Training bei schlechtem Wetter) bzw. auf attraktivere Verhaltensweisen zu verzichten ist (z. B. Ausruhen auf dem Sofa). Dieser willentliche Kontrollprozess wird als Selbstkontrolle bezeichnet. Die daraus resultierende Lücke zwischen den gesetzten Zielen und dem tatsächlich gezeigten Verhalten tritt häufig in sportspezifischen Kontexten auf und wird meist auf eine Beeinträchtigung der Selbstkontrolle attribuiert. Dem liegt die traditionelle Sichtweise von Selbstkontrolle als einer limitierten Ressource zugrunde, deren Erschöpfung es in der Folge schwieriger macht, Hindernisse bei der Zielerreichung zu überwinden. In diesem Kapitel stellen wir dieser Perspektive aktuelle Ansätze gegenüber, die Selbstkontrolle als eine motivierte Kosten-Nutzen-Abwägung konzipieren und damit den Fokus auf die Bereitschaft legen, Selbstkontrolle auszuüben. Am Beispiel von Langeweile und Handlungskrisen illustrieren wir, wie sich die Kosten und Nutzen von Selbstkontrolle während der Erreichung sportlicher Ziele verändern können. Einerseits kann das Empfinden von Langeweile oder das Erleben einer Krise den Fokus auf alternative, potenziell lohnenswertere Ziele lenken, wodurch der Wert der aktuellen Zielerreichung und damit der Nutzen von Selbstkontrolle sinkt. Gleichzeitig handelt es sich bei Langeweile und Krisen um aversive Zustände, deren Regulation Anstrengung erfordert und die so die Kosten von Selbstkontrolle erhöhen können. Abschließend widmen wir uns der Frage, wie Menschen mit Langeweile und Krisen im Sport umgehen und welche Strategien dabei helfen können, die Bereitschaft zur Ausübung von Selbstkontrolle im Sport aufrechtzuerhalten.
+---

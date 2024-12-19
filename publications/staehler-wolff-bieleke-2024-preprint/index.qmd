@@ -1,0 +1,38 @@
+---
+title: "Latent profiles of effort functions and their impact on task experience and behavior"
+author:
+  - name: Johanna Stähler
+    orcid: 0009-0000-4146-3966
+  - name: Wanja Wolff
+    orcid: 0000-0001-8130-0272
+  - name: Maik Bieleke
+    orcid: 0000-0003-2586-1416
+  - name: Julia Schüler
+    orcid: 0000-0002-7790-0491
+doi: 10.31234/osf.io/xf3qb
+date: '2024'
+date-format: "YYYY"
+categories:
+  - preprint
+  - original research
+description: '**{{< ai psyarxiv >}} PsyArXiv**'
+abstract: |
+  The experience of effort is a decisive factor for engagement and behavior. However, exerting effort can yield vastly diverse experiences. We posit that these differences are due to distinct configurations of underlying effort functions (instrument, reward, adding value to an outcome) and are influenced by task context (entertaining/learning). Furthermore, we investigate how these profiles of effort functions affect the decision to exert further effort. In our online study, 471 participants (51 % female, 48 % male, Mage = 41.1 ± 11.9), received an instructional framing (entertainment/learning game) and reported their anticipated functions of effort regarding the upcoming task. Participants then had the opportunity to play Tetris. Given that successfully playing Tetris requires constant attention and a certain amount of exertion, and that it can be easily framed as either an entertainment or learning game, it serves as an appealing effort task for this study. Subsequently, participants indicated their task experience and their willingness to engage in further gameplay. A latent profile analysis identified four configurations of effort functions. These effort profiles significantly differed in the experience of positive affect, boredom, and perceived exertion in gaming, while no difference in negative affect was found. Interestingly, task framing did not moderate these effects. Yet, the effort profiles varied in their willingness to engage in further gameplay. Our findings underscore the critical role of effort’s functions in task experience and behavioral decisions. However, they might differ in their decisiveness in the decision to participate in effortful activities.
+---
+
+<!-- OSF -->
+<a 
+  target = "_blank" 
+  class = "btn btn-dark rounded-pill" 
+  href = "https://osf.io/g9mw4/" 
+  role = "button">
+{{< ai osf >}} OSF
+</a>
+<!-- PsyArXiv -->
+<a 
+  target = "_blank"
+  class = "btn btn-dark rounded-pill"
+  href = "https://osf.io/preprints/psyarxiv/xf3qb"
+  role = "button">
+{{< ai psyarxiv >}} PsyArXiv
+</a>
