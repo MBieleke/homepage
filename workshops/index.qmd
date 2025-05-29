@@ -1,26 +1,26 @@
 ---
 title: "{{< iconify carbon logo-r-script >}} Workshops" 
-listing: 
-  id: workshops
-  contents: 
-    - "startr-2023-frankfurt/index.qmd"
-    - "startr-2024-asp/index.qmd"
-  type: table
-  fields: [date, title, description]
-  filter-ui: false
-  sort-ui: false
-  sort: date
-  date-format: "MMM YYYY"
+# listing: 
+#   id: workshops
+#   contents: 
+#     - "startr-2023-frankfurt/index.qmd"
+#     - "startr-2024-asp/index.qmd"
+#   type: table
+#   fields: [date, title, description]
+#   filter-ui: false
+#   sort-ui: false
+#   sort: date
+#   date-format: "MMM YYYY"
 format: 
   html: 
     page-layout: full
     toc: false
 title-block-banner: false
 
-header-includes: >
-  <link rel="stylesheet" href="../assets/listing-default.css">
-resources:
-  - ../assets/listing-default.css
+#header-includes: >
+#  <link rel="stylesheet" href="../assets/listing-default.css">
+#resources:
+#  - ../assets/listing-default.css
 ---
 
 As a data scientist with 10+ years of experience in R, I'm in a good position to support both beginners and advanced users in learning how to use R effectively for common data processing, analysis, visualization, and reporting tasks. I use R in my daily work and I have taught it in various settings, including university courses for students, professional workshops for researchers, and individual tutoring. If you are interested in learning R, please contact me to discuss your needs and goals. I am happy to provide you with more information and to answer any questions you may have.
@@ -60,10 +60,10 @@ Details:
 :::
 :::
 
-### Overview of current StartR workshops
+<!-- ### Overview of current StartR workshops -->
 
-Here you can find an overview of recent and upcoming StartR workshops, listed in chronological order. Click on the workshop title to get more information (login required).
+<!-- Here you can find an overview of recent and upcoming StartR workshops, listed in chronological order. Click on the workshop title to get more information (login required). -->
 
-::: {#workshops}
-:::
+<!-- ::: {#workshops} -->
+<!-- ::: -->
 

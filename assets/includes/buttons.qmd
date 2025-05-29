@@ -1,0 +1,21 @@
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+---
+
+<div class="d-flex justify-content-center gap-2">
+<span class='__dimensions_badge_embed__' data-doi='{{< meta doi >}}' data-style='small_circle'></span>
+<div class='altmetric-embed' data-badge-type='donut' data-doi='{{< meta doi >}}'></div>
+</div>
+
+---
+
+<div class="d-flex justify-content-center gap-2">
+[{{< iconify bi file-pdf-fill >}} PDF](article.pdf){.btn .btn-success .btn-lg .btn role="button" target="_blank" style="font-size: 1.1rem; text-transform: none;"}
+<!-- -->
+[{{< iconify meteor-icons link >}} Publication](https://doi.org/{{< meta doi >}}){.btn .btn-success .btn-lg .btn role="button" target="_blank" style="font-size: 1.1rem; text-transform: none;"}
+<!-- -->
+[{{< ai psyarxiv >}} Preprint](https://osf.io/preprints/osf/{{< meta psyarxiv >}}){.btn .btn-success .btn-lg .btn role="button" target="_blank" style="font-size: 1.1rem; text-transform: none;"}
+<!-- -->
+[{{< ai osf >}} OSF](https://osf.io/{{< meta osf >}}){.btn .btn-success .btn-lg .btn role="button" target="_blank" style="font-size: 1.1rem; text-transform: none;"}
+</div>

@@ -1,0 +1,52 @@
+---
+title: '"Why am I doing this anyway?" A control-value perspective on boredom in endurance sports'
+subtitle: "Psychology of Sport & Exercise"
+author:
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.ham >}}"
+    affiliation:  "{{< var wwolff.affil.ham >}}"
+  - name:         "{{< var ccremer.name >}}"
+    orcid:        "{{< var ccremer.orcid >}}"
+    email:        "{{< var ccremer.email >}}"
+    affiliation:  "{{< var ccremer.affil >}}"
+  - name:         "{{< var fkaisinger.name >}}"
+    orcid:        "{{< var fkaisinger.orcid >}}"
+    email:        "{{< var fkaisinger.email >}}"
+    affiliation:  "{{< var fkaisinger.affil >}}"
+  - name:         "{{< var tgoetz.name >}}"
+    orcid:        "{{< var tgoetz.orcid >}}"
+    email:        "{{< var tgoetz.email >}}"
+    affiliation:  "{{< var tgoetz.affil >}}"
+doi: 10.1016/j.psychsport.2025.102863
+psyarxiv: https://osf.io/preprints/osf/ydqfw
+osf: https://osf.io/m3a7g
+date: '2025'
+date-format: "YYYY"
+categories:
+  - journal article
+  - original research
+abstract: |
+  Boredom is a common experience in daily life, yet it has been largely overlooked in the context of sports and exercise. This neglect is perplexing, especially considering that endurance sports can have characteristics conducive to boredom. To fill this gap, we investigated boredom in endurance sports, along with its antecedents and consequences, through the lens of control-value theory (CVT). In a study involving 667 recreational runners and cyclists, we found support for CVT’s predictions. Specifically, lower levels of self-concept, greater levels of underchallenge and overchallenge, as well as lower levels of value were all linked to increased boredom. In turn, higher levels of boredom were associated with more negative psychological (e.g., less satisfaction) and behavioral consequences (e.g., reduced training). Few differences emerged between runners and cyclists, and these differences were primarily in the magnitude of effects. Overall, our research demonstrates that CVT is a promising theoretical framework for studying boredom in sports and exercise. Conversely, endurance sports provides a natural environment in which people experience boredom, and studying boredom in this context might thus provide novel insights into boredom research and CVT. This perspective also suggests actionable insights for practitioners and researchers to mitigate boredom more effectively.
+keywords:
+  - sports and exercise
+  - affective processes
+  - control and value appraisals
+  - endurance running and cycling
+  - psychometric network analysis
+---
+
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-psyarxiv.qmd >}}
+  {{< include /assets/includes/button-osf.qmd >}}
+</div>

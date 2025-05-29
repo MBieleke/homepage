@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving
+and Interchange DTD v1.2 20190208//EN" "JATS-archivearticle1.dtd">
+
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" dtd-version="1.2" article-type="other">
+
+<front>
+
+
+<article-meta>
+
+
+<title-group>
+<article-title>Why am I doing this anyway? A control-value perspective
+on boredom in endurance sports</article-title>
+</title-group>
+
+<contrib-group>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">0000-0003-2586-1416</contrib-id>
+<name>
+<surname>Bieleke</surname>
+<given-names>Maik</given-names>
+</name>
+<string-name>Maik Bieleke</string-name>
+
+<email>bill@gates.com</email>
+<role degree-contribution="lead" vocab="https://credit.niso.org" vocab-term="conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">conceptualization</role>
+<role degree-contribution="supporting" vocab="https://credit.niso.org" vocab-term="methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">methodology</role>
+<xref ref-type="aff" rid="aff-1">a</xref>
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">0000-0001-8130-0272</contrib-id>
+<name>
+<surname>Wolff</surname>
+<given-names>Wanja</given-names>
+</name>
+<string-name>Wanja Wolff</string-name>
+
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Cremer</surname>
+<given-names>Catharina</given-names>
+</name>
+<string-name>Catharina Cremer</string-name>
+
+</contrib>
+<contrib contrib-type="author">
+<name>
+<surname>Kaisinger</surname>
+<given-names>Fanni</given-names>
+</name>
+<string-name>Fanni Kaisinger</string-name>
+
+</contrib>
+<contrib contrib-type="author">
+<contrib-id contrib-id-type="orcid">0000-0002-8908-2166</contrib-id>
+<name>
+<surname>Goetz</surname>
+<given-names>Thomas</given-names>
+</name>
+<string-name>Thomas Goetz</string-name>
+
+</contrib>
+</contrib-group>
+<aff id="aff-1">
+<institution-wrap>
+<institution>Bill &amp; Melinda Gates Foundation</institution>
+</institution-wrap>
+<addr-line>440 5th Ave N</addr-line>
+<city>Seattle</city>
+<state>WA</state>
+
+<postal-code>98109-4631</postal-code>
+
+
+</aff>
+
+
+
+
+
+
+
+
+
+<history></history>
+
+
+<abstract>
+<p>Boredom is a common experience in daily life, yet it has been largely
+overlooked in the context of sports and exercise. This neglect is
+perplexing, especially considering that endurance sports can have
+characteristics conducive to boredom. To fill this gap, we investigated
+boredom in endurance sports, along with its antecedents and
+consequences, through the lens of control-value theory (CVT). In a study
+involving 667 recreational runners and cyclists, we found support for
+CVT’s predictions. Specifically, lower levels of self-concept, greater
+levels of underchallenge and overchallenge, as well as lower levels of
+value were all linked to increased boredom. In turn, higher levels of
+boredom were associated with more negative psychological (e.g., less
+satisfaction) and behavioral consequences (e.g., reduced training). Few
+differences emerged between runners and cyclists, and these differences
+were primarily in the magnitude of effects. Overall, our research
+demonstrates that CVT is a promising theoretical framework for studying
+boredom in sports and exercise. Conversely, endurance sports provides a
+natural environment in which people experience boredom, and studying
+boredom in this context might thus provide novel insights into boredom
+research and CVT. This perspective also suggests actionable insights for
+practitioners and researchers to mitigate boredom more effectively.</p>
+</abstract>
+<kwd-group kwd-group-type="author">
+<kwd>Test 1</kwd>
+<kwd>Test 2</kwd>
+</kwd-group>
+
+
+
+
+</article-meta>
+
+</front>
+
+<body>
+<p> OSF PsyArXiv </p>
+</body>
+
+<back>
+</back>
+
+
+</article>

@@ -378,9 +378,37 @@
     "index.html": "b3a71344"
   },
   "publications/bieleke-wolff-goetz-2025-preprint/index.qmd": {
-    "index.html": "194520cf"
+    "index.html": "194520cf",
+    "index.xml": "d1d580f7"
   },
   "publications/staehler-bieleke-wolff-2023-preprint/index.qmd": {
     "index.html": "45fa732e"
+  },
+  "publications/bieleke-wolff-goetz-2025-psychol-sport-exerc/index.qmd": {
+    "index.html": "44507f38"
+  },
+  "assets/includes/buttons.qmd": {
+    "buttons.html": "90e86547"
+  },
+  "assets/includes/button-osf.qmd": {
+    "button-osf.html": "bc2c7910"
+  },
+  "assets/includes/button-pdf.qmd": {
+    "button-pdf.html": "872c5eee"
+  },
+  "assets/includes/button-preprint.qmd": {
+    "button-preprint.html": "bdb79109"
+  },
+  "assets/includes/button-publication.qmd": {
+    "button-publication.html": "f4c2ad31"
+  },
+  "assets/includes/metrics.qmd": {
+    "metrics.html": "7304d6a7"
+  },
+  "assets/includes/button-psyarxiv.qmd": {
+    "button-psyarxiv.html": "62389e49"
+  },
+  "assets/includes/button-share.qmd": {
+    "button-share.html": "3e1aa7d8"
   }
 }

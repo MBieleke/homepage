@@ -1,0 +1,1 @@
+[{{< iconify meteor-icons link >}} Publication](https://doi.org/{{< meta doi >}}){.btn .btn-success .btn-lg .btn role="button" target="_blank" style="font-size: 1rem; text-transform: none;"}

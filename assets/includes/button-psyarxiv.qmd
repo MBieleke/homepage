@@ -1,0 +1,1 @@
+[{{< ai psyarxiv >}} PsyArXiv]({{< meta psyarxiv >}}){.btn .btn-success .btn-lg .btn role="button" target="_blank" style="font-size: 1rem; text-transform: none;"}
