@@ -12,6 +12,8 @@ website:
   google-analytics: 
     tracking-id: "G-DKJFT3XXCY"
     anonymize-ip: true
+  cookie-consent:
+    type: implied
   navbar:
     left:
       - href: index.qmd
