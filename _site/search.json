@@ -63,6 +63,13 @@
     "text": "OSF     PsyArXiv"
   },
   {
+    "objectID": "publications/legrand-bieleke-gollwitzer-2017-motiv-sci/index.html",
+    "href": "publications/legrand-bieleke-gollwitzer-2017-motiv-sci/index.html",
+    "title": "Nothing will stop me? Flexibly tenacious goal striving with implementation intentions",
+    "section": "",
+    "text": "PDF\n Publication"
+  },
+  {
     "objectID": "publications/keller-bieleke-wolff-curr-psychol/index.html",
     "href": "publications/keller-bieleke-wolff-curr-psychol/index.html",
     "title": "Bursting balloons - Comparison of risk propensity between extreme sports, esports, and the general public",
@@ -89,6 +96,13 @@
     "title": "Feeling politics at school: Antecedents and effects of emotions in civic education",
     "section": "",
     "text": "PDF\n Publication\n Preregistration\n PsyArXiv\n OSF"
+  },
+  {
+    "objectID": "publications/goetz-bieleke-yanagida-2023-j-educ-psychol/index.html",
+    "href": "publications/goetz-bieleke-yanagida-2023-j-educ-psychol/index.html",
+    "title": "Test boredom: Exploring a neglected emotion",
+    "section": "",
+    "text": "PDF\n Publication"
   },
   {
     "objectID": "publications/dewit-bieleke-fletcher-2023-pci-regist-rep/index.html",
@@ -140,11 +154,32 @@
     "text": "PDF\n Publication\n PsyArXiv\n OSF"
   },
   {
+    "objectID": "publications/bieleke-kriech-wolff-2019-behav-sci/index.html",
+    "href": "publications/bieleke-kriech-wolff-2019-behav-sci/index.html",
+    "title": "Served well? A pilot field study on the effects of conveying self-control strategies on volleyball service performance",
+    "section": "",
+    "text": "PDF\n Publication"
+  },
+  {
+    "objectID": "publications/bieleke-keller-englert-2024-chapter/index.html",
+    "href": "publications/bieleke-keller-englert-2024-chapter/index.html",
+    "title": "Anstrengung, Langeweile, Krisen: Neue Perspektiven und Ansätze zur Selbstkontrolle im Sport",
+    "section": "",
+    "text": "Publication"
+  },
+  {
     "objectID": "publications/bieleke-gollwitzer-oettingen-2017-j-behav-dec-making/index.html",
     "href": "publications/bieleke-gollwitzer-oettingen-2017-j-behav-dec-making/index.html",
     "title": "Social value orientation moderates the effects of intuition versus reflection on responses to unfair ultimatum offers",
     "section": "",
     "text": "PDF\n Publication\n PsyArXiv"
+  },
+  {
+    "objectID": "publications/bieleke-goetz-yanagida-2022-zdm-math-educ/index.html",
+    "href": "publications/bieleke-goetz-yanagida-2022-zdm-math-educ/index.html",
+    "title": "Measuring emotions in mathematics: The Achievement Emotions Questionnaire—Mathematics (AEQ-M)",
+    "section": "",
+    "text": "PDF\n Publication"
   },
   {
     "objectID": "publications/bieleke-fischer-gruber-2022-drks/index.html",
@@ -168,11 +203,18 @@
     "text": "Publication"
   },
   {
-    "objectID": "assets/includes/button-pdf.html",
-    "href": "assets/includes/button-pdf.html",
+    "objectID": "assets/includes/button-preregistration.html",
+    "href": "assets/includes/button-preregistration.html",
     "title": "Maik Bieleke",
     "section": "",
-    "text": "PDF"
+    "text": "Preregistration"
+  },
+  {
+    "objectID": "assets/includes/button-osf.html",
+    "href": "assets/includes/button-osf.html",
+    "title": "Maik Bieleke",
+    "section": "",
+    "text": "OSF"
   },
   {
     "objectID": "about.html",
@@ -182,11 +224,11 @@
     "text": "About this site\n\n1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "assets/includes/button-osf.html",
-    "href": "assets/includes/button-osf.html",
+    "objectID": "assets/includes/button-pdf.html",
+    "href": "assets/includes/button-pdf.html",
     "title": "Maik Bieleke",
     "section": "",
-    "text": "OSF"
+    "text": "PDF"
   },
   {
     "objectID": "assets/includes/button-psyarxiv.html",
@@ -236,6 +278,13 @@
     "title": "Individual differences in if-then planning: Insights from the development and application of the If-Then Planning Scale (ITPS)",
     "section": "",
     "text": "PDF\n Publication\n PsyArXiv\n OSF"
+  },
+  {
+    "objectID": "publications/bieleke-keller-gollwitzer-2021-eur-rev-soc-psychol/index.html",
+    "href": "publications/bieleke-keller-gollwitzer-2021-eur-rev-soc-psychol/index.html",
+    "title": "If-then planning",
+    "section": "",
+    "text": "PDF\n Publication"
   },
   {
     "objectID": "publications/bieleke-legrand-mignon-2018-acta-psychol/index.html",
@@ -299,6 +348,13 @@
     "title": "Are older individuals predisposed to habitual control more resilient?",
     "section": "",
     "text": "Preregistration"
+  },
+  {
+    "objectID": "publications/goetz-bieleke-gogol-2021-learn-instr/index.html",
+    "href": "publications/goetz-bieleke-gogol-2021-learn-instr/index.html",
+    "title": "Getting along and feeling good: Reciprocal associations between student-teacher relationship quality and students’ emotions",
+    "section": "",
+    "text": "PDF\n Publication"
   },
   {
     "objectID": "publications/gollwitzer-bieleke-sheeran-2017-chapter/index.html",
@@ -467,61 +523,5 @@
     "title": "If-Then Planning Scale",
     "section": "Adminstration",
     "text": "Adminstration\n\nAdministration\nThe ITPS can be administered in an online or in a paper-and-pencil format. Completing it takes about 1-2 minutes. The items might be presented in random order to avoid order effects. Participants rate each of the eight items on a 7-point Likert scale from 1 (strongly disagree) to 7 (strongly agree).\n\n\nInstruction\nThe ITPS has been developed as a domain-general measure of if-then planning. Accordingly, the instruction refers to goals in general and not to a specific goal. The focus is on difficult and important goals as only these goals require if-then planning to facilitate goal attainment. However, the instruction can in principle also be tailored to specific goals (e.g., health goals, learning goals) if the focus is on if-then planning in a particular domain.\n\n\nScoring and interpretation\nAn overall score is obtained by averaging a participant’s ratings across all eight items. All items are formulated in the same direction so that no reverse-coding is neccessary. A higher ITPS score indicates a greater propensity to engage in if-then planning.\nNote that although the ITPS is composed of different subscales (e.g., thinking about potential obstacles), subscale scores should only be used for explorative analyses. In general, it is recommended to interpret the overall ITPS score."
-  },
-  {
-    "objectID": "publications/bieleke-goetz-yanagida-2022-zdm-math-educ/index.html",
-    "href": "publications/bieleke-goetz-yanagida-2022-zdm-math-educ/index.html",
-    "title": "Measuring emotions in mathematics: The Achievement Emotions Questionnaire—Mathematics (AEQ-M)",
-    "section": "",
-    "text": "PDF\n Publication"
-  },
-  {
-    "objectID": "publications/goetz-bieleke-gogol-2021-learn-instr/index.html",
-    "href": "publications/goetz-bieleke-gogol-2021-learn-instr/index.html",
-    "title": "Getting along and feeling good: Reciprocal associations between student-teacher relationship quality and students’ emotions",
-    "section": "",
-    "text": "PDF\n Publication"
-  },
-  {
-    "objectID": "publications/goetz-bieleke-yanagida-2023-j-educ-psychol/index.html",
-    "href": "publications/goetz-bieleke-yanagida-2023-j-educ-psychol/index.html",
-    "title": "Test boredom: Exploring a neglected emotion",
-    "section": "",
-    "text": "PDF\n Publication"
-  },
-  {
-    "objectID": "assets/includes/button-preregistration.html",
-    "href": "assets/includes/button-preregistration.html",
-    "title": "Maik Bieleke",
-    "section": "",
-    "text": "Preregistration"
-  },
-  {
-    "objectID": "publications/bieleke-keller-englert-2024-chapter/index.html",
-    "href": "publications/bieleke-keller-englert-2024-chapter/index.html",
-    "title": "Anstrengung, Langeweile, Krisen: Neue Perspektiven und Ansätze zur Selbstkontrolle im Sport",
-    "section": "",
-    "text": "Publication"
-  },
-  {
-    "objectID": "publications/bieleke-keller-gollwitzer-2021-eur-rev-soc-psychol/index.html",
-    "href": "publications/bieleke-keller-gollwitzer-2021-eur-rev-soc-psychol/index.html",
-    "title": "If-then planning",
-    "section": "",
-    "text": "PDF\n Publication"
-  },
-  {
-    "objectID": "publications/bieleke-kriech-wolff-2019-behav-sci/index.html",
-    "href": "publications/bieleke-kriech-wolff-2019-behav-sci/index.html",
-    "title": "Served well? A pilot field study on the effects of conveying self-control strategies on volleyball service performance",
-    "section": "",
-    "text": "PDF\n Publication"
-  },
-  {
-    "objectID": "publications/legrand-bieleke-gollwitzer-2017-motiv-sci/index.html",
-    "href": "publications/legrand-bieleke-gollwitzer-2017-motiv-sci/index.html",
-    "title": "Nothing will stop me? Flexibly tenacious goal striving with implementation intentions",
-    "section": "",
-    "text": "PDF\n Publication"
   }
 ]

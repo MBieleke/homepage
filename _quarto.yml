@@ -11,7 +11,7 @@ website:
   site-url: https://www.maikbieleke.com
   google-analytics: 
     tracking-id: "G-DKJFT3XXCY"
-    storage: "none"
+    anonymize-ip: true
   navbar:
     left:
       - href: index.qmd
