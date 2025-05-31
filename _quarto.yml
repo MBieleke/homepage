@@ -6,7 +6,9 @@ website:
   favicon: assets/images/icon.png
   page-navigation: true
   back-to-top-navigation: false
-  site-url: https://mbieleke.com
+  twitter-card: true
+  open-graph: true
+  site-url: https://www.maikbieleke.com
   google-analytics: 
     tracking-id: "G-DKJFT3XXCY"
     storage: "none"
