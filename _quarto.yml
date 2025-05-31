@@ -15,7 +15,6 @@ website:
   cookie-consent:
     type: express
     style: simple
-    preferences-button: true
   navbar:
     left:
       - href: index.qmd
@@ -38,7 +37,8 @@ website:
       <a class="link-dark me-1" href="https://orcid.org/0000-0003-2586-1416" title="Orcid" target="_blank" rel="noopener">{{< ai orcid >}}</a>
       <a class="link-dark me-1" href="https://scholar.google.de/citations?user=EbGUz_gAAAAJ&hl=en" title="Google Scholar" target="_blank"rel="noopener">{{< ai google-scholar >}}</a>
       <a class="link-dark me-1" href="https://www.linkedin.com/in/maik-bieleke/" title="Linkedin" target="_blank" rel="noopener">{{< fa brands linkedin >}}</a>
-
+    right: |
+      Change [cookie preferences]{#open_preferences_center}
 format:
   html:
     theme: sandstone
