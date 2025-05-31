@@ -2,22 +2,38 @@
 title: "Test boredom: Exploring a neglected emotion"
 subtitle: "Journal of Educational Psychology"
 author:
-  - name: Thomas Goetz
-    orcid: 0000-0001-6083-0602
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Takuya Yanagida
-    orcid: 0000-0001-9052-4841
-  - name: Maike Krannich
-    orcid: 0000-0001-9239-3283
-  - name: Anna-Lena Roos
-    orcid: 0000-0002-7853-0330
-  - name: Anne C. Frenzel
-    orcid: 0000-0002-9068-9926
-  - name: Anastasiya A. Lipnevich
-    orcid: 0000-0003-0190-8689
-  - name: Reinhard Pekrun
-    orcid: 0000-0003-4489-3827
+  - name:         "{{< var tgoetz.name >}}"
+    orcid:        "{{< var tgoetz.orcid >}}"
+    email:        "{{< var tgoetz.email >}}"
+    affiliation:  "{{< var tgoetz.affil >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var tyanagida.name >}}"
+    orcid:        "{{< var tyanagida.orcid >}}"
+    email:        "{{< var tyanagida.email >}}"
+    affiliation:  "{{< var tyanagida.affil >}}"
+  - name:         "{{< var mkrannich.name >}}"
+    orcid:        "{{< var mkrannich.orcid >}}"
+    email:        "{{< var mkrannich.email >}}"
+    affiliation:  "{{< var mkrannich.affil.zur.psy >}}"
+  - name:         "{{< var alroos.name >}}"
+    orcid:        "{{< var alroos.orcid >}}"
+    email:        "{{< var alroos.email >}}"
+    affiliation:  "{{< var alroos.affil >}}"
+  - name:         "{{< var afrenzel.name >}}"
+    orcid:        "{{< var afrenzel.orcid >}}"
+    email:        "{{< var afrenzel.email >}}"
+    affiliation:  "{{< var afrenzel.affil >}}"
+  - name:         "{{< var alipnevich.name >}}"
+    orcid:        "{{< var alipnevich.orcid >}}"
+    email:        "{{< var alipnevich.email >}}"
+    affiliation:  "{{< var alipnevich.affil >}}"
+  - name:         "{{< var rpekrun.name >}}"
+    orcid:        "{{< var rpekrun.orcid >}}"
+    email:        "{{< var rpekrun.email >}}"
+    affiliation:  "{{< var rpekrun.affil.mun >}}<br>{{< var rpekrun.affil.ess >}}<br>{{< var rpekrun.affil.syd >}}"
 doi: 10.1037/edu0000807
 date: '2023'
 date-format: "YYYY"
@@ -26,4 +42,19 @@ categories:
   - original research
 abstract: |
   The emotion of boredom has sparked considerable interest in research on teaching and learning, but boredom during tests and exams has not yet been examined. Based on the control-value theory of achievement emotions, we hypothesized that students may experience significant levels of boredom during testing (“test boredom”; Hypothesis 1) and that test boredom may be significantly related to theoretically hypothesized antecedents (control and value appraisals; Hypothesis 2) and outcomes (performance; Hypothesis 3). We further hypothesized that test boredom was more detrimental when students felt overchallenged during the test than when they felt underchallenged (“abundance hypothesis”; Hypothesis 4). We tested these hypotheses in two studies (Study 1: *N* = 208 eighth graders; 54% female; Study 2: *N* = 1,612 fifth to 10th graders, 47% female) using both trait and state measures of test boredom in mathematics and their proposed antecedents and outcomes. In support of Hypothesis 1, participants reported statistically significant levels of boredom during tests. Furthermore, the relations of test boredom with its control and value antecedents (i.e., being over- or underchallenged, facets of value) were in line with our assumptions (Hypothesis 2). In support of Hypothesis 3, test boredom was significantly negatively related to academic achievement (grades). In line with Hypothesis 4, test scores were negatively related to boredom due to being overchallenged but unrelated, or even positively related, to boredom due to being underchallenged. Directions for future research on test boredom as well as practical implications are outlined.
+keywords:
+  - boredom
+  - test
+  - achievement
+  - mathematics
+  - control-value theory
 ---
+
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+</div>

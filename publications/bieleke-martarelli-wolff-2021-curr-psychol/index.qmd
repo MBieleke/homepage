@@ -1,36 +1,44 @@
 ---
 title: "If-then planning, self-control, and boredom as predictors of adherence to social distancing guidelines: Evidence from a two-wave longitudinal study with a behavioral intervention"
+subtitle: "Current Psychology"
 author:
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Corinna S. Martarelli
-    orcid: 0000-0002-2163-5078
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var cmartarelli.name >}}"
+    orcid:        "{{< var cmartarelli.orcid >}}"
+    email:        "{{< var cmartarelli.email >}}"
+    affiliation:  "{{< var cmartarelli.affil >}}"
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
 doi: 10.1007/s12144-021-02106-7
+psyarxiv: https://doi.org/10.31234/osf.io/enzbv
+osf: https://osf.io/y2rdk
 date: '2023'
 date-format: "YYYY"
 categories:
   - journal article
   - original research
-description: "**{{< fa newspaper >}} Current Psychology**"
 abstract: |
   In the wake of the Coronavirus Disease 2019 (COVID-19), social distancing is instrumental for containing the pandemic. To maximize its effectiveness, it is paramount to investigate psychological factors that predict adherence to social distancing guidelines and examine corresponding interventions. We focused on individual differences in if-then planning, self-control, and boredom, and tested an intervention based on if-then planning. We conducted a two-wave longitudinal study combining observational and experimental methods. Participants (*N* = 574, 35.7% female, age: *M* = 37.5 years, *SD* = 10.8) reported their adherence to social distancing guidelines and the perceived difficulty of adherence at T1, along with trait measures of if-then planning, self-control, and boredom. Afterwards, they were randomly assigned to an if-then planning intervention to increase adherence, or to a control intervention. One week later at T2, participants again reported their adherence and the perceived difficulty of adhering. Multiple regression and structural equation modeling were used to establish whether trait if-then planning, self-control, and boredom predicted adherence, and to examine the effects of the if-then planning intervention. Trait if-then planning, self-control, and boredom were associated with T1 adherence, while only if-then planning and boredom predicted T2 adherence. No overall treatment effect of the if-then planning intervention emerged; however, participants who complied with the intervention (75.6%) maintained higher levels of adherence over time than control participants. In sum, individual differences in if-then planning, self-control, and boredom predicted adherence to social distancing guidelines. If-then planning interventions are promising but require further steps to ascertain compliance.
+keywords:
+  - COVID-19
+  - social distancing
+  - if-then planning (implementation intentions)
+  - self-control
+  - boredom
 ---
 
-<!-- OSF -->
-<a 
-  target = "_blank" 
-  class = "btn btn-dark rounded-pill" 
-  href = "https://osf.io/y2rdk" 
-  role = "button">
-{{< ai osf >}} OSF
-</a>
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://doi.org/10.31234/osf.io/enzbv"
-  role = "button">
-{{< ai psyarxiv >}} PsyArXiv
-</a>
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-psyarxiv.qmd >}}
+  {{< include /assets/includes/button-osf.qmd >}}
+</div>

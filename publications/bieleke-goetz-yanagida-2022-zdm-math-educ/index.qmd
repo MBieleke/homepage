@@ -1,25 +1,51 @@
 ---
 title: "Measuring emotions in mathematics: The Achievement Emotions Questionnaire—Mathematics (AEQ-M)"
+subtitle: "ZDM Mathematics Education"
 author:
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Thomas Goetz
-    orcid: 0000-0003-2586-1416
-  - name: Takuya Yanagida
-    orcid: 0000-0001-9052-4841
-  - name: Elouise Botes
-    orcid: 0000-0003-2586-1416
-  - name: Anne C. Frenzel
-    orcid: 0000-0002-9068-9926
-  - name: Reinhard Pekrun
-    orcid: 0000-0003-4489-3827
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var tgoetz.name >}}"
+    orcid:        "{{< var tgoetz.orcid >}}"
+    email:        "{{< var tgoetz.email >}}"
+    affiliation:  "{{< var tgoetz.affil >}}"
+  - name:         "{{< var tyanagida.name >}}"
+    orcid:        "{{< var tyanagida.orcid >}}"
+    email:        "{{< var tyanagida.email >}}"
+    affiliation:  "{{< var tyanagida.affil >}}"
+  - name:         "{{< var ebotes.name >}}"
+    orcid:        "{{< var ebotes.orcid >}}"
+    email:        "{{< var ebotes.email >}}"
+    affiliation:  "{{< var ebotes.affil >}}"
+  - name:         "{{< var afrenzel.name >}}"
+    orcid:        "{{< var afrenzel.orcid >}}"
+    email:        "{{< var afrenzel.email >}}"
+    affiliation:  "{{< var afrenzel.affil >}}"
+  - name:         "{{< var rpekrun.name >}}"
+    orcid:        "{{< var rpekrun.orcid >}}"
+    email:        "{{< var rpekrun.email >}}"
+    affiliation:  "{{< var rpekrun.affil.mun >}}<br>{{< var rpekrun.affil.ess >}}<br>{{< var rpekrun.affil.syd >}}"
 doi: 10.1007/s11858-022-01425-8
 date: '2023'
 date-format: "YYYY"
 categories:
   - journal article
   - scale development
-description: "**{{< fa newspaper >}} ZDM Mathematics Education**"
 abstract: |
   Understanding the structure, antecedents, and outcomes of students’ emotions has become a topic of major interest in research on mathematics education. Much of this work is based on the Achievement Emotions Questionnaire—Mathematics (AEQ-M), a self-report instrument assessing students’ mathematics-related emotions. The AEQ-M measures seven emotions (enjoyment, pride, anger, anxiety, shame, hopelessness, boredom) across class, learning, and test contexts (internal structure). Based on control-value theory, it is assumed that these emotions are evoked by control and value appraisals, and that they influence students’ motivation, learning strategies, and performance (external relations). Despite the popularity and frequent use of the AEQ-M, the research leading to its development has never been published, creating uncertainty about the validity of the proposed internal structure and external relations. We close this gap in Study 1 (*N* = 781 students, Grades 5–10, mean age 14.1 years, 53.5% female) by demonstrating that emotions are organized across contexts and linked to their proposed antecedents and outcomes. Study 2 (*N* = 699 students, Grade 7 and 9, mean age 14.0 years, 56.9% female) addresses another deficit in research on the AEQ-M, the lack of evidence regarding the assumption that emotions represent sets of interrelated affective, cognitive, motivational, and physiological/expressive components. We close this gap by evaluating extended AEQ-M scales, systematically assessing these components for five core mathematics emotions (enjoyment, anger, anxiety, hopelessness, boredom). Our work provides solid grounds for future research using the AEQ-M to assess emotions and their components in the domain of mathematics.
+keywords:
+  - achievement emotions questionnaire mathematics (AEQ-M)
+  - control-value theory (CVT)
+  - emotion components
+  - assessment
 ---
+
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+</div>

@@ -1,30 +1,46 @@
 ---
 title: "More than planned: Implementation intention effects in non-planned situations"
+subtitle: "Acta Psychologica"
 author:
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Eve Legrand
-    orcid: 0000-0002-8268-6784
-  - name: Astrid Mignon
-    orcid: 0000-0002-2163-5078
-  - name: Peter M. Gollwitzer
-    orcid: 0000-0003-4872-2929
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.psy >}}"
+  - name:         "{{< var elegrand.name >}}"
+    orcid:        "{{< var elegrand.orcid >}}"
+    email:        "{{< var elegrand.email >}}"
+    affiliation:  "{{< var elegrand.affil >}}"
+  - name:         "{{< var amignon.name >}}"
+    orcid:        "{{< var amignon.orcid >}}"
+    email:        "{{< var amignon.email >}}"
+    affiliation:  "{{< var amignon.affil >}}"
+  - name:         "{{< var pgollwitzer.name >}}"
+    orcid:        "{{< var pgollwitzer.orcid >}}"
+    email:        "{{< var pgollwitzer.email.kon >}}"
+    affiliation:  "{{< var pgollwitzer.affil.kon >}}<br>{{< var pgollwitzer.affil.nwy >}}"
 doi: 10.1016/j.actpsy.2017.06.003
+psyarxiv: https://psyarxiv.com/cys5f/
 date: '2018'
 date-format: "YYYY"
 categories:
   - journal article
   - original research
-description: "**{{< fa newspaper >}} Acta Psychologica**"
 abstract: |
   Forming implementation intentions (i.e., if-then planning) is a powerful self-regulation strategy that enhances goal attainment by facilitating the automatic initiation of goal-directed responses upon encountering critical situations. Yet, little is known about the consequences of forming implementation intentions for goal attainment in situations that were not specified in the if-then plan. In three experiments, we assessed goal attainment in terms of speed and accuracy in an object classification task, focusing on situations that were similar or dissimilar to critical situations and required planned or different responses. The results of Experiments 1 and 3 provide evidence for a facilitation of planned responses in critical and in sufficiently similar situations, enhancing goal attainment when the planned response was required and impairing it otherwise. In Experiment 3, additional unfavorable effects however emerged in situations that were dissimilar to the critical one but required the planned response as well. We discuss theoretical implications as well as potential benefits and pitfalls emerging from these non-planned effects of forming implementation intentions.
+keywords:
+  - implementation intentions
+  - self-regulation
+  - goal attainment
+  - generalization
+  - cognitive resources
 ---
 
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://psyarxiv.com/cys5f/"
-  role = "button">
-{{< ai psyarxiv >}} PsyArXiv
-</a>
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-psyarxiv.qmd >}}
+</div>

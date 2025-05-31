@@ -1,19 +1,41 @@
 ---
 title: "If-then planning"
+subtitle: "European Review of Social Psychology"
 author:
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Lucas Keller
-    orcid: 0000-0002-5533-3481
-  - name: Peter M. Gollwitzer
-    orcid: 0000-0003-4872-2929
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.vie >}}"
+    affiliation:  "{{< var mbieleke.affil.vie >}}"
+  - name:         "{{< var lkeller.name >}}"
+    orcid:        "{{< var lkeller.orcid >}}"
+    email:        "{{< var lkeller.email >}}"
+    affiliation:  "{{< var lkeller.affil >}}"
+  - name:         "{{< var pgollwitzer.name >}}"
+    orcid:        "{{< var pgollwitzer.orcid >}}"
+    email:        "{{< var pgollwitzer.email.kon >}}"
+    affiliation:  "{{< var pgollwitzer.affil.kon >}}<br>{{< var pgollwitzer.affil.nwy >}}"
 doi: 10.1080/10463283.2020.1808936
 date: '2021'
 date-format: "YYYY"
 categories:
   - journal article
   - literature review
-description: "**{{< fa newspaper >}} European Review of Social Psychology**"
 abstract: |
   The self-regulation strategy of forming implementation intentions has now been studied for almost 30 years. We trace the development of this research and explicate the questions that have been addressed. We then present current research that investigates the consequences of implementation intentions for flexible goal striving, behaviour in situations for which one had not planned, and neuropsychological processes underlying the action control by implementation intentions. Next, we turn to novel applications focusing on how implementation intentions affect physical endurance and promote strategic information processing. Our review concludes with an outlook on future research on implementation intentions that covers emerging individual difference perspectives, innovative approaches to characterize underlying cognitive processes, and the prospects of integrating insights from related fields of research. As such, our review is an empathic call for addressing the many intriguing conceptual and empirical questions that still revolve around implementation intentions.
+keywords:
+  - motivation
+  - goals
+  - implementation intentions
+  - behavior change
+  - planning
 ---
+
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+</div>
+

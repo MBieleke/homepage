@@ -410,5 +410,8 @@
   },
   "assets/includes/button-share.qmd": {
     "button-share.html": "3e1aa7d8"
+  },
+  "assets/includes/button-preregistration.qmd": {
+    "button-preregistration.html": "bb6f52b4"
   }
 }

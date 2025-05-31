@@ -1,34 +1,40 @@
 ---
 title: "Individual differences in if-then planning: Insights from the development and application of the If-Then Planning Scale (ITPS)"
+subtitle: "Personality and Individual Differences"
 author:
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Lucas Keller
-    orcid: 0000-0002-5533-3481
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.vie >}}"
+    affiliation:  "{{< var mbieleke.affil.vie >}}"
+  - name:         "{{< var lkeller.name >}}"
+    orcid:        "{{< var lkeller.orcid >}}"
+    email:        "{{< var lkeller.email >}}"
+    affiliation:  "{{< var lkeller.affil >}}"
 doi: 10.1016/j.paid.2020.110500
+psyarxiv: https://psyarxiv.com/2efnv/
+osf: https://osf.io/w9635/
 date: '2021'
 date-format: "YYYY"
 categories:
   - journal article
   - scale development
-description: "**{{< fa newspaper >}} Personality and Individual Differences**"
 abstract: |
   Making if-then plans is a self-regulation strategy that facilitates goal attainment. An open question is, however, whether there are individual differences in if-then planning. We, therefore, developed and validated the If-Then Planning Scale (ITPS) in three independent studies with more than 2600 participants. The ITPS is conceptually grounded in implementation intention theory, measuring whether individuals identify critical situations (if-part) and plan goal-directed behaviors (then-part) in terms of opportunities and obstacles. We established the psychometric qualities of the ITPS in Studies 1a and 1b and its convergent and discriminant validity in Studies 2 and 3. Applying the ITPS, we showed that if-then planning is associated with the attainment of environmental goals (Studies 1a and 1b), socioeconomic status (Studies 1a, 1b, and 2), and academic achievement (Study 3). Our results demonstrate individual differences in if-then planning that can be efficiently and reliably measured with the ITPS, and reveal systematic associations between these individual differences and goal attainment.
+keywords:
+  - if-then planning
+  - implementation intentions
+  - self-regulation
+  - individual differences
+  - motivation
 ---
 
-<!-- OSF -->
-<a 
-  target = "_blank" 
-  class = "btn btn-dark rounded-pill" 
-  href = "https://osf.io/w9635/" 
-  role = "button">
-{{< ai osf >}} OSF
-</a>
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://psyarxiv.com/2efnv/"
-  role = "button">
-{{< ai psyarxiv >}} PsyArXiv
-</a>
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-psyarxiv.qmd >}}
+  {{< include /assets/includes/button-osf.qmd >}}
+</div>

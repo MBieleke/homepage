@@ -1,32 +1,51 @@
 ---
 title: "Starting tests with easy versus difficult tasks: Effects on appraisals and emotions"
+subtitle: "Journal of Experimental Education"
 author:
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Thomas Goetz
-    orcid: 0000-0001-6083-0602
-  - name: Maike Krannich
-    orcid: 0000-0001-9239-3283
-  - name: Anna-Lena Roos
-    orcid: 0000-0002-7853-0330
-  - name: Takuya Yanagida
-    orcid: 0000-0001-9052-4841
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.vie >}}"
+    affiliation:  "{{< var mbieleke.affil.vie >}}"
+  - name:         "{{< var tgoetz.name >}}"
+    orcid:        "{{< var tgoetz.orcid >}}"
+    email:        "{{< var tgoetz.email >}}"
+    affiliation:  "{{< var tgoetz.affil >}}"
+  - name:         "{{< var mkrannich.name >}}"
+    orcid:        "{{< var mkrannich.orcid >}}"
+    email:        "{{< var mkrannich.email >}}"
+    affiliation:  "{{< var mkrannich.affil.zur.edu >}}"
+  - name:         "{{< var alroos.name >}}"
+    orcid:        "{{< var alroos.orcid >}}"
+    email:        "{{< var alroos.email >}}"
+    affiliation:  "{{< var alroos.affil >}}"
+  - name:         "{{< var tyanagida.name >}}"
+    orcid:        "{{< var tyanagida.orcid >}}"
+    email:        "{{< var tyanagida.email >}}"
+    affiliation:  "{{< var tyanagida.affil >}}"
 doi: 10.1080/00220973.2021.1947764
+psyarxiv: https://osf.io/preprints/psyarxiv/bd6fm
 date: '2023'
 date-format: "YYYY"
 categories:
   - journal article
   - original research
-description: "**{{< fa newspaper >}} Journal of Experimental Education**"
 abstract: |
   Tests in educational contexts often start with easy tasks, assuming that this fosters positive experiences—a sense of control, higher valuing of the test, and more positive and less negative emotions. Although intuitive and widespread, this assumption lacks an empirical basis and a theoretical framework. We conducted a field experiment and randomly assigned 208 students to an easy-to-difficult or a difficult-to-easy condition in a mathematics test. Perceived challenge was measured along with control appraisals, value appraisals, and emotions (enjoyment, pride, anxiety, anger, boredom). While students starting with easy tasks felt less challenged than students starting with difficult tasks in Part 1, no differences emerged regarding control and value appraisals and emotions. In Part 2, students who had started with easy tasks proceeded to difficult tasks and reported a higher level of challenge, less value and control, and less positive and more negative emotions than students who proceeded from difficult-to-easy tasks. Control and value appraisals mediated the differences between the two conditions, especially regarding positive emotions. These results cast doubt on the preference for easy-to-difficult over difficult-to-easy task orders, revealing their potential for causing adverse experiences at the end of the test (e.g., reflecting contrast effects).
+keywords:
+  - achievement emotions
+  - task difficulty
+  - task order
+  - control-value theory
+  - perceived challenge
+  - cognitive appraisals
 ---
 
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://psyarxiv.com/bd6fm/"
-  role = "button">
-{{< ai psyarxiv >}} PsyArXiv
-</a>
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-psyarxiv.qmd >}}
+</div>

@@ -1,39 +1,50 @@
 ---
 title: "Boredom is the root of all evil — or is it? A psychometric network approach to individual differences in behavioral responses to boredom"
+subtitle: "Royal Society Open Science"
 author:
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Leonie Ripper
-    orcid: 0000-0002-6392-8506
-  - name: Julia Schüler
-    orcid: 0000-0002-7790-0491
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var lripper.name >}}"
+    orcid:        "{{< var lripper.orcid >}}"
+    email:        "{{< var lripper.email >}}"
+    affiliation:  "{{< var lripper.affil >}}"
+  - name:         "{{< var jschueler.name >}}"
+    orcid:        "{{< var jschueler.orcid >}}"
+    email:        "{{< var jschueler.email >}}"
+    affiliation:  "{{< var jschueler.affil >}}"
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
 doi: 10.1098/rsos.211998
+psyarxiv: https://doi.org/10.31234/osf.io/mje7v
+osf: https://osf.io/nbw95/
 date: '2022'
 date-format: "YYYY"
 categories:
   - journal article
   - original research
   - scale development
-description: "**{{< fa newspaper >}} Royal Society Open Science**"
 abstract: |
   Functional accounts of boredom propose that boredom serves as an impartial signal to change something about the current situation, which should give rise to adaptive and maladaptive behaviour alike. This seemingly contrasts with research on boredom proneness, which has overwhelmingly shown associations with maladaptive behaviour. To shed light on this discrepancy, we disentangled boredom proneness from individual differences in (i) the urge to avoid and escape boredom and (ii) adaptive and maladaptive ways of dealing with boredom by developing corresponding trait scales. In a study with *N* = 636 participants, psychometric network modelling revealed tight associations between boredom proneness and less adaptive and (especially) more maladaptive ways of dealing with boredom. However, its associations with the urge to avoid and escape boredom were rather weak. Importantly, a higher urge to avoid and escape boredom was linked not only to more maladaptive but also to more adaptive ways of dealing with boredom. This pattern of results was robust across various specific behaviours that have previously been linked to boredom. Our findings provide novel evidence for functional accounts of boredom from an individual difference perspective, cautioning against a shallow view of boredom as being associated with purely maladaptive behaviour.
+keywords:
+  - boredom proneness
+  - functional theories ofemotion
+  - adaptive and maladaptive behaviour
+  - psychometric network modelling
+  - boredomavoidance and escape
+  - dealing with boredom
 ---
 
-<!-- OSF -->
-<a 
-  target = "_blank" 
-  class = "btn btn-dark rounded-pill" 
-  href = "https://osf.io/nbw95/" 
-  role = "button">
-{{< ai osf >}} OSF
-</a>
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://doi.org/10.31234/osf.io/mje7v"
-  role = "button">
-{{< ai psyarxiv >}} PsyArXiv
-</a>
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-psyarxiv.qmd >}}
+  {{< include /assets/includes/button-osf.qmd >}}
+</div>

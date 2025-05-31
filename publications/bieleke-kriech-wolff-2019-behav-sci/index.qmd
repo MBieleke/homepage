@@ -1,18 +1,41 @@
 ---
 title: "Served well? A pilot field study on the effects of conveying self-control strategies on volleyball service performance"
+subtitle: "Behavioral Sciences"
 author:
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Claudio Kriech
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.psy >}}<br>{{< var mbieleke.affil.kon.edu >}}"
+  - name:         "{{< var ckriech.name >}}"
+    orcid:        "{{< var ckriech.orcid >}}"
+    email:        "{{< var ckriech.email >}}"
+    affiliation:  "{{< var ckriech.affil >}}"
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
 doi: 10.3390/bs9090093
 date: '2019'
 date-format: "YYYY"
 categories:
   - journal article
   - original research
-description: "**{{< fa newspaper >}} Behavioral Sciences**"
 abstract: |
   Volleyball serves constitute an important example for a self-controlled sequence of actions in sports that is difficult to improve. It is therefore paramount to investigate whether and how conveying self-control strategies to athletes affects their service performance. To address this question, we conducted a pilot field study with sixty-two players from four Swiss volleyball schools. They performed a warm-up and subsequently a first series of 15 serves. Objective service performance was measured in terms of errors, velocity, and precision. Afterwards, players formulated either individual goals (goal condition) or plans (plan condition) based on their coaches’ correction instructions. In a second series of 15 serves objective performance was worse in some respects compared to the first series (i.e., more errors in the plan condition, reduced precision in both conditions). Mixed-effects analyses of performance development across conditions in the second series showed initially reduced but steadily recouping precision and velocity, while the number of errors stayed constant. In contrast to the objective performance, coaches evaluated their players’ service performance during the second series of serves as substantially better than during the first series. Taken together, the results of this pilot field study suggest that conveying either goals or plans as self-control strategies may involve initial adjustment costs followed by a subsequent recovery period.
+keywords:
+  - self-control
+  - goal setting
+  - if-then planning
+  - implementation intentions
+  - olleyball serve
+  - coach instructions
 ---
+
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+</div>
