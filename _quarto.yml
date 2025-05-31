@@ -12,7 +12,10 @@ website:
   google-analytics: 
     tracking-id: "G-DKJFT3XXCY"
     anonymize-ip: true
-  cookie-consent: false
+  cookie-consent:
+    type: express
+    style: simple
+    preferences-button: true
   navbar:
     left:
       - href: index.qmd
