@@ -1,24 +1,23 @@
 ---
 title: "Bug or Feature? Langeweile ist unangenehm und gerade deswegen wichtig"
+subtitle: "In-Mind"
 author:
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
 date: '2021'
 date-format: "YYYY"
 categories:
   - miscellaneous
-description: "**{{< fa newspaper >}} In-Mind**"
 abstract: |
   In der Schule, beim Sport, im Lockdown: Langeweile ist ein alltäglicher Zustand, der einem lästig aber meist belanglos scheint. Auch die Wissenschaft widmet sich erst seit wenigen Jahren verstärkt der Frage, was Langeweile eigentlich ist und warum man sich langweilt. Dabei entsteht das Bild von Langeweile als einem Katalysator für Veränderung. In diesem Artikel geben wir einen Überblick über die Forschung zur Langeweile und zeigen, warum sie eine mächtige Triebfeder des menschlichen Verhaltens ist.
 ---
 
-<!-- Link -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://de.in-mind.org/article/bug-or-feature-langeweile-ist-unangenehm-und-gerade-deswegen-wichtig"
-  role = "button">
-{{< iconify bi box-arrow-up-right >}} Link
-</a>
+<div class="d-flex justify-content-center gap-2 mt-3">
+  [{{< iconify meteor-icons link >}} Publication](https://de.in-mind.org/article/bug-or-feature-langeweile-ist-unangenehm-und-gerade-deswegen-wichtig){.btn .btn-success .btn-lg .btn role="button" target="_blank" style="font-size: 1rem; text-transform: none;"}
+</div>

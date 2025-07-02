@@ -1,12 +1,19 @@
 ---
 title: "Overview of current directions in boredom research"
+subtitle: "Handbook of Boredom"
 author:
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
-  - name: Corinna S. Martarelli
-    orcid: 0000-0001-9160-793X
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
+  - name:         "{{< var cmartarelli.name >}}"
+    orcid:        "{{< var cmartarelli.orcid >}}"
+    email:        "{{< var cmartarelli.email >}}"
+    affiliation:  "{{< var cmartarelli.affil >}}"
   - name: Christine Emilie Tonne Artak
     orcid: 0009-0005-8807-5457
   - name: Nazim Asani
@@ -88,23 +95,23 @@ author:
     orcid: 0000-0002-6222-6094
   - name: Ofir Yakobi
     orcid: 0000-0002-9253-7483
-
 doi: 10.4324/9781003271536-26
+psyarxiv: https://doi.org/10.31234/osf.io/xr9py
 date: '2024 '
 date-format: "YYYY"
 categories:
   - book chapter
-description: "**{{< fa book >}} Handbook of Boredom**"
 abstract: |
   The concluding chapter of this book represents a collaborative effort between the editors and all contributing authors, resulting in a comprehensive overview of the current directions in boredom research. Summaries of each chapter not only underscore the multitude of perspectives on boredom but also elucidate the diverse approaches employed in its study. Furthermore, the chapter directs attention to both known and unknown aspects of boredom, providing a foundation for future research in the field.
 ---
 
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://doi.org/10.31234/osf.io/xr9py"
-  role = "button">
-{{< ai psyarxiv >}} PsyArXiv
-</a>
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-psyarxiv.qmd >}}
+</div>
 

@@ -1,26 +1,32 @@
 ---
 title: "It's not a bug, it's boredom: Effortful willpower balances exploitation and exploration"
+subtitle: "Behavioral and Brain Sciences"
 author:
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.vie >}}"
+    affiliation:  "{{< var mbieleke.affil.vie >}}"
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
 doi: 10.1017/S0140525X20001053
+psyaxiv: https://doi.org/10.31234/osf.io/k6tjn
 date: '2021'
 date-format: "YYYY"
 categories:
   - journal article
   - commentary
-description: "**{{< fa newspaper >}} Behavioral and Brain Sciences**"
 abstract: |
   The continuous revaluation of rewards lies at the core of Ainslie's account of willpower. Yet, he does not explicate the underlying experiential mechanisms. We draw upon theoretical, neuroscientific, and computational evidence to demonstrate that boredom evokes revaluation. By biasing behavior toward exploration, boredom necessitates effortful willpower to balance it against exploitation, thereby rendering suppression a highly adaptive function of willpower.
 ---
 
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://doi.org/10.31234/osf.io/k6tjn"
-  role = "button">
-{{< ai psyarxiv >}} PsyArXiv
-</a>
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-psyarxiv.qmd >}}
+</div>

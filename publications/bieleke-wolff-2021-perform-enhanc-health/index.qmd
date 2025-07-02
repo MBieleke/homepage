@@ -1,26 +1,32 @@
 ---
-title: "Special Issue: The self-regulation of human performance"
+title: "Special issue: The self-regulation of human performance"
+subtitle: "Performance Enhancement & Health"
 author:
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.vie >}}"
+    affiliation:  "{{< var mbieleke.affil.vie >}}"
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
 doi: 10.1016/j.peh.2020.100173
+psyaxiv: https://doi.org/10.31234/osf.io/g6wr9
 date: '2021'
 date-format: "YYYY"
 categories:
   - journal article
   - editorial
-description: "**{{< fa newspaper >}} Performance Enhancement & Health**"
 abstract: |
   Enduring cognitive or physical performance over extended periods of time is an important ability in daily life, prototypically required in many athletic, educational, and vocational contexts. A critical requirement for maintaining performance at a high level is that individuals continuously self-regulate various affective experiences (e.g., pain or boredom), thoughts (e.g., related to distractions or quitting), and behaviors (e.g., responding to feedback or increasing effort). The ubiquitous importance of self-regulation for performance has been recognized across psychological disciplines. In this special issue, we draw upon diverse insights from these disciplines to better understand the self-regulation of human performance.
 ---
 
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://doi.org/10.31234/osf.io/g6wr9"
-  role = "button">
-{{< ai psyarxiv >}} PsyArXiv
-</a>
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-psyarxiv.qmd >}}
+</div>

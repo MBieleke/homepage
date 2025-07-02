@@ -1,3 +1,19 @@
+# A ----------------------------------------------------------------------------
+
+# B ----------------------------------------------------------------------------
+
+lbarton:
+  name:   Leon Barton
+  orcid:  0000-0002-2966-1836
+  affil:  Department of Psychology, University of Konstanz, Germany
+  email:  leon.barton@uni-konstanz.de
+
+abertrams:
+  name:   Alex Bertrams
+  orcid:  0000-0003-1331-5178
+  affil:  Educational Psychology Lab, Institute of Educational Science, University of Bern, Switzerland
+  email:  alexander.bertrams@unibe.ch
+
 mbieleke:
   name:   Maik Bieleke
   orcid:  0000-0003-2586-1416
@@ -11,74 +27,43 @@ mbieleke:
     kon:  maik.bieleke@uni-konstanz.de
     vie:  maik.bieleke@univie.ac.at
 
-wwolff:
-  name:   Wanja Wolff
-  orcid:  0000-0001-8130-0272
-  affil:
-    kon:  Sport Psychology Lab, Department of of Sport Science, University of Konstanz, Germany
-    ber:  Department of Educational Psychology, University of Bern, Switzerland
-    ham:  Dynamics Human Performance Regulation Lab, Faculty of Psychology & Human Movement Science, University of Hamburg, Germany
-  email:
-    kon:  wanja.wolff@uni-konstanz.de
-    ham:  wanja.wolff@uni-hamburg.de
+ebotes:
+  name:   Elouise Botes
+  orcid:  0000-0003-2586-1416
+  affil:  Department of Developmental and Educational Psychology, Faculty of Psychology, University of Vienna, Austria
+  email:  elouise.botes@univie.ac.at
 
-cmartarelli:
-  name:   Corinna S. Martarelli
-  orcid:  0000-0002-2163-5078
-  affil:  Faculty of Psychology, UniDistance Suisse, Switzerland
-  email:  corinna.martarelli@fernuni.ch
+# C ----------------------------------------------------------------------------
 
-pgollwitzer:
-  name:   Peter M. Gollwitzer
-  orcid:  0000-0003-4872-2929
-  affil:  
-    nwy:  Department of Psychology, New York University, USA
-    kon:  Department of Psychology, University of Konstanz, Germany
-  email:  peter.gollwitzer@uni-konstanz.de
-
-goettingen:
-  name:   Gabriele Oettingen
-  orcid:  0000-0002-6139-1493
-  affil:  
-    nwy:  Department of Psychology, New York University, USA
-    ham:  Department of Psychology, University of Hamburg, Germany
-  email:  peter.gollwitzer@uni-konstanz.de
-
-lkeller:
-  name:   Lucas Keller
-  orcid:  0000-0002-5533-3481
-  affil:  Department of Psychology, University of Konstanz, Germany
-  email:  lucas.keller@uni-konstanz.de
-
-lripper:
-  name:   Leonie Ripper
-  orcid:  0000-0002-6392-8506
-  affil:  Department of Psychology, University of Konstanz, Germany
-  email:  leonie.ripper@uni-konstanz.de
-
-ckriech:
-  name:   Claudio Kriech
+ccremer:
+  name:   Catharina Cremer
   orcid:  
-  affil:  Department of of Sport Science, University of Konstanz, Germany
-  email:  claudio.kriech@uni-konstanz.de
+  affil:  Department of Developmental & Educational Psychology, Faculty of Psychology, University of Vienna, Austria
+  email:  
 
-elegrand:
-  name:   Eve Legrand
-  orcid:  0000-0002-8268-6784
-  affil:  Department of Psychology, University of Lille, France
-  email:  evl.legrand@gmail.com
+# D ----------------------------------------------------------------------------
 
-amignon:
-  name:   Astrid Mignon
-  orcid:  0000-0002-2163-5078
-  affil:  SCALab CNRS UMR 9193, University of Lille, France
-  email:  astrid.mignonu@niv-lille.fr
+ldaniels:
+  name:   Lia Daniels
+  orcid:  0000-0001-9202-2538
+  affil:  Department of Educational Psychology, University of Alberta, Canada
+  email:  lia1@ualberta.ca
+
+ddohmen:
+  name:   David Dohmen
+  orcid:  
+  affil:  Department of Economics, University of Konstanz, Germany
+  email:  david.dohmen@uni-konstanz.de
+
+# E ----------------------------------------------------------------------------
 
 cenglert:
   name:   Chris Englert
   orcid:  0000-0002-4757-8040
   affil:  Department of Sport Psychology, Institute of Sports Sciences, Goethe University Frankfurt, Germany
   email:  englert@sport.uni-frankfurt.de
+
+# F ----------------------------------------------------------------------------
 
 ufischbacher:
   name:   Urs Fischbacher
@@ -88,62 +73,11 @@ ufischbacher:
     kre:  Thurgau Institute of Economics, Switzerland
   email:  peter.gollwitzer@uni-konstanz.de
 
-jschueler:
-  name:   Julia Schüler
-  orcid:  0000-0002-7790-0491
-  affil:  Sport Psychology Lab, Department of of Sport Science, University of Konstanz, Germany
-  email:  julia.schueler@uni-konstanz.de
-
-tgoetz:
-  name:   Thomas Goetz
-  orcid:  0000-0002-8908-2166
-  affil:  Department of Developmental and Educational Psychology, Faculty of Psychology, University of Vienna, Austria
-  email:  thomas.goetz@univie.ac.at
-
-jmschwarzkopf:
-  name:   Jean-Marie Schwarzkopf
-  orcid:  
-  affil:  Gymnasium Eppendorf, Hamburg, Germany
-  email:  jean.schwarzkopf@gymepp.de
-
-lhaag:
-  name:   Ludwig Haag
-  orcid:  
-  affil:  Department of Educational Sciences, Faculty of Humanities and Social Sciences, University of Bayreuth, Bayreuth, Germany
-  email:  ludwig.haag@uni-bayreuth.de
-
-jstaehler:
-  name:   Johanna Stähler
-  orcid:  0009-0000-4146-3966
-  affil:  Sport Psychology Lab, Department of of Sport Science, University of Konstanz, Germany
-  email:  johanna.staehler@uni-konstanz.de
-
-mkrannich:
-  name:   Maike Krannich
-  orcid:  0000-0001-9239-3283
-  affil:  
-    zur:
-      edu:  Institute of Education, University of Zurich, Switzerland
-      psy:  Department of Psychology, University of Zurich, Switzerland
-  email:  maike.krannich@phil.uzh.ch
-
-alroos:
-  name:   Anna-Lena Roos
-  orcid:  0000-0002-7853-0330
-  affil:  Institute for Research and Development of Collaborative Processes, School of Applied Psychology, University of Applied Sciences and Arts Northwestern Switzerland, Switzerland
-  email:  annalena.roos@fhnw.ch
-
-tyanagida:
-  name:   Takuya Yanagida
-  orcid:  0000-0001-9052-4841
-  affil:  Department of Developmental and Educational Psychology, Faculty of Psychology, University of Vienna, Austria
-  email:  takuya.yanagida@univie.ac.at
-
-ebotes:
-  name:   Elouise Botes
-  orcid:  0000-0003-2586-1416
-  affil:  Department of Developmental and Educational Psychology, Faculty of Psychology, University of Vienna, Austria
-  email:  elouise.botes@univie.ac.at
+ufischer:
+  name:   Ursula Fischer
+  orcid:  0000-0001-6907-6255
+  affil:  Development and Intervention in Early Childhood, Department of Sport Science, University of Konstanz, Germany
+  email:  ursula.fischer@uni-konstanz.de
 
 afrenzel:
   name:   Anne C. Frenzel
@@ -151,15 +85,14 @@ afrenzel:
   affil:  Department of Psychology, Ludwig-Maximilians Universität München, Germany
   email:  frenzel@psy.lmu.de
 
-rpekrun:
-  name:   Reinhard Pekrun
-  orcid:  0000-0003-4489-3827
-  affil:  
-    mun:  Department of Psychology, Ludwig-Maximilians Universität München, Germany
-    ess:  Department of Psychology, University of Essex, UK
-    syd:  Institute for Positive Psychology and Education, Australian Catholic University, Australia
-  email:  pekrun@psy.lmu.de
-  
+# G ----------------------------------------------------------------------------
+
+tgoetz:
+  name:   Thomas Goetz
+  orcid:  0000-0002-8908-2166
+  affil:  Department of Developmental and Educational Psychology, Faculty of Psychology, University of Vienna, Austria
+  email:  thomas.goetz@univie.ac.at
+
 kgogol:
   name:   Katarzyna Gogol
   orcid:  
@@ -168,33 +101,13 @@ kgogol:
     kre:  Empirical Educational Research, Thurgau University of Teacher Education, Switzerland
   email:  gatarzyna.gogol@uni-konstanz.de
 
-ldaniels:
-  name:   Lia Daniels
-  orcid:  0000-0001-9202-2538
-  affil:  Department of Educational Psychology, University of Alberta, Canada
-  email:  lia1@ualberta.ca
-
-jtartwijk:
-  name:   Jan van Tartwijk
-  orcid:  0000-0001-6804-4163
+pgollwitzer:
+  name:   Peter M. Gollwitzer
+  orcid:  0000-0003-4872-2929
   affil:  
-    kon:  Empirical Educational Research, University of Konstanz, Germany
-    utr:  Department of Education, Utrecht University, The Netherlands
-  email:  j.vantartwijk@uu.nl
-
-tmainhard:
-  name:   Tim Mainhard
-  orcid:  0000-0003-2151-1398
-  affil:  
-    kon:  Empirical Educational Research, University of Konstanz, Germany
-    utr:  Department of Education, Utrecht University, The Netherlands
-  email:  m.t.mainhard@uu.nl
-
-alipnevich:
-  name:   Anastasiya A. Lipnevich
-  orcid:  0000-0003-0190-8689
-  affil:  Queens College and the Graduate Center, The City University of New York, New York, USA
-  email:  a.lipnevich@gmail.com
+    nwy:  Department of Psychology, New York University, USA
+    kon:  Department of Psychology, University of Konstanz, Germany
+  email:  peter.gollwitzer@uni-konstanz.de
 
 egraf:
   name:   Elisabeth Graf
@@ -202,23 +115,31 @@ egraf:
   affil:  Department of Developmental and Educational Psychology, Faculty of Psychology, University of Vienna, Austria
   email:  elisabeth.graf@univie.ac.at
 
-dmurano:
-  name:   Dana Murano
-  orcid:  0000-0001-5008-7974
-  affil:  Behavior and Skills Measurement, ACT Inc., USA
-  email:  dana.murano@act.org
-
-ufischer:
-  name:   Ursula Fischer
-  orcid:  0000-0001-6907-6255
-  affil:  Development and Intervention in Early Childhood, Department of Sport Science, University of Konstanz, Germany
-  email:  ursula.fischer@uni-konstanz.de
-
 mgruber:
   name:   Markus Gruber
   orcid:  0000-0002-0233-3912
   affil:  Training and Movement Science, Department of Sport Science, University of Konstanz, Germany
   email:  markus.gruber@uni-konstanz.de
+
+# H ----------------------------------------------------------------------------
+
+lhaag:
+  name:   Ludwig Haag
+  orcid:  
+  affil:  Department of Educational Sciences, Faculty of Humanities and Social Sciences, University of Bayreuth, Bayreuth, Germany
+  email:  ludwig.haag@uni-bayreuth.de
+
+# I ----------------------------------------------------------------------------
+
+# J ----------------------------------------------------------------------------
+
+# K ----------------------------------------------------------------------------
+
+fkaisinger:
+  name:   Fanni Kaisinger
+  orcid:  
+  affil:  Department of Developmental & Educational Psychology, Faculty of Psychology, University of Vienna, Austria
+  email:  
 
 mkanning:
   name:   Martina Kanning
@@ -232,11 +153,97 @@ dkeim:
   affil:  Data Analysis and Visualization, Department of Computer and Information Science, University of Konstanz, Germany
   email:  daniel.keim@uni-konstanz.de
 
+lkeller:
+  name:   Lucas Keller
+  orcid:  0000-0002-5533-3481
+  affil:  Department of Psychology, University of Konstanz, Germany
+  email:  lucas.keller@uni-konstanz.de
+
+mkrannich:
+  name:   Maike Krannich
+  orcid:  0000-0001-9239-3283
+  affil:  
+    zur:
+      edu:  Institute of Education, University of Zurich, Switzerland
+      psy:  Department of Psychology, University of Zurich, Switzerland
+  email:  maike.krannich@phil.uzh.ch
+
+ckriech:
+  name:   Claudio Kriech
+  orcid:  
+  affil:  Department of of Sport Science, University of Konstanz, Germany
+  email:  claudio.kriech@uni-konstanz.de
+
+# L ----------------------------------------------------------------------------
+
+elegrand:
+  name:   Eve Legrand
+  orcid:  0000-0002-8268-6784
+  affil:  Department of Psychology, University of Lille, France
+  email:  evl.legrand@gmail.com
+
+alipnevich:
+  name:   Anastasiya A. Lipnevich
+  orcid:  0000-0003-0190-8689
+  affil:  Queens College and the Graduate Center, The City University of New York, New York, USA
+  email:  a.lipnevich@gmail.com
+
+# M ----------------------------------------------------------------------------
+
+tmainhard:
+  name:   Tim Mainhard
+  orcid:  0000-0003-2151-1398
+  affil:  
+    kon:  Empirical Educational Research, University of Konstanz, Germany
+    utr:  Department of Education, Utrecht University, The Netherlands
+  email:  m.t.mainhard@uu.nl
+
+cmartarelli:
+  name:   Corinna S. Martarelli
+  orcid:  0000-0002-2163-5078
+  affil:  Faculty of Psychology, UniDistance Suisse, Switzerland
+  email:  corinna.martarelli@fernuni.ch
+
 dmier:
   name:   Daniela Mier
   orcid:  0000-0003-2518-7492
   affil:  Clinical Psychology and Psychotherapy, Department of Psychology, University of Konstanz, Germany
   email:  daniela.mier@uni-konstanz.de
+
+amignon:
+  name:   Astrid Mignon
+  orcid:  0000-0002-2163-5078
+  affil:  SCALab CNRS UMR 9193, University of Lille, France
+  email:  astrid.mignonu@niv-lille.fr
+
+dmurano:
+  name:   Dana Murano
+  orcid:  0000-0001-5008-7974
+  affil:  Behavior and Skills Measurement, ACT Inc., USA
+  email:  dana.murano@act.org
+
+# N ----------------------------------------------------------------------------
+
+# O ----------------------------------------------------------------------------
+
+goettingen:
+  name:   Gabriele Oettingen
+  orcid:  0000-0002-6139-1493
+  affil:  
+    nwy:  Department of Psychology, New York University, USA
+    ham:  Department of Psychology, University of Hamburg, Germany
+  email:  peter.gollwitzer@uni-konstanz.de
+
+# P ----------------------------------------------------------------------------
+
+rpekrun:
+  name:   Reinhard Pekrun
+  orcid:  0000-0003-4489-3827
+  affil:  
+    mun:  Department of Psychology, Ludwig-Maximilians Universität München, Germany
+    ess:  Department of Psychology, University of Essex, UK
+    syd:  Institute for Positive Psychology and Education, Australian Catholic University, Australia
+  email:  pekrun@psy.lmu.de
 
 jpruessner:
   name:   Jens Pruessner
@@ -244,29 +251,110 @@ jpruessner:
   affil:  Neuropsychology, Department of Psychology, University of Konstanz, Germany
   email:  jens.pruessner@uni-konstanz.de
 
-ddohmen:
-  name:   David Dohmen
-  orcid:  
-  affil:  Department of Economics, University of Konstanz, Germany
-  email:  david.dohmen@uni-konstanz.de
+# Q ----------------------------------------------------------------------------
 
-lbarton:
-  name:   Leon Barton
-  orcid:  0000-0002-2966-1836
+# R ----------------------------------------------------------------------------
+
+krewitz:
+  name:   Katja Rewitz
+  orcid:  0009-0008-8353-6340
+  affil:  Dynamics Human Performance Regulation Lab, Faculty of Psychology & Human Movement Science, University of Hamburg, Germany
+  email:  katja.rewitz@uni-hamburg.de
+
+lripper:
+  name:   Leonie Ripper
+  orcid:  0000-0002-6392-8506
   affil:  Department of Psychology, University of Konstanz, Germany
-  email:  leon.barton@uni-konstanz.de
+  email:  leonie.ripper@uni-konstanz.de
 
-ccremer:
-  name:   Catharina Cremer
-  orcid:  
-  affil:  Department of Developmental & Educational Psychology, Faculty of Psychology, University of Vienna, Austria
-  email:  
+alroos:
+  name:   Anna-Lena Roos
+  orcid:  0000-0002-7853-0330
+  affil:  Institute for Research and Development of Collaborative Processes, School of Applied Psychology, University of Applied Sciences and Arts Northwestern Switzerland, Switzerland
+  email:  annalena.roos@fhnw.ch
 
-fkaisinger:
-  name:   Fanni Kaisinger
+# S ----------------------------------------------------------------------------
+
+jschueler:
+  name:   Julia Schüler
+  orcid:  0000-0002-7790-0491
+  affil:  Sport Psychology Lab, Department of of Sport Science, University of Konstanz, Germany
+  email:  julia.schueler@uni-konstanz.de
+
+jmschwarzkopf:
+  name:   Jean-Marie Schwarzkopf
   orcid:  
-  affil:  Department of Developmental & Educational Psychology, Faculty of Psychology, University of Vienna, Austria
-  email:  
+  affil:  Gymnasium Eppendorf, Hamburg, Germany
+  email:  jean.schwarzkopf@gymepp.de
+
+vsieber:
+  name:   Vanda Sieber
+  orcid:  0000-0002-3148-0954
+  affil:  Institute of Education, University of Zurich, Switzerland
+  email:  vanda.sieber@ife.uzh.ch
+
+jstaehler:
+  name:   Johanna Stähler
+  orcid:  0009-0000-4146-3966
+  affil:  Sport Psychology Lab, Department of of Sport Science, University of Konstanz, Germany
+  email:  johanna.staehler@uni-konstanz.de
+
+# T ----------------------------------------------------------------------------
+
+jtartwijk:
+  name:   Jan van Tartwijk
+  orcid:  0000-0001-6804-4163
+  affil:  
+    kon:  Empirical Educational Research, University of Konstanz, Germany
+    utr:  Department of Education, Utrecht University, The Netherlands
+  email:  j.vantartwijk@uu.nl
+
+# U ----------------------------------------------------------------------------
+
+# V ----------------------------------------------------------------------------
+
+# W ----------------------------------------------------------------------------
+
+wwolff:
+  name:   Wanja Wolff
+  orcid:  0000-0001-8130-0272
+  affil:
+    kon:  Sport Psychology Lab, Department of of Sport Science, University of Konstanz, Germany
+    ber:  Department of Educational Psychology, University of Bern, Switzerland
+    ham:  Dynamics Human Performance Regulation Lab, Faculty of Psychology & Human Movement Science, University of Hamburg, Germany
+  email:
+    kon:  wanja.wolff@uni-konstanz.de
+    ham:  wanja.wolff@uni-hamburg.de
+
+# X ----------------------------------------------------------------------------
+
+# Y ----------------------------------------------------------------------------
+
+tyanagida:
+  name:   Takuya Yanagida
+  orcid:  0000-0001-9052-4841
+  affil:  Department of Developmental and Educational Psychology, Faculty of Psychology, University of Vienna, Austria
+  email:  takuya.yanagida@univie.ac.at
+
+# Z ----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

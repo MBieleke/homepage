@@ -18,7 +18,7 @@ author:
     orcid:        "{{< var jschueler.orcid >}}"
     email:        "{{< var jschueler.email >}}"
     affiliation:  "{{< var jschueler.affil >}}"
-doi: 10.31234/osf.io/pqw26
+doi: 10.1525/collabra.140736
 psyarxiv: 10.31234/osf.io/pqw26
 osf: https://osf.io/zk9qr/
 date: '2025'

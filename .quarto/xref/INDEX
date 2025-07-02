@@ -413,5 +413,14 @@
   },
   "assets/includes/button-preregistration.qmd": {
     "button-preregistration.html": "bb6f52b4"
+  },
+  "publications/bieleke-staehler-wolff-2023-collabra-psychol/index.qmd": {
+    "index.html": "e3c7d5ea"
+  },
+  "publications/wolff-staehler-schueler-2024-peer-community-j/index.qmd": {
+    "index.html": "e92b9bf2"
+  },
+  "publications/bieleke-staehler-wolff-2025-collabra-psychol/index.qmd": {
+    "index.html": "e7c65bcf"
   }
 }

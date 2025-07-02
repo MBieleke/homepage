@@ -29,7 +29,7 @@ website:
         
   page-footer:  
     left: >-
-     &#169; 2025 Dr. Maik Bieleke &#8729; Made with [Quarto](https://quarto.org)
+     &#169; 2025 Dr. Maik Bieleke
      
     center: |
       <a class="link-dark me-1" href="https://bsky.app/profile/mbieleke.bsky.social" title="Twitter" target="_blank" rel="noopener">{{< iconify simple-icons bluesky >}}</a>
@@ -39,7 +39,7 @@ website:
       <a class="link-dark me-1" href="https://scholar.google.de/citations?user=EbGUz_gAAAAJ&hl=en" title="Google Scholar" target="_blank"rel="noopener">{{< ai google-scholar >}}</a>
       <a class="link-dark me-1" href="https://www.linkedin.com/in/maik-bieleke/" title="Linkedin" target="_blank" rel="noopener">{{< fa brands linkedin >}}</a>
     right: |
-      Change [cookie preferences]{#open_preferences_center}
+      Made with [Quarto](https://quarto.org)
 format:
   html:
     theme: sandstone
