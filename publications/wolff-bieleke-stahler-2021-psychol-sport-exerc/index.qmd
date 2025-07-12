@@ -1,39 +1,51 @@
 ---
 title: "Too bored for sports? Adaptive and less-adaptive latent personality profiles for exercise behavior"
+subtitle: "Psychology of Sport and Exercise"
 author:
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Johanna Stähler
-    orcid: 0009-0000-4146-3966
-  - name: Julia Schüler
-    orcid: 0000-0002-7790-0491
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var jstaehler.name >}}"
+    orcid:        "{{< var jstaehler.orcid >}}"
+    email:        "{{< var jstaehler.email >}}"
+    affiliation:  "{{< var jstaehler.affil >}}"
+  - name:         "{{< var jschueler.name >}}"
+    orcid:        "{{< var jschueler.orcid >}}"
+    email:        "{{< var jschueler.email >}}"
+    affiliation:  "{{< var jschueler.affil >}}"
 doi: 10.1016/j.psychsport.2020.101851
+osf: https://osf.io/kuzgc/
+psyarxiv: https://doi.org/10.31236/osf.io/tjw89
 date: '2021'
 date-format: "YYYY"
 categories:
   - journal article
   - original research
   - scale development
-description: "**{{< fa newspaper >}} Psychology of Sport and Exercise**"
 abstract: |
-  Physical exercise is an effective tool for improving public health, but the general population exercises too little. Drawing on recent theorizing on the combined role of boredom and self-control in guiding goal-directed behavior, we test the hypothesis that individual differences in boredom and self-control differentiate high from low exercisers. The role of boredom as a non-adaptive disposition is of particular interest, because research on boredom in sports is scarce. Here, we investigate the role of such individual differences in self-reported weekly exercise behavior (in minutes) in a sample of *N* = 507 participants (*n* = 200 female, *M*~age~ = 36.43 (±9.54)). We used the robust variant of Mahalanobis distance to detect and remove n = 51 multivariate outliers and then performed latent profile analysis to assess if boredom (boredom proneness; exercise-related boredom) and self-control (trait self-control; if-then planning) combine into identifiable latent profiles. In line with theoretical considerations, the Bayesian Information Criterion favored a solution with two latent profiles. One profile was characterized by higher-than-average exercise-related boredom and boredom proneness and lower-than-average self-control and if-then planning values. This pattern was reversed for the second profile. A one-sided Bayesian two-sample t-test supported the hypothesis that the first profile is associated with less exercise behavior than the second profile, BF = 16.93. Our results foster the notion of self-control and if-then planning as adaptive dispositions. More importantly, they point to an important role of boredom in the exercise setting: exercise-related boredom and getting easily bored in general are associated with less exercise activity. This is in line with recent theorizing on boredoms' and self-controls’ function in guiding goal-directed behavior.
+  Physical exercise is an effective tool for improving public health, but the general population exercises too little. Drawing on recent theorizing on the combined role of boredom and self-control in guiding goal-directed behavior, we test the hypothesis that individual differences in boredom and self-control differentiate high from low exercisers. The role of boredom as a non-adaptive disposition is of particular interest, because research on boredom in sports is scarce. Here, we investigate the role of such individual differences in self-reported weekly exercise behavior (in minutes) in a sample of *N* = 507 participants (*n* = 200 female, *M*~age~ = 36.43 (±9.54)). We used the robust variant of Mahalanobis distance to detect and remove *n* = 51 multivariate outliers and then performed latent profile analysis to assess if boredom (boredom proneness; exercise-related boredom) and self-control (trait self-control; if-then planning) combine into identifiable latent profiles. In line with theoretical considerations, the Bayesian Information Criterion favored a solution with two latent profiles. One profile was characterized by higher-than-average exercise-related boredom and boredom proneness and lower-than-average self-control and if-then planning values. This pattern was reversed for the second profile. A one-sided Bayesian two-sample t-test supported the hypothesis that the first profile is associated with less exercise behavior than the second profile, BF = 16.93. Our results foster the notion of self-control and if-then planning as adaptive dispositions. More importantly, they point to an important role of boredom in the exercise setting: exercise-related boredom and getting easily bored in general are associated with less exercise activity. This is in line with recent theorizing on boredoms' and self-controls’ function in guiding goal-directed behavior.
+keywords:
+  - self-control
+  - boredom
+  - if-then planning
+  - latent profile analysis
+  - bayesian statistics
+  - exercise
+  - health
 ---
 
-<!-- OSF -->
-<a 
-  target = "_blank" 
-  class = "btn btn-dark rounded-pill" 
-  href = "https://osf.io/kuzgc/" 
-  role = "button">
-{{< ai osf >}} OSF
-</a>
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://doi.org/10.31236/osf.io/tjw89"
-  role = "button">
-{{< ai arxiv >}} SportRxiv
-</a>
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-psyarxiv.qmd >}}
+  {{< include /assets/includes/button-osf.qmd >}}
+</div>

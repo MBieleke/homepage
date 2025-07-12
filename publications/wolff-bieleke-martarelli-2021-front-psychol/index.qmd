@@ -1,21 +1,46 @@
 ---
 title: "A primer on the role of boredom in self-controlled sports and exercise behavior"
+subtitle: "Frontiers in Psychology"
 author:
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Corinna S. Martarelli
-    orcid: 0000-0001-9160-793X
-  - name: James Danckert
-    orcid: 0000-0001-8093-066X
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var cmartarelli.name >}}"
+    orcid:        "{{< var cmartarelli.orcid >}}"
+    email:        "{{< var cmartarelli.email >}}"
+    affiliation:  "{{< var cmartarelli.affil >}}"
+  - name:         "{{< var jdanckert.name >}}"
+    orcid:        "{{< var jdanckert.orcid >}}"
+    email:        "{{< var jdanckert.email >}}"
+    affiliation:  "{{< var jdanckert.affil >}}"
 doi: 10.3389/fpsyg.2021.637839
 date: '2021'
 date-format: "YYYY"
 categories:
   - journal article
-  - literature review
-description: "**{{< fa newspaper >}} Frontiers in Psychology**"
+  - theory development
 abstract: |
   Self-control is critical for successful participation and performance in sports and therefore has attracted considerable research interest. Yet, knowledge about self-control remains surprisingly incomplete and inconsistent. Here, we draw attention to boredom as an experience that likely plays an important role in sports and exercise (e.g., exercise can be perceived as boring but can also be used to alleviate boredom). Specifically, we argue that studying boredom in the context of sports and exercise will also advance our understanding of self-control as a reward-based choice. We demonstrate this by discussing evidence for links between self-control and boredom and by highlighting the role boredom plays for guiding goal-directed behavior. As such, boredom is likely to interact with self-control in affecting sports performance and exercise participation. We close by highlighting several promising routes for integrating self-control and boredom research in the context of sports performance and exercise behavior.
+keywords:
+  - boredom
+  - self-control
+  - effort
+  - reward-based choice
+  - exercise
+  - sports
+  - decision making
 ---
+
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+</div>

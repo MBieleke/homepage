@@ -1,43 +1,57 @@
 ---
 title: "A single item measure of self-control - Validation and location in a nomological network of self-control, boredom, and if-then planning"
+subtitle: "Social Psychological Bulletin"
 author:
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Chris Englert
-    orcid: 0000-0002-4757-8040
-  - name: Alex Bertrams
-    orcid: 0000-0003-1331-5178
-  - name: Julia Schüler
-    orcid: 0000-0002-7790-0491
-  - name: Corinna S. Martarelli
-    orcid: 0000-0001-9160-793X
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var cenglert.name >}}"
+    orcid:        "{{< var cenglert.orcid >}}"
+    email:        "{{< var cenglert.email >}}"
+    affiliation:  "{{< var cenglert.affil >}}"
+  - name:         "{{< var abertrams.name >}}"
+    orcid:        "{{< var abertrams.orcid >}}"
+    email:        "{{< var abertrams.email >}}"
+    affiliation:  "{{< var abertrams.affil >}}"
+  - name:         "{{< var jschueler.name >}}"
+    orcid:        "{{< var jschueler.orcid >}}"
+    email:        "{{< var jschueler.email >}}"
+    affiliation:  "{{< var jschueler.affil >}}"
+  - name:         "{{< var cmartarelli.name >}}"
+    orcid:        "{{< var cmartarelli.orcid >}}"
+    email:        "{{< var cmartarelli.email >}}"
+    affiliation:  "{{< var cmartarelli.affil >}}"
 doi: 10.32872/spb.7453
+osf: https://osf.io/qg6fz/
+psyarxiv: https://doi.org/10.31236/osf.io/exv2g
 date: '2022'
 date-format: "YYYY"
 categories:
   - journal article
   - original research
   - scale development
-description: "**{{< fa newspaper >}} Social Psychological Bulletin**"
 abstract: |
   Self-control is a highly adaptive human capacity and research on self-control is booming. To further facilitate self-control research, especially in conditions where time-constraints might render the use of multi-item measures of self-control problematic, a validated time-efficient single item measure would be an asset. However, such a measure has not yet been developed and tested. Here, we address this gap by reporting the psychometric properties of a single item measure of self-control and by assessing its localization within a larger theorized psychometric network consisting of self-control, boredom and if-then planning. In a high-powered (*N* = 1553) study with paid online workers from the US (gender: 47.3% female, 51.7% male, 1% other; age: 40.36 ± 12.65 years), we found evidence for the convergent validity (Brief Self-Control Scale), divergent validity (Short Boredom Proneness Scale and If-Then Planning Scale), and criterion validity (objective and subjective socio-economic status) of the single item measure of self-control ("How much self-control do you have?"). Network psychometrics further revealed that the single item was part of the self-control subnetwork and clearly distinguishable from boredom and if-then planning, which together with self-control form a larger psychometric network of psychological dispositions that are relevant for orienting goal directed behavior. Thus, the present findings indicate that self-control can be adequately captured with the single item measure presented here, thereby extending the methodological toolbox of self-control researchers by a highly-time efficient measure.
+keywords:
+  - self-control
+  - boredom
+  - if-then planning
+  - psychometric networks
+  - validation
 ---
 
-<!-- OSF -->
-<a 
-  target = "_blank" 
-  class = "btn btn-dark rounded-pill" 
-  href = "https://osf.io/qg6fz/" 
-  role = "button">
-{{< ai osf >}} OSF
-</a>
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://psyarxiv.com/exv2g/"
-  role = "button">
-{{< ai psyarxiv >}} PsyArXiv
-</a>
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-psyarxiv.qmd >}}
+  {{< include /assets/includes/button-osf.qmd >}}
+</div>

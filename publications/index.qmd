@@ -10,7 +10,7 @@ listing:
   categories: true
   sort-ui: true
   filter-ui: true
-  fields: [title, author, categories, date, description]
+  fields: [title, subtitle, author, categories, date]
   image-align: left
   date-format: "YYYY"
   # image-height: 10em

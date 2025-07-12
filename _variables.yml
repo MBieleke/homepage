@@ -50,8 +50,9 @@ lbrinkhof:
   orcid:  0000-0002-6763-6957
   affil:  
     ams:  
-      psy:  Department of Psychology, University of Amsterdam, The Netherlands
-      abc: Amsterdam Brain and Cognition, University of Amsterdam, The Netherlands
+      psy:  Department of Psychology, Faculty of Behavioural and Social Sciences, University of Amsterdam, The Netherlands
+      abc:  Amsterdam Brain and Cognition, University of Amsterdam, The Netherlands
+      umh:  Centre for Urban Mental Health, University of Amsterdam, Netherlands
   email:  l.p.brinkhof@uva.nl
 
 # C ----------------------------------------------------------------------------
@@ -190,7 +191,7 @@ lgunschera:
   name:   Lukas J. Gunschera
   orcid:  0000-0002-8241-0833
   affil:  
-    ams:  Department of Psychology, University of Amsterdam, The Netherlands
+    ams:  Department of Psychology, Faculty of Behavioural and Social Sciences, University of Amsterdam, The Netherlands
   email:  l.j.gunschera@uva.nl
 
 # H ----------------------------------------------------------------------------
@@ -200,6 +201,15 @@ lhaag:
   orcid:  
   affil:  Department of Educational Sciences, Faculty of Humanities and Social Sciences, University of Bayreuth, Germany
   email:  ludwig.haag@uni-bayreuth.de
+
+ahirsch:
+  name:   Anna Hirsch
+  orcid:  0000-0002-5511-9573
+  affil:  
+    kon:
+      psy:  Department of Psychology, University of Konstanz, Germany
+      spo:  Sport Psychology Lab, Department of Sport Science, University of Konstanz, Germany
+  email:  anna.hirsch@uni-konstanz.de
 
 ahorstmann:
   name:   Annette Horstmann
@@ -263,6 +273,16 @@ ckriech:
   orcid:  
   affil:  Department of of Sport Science, University of Konstanz, Germany
   email:  claudio.kriech@uni-konstanz.de
+
+hkrugers:
+  name:   Harm J. Krugers
+  orcid:  
+  affil:  
+    ams:  
+      abc:  Amsterdam Brain and Cognition, University of Amsterdam, The Netherlands
+      umh:  Centre for Urban Mental Health, University of Amsterdam, Netherlands
+      swa:  Swammerdam Institute for Life Sciences, University of Amsterdam, The Netherlands
+  email:  j.m.j.murre@uva.nl
 
 # L ----------------------------------------------------------------------------
 
@@ -330,8 +350,9 @@ jmurre:
   orcid:  0000-0003-4447-9482
   affil:  
     ams:  
-      psy:  Department of Psychology, University of Amsterdam, The Netherlands
+      psy:  Department of Psychology, Faculty of Behavioural and Social Sciences, University of Amsterdam, The Netherlands
       abc:  Amsterdam Brain and Cognition, University of Amsterdam, The Netherlands
+      umh:  Centre for Urban Mental Health, University of Amsterdam, Netherlands
   email:  j.m.j.murre@uva.nl
 
 # N ----------------------------------------------------------------------------
@@ -384,6 +405,16 @@ krewitz:
   orcid:  0009-0008-8353-6340
   affil:  Dynamics Human Performance Regulation Lab, Faculty of Psychology & Human Movement Science, University of Hamburg, Germany
   email:  katja.rewitz@uni-hamburg.de
+
+rridderinkhof:
+  name:   K. Richard Ridderinkhof
+  orcid:  0000-0003-0041-6770
+  affil:  
+    ams:  
+      psy:  Department of Psychology, Faculty of Behavioural and Social Sciences, University of Amsterdam, The Netherlands
+      abc:  Amsterdam Brain and Cognition, University of Amsterdam, The Netherlands
+      umh:  Centre for Urban Mental Health, University of Amsterdam, Netherlands
+  email:  k.r.ridderinkhof@uva.nl
 
 lripper:
   name:   Leonie Ripper
@@ -445,11 +476,42 @@ jtartwijk:
     utr:  Department of Education, Utrecht University, The Netherlands
   email:  j.vantartwijk@uu.nl
 
+lthuermer:
+  name:   J. Lukas Thürmer
+  orcid:  0000-0002-5315-2847
+  affil:  
+    kon:  
+      psy:  Department of Psychology, University of Konstanz, Germany
+      pol:  Organisational Studies, Department of Politics and Public Administration, University of Konstanz, Germany
+    sal:  
+      psy:  Department of Psychology, Paris Lodron University Salzburg, Salzburg, Austria
+    goe:
+      psy:  Economic and Social Psychology, Department of Psychology, University of Göttingen, Göttingen, Germany
+  email:
+    kon:  lukas.thuermer@uni-konstanz.de
+    sal:  lukas.thuermer@sbg.ac.at
+
 # U ----------------------------------------------------------------------------
 
 # V ----------------------------------------------------------------------------
 
 # W ----------------------------------------------------------------------------
+
+fwieber:
+  name:   Frank Wieber
+  orcid:  0000-0002-1285-1457
+  affil:  
+    kon:  Social Psychology and Motivation, Department of Psychology, University of Konstanz, Germany
+    win:  ZHAW School of Health Professions, Zurich University of Applied Sciences, Winterthur, Switzerland
+  email:  
+    kon:  frank.wieber@uni-konstanz.de
+    win:  frank.wieber@zhaw.ch
+
+cwienbruch:
+  name:   Christian Wienbruch
+  orcid:  0000-0003-4209-700X
+  affil:  Department of Psychology, University of Konstanz, Germany
+  email:  christian.wienbruch@uni-konstanz.de
 
 jwientges:
   name:   Jonathan Wientges
@@ -468,8 +530,9 @@ swit:
   orcid:  0000-0003-1438-7085
   affil:  
     ams:  
-      psy:  Department of Psychology, University of Amsterdam, The Netherlands
-      abc: Amsterdam Brain and Cognition, University of Amsterdam, The Netherlands
+      psy:  Department of Psychology, Faculty of Behavioural and Social Sciences, University of Amsterdam, The Netherlands
+      abc:  Amsterdam Brain and Cognition, University of Amsterdam, The Netherlands
+      umh:  Centre for Urban Mental Health, University of Amsterdam, Netherlands
   email:  s.dewit@uva.nl
 
 wwolff:

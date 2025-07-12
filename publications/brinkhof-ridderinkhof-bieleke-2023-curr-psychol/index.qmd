@@ -1,34 +1,55 @@
 ---
 title: "Are older individuals predisposed to habitual control more resilient?"
+subtitle: "Current Psychology"
 author:
-  - name: Lotte P. Brinkhof
-    orcid: 0000-0002-6763-6957
-  - name: K. Richard Ridderinkhof
-    orcid: 0000-0003-0041-6770
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Jaap M. J. Murre
-    orcid: 0000-0003-4447-9482
-  - name: Harm J. Krugers
-  - name: Sanne de Wit
-    orcid: 0000-0003-1438-7085
+  - name:         "{{< var lbrinkhof.name >}}"
+    orcid:        "{{< var lbrinkhof.orcid >}}"
+    email:        "{{< var lbrinkhof.email >}}"
+    affiliation:  "{{< var lbrinkhof.affil.ams.psy >}}<br>{{< var lbrinkhof.affil.ams.umh >}}<br>{{< var lbrinkhof.affil.ams.abc >}}"
+  - name:         "{{< var rridderinkhof.name >}}"
+    orcid:        "{{< var rridderinkhof.orcid >}}"
+    email:        "{{< var rridderinkhof.email >}}"
+    affiliation:  "{{< var rridderinkhof.affil.ams.psy >}}<br>{{< var rridderinkhof.affil.ams.umh >}}<br>{{< var rridderinkhof.affil.ams.abc >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var jmurre.name >}}"
+    orcid:        "{{< var jmurre.orcid >}}"
+    email:        "{{< var jmurre.email >}}"
+    affiliation:  "{{< var jmurre.affil.ams.psy >}}<br>{{< var jmurre.affil.ams.umh >}}<br>{{< var jmurre.affil.ams.abc >}}"
+  - name:         "{{< var hkrugers.name >}}"
+    orcid:        "{{< var hkrugers.orcid >}}"
+    email:        "{{< var hkrugers.email >}}"
+    affiliation:  "{{< var hkrugers.affil.ams.umh >}}<br>{{< var hkrugers.affil.ams.abc >}}<br>{{< var hkrugers.affil.ams.swa >}}"
+  - name:         "{{< var swit.name >}}"
+    orcid:        "{{< var swit.orcid >}}"
+    email:        "{{< var swit.email >}}"
+    affiliation:  "{{< var swit.affil.ams.psy >}}<br>{{< var swit.affil.ams.umh >}}<br>{{< var swit.affil.ams.abc >}}"
 doi: 10.1007/s12144-023-04982-7
+preregistration: https://osf.io/8wmp6
 date: '2023'
 date-format: "YYYY"
 categories:
   - journal article
   - original research
-description: "**{{< fa newspaper >}} Current Psychology**"
 abstract: |
   Based on evidence for age-related impairments in flexible, goal-directed control, the formation of habits has been recognized as an opportune route for behavioural adjustment that promotes resilience among older adults. The present study set out to examine how individual differences in quality of life (QoL) and mental well-being (MWB) in older adults (*N* = 1116, 55 – 92 years old) relate to the inclination to engage in strategic planning and lifestyle regularity. Importantly, the beneficial effects of these two habit predisposing factors on MWB and QoL were found to be mediated by conscientiousness, a personality trait characterized by a tendency to be goal-oriented, organized, responsible and disciplined, and to plan for the future. These results emphasize the benefits of conscientiousness for resilience in later life and suggest that both habit-predisposing factors may offer promising and concrete target points to elicit more conscientious behaviour, and thereby support QoL and MWB. Longitudinal and experimental research may help to establish the flow of causality in the intriguing dynamics between these variables.
+keywords:
+  - quality of life
+  - mental well-being
+  - lifestyle regularity
+  - conscientiousness
+  - if-then planning
+  - prospective memory
 ---
 
-<!-- Preregistration -->
-<a 
-  target = "_blank" 
-  class = "btn btn-dark rounded-pill" 
-  href = "https://osf.io/8wmp6" 
-  role = "button">
-{{< ai preregistered >}} Preregistration
-</a>
+---
 
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-preregistration.qmd >}}
+</div>
