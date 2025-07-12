@@ -1,0 +1,30 @@
+---
+title: "Testing a novel task paradigm for inducing cognitive and physical effort"
+subtitle: "OSF Registries"
+author:
+  - name:         "{{< var jwientges.name >}}"
+    orcid:        "{{< var jwientges.orcid >}}"
+    email:        "{{< var jwientges.email.kon >}}"
+    affiliation:  "{{< var jwientges.affil.kon.spo >}}"
+  - name:         "{{< var jschueler.name >}}"
+    orcid:        "{{< var jschueler.orcid >}}"
+    email:        "{{< var jschueler.email >}}"
+    affiliation:  "{{< var jschueler.affil >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+preregistration: https://osf.io/dmfq4
+date: '2024'
+date-format: "YYYY"
+categories:
+  - preregistration
+abstract: |
+  Performing motor tasks requires a combination of physical and cognitive effort. In this study, we test a novel pegboard task paradigm designed to induce varying levels of physical and cognitive demand. The task paradigm includes two types of blocks: one primarily physically demanding and the other primarily cognitively demanding. The specific demand levels are changed independently in each block. We aim to examine how the experience of physical and cognitive effort varies across different blocks and demand levels. We also investigate cognitive, affective, and motivational experiences associated with these tasks. Furthermore, we examine the relationship between these experiences with individual differences in valuing cognitive and physical effort. Lastly, we focus on how individual differences in processing speed and working memory capacity relate to performance in the cognitive block.
+---
+
+---
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-preregistration.qmd >}}
+</div>

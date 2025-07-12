@@ -1,37 +1,48 @@
 ---
 title: "Bored of sports? Investigating the interactive role of engagement and value as predictors of boredom in athletic training"
+subtitle: "Sport, Exercise, and Performance Psychology"
 author:
-  - name: Corinna Martarelli
-    orcid: 0000-0001-9160-793X
-  - name: Pauline Berthouzoz
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
+  - name:         "{{< var cmartarelli.name >}}"
+    orcid:        "{{< var cmartarelli.orcid >}}"
+    email:        "{{< var cmartarelli.email >}}"
+    affiliation:  "{{< var cmartarelli.affil >}}"
+  - name:         "{{< var pberthouzoz.name >}}"
+    orcid:        "{{< var pberthouzoz.orcid >}}"
+    email:        "{{< var pberthouzoz.email >}}"
+    affiliation:  "{{< var pberthouzoz.affil >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
 doi: 10.1037/spy0000320
+psyarxiv: https://doi.org/10.31234/osf.io/43rqw
+osf: https://osf.io/ktuvf/
 date: '2023'
 date-format: "YYYY"
 categories:
   - journal article
   - original research
-description: "**{{< fa newspaper >}} Sport, Exercise, and Performance Psychology**"
 abstract: |
   Recent research has identified boredom as a guiding signal in goal-directed behavior. As boredom activates a search for more valuable activities, it can consequently challenge goal-directed behavior; this is also expected to be the case in the sporting context. Here, we examined the experience of boredom in athletic training for a competition among 153 athletes with a cross-sectional questionnaire. We developed the questionnaire based on theoretical approaches to boredom. Specifically, we considered two core triggers of boredom (i.e., the ability to remain engaged with the training and the value that athletes ascribe to the training). We found that the positive relationship between the difficulty of engagement in athletic training and the experience of boredom was moderated by the value ascribed to the training. In other words, it seems that the value ascribed to the training can play a protective role, in that high levels of value nullify the positive relationship between difficulty of engagement and boredom experienced in sports. Future research is needed to better understand the antecedents and consequences of boredom experiences in specific sporting contexts, which could be achieved, for example, by differentiating between individual and collective activities or competitions and training situations.
+keywords:
+  - boredom
+  - sports
+  - engagement
+  - value
+  - moderation analysis
 ---
 
-<!-- OSF -->
-<a 
-  target = "_blank" 
-  class = "btn btn-dark rounded-pill" 
-  href = "https://osf.io/ktuvf/" 
-  role = "button">
-{{< ai osf >}} OSF
-</a>
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://doi.org/10.31234/osf.io/43rqw"
-  role = "button">
-{{< ai psyarxiv >}} PsyArXiv
-</a>
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-psyarxiv.qmd >}}
+  {{< include /assets/includes/button-osf.qmd >}}
+</div>

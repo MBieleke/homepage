@@ -1,38 +1,47 @@
 ---
 title: "High boredom proneness and low trait self-control impair adherence to social distancing guidelines during the COVID-19 Pandemic"
+subtitle: "International Journal of Environmental Research and Public Health"
 author:
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
-  - name: Corinna S. Martarelli
-    orcid: 0000-0001-9160-793X
-  - name: Julia Schüler
-    orcid: 0000-0002-7790-0491
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
+  - name:         "{{< var cmartarelli.name >}}"
+    orcid:        "{{< var cmartarelli.orcid >}}"
+    email:        "{{< var cmartarelli.email >}}"
+    affiliation:  "{{< var cmartarelli.affil >}}"
+  - name:         "{{< var jschueler.name >}}"
+    orcid:        "{{< var jschueler.orcid >}}"
+    email:        "{{< var jschueler.email >}}"
+    affiliation:  "{{< var jschueler.affil >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.vie >}}"
+    affiliation:  "{{< var mbieleke.affil.vie >}}"
 doi: 10.3390/ijerph17155420
+osf: https://osf.io/7ky2q/
+psyarxiv: https://doi.org/10.31234/osf.io/jcf95
 date: '2020'
 date-format: "YYYY"
 categories:
   - journal article
   - original research
-description: "**{{< fa newspaper >}} International Journal of Environmental Research and Public Health**"
 abstract: |
   Social distancing during the coronavirus-disease-2019 (COVID-19) pandemic is crucial to reduce the spread of the virus. However, its effectiveness hinges on adherence by individuals who face substantial burdens from the required behavioral restrictions. Here, we investigate sources of individual variation in adhering to social distancing guidelines. In a high-powered study (*N* = 895), we tested direct and indirect effects of boredom and self-control on adherence. The results showed that both traits were important predictors of adherence but the underlying mechanisms differed. Specifically, individuals high in boredom perceived social distancing as more difficult, which in turn reduced their adherence (i.e., a mediated effect). In contrast, individuals high in self-control adhered more to the guidelines without perceiving them as more or less difficult; however, self-control moderated the effect of difficulty on adherence. Our results are immediately relevant to improve the efficacy of social distancing guidelines in the COVID-19 response.
+keywords:
+  - covid-19
+  - social distancing
+  - self-control
+  - boredom
+  - public health
 ---
 
-<!-- OSF -->
-<a 
-  target = "_blank" 
-  class = "btn btn-dark rounded-pill" 
-  href = "https://osf.io/7ky2q/" 
-  role = "button">
-{{< ai osf >}} OSF
-</a>
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://doi.org/10.31234/osf.io/jcf95"
-  role = "button">
-{{< ai psyarxiv >}} PsyArXiv
-</a>
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-psyarxiv.qmd >}}
+</div>

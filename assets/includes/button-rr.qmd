@@ -1,0 +1,1 @@
+[{{< ai preregistered >}} Registered Report]({{< meta rr >}}){.btn .btn-success .btn-lg .btn role="button" target="_blank" style="font-size: 1rem; text-transform: none;"}

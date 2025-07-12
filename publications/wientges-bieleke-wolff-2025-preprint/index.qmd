@@ -1,0 +1,51 @@
+---
+title: "A novel approach to analysing cognitive and physical effort in a unified motor task"
+subtitle: "PsyArXiv"
+author:
+  - name:         "{{< var jwientges.name >}}"
+    orcid:        "{{< var jwientges.orcid >}}"
+    email:        "{{< var jwientges.email.kon >}}"
+    affiliation:  "{{< var jwientges.affil.kon.spo >}}<br>{{< var jwientges.affil.kon.edu >}}<br>{{< var jwientges.affil.kre >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.ham >}}"
+    affiliation:  "{{< var wwolff.affil.ham >}}"
+  - name:         "{{< var ufischer.name >}}"
+    orcid:        "{{< var ufischer.orcid >}}"
+    email:        "{{< var ufischer.email.zur >}}"
+    affiliation:  "{{< var ufischer.affil.zur >}}"
+  - name:         "{{< var jschueler.name >}}"
+    orcid:        "{{< var jschueler.orcid >}}"
+    email:        "{{< var jschueler.email >}}"
+    affiliation:  "{{< var jschueler.affil >}}"
+doi: 10.13140/RG.2.2.23574.46401
+osf: https://osf.io/yhkj2/
+preregistratoin: https://osf.io/dmfq4
+date: '2025'
+date-format: "YYYY"
+categories:
+  - preprint
+  - original research
+abstract: |
+  Many everyday tasks and sports activities require the simultaneous engagement of cognitive and physical effort. While cognitive and physical effort have been extensively studied independently, their concurrent interplay remains underexplored due to a lack of suitable task paradigms. To address this gap, we introduce a novel pegboard system designed to independently and simultaneously manipulate cognitive and physical effort within one motor task. Participants place pegs into holes under varying cognitive demand (e.g., memorizing and switching light patterns indicating target holes, with task demands modulated by the probability of pattern changes) and physical demands (e.g., overcoming resistance, with task demands modulated by hole distances or required force). Across two within-subject studies (*n* = 20, *n* = 50), we examined how systematically varying task demands in the pegboard system influence perceived effort. Attesting to its validity, increasing task demands elicited domain-specific increases in perceived effort. Participants rated more cognitively demanding tasks as more cognitively effortful and more physically demanding tasks as more physically effortful, with graded increases in perceived effort corresponding to demand levels. These findings align with contemporary models of effort and demonstrate the suitability of the pegboard system for studying cognitive and physical effort concurrently in a unified motor task. This paves the way for future research on the interplay between cognitive and physical effort, addressing theoretical gaps and offering practical applications in sports, healthcare, and occupational settings.
+keywords:
+  - cognitive effort
+  - physical effort
+  - perception of effort
+  - pegboard system
+  - motor task
+---
+
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-osf.qmd >}}
+  {{< include /assets/includes/button-preregistration.qmd >}}
+</div>

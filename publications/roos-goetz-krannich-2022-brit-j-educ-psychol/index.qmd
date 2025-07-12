@@ -1,36 +1,56 @@
 ---
 title: "Control, anxiety and test performance: Self-reported and physiological indicators of anxiety as mediators"
+subtitle: "British Journal of Educational Psychology"
 author:
-  - name: Anna-Lena Roos
-    orcid: 0000-0002-7853-0330
-  - name: Thomas Goetz
-    orcid: 0000-0001-6083-0602
-  - name: Maike Krannich
-    orcid: 0000-0001-9239-3283
-  - name: Monika Donker
-    orcid: 0000-0001-9273-6127
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Anna Caltabiano
-  - name: Tim Mainhard
-    orcid: 0000-0003-2151-1398
+  - name:         "{{< var alroos.name >}}"
+    orcid:        "{{< var alroos.orcid >}}"
+    email:        "{{< var alroos.email >}}"
+    affiliation:  "{{< var alroos.affil >}}"
+  - name:         "{{< var tgoetz.name >}}"
+    orcid:        "{{< var tgoetz.orcid >}}"
+    email:        "{{< var tgoetz.email >}}"
+    affiliation:  "{{< var tgoetz.affil >}}"
+  - name:         "{{< var mkrannich.name >}}"
+    orcid:        "{{< var mkrannich.orcid >}}"
+    email:        "{{< var mkrannich.email >}}"
+    affiliation:  "{{< var mkrannich.affil.zur.psy >}}"
+  - name:         "{{< var mdonker.name >}}"
+    orcid:        "{{< var mdonker.orcid >}}"
+    email:        "{{< var mdonker.email >}}"
+    affiliation:  "{{< var mdonker.affil >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var acaltabiano.name >}}"
+    orcid:        "{{< var acaltabiano.orcid >}}"
+    email:        "{{< var acaltabiano.email >}}"
+    affiliation:  "{{< var acaltabiano.affil >}}"
+  - name:         "{{< var tmainhard.name >}}"
+    orcid:        "{{< var tmainhard.orcid >}}"
+    email:        "{{< var tmainhard.email.lei >}}"
+    affiliation:  "{{< var tmainhard.affil.lei >}}"
 doi: 10.1111/bjep.12536
 date: '2023'
 date-format: "YYYY"
 categories:
   - journal article
   - original research
-description: "**{{< fa newspaper >}} British Journal of Educational Psychology**"
 abstract: |
-  **Background.** This study investigated the role of different test anxiety components (affective, cognitive, motivational and physiological) as mediators between control and performance as proposed by Pekrun's control-value theory (CVT). While all components were assessed via self-report, the physiological component was additionally assessed via electrodermal activity (EDA). 
-  
-  **Aims.** We examined the relative impact of the self-reported anxiety components and EDA in this mediating mechanism to identify the most relevant assessment(s) (i.e., self-reported anxiety components and/or EDA) for predicting test performance. 
-  
-  **Sample.** The study comprised 50 eighth graders. 
-  
-  **Methods.** Data were collected during a mathematics test comprising six task blocks. State self-reports of control and anxiety components along with test performance and other test emotions were collected block-wise (i.e., repeated assessments within students). EDA was continuously recorded. 
-  
-  **Results.** Consistent with CVT, intra-individual mediation analysis with multiple mediators revealed that higher control predicted lower anxiety (i.e., all self-reported components). Unexpectedly, higher control was associated with increased EDA. Follow-up analyses taking other test emotions into account suggested this might reflect positive activation. Correlations between EDA and control and self-reported anxiety components differed depending on which test emotion was dominant in each situation. Regarding test performance, only the cognitive component was a significant mediator and thus seems to play a pivotal role in the relationship between control and performance. 
-  
-  **Conclusions.** Distinguishing between anxiety components and including unbiased physiological measures improve our understanding of the mechanisms behind the relationship between test anxiety and performance. Higher physiological arousal may be a sign of anxiety but can also be a sign of positive activation. When aiming to reduce negative effects of anxiety on performance, targeting the cognitive component seems crucial. Implications of these findings for educational and psychological practice are discussed."
+  **Background.** This study investigated the role of different test anxiety components (affective, cognitive, motivational and physiological) as mediators between control and performance as proposed by Pekrun's control-value theory (CVT). While all components were assessed via self-report, the physiological component was additionally assessed via electrodermal activity (EDA). **Aims.** We examined the relative impact of the self-reported anxiety components and EDA in this mediating mechanism to identify the most relevant assessment(s) (i.e., self-reported anxiety components and/or EDA) for predicting test performance. **Sample.** The study comprised 50 eighth graders. **Methods.** Data were collected during a mathematics test comprising six task blocks. State self-reports of control and anxiety components along with test performance and other test emotions were collected block-wise (i.e., repeated assessments within students). EDA was continuously recorded. **Results.** Consistent with CVT, intra-individual mediation analysis with multiple mediators revealed that higher control predicted lower anxiety (i.e., all self-reported components). Unexpectedly, higher control was associated with increased EDA. Follow-up analyses taking other test emotions into account suggested this might reflect positive activation. Correlations between EDA and control and self-reported anxiety components differed depending on which test emotion was dominant in each situation. Regarding test performance, only the cognitive component was a significant mediator and thus seems to play a pivotal role in the relationship between control and performance. **Conclusions.** Distinguishing between anxiety components and including unbiased physiological measures improve our understanding of the mechanisms behind the relationship between test anxiety and performance. Higher physiological arousal may be a sign of anxiety but can also be a sign of positive activation. When aiming to reduce negative effects of anxiety on performance, targeting the cognitive component seems crucial. Implications of these findings for educational and psychological practice are discussed.
+keywords:
+  - control-value theory
+  - electrodermal activity
+  - skin conductance
+  - test anxiety components
+  - test performance 
 ---
+
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+</div>

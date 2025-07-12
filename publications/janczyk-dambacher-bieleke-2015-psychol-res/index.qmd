@@ -1,21 +1,38 @@
 ---
 title: "The benefit of no choice: Goal-directed plans enhance perceptual processing"
+subtitle: "Psychological Research"
 author:
-  - name: Markus Janczyk
-    orcid: 0000-0002-9958-3220
-  - name: Michael Dambacher
-    orcid: 0000-0003-3712-0594
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Peter M. Gollwitzer
-    orcid: 0000-0003-4872-2929
+  - name:         "{{< var mjanczyk.name >}}"
+    orcid:        "{{< var mjanczyk.orcid >}}"
+    email:        "{{< var mjanczyk.email >}}"
+    affiliation:  "{{< var mjanczyk.affil >}}"
+  - name:         "{{< var mdambacher.name >}}"
+    orcid:        "{{< var mdambacher.orcid >}}"
+    email:        "{{< var mdambacher.email >}}"
+    affiliation:  "{{< var mdambacher.affil >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.psy >}}"
+  - name:         "{{< var pgollwitzer.name >}}"
+    orcid:        "{{< var pgollwitzer.orcid >}}"
+    email:        "{{< var pgollwitzer.email.kon >}}"
+    affiliation:  "{{< var pgollwitzer.affil.kon >}}<br>{{< var pgollwitzer.affil.nwy >}}"
 doi: 10.1007/s00426-014-0549-5
 date: '2015 '
 date-format: "YYYY"
 categories:
   - journal article
   - original research
-description: "**{{< fa newspaper >}} Psychological Research**"
 abstract: |
   Choosing among different options is costly. Typically, response times are slower if participants can choose between several alternatives (free-choice) compared to when a stimulus determines a single correct response (forced-choice). This performance difference is commonly attributed to additional cognitive processing in free-choice tasks, which require time-consuming decisions between response options. Alternatively, the forced-choice advantage might result from facilitated perceptual processing, a prediction derived from the framework of implementation intentions. This hypothesis was tested in three experiments. Experiments 1 and 2 were PRP experiments and showed the expected underadditive interaction of the SOA manipulation and task type, pointing to a pre-central perceptual origin of the performance difference. Using the additive-factors logic, Experiment 3 further supported this view. We discuss the findings in the light of alternative accounts and offer potential mechanisms underlying performance differences in forced- and free-choice tasks.
 ---
+
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+</div>

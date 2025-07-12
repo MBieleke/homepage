@@ -422,5 +422,26 @@
   },
   "publications/bieleke-staehler-wolff-2025-collabra-psychol/index.qmd": {
     "index.html": "e7c65bcf"
+  },
+  "assets/includes/button-researchbox.qmd": {
+    "button-researchbox.html": "30d661db"
+  },
+  "publications/staehler-bieleke-wolff-2025-motiv-emotion/index.qmd": {
+    "index.html": "1ae7360f"
+  },
+  "publications/wolff-ozayotgonbayar-danckert-2025-preprint/index.qmd": {
+    "index.html": "1fb9a6d0"
+  },
+  "publications/wientges-bieleke-wolff-2025-preprint/index.qmd": {
+    "index.html": "408b418e"
+  },
+  "publications/wientges-schueler-bieleke-2024-prereg/index.qmd": {
+    "index.html": "d6449503"
+  },
+  "publications/bieleke-fischer-gruber-2022-prereg/index.qmd": {
+    "index.html": "e0b5c0a5"
+  },
+  "assets/includes/button-rr.qmd": {
+    "button-rr.html": "cc2bc1e1"
   }
 }
