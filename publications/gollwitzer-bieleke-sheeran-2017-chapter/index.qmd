@@ -1,25 +1,29 @@
 ---
 title: "Enhancing consumer behaviour with implementation intentions"
+subtitle: "Handbook of Consumer Psychology"
 author:
-  - name: Peter M. Gollwitzer
-    orcid: 0000-0003-4872-2929
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Paschal Sheeran
-    orcid: 0000-0001-7449-4590
+  - name:         "{{< var pgollwitzer.name >}}"
+    orcid:        "{{< var pgollwitzer.orcid >}}"
+    email:        "{{< var pgollwitzer.email.kon >}}"
+    affiliation:  "{{< var pgollwitzer.affil.kon >}}<br>{{< var pgollwitzer.affil.nwy >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.psy >}}"
+  - name:         "{{< var psheeran.name >}}"
+    orcid:        "{{< var psheeran.orcid >}}"
+    email:        "{{< var psheeran.email.cha >}}"
+    affiliation:  "{{< var psheeran.affil.cha >}}"
+psyarxiv: https://doi.org/10.31234/osf.io/u4znb
 date: '2017 '
 date-format: "YYYY"
 categories:
   - book chapter
-description: "**{{< fa book >}} Routledge International Handbook of Consumer Psychology**"
 abstract: "Implementation intentions are if-then plans that help individuals attain their goals. Implementation intentions have proven beneficial in various domains in which individuals fall short of attaining their goals, from health behaviour through academic achievement to interpersonal issues. The aim of this chapter is to present research on how implementation intentions influence the affective, cognitive and conative components of consumer behaviour. We outline the nature of implementation intentions and describe moderators and mediators identified in previous research. Next, we adopt the perspective of comprehensive models of consumer behaviour and systematically review implementation intention effects along the lines of these models. Specifically, we describe how implementation intentions affect information acquisition, components of the decision process and internal and external influences on behaviour in consumer context. We conclude by outlining topics for future research on implementation intentions in the domain of consumer behavior."
 ---
 
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://doi.org/10.31234/osf.io/u4znb"
-  role = "button">
-{{< ai psyarxiv >}} PsyArXiv
-</a>
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  [{{< iconify meteor-icons link >}} Publication](https://www.taylorfrancis.com/chapters/edit/10.4324/9781315727448-35/enhancing-consumer-behaviour-implementation-intentions-peter-gollwitzer-maik-bieleke-paschal-sheeran?context=ubx&refId=0ab38da9-f53c-4db6-9a64-bf42cf36d921){.btn .btn-success .btn-lg .btn role="button" target="_blank" style="font-size: 1rem; text-transform: none;"}
+  {{< include /assets/includes/button-psyarxiv.qmd >}}
+</div>

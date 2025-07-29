@@ -332,7 +332,7 @@ tmartinyhuenger:
     tro:  Department of Psychology, UiT The Arctic University of Norway, Norway
   email:
     kon:  torsten.martiny-huenger@uni-konstanz.de
-    tro: torsten.martiny-huenger@uit.no
+    tro:  torsten.martiny-huenger@uit.no
 
 dmier:
   name:   Daniela Mier
@@ -454,6 +454,14 @@ ischweigergallo:
   orcid:  0000-0003-1142-0310
   affil:  Departamento de Antropología Social y Psicología Social, Facultad de Ciencias Políticas y Sociología, Complutense University of Madrid, Campus de Somosaguas, Spain
   email:  ingesg@cps.ucm.es
+
+psheeran:
+  name:   Paschal Sheeran
+  orcid:  0000-0001-7449-4590
+  affil:  
+    cha:  Department of Psychology, University of North Carolina at Chapel Hill, USA
+  email:  
+    cha:  psheeran@email.unc.edu
 
 vsieber:
   name:   Vanda Sieber
