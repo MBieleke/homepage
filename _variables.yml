@@ -26,6 +26,12 @@ abertrams:
   affil:  Educational Psychology Lab, Institute of Educational Science, University of Bern, Switzerland
   email:  alexander.bertrams@unibe.ch
 
+rbertschinger:
+  name:   Raphael Bertschinger
+  orcid:  
+  affil:  Sport Psychology Lab, Department of Sport Science, University of Konstanz, Germany
+  email:  raphael.bertschinger@uni-konstanz.de
+
 mbieleke:
   name:   Maik Bieleke
   orcid:  0000-0003-2586-1416
@@ -173,6 +179,7 @@ pgollwitzer:
   affil:  
     nwy:  Department of Psychology, New York University, USA
     kon:  Department of Psychology, University of Konstanz, Germany
+    lue:  Institute of Psychology, Leuphana University Lüneburg, Germany
   email:  peter.gollwitzer@uni-konstanz.de
 
 egraf:

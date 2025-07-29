@@ -1,29 +1,45 @@
 ---
 title: "Implicit theories about athletic ability modulate the effects of if-then planning on performance in a standardized endurance task"
+subtitle: International Journal of Environmental Research and Public Health
 author:
-  - name: Anna Hirsch
-    orcid: 0000-0002-5511-9573
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Julia Schüler
-    orcid: 0000-0002-7790-0491
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
+  - name:         "{{< var ahirsch.name >}}"
+    orcid:        "{{< var ahirsch.orcid >}}"
+    email:        "{{< var ahirsch.email >}}"
+    affiliation:  "{{< var ahirsch.affil.kon.spo >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.vie >}}"
+    affiliation:  "{{< var mbieleke.affil.vie >}}"
+  - name:         "{{< var jschueler.name >}}"
+    orcid:        "{{< var jschueler.orcid >}}"
+    email:        "{{< var jschueler.email >}}"
+    affiliation:  "{{< var jschueler.affil >}}"
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
 doi: 10.3390/ijerph17072576
 date: '2020'
 date-format: "YYYY"
 categories:
   - journal article
   - original research
-description: "**{{< fa newspaper >}} International Journal of Environmental Research and Public Health**"
 abstract: "Muscular strength has a strong positive impact on cardiometabolic health and fitness. However, building up strength endurance requires effortful exercises. From a health perspective, it is important to understand which psychological strategies help people deal with straining exercise. Self-regulation strategies like if-then planning (also known as implementation intentions) appear particularly promising because they might directly alter how people deal with exercise-induced sensations. However, research on the effects of if-then planning on exercise performance has yielded mixed results so far. One possible reason for these inconsistent results is the lack of tailored interventions and the neglect of potential moderators. To address this, we investigated the efficacy of if-then plans that were tailored to perceived limits of endurance performance (i.e., perceptions of exertion versus pain). In addition, we investigated the effects of these tailored if-then plans while taking into account the potentially moderating effects of individual differences in implicit theories. Specifically, we were interested in the role of implicit theories about athletic performance (i.e., entity versus incremental beliefs) and about the limitation of athletic performance by mental versus physical factors (i.e., mind-over-body beliefs). *N* = 66 male students (age: *M* = 25.8 years, *SD* = 3.2) performed a static muscular endurance task twice (measurement: baseline task vs. main task) and were randomly assigned to a goal or an implementation intention condition. They were instructed to hold two intertwined rings for as long as possible while avoiding contacts between them (measure of performance: time-to-failure and errors). After the baseline task, participants were either given an implementation intention or were simply asked to rehearse the task instructions. The content of the instruction depended on whether they ascribed ultimate baseline task termination to perceptions of exertion or pain. After the main task, implicit theories on athletic ability were assessed. No differences in performance emerged between conditions. In the implementation intention condition, however, stronger entity beliefs were associated with increasing time-to-failure when participants planned to ignore exertion but with decreasing time-to-failure when they planned to ignore pain. This pattern of results was reversed with regard to mind-over-body beliefs. These findings indicate that the efficacy of psychological strategies hinges on recreational athletes’ beliefs regarding athletic performance."
+keywords:
+  - muscular endurance performance
+  - self-regulation
+  - implementation intentions
+  - psychobiological model
+  - borg scales
+  - implicit theories
+  - limits of athletic performance
 ---
 
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://doi.org/10.31234/osf.io/exwnf"
-  role = "button">
-{{< ai psyarxiv >}} PsyArXiv
-</a>
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+</div>

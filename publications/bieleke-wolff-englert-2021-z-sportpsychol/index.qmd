@@ -1,30 +1,47 @@
 ---
 title: "If-then planning in sports: A scoping review"
+subtitle: "Zeitschrift für Sportpsychologie"
 author:
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
-  - name: Chris Englert
-    orcid: 0000-0002-4757-8040
-  - name: Peter M. Gollwitzer
-    orcid: 0000-0003-4872-2929
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
+  - name:         "{{< var cenglert.name >}}"
+    orcid:        "{{< var cenglert.orcid >}}"
+    email:        "{{< var cenglert.email >}}"
+    affiliation:  "{{< var cenglert.affil >}}"
+  - name:         "{{< var pgollwitzer.name >}}"
+    orcid:        "{{< var pgollwitzer.orcid >}}"
+    email:        "{{< var pgollwitzer.email.kon >}}"
+    affiliation:  "{{< var pgollwitzer.affil.nwy >}}<br>{{< var pgollwitzer.affil.kon >}}<br>{{< var pgollwitzer.affil.lue >}}"
 doi: 10.1026/1612-5010/a000336
+psyarxiv: https://psyarxiv.com/q73jw/
 date: '2021'
 date-format: "YYYY"
 categories:
   - journal article
   - literature review
-description: "**{{< fa newspaper >}} Zeitschrift für Sportpsychologie**"
 abstract: |
   If-then planning (implementation intentions) describes a self-regulatory strategy that helps people to attain their goals across a variety of domains, such as achieving physical activity goals. Based on such beneficial effects, if-then plans are anecdotally discussed as a strategy to enhance sports-related performance as well. However, this discussion currently lacks an empirical basis. We therefore conducted a scoping review to identify experimental research on the effects of if-then planning on sports-related performance, potential moderators of these effects, the methodological approaches used, and the suitability of the available evidence for assessing the effectiveness of if-then planning in sports. Based on a search of four online databases, we identified a set of 11 studies that investigated if-then planning in experimental research with sports-related performance as an outcome measure. Six of these studies focused on if-then planning in endurance tasks, whereas the remaining studies investigated sports performance in domains that do not revolve primarily around endurance (e.g., tennis, golf, darts). The samples were often small and comprised university students; the conclusions drawn regarding the effectiveness of if-then planning for improving sports-related performance were rather heterogeneous. Still, most studies did shed light on tentative mechanisms (e.g., perceptions of effort and pain, arousal) and moderators (e.g., athletes’ beliefs about their performance limits, the feasibility of the behavior) of if-then planning in sports, guiding future research regarding the question of when and for whom if-then planning might be a beneficial strategy. Based on these findings, we identify the potentials and pitfalls of using if-then plans to enhance sports-related performance, discuss promising routes for future research, and derive practical implications for athletes and coaches.
+keywords:
+  - if-then planning
+  - implementation intentions
+  - self-control
+  - sports performance
+  - scoping review
+  - psychological interventions
 ---
 
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://psyarxiv.com/q73jw/"
-  role = "button">
-{{< ai psyarxiv >}} PsyArXiv
-</a>
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-psyarxiv.qmd >}}
+</div>

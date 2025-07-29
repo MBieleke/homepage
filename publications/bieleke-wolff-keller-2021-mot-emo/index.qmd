@@ -1,36 +1,44 @@
 ---
 title: "Getting trapped in a dead end? Trait self-control and boredom are linked to goal adjustment"
+subtitle: Motivation and Emotion
 author:
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
-  - name: Lucas Keller
-    orcid: 0000-0002-5533-3481
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
+  - name:         "{{< var lkeller.name >}}"
+    orcid:        "{{< var lkeller.orcid >}}"
+    email:        "{{< var lkeller.email >}}"
+    affiliation:  "{{< var lkeller.affil >}}"
 doi: 10.1007/s11031-022-09943-4
+osf: https://osf.io/yv93q/
+psyarxiv: https://osf.io/preprints/psyarxiv/db7u3_v1
 date: '2022'
 date-format: "YYYY"
 categories:
   - journal article
   - original research
-description: "**{{< fa newspaper >}} Motivation and Emotion**"
 abstract: |
   Disengaging from unattainable goals and reengaging in alternative goals is essential for effective goal pursuit; yet, surprisingly little is known about associated personality factors. Here, we focused on individual differences in self-control (domain-general self-control, if–then planning) and boredom (boredom proneness, boredom avoidance and escape tendencies). Concerning goal adjustment in everyday life (Study 1; *N* =323 crowdworkers), if–then planning was associated with worse disengagement and better reengagement. While boredom proneness was associated with poorer reengagement, boredom avoidance and escape tendencies were associated with better reengagement. When goal striving was thwarted during the COVID-19 pandemic (Study 2; *N* = 97 students), similar associations emerged along with links to anxiety and depression. However, disengagement was no longer associated with if–then planning but instead with better self-control and higher boredom proneness. These results show differential relationships of goal disengagement and reengagement with self-control and boredom, paving the way to a better understanding of who struggles or shines when effective goal adjustment is required.
+keywords:
+  - goal adjustment
+  - self-control
+  - if-then planning (implementation intentions)
+  - boredom
+  - boredom proneness
 ---
 
-<!-- OSF -->
-<a 
-  target = "_blank" 
-  class = "btn btn-dark rounded-pill" 
-  href = "https://osf.io/yv93q/" 
-  role = "button">
-{{< ai osf >}} OSF
-</a>
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://psyarxiv.com/db7u3/"
-  role = "button">
-{{< ai psyarxiv >}} PsyArXiv
-</a>
+---
+
+{{< include /assets/includes/metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/button-publication.qmd >}}
+  {{< include /assets/includes/button-psyarxiv.qmd >}}
+  {{< include /assets/includes/button-osf.qmd >}}
+</div>

@@ -1,5 +1,6 @@
 ---
 title: "High trait self-control and low boredom proneness help COVID-19 homeschoolers"
+subtitle: "Frontiers in Psychology"
 author:
   - name:         "{{< var cmartarelli.name >}}"
     orcid:        "{{< var cmartarelli.orcid >}}"
