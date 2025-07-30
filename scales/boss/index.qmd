@@ -1,0 +1,71 @@
+---
+title: "Bored of Sports Scale (BOSS)"
+author:
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var jstaehler.name >}}"
+    orcid:        "{{< var jstaehler.orcid >}}"
+    email:        "{{< var jstaehler.email >}}"
+    affiliation:  "{{< var jstaehler.affil >}}"
+  - name:         "{{< var jschueler.name >}}"
+    orcid:        "{{< var jschueler.orcid >}}"
+    email:        "{{< var jschueler.email >}}"
+    affiliation:  "{{< var jschueler.affil >}}"
+doi: 10.1016/j.psychsport.2020.101851
+date: '2021'
+date-format: "YYYY"
+image: featured.png
+---
+
+<a class="btn btn-dark rounded-pill" href="boss_english.docx" download role="button">{{< fa file-word >}} BOSS (eng)</a> <a class="btn btn-dark rounded-pill" href="boss_english.pdf" download role="button">{{< fa file-pdf >}} BOSS (eng)</a>
+
+## Background
+
+The BOSS Scale is an 11-item questionnaire designed to assess trait boredom within sports and exercise settings. Adapted from the learning-related boredom subscale of the Achievement Emotions Questionnaire (AEQ; Pekrun et al., 2011), the BOSS demonstrated excellent internal consistency in its validation study and was significantly associated with self‑reported exercise behavior, attestting to its criterion validity. Additionally, BOSS scores showed positive correlations with general boredom proneness and negative correlations with trait self‑control and planning, thereby supporting the scale’s convergent validity.
+
+## Usage
+
+### License
+
+The BOSS is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/){.external target="_blank"}. In short, this license allows anyone to share and adapt the BOSS for any purpose and without requiring the authors' permission. The only requirement is to give appropriate credit (see next section).
+
+### Citation
+
+To give appropriate credit, please cite the following publication:
+
+Wolff, W., Bieleke, M., Stähler, J., & Schüler, J. (2021). Too bored for sports? Adaptive and less-adaptive latent personality profiles for exercise behavior. *Psychology of Sport and Exercise*, *53*, 101851. <https://doi.org/10.1016/j.psychsport.2020.101851>
+
+
+## Adminstration
+
+### Administration
+
+The BOSS can be administered in an online or in a paper-and-pencil format. Completing it takes about 2-3 minutes. Participants rate each of the eleven items on a 5- or 7-point Likert scale from *strongly disagree* to *strongly agree*.
+
+### Instruction
+
+The instructions used for the BOSS focus on sports and exercise. They can also be adapted to other contexts, such as physical activity, by changing the wording of the instruction and the items.
+
+### Scoring and interpretation
+
+An overall score for the scale is obtained by averaging a participant's ratings across all eleven items. The items are formulated in the same direction so that no reverse-coding is neccessary. A higher BOSS score indicates a higher level of boredom in sports and exercise contexts.
+
+## FAQ
+
+### Can I use the BOSS in my study?
+
+Yes. Just make sure to give appropriate credit in the resulting publications (see above).
+
+### Can I translate or otherwise modify the BOSS?
+
+Yes. You can adapt the VoPE scale in any way you want, including translations into other languages. Just make sure to give appropriate credit in the resulting publications (see above).
+
+### Is the BOSS already available in languages other than English?
+
+The BOSS scale has so far been validated in English. Translations into other languages are welcome, but they must be psychometrically validated. If you have a translation that you would like to share, please contact me.

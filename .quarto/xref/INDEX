@@ -449,5 +449,8 @@
   },
   "scales/vope/index.qmd": {
     "index.html": "c2c781ff"
+  },
+  "scales/boss/index.qmd": {
+    "index.html": "2dd5e9e8"
   }
 }

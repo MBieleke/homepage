@@ -18,7 +18,7 @@
     "href": "scales/index.html",
     "title": " Scales",
     "section": "",
-    "text": "Here is a list of scales I have developed in my research. Each scale is licensed under a Creative Commons Attribution 4.0 International License. In short, this license allows anyone to share and adapt these scales for any purpose and without requiring my permission. The only requirement is to give appropriate credit, in general by citing the corresponding publication. Select a scale to see further details and get instructions for usage and referencing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAchievement Emotions Questionnaire - Short\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf-Then Planning Scale\n\n\n\n\n\n\n\n\n\n\n\n\n\nValue of Effort (VoPE) Scale\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Here is a list of scales I have developed in my research. Each scale is licensed under a Creative Commons Attribution 4.0 International License. In short, this license allows anyone to share and adapt these scales for any purpose and without requiring my permission. The only requirement is to give appropriate credit, in general by citing the corresponding publication. Select a scale to see further details and get instructions for usage and referencing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "publications/wolff-staehler-schueler-2024-peer-community-j/index.html",
@@ -613,7 +613,7 @@
     "href": "scales/vope/index.html#adminstration",
     "title": "Value of Effort (VoPE) Scale",
     "section": "Adminstration",
-    "text": "Adminstration\n\nAdministration\nThe Value of Physical Effort (VoPE) scale can be administered in an online or in a paper-and-pencil format. Completing it takes about 1-2 minutes. Participants rate each of the eight items on a 5-point Likert scale from 1 (strongly disagree) to 5 (strongly agree).\n\n\nInstruction\nThe instructions used for the Value of Physical Effort (VoPE) focus on sports activities. They can also be adapted to other contexts, such as exercise or physical activity in general.\n\n\nScoring and interpretation\nAn overall score for each scale is obtained by averaging a participant’s ratings across all four items. All items are formulated in the same direction so that no reverse-coding is neccessary."
+    "text": "Adminstration\n\nAdministration\nThe Value of Physical Effort (VoPE) scale can be administered in an online or in a paper-and-pencil format. Completing it takes about 1-2 minutes. Participants rate each of the four items on a 5- or 7-point Likert scale from strongly disagree to strongly agree.\n\n\nInstruction\nThe instructions used for the Value of Physical Effort (VoPE) focus on sports activities. They can also be adapted to other contexts, such as exercise or physical activity in general, by changing the wording of the instruction and the items.\n\n\nScoring and interpretation\nAn overall score for the scale is obtained by averaging a participant’s ratings across all four items. The items are formulated in the same direction so that no reverse-coding is neccessary."
   },
   {
     "objectID": "scales/vope/index.html#faq",
@@ -621,5 +621,40 @@
     "title": "Value of Effort (VoPE) Scale",
     "section": "FAQ",
     "text": "FAQ\n\nCan I use the VoPE scale in my study?\nYes. Just make sure to give appropriate credit in the resulting publications (see above).\n\n\nCan I translate or otherwise modify the VoPE scale?\nYes. You can adapt the VoPE scale in any way you want, including translations into other languages. Just make sure to give appropriate credit in the resulting publications (see above).\n\n\nIs the VoPE scale already available in languages other than English?\nThe VoPE scale has so far been validated in English and German, and both versions can be downloaded from this page. Translations into other languages are welcome, but they must be psychometrically validated. If you have a translation that you would like to share, please contact me."
+  },
+  {
+    "objectID": "scales/boss/index.html",
+    "href": "scales/boss/index.html",
+    "title": "Bored of Sports Scale (BOSS)",
+    "section": "",
+    "text": "BOSS (eng)  BOSS (eng)"
+  },
+  {
+    "objectID": "scales/boss/index.html#background",
+    "href": "scales/boss/index.html#background",
+    "title": "Bored of Sports Scale (BOSS)",
+    "section": "Background",
+    "text": "Background\nThe BOSS Scale is an 11-item questionnaire designed to assess trait boredom within sports and exercise settings. Adapted from the learning-related boredom subscale of the Achievement Emotions Questionnaire (AEQ; Pekrun et al., 2011), the BOSS demonstrated excellent internal consistency in its validation study and was significantly associated with self‑reported exercise behavior, attestting to its criterion validity. Additionally, BOSS scores showed positive correlations with general boredom proneness and negative correlations with trait self‑control and planning, thereby supporting the scale’s convergent validity."
+  },
+  {
+    "objectID": "scales/boss/index.html#usage",
+    "href": "scales/boss/index.html#usage",
+    "title": "Bored of Sports Scale (BOSS)",
+    "section": "Usage",
+    "text": "Usage\n\nLicense\nThe BOSS is licensed under a Creative Commons Attribution 4.0 International License. In short, this license allows anyone to share and adapt the BOSS for any purpose and without requiring the authors’ permission. The only requirement is to give appropriate credit (see next section).\n\n\nCitation\nTo give appropriate credit, please cite the following publication:\nWolff, W., Bieleke, M., Stähler, J., & Schüler, J. (2021). Too bored for sports? Adaptive and less-adaptive latent personality profiles for exercise behavior. Psychology of Sport and Exercise, 53, 101851. https://doi.org/10.1016/j.psychsport.2020.101851"
+  },
+  {
+    "objectID": "scales/boss/index.html#adminstration",
+    "href": "scales/boss/index.html#adminstration",
+    "title": "Bored of Sports Scale (BOSS)",
+    "section": "Adminstration",
+    "text": "Adminstration\n\nAdministration\nThe BOSS can be administered in an online or in a paper-and-pencil format. Completing it takes about 2-3 minutes. Participants rate each of the eleven items on a 5- or 7-point Likert scale from strongly disagree to strongly agree.\n\n\nInstruction\nThe instructions used for the BOSS focus on sports and exercise. They can also be adapted to other contexts, such as physical activity, by changing the wording of the instruction and the items.\n\n\nScoring and interpretation\nAn overall score for the scale is obtained by averaging a participant’s ratings across all eleven items. The items are formulated in the same direction so that no reverse-coding is neccessary. A higher BOSS score indicates a higher level of boredom in sports and exercise contexts."
+  },
+  {
+    "objectID": "scales/boss/index.html#faq",
+    "href": "scales/boss/index.html#faq",
+    "title": "Bored of Sports Scale (BOSS)",
+    "section": "FAQ",
+    "text": "FAQ\n\nCan I use the BOSS in my study?\nYes. Just make sure to give appropriate credit in the resulting publications (see above).\n\n\nCan I translate or otherwise modify the BOSS?\nYes. You can adapt the VoPE scale in any way you want, including translations into other languages. Just make sure to give appropriate credit in the resulting publications (see above).\n\n\nIs the BOSS already available in languages other than English?\nThe BOSS scale has so far been validated in English. Translations into other languages are welcome, but they must be psychometrically validated. If you have a translation that you would like to share, please contact me."
   }
 ]
