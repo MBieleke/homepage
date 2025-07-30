@@ -1,30 +1,37 @@
 ---
 title: "Neuroscientific approaches to self-regulatory control in sports"
+subtitle: "Motivation and Self-regulation in Sport and Exercise"
 author:
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
-  - name: Anna Hirsch
-    orcid: 0000-0002-5511-9573
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Amitai Shenhav
-    orcid: 0000-0002-0222-0774
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
+  - name:         "{{< var ahirsch.name >}}"
+    orcid:        "{{< var ahirsch.orcid >}}"
+    email:        "{{< var ahirsch.email >}}"
+    affiliation:  "{{< var ahirsch.affil.kon.spo >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.psy >}}<br>{{< var mbieleke.affil.vie >}}"
+  - name:         "{{< var ashenhav.name >}}"
+    orcid:        "{{< var ashenhav.orcid >}}"
+    email:        "{{< var ashenhav.email.bro >}}"
+    affiliation:  "{{< var ashenhav.affil.bro >}}"
 doi: 10.4324/9781003176695-11
+psyarxiv: https://doi.org/10.31234/osf.io/ysnvk
 date: '2021'
 date-format: "YYYY"
 categories:
   - book chapter
   - literature review
-description: "**{{< fa book >}} Motivation and Self-regulation in Sport and Exercise**"
 abstract: |
   Self-regulatory control plays a key role in determining sports performance. To illustrate, a runner whose muscles are aching has to fight the impulse of slowing down. This impulse can be understood as a self-regulatory control demand and only effective control of this impulse might allow the runner to win the race. In recent years, cognitive neuroscience has substantially advanced the theoretical and mechanistic understanding of self-regulatory control processes. In this chapter, we will introduce the expected value of control (EVC) theory as a sound theoretical framework that conceptualizes self-regulatory control as a reward-based choice that is aimed at maximizing the EVC. This suggests that sports performance hinges on the outcome of the continuous cost-benefit calculation whether or not the value of applying control outweighs its costs. Control processes are orchestrated by structures in the executive network, namely the dorsal anterior cingulate cortex and the lateral prefrontal cortex. Recent technological developments have substantially facilitated research on brain activity during sports performance and this has led to a surge in neuroscientific research on self-regulatory control in sports. Here, we will summarize research on the involvement of these areas in regard to self-regulatory control in sports.
 ---
+{{< include /assets/includes/_metrics.qmd >}}
 
-<!-- PsyArXiv -->
-<a 
-  target = "_blank"
-  class = "btn btn-dark rounded-pill"
-  href = "https://doi.org/10.31234/osf.io/ysnvk"
-  role = "button">
-{{< ai psyarxiv >}} PsyArXiv
-</a>
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/_button-pdf.qmd >}}
+  {{< include /assets/includes/_button-publication.qmd >}}
+  {{< include /assets/includes/_button-psyarxiv.qmd >}}
+</div>

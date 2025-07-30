@@ -443,5 +443,8 @@
   },
   "assets/includes/button-rr.qmd": {
     "button-rr.html": "cc2bc1e1"
+  },
+  "publications/keller-bieleke-gollwitzer-2023-chapter-de/index.qmd": {
+    "index.html": "90ea72a5"
   }
 }

@@ -1,18 +1,23 @@
 ---
 title: "Handbook of Boredom"
 author:
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
-  - name: Corinna S. Martarelli
-    orcid: 0000-0001-9160-793X
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}<br>{{< var wwolff.affil.ber >}}"
+  - name:         "{{< var cmartarelli.name >}}"
+    orcid:        "{{< var cmartarelli.orcid >}}"
+    email:        "{{< var cmartarelli.email >}}"
+    affiliation:  "{{< var cmartarelli.affil >}}"
 doi: 10.4324/9781003271536
 date: '2024 '
 date-format: "YYYY"
 categories:
   - book
-description: "**{{< fa book >}} Routledge International Handbook of Boredom**"
 abstract: |
   This comprehensive text is a unique handbook dedicated to research on boredom. The book brings together leading contributors from across three continents and numerous fields to provide an interdisciplinary exploration of boredom, its theoretical underpinnings, its experiential properties, and the applied contexts in which it occurs.
   
@@ -20,3 +25,12 @@ abstract: |
   
   As the authoritative book on boredom, this handbook is an essential resource for students and researchers of psychology, sociology, education, sport science, and computer science.
 ---
+
+---
+
+{{< include /assets/includes/_metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/_button-publication.qmd >}}
+</div>
+

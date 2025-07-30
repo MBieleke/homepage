@@ -26,5 +26,5 @@ abstract: |
 ---
 
 <div class="d-flex justify-content-center gap-2 mt-3">
-  {{< include /assets/includes/button-preregistration.qmd >}}
+  {{< include /assets/includes/_button-preregistration.qmd >}}
 </div>

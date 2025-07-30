@@ -1,19 +1,31 @@
 ---
 title: "Goal striving and endurance performance"
+subtitle: "Endurance Performance in Sport: Psychological Theory and Interventions"
 author:
-  - name: Wanja Wolff
-    orcid: 0000-0001-8130-0272
-  - name: Maik Bieleke
-    orcid: 0000-0003-2586-1416
-  - name: Julia Schüler
-    orcid: 0000-0002-7790-0491
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.kon >}}"
+    affiliation:  "{{< var wwolff.affil.kon >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.psy >}}"
+  - name:         "{{< var jschueler.name >}}"
+    orcid:        "{{< var jschueler.orcid >}}"
+    email:        "{{< var jschueler.email >}}"
+    affiliation:  "{{< var jschueler.affil >}}"
 doi: 10.4324/9781315167312-10
 date: '2019'
 date-format: "YYYY"
 categories:
   - book chapter
   - literature review
-description: "**{{< fa book >}} Endurance performance in sport: Psychological theory and interventions**"
 abstract: |
   People often struggle with attaining their goals. One important reason for this intention-behavior gap pertains to the difficulties of goal striving: to be successful, people must get started, stay on track, and bring their goal pursuits to a successful close. We show the importance of goal striving for endurance activities and describe the self-regulatory strategy of if-then planning (implementation intentions), which is known to facilitate goal striving in several domains. We illustrate when and how implementation intentions work, summarise the literature regarding their facilitative effects on goal attainment, and discuss their potential for enhancing endurance performance.
 ---
+{{< include /assets/includes/_metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/_button-pdf.qmd >}}
+  {{< include /assets/includes/_button-publication.qmd >}}
+</div>

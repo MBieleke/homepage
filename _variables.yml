@@ -14,6 +14,12 @@ lbarton:
   affil:  Department of Psychology, University of Konstanz, Germany
   email:  leon.barton@uni-konstanz.de
 
+obenthien:
+  name:   Ole Benthien
+  orcid:  
+  affil:  
+  email:  
+
 pberthouzoz:
   name:   Pauline Berthouzoz
   orcid:  
@@ -463,6 +469,14 @@ psheeran:
   email:  
     cha:  psheeran@email.unc.edu
 
+ashenhav:
+  name:   Amitai Shenhav
+  orcid:  0000-0002-0222-0774
+  affil:  
+    bro:  Cognitive, Linguistic, & Psychological Sciences, Brown University, USA
+  email:  
+    bro:  amitai_shenhav@brown.edu
+
 vsieber:
   name:   Vanda Sieber
   orcid:  0000-0002-3148-0954
@@ -474,6 +488,12 @@ jstaehler:
   orcid:  0009-0000-4146-3966
   affil:  Sport Psychology Lab, Department of of Sport Science, University of Konstanz, Germany
   email:  johanna.staehler@uni-konstanz.de
+  
+kmstadler:
+  name:   Kim-Marie Stadler
+  orcid:  
+  affil:  Sport Psychology Lab, Department of of Sport Science, University of Konstanz, Germany
+  email:  kim-marie.stadler@uni-konstanz.de
 
 mstephensen:
   name:   Matthew B. Stephensen

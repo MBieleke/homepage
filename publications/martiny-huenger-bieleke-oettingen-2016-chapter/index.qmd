@@ -26,6 +26,6 @@ abstract: "If-then action planning (i.e., implementation intentions; Gollwitzer,
 ---
 
 <div class="d-flex justify-content-center gap-2 mt-3">
-  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/_button-pdf.qmd >}}
   [{{< iconify meteor-icons link >}} Publication](https://www.taylorfrancis.com/chapters/edit/10.4324/9781315523095-12/thought-automatic-action-strategic-spontaneous-action-control-planning-torsten-martiny-huenger-maik-bieleke-gabriele-oettingen-peter-gollwitzer){.btn .btn-success .btn-lg .btn role="button" target="_blank" style="font-size: 1rem; text-transform: none;"}
 </div>

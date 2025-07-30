@@ -49,7 +49,7 @@ abstract: |
 ---
 
 <div class="d-flex justify-content-center gap-2 mt-3">
-  {{< include /assets/includes/button-osf.qmd >}}
-  {{< include /assets/includes/button-preregistration.qmd >}}
-  {{< include /assets/includes/button-rr.qmd >}}
+  {{< include /assets/includes/_button-osf.qmd >}}
+  {{< include /assets/includes/_button-preregistration.qmd >}}
+  {{< include /assets/includes/_button-rr.qmd >}}
 </div>

@@ -30,10 +30,10 @@ abstract: "The tendency to be overly confident in one’s future and skills has 
 
 ---
 
-{{< include /assets/includes/metrics.qmd >}}
+{{< include /assets/includes/_metrics.qmd >}}
 
 <div class="d-flex justify-content-center gap-2 mt-3">
-  {{< include /assets/includes/button-pdf.qmd >}}
-  {{< include /assets/includes/button-publication.qmd >}}
-  {{< include /assets/includes/button-researchbox.qmd >}}
+  {{< include /assets/includes/_button-pdf.qmd >}}
+  {{< include /assets/includes/_button-publication.qmd >}}
+  {{< include /assets/includes/_button-researchbox.qmd >}}
 </div>

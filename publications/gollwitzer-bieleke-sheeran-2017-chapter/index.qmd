@@ -23,7 +23,7 @@ abstract: "Implementation intentions are if-then plans that help individuals att
 ---
 
 <div class="d-flex justify-content-center gap-2 mt-3">
-  {{< include /assets/includes/button-pdf.qmd >}}
+  {{< include /assets/includes/_button-pdf.qmd >}}
   [{{< iconify meteor-icons link >}} Publication](https://www.taylorfrancis.com/chapters/edit/10.4324/9781315727448-35/enhancing-consumer-behaviour-implementation-intentions-peter-gollwitzer-maik-bieleke-paschal-sheeran?context=ubx&refId=0ab38da9-f53c-4db6-9a64-bf42cf36d921){.btn .btn-success .btn-lg .btn role="button" target="_blank" style="font-size: 1rem; text-transform: none;"}
-  {{< include /assets/includes/button-psyarxiv.qmd >}}
+  {{< include /assets/includes/_button-psyarxiv.qmd >}}
 </div>
