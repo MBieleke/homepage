@@ -1,0 +1,70 @@
+---
+title: "Value of Effort (VoPE) Scale"
+author:
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var jstaehler.name >}}"
+    orcid:        "{{< var jstaehler.orcid >}}"
+    email:        "{{< var jstaehler.email >}}"
+    affiliation:  "{{< var jstaehler.affil >}}"
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.ham >}}"
+    affiliation:  "{{< var wwolff.affil.ham >}}"
+  - name:         "{{< var jschueler.name >}}"
+    orcid:        "{{< var jschueler.orcid >}}"
+    email:        "{{< var jschueler.email >}}"
+    affiliation:  "{{< var jschueler.affil >}}"
+doi: 10.1525/collabra.140736
+date: '2025'
+date-format: "YYYY"
+image: featured.png
+---
+
+<a class="btn btn-dark rounded-pill" href="vope_english.docx" download role="button">{{< fa file-word >}} VoPE (eng)</a> <a class="btn btn-dark rounded-pill" href="vope_english.pdf" download role="button">{{< fa file-pdf >}} VoPE (eng)</a> <a class="btn btn-dark rounded-pill" href="vope_german.docx" download role="button">{{< fa file-word >}} VoPE (ger)</a> <a class="btn btn-dark rounded-pill" href="vope_german.pdf" download role="button">{{< fa file-pdf >}} VoPE (ger)</a>
+
+## Background
+
+Physical effort has instrumental value because it helps people attain their goals. Growing evidence suggests that people might also experience the exertion of effort itself as valuable. To test this idea, we developed and examined the 4-item Value of Physical Effort (VoPE) scale. Across three independent studies (total *N* = 1364), we established the basic psychometric properties of the VoPE scale and showed consistent associations with measures of sports and exercise behavior. In a study with a longitudinal design, the VoPE scale demonstrated test-retest reliability and forecasted physical activity and exercise behavior. Psychometric network analysis and elastic net regression suggest the VoPE scale’s potential to cover a unique content area and make novel contributions to the prediction of sports behavior. Taken together, the present research yields empirical evidence for the idea that people value physical effort to varying degrees, and that these differences can be efficiently measured with the VoPE scale. We demonstrated reliability and validity of the VoPE scale across three datasets and its ability to predict self-reported sports and exercise behavior. The VoPE scale might thus extend our understanding of how people allocate (physical) effort.
+
+## Usage
+
+### License
+
+The Value of Physical Effort (VoPE) scale is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/){.external target="_blank"}. In short, this license allows anyone to share and adapt the VoPE scale for any purpose and without requiring the authors' permission. The only requirement is to give appropriate credit (see next section).
+
+### Citation
+
+To give appropriate credit, please cite the following publication:
+
+Bieleke, M., Stähler, J., Wolff, W., & Schüler, J. (2025). Development and validation of the Value of Physical Effort (VoPE) scale. *Collabra: Psychology*, *11*(1), 140736. <https://doi.org/10.1525/collabra.140736>
+
+## Adminstration
+
+### Administration
+
+The Value of Physical Effort (VoPE) scale can be administered in an online or in a paper-and-pencil format. Completing it takes about 1-2 minutes. Participants rate each of the four items on a 5- or 7-point Likert scale from *strongly disagree* to *strongly agree*.
+
+### Instruction
+
+The instructions used for the Value of Physical Effort (VoPE) focus on sports activities. They can also be adapted to other contexts, such as exercise or physical activity in general, by changing the wording of the instruction and the items.
+
+### Scoring and interpretation
+
+An overall score for each scale is obtained by averaging a participant's ratings across all four items. The items are formulated in the same direction so that no reverse-coding is neccessary.
+
+## FAQ
+
+### Can I use the VoPE scale in my study?
+
+Yes. Just make sure to give appropriate credit in the resulting publications (see above).
+
+### Can I translate or otherwise modify the VoPE scale?
+
+Yes. You can adapt the VoPE scale in any way you want, including translations into other languages. Just make sure to give appropriate credit in the resulting publications (see above).
+
+### Is the VoPE scale already available in languages other than English?
+
+The VoPE scale has so far been validated in English and German, and both versions can be downloaded from this page. Translations into other languages are welcome, but they must be psychometrically validated. If you have a translation that you would like to share, please contact me.

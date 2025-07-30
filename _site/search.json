@@ -18,7 +18,7 @@
     "href": "scales/index.html",
     "title": " Scales",
     "section": "",
-    "text": "Here is a list of scales I have developed in my research. Each scale is licensed under a Creative Commons Attribution 4.0 International License. In short, this license allows anyone to share and adapt these scales for any purpose and without requiring my permission. The only requirement is to give appropriate credit, in general by citing the corresponding publication. Select a scale to see further details and get instructions for usage and referencing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAchievement Emotions Questionnaire - Short\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf-Then Planning Scale\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Here is a list of scales I have developed in my research. Each scale is licensed under a Creative Commons Attribution 4.0 International License. In short, this license allows anyone to share and adapt these scales for any purpose and without requiring my permission. The only requirement is to give appropriate credit, in general by citing the corresponding publication. Select a scale to see further details and get instructions for usage and referencing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAchievement Emotions Questionnaire - Short\n\n\n\n\n\n\n\n\n\n\n\n\n\nIf-Then Planning Scale\n\n\n\n\n\n\n\n\n\n\n\n\n\nValue of Effort (VoPE) Scale\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "publications/wolff-staehler-schueler-2024-peer-community-j/index.html",
@@ -586,5 +586,40 @@
     "title": "If-Then Planning Scale",
     "section": "Adminstration",
     "text": "Adminstration\n\nAdministration\nThe ITPS can be administered in an online or in a paper-and-pencil format. Completing it takes about 1-2 minutes. The items might be presented in random order to avoid order effects. Participants rate each of the eight items on a 7-point Likert scale from 1 (strongly disagree) to 7 (strongly agree).\n\n\nInstruction\nThe ITPS has been developed as a domain-general measure of if-then planning. Accordingly, the instruction refers to goals in general and not to a specific goal. The focus is on difficult and important goals as only these goals require if-then planning to facilitate goal attainment. However, the instruction can in principle also be tailored to specific goals (e.g., health goals, learning goals) if the focus is on if-then planning in a particular domain.\n\n\nScoring and interpretation\nAn overall score is obtained by averaging a participant’s ratings across all eight items. All items are formulated in the same direction so that no reverse-coding is neccessary. A higher ITPS score indicates a greater propensity to engage in if-then planning.\nNote that although the ITPS is composed of different subscales (e.g., thinking about potential obstacles), subscale scores should only be used for explorative analyses. In general, it is recommended to interpret the overall ITPS score."
+  },
+  {
+    "objectID": "scales/vope/index.html",
+    "href": "scales/vope/index.html",
+    "title": "Value of Effort (VoPE) Scale",
+    "section": "",
+    "text": "VoPE (eng)  VoPE (eng)  VoPE (ger)  VoPE (ger)"
+  },
+  {
+    "objectID": "scales/vope/index.html#background",
+    "href": "scales/vope/index.html#background",
+    "title": "Value of Effort (VoPE) Scale",
+    "section": "Background",
+    "text": "Background\nPhysical effort has instrumental value because it helps people attain their goals. Growing evidence suggests that people might also experience the exertion of effort itself as valuable. To test this idea, we developed and examined the 4-item Value of Physical Effort (VoPE) scale. Across three independent studies (total N = 1364), we established the basic psychometric properties of the VoPE scale and showed consistent associations with measures of sports and exercise behavior. In a study with a longitudinal design, the VoPE scale demonstrated test-retest reliability and forecasted physical activity and exercise behavior. Psychometric network analysis and elastic net regression suggest the VoPE scale’s potential to cover a unique content area and make novel contributions to the prediction of sports behavior. Taken together, the present research yields empirical evidence for the idea that people value physical effort to varying degrees, and that these differences can be efficiently measured with the VoPE scale. We demonstrated reliability and validity of the VoPE scale across three datasets and its ability to predict self-reported sports and exercise behavior. The VoPE scale might thus extend our understanding of how people allocate (physical) effort."
+  },
+  {
+    "objectID": "scales/vope/index.html#usage",
+    "href": "scales/vope/index.html#usage",
+    "title": "Value of Effort (VoPE) Scale",
+    "section": "Usage",
+    "text": "Usage\n\nLicense\nThe Value of Physical Effort (VoPE) scale is licensed under a Creative Commons Attribution 4.0 International License. In short, this license allows anyone to share and adapt the VoPE scale for any purpose and without requiring the authors’ permission. The only requirement is to give appropriate credit (see next section).\n\n\nCitation\nTo give appropriate credit, please cite the following publication:\nBieleke, M., Stähler, J., Wolff, W., & Schüler, J. (2025). Development and validation of the Value of Physical Effort (VoPE) scale. Collabra: Psychology, 11(1), 140736. https://doi.org/10.1525/collabra.140736"
+  },
+  {
+    "objectID": "scales/vope/index.html#adminstration",
+    "href": "scales/vope/index.html#adminstration",
+    "title": "Value of Effort (VoPE) Scale",
+    "section": "Adminstration",
+    "text": "Adminstration\n\nAdministration\nThe Value of Physical Effort (VoPE) scale can be administered in an online or in a paper-and-pencil format. Completing it takes about 1-2 minutes. Participants rate each of the eight items on a 5-point Likert scale from 1 (strongly disagree) to 5 (strongly agree).\n\n\nInstruction\nThe instructions used for the Value of Physical Effort (VoPE) focus on sports activities. They can also be adapted to other contexts, such as exercise or physical activity in general.\n\n\nScoring and interpretation\nAn overall score for each scale is obtained by averaging a participant’s ratings across all four items. All items are formulated in the same direction so that no reverse-coding is neccessary."
+  },
+  {
+    "objectID": "scales/vope/index.html#faq",
+    "href": "scales/vope/index.html#faq",
+    "title": "Value of Effort (VoPE) Scale",
+    "section": "FAQ",
+    "text": "FAQ\n\nCan I use the VoPE scale in my study?\nYes. Just make sure to give appropriate credit in the resulting publications (see above).\n\n\nCan I translate or otherwise modify the VoPE scale?\nYes. You can adapt the VoPE scale in any way you want, including translations into other languages. Just make sure to give appropriate credit in the resulting publications (see above).\n\n\nIs the VoPE scale already available in languages other than English?\nThe VoPE scale has so far been validated in English and German, and both versions can be downloaded from this page. Translations into other languages are welcome, but they must be psychometrically validated. If you have a translation that you would like to share, please contact me."
   }
 ]
