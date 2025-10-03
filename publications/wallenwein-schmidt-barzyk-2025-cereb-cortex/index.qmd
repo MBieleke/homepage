@@ -1,0 +1,56 @@
+---
+title: "Eight-week high intensity jump training does not change neural correlates of executive functions and emotion regulation in young adults"
+subtitle: "Cerebral Cortex"
+author:
+  - name:         "{{< var lwallenwein.name >}}"
+    orcid:        "{{< var lwallenwein.orcid >}}"
+    email:        "{{< var lwallenwein.email >}}"
+    affiliation:  "{{< var lwallenwein.affil >}}"
+  - name:         "{{< var sschmidt.name >}}"
+    orcid:        "{{< var sschmidt.orcid >}}"
+    email:        "{{< var sschmidt.email >}}"
+    affiliation:  "{{< var sschmidt.affil >}}"
+  - name:         "{{< var pbarzyk.name >}}"
+    orcid:        "{{< var pbarzyk.orcid >}}"
+    email:        "{{< var pbarzyk.email >}}"
+    affiliation:  "{{< var pbarzyk.affil >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var jschueler.name >}}"
+    orcid:        "{{< var jschueler.orcid >}}"
+    email:        "{{< var jschueler.email >}}"
+    affiliation:  "{{< var jschueler.affil >}}"
+  - name:         "{{< var mgruber.name >}}"
+    orcid:        "{{< var mgruber.orcid >}}"
+    email:        "{{< var mgruber.email >}}"
+    affiliation:  "{{< var mgruber.affil >}}"
+  - name:         "{{< var dmier.name >}}"
+    orcid:        "{{< var dmier.orcid >}}"
+    email:        "{{< var dmier.email >}}"
+    affiliation:  "{{< var dmier.affil >}}"
+doi: 10.1093/cercor/bhaf228
+psyarxiv: https://osf.io/preprints/psyarxiv/ujmpx_v2
+date: '2025'
+date-format: "YYYY"
+categories:
+  - journal article
+  - original research
+abstract: |
+  Exercise can positively impact cognitive abilities. However, studies assessing the impact of exercise on related constructs, such as emotion regulation, are missing. Further, little is known about the effects of exercise on cognition and accompanying changes in neural activation in healthy young adults. In this randomized controlled trial, we tested the effect of a chronic exercise intervention with an extensive set of tasks probing executive functioning and emotion regulation in fMRI. University students were either assigned to an 8-week high intensity low volume jump training intervention or to a control group. Physical fitness measurements and fMRI-scans during working memory, task switching, response inhibition, and cognitive reappraisal of 58 participants were analyzed. The training intervention resulted in an expected improvement in jump performance but not in aerobic capacity. Moreover, the training did not improve executive functioning or emotion regulation performance. While we found strong fronto-parietal brain activation over both timepoints, the training resulted only in insubstantial changes. Likewise, individual changes in aerobic capacity and jump performance were not related to improvements in cognitive performance or changes in brain activation. In conclusion, our study does not support positive effects of exercise interventions on executive functions or emotion regulation in healthy young adults.
+keywords:
+  - affect regulation
+  - cognition
+  - chronic exercise
+  - fMRI
+  - randomized controlled trial
+---
+
+---
+
+{{< include /assets/includes/_metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/_button-publication.qmd >}}
+</div>

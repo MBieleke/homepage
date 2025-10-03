@@ -14,11 +14,67 @@
     "text": "StartR Workshop\nThe StartR workshop is designed to provide a solid introduction to R. It is suitable for novices with no prior experience in R as well as for beginners who want to consolidate and improve their skills. The workshop comprises both interactive lectures and hands-on exercises using real-word data.\n\n\nTopics:\n\nIntroduction to R and RStudio\nBuilding blocks of the R language\nCreating and working with objects in R\nGeneral workflow using R projects\nData merging, reshaping, and aggregation\nExploring and visualizing data\nAnalyzing data and testing hypotheses\n\nDetails:\n\nDuration: 3 to 4 days, but can be adjusted to your needs\nLanguage: available in English and German\nLocation: either online or in-person\n\n Get in touch"
   },
   {
-    "objectID": "scales/index.html",
-    "href": "scales/index.html",
-    "title": " Scales",
+    "objectID": "scales/itps/index.html",
+    "href": "scales/itps/index.html",
+    "title": "If-Then Planning Scale",
     "section": "",
-    "text": "Here is a list of scales I have developed in my research. Each scale is licensed under a Creative Commons Attribution 4.0 International License. In short, this license allows anyone to share and adapt these scales for any purpose and without requiring my permission. The only requirement is to give appropriate credit, in general by citing the corresponding publication. Select a scale to see further details and get instructions for usage and referencing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "The If-Then Planning Scale (ITPS) is a theory-grounded and empirically validated instrument for assessing individual differences in the propensity to make if-then plans in order to facilitate one’s goal attainment (e.g., “If I go to the cafeteria, then I will I grab an apple” when the goal is to eat healthier). It consists of eight items that tap into two important aspects of implementation intentions: whether an individual identifies critical obstacles and opportunities (e.g., going to the cafeteria) and specifies corresponding goal-directed behaviors (e.g., grabbing an apple)."
+  },
+  {
+    "objectID": "scales/itps/index.html#background",
+    "href": "scales/itps/index.html#background",
+    "title": "If-Then Planning Scale",
+    "section": "",
+    "text": "The If-Then Planning Scale (ITPS) is a theory-grounded and empirically validated instrument for assessing individual differences in the propensity to make if-then plans in order to facilitate one’s goal attainment (e.g., “If I go to the cafeteria, then I will I grab an apple” when the goal is to eat healthier). It consists of eight items that tap into two important aspects of implementation intentions: whether an individual identifies critical obstacles and opportunities (e.g., going to the cafeteria) and specifies corresponding goal-directed behaviors (e.g., grabbing an apple)."
+  },
+  {
+    "objectID": "scales/itps/index.html#usage",
+    "href": "scales/itps/index.html#usage",
+    "title": "If-Then Planning Scale",
+    "section": "Usage",
+    "text": "Usage\n\nLicense\nThe If-Then Planning Scale (ITPS) is licensed under a Creative Commons Attribution 4.0 International License. In short, this license allows anyone to share and adapt the ITPS for any purpose and without requiring the authors’ permission. The only requirement is to give appropriate credit (see next section).\n\n\nCitation\nTo give appropriate credit, please cite the following publication:\nBieleke, M., & Keller, L. (2021). Individual differences in if-then planning: Insights from the development and application of the If-Then Planning Scale (ITPS). Personality and Individual Differences, 170, Article 110500. https://doi.org/10.1016/j.paid.2020.110500"
+  },
+  {
+    "objectID": "scales/itps/index.html#adminstration",
+    "href": "scales/itps/index.html#adminstration",
+    "title": "If-Then Planning Scale",
+    "section": "Adminstration",
+    "text": "Adminstration\n\nAdministration\nThe ITPS can be administered in an online or in a paper-and-pencil format. Completing it takes about 1-2 minutes. The items might be presented in random order to avoid order effects. Participants rate each of the eight items on a 7-point Likert scale from 1 (strongly disagree) to 7 (strongly agree).\n\n\nInstruction\nThe ITPS has been developed as a domain-general measure of if-then planning. Accordingly, the instruction refers to goals in general and not to a specific goal. The focus is on difficult and important goals as only these goals require if-then planning to facilitate goal attainment. However, the instruction can in principle also be tailored to specific goals (e.g., health goals, learning goals) if the focus is on if-then planning in a particular domain.\n\n\nScoring and interpretation\nAn overall score is obtained by averaging a participant’s ratings across all eight items. All items are formulated in the same direction so that no reverse-coding is neccessary. A higher ITPS score indicates a greater propensity to engage in if-then planning.\nNote that although the ITPS is composed of different subscales (e.g., thinking about potential obstacles), subscale scores should only be used for explorative analyses. In general, it is recommended to interpret the overall ITPS score."
+  },
+  {
+    "objectID": "scales/boss/index.html",
+    "href": "scales/boss/index.html",
+    "title": "Bored of Sports Scale (BOSS)",
+    "section": "",
+    "text": "BOSS (eng)  BOSS (eng)"
+  },
+  {
+    "objectID": "scales/boss/index.html#background",
+    "href": "scales/boss/index.html#background",
+    "title": "Bored of Sports Scale (BOSS)",
+    "section": "Background",
+    "text": "Background\nThe BOSS Scale is an 11-item questionnaire designed to assess trait boredom within sports and exercise settings. Adapted from the learning-related boredom subscale of the Achievement Emotions Questionnaire (AEQ; Pekrun et al., 2011), the BOSS demonstrated excellent internal consistency in its validation study and was significantly associated with self‑reported exercise behavior, attestting to its criterion validity. Additionally, BOSS scores showed positive correlations with general boredom proneness and negative correlations with trait self‑control and planning, thereby supporting the scale’s convergent validity."
+  },
+  {
+    "objectID": "scales/boss/index.html#usage",
+    "href": "scales/boss/index.html#usage",
+    "title": "Bored of Sports Scale (BOSS)",
+    "section": "Usage",
+    "text": "Usage\n\nLicense\nThe BOSS is licensed under a Creative Commons Attribution 4.0 International License. In short, this license allows anyone to share and adapt the BOSS for any purpose and without requiring the authors’ permission. The only requirement is to give appropriate credit (see next section).\n\n\nCitation\nTo give appropriate credit, please cite the following publication:\nWolff, W., Bieleke, M., Stähler, J., & Schüler, J. (2021). Too bored for sports? Adaptive and less-adaptive latent personality profiles for exercise behavior. Psychology of Sport and Exercise, 53, 101851. https://doi.org/10.1016/j.psychsport.2020.101851"
+  },
+  {
+    "objectID": "scales/boss/index.html#adminstration",
+    "href": "scales/boss/index.html#adminstration",
+    "title": "Bored of Sports Scale (BOSS)",
+    "section": "Adminstration",
+    "text": "Adminstration\n\nAdministration\nThe BOSS can be administered in an online or in a paper-and-pencil format. Completing it takes about 2-3 minutes. Participants rate each of the eleven items on a 5- or 7-point Likert scale from strongly disagree to strongly agree.\n\n\nInstruction\nThe instructions used for the BOSS focus on sports and exercise. They can also be adapted to other contexts, such as physical activity, by changing the wording of the instruction and the items.\n\n\nScoring and interpretation\nAn overall score for the scale is obtained by averaging a participant’s ratings across all eleven items. The items are formulated in the same direction so that no reverse-coding is neccessary. A higher BOSS score indicates a higher level of boredom in sports and exercise contexts."
+  },
+  {
+    "objectID": "scales/boss/index.html#faq",
+    "href": "scales/boss/index.html#faq",
+    "title": "Bored of Sports Scale (BOSS)",
+    "section": "FAQ",
+    "text": "FAQ\n\nCan I use the BOSS in my study?\nYes. Just make sure to give appropriate credit in the resulting publications (see above).\n\n\nCan I translate or otherwise modify the BOSS?\nYes. You can adapt the VoPE scale in any way you want, including translations into other languages. Just make sure to give appropriate credit in the resulting publications (see above).\n\n\nIs the BOSS already available in languages other than English?\nThe BOSS scale has so far been validated in English. Translations into other languages are welcome, but they must be psychometrically validated. If you have a translation that you would like to share, please contact me."
   },
   {
     "objectID": "publications/wolff-staehler-schueler-2024-peer-community-j/index.html",
@@ -35,46 +91,53 @@
     "text": "Publication"
   },
   {
-    "objectID": "publications/wolff-martarelli-schuler-2020-int-j-environ-res-public-health/index.html",
-    "href": "publications/wolff-martarelli-schuler-2020-int-j-environ-res-public-health/index.html",
-    "title": "High boredom proneness and low trait self-control impair adherence to social distancing guidelines during the COVID-19 Pandemic",
+    "objectID": "publications/wolff-oezay-otgonbayar-danckert-2025-neurosci-biobehav-rev/index.html",
+    "href": "publications/wolff-oezay-otgonbayar-danckert-2025-neurosci-biobehav-rev/index.html",
+    "title": "Effort and boredom shape our experience of time",
     "section": "",
     "text": "PDF\n Publication\n PsyArXiv"
   },
   {
-    "objectID": "publications/wolff-bieleke-stahler-2021-psychol-sport-exerc/index.html",
-    "href": "publications/wolff-bieleke-stahler-2021-psychol-sport-exerc/index.html",
-    "title": "Too bored for sports? Adaptive and less-adaptive latent personality profiles for exercise behavior",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv\n OSF"
-  },
-  {
-    "objectID": "publications/wolff-bieleke-martarelli-2023-perform-enhanc-health/index.html",
-    "href": "publications/wolff-bieleke-martarelli-2023-perform-enhanc-health/index.html",
-    "title": "Boredom, performance & health",
+    "objectID": "publications/wolff-hirsch-bieleke-2021-chapter/index.html",
+    "href": "publications/wolff-hirsch-bieleke-2021-chapter/index.html",
+    "title": "Neuroscientific approaches to self-regulatory control in sports",
     "section": "",
     "text": "PDF\n Publication\n PsyArXiv"
   },
   {
-    "objectID": "publications/wolff-bieleke-keller-2021-ijerph/index.html",
-    "href": "publications/wolff-bieleke-keller-2021-ijerph/index.html",
-    "title": "Boredom proneness predicts self-assessed decision errors in sports but is unrelated to risk taking in general",
+    "objectID": "publications/wolff-bieleke-schuler-2019-chapter/index.html",
+    "href": "publications/wolff-bieleke-schuler-2019-chapter/index.html",
+    "title": "Goal striving and endurance performance",
     "section": "",
-    "text": "PDF\n Publication\n PsyArXiv\n Research Box"
+    "text": "PDF\n Publication"
   },
   {
-    "objectID": "publications/wolff-bieleke-englert-2021-soc-psychol-bull/index.html",
-    "href": "publications/wolff-bieleke-englert-2021-soc-psychol-bull/index.html",
-    "title": "A single item measure of self-control - Validation and location in a nomological network of self-control, boredom, and if-then planning",
+    "objectID": "publications/wolff-bieleke-martarelli-2021-front-psychol/index.html",
+    "href": "publications/wolff-bieleke-martarelli-2021-front-psychol/index.html",
+    "title": "A primer on the role of boredom in self-controlled sports and exercise behavior",
     "section": "",
-    "text": "PDF\n Publication\n PsyArXiv\n OSF"
+    "text": "PDF\n Publication"
   },
   {
-    "objectID": "publications/wientges-bieleke-wolff-2025-preprint/index.html",
-    "href": "publications/wientges-bieleke-wolff-2025-preprint/index.html",
-    "title": "A novel approach to analysing cognitive and physical effort in a unified motor task",
+    "objectID": "publications/wolff-bieleke-hirsch-2018-sci-rep/index.html",
+    "href": "publications/wolff-bieleke-hirsch-2018-sci-rep/index.html",
+    "title": "Increase in prefrontal cortex oxygenation during static muscular endurance performance is modulated by self-regulation strategies",
     "section": "",
-    "text": "Publication\n OSF\n Preregistration"
+    "text": "PDF\n Publication"
+  },
+  {
+    "objectID": "publications/wientges-schueler-bieleke-2024-prereg/index.html",
+    "href": "publications/wientges-schueler-bieleke-2024-prereg/index.html",
+    "title": "Testing a novel task paradigm for inducing cognitive and physical effort",
+    "section": "",
+    "text": "Preregistration"
+  },
+  {
+    "objectID": "publications/wallenwein-schmidt-barzyk-2025-cereb-cortex/index.html",
+    "href": "publications/wallenwein-schmidt-barzyk-2025-cereb-cortex/index.html",
+    "title": "Eight-week high intensity jump training does not change neural correlates of executive functions and emotion regulation in young adults",
+    "section": "",
+    "text": "Publication"
   },
   {
     "objectID": "publications/staehler-wolff-bieleke-2024-preprint/index.html",
@@ -91,331 +154,37 @@
     "text": "Publication"
   },
   {
-    "objectID": "publications/schueler-bieleke-2024-curr-psychol/index.html",
-    "href": "publications/schueler-bieleke-2024-curr-psychol/index.html",
-    "title": "Assessing and exploring self-enacted behavior change techniques: Frequency, structure, and relevance for physical activity and healthy eating",
+    "objectID": "publications/schueler-heino-balague-2025-nat-hum-behav/index.html",
+    "href": "publications/schueler-heino-balague-2025-nat-hum-behav/index.html",
+    "title": "A complex systems view on physical activity with actionable insights for behaviour change",
+    "section": "",
+    "text": "Publication\n PsyArXiv"
+  },
+  {
+    "objectID": "publications/roos-goetz-krannich-2022-brit-j-educ-psychol/index.html",
+    "href": "publications/roos-goetz-krannich-2022-brit-j-educ-psychol/index.html",
+    "title": "Control, anxiety and test performance: Self-reported and physiological indicators of anxiety as mediators",
+    "section": "",
+    "text": "PDF\n Publication"
+  },
+  {
+    "objectID": "publications/martiny-huenger-bieleke-doerflinger-2021-psychon-bull-rev/index.html",
+    "href": "publications/martiny-huenger-bieleke-doerflinger-2021-psychon-bull-rev/index.html",
+    "title": "Deliberation decreases the likelihood of expressing dominant responses",
     "section": "",
     "text": "PDF\n Publication\n OSF"
   },
   {
-    "objectID": "publications/martiny-huenger-bieleke-oettingen-2016-chapter/index.html",
-    "href": "publications/martiny-huenger-bieleke-oettingen-2016-chapter/index.html",
-    "title": "From thought to automatic action: Strategic and spontaneous action control by if-then planning",
-    "section": "",
-    "text": "PDF\n Publication"
-  },
-  {
-    "objectID": "publications/martarelli-wolff-bieleke-2021-humanit-soc-sci-commun/index.html",
-    "href": "publications/martarelli-wolff-bieleke-2021-humanit-soc-sci-commun/index.html",
-    "title": "Bored by bothering? A cost-value approach to pandemic boredom",
+    "objectID": "publications/martarelli-pacozzi-bieleke-2021-front-psychol/index.html",
+    "href": "publications/martarelli-pacozzi-bieleke-2021-front-psychol/index.html",
+    "title": "High trait self-control and low boredom proneness help COVID-19 homeschoolers",
     "section": "",
     "text": "PDF\n Publication\n PsyArXiv\n OSF"
   },
   {
-    "objectID": "publications/martarelli-berthouzoz-bieleke-2022-sport-exerc-perform-psychol/index.html",
-    "href": "publications/martarelli-berthouzoz-bieleke-2022-sport-exerc-perform-psychol/index.html",
-    "title": "Bored of sports? Investigating the interactive role of engagement and value as predictors of boredom in athletic training",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv\n OSF"
-  },
-  {
-    "objectID": "publications/keller-koppe-gollwitzer-2021-plos-one/index.html",
-    "href": "publications/keller-koppe-gollwitzer-2021-plos-one/index.html",
-    "title": "Overclaiming is related to confidence but not to dark triad personality traits or stated and revealed risk preferences",
-    "section": "",
-    "text": "PDF\n Publication\n Research Box"
-  },
-  {
-    "objectID": "publications/keller-bieleke-gollwitzer-2023-chapter-de/index.html",
-    "href": "publications/keller-bieleke-gollwitzer-2023-chapter-de/index.html",
-    "title": "Mindset-Theorie der Handlungsphasen und Wenn-Dann-Pläne",
-    "section": "",
-    "text": "PDF\n Publication"
-  },
-  {
-    "objectID": "publications/janczyk-dambacher-bieleke-2015-psychol-res/index.html",
-    "href": "publications/janczyk-dambacher-bieleke-2015-psychol-res/index.html",
-    "title": "The benefit of no choice: Goal-directed plans enhance perceptual processing",
-    "section": "",
-    "text": "PDF\n Publication"
-  },
-  {
-    "objectID": "publications/hirsch-bieleke-schuler-2020-int-j-environ-res-public-health/index.html",
-    "href": "publications/hirsch-bieleke-schuler-2020-int-j-environ-res-public-health/index.html",
-    "title": "Implicit theories about athletic ability modulate the effects of if-then planning on performance in a standardized endurance task",
-    "section": "",
-    "text": "PDF\n Publication"
-  },
-  {
-    "objectID": "publications/hirsch-bieleke-bertschinger-2021-plos-one/index.html",
-    "href": "publications/hirsch-bieleke-bertschinger-2021-plos-one/index.html",
-    "title": "Struggles and strategies in anaerobic and aerobic cycling tests: A mixed-method approach with a focus on tailored self-regulation strategies",
-    "section": "",
-    "text": "PDF\n Publication\n OSF"
-  },
-  {
-    "objectID": "publications/gollwitzer-bieleke-sheeran-2017-chapter/index.html",
-    "href": "publications/gollwitzer-bieleke-sheeran-2017-chapter/index.html",
-    "title": "Enhancing consumer behaviour with implementation intentions",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv"
-  },
-  {
-    "objectID": "publications/goetz-bieleke-gogol-2021-learn-instr/index.html",
-    "href": "publications/goetz-bieleke-gogol-2021-learn-instr/index.html",
-    "title": "Getting along and feeling good: Reciprocal associations between student-teacher relationship quality and students’ emotions",
-    "section": "",
-    "text": "PDF\n Publication"
-  },
-  {
-    "objectID": "publications/brinkhof-ridderinkhof-bieleke-2023-curr-psychol/index.html",
-    "href": "publications/brinkhof-ridderinkhof-bieleke-2023-curr-psychol/index.html",
-    "title": "Are older individuals predisposed to habitual control more resilient?",
-    "section": "",
-    "text": "PDF\n Publication\n Preregistration"
-  },
-  {
-    "objectID": "publications/bieleke-wolff-martarelli-2024-chapter-2/index.html",
-    "href": "publications/bieleke-wolff-martarelli-2024-chapter-2/index.html",
-    "title": "Overview of current directions in boredom research",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv"
-  },
-  {
-    "objectID": "publications/bieleke-wolff-keller-2021-mot-emo/index.html",
-    "href": "publications/bieleke-wolff-keller-2021-mot-emo/index.html",
-    "title": "Getting trapped in a dead end? Trait self-control and boredom are linked to goal adjustment",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv\n OSF"
-  },
-  {
-    "objectID": "publications/bieleke-wolff-englert-2021-z-sportpsychol/index.html",
-    "href": "publications/bieleke-wolff-englert-2021-z-sportpsychol/index.html",
-    "title": "If-then planning in sports: A scoping review",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv"
-  },
-  {
-    "objectID": "publications/bieleke-wolff-2021-perform-enhanc-health/index.html",
-    "href": "publications/bieleke-wolff-2021-perform-enhanc-health/index.html",
-    "title": "Special issue: The self-regulation of human performance",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv"
-  },
-  {
-    "objectID": "publications/bieleke-wolff-2021-behav-brain-sci/index.html",
-    "href": "publications/bieleke-wolff-2021-behav-brain-sci/index.html",
-    "title": "It’s not a bug, it’s boredom: Effortful willpower balances exploitation and exploration",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv"
-  },
-  {
-    "objectID": "publications/bieleke-staehler-wolff-2025-collabra-psychol/index.html",
-    "href": "publications/bieleke-staehler-wolff-2025-collabra-psychol/index.html",
-    "title": "Development and validation of the Value of Physical Effort (VoPE) scale",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv\n OSF"
-  },
-  {
-    "objectID": "publications/bieleke-ripper-schueler-2021-r-soc-open-sci/index.html",
-    "href": "publications/bieleke-ripper-schueler-2021-r-soc-open-sci/index.html",
-    "title": "Boredom is the root of all evil — or is it? A psychometric network approach to individual differences in behavioral responses to boredom",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv\n OSF"
-  },
-  {
-    "objectID": "publications/bieleke-legrand-mignon-2018-acta-psychol/index.html",
-    "href": "publications/bieleke-legrand-mignon-2018-acta-psychol/index.html",
-    "title": "More than planned: Implementation intention effects in non-planned situations",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv"
-  },
-  {
-    "objectID": "publications/bieleke-keller-gollwitzer-2021-eur-rev-soc-psychol/index.html",
-    "href": "publications/bieleke-keller-gollwitzer-2021-eur-rev-soc-psychol/index.html",
-    "title": "If-then planning",
-    "section": "",
-    "text": "PDF\n Publication"
-  },
-  {
-    "objectID": "publications/bieleke-keller-2021-pers-indiv-differ/index.html",
-    "href": "publications/bieleke-keller-2021-pers-indiv-differ/index.html",
-    "title": "Individual differences in if-then planning: Insights from the development and application of the If-Then Planning Scale (ITPS)",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv\n OSF"
-  },
-  {
-    "objectID": "publications/bieleke-gogol-goetz-2021-contemp-educ-psychol/index.html",
-    "href": "publications/bieleke-gogol-goetz-2021-contemp-educ-psychol/index.html",
-    "title": "The AEQ-S: A short version of the Achievement Emotions Questionnaire",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv"
-  },
-  {
-    "objectID": "publications/bieleke-goetz-krannich-2021-j-exp-educ/index.html",
-    "href": "publications/bieleke-goetz-krannich-2021-j-exp-educ/index.html",
-    "title": "Starting tests with easy versus difficult tasks: Effects on appraisals and emotions",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv"
-  },
-  {
-    "objectID": "publications/bieleke-dohmen-gollwitzer-2020-j-exp-soc-psychol/index.html",
-    "href": "publications/bieleke-dohmen-gollwitzer-2020-j-exp-soc-psychol/index.html",
-    "title": "Effects of social value orientation (SVO) and decision mode on controlled information acquisition - A Mouselab perspective",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv\n OSF"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Maik Bieleke",
-    "section": "",
-    "text": "I’m a senior researcher, laboratory head, and data scientist in the sport psychology lab at the University of Konstanz, Germany. My interestes include human motivation, effort, and performance in basic and applied research. I passionately use R for data science and in my general workflow.\n \n  \n   \n  \n    \n     \n  \n  \n     \n  \n  \n    \n     \n  \n  \n    \n     \n  \n  \n    \n     \n  \n  \n     \n  \n  \n     \n  \n\n\n\n\n\n\n\n\n\n Out now: The Handbook of Boredom\n\n\n\n\n\nWith contributions from boredom researchers across various disciplines, this book provides a unique and comprehensive exploration of boredom.\nContents:\n\nFoundations: Overview of a multitude of theoretical, conceptual, historical, and methodological aspects of boredom.\nCorrelates: Exploration of the properties of boredom and its links to self-control, mind-wandering, flow, and aggression.\nContexts: Insights into boredom in various life domains and its role for health, well-being, and aesthetic experience.\n\nBonus:\nThe final chapter is a collective effort of all contributors, offering a panoramic view of the field and outlining its future directions.\n Check it out \n\n\n\n\n\n\nThe Handbook of Boredom, edited by Maik Bieleke, Wanja Wolff, & Corinna Martarelli."
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "publications/bieleke-barton-wolff-2021-cognition-emotion/index.html",
-    "href": "publications/bieleke-barton-wolff-2021-cognition-emotion/index.html",
-    "title": "Trajectories of boredom in self-control demanding tasks",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv\n OSF"
-  },
-  {
-    "objectID": "publications/bieleke-fischer-gruber-2022-prereg/index.html",
-    "href": "publications/bieleke-fischer-gruber-2022-prereg/index.html",
-    "title": "Promoting Physical Exercise in Lab and Life (ProPELL)",
-    "section": "",
-    "text": "Preregistration"
-  },
-  {
-    "objectID": "publications/bieleke-goetz-yanagida-2022-zdm-math-educ/index.html",
-    "href": "publications/bieleke-goetz-yanagida-2022-zdm-math-educ/index.html",
-    "title": "Measuring emotions in mathematics: The Achievement Emotions Questionnaire—Mathematics (AEQ-M)",
-    "section": "",
-    "text": "PDF\n Publication"
-  },
-  {
-    "objectID": "publications/bieleke-gollwitzer-oettingen-2017-j-behav-dec-making/index.html",
-    "href": "publications/bieleke-gollwitzer-oettingen-2017-j-behav-dec-making/index.html",
-    "title": "Social value orientation moderates the effects of intuition versus reflection on responses to unfair ultimatum offers",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv"
-  },
-  {
-    "objectID": "publications/bieleke-keller-englert-2024-chapter/index.html",
-    "href": "publications/bieleke-keller-englert-2024-chapter/index.html",
-    "title": "Anstrengung, Langeweile, Krisen: Neue Perspektiven und Ansätze zur Selbstkontrolle im Sport",
-    "section": "",
-    "text": "Publication"
-  },
-  {
-    "objectID": "publications/bieleke-kriech-wolff-2019-behav-sci/index.html",
-    "href": "publications/bieleke-kriech-wolff-2019-behav-sci/index.html",
-    "title": "Served well? A pilot field study on the effects of conveying self-control strategies on volleyball service performance",
-    "section": "",
-    "text": "PDF\n Publication"
-  },
-  {
-    "objectID": "publications/bieleke-martarelli-wolff-2021-curr-psychol/index.html",
-    "href": "publications/bieleke-martarelli-wolff-2021-curr-psychol/index.html",
-    "title": "If-then planning, self-control, and boredom as predictors of adherence to social distancing guidelines: Evidence from a two-wave longitudinal study with a behavioral intervention",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv\n OSF"
-  },
-  {
-    "objectID": "publications/bieleke-schwarzkopf-goetz-2022-plos-one/index.html",
-    "href": "publications/bieleke-schwarzkopf-goetz-2022-plos-one/index.html",
-    "title": "The agonizing effects of uncertainty: Effects of announced vs. unannounced performance assessments on emotions and achievement",
-    "section": "",
-    "text": "PDF\n Publication\n OSF"
-  },
-  {
-    "objectID": "publications/bieleke-wolff-2017-front-physiol/index.html",
-    "href": "publications/bieleke-wolff-2017-front-physiol/index.html",
-    "title": "That escalated quickly–Planning to ignore RPE can backfire",
-    "section": "",
-    "text": "PDF\n Publication"
-  },
-  {
-    "objectID": "publications/bieleke-wolff-2021-in-mind/index.html",
-    "href": "publications/bieleke-wolff-2021-in-mind/index.html",
-    "title": "Bug or Feature? Langeweile ist unangenehm und gerade deswegen wichtig",
-    "section": "",
-    "text": "Publication"
-  },
-  {
-    "objectID": "publications/bieleke-wolff-bertrams-2024-chapter/index.html",
-    "href": "publications/bieleke-wolff-bertrams-2024-chapter/index.html",
-    "title": "On the virtues of fragile self-control: Boredom as a catalyst for adaptive behavior regulation",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv"
-  },
-  {
-    "objectID": "publications/bieleke-wolff-goetz-2025-psychol-sport-exerc/index.html",
-    "href": "publications/bieleke-wolff-goetz-2025-psychol-sport-exerc/index.html",
-    "title": "“Why am I doing this anyway?” A control-value perspective on boredom in endurance sports",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv\n OSF"
-  },
-  {
-    "objectID": "publications/bieleke-wolff-martarelli-2024-chapter-1/index.html",
-    "href": "publications/bieleke-wolff-martarelli-2024-chapter-1/index.html",
-    "title": "Boredom is not boring",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv"
-  },
-  {
-    "objectID": "publications/bieleke-wolff-martarelli-2024-handbook/index.html",
-    "href": "publications/bieleke-wolff-martarelli-2024-handbook/index.html",
-    "title": "Handbook of Boredom",
-    "section": "",
-    "text": "Publication"
-  },
-  {
-    "objectID": "publications/dewit-bieleke-fletcher-2023-pci-regist-rep/index.html",
-    "href": "publications/dewit-bieleke-fletcher-2023-pci-regist-rep/index.html",
-    "title": "How long does it take to form a habit? A multi-center replication",
-    "section": "",
-    "text": "OSF\n Preregistration\n Registered Report"
-  },
-  {
-    "objectID": "publications/goetz-bieleke-yanagida-2023-j-educ-psychol/index.html",
-    "href": "publications/goetz-bieleke-yanagida-2023-j-educ-psychol/index.html",
-    "title": "Test boredom: Exploring a neglected emotion",
-    "section": "",
-    "text": "PDF\n Publication"
-  },
-  {
-    "objectID": "publications/graf-goetz-bieleke-2024-polit-psychol/index.html",
-    "href": "publications/graf-goetz-bieleke-2024-polit-psychol/index.html",
-    "title": "Feeling politics at school: Antecedents and effects of emotions in civic education",
-    "section": "",
-    "text": "PDF\n Publication\n Preregistration\n PsyArXiv\n OSF"
-  },
-  {
-    "objectID": "publications/hirsch-bieleke-schueler-2024-j-appl-sport-exerc-psychol/index.html",
-    "href": "publications/hirsch-bieleke-schueler-2024-j-appl-sport-exerc-psychol/index.html",
-    "title": "Inner obstacles and goal-directed behaviors of elite and youth level cyclists: A qualitative analysis from the perspective of athletes and coaches",
-    "section": "",
-    "text": "PDF\n Publication\n PsyArXiv\n OSF"
-  },
-  {
-    "objectID": "publications/index.html",
-    "href": "publications/index.html",
-    "title": " Publications",
-    "section": "",
-    "text": "Most of my publications are available as preprints on PsyArXiv. If possible, the corresponding data and materials are available via OSF. If you need an individual copy of a publication or access to additional data and materials, please send me an email.\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDevelopment and validation of the Value of Physical Effort (VoPE) scale\n\n\nCollabra: Psychology\n\n\n\npreprint (peer-reviewed)\n\n\noriginal research\n\n\nscale development\n\n\n\n\n\n\n2025\n\n\nMaik Bieleke, Johanna Stähler, Wanja Wolff, Julia Schüler\n\n\n\n\n\n\n\n“Why am I doing this anyway?” A control-value perspective on boredom in endurance sports\n\n\nPsychology of Sport & Exercise\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2025\n\n\nMaik Bieleke, Wanja Wolff, Catharina Cremer, Fanni Kaisinger, Thomas Goetz\n\n\n\n\n\n\n\nDifferent functions of physical effort: A scoping review of the value of physical effort in physical activity and sports\n\n\nMotivation and Emotion\n\n\n\njournal article\n\n\nconceptual paper\n\n\n\n\n\n\n2025\n\n\nJohanna Stähler, Maik Bieleke, Wanja Wolff, Julia Schüler\n\n\n\n\n\n\n\nA novel approach to analysing cognitive and physical effort in a unified motor task\n\n\nPsyArXiv\n\n\n\npreprint\n\n\noriginal research\n\n\n\n\n\n\n2025\n\n\nJonathan Wientges, Maik Bieleke, Wanja Wolff, Ursula Fischer, Julia Schüler\n\n\n\n\n\n\n\nEffort and boredom shape our experience of time\n\n\nPsyArXiv\n\n\n\npreprint\n\n\ntheory development\n\n\n\n\n\n\n2025\n\n\nWanja Wolff, Sena Özay-Otgonbayar, James Danckert, Maik Bieleke, Corinna S. Martarelli\n\n\n\n\n\n\n\nAnstrengung, Langeweile, Krisen: Neue Perspektiven und Ansätze zur Selbstkontrolle im Sport\n\n\nSportpsychologie: Grundlagen und Trends\n\n\n\nbook chapter\n\n\n\n\n\n\n2024\n\n\nMaik Bieleke, Lucas Keller, Chris Englert\n\n\n\n\n\n\n\nOn the virtues of fragile self-control: Boredom as a catalyst for adaptive behavior regulation\n\n\nHandbook of Boredom\n\n\n\nbook chapter\n\n\n\n\n\n\n2024\n\n\nMaik Bieleke, Wanja Wolff, Alex Bertrams\n\n\n\n\n\n\n\nBoredom is not boring\n\n\nHandbook of Boredom\n\n\n\nbook chapter\n\n\n\n\n\n\n2024\n\n\nMaik Bieleke, Wanja Wolff, Corinna S. Martarelli\n\n\n\n\n\n\n\nFeeling politics at school: Antecedents and effects of emotions in civic education\n\n\nPolitical Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2024\n\n\nElisabeth Graf, Thomas Goetz, Maik Bieleke, Dana Murano\n\n\n\n\n\n\n\nInner obstacles and goal-directed behaviors of elite and youth level cyclists: A qualitative analysis from the perspective of athletes and coaches\n\n\nJournal of Applied Sport and Exercise Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2024\n\n\nAnna Hirsch, Maik Bieleke, Julia Schüler, Wanja Wolff\n\n\n\n\n\n\n\nAssessing and exploring self-enacted behavior change techniques: Frequency, structure, and relevance for physical activity and healthy eating\n\n\nCurrent Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2024\n\n\nJulia Schüler, Maik Bieleke\n\n\n\n\n\n\n\nLatent profiles of effort functions and their impact on task experience and behavior\n\n\nPsyArXiv\n\n\n\npreprint\n\n\noriginal research\n\n\n\n\n\n\n2024\n\n\nJohanna Stähler, Wanja Wolff, Maik Bieleke, Julia Schüler\n\n\n\n\n\n\n\nTesting a novel task paradigm for inducing cognitive and physical effort\n\n\nOSF Registries\n\n\n\npreregistration\n\n\n\n\n\n\n2024\n\n\nJonathan Wientges, Julia Schüler, Maik Bieleke\n\n\n\n\n\n\n\nBug or feature? Boredom feels aversive, and this is why it matters\n\n\nIn-Mind\n\n\n\nmiscellaneous\n\n\n\n\n\n\n2024\n\n\nMaik Bieleke, Katja Rewitz, Wanja Wolff\n\n\n\n\n\n\n\nOn the specifics of valuing effort: A developmental and a formalized perspective on preferences for mental and physical effort\n\n\nPeer Community Journal\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2024\n\n\nWanja Wolff, Johanna Stähler, Julia Schüler, Maik Bieleke\n\n\n\n\n\n\n\nOverview of current directions in boredom research\n\n\nHandbook of Boredom\n\n\n\nbook chapter\n\n\n\n\n\n\n2024\n\n\nMaik Bieleke, Wanja Wolff, Corinna S. Martarelli, Christine Emilie Tonne Artak, Nazim Asani, Ambroise Baillifard, Alex Bertrams, Aenne Brielmann, Linda L. Caldwell, Christian S. Chan, Géraldine Coppin, James Danckert, Van Dang, Lia Daniels, Peter Dayan, Allison Drody, Andreas Elpidorou, Asli Erdemli, Ursula Fischer, Thomas Goetz, Eric R. Igou, Nathanael S. Jost, Heather C. Lench, Anastasiya A. Lipnevich, Carrie Anne Marshall, Andrew B. Moynihan, Muireann K. O’Dea, Patti Parker, Reinhard Pekrun, Stefan Pfattheicher, Vanessa C. Radtke, Noah T. Reed, Josefa Ros Velasco, Lisa Stempfer, Katy Y. Y. Tam, Virginia Tze, Madelon L. M. Van Hooff, Edwin A. J. Van Hooft, Wijnand A. P. Van Tilburg, David Weibel, Christian Weich, Elizabeth Weybright, Bartholomäus Wissmath, Ofir Yakobi\n\n\n\n\n\n\n\nHandbook of Boredom\n\n\n\n\n\n\nbook\n\n\n\n\n\n\n2024\n\n\nMaik Bieleke, Wanja Wolff, Corinna S. Martarelli\n\n\n\n\n\n\n\nStarting tests with easy versus difficult tasks: Effects on appraisals and emotions\n\n\nJournal of Experimental Education\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2023\n\n\nMaik Bieleke, Thomas Goetz, Maike Krannich, Anna-Lena Roos, Takuya Yanagida\n\n\n\n\n\n\n\nMeasuring emotions in mathematics: The Achievement Emotions Questionnaire—Mathematics (AEQ-M)\n\n\nZDM Mathematics Education\n\n\n\njournal article\n\n\nscale development\n\n\n\n\n\n\n2023\n\n\nMaik Bieleke, Thomas Goetz, Takuya Yanagida, Elouise Botes, Anne C. Frenzel, Reinhard Pekrun\n\n\n\n\n\n\n\nIf-then planning, self-control, and boredom as predictors of adherence to social distancing guidelines: Evidence from a two-wave longitudinal study with a behavioral intervention\n\n\nCurrent Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2023\n\n\nMaik Bieleke, Corinna S. Martarelli, Wanja Wolff\n\n\n\n\n\n\n\nAre older individuals predisposed to habitual control more resilient?\n\n\nCurrent Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2023\n\n\nLotte P. Brinkhof, K. Richard Ridderinkhof, Maik Bieleke, Jaap M. J. Murre, Harm J. Krugers, Sanne de Wit\n\n\n\n\n\n\n\nHow long does it take to form a habit? A multi-center replication\n\n\nPeer Community in Registered Reports\n\n\n\nregistered report\n\n\npreregistration\n\n\n\n\n\n\n2023\n\n\nSanne de Wit, Maik Bieleke, Paul Fletcher, Annette Horstmann, Julia Schüler, Lotte P. Brinkhof, Lukas J. Gunschera, Jaap M. J. Murre\n\n\n\n\n\n\n\nTest boredom: Exploring a neglected emotion\n\n\nJournal of Educational Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2023\n\n\nThomas Goetz, Maik Bieleke, Takuya Yanagida, Maike Krannich, Anna-Lena Roos, Anne C. Frenzel, Anastasiya A. Lipnevich, Reinhard Pekrun\n\n\n\n\n\n\n\nMindset-Theorie der Handlungsphasen und Wenn-Dann-Pläne\n\n\nSozialpsychologie: Von der Theorie zur Anwendung\n\n\n\nbook chapter\n\n\n\n\n\n\n2023\n\n\nLucas Keller, Maik Bieleke, Peter M. Gollwitzer\n\n\n\n\n\n\n\nBored of sports? Investigating the interactive role of engagement and value as predictors of boredom in athletic training\n\n\nSport, Exercise, and Performance Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2023\n\n\nCorinna S. Martarelli, Pauline Berthouzoz, Maik Bieleke, Wanja Wolff\n\n\n\n\n\n\n\nControl, anxiety and test performance: Self-reported and physiological indicators of anxiety as mediators\n\n\nBritish Journal of Educational Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2023\n\n\nAnna-Lena Roos, Thomas Goetz, Maike Krannich, Monika Donker, Maik Bieleke, Anna Caltabiano, Tim Mainhard\n\n\n\n\n\n\n\nBoredom, performance & health\n\n\nPerformance Enhancement & Health\n\n\n\njournal article\n\n\neditorial\n\n\n\n\n\n\n2023\n\n\nWanja Wolff, Maik Bieleke, Corinna S. Martarelli\n\n\n\n\n\n\n\nPromoting Physical Exercise in Lab and Life (ProPELL)\n\n\nGerman Clinical Trial Register (DRKS00029727)\n\n\n\npreregistration\n\n\n\n\n\n\n2022\n\n\nMaik Bieleke, Ursula Fischer, Markus Gruber, Martina Kanning, Daniel Keim, Daniela Mier, Jens Pruessner, Julia Schüler\n\n\n\n\n\n\n\nBoredom is the root of all evil — or is it? A psychometric network approach to individual differences in behavioral responses to boredom\n\n\nRoyal Society Open Science\n\n\n\njournal article\n\n\noriginal research\n\n\nscale development\n\n\n\n\n\n\n2022\n\n\nMaik Bieleke, Leonie Ripper, Julia Schüler, Wanja Wolff\n\n\n\n\n\n\n\nThe agonizing effects of uncertainty: Effects of announced vs. unannounced performance assessments on emotions and achievement\n\n\nPLoS ONE\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2022\n\n\nMaik Bieleke, Jean-Marie Schwarzkopf, Thomas Goetz, Ludwig Haag\n\n\n\n\n\n\n\nGetting trapped in a dead end? Trait self-control and boredom are linked to goal adjustment\n\n\nMotivation and Emotion\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2022\n\n\nMaik Bieleke, Wanja Wolff, Lucas Keller\n\n\n\n\n\n\n\nA single item measure of self-control - Validation and location in a nomological network of self-control, boredom, and if-then planning\n\n\nSocial Psychological Bulletin\n\n\n\njournal article\n\n\noriginal research\n\n\nscale development\n\n\n\n\n\n\n2022\n\n\nWanja Wolff, Maik Bieleke, Chris Englert, Alex Bertrams, Julia Schüler, Corinna S. Martarelli\n\n\n\n\n\n\n\nBoredom proneness predicts self-assessed decision errors in sports but is unrelated to risk taking in general\n\n\nInternational Journal of Environmental Research and Public Health\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2022\n\n\nWanja Wolff, Maik Bieleke, Lucas Keller\n\n\n\n\n\n\n\nTrajectories of boredom in self-control demanding tasks\n\n\nCognition and Emotion\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2021\n\n\nMaik Bieleke, Leon Barton, Wanja Wolff\n\n\n\n\n\n\n\nThe AEQ-S: A short version of the Achievement Emotions Questionnaire\n\n\nContemporary Educational Psychology\n\n\n\njournal article\n\n\nscale development\n\n\n\n\n\n\n2021\n\n\nMaik Bieleke, Katarzyna Gogol, Thomas Goetz, Lia Daniels, Reinhard Pekrun\n\n\n\n\n\n\n\nIndividual differences in if-then planning: Insights from the development and application of the If-Then Planning Scale (ITPS)\n\n\nPersonality and Individual Differences\n\n\n\njournal article\n\n\nscale development\n\n\n\n\n\n\n2021\n\n\nMaik Bieleke, Lucas Keller\n\n\n\n\n\n\n\nIf-then planning\n\n\nEuropean Review of Social Psychology\n\n\n\njournal article\n\n\nliterature review\n\n\n\n\n\n\n2021\n\n\nMaik Bieleke, Lucas Keller, Peter M. Gollwitzer\n\n\n\n\n\n\n\nIt’s not a bug, it’s boredom: Effortful willpower balances exploitation and exploration\n\n\nBehavioral and Brain Sciences\n\n\n\njournal article\n\n\ncommentary\n\n\n\n\n\n\n2021\n\n\nMaik Bieleke, Wanja Wolff\n\n\n\n\n\n\n\nBug or Feature? Langeweile ist unangenehm und gerade deswegen wichtig\n\n\nIn-Mind\n\n\n\nmiscellaneous\n\n\n\n\n\n\n2021\n\n\nMaik Bieleke, Wanja Wolff\n\n\n\n\n\n\n\nSpecial issue: The self-regulation of human performance\n\n\nPerformance Enhancement & Health\n\n\n\njournal article\n\n\neditorial\n\n\n\n\n\n\n2021\n\n\nMaik Bieleke, Wanja Wolff\n\n\n\n\n\n\n\nIf-then planning in sports: A scoping review\n\n\nZeitschrift für Sportpsychologie\n\n\n\njournal article\n\n\nliterature review\n\n\n\n\n\n\n2021\n\n\nMaik Bieleke, Wanja Wolff, Chris Englert, Peter M. Gollwitzer\n\n\n\n\n\n\n\nGetting along and feeling good: Reciprocal associations between student-teacher relationship quality and students’ emotions\n\n\nLearning and Instruction\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2021\n\n\nThomas Goetz, Maik Bieleke, Katarzyna Gogol, Jan van Tartwijk, Tim Mainhard, Anastasiya A. Lipnevich, Reinhard Pekrun\n\n\n\n\n\n\n\nStruggles and strategies in anaerobic and aerobic cycling tests: A mixed-method approach with a focus on tailored self-regulation strategies\n\n\nPLoS ONE\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2021\n\n\nAnna Hirsch, Maik Bieleke, Raphael Bertschinger, Julia Schüler, Wanja Wolff\n\n\n\n\n\n\n\nBursting balloons - Comparison of risk propensity between extreme sports, esports, and the general public\n\n\nCurrent Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2021\n\n\nLucas Keller, Maik Bieleke, Wanja Wolff\n\n\n\n\n\n\n\nOverclaiming is related to confidence but not to dark triad personality traits or stated and revealed risk preferences\n\n\nPLoS ONE\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2021\n\n\nLucas Keller, Kim-Marie Koppe, Peter M. Gollwitzer, Maik Bieleke\n\n\n\n\n\n\n\nHigh trait self-control and low boredom proneness help COVID-19 homeschoolers\n\n\nFrontiers in Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2021\n\n\nCorinna S. Martarelli, Simona Pacozzi, Maik Bieleke, Wanja Wolff\n\n\n\n\n\n\n\nBored by bothering? A cost-value approach to pandemic boredom\n\n\nHumanities and Social Sciences Communications\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2021\n\n\nCorinna S. Martarelli, Wanja Wolff, Maik Bieleke\n\n\n\n\n\n\n\nDeliberation decreases the likelihood of expressing dominant responses\n\n\nPsychonomic Bulletin & Review\n\n\n\njournal article\n\n\noriginal research\n\n\ntheory development\n\n\n\n\n\n\n2021\n\n\nTorsten Martiny-Huenger, Maik Bieleke, Johannes Doerflinger, Matthew B. Stephensen, Peter M. Gollwitzer\n\n\n\n\n\n\n\nEntwicklung eines kognitiven Trainings zur Steigerung der Informationsverarbeitungskompetenz unter Belastung für den Deutschen Segler-Verband\n\n\nBISp-Jahrbuch Forschungsförderung 2020/21\n\n\n\nbook chapter\n\n\n\n\n\n\n2021\n\n\nKim-Marie Stadler, Maik Bieleke, Ole Benthien, Wanja Wolff\n\n\n\n\n\n\n\nA primer on the role of boredom in self-controlled sports and exercise behavior\n\n\nFrontiers in Psychology\n\n\n\njournal article\n\n\ntheory development\n\n\n\n\n\n\n2021\n\n\nWanja Wolff, Maik Bieleke, Corinna S. Martarelli, James Danckert\n\n\n\n\n\n\n\nToo bored for sports? Adaptive and less-adaptive latent personality profiles for exercise behavior\n\n\nPsychology of Sport and Exercise\n\n\n\njournal article\n\n\noriginal research\n\n\nscale development\n\n\n\n\n\n\n2021\n\n\nWanja Wolff, Maik Bieleke, Johanna Stähler, Julia Schüler\n\n\n\n\n\n\n\nNeuroscientific approaches to self-regulatory control in sports\n\n\nMotivation and Self-regulation in Sport and Exercise\n\n\n\nbook chapter\n\n\nliterature review\n\n\n\n\n\n\n2021\n\n\nWanja Wolff, Anna Hirsch, Maik Bieleke, Amitai Shenhav\n\n\n\n\n\n\n\nTask duration and task order do not matter: No effect on self-control performance\n\n\nPsychological Research\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2021\n\n\nWanja Wolff, Vanda Sieber, Maik Bieleke, Chris Englert\n\n\n\n\n\n\n\nEffects of social value orientation (SVO) and decision mode on controlled information acquisition - A Mouselab perspective\n\n\nJournal of Experimental Social Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2020\n\n\nMaik Bieleke, David Dohmen, Peter M. Gollwitzer\n\n\n\n\n\n\n\nImplicit theories about athletic ability modulate the effects of if-then planning on performance in a standardized endurance task\n\n\nInternational Journal of Environmental Research and Public Health\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2020\n\n\nAnna Hirsch, Maik Bieleke, Julia Schüler, Wanja Wolff\n\n\n\n\n\n\n\nIf-then plans help regulate automatic peer influence on impulse buying\n\n\nEuropean Journal of Marketing\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2020\n\n\nJ. Lukas Thürmer, Maik Bieleke, Frank Wieber, Peter M. Gollwitzer\n\n\n\n\n\n\n\nHigh boredom proneness and low trait self-control impair adherence to social distancing guidelines during the COVID-19 Pandemic\n\n\nInternational Journal of Environmental Research and Public Health\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2020\n\n\nWanja Wolff, Corinna S. Martarelli, Julia Schüler, Maik Bieleke\n\n\n\n\n\n\n\nServed well? A pilot field study on the effects of conveying self-control strategies on volleyball service performance\n\n\nBehavioral Sciences\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2019\n\n\nMaik Bieleke, Claudio Kriech, Wanja Wolff\n\n\n\n\n\n\n\nMindset theory of action phases and if-then planning\n\n\nSocial Psychology in Action\n\n\n\nbook chapter\n\n\n\n\n\n\n2019\n\n\nLucas Keller, Maik Bieleke, Peter M. Gollwitzer\n\n\n\n\n\n\n\nGoal striving and endurance performance\n\n\nEndurance Performance in Sport: Psychological Theory and Interventions\n\n\n\nbook chapter\n\n\nliterature review\n\n\n\n\n\n\n2019\n\n\nWanja Wolff, Maik Bieleke, Julia Schüler\n\n\n\n\n\n\n\nMore than planned: Implementation intention effects in non-planned situations\n\n\nActa Psychologica\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2018\n\n\nMaik Bieleke, Eve Legrand, Astrid Mignon, Peter M. Gollwitzer\n\n\n\n\n\n\n\nDownregulation of anger by mental contrasting with implementation intentions (MCII)\n\n\nFrontiers in Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2018\n\n\nInge Schweiger Gallo, Maik Bieleke, Migual A. Alonso, Peter M. Gollwitzer, Gabriele Oettingen\n\n\n\n\n\n\n\nIncrease in prefrontal cortex oxygenation during static muscular endurance performance is modulated by self-regulation strategies\n\n\nScientific Reports\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2018\n\n\nWanja Wolff, Maik Bieleke, Christian Wienbruch, Peter M. Gollwitzer, Julia Schüler\n\n\n\n\n\n\n\nSocial value orientation moderates the effects of intuition versus reflection on responses to unfair ultimatum offers\n\n\nJournal of Behavioral Decision Making\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2017\n\n\nMaik Bieleke, Peter M. Gollwitzer, Gabriele Oettingen, Urs Fischbacher\n\n\n\n\n\n\n\nThat escalated quickly–Planning to ignore RPE can backfire\n\n\nFrontiers in Physiology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2017\n\n\nMaik Bieleke, Wanja Wolff\n\n\n\n\n\n\n\nNothing will stop me? Flexibly tenacious goal striving with implementation intentions\n\n\nMotivation Science\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2017\n\n\nEve Legrand, Maik Bieleke, Peter M. Gollwitzer, Astrid Mignon\n\n\n\n\n\n\n\nEnhancing consumer behaviour with implementation intentions\n\n\nHandbook of Consumer Psychology\n\n\n\nbook chapter\n\n\n\n\n\n\n2017\n\n\nPeter M. Gollwitzer, Maik Bieleke, Paschal Sheeran\n\n\n\n\n\n\n\nFrom thought to automatic action: Strategic and spontaneous action control by if-then planning\n\n\nReflective and Impulsive Determinants of Human Behavior\n\n\n\nbook chapter\n\n\n\n\n\n\n2016\n\n\nTorsten Martiny-Huenger, Maik Bieleke, Gabriele Oettingen, Peter M. Gollwitzer\n\n\n\n\n\n\n\nThe benefit of no choice: Goal-directed plans enhance perceptual processing\n\n\nPsychological Research\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2015\n\n\nMarkus Janczyk, Michael Dambacher, Maik Bieleke, Peter M. Gollwitzer\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "publications/keller-bieleke-gollwitzer-2019-chapter-en/index.html",
-    "href": "publications/keller-bieleke-gollwitzer-2019-chapter-en/index.html",
-    "title": "Mindset theory of action phases and if-then planning",
+    "objectID": "publications/legrand-bieleke-gollwitzer-2017-motiv-sci/index.html",
+    "href": "publications/legrand-bieleke-gollwitzer-2017-motiv-sci/index.html",
+    "title": "Nothing will stop me? Flexibly tenacious goal striving with implementation intentions",
     "section": "",
     "text": "PDF\n Publication"
   },
@@ -427,32 +196,333 @@
     "text": "PDF\n Publication\n Research Box"
   },
   {
-    "objectID": "publications/legrand-bieleke-gollwitzer-2017-motiv-sci/index.html",
-    "href": "publications/legrand-bieleke-gollwitzer-2017-motiv-sci/index.html",
-    "title": "Nothing will stop me? Flexibly tenacious goal striving with implementation intentions",
+    "objectID": "publications/keller-bieleke-gollwitzer-2019-chapter-en/index.html",
+    "href": "publications/keller-bieleke-gollwitzer-2019-chapter-en/index.html",
+    "title": "Mindset theory of action phases and if-then planning",
     "section": "",
     "text": "PDF\n Publication"
   },
   {
-    "objectID": "publications/martarelli-pacozzi-bieleke-2021-front-psychol/index.html",
-    "href": "publications/martarelli-pacozzi-bieleke-2021-front-psychol/index.html",
-    "title": "High trait self-control and low boredom proneness help COVID-19 homeschoolers",
+    "objectID": "publications/index.html",
+    "href": "publications/index.html",
+    "title": " Publications",
+    "section": "",
+    "text": "Most of my publications are available as preprints on PsyArXiv. If possible, the corresponding data and materials are available via OSF. If you need an individual copy of a publication or access to additional data and materials, please send me an email.\n\n\n\n\n\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nDevelopment and validation of the Value of Physical Effort (VoPE) scale\n\n\nCollabra: Psychology\n\n\n\npreprint (peer-reviewed)\n\n\noriginal research\n\n\nscale development\n\n\n\n\n\n\n2025\n\n\nMaik Bieleke, Johanna Stähler, Wanja Wolff, Julia Schüler\n\n\n\n\n\n\n\n“Why am I doing this anyway?” A control-value perspective on boredom in endurance sports\n\n\nPsychology of Sport & Exercise\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2025\n\n\nMaik Bieleke, Wanja Wolff, Catharina Cremer, Fanni Kaisinger, Thomas Goetz\n\n\n\n\n\n\n\nA complex systems view on physical activity with actionable insights for behaviour change\n\n\nNature Human Behavior\n\n\n\njournal article\n\n\ntheory development\n\n\n\n\n\n\n2025\n\n\nJulia Schüler, Matti T. J. Heino, Natàlia Balagué, Angel M. Chater, Markus Gruber, Martina Kanning, Daniel Keim, Daniela Mier, Maria Moreno-Villanueva, Fridtjof W. Nussbeck, Jens C. Pruessner, Termeh Shafie, Michael Schwenk, Maik Bieleke\n\n\n\n\n\n\n\nDifferent functions of physical effort: A scoping review of the value of physical effort in physical activity and sports\n\n\nMotivation and Emotion\n\n\n\njournal article\n\n\nconceptual paper\n\n\n\n\n\n\n2025\n\n\nJohanna Stähler, Maik Bieleke, Wanja Wolff, Julia Schüler\n\n\n\n\n\n\n\nEight-week high intensity jump training does not change neural correlates of executive functions and emotion regulation in young adults\n\n\nCerebral Cortex\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2025\n\n\nLara A. Wallenwein, Stephanie N. L. Schmidt, Philipp Barzyk, Maik Bieleke, Julia Schüler, Markus Gruber, Daniela Mier\n\n\n\n\n\n\n\nA novel approach to analysing cognitive and physical effort in a unified motor task\n\n\nPsyArXiv\n\n\n\npreprint\n\n\noriginal research\n\n\n\n\n\n\n2025\n\n\nJonathan Wientges, Maik Bieleke, Wanja Wolff, Ursula Fischer, Julia Schüler\n\n\n\n\n\n\n\nEffort and boredom shape our experience of time\n\n\nNeuroscience & Biobehavioral Reviews\n\n\n\njournal article\n\n\ntheory development\n\n\n\n\n\n\n2025\n\n\nWanja Wolff, Sena Özay-Otgonbayar, James Danckert, Maik Bieleke, Corinna S. Martarelli\n\n\n\n\n\n\n\nEffort and boredom shape our experience of time\n\n\nPsyArXiv\n\n\n\npreprint\n\n\ntheory development\n\n\n\n\n\n\n2025\n\n\nWanja Wolff, Sena Özay-Otgonbayar, James Danckert, Maik Bieleke, Corinna S. Martarelli\n\n\n\n\n\n\n\nAnstrengung, Langeweile, Krisen: Neue Perspektiven und Ansätze zur Selbstkontrolle im Sport\n\n\nSportpsychologie: Grundlagen und Trends\n\n\n\nbook chapter\n\n\n\n\n\n\n2024\n\n\nMaik Bieleke, Lucas Keller, Chris Englert\n\n\n\n\n\n\n\nOn the virtues of fragile self-control: Boredom as a catalyst for adaptive behavior regulation\n\n\nHandbook of Boredom\n\n\n\nbook chapter\n\n\n\n\n\n\n2024\n\n\nMaik Bieleke, Wanja Wolff, Alex Bertrams\n\n\n\n\n\n\n\nBoredom is not boring\n\n\nHandbook of Boredom\n\n\n\nbook chapter\n\n\n\n\n\n\n2024\n\n\nMaik Bieleke, Wanja Wolff, Corinna S. Martarelli\n\n\n\n\n\n\n\nFeeling politics at school: Antecedents and effects of emotions in civic education\n\n\nPolitical Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2024\n\n\nElisabeth Graf, Thomas Goetz, Maik Bieleke, Dana Murano\n\n\n\n\n\n\n\nInner obstacles and goal-directed behaviors of elite and youth level cyclists: A qualitative analysis from the perspective of athletes and coaches\n\n\nJournal of Applied Sport and Exercise Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2024\n\n\nAnna Hirsch, Maik Bieleke, Julia Schüler, Wanja Wolff\n\n\n\n\n\n\n\nAssessing and exploring self-enacted behavior change techniques: Frequency, structure, and relevance for physical activity and healthy eating\n\n\nCurrent Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2024\n\n\nJulia Schüler, Maik Bieleke\n\n\n\n\n\n\n\nLatent profiles of effort functions and their impact on task experience and behavior\n\n\nPsyArXiv\n\n\n\npreprint\n\n\noriginal research\n\n\n\n\n\n\n2024\n\n\nJohanna Stähler, Wanja Wolff, Maik Bieleke, Julia Schüler\n\n\n\n\n\n\n\nTesting a novel task paradigm for inducing cognitive and physical effort\n\n\nOSF Registries\n\n\n\npreregistration\n\n\n\n\n\n\n2024\n\n\nJonathan Wientges, Julia Schüler, Maik Bieleke\n\n\n\n\n\n\n\nBug or feature? Boredom feels aversive, and this is why it matters\n\n\nIn-Mind\n\n\n\nmiscellaneous\n\n\n\n\n\n\n2024\n\n\nMaik Bieleke, Katja Rewitz, Wanja Wolff\n\n\n\n\n\n\n\nOn the specifics of valuing effort: A developmental and a formalized perspective on preferences for mental and physical effort\n\n\nPeer Community Journal\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2024\n\n\nWanja Wolff, Johanna Stähler, Julia Schüler, Maik Bieleke\n\n\n\n\n\n\n\nOverview of current directions in boredom research\n\n\nHandbook of Boredom\n\n\n\nbook chapter\n\n\n\n\n\n\n2024\n\n\nMaik Bieleke, Wanja Wolff, Corinna S. Martarelli, Christine Emilie Tonne Artak, Nazim Asani, Ambroise Baillifard, Alex Bertrams, Aenne Brielmann, Linda L. Caldwell, Christian S. Chan, Géraldine Coppin, James Danckert, Van Dang, Lia Daniels, Peter Dayan, Allison Drody, Andreas Elpidorou, Asli Erdemli, Ursula Fischer, Thomas Goetz, Eric R. Igou, Nathanael S. Jost, Heather C. Lench, Anastasiya A. Lipnevich, Carrie Anne Marshall, Andrew B. Moynihan, Muireann K. O’Dea, Patti Parker, Reinhard Pekrun, Stefan Pfattheicher, Vanessa C. Radtke, Noah T. Reed, Josefa Ros Velasco, Lisa Stempfer, Katy Y. Y. Tam, Virginia Tze, Madelon L. M. Van Hooff, Edwin A. J. Van Hooft, Wijnand A. P. Van Tilburg, David Weibel, Christian Weich, Elizabeth Weybright, Bartholomäus Wissmath, Ofir Yakobi\n\n\n\n\n\n\n\nHandbook of Boredom\n\n\n\n\n\n\nbook\n\n\n\n\n\n\n2024\n\n\nMaik Bieleke, Wanja Wolff, Corinna S. Martarelli\n\n\n\n\n\n\n\nStarting tests with easy versus difficult tasks: Effects on appraisals and emotions\n\n\nJournal of Experimental Education\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2023\n\n\nMaik Bieleke, Thomas Goetz, Maike Krannich, Anna-Lena Roos, Takuya Yanagida\n\n\n\n\n\n\n\nMeasuring emotions in mathematics: The Achievement Emotions Questionnaire—Mathematics (AEQ-M)\n\n\nZDM Mathematics Education\n\n\n\njournal article\n\n\nscale development\n\n\n\n\n\n\n2023\n\n\nMaik Bieleke, Thomas Goetz, Takuya Yanagida, Elouise Botes, Anne C. Frenzel, Reinhard Pekrun\n\n\n\n\n\n\n\nIf-then planning, self-control, and boredom as predictors of adherence to social distancing guidelines: Evidence from a two-wave longitudinal study with a behavioral intervention\n\n\nCurrent Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2023\n\n\nMaik Bieleke, Corinna S. Martarelli, Wanja Wolff\n\n\n\n\n\n\n\nAre older individuals predisposed to habitual control more resilient?\n\n\nCurrent Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2023\n\n\nLotte P. Brinkhof, K. Richard Ridderinkhof, Maik Bieleke, Jaap M. J. Murre, Harm J. Krugers, Sanne de Wit\n\n\n\n\n\n\n\nHow long does it take to form a habit? A multi-center replication\n\n\nPeer Community in Registered Reports\n\n\n\nregistered report\n\n\npreregistration\n\n\n\n\n\n\n2023\n\n\nSanne de Wit, Maik Bieleke, Paul Fletcher, Annette Horstmann, Julia Schüler, Lotte P. Brinkhof, Lukas J. Gunschera, Jaap M. J. Murre\n\n\n\n\n\n\n\nTest boredom: Exploring a neglected emotion\n\n\nJournal of Educational Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2023\n\n\nThomas Goetz, Maik Bieleke, Takuya Yanagida, Maike Krannich, Anna-Lena Roos, Anne C. Frenzel, Anastasiya A. Lipnevich, Reinhard Pekrun\n\n\n\n\n\n\n\nMindset-Theorie der Handlungsphasen und Wenn-Dann-Pläne\n\n\nSozialpsychologie: Von der Theorie zur Anwendung\n\n\n\nbook chapter\n\n\n\n\n\n\n2023\n\n\nLucas Keller, Maik Bieleke, Peter M. Gollwitzer\n\n\n\n\n\n\n\nBored of sports? Investigating the interactive role of engagement and value as predictors of boredom in athletic training\n\n\nSport, Exercise, and Performance Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2023\n\n\nCorinna S. Martarelli, Pauline Berthouzoz, Maik Bieleke, Wanja Wolff\n\n\n\n\n\n\n\nControl, anxiety and test performance: Self-reported and physiological indicators of anxiety as mediators\n\n\nBritish Journal of Educational Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2023\n\n\nAnna-Lena Roos, Thomas Goetz, Maike Krannich, Monika Donker, Maik Bieleke, Anna Caltabiano, Tim Mainhard\n\n\n\n\n\n\n\nBoredom, performance & health\n\n\nPerformance Enhancement & Health\n\n\n\njournal article\n\n\neditorial\n\n\n\n\n\n\n2023\n\n\nWanja Wolff, Maik Bieleke, Corinna S. Martarelli\n\n\n\n\n\n\n\nPromoting Physical Exercise in Lab and Life (ProPELL)\n\n\nGerman Clinical Trial Register (DRKS00029727)\n\n\n\npreregistration\n\n\n\n\n\n\n2022\n\n\nMaik Bieleke, Ursula Fischer, Markus Gruber, Martina Kanning, Daniel Keim, Daniela Mier, Jens C. Pruessner, Julia Schüler\n\n\n\n\n\n\n\nBoredom is the root of all evil — or is it? A psychometric network approach to individual differences in behavioral responses to boredom\n\n\nRoyal Society Open Science\n\n\n\njournal article\n\n\noriginal research\n\n\nscale development\n\n\n\n\n\n\n2022\n\n\nMaik Bieleke, Leonie Ripper, Julia Schüler, Wanja Wolff\n\n\n\n\n\n\n\nThe agonizing effects of uncertainty: Effects of announced vs. unannounced performance assessments on emotions and achievement\n\n\nPLoS ONE\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2022\n\n\nMaik Bieleke, Jean-Marie Schwarzkopf, Thomas Goetz, Ludwig Haag\n\n\n\n\n\n\n\nGetting trapped in a dead end? Trait self-control and boredom are linked to goal adjustment\n\n\nMotivation and Emotion\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2022\n\n\nMaik Bieleke, Wanja Wolff, Lucas Keller\n\n\n\n\n\n\n\nA single item measure of self-control - Validation and location in a nomological network of self-control, boredom, and if-then planning\n\n\nSocial Psychological Bulletin\n\n\n\njournal article\n\n\noriginal research\n\n\nscale development\n\n\n\n\n\n\n2022\n\n\nWanja Wolff, Maik Bieleke, Chris Englert, Alex Bertrams, Julia Schüler, Corinna S. Martarelli\n\n\n\n\n\n\n\nBoredom proneness predicts self-assessed decision errors in sports but is unrelated to risk taking in general\n\n\nInternational Journal of Environmental Research and Public Health\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2022\n\n\nWanja Wolff, Maik Bieleke, Lucas Keller\n\n\n\n\n\n\n\nTrajectories of boredom in self-control demanding tasks\n\n\nCognition and Emotion\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2021\n\n\nMaik Bieleke, Leon Barton, Wanja Wolff\n\n\n\n\n\n\n\nThe AEQ-S: A short version of the Achievement Emotions Questionnaire\n\n\nContemporary Educational Psychology\n\n\n\njournal article\n\n\nscale development\n\n\n\n\n\n\n2021\n\n\nMaik Bieleke, Katarzyna Gogol, Thomas Goetz, Lia Daniels, Reinhard Pekrun\n\n\n\n\n\n\n\nIndividual differences in if-then planning: Insights from the development and application of the If-Then Planning Scale (ITPS)\n\n\nPersonality and Individual Differences\n\n\n\njournal article\n\n\nscale development\n\n\n\n\n\n\n2021\n\n\nMaik Bieleke, Lucas Keller\n\n\n\n\n\n\n\nIf-then planning\n\n\nEuropean Review of Social Psychology\n\n\n\njournal article\n\n\nliterature review\n\n\n\n\n\n\n2021\n\n\nMaik Bieleke, Lucas Keller, Peter M. Gollwitzer\n\n\n\n\n\n\n\nIt’s not a bug, it’s boredom: Effortful willpower balances exploitation and exploration\n\n\nBehavioral and Brain Sciences\n\n\n\njournal article\n\n\ncommentary\n\n\n\n\n\n\n2021\n\n\nMaik Bieleke, Wanja Wolff\n\n\n\n\n\n\n\nBug or Feature? Langeweile ist unangenehm und gerade deswegen wichtig\n\n\nIn-Mind\n\n\n\nmiscellaneous\n\n\n\n\n\n\n2021\n\n\nMaik Bieleke, Wanja Wolff\n\n\n\n\n\n\n\nSpecial issue: The self-regulation of human performance\n\n\nPerformance Enhancement & Health\n\n\n\njournal article\n\n\neditorial\n\n\n\n\n\n\n2021\n\n\nMaik Bieleke, Wanja Wolff\n\n\n\n\n\n\n\nIf-then planning in sports: A scoping review\n\n\nZeitschrift für Sportpsychologie\n\n\n\njournal article\n\n\nliterature review\n\n\n\n\n\n\n2021\n\n\nMaik Bieleke, Wanja Wolff, Chris Englert, Peter M. Gollwitzer\n\n\n\n\n\n\n\nGetting along and feeling good: Reciprocal associations between student-teacher relationship quality and students’ emotions\n\n\nLearning and Instruction\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2021\n\n\nThomas Goetz, Maik Bieleke, Katarzyna Gogol, Jan van Tartwijk, Tim Mainhard, Anastasiya A. Lipnevich, Reinhard Pekrun\n\n\n\n\n\n\n\nStruggles and strategies in anaerobic and aerobic cycling tests: A mixed-method approach with a focus on tailored self-regulation strategies\n\n\nPLoS ONE\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2021\n\n\nAnna Hirsch, Maik Bieleke, Raphael Bertschinger, Julia Schüler, Wanja Wolff\n\n\n\n\n\n\n\nBursting balloons - Comparison of risk propensity between extreme sports, esports, and the general public\n\n\nCurrent Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2021\n\n\nLucas Keller, Maik Bieleke, Wanja Wolff\n\n\n\n\n\n\n\nOverclaiming is related to confidence but not to dark triad personality traits or stated and revealed risk preferences\n\n\nPLoS ONE\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2021\n\n\nLucas Keller, Kim-Marie Koppe, Peter M. Gollwitzer, Maik Bieleke\n\n\n\n\n\n\n\nHigh trait self-control and low boredom proneness help COVID-19 homeschoolers\n\n\nFrontiers in Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2021\n\n\nCorinna S. Martarelli, Simona Pacozzi, Maik Bieleke, Wanja Wolff\n\n\n\n\n\n\n\nBored by bothering? A cost-value approach to pandemic boredom\n\n\nHumanities and Social Sciences Communications\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2021\n\n\nCorinna S. Martarelli, Wanja Wolff, Maik Bieleke\n\n\n\n\n\n\n\nDeliberation decreases the likelihood of expressing dominant responses\n\n\nPsychonomic Bulletin & Review\n\n\n\njournal article\n\n\noriginal research\n\n\ntheory development\n\n\n\n\n\n\n2021\n\n\nTorsten Martiny-Huenger, Maik Bieleke, Johannes Doerflinger, Matthew B. Stephensen, Peter M. Gollwitzer\n\n\n\n\n\n\n\nEntwicklung eines kognitiven Trainings zur Steigerung der Informationsverarbeitungskompetenz unter Belastung für den Deutschen Segler-Verband\n\n\nBISp-Jahrbuch Forschungsförderung 2020/21\n\n\n\nbook chapter\n\n\n\n\n\n\n2021\n\n\nKim-Marie Stadler, Maik Bieleke, Ole Benthien, Wanja Wolff\n\n\n\n\n\n\n\nA primer on the role of boredom in self-controlled sports and exercise behavior\n\n\nFrontiers in Psychology\n\n\n\njournal article\n\n\ntheory development\n\n\n\n\n\n\n2021\n\n\nWanja Wolff, Maik Bieleke, Corinna S. Martarelli, James Danckert\n\n\n\n\n\n\n\nToo bored for sports? Adaptive and less-adaptive latent personality profiles for exercise behavior\n\n\nPsychology of Sport and Exercise\n\n\n\njournal article\n\n\noriginal research\n\n\nscale development\n\n\n\n\n\n\n2021\n\n\nWanja Wolff, Maik Bieleke, Johanna Stähler, Julia Schüler\n\n\n\n\n\n\n\nNeuroscientific approaches to self-regulatory control in sports\n\n\nMotivation and Self-regulation in Sport and Exercise\n\n\n\nbook chapter\n\n\nliterature review\n\n\n\n\n\n\n2021\n\n\nWanja Wolff, Anna Hirsch, Maik Bieleke, Amitai Shenhav\n\n\n\n\n\n\n\nTask duration and task order do not matter: No effect on self-control performance\n\n\nPsychological Research\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2021\n\n\nWanja Wolff, Vanda Sieber, Maik Bieleke, Chris Englert\n\n\n\n\n\n\n\nEffects of social value orientation (SVO) and decision mode on controlled information acquisition - A Mouselab perspective\n\n\nJournal of Experimental Social Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2020\n\n\nMaik Bieleke, David Dohmen, Peter M. Gollwitzer\n\n\n\n\n\n\n\nImplicit theories about athletic ability modulate the effects of if-then planning on performance in a standardized endurance task\n\n\nInternational Journal of Environmental Research and Public Health\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2020\n\n\nAnna Hirsch, Maik Bieleke, Julia Schüler, Wanja Wolff\n\n\n\n\n\n\n\nIf-then plans help regulate automatic peer influence on impulse buying\n\n\nEuropean Journal of Marketing\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2020\n\n\nJ. Lukas Thürmer, Maik Bieleke, Frank Wieber, Peter M. Gollwitzer\n\n\n\n\n\n\n\nHigh boredom proneness and low trait self-control impair adherence to social distancing guidelines during the COVID-19 Pandemic\n\n\nInternational Journal of Environmental Research and Public Health\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2020\n\n\nWanja Wolff, Corinna S. Martarelli, Julia Schüler, Maik Bieleke\n\n\n\n\n\n\n\nServed well? A pilot field study on the effects of conveying self-control strategies on volleyball service performance\n\n\nBehavioral Sciences\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2019\n\n\nMaik Bieleke, Claudio Kriech, Wanja Wolff\n\n\n\n\n\n\n\nMindset theory of action phases and if-then planning\n\n\nSocial Psychology in Action\n\n\n\nbook chapter\n\n\n\n\n\n\n2019\n\n\nLucas Keller, Maik Bieleke, Peter M. Gollwitzer\n\n\n\n\n\n\n\nGoal striving and endurance performance\n\n\nEndurance Performance in Sport: Psychological Theory and Interventions\n\n\n\nbook chapter\n\n\nliterature review\n\n\n\n\n\n\n2019\n\n\nWanja Wolff, Maik Bieleke, Julia Schüler\n\n\n\n\n\n\n\nMore than planned: Implementation intention effects in non-planned situations\n\n\nActa Psychologica\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2018\n\n\nMaik Bieleke, Eve Legrand, Astrid Mignon, Peter M. Gollwitzer\n\n\n\n\n\n\n\nDownregulation of anger by mental contrasting with implementation intentions (MCII)\n\n\nFrontiers in Psychology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2018\n\n\nInge Schweiger Gallo, Maik Bieleke, Migual A. Alonso, Peter M. Gollwitzer, Gabriele Oettingen\n\n\n\n\n\n\n\nIncrease in prefrontal cortex oxygenation during static muscular endurance performance is modulated by self-regulation strategies\n\n\nScientific Reports\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2018\n\n\nWanja Wolff, Maik Bieleke, Christian Wienbruch, Peter M. Gollwitzer, Julia Schüler\n\n\n\n\n\n\n\nSocial value orientation moderates the effects of intuition versus reflection on responses to unfair ultimatum offers\n\n\nJournal of Behavioral Decision Making\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2017\n\n\nMaik Bieleke, Peter M. Gollwitzer, Gabriele Oettingen, Urs Fischbacher\n\n\n\n\n\n\n\nThat escalated quickly–Planning to ignore RPE can backfire\n\n\nFrontiers in Physiology\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2017\n\n\nMaik Bieleke, Wanja Wolff\n\n\n\n\n\n\n\nNothing will stop me? Flexibly tenacious goal striving with implementation intentions\n\n\nMotivation Science\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2017\n\n\nEve Legrand, Maik Bieleke, Peter M. Gollwitzer, Astrid Mignon\n\n\n\n\n\n\n\nEnhancing consumer behaviour with implementation intentions\n\n\nHandbook of Consumer Psychology\n\n\n\nbook chapter\n\n\n\n\n\n\n2017\n\n\nPeter M. Gollwitzer, Maik Bieleke, Paschal Sheeran\n\n\n\n\n\n\n\nFrom thought to automatic action: Strategic and spontaneous action control by if-then planning\n\n\nReflective and Impulsive Determinants of Human Behavior\n\n\n\nbook chapter\n\n\n\n\n\n\n2016\n\n\nTorsten Martiny-Huenger, Maik Bieleke, Gabriele Oettingen, Peter M. Gollwitzer\n\n\n\n\n\n\n\nThe benefit of no choice: Goal-directed plans enhance perceptual processing\n\n\nPsychological Research\n\n\n\njournal article\n\n\noriginal research\n\n\n\n\n\n\n2015\n\n\nMarkus Janczyk, Michael Dambacher, Maik Bieleke, Peter M. Gollwitzer\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "publications/hirsch-bieleke-schueler-2024-j-appl-sport-exerc-psychol/index.html",
+    "href": "publications/hirsch-bieleke-schueler-2024-j-appl-sport-exerc-psychol/index.html",
+    "title": "Inner obstacles and goal-directed behaviors of elite and youth level cyclists: A qualitative analysis from the perspective of athletes and coaches",
     "section": "",
     "text": "PDF\n Publication\n PsyArXiv\n OSF"
   },
   {
-    "objectID": "publications/martiny-huenger-bieleke-doerflinger-2021-psychon-bull-rev/index.html",
-    "href": "publications/martiny-huenger-bieleke-doerflinger-2021-psychon-bull-rev/index.html",
-    "title": "Deliberation decreases the likelihood of expressing dominant responses",
+    "objectID": "publications/graf-goetz-bieleke-2024-polit-psychol/index.html",
+    "href": "publications/graf-goetz-bieleke-2024-polit-psychol/index.html",
+    "title": "Feeling politics at school: Antecedents and effects of emotions in civic education",
+    "section": "",
+    "text": "PDF\n Publication\n Preregistration\n PsyArXiv\n OSF"
+  },
+  {
+    "objectID": "publications/goetz-bieleke-yanagida-2023-j-educ-psychol/index.html",
+    "href": "publications/goetz-bieleke-yanagida-2023-j-educ-psychol/index.html",
+    "title": "Test boredom: Exploring a neglected emotion",
+    "section": "",
+    "text": "PDF\n Publication"
+  },
+  {
+    "objectID": "publications/dewit-bieleke-fletcher-2023-pci-regist-rep/index.html",
+    "href": "publications/dewit-bieleke-fletcher-2023-pci-regist-rep/index.html",
+    "title": "How long does it take to form a habit? A multi-center replication",
+    "section": "",
+    "text": "OSF\n Preregistration\n Registered Report"
+  },
+  {
+    "objectID": "publications/bieleke-wolff-martarelli-2024-handbook/index.html",
+    "href": "publications/bieleke-wolff-martarelli-2024-handbook/index.html",
+    "title": "Handbook of Boredom",
+    "section": "",
+    "text": "Publication"
+  },
+  {
+    "objectID": "publications/bieleke-wolff-martarelli-2024-chapter-1/index.html",
+    "href": "publications/bieleke-wolff-martarelli-2024-chapter-1/index.html",
+    "title": "Boredom is not boring",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv"
+  },
+  {
+    "objectID": "publications/bieleke-wolff-goetz-2025-psychol-sport-exerc/index.html",
+    "href": "publications/bieleke-wolff-goetz-2025-psychol-sport-exerc/index.html",
+    "title": "“Why am I doing this anyway?” A control-value perspective on boredom in endurance sports",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv\n OSF"
+  },
+  {
+    "objectID": "publications/bieleke-wolff-bertrams-2024-chapter/index.html",
+    "href": "publications/bieleke-wolff-bertrams-2024-chapter/index.html",
+    "title": "On the virtues of fragile self-control: Boredom as a catalyst for adaptive behavior regulation",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv"
+  },
+  {
+    "objectID": "publications/bieleke-wolff-2021-in-mind/index.html",
+    "href": "publications/bieleke-wolff-2021-in-mind/index.html",
+    "title": "Bug or Feature? Langeweile ist unangenehm und gerade deswegen wichtig",
+    "section": "",
+    "text": "Publication"
+  },
+  {
+    "objectID": "publications/bieleke-wolff-2017-front-physiol/index.html",
+    "href": "publications/bieleke-wolff-2017-front-physiol/index.html",
+    "title": "That escalated quickly–Planning to ignore RPE can backfire",
+    "section": "",
+    "text": "PDF\n Publication"
+  },
+  {
+    "objectID": "publications/bieleke-schwarzkopf-goetz-2022-plos-one/index.html",
+    "href": "publications/bieleke-schwarzkopf-goetz-2022-plos-one/index.html",
+    "title": "The agonizing effects of uncertainty: Effects of announced vs. unannounced performance assessments on emotions and achievement",
     "section": "",
     "text": "PDF\n Publication\n OSF"
   },
   {
-    "objectID": "publications/roos-goetz-krannich-2022-brit-j-educ-psychol/index.html",
-    "href": "publications/roos-goetz-krannich-2022-brit-j-educ-psychol/index.html",
-    "title": "Control, anxiety and test performance: Self-reported and physiological indicators of anxiety as mediators",
+    "objectID": "publications/bieleke-martarelli-wolff-2021-curr-psychol/index.html",
+    "href": "publications/bieleke-martarelli-wolff-2021-curr-psychol/index.html",
+    "title": "If-then planning, self-control, and boredom as predictors of adherence to social distancing guidelines: Evidence from a two-wave longitudinal study with a behavioral intervention",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv\n OSF"
+  },
+  {
+    "objectID": "publications/bieleke-kriech-wolff-2019-behav-sci/index.html",
+    "href": "publications/bieleke-kriech-wolff-2019-behav-sci/index.html",
+    "title": "Served well? A pilot field study on the effects of conveying self-control strategies on volleyball service performance",
     "section": "",
     "text": "PDF\n Publication"
+  },
+  {
+    "objectID": "publications/bieleke-keller-englert-2024-chapter/index.html",
+    "href": "publications/bieleke-keller-englert-2024-chapter/index.html",
+    "title": "Anstrengung, Langeweile, Krisen: Neue Perspektiven und Ansätze zur Selbstkontrolle im Sport",
+    "section": "",
+    "text": "Publication"
+  },
+  {
+    "objectID": "publications/bieleke-gollwitzer-oettingen-2017-j-behav-dec-making/index.html",
+    "href": "publications/bieleke-gollwitzer-oettingen-2017-j-behav-dec-making/index.html",
+    "title": "Social value orientation moderates the effects of intuition versus reflection on responses to unfair ultimatum offers",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv"
+  },
+  {
+    "objectID": "publications/bieleke-goetz-yanagida-2022-zdm-math-educ/index.html",
+    "href": "publications/bieleke-goetz-yanagida-2022-zdm-math-educ/index.html",
+    "title": "Measuring emotions in mathematics: The Achievement Emotions Questionnaire—Mathematics (AEQ-M)",
+    "section": "",
+    "text": "PDF\n Publication"
+  },
+  {
+    "objectID": "publications/bieleke-fischer-gruber-2022-prereg/index.html",
+    "href": "publications/bieleke-fischer-gruber-2022-prereg/index.html",
+    "title": "Promoting Physical Exercise in Lab and Life (ProPELL)",
+    "section": "",
+    "text": "Preregistration"
+  },
+  {
+    "objectID": "publications/bieleke-barton-wolff-2021-cognition-emotion/index.html",
+    "href": "publications/bieleke-barton-wolff-2021-cognition-emotion/index.html",
+    "title": "Trajectories of boredom in self-control demanding tasks",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv\n OSF"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Maik Bieleke",
+    "section": "",
+    "text": "I’m a senior researcher, laboratory head, and data scientist in the sport psychology lab at the University of Konstanz, Germany. My interestes include human motivation, effort, and performance in basic and applied research. I passionately use R for data science and in my general workflow.\n \n  \n   \n  \n    \n     \n  \n  \n     \n  \n  \n    \n     \n  \n  \n    \n     \n  \n  \n    \n     \n  \n  \n     \n  \n  \n     \n  \n\n\n\n\n\n\n\n\n\n Out now: The Handbook of Boredom\n\n\n\n\n\nWith contributions from boredom researchers across various disciplines, this book provides a unique and comprehensive exploration of boredom.\nContents:\n\nFoundations: Overview of a multitude of theoretical, conceptual, historical, and methodological aspects of boredom.\nCorrelates: Exploration of the properties of boredom and its links to self-control, mind-wandering, flow, and aggression.\nContexts: Insights into boredom in various life domains and its role for health, well-being, and aesthetic experience.\n\nBonus:\nThe final chapter is a collective effort of all contributors, offering a panoramic view of the field and outlining its future directions.\n Check it out \n\n\n\n\n\n\nThe Handbook of Boredom, edited by Maik Bieleke, Wanja Wolff, & Corinna Martarelli."
+  },
+  {
+    "objectID": "publications/bieleke-dohmen-gollwitzer-2020-j-exp-soc-psychol/index.html",
+    "href": "publications/bieleke-dohmen-gollwitzer-2020-j-exp-soc-psychol/index.html",
+    "title": "Effects of social value orientation (SVO) and decision mode on controlled information acquisition - A Mouselab perspective",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv\n OSF"
+  },
+  {
+    "objectID": "publications/bieleke-goetz-krannich-2021-j-exp-educ/index.html",
+    "href": "publications/bieleke-goetz-krannich-2021-j-exp-educ/index.html",
+    "title": "Starting tests with easy versus difficult tasks: Effects on appraisals and emotions",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv"
+  },
+  {
+    "objectID": "publications/bieleke-gogol-goetz-2021-contemp-educ-psychol/index.html",
+    "href": "publications/bieleke-gogol-goetz-2021-contemp-educ-psychol/index.html",
+    "title": "The AEQ-S: A short version of the Achievement Emotions Questionnaire",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv"
+  },
+  {
+    "objectID": "publications/bieleke-keller-2021-pers-indiv-differ/index.html",
+    "href": "publications/bieleke-keller-2021-pers-indiv-differ/index.html",
+    "title": "Individual differences in if-then planning: Insights from the development and application of the If-Then Planning Scale (ITPS)",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv\n OSF"
+  },
+  {
+    "objectID": "publications/bieleke-keller-gollwitzer-2021-eur-rev-soc-psychol/index.html",
+    "href": "publications/bieleke-keller-gollwitzer-2021-eur-rev-soc-psychol/index.html",
+    "title": "If-then planning",
+    "section": "",
+    "text": "PDF\n Publication"
+  },
+  {
+    "objectID": "publications/bieleke-legrand-mignon-2018-acta-psychol/index.html",
+    "href": "publications/bieleke-legrand-mignon-2018-acta-psychol/index.html",
+    "title": "More than planned: Implementation intention effects in non-planned situations",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv"
+  },
+  {
+    "objectID": "publications/bieleke-ripper-schueler-2021-r-soc-open-sci/index.html",
+    "href": "publications/bieleke-ripper-schueler-2021-r-soc-open-sci/index.html",
+    "title": "Boredom is the root of all evil — or is it? A psychometric network approach to individual differences in behavioral responses to boredom",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv\n OSF"
+  },
+  {
+    "objectID": "publications/bieleke-staehler-wolff-2025-collabra-psychol/index.html",
+    "href": "publications/bieleke-staehler-wolff-2025-collabra-psychol/index.html",
+    "title": "Development and validation of the Value of Physical Effort (VoPE) scale",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv\n OSF"
+  },
+  {
+    "objectID": "publications/bieleke-wolff-2021-behav-brain-sci/index.html",
+    "href": "publications/bieleke-wolff-2021-behav-brain-sci/index.html",
+    "title": "It’s not a bug, it’s boredom: Effortful willpower balances exploitation and exploration",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv"
+  },
+  {
+    "objectID": "publications/bieleke-wolff-2021-perform-enhanc-health/index.html",
+    "href": "publications/bieleke-wolff-2021-perform-enhanc-health/index.html",
+    "title": "Special issue: The self-regulation of human performance",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv"
+  },
+  {
+    "objectID": "publications/bieleke-wolff-englert-2021-z-sportpsychol/index.html",
+    "href": "publications/bieleke-wolff-englert-2021-z-sportpsychol/index.html",
+    "title": "If-then planning in sports: A scoping review",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv"
+  },
+  {
+    "objectID": "publications/bieleke-wolff-keller-2021-mot-emo/index.html",
+    "href": "publications/bieleke-wolff-keller-2021-mot-emo/index.html",
+    "title": "Getting trapped in a dead end? Trait self-control and boredom are linked to goal adjustment",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv\n OSF"
+  },
+  {
+    "objectID": "publications/bieleke-wolff-martarelli-2024-chapter-2/index.html",
+    "href": "publications/bieleke-wolff-martarelli-2024-chapter-2/index.html",
+    "title": "Overview of current directions in boredom research",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv"
+  },
+  {
+    "objectID": "publications/brinkhof-ridderinkhof-bieleke-2023-curr-psychol/index.html",
+    "href": "publications/brinkhof-ridderinkhof-bieleke-2023-curr-psychol/index.html",
+    "title": "Are older individuals predisposed to habitual control more resilient?",
+    "section": "",
+    "text": "PDF\n Publication\n Preregistration"
+  },
+  {
+    "objectID": "publications/goetz-bieleke-gogol-2021-learn-instr/index.html",
+    "href": "publications/goetz-bieleke-gogol-2021-learn-instr/index.html",
+    "title": "Getting along and feeling good: Reciprocal associations between student-teacher relationship quality and students’ emotions",
+    "section": "",
+    "text": "PDF\n Publication"
+  },
+  {
+    "objectID": "publications/gollwitzer-bieleke-sheeran-2017-chapter/index.html",
+    "href": "publications/gollwitzer-bieleke-sheeran-2017-chapter/index.html",
+    "title": "Enhancing consumer behaviour with implementation intentions",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv"
+  },
+  {
+    "objectID": "publications/hirsch-bieleke-bertschinger-2021-plos-one/index.html",
+    "href": "publications/hirsch-bieleke-bertschinger-2021-plos-one/index.html",
+    "title": "Struggles and strategies in anaerobic and aerobic cycling tests: A mixed-method approach with a focus on tailored self-regulation strategies",
+    "section": "",
+    "text": "PDF\n Publication\n OSF"
+  },
+  {
+    "objectID": "publications/hirsch-bieleke-schuler-2020-int-j-environ-res-public-health/index.html",
+    "href": "publications/hirsch-bieleke-schuler-2020-int-j-environ-res-public-health/index.html",
+    "title": "Implicit theories about athletic ability modulate the effects of if-then planning on performance in a standardized endurance task",
+    "section": "",
+    "text": "PDF\n Publication"
+  },
+  {
+    "objectID": "publications/janczyk-dambacher-bieleke-2015-psychol-res/index.html",
+    "href": "publications/janczyk-dambacher-bieleke-2015-psychol-res/index.html",
+    "title": "The benefit of no choice: Goal-directed plans enhance perceptual processing",
+    "section": "",
+    "text": "PDF\n Publication"
+  },
+  {
+    "objectID": "publications/keller-bieleke-gollwitzer-2023-chapter-de/index.html",
+    "href": "publications/keller-bieleke-gollwitzer-2023-chapter-de/index.html",
+    "title": "Mindset-Theorie der Handlungsphasen und Wenn-Dann-Pläne",
+    "section": "",
+    "text": "PDF\n Publication"
+  },
+  {
+    "objectID": "publications/keller-koppe-gollwitzer-2021-plos-one/index.html",
+    "href": "publications/keller-koppe-gollwitzer-2021-plos-one/index.html",
+    "title": "Overclaiming is related to confidence but not to dark triad personality traits or stated and revealed risk preferences",
+    "section": "",
+    "text": "PDF\n Publication\n Research Box"
+  },
+  {
+    "objectID": "publications/martarelli-berthouzoz-bieleke-2022-sport-exerc-perform-psychol/index.html",
+    "href": "publications/martarelli-berthouzoz-bieleke-2022-sport-exerc-perform-psychol/index.html",
+    "title": "Bored of sports? Investigating the interactive role of engagement and value as predictors of boredom in athletic training",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv\n OSF"
+  },
+  {
+    "objectID": "publications/martarelli-wolff-bieleke-2021-humanit-soc-sci-commun/index.html",
+    "href": "publications/martarelli-wolff-bieleke-2021-humanit-soc-sci-commun/index.html",
+    "title": "Bored by bothering? A cost-value approach to pandemic boredom",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv\n OSF"
+  },
+  {
+    "objectID": "publications/martiny-huenger-bieleke-oettingen-2016-chapter/index.html",
+    "href": "publications/martiny-huenger-bieleke-oettingen-2016-chapter/index.html",
+    "title": "From thought to automatic action: Strategic and spontaneous action control by if-then planning",
+    "section": "",
+    "text": "PDF\n Publication"
+  },
+  {
+    "objectID": "publications/schueler-bieleke-2024-curr-psychol/index.html",
+    "href": "publications/schueler-bieleke-2024-curr-psychol/index.html",
+    "title": "Assessing and exploring self-enacted behavior change techniques: Frequency, structure, and relevance for physical activity and healthy eating",
+    "section": "",
+    "text": "PDF\n Publication\n OSF"
   },
   {
     "objectID": "publications/schweiger-gallo-bieleke-alonso-2018-front-psychol/index.html",
@@ -476,37 +546,44 @@
     "text": "PDF\n Publication"
   },
   {
-    "objectID": "publications/wientges-schueler-bieleke-2024-prereg/index.html",
-    "href": "publications/wientges-schueler-bieleke-2024-prereg/index.html",
-    "title": "Testing a novel task paradigm for inducing cognitive and physical effort",
+    "objectID": "publications/wientges-bieleke-wolff-2025-preprint/index.html",
+    "href": "publications/wientges-bieleke-wolff-2025-preprint/index.html",
+    "title": "A novel approach to analysing cognitive and physical effort in a unified motor task",
     "section": "",
-    "text": "Preregistration"
+    "text": "Publication\n OSF\n Preregistration"
   },
   {
-    "objectID": "publications/wolff-bieleke-hirsch-2018-sci-rep/index.html",
-    "href": "publications/wolff-bieleke-hirsch-2018-sci-rep/index.html",
-    "title": "Increase in prefrontal cortex oxygenation during static muscular endurance performance is modulated by self-regulation strategies",
+    "objectID": "publications/wolff-bieleke-englert-2021-soc-psychol-bull/index.html",
+    "href": "publications/wolff-bieleke-englert-2021-soc-psychol-bull/index.html",
+    "title": "A single item measure of self-control - Validation and location in a nomological network of self-control, boredom, and if-then planning",
     "section": "",
-    "text": "PDF\n Publication"
+    "text": "PDF\n Publication\n PsyArXiv\n OSF"
   },
   {
-    "objectID": "publications/wolff-bieleke-martarelli-2021-front-psychol/index.html",
-    "href": "publications/wolff-bieleke-martarelli-2021-front-psychol/index.html",
-    "title": "A primer on the role of boredom in self-controlled sports and exercise behavior",
+    "objectID": "publications/wolff-bieleke-keller-2021-ijerph/index.html",
+    "href": "publications/wolff-bieleke-keller-2021-ijerph/index.html",
+    "title": "Boredom proneness predicts self-assessed decision errors in sports but is unrelated to risk taking in general",
     "section": "",
-    "text": "PDF\n Publication"
+    "text": "PDF\n Publication\n PsyArXiv\n Research Box"
   },
   {
-    "objectID": "publications/wolff-bieleke-schuler-2019-chapter/index.html",
-    "href": "publications/wolff-bieleke-schuler-2019-chapter/index.html",
-    "title": "Goal striving and endurance performance",
+    "objectID": "publications/wolff-bieleke-martarelli-2023-perform-enhanc-health/index.html",
+    "href": "publications/wolff-bieleke-martarelli-2023-perform-enhanc-health/index.html",
+    "title": "Boredom, performance & health",
     "section": "",
-    "text": "PDF\n Publication"
+    "text": "PDF\n Publication\n PsyArXiv"
   },
   {
-    "objectID": "publications/wolff-hirsch-bieleke-2021-chapter/index.html",
-    "href": "publications/wolff-hirsch-bieleke-2021-chapter/index.html",
-    "title": "Neuroscientific approaches to self-regulatory control in sports",
+    "objectID": "publications/wolff-bieleke-stahler-2021-psychol-sport-exerc/index.html",
+    "href": "publications/wolff-bieleke-stahler-2021-psychol-sport-exerc/index.html",
+    "title": "Too bored for sports? Adaptive and less-adaptive latent personality profiles for exercise behavior",
+    "section": "",
+    "text": "PDF\n Publication\n PsyArXiv\n OSF"
+  },
+  {
+    "objectID": "publications/wolff-martarelli-schuler-2020-int-j-environ-res-public-health/index.html",
+    "href": "publications/wolff-martarelli-schuler-2020-int-j-environ-res-public-health/index.html",
+    "title": "High boredom proneness and low trait self-control impair adherence to social distancing guidelines during the COVID-19 Pandemic",
     "section": "",
     "text": "PDF\n Publication\n PsyArXiv"
   },
@@ -560,32 +637,11 @@
     "text": "FAQ\n\nCan I use the AEQ-S in my study?\nYes. Just make sure to give appropriate credit in the resulting publications (see above).\n\n\nCan I translate or otherwise modify the AEQ-S?\nYes. You can adapt the AEQ-S in any way you want, including translations into other languages. Just make sure to give appropriate credit in the resulting publications (see above).\n\n\nIs the AEQ-S already available in languages other than English?\nThe AEQ-S has so far been validated in English. However, the items of the AEQ-S are drawn form a broader pool of original AEQ items, which have been translated in other languages and can therefore serve as a starting point for translating the AEQ-S. Naturally, these translations must then undergo thorough validation to ensure that their reliability and validity are maintained."
   },
   {
-    "objectID": "scales/itps/index.html",
-    "href": "scales/itps/index.html",
-    "title": "If-Then Planning Scale",
+    "objectID": "scales/index.html",
+    "href": "scales/index.html",
+    "title": " Scales",
     "section": "",
-    "text": "The If-Then Planning Scale (ITPS) is a theory-grounded and empirically validated instrument for assessing individual differences in the propensity to make if-then plans in order to facilitate one’s goal attainment (e.g., “If I go to the cafeteria, then I will I grab an apple” when the goal is to eat healthier). It consists of eight items that tap into two important aspects of implementation intentions: whether an individual identifies critical obstacles and opportunities (e.g., going to the cafeteria) and specifies corresponding goal-directed behaviors (e.g., grabbing an apple)."
-  },
-  {
-    "objectID": "scales/itps/index.html#background",
-    "href": "scales/itps/index.html#background",
-    "title": "If-Then Planning Scale",
-    "section": "",
-    "text": "The If-Then Planning Scale (ITPS) is a theory-grounded and empirically validated instrument for assessing individual differences in the propensity to make if-then plans in order to facilitate one’s goal attainment (e.g., “If I go to the cafeteria, then I will I grab an apple” when the goal is to eat healthier). It consists of eight items that tap into two important aspects of implementation intentions: whether an individual identifies critical obstacles and opportunities (e.g., going to the cafeteria) and specifies corresponding goal-directed behaviors (e.g., grabbing an apple)."
-  },
-  {
-    "objectID": "scales/itps/index.html#usage",
-    "href": "scales/itps/index.html#usage",
-    "title": "If-Then Planning Scale",
-    "section": "Usage",
-    "text": "Usage\n\nLicense\nThe If-Then Planning Scale (ITPS) is licensed under a Creative Commons Attribution 4.0 International License. In short, this license allows anyone to share and adapt the ITPS for any purpose and without requiring the authors’ permission. The only requirement is to give appropriate credit (see next section).\n\n\nCitation\nTo give appropriate credit, please cite the following publication:\nBieleke, M., & Keller, L. (2021). Individual differences in if-then planning: Insights from the development and application of the If-Then Planning Scale (ITPS). Personality and Individual Differences, 170, Article 110500. https://doi.org/10.1016/j.paid.2020.110500"
-  },
-  {
-    "objectID": "scales/itps/index.html#adminstration",
-    "href": "scales/itps/index.html#adminstration",
-    "title": "If-Then Planning Scale",
-    "section": "Adminstration",
-    "text": "Adminstration\n\nAdministration\nThe ITPS can be administered in an online or in a paper-and-pencil format. Completing it takes about 1-2 minutes. The items might be presented in random order to avoid order effects. Participants rate each of the eight items on a 7-point Likert scale from 1 (strongly disagree) to 7 (strongly agree).\n\n\nInstruction\nThe ITPS has been developed as a domain-general measure of if-then planning. Accordingly, the instruction refers to goals in general and not to a specific goal. The focus is on difficult and important goals as only these goals require if-then planning to facilitate goal attainment. However, the instruction can in principle also be tailored to specific goals (e.g., health goals, learning goals) if the focus is on if-then planning in a particular domain.\n\n\nScoring and interpretation\nAn overall score is obtained by averaging a participant’s ratings across all eight items. All items are formulated in the same direction so that no reverse-coding is neccessary. A higher ITPS score indicates a greater propensity to engage in if-then planning.\nNote that although the ITPS is composed of different subscales (e.g., thinking about potential obstacles), subscale scores should only be used for explorative analyses. In general, it is recommended to interpret the overall ITPS score."
+    "text": "Here is a list of scales I have developed in my research. Each scale is licensed under a Creative Commons Attribution 4.0 International License. In short, this license allows anyone to share and adapt these scales for any purpose and without requiring my permission. The only requirement is to give appropriate credit, in general by citing the corresponding publication. Select a scale to see further details and get instructions for usage and referencing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "scales/vope/index.html",
@@ -621,40 +677,5 @@
     "title": "Value of Effort (VoPE) Scale",
     "section": "FAQ",
     "text": "FAQ\n\nCan I use the VoPE scale in my study?\nYes. Just make sure to give appropriate credit in the resulting publications (see above).\n\n\nCan I translate or otherwise modify the VoPE scale?\nYes. You can adapt the VoPE scale in any way you want, including translations into other languages. Just make sure to give appropriate credit in the resulting publications (see above).\n\n\nIs the VoPE scale already available in languages other than English?\nThe VoPE scale has so far been validated in English and German, and both versions can be downloaded from this page. Translations into other languages are welcome, but they must be psychometrically validated. If you have a translation that you would like to share, please contact me."
-  },
-  {
-    "objectID": "scales/boss/index.html",
-    "href": "scales/boss/index.html",
-    "title": "Bored of Sports Scale (BOSS)",
-    "section": "",
-    "text": "BOSS (eng)  BOSS (eng)"
-  },
-  {
-    "objectID": "scales/boss/index.html#background",
-    "href": "scales/boss/index.html#background",
-    "title": "Bored of Sports Scale (BOSS)",
-    "section": "Background",
-    "text": "Background\nThe BOSS Scale is an 11-item questionnaire designed to assess trait boredom within sports and exercise settings. Adapted from the learning-related boredom subscale of the Achievement Emotions Questionnaire (AEQ; Pekrun et al., 2011), the BOSS demonstrated excellent internal consistency in its validation study and was significantly associated with self‑reported exercise behavior, attestting to its criterion validity. Additionally, BOSS scores showed positive correlations with general boredom proneness and negative correlations with trait self‑control and planning, thereby supporting the scale’s convergent validity."
-  },
-  {
-    "objectID": "scales/boss/index.html#usage",
-    "href": "scales/boss/index.html#usage",
-    "title": "Bored of Sports Scale (BOSS)",
-    "section": "Usage",
-    "text": "Usage\n\nLicense\nThe BOSS is licensed under a Creative Commons Attribution 4.0 International License. In short, this license allows anyone to share and adapt the BOSS for any purpose and without requiring the authors’ permission. The only requirement is to give appropriate credit (see next section).\n\n\nCitation\nTo give appropriate credit, please cite the following publication:\nWolff, W., Bieleke, M., Stähler, J., & Schüler, J. (2021). Too bored for sports? Adaptive and less-adaptive latent personality profiles for exercise behavior. Psychology of Sport and Exercise, 53, 101851. https://doi.org/10.1016/j.psychsport.2020.101851"
-  },
-  {
-    "objectID": "scales/boss/index.html#adminstration",
-    "href": "scales/boss/index.html#adminstration",
-    "title": "Bored of Sports Scale (BOSS)",
-    "section": "Adminstration",
-    "text": "Adminstration\n\nAdministration\nThe BOSS can be administered in an online or in a paper-and-pencil format. Completing it takes about 2-3 minutes. Participants rate each of the eleven items on a 5- or 7-point Likert scale from strongly disagree to strongly agree.\n\n\nInstruction\nThe instructions used for the BOSS focus on sports and exercise. They can also be adapted to other contexts, such as physical activity, by changing the wording of the instruction and the items.\n\n\nScoring and interpretation\nAn overall score for the scale is obtained by averaging a participant’s ratings across all eleven items. The items are formulated in the same direction so that no reverse-coding is neccessary. A higher BOSS score indicates a higher level of boredom in sports and exercise contexts."
-  },
-  {
-    "objectID": "scales/boss/index.html#faq",
-    "href": "scales/boss/index.html#faq",
-    "title": "Bored of Sports Scale (BOSS)",
-    "section": "FAQ",
-    "text": "FAQ\n\nCan I use the BOSS in my study?\nYes. Just make sure to give appropriate credit in the resulting publications (see above).\n\n\nCan I translate or otherwise modify the BOSS?\nYes. You can adapt the VoPE scale in any way you want, including translations into other languages. Just make sure to give appropriate credit in the resulting publications (see above).\n\n\nIs the BOSS already available in languages other than English?\nThe BOSS scale has so far been validated in English. Translations into other languages are welcome, but they must be psychometrically validated. If you have a translation that you would like to share, please contact me."
   }
 ]

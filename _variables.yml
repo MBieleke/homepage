@@ -8,11 +8,23 @@ malonso:
 
 # B ----------------------------------------------------------------------------
 
+nbalague:
+  name:   Natàlia Balagué
+  orcid:  0000-0001-5076-9166
+  affil:  Complex Systems in Sport Research Group, Institut Nacional d’Educació Fisica de Catalunya (INEFC), University of Barcelona, Barcelona, Spain
+  email:  nataliabalague@gmail.com
+
 lbarton:
   name:   Leon Barton
   orcid:  0000-0002-2966-1836
   affil:  Department of Psychology, University of Konstanz, Germany
   email:  leon.barton@uni-konstanz.de
+
+pbarzyk:
+  name:   Philipp Barzyk
+  orcid:  0000-0002-0844-4533
+  affil:  Department of Sport Science, University of Konstanz, Germany
+  email:  philipp.barzyk@uni-konstanz.de
 
 obenthien:
   name:   Ole Benthien
@@ -74,6 +86,14 @@ acaltabiano:
   orcid:  
   affil:  Imperial College London, United Kingdom
   email:  
+
+achater:
+  name:   Angel M. Chater
+  orcid:  0000-0002-9043-2565
+  affil:  
+    lut:  Centre for Health, Wellbeing and Behaviour Change, Institute for Sport and Physical Activity Research, University of Bedfordshire, Luton, UK
+    lon:  Centre for Behaviour Change, University College London, London, UK
+  email:  angel.chater@beds.ac.uk
 
 ccremer:
   name:   Catharina Cremer
@@ -215,6 +235,12 @@ lhaag:
   affil:  Department of Educational Sciences, Faculty of Humanities and Social Sciences, University of Bayreuth, Germany
   email:  ludwig.haag@uni-bayreuth.de
 
+mheino:
+  name:   Matti T. J. Heino
+  orcid:  0000-0003-3812-3543
+  affil:  Medical Faculty Mannheim, University of Heidelberg, Heidelberg, Germany
+  email:  matti.tj.heino@helsinki.fi
+
 ahirsch:
   name:   Anna Hirsch
   orcid:  0000-0002-5511-9573
@@ -352,6 +378,12 @@ amignon:
   affil:  SCALab CNRS UMR 9193, University of Lille, France
   email:  astrid.mignonu@niv-lille.fr
 
+mmorenovillanueva:
+  name:   Maria Moreno-Villanueva
+  orcid:  0000-0002-7143-0871
+  affil:  Department of Sport Science, University of Konstanz, Germany
+  email:  maria.moreno-villanueva@uni-konstanz.de
+
 dmurano:
   name:   Dana Murano
   orcid:  0000-0001-5008-7974
@@ -369,6 +401,12 @@ jmurre:
   email:  j.m.j.murre@uva.nl
 
 # N ----------------------------------------------------------------------------
+
+fnussbeck:
+  name:   Fridtjof W. Nussbeck
+  orcid:  0000-0003-4002-8916
+  affil:  Department of Psychology, University of Konstanz, Germany
+  email:  maria.moreno-villanueva@uni-konstanz.de
 
 # O ----------------------------------------------------------------------------
 
@@ -404,7 +442,7 @@ rpekrun:
   email:  pekrun@psy.lmu.de
 
 jpruessner:
-  name:   Jens Pruessner
+  name:   Jens C. Pruessner
   orcid:  0000-0003-2518-7492
   affil:  Neuropsychology, Department of Psychology, University of Konstanz, Germany
   email:  jens.pruessner@uni-konstanz.de
@@ -443,6 +481,12 @@ alroos:
 
 # S ----------------------------------------------------------------------------
 
+sschmidt:
+  name:   Stephanie N. L. Schmidt
+  orcid:  0000-0003-1579-5881
+  affil:  Clinical Psychology and Psychotherapy, Department of Psychology, University of Konstanz, Germany
+  email:  stephanie.3.schmidt@uni-konstanz.de
+
 jschueler:
   name:   Julia Schüler
   orcid:  0000-0002-7790-0491
@@ -460,6 +504,18 @@ ischweigergallo:
   orcid:  0000-0003-1142-0310
   affil:  Departamento de Antropología Social y Psicología Social, Facultad de Ciencias Políticas y Sociología, Complutense University of Madrid, Campus de Somosaguas, Spain
   email:  ingesg@cps.ucm.es
+
+mschwenk:
+  name:   Michael Schwenk
+  orcid:  0000-0003-2002-2656
+  affil:  Department of Sport Science, University of Konstanz, Germany
+  email:  maria.moreno-villanueva@uni-konstanz.de
+
+tshafie:
+  name:   Termeh Shafie
+  orcid:  0000-0002-8419-8477
+  affil:  Center for Data and Methods, University of Konstanz, Germany
+  email:  maria.moreno-villanueva@uni-konstanz.de
 
 psheeran:
   name:   Paschal Sheeran
@@ -531,6 +587,12 @@ lthuermer:
 # V ----------------------------------------------------------------------------
 
 # W ----------------------------------------------------------------------------
+
+lwallenwein:
+  name:   Lara A. Wallenwein
+  orcid:  0000-0001-8044-4047
+  affil:  Clinical Psychology and Psychotherapy, Department of Psychology, University of Konstanz, Germany
+  email:  lara.wallenwein@uni-konstanz.de
 
 fwieber:
   name:   Frank Wieber

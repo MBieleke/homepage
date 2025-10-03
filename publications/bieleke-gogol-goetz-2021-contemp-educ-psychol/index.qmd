@@ -9,7 +9,7 @@ author:
   - name:         "{{< var kgogol.name >}}"
     orcid:        "{{< var kgogol.orcid >}}"
     email:        "{{< var kgogol.email >}}"
-    affiliation:  "{{< var kgogol.affil.kon >}}<br>{{< var rpekrun.affil.kre >}}"
+    affiliation:  "{{< var kgogol.affil.kon >}}<br>{{< var kgogol.affil.kre >}}"
   - name:         "{{< var tgoetz.name >}}"
     orcid:        "{{< var tgoetz.orcid >}}"
     email:        "{{< var tgoetz.email >}}"

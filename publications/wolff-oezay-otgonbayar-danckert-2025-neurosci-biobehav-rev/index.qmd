@@ -1,0 +1,54 @@
+---
+title: "Effort and boredom shape our experience of time"
+subtitle: "Neuroscience & Biobehavioral Reviews"
+author:
+  - name:         "{{< var wwolff.name >}}"
+    orcid:        "{{< var wwolff.orcid >}}"
+    email:        "{{< var wwolff.email.ham >}}"
+    affiliation:  "{{< var wwolff.affil.ham >}}"
+  - name:         "{{< var sozayotgonbayar.name >}}"
+    orcid:        "{{< var sozayotgonbayar.orcid >}}"
+    email:        "{{< var sozayotgonbayar.email >}}"
+    affiliation:  "{{< var sozayotgonbayar.affil >}}"
+  - name:         "{{< var jdanckert.name >}}"
+    orcid:        "{{< var jdanckert.orcid >}}"
+    email:        "{{< var jdanckert.email >}}"
+    affiliation:  "{{< var jdanckert.affil >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var cmartarelli.name >}}"
+    orcid:        "{{< var cmartarelli.orcid >}}"
+    email:        "{{< var cmartarelli.email >}}"
+    affiliation:  "{{< var cmartarelli.affil >}}"
+doi: 10.1016/j.neubiorev.2025.106375
+psyarxiv: https://osf.io/preprints/psyarxiv/ujmpx_v2
+date: '2025'
+date-format: "YYYY"
+categories:
+  - journal article
+  - theory development
+abstract: |
+  Situations change over time, and so does our experience of them. For example, a task may initially feel engaging but can, over time, become monotonous and boring. Similarly, as processing demands increase or one’s momentary capabilities decline, the same task can feel more or less effortful. The dynamics of these task-induced sensations matter because boredom and perceived effort shape behavior by driving optimization of resource utilization. Time is among the most fundamental resources to which people tend to be acutely sensitive across contexts. Here, we propose that the sensations of boredom and effort influence how the passing of time is experienced. Specifically, both states are linked to changes in interoception—the perception of internal bodily signals—which is known to play a key role in time perception. This proposal offers a framework for understanding how fundamental regulatory sensations, such as boredom and effort, shape temporal experience through interoceptive mechanisms. We highlight the insular cortex as a potential hub mediating the effects of interoceptive signals on time perception, integrating feelings of boredom and effort, and their influence on the experience of time.
+keywords:
+  - boredom
+  - time
+  - time estimation
+  - time perception
+  - time awareness
+  - insula
+  - monotony
+  - effort
+  - interoception
+---
+
+---
+
+{{< include /assets/includes/_metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/_button-pdf.qmd >}}
+  {{< include /assets/includes/_button-publication.qmd >}}
+  {{< include /assets/includes/_button-psyarxiv.qmd >}}
+</div>

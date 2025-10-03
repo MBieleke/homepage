@@ -452,5 +452,14 @@
   },
   "scales/boss/index.qmd": {
     "index.html": "2dd5e9e8"
+  },
+  "publications/schueler-heino-balague-2025-nat-hum-behav/index.qmd": {
+    "index.html": "d0fb0efa"
+  },
+  "publications/wolff-oezay-otgonbayar-danckert-2025-neurosci-biobehav-rev/index.qmd": {
+    "index.html": "9d1e7e3e"
+  },
+  "publications/wallenwein-schmidt-barzyk-2025-cereb-cortex/index.qmd": {
+    "index.html": "9227dca6"
   }
 }

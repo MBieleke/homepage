@@ -1,20 +1,14 @@
 [
   {
-    "listing": "/scales/index.html",
-    "items": [
-      "/scales/aeqs/index.html",
-      "/scales/boss/index.html",
-      "/scales/itps/index.html",
-      "/scales/vope/index.html"
-    ]
-  },
-  {
     "listing": "/publications/index.html",
     "items": [
       "/publications/bieleke-staehler-wolff-2025-collabra-psychol/index.html",
       "/publications/bieleke-wolff-goetz-2025-psychol-sport-exerc/index.html",
+      "/publications/schueler-heino-balague-2025-nat-hum-behav/index.html",
       "/publications/staehler-bieleke-wolff-2025-motiv-emotion/index.html",
+      "/publications/wallenwein-schmidt-barzyk-2025-cereb-cortex/index.html",
       "/publications/wientges-bieleke-wolff-2025-preprint/index.html",
+      "/publications/wolff-oezay-otgonbayar-danckert-2025-neurosci-biobehav-rev/index.html",
       "/publications/wolff-ozayotgonbayar-danckert-2025-preprint/index.html",
       "/publications/bieleke-keller-englert-2024-chapter/index.html",
       "/publications/bieleke-wolff-bertrams-2024-chapter/index.html",
@@ -80,6 +74,15 @@
       "/publications/gollwitzer-bieleke-sheeran-2017-chapter/index.html",
       "/publications/martiny-huenger-bieleke-oettingen-2016-chapter/index.html",
       "/publications/janczyk-dambacher-bieleke-2015-psychol-res/index.html"
+    ]
+  },
+  {
+    "listing": "/scales/index.html",
+    "items": [
+      "/scales/aeqs/index.html",
+      "/scales/boss/index.html",
+      "/scales/itps/index.html",
+      "/scales/vope/index.html"
     ]
   }
 ]

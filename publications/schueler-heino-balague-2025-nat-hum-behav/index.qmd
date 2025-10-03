@@ -1,0 +1,79 @@
+---
+title: "A complex systems view on physical activity with actionable insights for behaviour change"
+subtitle: "Nature Human Behavior"
+author:
+  - name:         "{{< var jschueler.name >}}"
+    orcid:        "{{< var jschueler.orcid >}}"
+    email:        "{{< var jschueler.email >}}"
+    affiliation:  "{{< var jschueler.affil >}}"
+  - name:         "{{< var mheino.name >}}"
+    orcid:        "{{< var mheino.orcid >}}"
+    email:        "{{< var mheino.email >}}"
+    affiliation:  "{{< var mheino.affil >}}"
+  - name:         "{{< var nbalague.name >}}"
+    orcid:        "{{< var nbalague.orcid >}}"
+    email:        "{{< var nbalague.email >}}"
+    affiliation:  "{{< var nbalague.affil >}}"
+  - name:         "{{< var achater.name >}}"
+    orcid:        "{{< var achater.orcid >}}"
+    email:        "{{< var achater.email >}}"
+    affiliation:  "{{< var achater.affil.lut >}}<br>{{< var achater.affil.lon >}}"
+  - name:         "{{< var mgruber.name >}}"
+    orcid:        "{{< var mgruber.orcid >}}"
+    email:        "{{< var mgruber.email >}}"
+    affiliation:  "{{< var mgruber.affil >}}"
+  - name:         "{{< var mkanning.name >}}"
+    orcid:        "{{< var mkanning.orcid >}}"
+    email:        "{{< var mkanning.email >}}"
+    affiliation:  "{{< var mkanning.affil >}}"
+  - name:         "{{< var dkeim.name >}}"
+    orcid:        "{{< var dkeim.orcid >}}"
+    email:        "{{< var dkeim.email >}}"
+    affiliation:  "{{< var dkeim.affil >}}"
+  - name:         "{{< var dmier.name >}}"
+    orcid:        "{{< var dmier.orcid >}}"
+    email:        "{{< var dmier.email >}}"
+    affiliation:  "{{< var dmier.affil >}}"
+  - name:         "{{< var mmorenovillanueva.name >}}"
+    orcid:        "{{< var mmorenovillanueva.orcid >}}"
+    email:        "{{< var mmorenovillanueva.email >}}"
+    affiliation:  "{{< var mmorenovillanueva.affil >}}"
+  - name:         "{{< var fnussbeck.name >}}"
+    orcid:        "{{< var fnussbeck.orcid >}}"
+    email:        "{{< var fnussbeck.email >}}"
+    affiliation:  "{{< var fnussbeck.affil >}}"
+  - name:         "{{< var jpruessner.name >}}"
+    orcid:        "{{< var jpruessner.orcid >}}"
+    email:        "{{< var jpruessner.email >}}"
+    affiliation:  "{{< var jpruessner.affil >}}"
+  - name:         "{{< var tshafie.name >}}"
+    orcid:        "{{< var tshafie.orcid >}}"
+    email:        "{{< var tshafie.email >}}"
+    affiliation:  "{{< var tshafie.affil >}}"
+  - name:         "{{< var mschwenk.name >}}"
+    orcid:        "{{< var mschwenk.orcid >}}"
+    email:        "{{< var mschwenk.email >}}"
+    affiliation:  "{{< var mschwenk.affil >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+doi: 10.1038/s41562-025-02279-2
+psyarxiv: https://osf.io/preprints/psyarxiv/y2huk_v1
+date: '2025'
+date-format: "YYYY"
+categories:
+  - journal article
+  - theory development
+abstract: |
+  Physical inactivity and its associated health and economic burdens continue to rise despite decades of interdisciplinary research aimed at promoting physical activity. This Perspective takes a complex systems view on physical activity, proposing that at least two layers of complexity should be considered: (1) interactions between various physiological, psychological, social and environmental systems; and (2) their dynamic interactions across time. To address this complexity, all stages of the research process—from theory and measurement to study design, analysis and interventions—must be aligned with a complex systems perspective. This alignment requires intensive interdisciplinary collaboration and an integration of basic and applied research beyond current research practices to create transdisciplinary solutions. We offer actionable insights that bridge the gap between abstract theoretical approaches (for example, complex systems and attractor landscape frameworks of behaviour change) and practical research on physical activity, thereby laying a foundation for more effective behaviour change interventions.
+---
+
+---
+
+{{< include /assets/includes/_metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/_button-publication.qmd >}}
+  {{< include /assets/includes/_button-psyarxiv.qmd >}}
+</div>
