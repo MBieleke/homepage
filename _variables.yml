@@ -161,7 +161,7 @@ ufischbacher:
   affil:  
     kon:  Department of Economics, University of Konstanz, Germany
     kre:  Thurgau Institute of Economics, Switzerland
-  email:  peter.gollwitzer@uni-konstanz.de
+  email:  urs.fischbacher@uni-konstanz.de
 
 ufischer:
   name:   Ursula Fischer
@@ -212,7 +212,9 @@ pgollwitzer:
     nwy:  Department of Psychology, New York University, USA
     kon:  Department of Psychology, University of Konstanz, Germany
     lue:  Institute of Psychology, Leuphana University Lüneburg, Germany
-  email:  peter.gollwitzer@uni-konstanz.de
+  email:  
+    nwy:  peter.gollwitzer@nyu.edu
+    kon:  peter.gollwitzer@uni-konstanz.de
 
 egraf:
   name:   Elisabeth Graf
@@ -423,6 +425,7 @@ goettingen:
     nwy:  Department of Psychology, New York University, USA
     ham:  Department of Psychology, University of Hamburg, Germany
   email:  peter.gollwitzer@uni-konstanz.de
+    
 
 sozayotgonbayar:
   name:   Sena Özay-Otgonbayar
