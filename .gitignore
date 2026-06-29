@@ -52,3 +52,5 @@ rsconnect/
 
 encrypt.sh
 /.luarc.json
+
+**/*.quarto_ipynb
