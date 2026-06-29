@@ -32,6 +32,12 @@ obenthien:
   affil:  
   email:  
 
+nberliner:
+  name:   Noemi Berliner
+  orcid:  0009-0003-1183-1651
+  affil:  Department of Psychology, University of Konstanz, Germany
+  email:  noemi.berliner@uni-konstanz.de
+
 pberthouzoz:
   name:   Pauline Berthouzoz
   orcid:  
@@ -276,13 +282,13 @@ fkaisinger:
 
 mkanning:
   name:   Martina Kanning
-  orcid:  
+  orcid:  0000-0001-6471-6268
   affil:  Social and Health Science, Department of Sport Science, University of Konstanz, Germany
   email:  martina.kanning@uni-konstanz.de
 
 dkeim:
   name:   Daniel Keim
-  orcid:  
+  orcid:  0000-0001-7966-9740
   affil:  Data Analysis and Visualization, Department of Computer and Information Science, University of Konstanz, Germany
   email:  daniel.keim@uni-konstanz.de
 

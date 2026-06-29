@@ -1,0 +1,41 @@
+---
+title: "Addressing missing data in accelerometer studies: Evaluating the performance of imputation methods for longitudinal data"
+subtitle: "Journal for the Measurement of Physical Behaviour"
+author:
+  - name:         "{{< var nberliner.name >}}"
+    orcid:        "{{< var nberliner.orcid >}}"
+    email:        "{{< var nberliner.email >}}"
+    affiliation:  "{{< var nberliner.affil >}}"
+  - name:         "{{< var mbieleke.name >}}"
+    orcid:        "{{< var mbieleke.orcid >}}"
+    email:        "{{< var mbieleke.email.kon >}}"
+    affiliation:  "{{< var mbieleke.affil.kon.spo >}}"
+  - name:         "{{< var jschueler.name >}}"
+    orcid:        "{{< var jschueler.orcid >}}"
+    email:        "{{< var jschueler.email >}}"
+    affiliation:  "{{< var jschueler.affil >}}"
+  - name:         "{{< var fnussbeck.name >}}"
+    orcid:        "{{< var fnussbeck.orcid >}}"
+    email:        "{{< var fnussbeck.email >}}"
+    affiliation:  "{{< var fnussbeck.affil >}}"
+doi: 10.1123/jmpb.2025-0018
+date: '2026'
+date-format: "YYYY"
+categories:
+  - journal article
+  - original research
+abstract: |
+  Adequate handling of missing data on physical activity assessments is crucial in longitudinal accelerometer studies. This study aimed to evaluate the effectiveness of various imputation methods for handling missing data in an empirical application which utilizes wearable accelerometers. We employed a simulation approach to assess performance under different missing data scenarios including Missing Completely at Random, Missing at Random, and Missing Not at Random for a longer study period (6 weeks). Our findings revealed that mean imputation and hot-deck imputation applied with a fine degree of matching criteria (participant, day of the week, and time of day) outperformed discard-based methods under Missing Completely at Random and Missing at Random conditions as they produced the smallest bias and best precision. Notably, no imputation methods performed well under Missing Not at Random scenarios. We recommend conducting simulation studies tailored to specific study designs to compare imputation methods, implement strategies for improving data quality, gather information on nonwear periods, and ensure continuous monitoring and participant compliance thereby reducing bias in activity level estimates. If a simulation study is not feasible, we recommend to impute data relying on mean or hot-deck approaches with the finest possible degree of matching criteria.
+keywords:
+  - wearables
+  - physical activity
+---
+
+---
+
+{{< include /assets/includes/_metrics.qmd >}}
+
+<div class="d-flex justify-content-center gap-2 mt-3">
+  {{< include /assets/includes/_button-pdf.qmd >}}
+  {{< include /assets/includes/_button-publication.qmd >}}
+</div>
